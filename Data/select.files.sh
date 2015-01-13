@@ -13,7 +13,7 @@
 select_files_version="select.files.sh v0.1"
 #Update: The tree shape and the fossil/living distribution is fully randomized.
 #----
-#guillert(at)tcd.ie - 02/12/2014
+#guillert(at)tcd.ie - 05/12/2014
 ##########################
 
 #Input
@@ -40,17 +40,10 @@ done
 echo "Done"
 
 #keeping only the unique files and remove the spaces
-sort file.to.copy | uniq -u | sed 's/ /\\ /g' > files.to.copy
+sort file.to.copy | uniq -u > files.to.copy # sed 's/ /\\ /g'
 
 #remove the file with extra names
 rm file.to.copy
-#moving the file with names to copy in the folder (and removing the folder name)
-sed 's/'"$folder"'\///g' files.to.copy > $folder/files.to.copy
-#remove the file with extra names
-rm files.to.copy
-
-#Get into the folder
-cd $folder
 
 #Selecting the number of files to copy
 files=$(cat files.to.copy | wc -l | sed 's/[[:space:]]//g')
@@ -62,7 +55,7 @@ do
     #Selecting the file to copy
     file=$(sed -n ''"$n"'p' files.to.copy)
     #Copying the file in the selected_file folder
-    cp "$file" ../selected_files
+    cp "$file" selected_files
     #verbose
     printf .
 done
@@ -70,8 +63,5 @@ echo "Done"
 
 #remove the file with names
 rm files.to.copy
-
-#Getting back in the right folder
-cd ..
 
 #End

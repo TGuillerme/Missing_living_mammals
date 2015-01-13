@@ -1,5 +1,5 @@
 Mammalia
-Monothremata
+Monotremata
 Marsupialia
 Placentalia
 Macroscelidea
@@ -31,4 +31,3 @@ Dasyuromorphia
 Peramelemorphia
 Notoryctemorphia
 Diprotodontia
-Monotremata

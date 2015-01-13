@@ -13,7 +13,7 @@
 select_files_version="select.files.sh v0.1"
 #Update: The tree shape and the fossil/living distribution is fully randomized.
 #----
-#guillert(at)tcd.ie - 02/12/2014
+#guillert(at)tcd.ie - 05/12/2014
 ##########################
 
 #Input
@@ -40,7 +40,7 @@ done
 echo "Done"
 
 #keeping only the unique files and remove the spaces
-sort file.to.copy | uniq -u | sed 's/ /\\ /g' > files.to.copy
+sort file.to.copy | uniq -u > files.to.copy # sed 's/ /\\ /g'
 
 #remove the file with extra names
 rm file.to.copy
