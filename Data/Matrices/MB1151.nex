@@ -1,0 +1,141 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 09.56.44 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=12;
+	TAXLABELS
+		'Procervulus praelucidus'
+		'Euprox robustus'
+		'Euprox furcatus'
+		'Ligeromeryx praestans'
+		'Lagomeryx parvulus'
+		'Lagomeryx ruetimeyeri'
+		'Lagomeryx triacuminatus'
+		'Lagomeryx sp.'
+		'Lagomeryx coberti'
+		'Lagomeryx tsaidamensis'
+		'Lagomeryx complicidens'
+		'Lagomeryx manai'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=16;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123";
+
+	CHARLABELS
+		 [1] 'Antler construction'
+		 [2] 'Palmate portion'
+		 [3] 'Mediolateral expansion of palm portion'
+		 [4] 'Burr'
+		 [5] 'Number of tines'
+		 [6] 'Tine sizes'
+		 [7] 'Bifurcated tines'
+		 [8] 'Lateral tines'
+		 [9] 'Anterior tine orientation'
+		 [10] 'Pedicle length'
+		 [11] 'Pedicle direction above the orbits'
+		 [12] 'Pedicle projecting from the cranial appendages'
+		 [13] 'Pedicle shape'
+		 [14] 'Pedicle cross section'
+		 [15] 'Distal part of pedicle below antler'
+		 [16] 'Antler base slope'
+	;
+	
+	STATELABELS
+		1
+		'forked'
+		'multibranched'
+		'multipointed'
+		,
+		2
+		'absence'
+		'small'
+		'large'
+		,
+		3
+		'absence or narrow'
+		'further wide'
+		'wide'
+		,
+		4
+		'absence'
+		'presence'
+		,
+		5
+		'2-3'
+		'4-7'
+		'>7'
+		,
+		6
+		'unequal'
+		'equal'
+		,
+		7
+		'absence'
+		'presence'
+		,
+		8
+		'absence or poorly developed'
+		'1-2'
+		'2-3'
+		,
+		9
+		'vertical or nearly vertical'
+		'nearly horizontal in anterior part'
+		,
+		10
+		'short'
+		'long'
+		,
+		11
+		'upright'
+		'posterior'
+		,
+		12
+		'straight or inward curved'
+		'divergent'
+		,
+		13
+		'straight'
+		'curved'
+		,
+		14
+		'round'
+		'oval'
+		,
+		15
+		'mediolateral compressed'
+		'not compressed'
+		,
+		16
+		'horizontal plane'
+		'forward bending'
+		,
+	;
+	
+	MATRIX
+	'Procervulus praelucidus'		          0000000001000000
+	'Euprox robustus'		                  0001000000100010
+	'Euprox furcatus'		                  0001000000100110
+	'Ligeromeryx praestans'		            1000000111011001
+	'Lagomeryx parvulus'		               2110110201?0??10
+	'Lagomeryx ruetimeyeri'		            2110110201001010
+	'Lagomeryx triacuminatus'		          1120101101100010
+	'Lagomeryx sp.'		                    11101011?1??1010
+	'Lagomeryx coberti'		                1110101111101011
+	'Lagomeryx tsaidamensis'		           12101??1?1?010??
+	'Lagomeryx complicidens'		           1220201211100101
+	'Lagomeryx manai'		                  1220201211111101
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 16;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = UNORD POLYTCOUNT = MINSTEPS ; TYPESET * default = ORD: 1 - 3 5 8 ;
+ENDBLOCK;

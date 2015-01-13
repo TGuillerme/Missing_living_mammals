@@ -1,0 +1,298 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 10.07.30 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=34;
+	TAXLABELS
+		'Caluromys'
+		'Didelphis'
+		'Monodelphis'
+		'Caenolestes'
+		'Dasyurus'
+		'Sarcophilus'
+		'Sminthopsis'
+		'Thylacinus'
+		'Notoryctes'
+		'Isoodon'
+		'Echymipera'
+		'Dromiciops'
+		'Macrotis'
+		'Acrobates'
+		'Cercartetus'
+		'Myrmecobius'
+		'Tarsipes'
+		'Petaurus'
+		'Petauroides'
+		'Pseudocheirus'
+		'Pseudochirops'
+		'Phalanger'
+		'Trichosurus'
+		'Hypsiprymnodon'
+		'Potorous'
+		'Phascolarctos'
+		'Vombatus'
+		'Dendrolagus'
+		'Wallabia'
+		'Ornithorhynchus'
+		'Tachyglossus'
+		'Pteropus'
+		'Mus'
+		'Erinaceus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=35;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01234567";
+
+	CHARLABELS
+		 [1] 'Complexity of rostral maxilloturbinal'
+		 [2] 'Caudalmost portion of maxilloturbinal'
+		 [3] 'Caudalmost attachment of maxilloturbinal'
+		 [4] 'Maxilloturbinal contact with nasoturbinal'
+		 [5] 'Rostral nasoturbinal as an ossified structure in adults'
+		 [6] 'Rostral nasoturbinal morphology'
+		 [7] 'Caudal nasoturbinal morphology'
+		 [8] 'Caudal nasoturbinal pneumaticity'
+		 [9] 'Shape of rostral portion of caudal nasoturbinal'
+		 [10] 'Caudodorsal portion of caudal nasoturbinal (caudal to nasoturbinal division around endoturbinal I)'
+		 [11] 'Uncinate process of nasoturbinal'
+		 [12] 'Caudalmost point of ventral attachment of caudal nasoturbinal'
+		 [13] 'Caudalmost extent of ventral attachment of nasoturbinal'
+		 [14] 'Packing of endo- and ectoturbinals'
+		 [15] 'Number of turbinal folds on endoturbinal I'
+		 [16] 'Rostral portion of endoturbinal I (part above the maxilloturbinal)'
+		 [17] 'Rostral portion of endoturbinal I'
+		 [18] 'Number of endoturbinals'
+		 [19] 'Number of ectoturbinals'
+		 [20] 'Morphology of the ventralmost ectoturbinal'
+		 [21] 'Ectoturbinal(s) is tubelike in shape'
+		 [22] 'Rostral portion of ventralmost ectoturbinal'
+		 [23] 'Dorsoventral extent of caudal portion of lateral recess'
+		 [24] 'Caudal extent of lateral recess'
+		 [25] 'Maxillary recess'
+		 [26] 'Maxillary recess medial wall'
+		 [27] 'Frontal sinus'
+		 [28] 'Paraseptal shelf of vomer'
+		 [29] 'Rostral extent of ossified nasal septum'
+		 [30] 'Ventral portion of ossified nasal septum'
+		 [31] 'Prominent lateral expanded bulges within the shaft of the ossified nasal septum'
+		 [32] 'Contribution of turbinal elements to the cribriform plate'
+		 [33] 'Contribution of posterior transverse lamina to the cribriform plate'
+		 [34] 'Crista galli'
+		 [35] 'Caudalmost portion of nasal cavity (sphenoidal recess) laterally restricted by the endocranial cavity'
+	;
+	
+	STATELABELS
+		1
+		'arborlike with many branches'
+		'simple with a single scroll (e.g., Monodelphis, Phascolarctos), curled lamella (e.g., Vombatus), or only a single bifurcation (e.g., Isoodon, Echymipera, Macrotis, Myrmecobius, Notoryctes, Tarsipes)'
+		,
+		2
+		'simple in morphology with few branches and scrolls and is attached to nasal cavity wall or floor'
+		'the caudalmost portion of the maxilloturbinal is an enclosed tube that tapers into a cone that is unattached to nasal cavity'
+		,
+		3
+		'floor of nasal cavity'
+		'lateral wall of nasal cavity'
+		,
+		4
+		'absent'
+		'present'
+		,
+		5
+		'present'
+		'absent'
+		,
+		6
+		'well developed as a slender ventromedially directed process'
+		'small, robust bony process with a ventromedial inflection'
+		,
+		7
+		'unbranched'
+		'has at least one branch'
+		,
+		8
+		'absent'
+		'present'
+		,
+		9
+		'rostrodorsal and rostroventral portions are straight (without a kink)'
+		'distinctive kink between rostrodorsal and rostroventral portions of caudal nasoturbinal'
+		,
+		10
+		'caudodorsal portion is unfolded'
+		'caudodorsal portion curls'
+		,
+		11
+		'present'
+		'absent'
+		,
+		12
+		'medial wall of lacrimal canal'
+		'lateral wall of nasal cavity'
+		'medial wall of infraorbital canal (V2)'
+		'floor of nasal cavity'
+		'maxilloturbinal'
+		,
+		13
+		'rostral to caudal terminus of maxilloturbinal '
+		'at coronal level of caudal terminus of maxilloturbinal'
+		'caudal to caudal terminus of maxilloturbinal'
+		,
+		14
+		'relatively loosely packed'
+		'complexly branching or convoluted elements that are densely packed creating a tight mazelike pattern, especially around the ossified nasal septum'
+		,
+		15
+		'none'
+		'one'
+		'two'
+		'three'
+		,
+		16
+		'present'
+		'absent'
+		,
+		17
+		'contains no pneumatic cavities'
+		'possesses a small pneumatic cavity, which encompasses only a portion of the coronal cross section of the element'
+		'possesses a large cavity, which encompasses most of or the entire coronal cross section of the element'
+		,
+		18
+		'two'
+		'three'
+		'four'
+		'five'
+		'six'
+		'seven'
+		'more than seven'
+		,
+		19
+		'one'
+		'two'
+		'three'
+		'four'
+		,
+		20
+		'bifurcating'
+		'does not bifurcate'
+		,
+		21
+		'absent'
+		'present'
+		,
+		22
+		'lamella does not contact posterior transverse lamina'
+		'lamella is attached to posterior transverse lamina'
+		,
+		23
+		'recess does not extend to nasal cavity floor'
+		'recess extends to nasal cavity floor'
+		,
+		24
+		'rostral in the snout, maxilloturbinal extends caudal to this'
+		'about even with the caudal terminus of the maxilloturbinal'
+		'extends caudal to the maxilloturbinal'
+		,
+		25
+		'present'
+		'absent'
+		,
+		26
+		'caudal portion of recess is medially enclosed by posterior transverse lamina'
+		'uncinate process of the caudal nasoturbinal also contributes to the medial wall of the recess'
+		,
+		27
+		'no frontal sinus'
+		'small frontal sinus present (comprises less than half of the cross sectional area of the frontals)'
+		'large frontal sinuses present (comprises most or all of the cross sectional area of the frontals)'
+		,
+		28
+		'present'
+		'absent'
+		,
+		29
+		'rostral to crowns of upper canines'
+		'even with crowns of upper canines'
+		'caudal to crowns of upper canines'
+		,
+		30
+		'straight or only with slight bends or convolutions'
+		'very convoluted'
+		,
+		31
+		'present'
+		'absent'
+		,
+		32
+		'all ecto- and endoturbinals contribute to the cribriform plate'
+		'not all elements participate in the cribriform plate'
+		,
+		33
+		'absent'
+		'present'
+		,
+		34
+		'present'
+		'absent'
+		,
+		35
+		'absent'
+		'present'
+		,
+	;
+	
+	MATRIX
+	'Caluromys'		                00001-00010110102310000001000000000
+	'Didelphis'		                00000100000000302310000001002000000
+	'Monodelphis'		              10001-000001{1,2}010131000000100{0,1}0000{0,1}0
+	'Caenolestes'		              00000010100320300310000100000000001
+	'Dasyurus'		                 00000001111210202310010100002000000
+	'Sarcophilus'		              00000011011221300430010200102001000
+	'Sminthopsis'		              00000000001000201310010000002000010
+	'Thylacinus'		               00000000110121300310010200202110000
+	'Notoryctes'		               10001-111013001003{1,2}{0,1}011000000000111
+	'Isoodon'		                  10000101101020201310010200002000010
+	'Echymipera'		               100001101110{0,2}0201310000200000000010
+	'Dromiciops'		               0000010110110030131100001-001000000
+	'Macrotis'		                 10100101111020202310010200002000010
+	'Acrobates'		                0000010100110000121001001-001000010
+	'Cercartetus'		              00011-0000130010121000101-000000000
+	'Myrmecobius'		              10100010010020100310010200000000000
+	'Tarsipes'		                 10001-0000110000110000001-012000000
+	'Petaurus'		                 00011-1011110010132100001-000001000
+	'Petauroides'		              00011-1111140010031000101-002000000
+	'Pseudocheirus'		            00000110101000101311000000210000000
+	'Pseudochirops'		            00101-0100121000131000011-000000000
+	'Phalanger'		                00001-00110220101320000200102000000
+	'Trichosurus'		              00000110110110201320010000001000000
+	'Hypsiprymnodon'		           00000100110000202321010000000000000
+	'Potorous'		                 00000001110021302330010200000100010
+	'Phascolarctos'		            111000001--12001-30110021-212011000
+	'Vombatus'		                 1100000110012101-51000011-21-110000
+	'Dendrolagus'		              0000010010001010221100001-20-000010
+	'Wallabia'		                 0010010000002010232000000000-010010
+	'Ornithorhynchus'		          00100000--0-002000------1-01-010000
+	'Tachyglossus'		             001000000----11006------1-00-000001
+	'Pteropus'		                 10101-0001100020110001001-012000000
+	'Mus'		                      10000010010-0011020101000001-000000
+	'Erinaceus'		                00100010110120110210010200000000000
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 35;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; timeSaved 1340573366859 ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 5858438387984048876 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 3212712066162054037 ; mqVersion 274 ; checksumv 0 2 1934580311 null getNumChars 35 numChars 35 getNumTaxa 34 numTaxa 34 short false bits 2305843009215791231 states 2097279 sumSquaresStatesOnly 2.33096465099415E14 sumSquares -2.766988301409923E19 NumFiles 1 NumMatrices 1 ; mqVersion ; endTell ; getWindow ; tell It ; suppress ; setResourcesState false false 100 ; setPopoutState 400 ; setExplanationSize 0 ; setAnnotationSize 0 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1200 620 ; setLocation 38 27 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; desuppress ; endTell ; getEmployee #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord ; tell It ; showDataWindow #3212712066162054037 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker ; tell It ; getWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1100 553 ; setLocation 38 27 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; endTell ; setActive ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; colorCells #mesquite.charMatrices.NoColor.NoColor ; colorRowNames #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor ; colorColumnNames #mesquite.charMatrices.CharGroupColor.CharGroupColor ; colorText #mesquite.charMatrices.NoColor.NoColor ; setBackground White ; toggleShowNames on ; toggleShowTaxonNames on ; toggleTight off ; toggleThinRows off ; toggleShowChanges on ; toggleSeparateLines off ; toggleShowStates on ; toggleAutoWCharNames on ; toggleAutoTaxonNames off ; toggleShowDefaultCharNames off ; toggleConstrainCW on ; toggleBirdsEye off ; toggleShowPaleGrid off ; toggleShowPaleCellColors off ; togglePaleInapplicable on ; toggleShowBoldCellText off ; toggleAllowAutosize on ; toggleColorsPanel off ; toggleDiagonal on ; setDiagonalHeight 80 ; toggleLinkedScrolling on ; toggleScrollLinkedTables off ; endTell ; showWindow ; getWindow ; tell It ; forceAutosize ; endTell ; getEmployee #mesquite.charMatrices.ColorByState.ColorByState ; tell It ; setStateLimit 9 ; toggleUniformMaximum on ; endTell ; getEmployee #mesquite.charMatrices.ColorCells.ColorCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector ; tell It ; autotabOff ; endTell ; getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor ; tell It ; panelOpen true ; endTell ; endTell ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; showCharacters #3212712066162054037 #mesquite.lists.CharacterList.CharacterList ; tell It ; setData 0 ; getWindow ; tell It ; newAssistant #mesquite.lists.DefaultCharOrder.DefaultCharOrder ; newAssistant #mesquite.lists.CharListInclusion.CharListInclusion ; newAssistant #mesquite.lists.CharListPartition.CharListPartition ; newAssistant #mesquite.stochchar.CharListProbModels.CharListProbModels ; getTable ; tell It ; rowNamesWidth 483 ; endTell ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1100 553 ; setLocation 38 27 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam ; endTell ; endTell ; showWindow ; getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel ; tell It ; togglePanel off ; endTell ; endTell ; endTell ; endTell ;
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 35 ;
+ENDBLOCK;
+BEGIN TREES;
+Title Trees ; LINK Taxa = Taxa ; TRANSLATE 1 Caluromys , 2 Didelphis , 3 Monodelphis , 4 Caenolestes , 5 Dasyurus , 6 Sarcophilus , 7 Sminthopsis , 8 Thylacinus , 9 Notoryctes , 10 Isoodon , 11 Echymipera , 12 Dromiciops , 13 Macrotis , 14 Acrobates , 15 Cercartetus , 16 Myrmecobius , 17 Tarsipes , 18 Petaurus , 19 Petauroides , 20 Pseudocheirus , 21 Pseudochirops , 22 Phalanger , 23 Trichosurus , 24 Hypsiprymnodon , 25 Potorous , 26 Phascolarctos , 27 Vombatus , 28 Dendrolagus , 29 Wallabia , 30 Ornithorhynchus , 31 Tachyglossus , 32 Pteropus , 33 Mus , 34 Erinaceus ; TREE Meredith_topology = ((((((((((5 , 7) , 16) , ((10 , 11) , 13)) , 9) , ((26 , 27) , (((24 , (28 , 29)) , (22 , 15)) , (14 , (17 , (18 , 21)))))) , 12) , 4) , (1 , (3 , 2))) , (32 , 33 , 34)) , (30 , 31)) ;
+ENDBLOCK;

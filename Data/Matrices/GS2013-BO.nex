@@ -1,0 +1,292 @@
+#NEXUS
+
+[ File saved by NDE version 0.5.0, Wed Jan 18 17:16:31 2012 ]
+
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=18;
+	TAXLABELS
+		Didelphis
+		Kulbeckia
+		Leptictis
+		Protungulatum
+		Hyopsodus
+		Erinaceus
+		Procavia
+		Numidotherium
+		Orycteropus
+		Chrysochloris
+		Tenrec
+		Potamogale
+		Rhynchocyon
+		Petrodromus
+		E.rozeti
+		E.rupestris
+		Macroscelides
+		Cf.Chambius
+		;
+ENDBLOCK;
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=52;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012";
+	CHARLABELS
+		[1] 'Tympanic bulla'
+		[2] 'Rostral tympanic process of the petrosal'
+		[3] 'Posterior septum of the rostral tympanic process of the petrosal'
+		[4] 'Morphology of the caudal tympanic process of the petrosal'
+		[5] 'Position of the caudal tympanic process with respect to the stapedial muscle fossa '
+		[6] 'Rostrolateral projection of the caudal tympanic process '
+		[7] 'Tympanohyal process'
+		[8] 'Foramen stylomastoideum primitivum on the petrosal'
+		[9] 'Morphology of the facial sulcus'
+		[10] 'Hypotympanic sinus diverticulum D3'
+		[11] 'Recessus epitympanicus'
+		[12] 'Morphology of the recessus epitympanicus'
+		[13] 'Transpromontory sulcus'
+		[14] 'Morphology of the transpromontory sulcus'
+		[15] 'Foramen caroticus posterius '
+		[16] 'Stapedial sulcus'
+		[17] 'Lateral notch on the stapedial muscle fossa for the ramus posterius '
+		[18] 'Sulcus for the ramus petrosus inferius (ramus anterius of the stapedial artery)'
+		[19] 'Stapedio-facial canal'
+		[20] 'Position of the opening for the ramus inferius'
+		[21] 'Position of the anterior opening of the sulcus for the ramus inferius'
+		[22] 'Ramus superius of the stapedial artery'
+		[23] 'Sulcus for the sinus petrosus superius'
+		[24] 'Prootic sinus'
+		[25] 'Width of the tegmen tympani'
+		[26] 'Fossa tensor tympani'
+		[27] 'Length of the fossa tensor tympani'
+		[28] 'Fossa incudis'
+		[29] 'Anterior septum'
+		[30] 'Posterolateral septum'
+		[31] 'Anterior epitympanic wing'
+		[32] 'Petrosal plate'
+		[33] 'Secondary anterior septum'
+		[34] 'Medial window of the fossa subarcuata caudal to the canaliculus cochleae'
+		[35] 'Crista falciformis'
+		[36] 'Mastoid process for the sternocleidomastoideus muscle'
+		[37] 'Mastoid apophysis'
+		[38] 'Depth of the fossa subarcuata: '
+		[39] 'Cochlear coiling'
+		[40] 'Cochlear volume'
+		[41] 'Cochlear ratio '
+		[42] 'Height of the basal turn of the cochlea'
+		[43] 'Lamina secundaria'
+		[44] 'Lamina secundaria'
+		[45] 'Contact between the basal and the second turn of the cochlea'
+		[46] 'Covering of the basal turn of the cochlea in ventral view'
+		[47] 'Recessus sphericus and recessus ellipticus'
+		[48] 'Undulations of the anterior canal'
+		[49] 'Undulations of the lateral canal'
+		[50] 'Undulations of the posterior canal'
+		[51] 'Crus commune secundaria'
+		[52] 'Communication between the posterior and later semicircular canal at the level of their crossing'
+		;
+	STATELABELS
+		1
+			'ring-like ectotympanic '
+			'ossified ectotympanic ',
+		2
+			absent
+			present,
+		3
+			absent
+			'present, forms a sharp and salient mediolateral crest ',
+		4
+			'forms a low crest or absent '
+			'forms a sharp and salient crest ',
+		5
+			'bounds the opening of the fenestra cochleae only '
+			'bounds the stapedial muscle fossa caudally',
+		6
+			absent
+			'present, splits the fossula cochleae to the stapedial muscle fossa',
+		7
+			'short or absent '
+			'long and thick',
+		8
+			'absent, simple notch on the petrosal'
+			'present, closed ventrally by the tympanohyal process and the caudal tympanic process ',
+		9
+			'shallow sulcus '
+			'deep sulcus '
+			'runs through an ossified duct from the stylomastoid opening to the hiatus fallopi  ',
+		10
+			'no pneumatization'
+			'fossula cochleae pneumatized',
+		11
+			'shallow or absent '
+			'present, well defined fossa ',
+		12
+			'not expanded '
+			'well expanded ',
+		13
+			absent
+			present,
+		14
+			'shallow sulcus '
+			'deep sulcus '
+			'closed ventrally, forms an ossified duct  ',
+		15
+			'opened at the petrotympanic suture '
+			'opened within petrosal bone ',
+		16
+			absent
+			present,
+		17
+			absent
+			present,
+		18
+			absent
+			present,
+		19
+			'Ramus inferius of the stapedial artery runs through a sulcus '
+			'Ramus inferius of the stapedial artery runs through an ossified duct',
+		20
+			apical
+			'dorsal ',
+		21
+			'lateral to the hiatus fallopi '
+			'situated near the hiatus fallopi ',
+		22
+			'runs through a sulcus '
+			'runs through an ossified canal ',
+		23
+			' reaches medially the level of the medial border of the fossa subarcuata without goes beyond it '
+			'goes beyond medially the level of the medial bound of the fossa subarcuata ',
+		24
+			absent
+			present,
+		25
+			'not expanded '
+			'well expanded ',
+		26
+			shallow
+			deep,
+		27
+			'limited length anteriorly'
+			'anteroposteriorly expanded ',
+		28
+			'merged with the recessus epitympanicus'
+			'individualized from the recessus epitympanicus ',
+		29
+			absent
+			'present, bounds the fossa tensor tympani anteriorly ',
+		30
+			absent
+			'present, bounds the fossa tensor tympani posteriorly ',
+		31
+			absent
+			present,
+		32
+			absent
+			present,
+		33
+			'septum et cavité pneumatique absents '
+			'present, bound a supplementary anterior pneumatized cavity limite une cavité pneumatique antérieure ',
+		34
+			absent
+			present,
+		35
+			thin
+			'thick ',
+		36
+			absent
+			present,
+		37
+			'reduced, amastoidy '
+			developed,
+		38
+			deep
+			shallow,
+		39
+			'less than two turns '
+			'cochlea makes two full turns or more ',
+		40
+			'makes less than 65% of the total volume of the inner ear '
+			'makes more than 65% of the total volume of the inner ear',
+		41
+			'<0.6 '
+			'between 0.8 and 0.6 '
+			'>0.8  ',
+		42
+			'less than 70% '
+			'equals or exceeds 70% of the height of the cochlea ',
+		43
+			'excavates at least the exterior wall of the first half turn of the cochlea '
+			present,
+		44
+			'does not goes beyond the first half turn '
+			'excavates the exterior wall of the first and the second half turns of the cochlea ',
+		45
+			'absent, a large vacuity separate both turns '
+			' present ',
+		46
+			'no covering '
+			'the basal turn overlie the second turn in ventral view ',
+		47
+			'parted by a shallow notch '
+			'parted by a deep notch ',
+		48
+			'slightly undulated '
+			'amply undulated ',
+		49
+			'slightly undulated '
+			'amply undulated ',
+		50
+			'slightly undulated '
+			'amply undulated ',
+		51
+			absent
+			'present between the posterior and the lateral canal ',
+		52
+			absent
+			present,
+	;
+	MATRIX
+		Didelphis          0100010000 0-0--0-0-- --11001000 0-00000011 0000011000 1-
+		Kulbeckia          ?0-0010001 0-0--11100 00?1001000 1000000000 0000001000 1-
+		Leptictis          01000?110? 101101?100 00?0001000 100?0000?? ?????????? ??
+		Protungulatum      ?0-0010000 101101?--- --10001000 0-000100?? ?????????? ??
+		Hyopsodus          ?0-0010000 0-1000---- -000011000 0-00001010 100-000010 1-
+		Erinaceus          0110011001 1111011100 0000111111 1000010000 100-111000 00
+		Procavia           10-0001110 100--0---- --00010001 0-00101110 100-001010 00
+		Numidotherium      10-0010000 101100---- --001??100 0-0000110? 000-00?0?0 1-
+		Orycteropus        00-0010000 0-110110-- -0?0001000 1000000110 000-101000 1-
+		Chrysochloris      1100010020 1112011110 10?01--000 0-0010001(01) 200-111101 (01)0
+		Tenrec             00-0011000 0-0-0110-- -010001000 1001110001 000-101101 00
+		Potamogale         0101001011 0-0-0110-- -010001000 1000100001 1010111101 0(01)
+		Rhynchocyon        1111101111 1112010110 1010010111 1011100011 110-000100 00
+		Petrodromus        1111100111 1010110111 1110001110 11(01)1100011 2111110110 0(01)
+		E.rozeti           1111100121 1110110111 1100101111 11(01)(01)100001 (12)111110111 0(01)
+		E.rupestris        1111100121 1110010111 1110101111 1011100000 1111110110 00
+		Macroscelides      1111100121 1112(01)10111 1100111110 1110000011 2011110111 01
+		Cf.Chambius        ?111010000 1010010100 1010001110 1000110011 1111110110 1-
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE=UNORD POLYTCOUNT=MINSTEPS;
+	TYPESET * default = ORD: 41;
+ENDBLOCK;
+
+BEGIN NOTES;
+	[Taxon comments]
+
+	[Character comments]
+
+	[Character state comments]
+
+	[Attribute comments]
+
+	[Taxon pictures]
+
+	[Character pictures]
+
+	[Character state pictures]
+
+	[Attribute pictures]
+ENDBLOCK;
+

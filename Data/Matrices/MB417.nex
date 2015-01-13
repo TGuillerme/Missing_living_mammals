@@ -1,0 +1,265 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 10.33.00 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=12;
+	TAXLABELS
+		'Procavia capensis'
+		'Chrysochloris'
+		'Rhynchocyon cirnei'
+		'Leptorycteropus guilielmi'
+		'Myorycteropus africanus'
+		'Orycteropus abundulafus'
+		'Orycteropus afer'
+		'Orycteropus crassidens'
+		'Orycteropus depereti'
+		'Orycteropus djourabensis'
+		'Orycteropus gaudryi'
+		'Orycteropus mauritanicus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=39;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01234";
+
+	CHARLABELS
+		 [1] 'Facial surface of lacrimal'
+		 [2] 'Lacrimal foramen'
+		 [3] 'Caudal tympanic process of the petrosal'
+		 [4] 'Mastoid exposure in ventral basicranium and occipital region'
+		 [5] 'Position of the temporal line'
+		 [6] 'Nuchal line (lambdoid crest) (in dorsal view)'
+		 [7] 'Relative position of the anterior border of the orbit (in lateral view): anterior to M2'
+		 [8] 'Ventralmost point of the maxillo–jugal suture (in lateral view)'
+		 [9] 'Palatine groove'
+		 [10] 'Palate breadth'
+		 [11] 'Relative position of the post-palatine foramina'
+		 [12] 'Shape of the post-palatine torus'
+		 [13] 'Relative position of the post-palatine torus'
+		 [14] 'Lateral wall of the pterygoid'
+		 [15] 'Extension of the interorbital constriction'
+		 [16] 'Configuration of the cranio-mandibular articulation'
+		 [17] 'Angle between the mandibular rami (in lateral view)'
+		 [18] 'Position of the articular condyle of the mandible with respect to the coronoid process'
+		 [19] 'Dental microstructure'
+		 [20] 'Shape of the upper molar outline (in occlusal view)'
+		 [21] 'Lingual groove on the upper molars (in occlusal view)'
+		 [22] 'Orientation of the upper molars alveoli with respect to the palatine plan (in caudal view)'
+		 [23] 'Canines'
+		 [24] 'Development of the deltoid crest on the humerus'
+		 [25] 'Shape of the olecranon fossa on the humerus'
+		 [26] 'Breadth of the distal epiphysis of the humerus'
+		 [27] 'Relative orientation of the articulation axis of the trochlear notch on the ulna (in ventral view)'
+		 [28] 'Shape of the oblique rim on the radius (dorsal view)'
+		 [29] 'Number of sacral vertebrae'
+		 [30] 'Relative orientation of the caput femoris (in proximal view)'
+		 [31] 'Pectineal tubercle'
+		 [32] 'Relative position of the articular facet for the sesamoid bone of the gastrocnemius muscle on the femur (in lateral view)'
+		 [33] 'Development of the tibial tuberosity on the tibia femur'
+		 [34] 'Falciform process on the proximal epiphysis of the that is longer than the tibia'
+		 [35] 'Relative length of the tibia and the femur'
+		 [36] 'Relative development of the tibial crest'
+		 [37] 'Mediolateral shape of the tibial diaphysis (in dorsal view)'
+		 [38] 'Cotyloid facet of the talus'
+		 [39] 'Astragalar posteromedial process'
+	;
+	
+	STATELABELS
+		1
+		'absent or slight'
+		'distinct'
+		,
+		2
+		'facial'
+		'orbital'
+		,
+		3
+		'reduced'
+		'shields posterior bulla'
+		,
+		4
+		'moderate to extensive'
+		'reduced to absent'
+		,
+		5
+		'high'
+		'low'
+		'State 2'
+		'State 2'
+		,
+		6
+		'rectilinear'
+		'V-shaped'
+		,
+		7
+		'above M3'
+		'above M2'
+		'State 2'
+		'State 2'
+		,
+		8
+		'caudal to M3'
+		'above M3'
+		,
+		9
+		'absent'
+		'present'
+		,
+		10
+		'broad'
+		'slender'
+		,
+		11
+		'at the level of the M2'
+		'at the level of M3'
+		'caudal to M3'
+		,
+		12
+		'rectilinear'
+		'curved'
+		,
+		13
+		'caudal to M3'
+		'at the level of M3'
+		,
+		14
+		'smooth'
+		'with ridges'
+		,
+		15
+		'also including the palatine'
+		'formed strictly by the frontal, orbitosphenoid, and alisphenoid'
+		'no orbital constriction'
+		,
+		16
+		'flat or slightly convex on the mandible'
+		'with a tubercle on the glenoid cavity, and a concave surface on the mandible'
+		,
+		17
+		'inferior to 60 degrees'
+		'between 60 and 73 degrees'
+		'superior to 73 degrees'
+		,
+		18
+		'separated by a mandibular notch'
+		'in contact'
+		,
+		19
+		'not tubulidentate'
+		'tubulidentate'
+		,
+		20
+		'rectangular'
+		'trapezoid'
+		,
+		21
+		'shallow'
+		'deep'
+		'State 2'
+		'State 2'
+		,
+		22
+		'perpendicular'
+		'oblique'
+		,
+		23
+		'present'
+		'absent'
+		,
+		24
+		'weak and not projected laterally'
+		'strong and projected laterally'
+		,
+		25
+		'oval and bounded proximally'
+		'triangular, ascend•ing in the middle'
+		,
+		26
+		'slender'
+		'broad'
+		,
+		27
+		'perpendicular to the diaphysis'
+		'oblique to the diaphysis'
+		,
+		28
+		'sharp'
+		'blunt, with muscular insertion marks'
+		,
+		29
+		'five'
+		'six'
+		'between five and seven'
+		'three'
+		,
+		30
+		'mediodorsal to lateroventral'
+		'mediolateral'
+		'ball-like caput femoris, no orientation'
+		,
+		31
+		'absent'
+		'present'
+		,
+		32
+		'at the level of the diaphysis'
+		'recessed, ventral to the diaphysis line'
+		,
+		33
+		'concave and slender'
+		'flat and broad'
+		'flat and slender'
+		,
+		34
+		'absent'
+		'present'
+		,
+		35
+		'equal length'
+		'tibia longer than the femur'
+		'femur longer than the tibia'
+		,
+		36
+		'short and merging abruptly with the diaphysis'
+		'long and merging in a gentle slop, close to the middle of the diaphysis'
+		,
+		37
+		'straight'
+		'curved'
+		,
+		38
+		'concave and developed'
+		'vertical and negligible'
+		,
+		39
+		'small or absent'
+		'prominent'
+		,
+	;
+	
+	MATRIX
+	'Procavia capensis'		                  0100000100011000210--110000022011000000
+	'Chrysochloris'		                      0010200000200020000--001010100000000010
+	'Rhynchocyon cirnei'		                 1110001000000010000--000001030012011001
+	'Leptorycteropus guilielmi'		          ???????00?????????1???0010?00?1000?01?1
+	'Myorycteropus africanus'		            10??????????????0?1020?10110?0100??1111
+	'Orycteropus abundulafus'		            10010121111111012011011010110111001110{0,1}
+	'Orycteropus afer'		                   100110101020001011101111010011101120101
+	'Orycteropus crassidens'		             1001??10??2?001011101011010??????????01
+	'Orycteropus depereti'		               100101200?111101??11011????????????????
+	'Orycteropus djourabensis'		           10011010??20001010100111011011100120101
+	'Orycteropus gaudryi'		                10010121{0,1}1111101201101111111?1110011101
+	'Orycteropus mauritanicus'		           10?1?121111???0???11011?????????10?1101
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 39;
+ENDBLOCK;
+BEGIN MACCLADE;
+Version 4.0 84 ; LastModified -889026078 ; FileSettings editor 0 0 1 1 ; Singles 000 ; Editor 0001100111111110010001001 0 24 Geneva 9 100 1 all ; EditorPosition 44 6 723 1227 ; TreeWindowPosition 46 6 735 1230 ; ListWindow Characters closed Geneva 9 50 10 273 794 000 ; ListWindow Taxa closed Geneva 9 50 10 257 490 100000 ; ListWindow Trees closed Geneva 9 50 10 276 490 ; ListWindow TypeSets closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ListWindow ExSets closed Geneva 9 50 10 276 490 ; ListWindow CharSets closed Geneva 9 50 10 276 490 ; ListWindow TaxSets closed Geneva 9 50 10 276 490 ; ListWindow CharPartitions closed Geneva 9 50 10 276 490 ; ListWindow CharPartNames closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ChartWindowPosition 52 30 718 1220 ; StateNamesSymbols closed Geneva 9 10 54 31 192 568 ; WindowOrder Data ; OtherSymbols &/ 00 ?- ; Correlation 0 0 1000 0 0 10011010 ; Salmo 00000001 ; EditorFile 2 ; ExportHTML _ MOSS 100 110000 ; PrettyPrint 10 ; EditorToolsPosition 609 46 115 165 ; TreeWindowProgram 10 ; TreeWindow 0000 ; Continuous 0 3 1 ; Calculations 0000001 ; SummaryMode 0 0 0 ; Charts Geneva 9 (normal) 0010 ; NexusOptions 0 0 50 001011011 ; TipLabel 1 ; TreeFont Geneva 9 (normal) ; TreeShape 1.0 1.0 0100 ; TraceLabels 0101 ; ChartColors 0 0 65535 9 0 1 ; ChartBiggestSpot 1 ; ChartPercent 10 ; ChartBarWidth 10 1 ; ChartVerticalAxis 10101 ; ChartMinMax 0 ; TraceAllChangesDisplay 1 1 ; BarsOnBranchesDisplay 0 0 60000 10000 10000 10000 10000 60000 65000 65000 65000 6 1 0000101 ; ContinuousBranchLabels 0 ; AllStatesBranchLabels 1 ; IndexNotation 2 1 ; PrintTree 10.00 2 2 2 2 2 2 2 2 2 2 2 Geneva 9 (normal) Geneva 10 (normal) Geneva 9 (normal) Geneva 9 (normal) Geneva 9 (bold ) Geneva 9 (normal) Geneva 9 (normal) 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 7 -39 4 -40 0 1 2 1 8 0 0 0 2 1000111000000000000100000111000 ; MatchChar 00 . ; EntryInterpretation 01 ; ColorOptions 00 ; TreeTools 0 5 4 0 10 4 0 00100111111101110 ; EditorTools 0 0 0 1000 0 0 6 3 0 100000101110001 ; PairAlign 2 2 3 2 1 1 2 1 3 1010 ; BothTools 1 ;
+ENDBLOCK;

@@ -1,0 +1,581 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 04.37.34 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=35;
+	TAXLABELS
+		'Hypsiprymnodon moschatus'
+		'Bettongia penicillata'
+		'Potorous tridactylus'
+		'Ngamaroo archeri'
+		'Lagostrophus fasciatus'
+		'Troposodon minor'
+		'Nowidgee matrix'
+		'Ganguroo bilamina'
+		'Wanburoo hilarus'
+		'Hadronomas puckridgi'
+		'Simosthenurus occidentalis'
+		'Procoptodon goliah'
+		'Sthenurus andersoni'
+		'Bohra illuminata'
+		'Dendrolagus bennettianus'
+		'Dendrolagus matschiei'
+		'Dorcopsis veterum'
+		'Dorcopsoides fossilis'
+		'Dorcopsulus vanheurni'
+		'Protemnodon anak'
+		'Congruus congruus'
+		'Lagorchestes conspicillatus'
+		'Lagorchestes hirsutus'
+		'Macropus eugenii'
+		'Macropus fuliginosus'
+		'Macropus robustus'
+		'Onychogalea unguifera'
+		'Baringa nelsonensis'
+		'Kurrabi mahoneyi'
+		'Petrogale brachyotis'
+		'Setonix brachyurus'
+		'Thylogale billardierii'
+		'Wallabia bicolor'
+		'Prionotemnus palankarinnicus'
+		'Macropus pavana'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=83;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Rostrum depth'
+		 [2] 'Marked cranial foreshortening (brachycephaly)'
+		 [3] 'Basicranial plane relative to palatal plane'
+		 [4] 'Splanchnocranium anteroventral deflection'
+		 [5] 'Masseter origin on jugal'
+		 [6] 'Post end of jugal deep, expanded to form marked ectoglenoid process'
+		 [7] 'Postglenoid process'
+		 [8] 'Neurocranium element contact'
+		 [9] 'Ectotympanic proportions'
+		 [10] 'Maximum supraoccipital breadth relative to occiput height'
+		 [11] 'Foramen magnum size relative to occiput size'
+		 [12] 'V-shaped squamosal inflation between occiput and zygomatic arch'
+		 [13] 'Relative anteroposterior length of  upper incisors'
+		 [14] 'I1 shape'
+		 [15] 'I3 anterobuccal crest'
+		 [16] 'I3 lingual surface'
+		 [17] 'P3 -- number of cuspules/ridgelets anterior to large posterior one'
+		 [18] 'Deep cleft on P3/p3 main crest immediately posterior to ant cuspule'
+		 [19] 'P3 lingual cingulum'
+		 [20] 'P3 lateral constriction immediately anterior to posterolingual cusp'
+		 [21] 'Upper cheek tooth row shape in transverse plane'
+		 [22] 'Molar progression'
+		 [23] 'Molar morphology'
+		 [24] 'Preprotocrista development'
+		 [25] 'Postprotocrista orientation'
+		 [26] 'Postprotocrista development'
+		 [27] 'Postprotocrista division'
+		 [28] 'Postparacrista development'
+		 [29] 'Postmetacrista / postmetaconulecrista development'
+		 [30] 'Symphyseal plate morphology'
+		 [31] 'Buccinator Sulcus'
+		 [32] 'Anterior extent of masseteric canal (deep masseter insertion)'
+		 [33] 'Insertion area for anteriormost layer of middle masseter'
+		 [34] 'Mandibular condyle shape'
+		 [35] 'Position of i1 occlusal surface during incisor occlusion'
+		 [36] 'i1 morphology'
+		 [37] 'Enamel distribution on i1'
+		 [38] 'Morphology of p3'
+		 [39] 'Buccal side of p3'
+		 [40] 'Cheek tooth row shape in dorsoventral plane'
+		 [41] 'Molar crown height'
+		 [42] 'Premetacristid development'
+		 [43] 'Slight postmetacristid'
+		 [44] 'Postprotocristid development'
+		 [45] 'Cristid obliqua form'
+		 [46] 'Paracristid and cristid obliqua division'
+		 [47] 'Posterior face of hypolophid'
+		 [48] 'Lophid enamel crenulations'
+		 [49] 'Tuber calcanei medial torsion'
+		 [50] 'Relative length of calcaneum articular region'
+		 [51] 'Step of calcaneum-cuboid articulation'
+		 [52] 'Ventromedian facet of cuboid articulation on calcaneus'
+		 [53] 'Relative breath of calcaneum-astragalus articulation'
+		 [54] 'Distinctness of medial and lateral astragalar facets'
+		 [55] 'Shape of calcaneum-astragalus lateral facet'
+		 [56] 'Medial extent of sustentaculum tali'
+		 [57] 'Shape of sustentaculum tali'
+		 [58] 'Posterior extent of sustentaculum tali'
+		 [59] 'Orientation of astragalar trochlear crests (relative to long axis of calcaneum)'
+		 [60] 'Depth of astragalar trochlea (relative height of medial astragalar trochlear crest)'
+		 [61] 'Medial malleolar process/fossa on talus'
+		 [62] 'Metatarsal IV length relative to calcaneus length'
+		 [63] 'Metatarsal IV relative breadth'
+		 [64] 'Metatarsal IV distal epiphysis breadth'
+		 [65] 'Metatarsal V relative breadth'
+		 [66] 'Metatarsal V plantar ridge'
+		 [67] 'Tibia relative length of fibular contact'
+		 [68] 'Tibia relative length of anterior crest'
+		 [69] 'Tibia anterior crest shape'
+		 [70] 'Tibia length relative to that of femur'
+		 [71] 'Femur development of greater trochanter crest'
+		 [72] 'Innominate angle of ilium to ischium'
+		 [73] 'Innominate rectus femoris origin'
+		 [74] 'Innominate iliopubic process'
+		 [75] 'Innominate relative length of ischium to ilium'
+		 [76] 'Scapula relative area of supraspinous to infraspinous fossa'
+		 [77] 'Scapula acromion shape'
+		 [78] 'Scapula -- displacement of acromion relative to glenoid fossa'
+		 [79] 'Humerus -- relative size of medial tuberosity to lateral tuberosity'
+		 [80] 'Humerus -- development of deltoid versus pectoral crests'
+		 [81] 'Ulna -- posterior margin of trochlear notch relative width'
+		 [82] 'Ulna olecranon length/shape relative to length of ulna'
+		 [83] 'Radius cross-section depth (mid-length) to width of the diaphysis'
+	;
+	
+	STATELABELS
+		1
+		'shallow'
+		'intermediate'
+		'deep'
+		,
+		2
+		'absent'
+		'present'
+		,
+		3
+		'same plane or slightly higher'
+		'markedly higher'
+		,
+		4
+		'marked'
+		'intermediate'
+		'minimal'
+		,
+		5
+		'shallow'
+		'deep, with distinct orbital rim'
+		,
+		6
+		'absent'
+		'present'
+		,
+		7
+		'absent'
+		'small'
+		'large'
+		,
+		8
+		'frontal-squamosal'
+		'parietal-alisphenoid'
+		,
+		9
+		'small'
+		'thick, wide, rugose, ventrally keeled'
+		,
+		10
+		'deeper than broad'
+		'subequal in depth and breadth'
+		'broader than deep'
+		,
+		11
+		'small'
+		'large'
+		,
+		12
+		'absent'
+		'present'
+		,
+		13
+		'I2 and/or I3 not reduced relative to I1'
+		'I2 highly reduced relative to I1 and I3'
+		'I2-3 highly reduced relative to I1'
+		,
+		14
+		'sub-cylindrical'
+		'slightly broadened'
+		'markedly broadened'
+		,
+		15
+		'absent or very small, restricted to anterior end'
+		'distinct'
+		,
+		16
+		'no anterolingual crest or lingual shelf'
+		'anterolingual crest present, no lingual shelf'
+		'fine anterolingual crest and small lingual shelf present'
+		,
+		17
+		'5 or more'
+		'4'
+		'3'
+		'<3'
+		,
+		18
+		'absent'
+		'present'
+		,
+		19
+		'absent or very low, fine'
+		'low, narrow to moderately broad, tapered anteriorly'
+		'broad, not raised into crest along ling edge (with/-out cuspules)'
+		'broad, raised into low crest along lingual edge'
+		'raised into high crest along lingual edge'
+		,
+		20
+		'absent'
+		'present'
+		,
+		21
+		'straight'
+		'bowed (laterally convex)'
+		,
+		22
+		'absent'
+		'present'
+		,
+		23
+		'bunodont'
+		'bunolophodont'
+		'bilophodont'
+		,
+		24
+		'strongly developed, confluent with precingulum'
+		'small but distinct'
+		'absent'
+		,
+		25
+		'restricted to lingual side of tooth'
+		'extends into interloph valley near to tooth midline'
+		,
+		26
+		'short, thick'
+		'fine, low'
+		'intermediate'
+		'high, thick, strongly developed'
+		,
+		27
+		'not divided'
+		'incipiently or completely divided into two components'
+		,
+		28
+		'present'
+		'absent or very fine, low'
+		,
+		29
+		'both distinct'
+		'Postmetaconulecrista enlarged, postmetacrista absent or v. weak'
+		,
+		30
+		'shallow, attachment area for cruciate ligaments smooth or v. slight rugo'
+		'deep, attachment area for cruciate ligaments rugose'
+		'deep, attachment area for cruciate ligaments, v.rugose, ant. expanded'
+		,
+		31
+		'absent'
+		'broad, deep concavity'
+		'narrow, shallow'
+		'narrow, deep'
+		,
+		32
+		'to below anterior cheek teeth'
+		'to below posterior cheek teeth'
+		'posterior to m4 (near vertical)'
+		,
+		33
+		'small to moderately proportioned'
+		'broad and concave'
+		'large, terminates ventrally at distinct ridge'
+		,
+		34
+		'barrel shaped, not tapered medially'
+		'oval or circular'
+		'barrel shaped, tapered medially'
+		,
+		35
+		'i1 rests on crowns of I2-3 and posterior facet on I1'
+		'i1 rests on palate, bordered by I2-3'
+		,
+		36
+		'thin, elongate, procumbent'
+		'procumbent blade with thick enamel flanges'
+		'slightly robust with thin enamel flanges'
+		'markedly robust and upturned'
+		,
+		37
+		'principally buccal side, but may extend onto ventrolingual aspect'
+		'extn of bucc enamel onto ling/dors side completely encircles i1'
+		'lingual layer present but not continuous with buccal layer'
+		,
+		38
+		'blade with many fine serrations along length of crown'
+		'crown markedly curved in lingually at posterior end (near L-shaped)'
+		'straight or slightly curved blade with fewer coarser serrations'
+		'crown markedly broadened'
+		,
+		39
+		'lacks eminence, cingulid or crest'
+		'bears posterobuccal eminence'
+		'bears well-developed buccal cingulid or crest'
+		,
+		40
+		'flat or very slightly convex'
+		'markedly convex dorsally'
+		,
+		41
+		'low'
+		'intermediate'
+		'high'
+		,
+		42
+		'well developed, confluent with paracristid'
+		'moderately developed'
+		'weakly developed or absent'
+		,
+		43
+		'present'
+		'absent'
+		,
+		44
+		'distinct'
+		'slight or absent'
+		,
+		45
+		'straight or slightly kinked, restricted to buccal side of tooth'
+		'straight or slightly curved, terminates near tooth midline low on pos'
+		'distinctly kinked, terminates near tooth midline low on posterior fac'
+		,
+		46
+		'absent'
+		'present'
+		,
+		47
+		'postentocristid distinct, meets large posthypocristid'
+		'both crests fine or absent'
+		'posthypocristid present, adjacent to distinct central groove'
+		,
+		48
+		'absent'
+		'present'
+		,
+		49
+		'absent'
+		'present'
+		,
+		50
+		'long (>0.43)'
+		'intermediate (0.43-0.35)'
+		'short (<0.35)'
+		,
+		51
+		'incipient'
+		'markedly or slightly bevelled'
+		'slightly smoothed, oblique'
+		'smoothed'
+		,
+		52
+		'absent'
+		'continuous with dorsolateral facet'
+		'separate, distinct, well-developed'
+		'reduced, confluent with dorsomedial facet'
+		,
+		53
+		'intermediate (0.40-0.45)'
+		'narrow (<0.40)'
+		'broad (>0.45)'
+		,
+		54
+		'confluent, smoothly continuous anteriorly'
+		'continuous anteriorly but facet contours distinct'
+		'distinct, separate facets'
+		,
+		55
+		'untapered or marginally tapered medially'
+		'slightly or moderately tapered medially'
+		'markedly tapered medially'
+		,
+		56
+		'not or slightly projected beyond medial edge of medial facet'
+		'projected markedly beyond medial edge of medial facet'
+		,
+		57
+		'straight (anteroventrally oriented) or very slightly curved'
+		'rounded'
+		'squared'
+		,
+		58
+		'roughly in line with fibular facet'
+		'intermediate'
+		'significantly posteriorly placed from fibular facet'
+		,
+		59
+		'oblique (anterolaterally oriented)'
+		'anteroposteriorly oriented'
+		,
+		60
+		'shallow groove (low crests subequal in height)'
+		'intermediate (well-developed medial crest)'
+		'deep groove (high crests especially medial crest)'
+		,
+		61
+		'fossa intermediate, no distinct process'
+		'fossa intermediate, process small, slightly medially extended'
+		'fossa broad/shallow, process large and medially extended'
+		'fossa narrow/deep, process small, slightly medially extended'
+		,
+		62
+		'intermediate (1.5-2.4)'
+		'long (>2.4)'
+		'short (<1.5)'
+		,
+		63
+		'narrow (<0.12)'
+		'intermediate (0.12-0.16)'
+		'broad (>0.16)'
+		,
+		64
+		'narrow relative to ligament attachments'
+		'distinctly broad relative to shaft width, min development of lig att'
+		,
+		65
+		'intermediate (0.07-0.13)'
+		'narrow (<0.07)'
+		'wide (>0.13)'
+		'highly to extremely reduced'
+		,
+		66
+		'small, posteriorly restricted'
+		'absent'
+		'elongate, well developed'
+		,
+		67
+		'short (<0.62)'
+		'long (>0.62)'
+		,
+		68
+		'intermediate (0.20-0.26)'
+		'long (>0.26)'
+		'short (<0.20)'
+		,
+		69
+		'stepped in distally'
+		'not stepped distally, curves smoothly into diaphysis'
+		,
+		70
+		'intermediate (1.10-1.45)'
+		'short (<1.10)'
+		'long (>1.45)'
+		,
+		71
+		'distally flared or intermediate'
+		'distally narrowed'
+		'distally flared and markedly broadened'
+		,
+		72
+		'slight angle'
+		'aligned in same plane'
+		'large angle'
+		,
+		73
+		'distinctly separate from acetabular rim'
+		'intermediate'
+		'adjacent to acetabular rim'
+		,
+		74
+		'very small, pointed'
+		'long, well-developed, square in outline'
+		'short, broad'
+		'very large'
+		,
+		75
+		'long (>0.7)'
+		'short (<0.7)'
+		,
+		76
+		'roughly equal'
+		'supraspinous fossa roughly half area'
+		'supraspinous fossa roughly one-third area'
+		'supraspinous fossa much smaller than infraspinous'
+		,
+		77
+		'anterodorsally curved'
+		'straight'
+		,
+		78
+		'caudal to the cranial margin of the glenoid fossa'
+		'cranially displaced'
+		,
+		79
+		'slightly smaller'
+		'distinctly smaller'
+		'subequal'
+		,
+		80
+		'deltoid insertion poorly developed'
+		'intermediate, small deltoid tuberosity connected by oblique ridge'
+		'large deltoid tuberosity separated from pectoral crest by sulcus'
+		,
+		81
+		'wide'
+		'narrow'
+		,
+		82
+		'long, deep'
+		'intermediate'
+		'reduced'
+		,
+		83
+		'intermediate (1.3-1.5)'
+		'shallow (<1.3)'
+		'deep (1.5-2.0)'
+		'very deep (>2.0)'
+		,
+	;
+	
+	MATRIX
+	'Hypsiprymnodon moschatus'		              00000000000000000000000000000000000000000000000000000000000000000000000000000000000
+	'Bettongia penicillata'		                 00010010000000000000000000000000000000000000000001110100000000001102000001110000003
+	'Potorous tridactylus'		                  00010000000000001000000000000000000002000000000001110100000000100102000001100001003
+	'Ngamaroo archeri'		                      ?????????????????0??001??????0000????000010000000021?10001???010??0000????????000??
+	'Lagostrophus fasciatus'		                00000021000000002010102012000112110011001201101001110100210100100212001001110001001
+	'Troposodon minor'		                      ?????????????0?020100020120001111100110012112010???????????????????????????????????
+	'Nowidgee matrix'		                       ????????????????00000010000000210??0020001000000???????????????????????????????????
+	'Ganguroo bilamina'		                     ????????????????????002??????0210??0020001011010?????????????????????0??0??1101002?
+	'Wanburoo hilarus'		                      ????????????0001002000221100002101?1021001111010???????????????????????????????????
+	'Hadronomas puckridgi'		                  200201211200100100200022110000310101232001111010011201000111101102001??013?210??12?
+	'Simosthenurus occidentalis'		            21120121120010011040102211100232020323201211111101122100221200113100122213031112122
+	'Procoptodon goliah'		                    211201211200100110401022111002320203232012111101011201002212001131001222130311?2122
+	'Sthenurus andersoni'		                   20020121120012011040102211000232020323201211111101120100221200113102122013???112122
+	'Bohra illuminata'		                      100000210111011220101022110000220?12021012111010103322100001201020000??112??10?10??
+	'Dendrolagus bennettianus'		              10000021011101123120102211000021011202100211101010332221000022202001010122021020011
+	'Dendrolagus matschiei'		                 10000021011101122120102211000021011202100211101010332220000022202011010122021021011
+	'Dorcopsis veterum'		                     00000011000001101001002211000020011002001111101001120211000110100200000011121010010
+	'Dorcopsoides fossilis'		                 000000110000?11010010022110000200?11220012111010011201110101101002?00201011????0010
+	'Dorcopsulus vanheurni'		                 000000110010011010010022110000200110020011111010-----21---011-----00000111121010010
+	'Protemnodon anak'		                      10000021011002102030102212000022011102002211101001122200020122112001021002121012011
+	'Congruus congruus'		                     100000210110021020301022120000??????????2??????????????????????????????????????????
+	'Lagorchestes conspicillatus'		           000000210000021020101022120000220110020022111010021212001001-1001212001101121011002
+	'Lagorchestes hirsutus'		                 00000021000002102010102212000022011002002211101001121200100131001212001101121001002
+	'Macropus eugenii'		                      00000021000002103010102213011022011102012211201001121200010130000200021001111011002
+	'Macropus fuliginosus'		                  00000021000002103000112113011022011102012211202002121200020110001212021001111011012
+	'Macropus robustus'		                     00000021000002103010112213011022011102012211202002121200020130101212021101111111012
+	'Onychogalea unguifera'		                 00001021000022103000102213000022211002012211201002121200120130001212021001111011002
+	'Baringa nelsonensis'		                   ?0??1???????22??20001022130110222?11020122111010???????????????????????????????????
+	'Kurrabi mahoneyi'		                      ????????????????20101022130110220??1020022111010???????????????????????????????????
+	'Petrogale brachyotis'		                  00000021011102122010102212000022011202001211101001220210000110100000000101021011010
+	'Setonix brachyurus'		                    00000021000002101010102212000021011102001211101001120210000112100000000102121000011
+	'Thylogale billardierii'		                00000021000002102010102212000022011102001211101001120210000010100000000101111011011
+	'Wallabia bicolor'		                      00000021000002102030102212000022011102002211101002121200120130100200021101121012012
+	'Prionotemnus palankarinnicus'		          ????0????????21020101022130100220?11020012111010???????????????????????????????????
+	'Macropus pavana'		                       ????????????????30001121130110220??????122112020???????????????????????????????????
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 83;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS ;
+ENDBLOCK;

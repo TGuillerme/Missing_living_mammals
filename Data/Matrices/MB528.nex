@@ -1,0 +1,655 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 10.39.34 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=44;
+	TAXLABELS
+		'Leptictis'
+		'Hyaenodon'
+		'Thinocyon sp'
+		'Echinosorex gymnurus'
+		'Erinaceus europaeus'
+		'Oodectes herpestoides'
+		'Vulpavus profectus'
+		'Vulpavus ovatus'
+		'Miacis parvivorus'
+		'Dawsonicyon isami'
+		'Miacis sylvestris'
+		'Procynodictis vulpiceps'
+		'Miacis uintensis'
+		'Tapocyon robustus'
+		'Quercygale'
+		'Viverravus minutus'
+		'Protictis schaffi'
+		'Viverravus acutus'
+		'Viverravus gracilis'
+		'Didymictis vancleveae'
+		'Hesperocyon gregarious'
+		'Otarocyon'
+		'Daphoenus sp.'
+		'Miacis cognitus'
+		'Canis latrans'
+		'Mephitis mephitis'
+		'Gulo gulo'
+		'Ursus'
+		'Otariidae'
+		'Pteronarctos goedertae'
+		'Procyon lotor'
+		'Ailurus'
+		'Hoplophoneus primaevus'
+		'Dinictis'
+		'Nandinia binotata'
+		'Hyaena hyaena'
+		'Civettictis civetta'
+		'Felis concolor'
+		'Herpestes'
+		'Zodiolestes'
+		'Palaeoprionodon'
+		'Stenogale'
+		'Proailurus'
+		'Herpestides antiquus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=99;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01234";
+
+	CHARLABELS
+		 [1] 'Lacrimal facial process'
+		 [2] 'Ventral exposure of premaxilla posterior extent of premaxilla lateral to palatal foramen'
+		 [3] 'Shape of infraorbital foramen'
+		 [4] 'Position of infraorbital foramen'
+		 [5] 'Length of palate position of the posterior edge of palatine midline relative to tooth row '
+		 [6] 'Palatine canal primary anterior opening '
+		 [7] 'Relative length of frontal and parietal at midline'
+		 [8] 'Postorbital process'
+		 [9] 'Paroccipital process size'
+		 [10] 'Paroccipital process shape'
+		 [11] 'Placement of postglenoid foramen'
+		 [12] 'Postglenoid foramen'
+		 [13] 'Shape of mastoid process'
+		 [14] 'Direction of mastoid process extention'
+		 [15] 'Condyloid hypoglossal foramen position relative to postlacerate foramen'
+		 [16] 'Condyloid hypoglossal foramen position relative to groove between the occipital condyle and the paroccipital process'
+		 [17] 'Posterior lacerate foramen'
+		 [18] 'Fenestra cochleae rotunda position relative to mastoid tubercle'
+		 [19] 'Relative distance between the foramen ovale and the alisphenoid canal'
+		 [20] 'Ossification of tegmen tympani'
+		 [21] 'Contact of promontorium and basioccipital'
+		 [22] 'Composition of mastoid tubercle'
+		 [23] 'Anterior loop of internal carotid artery '
+		 [24] 'Suprameatal fossa fossa on squamosal anterior tomastoid'
+		 [25] 'Position of internal carotid artery'
+		 [26] 'Apron shelf on promontorium posterior to fenestra cochleae for entotympanic attachment'
+		 [27] 'Ventral process of promontorium'
+		 [28] 'Shape of the promontorium anterior extension'
+		 [29] 'Facet on promontorium indicative of ectotympanic contact'
+		 [30] 'Surface of the anterior medial promontorium or tympanic wing of basisphenoid'
+		 [31] 'Inferior petrosal sinus'
+		 [32] 'A deep well developed fossa or pit on the squamosal alisphenoid recording the contact with the anterior crus or anterior face of the ectotympanic'
+		 [33] 'Shelf between mastoid process and paroccipital process'
+		 [34] 'Extent of flange on basiocciptal lateral edge bordering auditory region'
+		 [35] 'Evidence on basisphenoid and basioccipital for marked medial inflation of the entotympanic'
+		 [36] 'Evidence of marked posterior inflation of the entotympanic entotympanic attached during life to paroccipital process or to extensive area posterior to the petrosal'
+		 [37] 'Fossa for the stapedius muscle'
+		 [38] 'Epitympanic wing of the petrosal forms ventral floor to the anterior medial corner of the fossa for the tensor tympani muscle'
+		 [39] 'Fossa for the tensor tympani muscle defined and deep excavating well dorsal of the level of the fenestra vestibuli'
+		 [40] 'Placement of middle lacerate foramen'
+		 [41] 'M1 a defined cingulum continuous around the lingual face of the protocone'
+		 [42] 'M1 protocone height relative to paracone'
+		 [43] 'M1 metastyle projects farther labially than parastyle'
+		 [44] 'M1 parastyle projects farther labially than metastyle'
+		 [45] 'M1 parastyle direction'
+		 [46] 'M1 size'
+		 [47] 'M1 size of posterior lingual cingular shelf at base of protocone'
+		 [48] 'M1 relative height of paracone and metacone'
+		 [49] 'M1 relative height of paraconule and metaconule'
+		 [50] 'M1 presence of hypocone'
+		 [51] 'M1 width of parastylar shelf'
+		 [52] 'Presence of M2'
+		 [53] 'Presence of M3'
+		 [54] 'P4 m1 carnassial shear'
+		 [55] 'P4 size of parastyle cusp'
+		 [56] 'P4 protocone'
+		 [57] 'P4 size of metastylar blade'
+		 [58] 'Posterior accessory cusps on P3'
+		 [59] 'm2 talonid morphology'
+		 [60] 'Palatine relative size'
+		 [61] 'Posterior width of palate versus width between canines'
+		 [62] 'Turbinal bones'
+		 [63] 'Posterior projection of nasals'
+		 [64] 'Jugal'
+		 [65] 'Anterior extent of palatine in orbit'
+		 [66] 'Postorbital constriction'
+		 [67] 'Posterior entrance of carotid artery into auditory capsule'
+		 [68] 'Entotympanic'
+		 [69] 'Ectotympanic contributes to external auditory meatal tube'
+		 [70] 'Ectotympanic septum'
+		 [71] 'Entotympanic septum'
+		 [72] 'Fenestra cochleae'
+		 [73] 'Malleus muscular process'
+		 [74] 'Malleus processus gracilis and anterior lamina'
+		 [75] 'Major a2 arterial shunt'
+		 [76] 'Major a4 arterial shunt'
+		 [77] 'Major anastomosis x'
+		 [78] 'i1'
+		 [79] 'P1'
+		 [80] 'P3 lingual cusp'
+		 [81] 'P4 metastyle'
+		 [82] 'P4 protocone position'
+		 [83] 'P4 hypocone'
+		 [84] 'p1 presence'
+		 [85] 'm1 talonid'
+		 [86] 'Lower molars'
+		 [87] 'M2 hypocone'
+		 [88] 'm3'
+		 [89] 'Baculum'
+		 [90] 'Scapula postscapular fossa'
+		 [91] 'Tail'
+		 [92] 'Scaphoid and lunate'
+		 [93] 'Hallux'
+		 [94] 'Femur third trocanter'
+		 [95] 'Cowper''s gland'
+		 [96] 'Prostate gland'
+		 [97] 'Kidneys'
+		 [98] 'Anal glands'
+		 [99] 'Terminal phalanges'
+	;
+	
+	STATELABELS
+		1
+		'broad rostral flange'
+		'small present on face'
+		'not present on face'
+		'orbital flange reduced to area around lacrimal foramen'
+		,
+		2
+		'lateral to canine'
+		'anterior to canine'
+		,
+		3
+		'elongate'
+		'round'
+		,
+		4
+		'positioned above P3'
+		'positioned above anterior edge of P4'
+		'positioned above mid posterior portion of P4'
+		,
+		5
+		'posterior to upper tooth row'
+		'anterior or equal to upper tooth row'
+		,
+		6
+		'opening through palatine'
+		'at maxilla palatine suture'
+		'opening through maxilla'
+		,
+		7
+		'parietal greater than frontal'
+		'parietal equal or subequal to frontal'
+		'frontal midline much longer than parietal'
+		,
+		8
+		'prominent'
+		'small reduced'
+		,
+		9
+		'well developed'
+		'reduced'
+		,
+		10
+		'simple process'
+		'laterally flattened thin but is distinct process'
+		'cupped around bulla process not distinct'
+		'absent'
+		,
+		11
+		'medially placed'
+		'more lateral external very near edge of skull'
+		,
+		12
+		'present'
+		'greatly reduced or missing.'
+		,
+		13
+		'forming a distinct process extending out farther than paroccipital process or subequal'
+		'blunt rounded does not protrude significantly more a swelling of the mastoid'
+		'thin plate no distinct process.'
+		,
+		14
+		'lateral ventral'
+		'ventral'
+		'lateral'
+		'none or only swelling.'
+		,
+		15
+		'Distant'
+		'close less than thediameter of the hypoglossal foramen away'
+		'conjoined with posterior lacerate foramen.'
+		,
+		16
+		'inline or within groove'
+		'anterior to groove.'
+		,
+		17
+		'present as a vacuity between the promontorium and the basioccipital'
+		'present as an individual foramen'
+		,
+		18
+		'posterior to mastoid tubercle'
+		'anterior subequal to mastoid tubercle'
+		,
+		19
+		'separated by at least the diameter of the alisphenoid canal'
+		'separated only by a thin wall'
+		'no alisphenoid canal present'
+		,
+		20
+		'facial nerve exposed ventrally'
+		'facial nerve partially embedded within tegmentympani and floored in anteromedial segment'
+		'facial nerve beneath a bony sheath that defines the fossafor tensor tympani muscle'
+		,
+		21
+		'promontorium isolated'
+		'promontorium in contact with basioccipital'
+		,
+		22
+		'mastoid tubercle formed by petrosal'
+		'mastoid tubercle formed by squamosal'
+		,
+		23
+		'lack of an anterior loop of the internal carotid artery'
+		'presence of the loop excavation in basisphenoid'
+		'presence of loop but extrabullar'
+		,
+		24
+		'absent'
+		'small'
+		'large well developed'
+		,
+		25
+		'internal carotidartery laterally positioned transpromontorial runs close to margin of fenestra cochlea presence ofa promontory artery groove for stapedial artery mayor may not be present'
+		'internal carotid artery transpromontorialbut medially positioned course far fromfenestra cochlea'
+		'internal carotid artery medial extrabullar inside a bony canal formed by the caudalentotympanic'
+		,
+		26
+		'absent'
+		'blunt surface presentposterior to fenestra cochleae but no extensive attachmentpossible'
+		'extended large area for attachment may roof posterior bullar chamber.'
+		,
+		27
+		'absent'
+		'present medially positionedon promontorium'
+		'present anteriorly positioned.'
+		,
+		28
+		'elongate apron extension tapers to a point anteriorly almondlikein appearance'
+		'elongate rounded anteriorly'
+		'blunt quickly truncating'
+		'elongate apron is broad flat extension not almond shaped and not blunt.'
+		,
+		29
+		'absent'
+		'present'
+		,
+		30
+		'smooth'
+		'roughenedsurface associated with attachment of rostral entotympanic or rostral entotympanic present.'
+		,
+		31
+		'inferior petrosal sinus small'
+		'inferior petrosal sinus greatly enlarged'
+		'excavation into basioccipitalextremely deep'
+		,
+		32
+		'absent may have slight shallow indentation'
+		'present well developed or bulla present andfully ossified.'
+		,
+		33
+		'laterally wide curved trough with smooth surface'
+		'laterally wide could have flat surface rugose orbulbous no smoothed out trough'
+		'very thin outsideedge could be raised'
+		'no shelf present'
+		,
+		34
+		'absent'
+		'small nascent'
+		'welldeveloped when compared to basal miacids .'
+		,
+		35
+		'absent'
+		'present inflation ofentotympanic pushing medially onto and over the basioccipital.'
+		,
+		36
+		'absent'
+		'present'
+		,
+		37
+		'borders tightly defined and anteriorly bound by the mastoid'
+		'general area ofmuscle insertion open less defined.'
+		,
+		38
+		'absent'
+		'present but relatively flat and horizontal'
+		'ventral floorpresent but not horizontal instead it forms a delicate tube the bony floor is not an extension of thepetrosal.'
+		,
+		39
+		'absent fossa for the tensor tympani muscle shallow not strongly defined'
+		'present defined and deep'
+		'shallow absent tensor tympani inserts oneustachian canal'
+		,
+		40
+		'foramen a vacuity not defined anteriorlynor posteriorly positioned directly anterior to petrosal'
+		'foramen anteriorly defined posteriorly bordered bypetrosal positioned equal or posterior to basisphenoid basioccipital suture'
+		'foramen defined anteriorly petrosal may be undefined posterior border foramenpositioned in basisphenoid or edge of alisphenoid just anterior to basisphenoid basioccipital suture'
+		'foramen defined anteriorly and posteriorly completelybordered by basisphenoid foramen positioned far anteriorto basisphenoid basioccipital suture'
+		,
+		41
+		'absent'
+		'complete cingulum present'
+		'anterior segment of cingulae absent or smallerthan posterior cingulae'
+		,
+		42
+		'protocone shorter than paracone'
+		'protocone equal or subequalto height of paracone.'
+		,
+		43
+		'present'
+		'absent metastyle equal or projects less labially than parastyle..'
+		,
+		44
+		'absent'
+		'present'
+		,
+		45
+		'buccally with anterior direction'
+		'buccally'
+		'no parastyle present'
+		,
+		46
+		'well developed'
+		'markedly reduced.'
+		,
+		47
+		'posterior lingual cingular shelf equal or subequal to anterior cingulum'
+		'posterior lingual cingular shelf more pronounced larger than anterior cingulum.'
+		,
+		48
+		'paracone equal or subequal to metacone'
+		'paracone greater than metacone.'
+		,
+		49
+		'paraconule greater than metaconule'
+		'paraconule equal or subequal to metaconule'
+		'both absent'
+		'metaconule enlarged greater than paraconule.'
+		,
+		50
+		'absent'
+		'present distinct cusp'
+		'present formed by swelling of entire cingulumridge'
+		,
+		51
+		'lack of a shelf'
+		'broad'
+		'narrow consisting mainly of ridge.'
+		,
+		52
+		'present'
+		'reduced to half size of M1 or more'
+		'absent'
+		,
+		53
+		'present'
+		'absent'
+		,
+		54
+		'absent'
+		'present'
+		,
+		55
+		'absent'
+		'well developed defined cusp'
+		'present as bulge on cingulum reduced.'
+		,
+		56
+		'large well developed'
+		'reduced or absent'
+		,
+		57
+		'short'
+		'elongate'
+		,
+		58
+		'one'
+		'two'
+		'none'
+		,
+		59
+		'high trigonid with extremely elongate talonid due to large hypoconulid tooth elongateoval outline'
+		'talonid not elongate tooth oval outline no enlarged hypoconulid'
+		'low trigonid extremely elongate with low well developed talonid cusps'
+		'absent'
+		,
+		60
+		'midline length of palatine lessthan midline length of maxilla'
+		'midline length greaterthan midline length of maxilla'
+		,
+		61
+		'wider than width at canines'
+		'nearly equal resulting in nearly parallel tooth rows'
+		,
+		62
+		'simple development of maxilloturbinals in nasal cavity'
+		'maxilloturbinals large and branching excluding nasoturbinals from narial opening.'
+		,
+		63
+		'nasals terminate anterior to or in extreme anterior region of orbit projecting at most slightly between frontals'
+		'nasals project deeply between frontals far posterior of anterior orbital rim'
+		'nasals with W shaped termination'
+		,
+		64
+		'jugal reaches lacrimal or is separated from itby only thin sliver of maxilla'
+		'jugal widely separated from lacrimal maxilla broadly laps posteriorly over anterior orbital rim'
+		,
+		65
+		'broadly contacts lacrimal'
+		'fails to contact lacrimal.'
+		,
+		66
+		'just anterior of frontoparietal suture near posterior margin of frontal'
+		'braincase expanded with frontals making much greater contribution, fronto parietal suture located more anteriorly in frontal.'
+		,
+		67
+		'posterior entry artery not enclosed in osseoustube'
+		'posterior entry artery enclosed in tube'
+		'anteriorentry artery enclosed in osseous tube'
+		'anteriorentry artery not enclosed in tube'
+		,
+		68
+		'fails to ossify or is only weakly attached to auditory capsule'
+		'ossified at least partially and firmly fused to the skull.'
+		,
+		69
+		'no'
+		'yes'
+		,
+		70
+		'absent'
+		'present'
+		,
+		71
+		'absent'
+		'present'
+		,
+		72
+		'approximately equal in size to fenestra ovalis cochlear fossula not developed'
+		'at least three times the area of oval window cochlear fossula well developed.'
+		,
+		73
+		'present'
+		'absent'
+		,
+		74
+		'well developed'
+		'reduced'
+		,
+		75
+		'small'
+		'large intracranialrete'
+		,
+		76
+		'absent'
+		'present'
+		'present intracranial rete'
+		,
+		77
+		'absent'
+		'present'
+		,
+		78
+		'present'
+		'absent'
+		,
+		79
+		'present'
+		'absent'
+		,
+		80
+		'absent'
+		'present'
+		,
+		81
+		'V or slit shaped notch'
+		'absent'
+		,
+		82
+		'medial or posterior to paracone'
+		'anterior to paracone'
+		,
+		83
+		'absent'
+		'present'
+		,
+		84
+		'present'
+		'absent'
+		,
+		85
+		'present'
+		'absent'
+		,
+		86
+		'subequal in size'
+		'm1 much larger than m 3 and progress decrease in size from m1 to m3'
+		,
+		87
+		'absent'
+		'present'
+		,
+		88
+		'present'
+		'absent'
+		,
+		89
+		'Small and simple or absent'
+		'long and stylized'
+		,
+		90
+		'absent'
+		'present'
+		,
+		91
+		'long'
+		'reduced'
+		,
+		92
+		'unfused'
+		'fused'
+		,
+		93
+		'present'
+		'greatly reduced or absent'
+		,
+		94
+		'present'
+		'absent'
+		,
+		95
+		'present'
+		'absent'
+		,
+		96
+		'small vestigial'
+		'large ampulla bilobed'
+		,
+		97
+		'simple'
+		'conglomeratic'
+		,
+		98
+		'simple'
+		'enlarged and having enlarged anal sac'
+		,
+		99
+		'fissured'
+		'simple'
+		,
+	;
+	
+	MATRIX
+	'Leptictis'		                        11??100110001010000?100000000001000000010?00000?000000?000001?0000000000?????000?0000000???0?0?????
+	'Hyaenodon'		                        00?00000??0001000???0??00?0?????3000?0?00????0002000100100?00000000000000000000{0,1}0000000000000000000
+	'Thinocyon sp'		                     0?00??000000000100?100000000000000000000000000000000100100000000000000000000000{0,1}0000000000000000000
+	'Echinosorex gymnurus'		             11120?211000020000021000000100010000000111000010110000000210100000000000?????00110100010??0000?????
+	'Erinaceus europaeus'		              0101001100001000100110000000000110100002100000102100000002101?0000010000?????01100110110??1100?????
+	'Oodectes herpestoides'		            1011100000001000110210010001010000000010001000010010010002100?0000000??0?????00001000100??0?00????1
+	'Vulpavus profectus'		               11101??10000100101100100000101000000101010100011111001200210??0000000??0?????00001000110??0000????1
+	'Vulpavus ovatus'		                  11111100000010001101100101010100?0000011111000101010012002?0??0000000??0?????00001000100??0000????1
+	'Miacis parvivorus'		                ?011??????0013??0101100000010100000?00101011001100100101121????00?000??0?????00001000100??0?0?????1
+	'Dawsonicyon isami'		                ?011???0??00????????????0???????????????1011001102100121101??????0???????????00001000110??00?0?????
+	'Miacis sylvestris'		                ??001??00?0011010112101100010101010000101011100110100101121????00?000??0?????00001000100??0?0?????1
+	'Procynodictis vulpiceps'		          1?10??0000001111011?1?1100010101010000101011101110100101111????00?000??0?????00001000100??0?0?????1
+	'Miacis uintensis'		                 1??0???0000011?111121?110001010001000?11?01100?1???0?1011?1????0?00?0??0????????010?01?0??0??0?????
+	'Tapocyon robustus'		                101001?00000100101121010010101000001001?2011100110210101101?0????0000??0?????00001000100??0?0?????1
+	'Quercygale'		                       1001120000001001?10110110101010000000010101110010011112110100?0000000??0?????00000000101???????????
+	'Viverravus minutus'		               ??0101?1??10?0000002100000000000210010010111001020?011?01?0?0??000000??0?????0?001000101??0?0?????1
+	'Protictis schaffi'		                ?10101?110100000?002100000000000010000010111000?001011101?00??000?000??0?????00001000101??0?0?????1
+	'Viverravus acutus'		                ??0001?11010000000?2101000000000?1001001011100000010111011000100?0000000?????00001000101??0??0?????
+	'Viverravus gracilis'		              ????0??10010000100??1?00000000000100100101110010202011101?0?0??000000??0?????0?001000101??0?0?????1
+	'Didymictis vancleveae'		            ????0??1100002000?0?1000000?0010011010000111000110101110100????000000??0?????0?0010?0101??0000????1
+	'Hesperocyon gregarious'		           101111?110001211100210112103010112000111201110111200110111100?0001010010?????00001000100??0?00????1
+	'Otarocyon'		                        101111100000101110021?2122030101120101112011001112001121101????????????????????????????????????????
+	'Daphoenus sp.'		                    10010{0,1}01000013110012101{0,1}?101012111011?101011001112101101101?1100011{0,1}1000?????00001000110?10101????1
+	'Miacis cognitus'		                  10100??1??001311100210102101010011001010201100111210010112?00?000?000??0?????0000100010???0?0?????1
+	'Canis latrans'		                    100111110000101110121?2{0,1}210301011201011120111011120011011010010001010010000110000100011010010100001
+	'Mephitis mephitis'		                10121211101002001?221?02210301011101?11121111010201211001211010001211000000010101101010110010100011
+	'Gulo gulo'		                        201101111000000110221?02210301011201011111111110201211011211010001211000000110001100010110010100011
+	'Ursus'		                            300201110000121000121?10210301211200?11110102010200011000211110001111000100000000010011011110100101
+	'Otariidae'		                        2012022113?113010?021?002?0??1111200??211??????????011???21011211111100111???100???0?0?110110100101
+	'Pteronarctos goedertae'		           201?0221100112011?021??02?0?0?111101?101??1110?12011110110100?2?1111100101???1000100?101??1101????1
+	'Procyon lotor'		                    201201111000000110221?02210301011200011121102010310011100221010001211000000110000110010111010100001
+	'Ailurus'		                          301201?10000120010121?01210301011200011121102010310011100021010001111000000000110110011111010100001
+	'Hoplophoneus primaevus'		           1?1112101001010100011?10?10211110210?01?00111101202211111????00001010010?????0?001011101?00101????1
+	'Dinictis'		                         1010121011010101000{1,2}1?00?10211?10210?0100111110120221111101??00001010010?????0?001011101?00101????1
+	'Nandinia binotata'		                201002100101130100021000111201011200001201111000201111011010000001300000000100000100010100010111001
+	'Hyaena hyaena'		                    2000021002?1232110021?00122201012211?01301111000201111101010000001311110001200000100110100010111011
+	'Civettictis civetta'		              201{0,1}02110201232100021?00122211012201001201111001101011101010000001310110000100000100010100010111001
+	'Felis concolor'		                   200001000201012101221?0012020101211100130111110?201211111030000001310110001200100101110100011111001
+	'Herpestes'		                        100002101201232100021?00222201012201?21301110000202111101011000001211110000100010100010100010111011
+	'Zodiolestes'		                      10{0,1}1010100001101102210122103011112000111201110112011110112101?0001210000?????00001000111??01?0????1
+	'Palaeoprionodon'		                  20101211?1012311000111001212110121000012???????????1112?1?1?0?000?300??0?????00001001101??0???????1
+	'Stenogale'		                        2?10020101??13110002110012221101221000130111110120121111121?0?000?300??0?????00001001101??0???????1
+	'Proailurus'		                       ?01002??010113110002110012221101221100130111110120121111111?0?000?300??0?????00001001101??0???????1
+	'Herpestides antiquus'		             2010020002011311000210011212110122110012211110012011111?10??0?0001210110?????00101000101??0???????1
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 99;
+ENDBLOCK;

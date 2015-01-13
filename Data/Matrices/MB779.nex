@@ -1,0 +1,958 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 05.26.37 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=51;
+	TAXLABELS
+		'Anadianomys declivis'
+		'Baluchimys ganeshapher'
+		'Baluchimys krabiense'
+		'Birbalomys spp.'
+		'Branisamys luribayensis'
+		'Bugtimys zafarullahi'
+		'Chapattimys wilsoni'
+		'Confiniummys sidiki'
+		'Diamantomys luederitzi'
+		'Eobranisamys romeropittmanae'
+		'Eosallamys paulacoutoi'
+		'Gaudeamus aegyptius'
+		'Gaudeamus aslius'
+		'Gaudeamus cf. aslius'
+		'Gaudeamus hylaeus'
+		'Hodsahibia spp.'
+		'Hystrix depereti'
+		'Hystrix primigenia'
+		'Incamys spp.'
+		'Lindsaya derabugtiensis'
+		'Lophibaluchia spp.'
+		'Metaphiomys beadnelli'
+		'Ottomania proavita'
+		'Paraphiomys spp.'
+		'”Paraphiomys” simonsi'
+		'Paraulacodus indicus'
+		'Petrokozlovia notos'
+		'Phiocricetomys minutus'
+		'Phiomys'
+		'Phiomys paraphiomyoides'
+		'Phiomys andrewsi'
+		'Phiomys hammudai'
+		'”Phiomys” lavocati'
+		'”Phiomys aff. paraphiomyoides”'
+		'Platypittamys brachyodon'
+		'Protophiomys aegyptensis'
+		'Protophiomys algeriensis'
+		'Protophiomys durattalahensis'
+		'Protophiomys aff. durattalahensis'
+		'Sacaresia moyaeponsi'
+		'Sallamys pascuali'
+		'Talahphiomys libycus'
+		'Talahphiomys lavocati'
+		'Thryonomys swinderianus'
+		'Tsaganomys altaicus'
+		'Waslamys attiai'
+		'Yuomys cavioides'
+		'New genus and species 3 (l-41)'
+		'New genus and species 2 (l-41)'
+		'New genus and species 1 (l-41)'
+		'New genus and species (quarry a & e)'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=118;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123456789EF";
+
+	CHARLABELS
+		 [1] 'infraorbital foramen'
+		 [2] '2. mandible'
+		 [3] 'I2/i2) enamel disposition'
+		 [4] '4 Hunter-Schreger bands'
+		 [5] 'prisms per Hunter-Schreger band'
+		 [6] 'IPM crystallites arrangement in PI'
+		 [7] 'IPM thickness'
+		 [8] 'percentage of PE thickness'
+		 [9] 'band inclination relative to EDJ'
+		 [10] 'dp4 anterior cingulid'
+		 [11] 'dp4 anteroconid'
+		 [12] 'dp4 metaconid/protoconid position'
+		 [13] 'dp4 mesolophid'
+		 [14] 'dp4 posterior arm of metaconid (metastylar fold)'
+		 [15] 'dp4 metalophulid I'
+		 [16] 'dp4 metalophulid II'
+		 [17] 'dp4 talonid width'
+		 [18] 'dp4 mesostylid'
+		 [19] 'dp4 mesoconid'
+		 [20] 'dp4 hypoconulid'
+		 [21] 'dp4 ectolophid'
+		 [22] 'dp4 anterior arm of hypoconid'
+		 [23] 'dp4 retention'
+		 [24] 'p4 talonid'
+		 [25] 'p4 dominant cusps'
+		 [26] 'p4 hypolophid'
+		 [27] 'p4 metaconid-protoconid compression'
+		 [28] 'p4 metaconid/protoconid position'
+		 [29] 'p4 hypoconulid'
+		 [30] 'p4 mesoconid'
+		 [31] 'p4 ectolophid'
+		 [32] 'p4 metalophulid I'
+		 [33] 'p4 metalophulid II'
+		 [34] 'p4 anterior cingulid'
+		 [35] 'p4 posterior arm of metaconid (metastylar fold)'
+		 [36] 'p4 size'
+		 [37] 'm1 area'
+		 [38] 'm1-2 anterolophid (anterocingulid)'
+		 [39] 'm1-2 posterior arm of metaconid'
+		 [40] 'm1-2 anterior arm of molar entoconid'
+		 [41] 'm1-2 molar paraconid'
+		 [42] 'm1-2 anteroconid'
+		 [43] 'm1-2 mesostylid'
+		 [44] 'm1-2 ectostylid'
+		 [45] 'm1-2 mesoconid'
+		 [46] 'm1-2 ectolophid'
+		 [47] 'm1-2 mesolophid'
+		 [48] 'm1-2 protoconid/metaconid position'
+		 [49] 'm1-2 metaconid/protoconid height'
+		 [50] 'm1-2 direction of the posterior arm of the protoconid'
+		 [51] 'm1-2 paralophid-metaconid connection'
+		 [52] 'm1-2 metalophulid I'
+		 [53] 'm1-2 metalophulid II (protolophid = posterior arm of protoconid)'
+		 [54] 'm1-2 hypolophid'
+		 [55] 'm1-2 anterior arm of hypoconid'
+		 [56] 'm1-2 entoconid/hypoconid position'
+		 [57] 'm1-2 hypoconulid'
+		 [58] 'm1-2 entoconid-hypoconid connection by posterolophid'
+		 [59] 'm3) hypoconulid'
+		 [60] 'm3) entoconid-hypoconid twinning'
+		 [61] 'molar trigonid height'
+		 [62] 'molar trigonid width'
+		 [63] 'size of m3) relative to m2'
+		 [64] 'P2'
+		 [65] 'P3 size/presence'
+		 [66] 'DP3 size/presence'
+		 [67] 'dp4 anterocingulum'
+		 [68] 'dp4 labial pericingulum'
+		 [69] 'dp4 protoloph'
+		 [70] 'dp4 metaconule'
+		 [71] 'dp4 anterior arm of hypocone'
+		 [72] 'dp4 metaloph'
+		 [73] 'dp4 endoloph'
+		 [74] 'dp4 mure'
+		 [75] 'dp4 mesolophule'
+		 [76] 'upper DP4 retention'
+		 [77] 'upper P4 size'
+		 [78] 'P4 protoconule'
+		 [79] 'P4 metaconule'
+		 [80] 'P4 protoloph'
+		 [81] 'P4 metaloph'
+		 [82] 'P4 metacone'
+		 [83] 'P4 hypocone'
+		 [84] 'P4 mesostyle'
+		 [85] 'P4 metacone-paracone compression'
+		 [86] 'P4 anteroloph'
+		 [87] 'M1-2 hypocone'
+		 [88] 'M1-2 hypocone in relation to protocone'
+		 [89] 'M1-2 mesostyle'
+		 [90] 'M1-2 parastyle'
+		 [91] 'M1-2 anterostyle'
+		 [92] 'M1-2 enterostyle'
+		 [93] 'M1-2 anteroloph'
+		 [94] 'M1-2 metaconule'
+		 [95] 'M1-2 metaconule position'
+		 [96] 'M1-2 metaconule-hypocone connection'
+		 [97] 'M1-2 anterior arm of hypocone'
+		 [98] 'M1-2 mesolophule'
+		 [99] 'M1-2 protoconule'
+		 [100] 'M1-2 protoloph connection to protocone'
+		 [101] 'M1-2 anteroloph-protoloph connection (with a lingual anteroloph)'
+		 [102] 'M1 metaloph connection'
+		 [103] 'M2 metaloph connection'
+		 [104] 'M3 metaloph connection'
+		 [105] 'M3 angle between protoloph and metaloph'
+		 [106] 'M1 molar endoloph'
+		 [107] 'M2 molar endoloph'
+		 [108] 'M3 molar endoloph'
+		 [109] 'M1-2 metaconule-protocone connection (lingual metaloph)'
+		 [110] 'M1-2 mure'
+		 [111] 'M1-2 pericingulum'
+		 [112] 'M1-2 length/width proportions'
+		 [113] 'M1-2 posterior arm of paracone'
+		 [114] 'M1-2 anterior arm of the metacone'
+		 [115] 'taeniodont pattern on upper and lower molars'
+		 [116] 'molar cuspids/crests'
+		 [117] 'molar cuspids'
+		 [118] 'enamel wrinkling on molars'
+	;
+	
+	STATELABELS
+		1
+		'protrogomorphous'
+		'hystricomorphous'
+		'State 2'
+		,
+		2
+		'sciurognathous;'
+		'hystricognathous'
+		,
+		3
+		'surrounds incisor'
+		'does not totally surround incisor'
+		'limited to buccal surface'
+		,
+		4
+		'absent'
+		'present'
+		,
+		5
+		'1-3'
+		'0/2'
+		'4-6'
+		'2/4'
+		'7 or more'
+		,
+		6
+		'sheath surrounding prisms'
+		'0/2'
+		'parallel'
+		'2/4'
+		'acute angle, anastomosing'
+		'4/6'
+		'perpendicular'
+		,
+		7
+		'thick'
+		'thin'
+		,
+		8
+		'PE<=PI;'
+		'PE reduced (<25%);'
+		'PE lacking'
+		,
+		9
+		'0 degrees'
+		'>10 degrees'
+		'10-19 degrees;'
+		'20-29 degrees'
+		'30-39 degrees;'
+		'40-49 degrees'
+		'50 degrees or >'
+		,
+		10
+		'indistinct;'
+		'0/2;'
+		'low and weakly developed'
+		'2/4;'
+		'linguolabially well-developed'
+		,
+		11
+		'absent'
+		'weak'
+		'strong'
+		,
+		12
+		'opposed'
+		'protoconid posterior'
+		,
+		13
+		'absent'
+		'0/2'
+		'weakly developed;'
+		'2/4'
+		'reaches the lingual side'
+		,
+		14
+		'absent'
+		'0/2'
+		'weak and low'
+		'2/4'
+		'well-developed and high'
+		,
+		15
+		'absent;'
+		'0/2'
+		'incomplete, medially interrupted'
+		'2/4'
+		'complete'
+		,
+		16
+		'absent;'
+		'incomplete, medially interrupted'
+		'complete'
+		,
+		17
+		'as wide as trigonid'
+		' slightly wider than trigonid;'
+		'slightly wider than trigonid;'
+		'much wider than trigonid'
+		,
+		18
+		'absent '
+		'weak '
+		'strong'
+		,
+		19
+		'absent;'
+		'0/2'
+		'weak'
+		'2/4'
+		'strong'
+		,
+		20
+		'absent'
+		'weak'
+		'strong'
+		,
+		21
+		'absent;'
+		'anteriorly interrupted (unconnected to protoconid);'
+		'complete'
+		,
+		22
+		'strong'
+		'0/2'
+		'weak'
+		'2/4'
+		'absent'
+		,
+		23
+		'4 replaces dp4'
+		'0/2;'
+		'dp4 retained'
+		,
+		24
+		'narrow'
+		'<= trigonid'
+		'slightly wider than trigonid;'
+		'much wider than trigonid'
+		,
+		25
+		'metaconid>protoconid'
+		'metaconid=protoconid;'
+		'protoconid variably>metaconid'
+		,
+		26
+		'absent'
+		'0/2'
+		'present'
+		,
+		27
+		'absent'
+		'present'
+		,
+		28
+		'opposed'
+		'protoconid posterior'
+		,
+		29
+		'minute or absent'
+		'weak'
+		'strong'
+		,
+		30
+		'absent'
+		'weak'
+		'strong'
+		,
+		31
+		'absent'
+		'0/2'
+		' incomplete, anteriorly interrupted'
+		'incomplete, anteriorly interrupted'
+		'2/4'
+		'complete, reaches protoconid from mesoconid'
+		,
+		32
+		'absent'
+		'0/2'
+		'incomplete, unconnected to metaconid'
+		'2/4'
+		'complete'
+		,
+		33
+		'absent'
+		'incomplete, unconnected to metaconid'
+		'complete'
+		,
+		34
+		'absent'
+		'0/2'
+		'low, lingually limited'
+		,
+		35
+		'absent'
+		'weak and low;'
+		'well-developed and high'
+		,
+		36
+		'p4 >= m1;'
+		'p4'
+		,
+		37
+		'0-2 mm2;'
+		'0/2;'
+		'2-4 mm2'
+		'2/4;'
+		'4-6 mm2;'
+		'4/6;'
+		'6-8 mm2;'
+		'6/8;'
+		'> 8 mm2'
+		,
+		38
+		'absent'
+		'0/2'
+		'incipient, low'
+		,
+		39
+		'absent;'
+		'0/2'
+		'small (metastylid'
+		'2/4'
+		'high metastylid (connected tomesostylid)'
+		'high metastylid (connected to'
+		'mesostylid'
+		')'
+		,
+		40
+		'absent'
+		'0/2'
+		'small'
+		'2/4'
+		'high (connected to mesostylid)'
+		,
+		41
+		'present'
+		'reduced'
+		'absent'
+		,
+		42
+		'absent'
+		'incipient in anterolophid'
+		'well-developed'
+		,
+		43
+		'absent'
+		'0/2'
+		'weak'
+		'2/4'
+		'strong'
+		,
+		44
+		'absent'
+		'0/2'
+		'present'
+		,
+		45
+		'small to absent'
+		'0/2'
+		'simple cuspid'
+		,
+		46
+		'absent'
+		'0/2'
+		'anteriorly incomplete'
+		'2/4'
+		'complete, reaches protoconid'
+		,
+		47
+		'absent'
+		'variable incipient'
+		,
+		48
+		'opposed'
+		'0/2'
+		'protoconid posterior'
+		,
+		49
+		'protoconid < metaconid'
+		'protoconid = metaconid'
+		'protoconid > metaconid'
+		,
+		50
+		'directed toward metaconid;'
+		'oblique, extending backward'
+		,
+		51
+		'absent'
+		'present'
+		,
+		52
+		'complete (ancestral paralophid)'
+		'complex (antero-labial part of paralophid plus lingual part of protolophid);'
+		'weak to absent;'
+		'remains of the antero- labial part of paralophid, lingual part of paralophid or neoformation'
+		,
+		53
+		'well-developed'
+		'0/2'
+		'weak'
+		'2/4'
+		'small to absent'
+		,
+		54
+		'absent;'
+		'0/2;'
+		'low, interrupted labially'
+		'2/4;'
+		'well-developed'
+		,
+		55
+		'absent;'
+		'0/2'
+		'normal (simple cuspid)'
+		'2/4'
+		'strong'
+		,
+		56
+		'opposed;'
+		'0/2;'
+		'entoconid anterior'
+		,
+		57
+		'strong, inflated;'
+		'0/2;'
+		'''normal'' (simple cuspid)'
+		'2/4;'
+		'reduced, submerged into the posterolophid '
+		'4/6;'
+		'absent'
+		,
+		58
+		'present'
+		'0/2'
+		'absent'
+		,
+		59
+		'forms a transverse third lobe;'
+		'third lobe narrow'
+		'third lobe incorporated into the posterolophid'
+		,
+		60
+		'absent'
+		'present'
+		,
+		61
+		'higher than talonid'
+		'0/2'
+		'same height as talonid'
+		,
+		62
+		'narrower than talonid;'
+		'same as talonid'
+		,
+		63
+		'm3 > m2'
+		'0/2'
+		'm3 = m2'
+		'2/4'
+		'm3 < m2'
+		,
+		64
+		'present'
+		'absent'
+		,
+		65
+		'present;'
+		'reduced'
+		'absent'
+		,
+		66
+		'present'
+		'reduced'
+		'absent'
+		,
+		67
+		'weak;'
+		'low and mesiodistally widened;'
+		'high'
+		,
+		68
+		'present'
+		'0/2'
+		'absent'
+		,
+		69
+		'absent'
+		'present'
+		,
+		70
+		'well developed'
+		'0/2;'
+		'submerged to the anterior arm of the hypocone;'
+		'2/4;'
+		'indistinct'
+		,
+		71
+		'absent'
+		'present'
+		,
+		72
+		'connected to metaconule;'
+		'0/2'
+		'connected on the anterior arm of the hypocone'
+		'2/4'
+		'turned posteriorly to join posteroloph;'
+		'4/6'
+		'submerged into posteroloph (or absent);'
+		'connected to metaconule and posteroloph;'
+		'0/7'
+		,
+		73
+		'absent'
+		'present'
+		,
+		74
+		'absent'
+		'0/2'
+		'incipient'
+		'2/4'
+		'complete'
+		,
+		75
+		'absent'
+		'0/2'
+		'present'
+		,
+		76
+		'P4 replaces DP4'
+		'0/2'
+		'DP4 retained'
+		,
+		77
+		'P4>=M1'
+		'P4<M1;'
+		'minute;'
+		'absent'
+		,
+		78
+		'weak'
+		'indistinct'
+		,
+		79
+		'strong;'
+		'0/2'
+		'weak'
+		'2/4'
+		'indistinct'
+		,
+		80
+		'absent;'
+		'incomplete (lingual protoloph absent)'
+		'complete'
+		,
+		81
+		'absent;'
+		' incomplete (lingual metaloph absent);'
+		'incomplete (lingual metaloph absent);'
+		'complete'
+		'2/4'
+		'submerged in posteroloph'
+		'0/1'
+		,
+		82
+		'minute to absent'
+		'weak '
+		'strong'
+		,
+		83
+		'minute to absent'
+		'0/2'
+		'weak'
+		'2/4'
+		'strong'
+		,
+		84
+		'absent'
+		'0/2'
+		'weak'
+		'2/4'
+		'strong'
+		,
+		85
+		'present'
+		'absent'
+		,
+		86
+		'absent'
+		'0/2'
+		'present'
+		,
+		87
+		'absent;'
+		'0/2'
+		'weak'
+		'2/4'
+		'strong'
+		,
+		88
+		'more lingual than protocone'
+		'0/2;'
+		'same level as protocone;'
+		'2/4'
+		'more labial'
+		,
+		89
+		'absent'
+		'0/2'
+		'weak'
+		'2/4'
+		'large'
+		,
+		90
+		'absent'
+		'small'
+		'well-developed'
+		,
+		91
+		'absent'
+		'0/1'
+		'weak'
+		,
+		92
+		'absent'
+		'weak'
+		'strong'
+		,
+		93
+		'absent'
+		'0/2'
+		'low and isolated from the protocone'
+		'2/4'
+		'high andconnected to the protocone'
+		'high and'
+		'connected'
+		'to'
+		'the'
+		'protocone'
+		,
+		94
+		'strong, inflated'
+		'0/2;'
+		'reduced'
+		'2/4;'
+		'minute to indistinct'
+		,
+		95
+		' running onto metacone from protocone;'
+		'running onto metacone from protocone;'
+		'central;'
+		'submerged into the mure'
+		,
+		96
+		'absent'
+		'present'
+		,
+		97
+		'absent'
+		'weakly developed;'
+		'well developed, generally strongly connectedto the metaconule'
+		'well developed, generally strongly connected'
+		'to'
+		'the'
+		'metaconule'
+		,
+		98
+		'absent;'
+		'0/2'
+		'incipient from metaconule;'
+		'2/4'
+		'reaches labial side'
+		,
+		99
+		'strong, inflated'
+		'reduced'
+		'submerged in the protoloph to absent'
+		,
+		100
+		'strong'
+		'0/2'
+		'weak'
+		'2/4'
+		'absent'
+		,
+		101
+		'absent'
+		'present'
+		,
+		102
+		'connected to metaconule'
+		'0/2'
+		'connected on the anterior arm of the hypocone;'
+		'2/4'
+		'turned posteriorly to join posteroloph'
+		'4/6'
+		'submerged into posteroloph (or absent);'
+		'connected to metaconule and posteroloph;'
+		'0/7'
+		,
+		103
+		'connected to metaconule'
+		'0/2'
+		'connected on the anterior arm of the hypocone;'
+		'2/4'
+		'turned posteriorly to join posteroloph;'
+		'4/6'
+		'submerged into posteroloph (or absent);'
+		' connected to metaconule and posteroloph;'
+		'connected to metaconule and posteroloph;'
+		'0/7'
+		,
+		104
+		'connected to metaconule;'
+		'0/2;'
+		'2/4'
+		'New state'
+		'turned posteriorly to join posteroloph;'
+		'4/6'
+		'submerged into posteroloph (or absent);'
+		'connected to metaconule and posteroloph;'
+		'0/7'
+		'New state'
+		'New state[state 9]'
+		,
+		105
+		'0-30;'
+		'0/2;'
+		'30-60;'
+		'2/4;'
+		'60-90;'
+		'metaloph submerged into posteroloph;'
+		'turned posteriorly to join posteroloph'
+		,
+		106
+		'present'
+		'0/2'
+		'absent'
+		,
+		107
+		'present'
+		'0/2'
+		'absent'
+		,
+		108
+		'present'
+		'0/2'
+		'absent'
+		,
+		109
+		'absent'
+		'0/2'
+		'present'
+		,
+		110
+		'absent;'
+		'0/2'
+		'incipient'
+		'2/4'
+		'complete'
+		,
+		111
+		'present'
+		'absent'
+		,
+		112
+		'length > width '
+		'0/2;'
+		'length = or < width'
+		,
+		113
+		'absent;'
+		'0/2'
+		'weakly developed'
+		'2/4;'
+		'high (connected to the mesostyle)'
+		,
+		114
+		'absent;'
+		'0/2'
+		'weakly pronounced'
+		'2/4;'
+		'high (connected to the mesostyle)'
+		,
+		115
+		'absent'
+		'present'
+		,
+		116
+		'bunodont;'
+		'0/2'
+		'crests present but low;'
+		'2/4'
+		'lophodont'
+		,
+		117
+		'sharpened;'
+		'inflated'
+		,
+		118
+		'absent'
+		'present'
+		,
+	;
+	
+	MATRIX
+	'Anadianomys declivis'		                          ??2???????????????????0212001044201120202010000010102440202021?1???????????0110212201?42212022001020000??00?2012000200
+	'Baluchimys ganeshapher'		                        ??2??4???1100302100220??????????????224220200400101024422?202131??1210061000??31222012?20120401120200?7??00?0012330200
+	'Baluchimys krabiense'		                          ??2114113????????????????????????????2422020040010101442202021?1???????????0113222301224212042012420000000000012220200
+	'Birbalomys spp.'		                               10211000021104022121200212001144102101422020230010102440122021011?1100061000110222421?40212020000010000030002012200200
+	'Branisamys luribayensis'		                       112?????????4???112020021200004400108040202004001010041062202141?1?????????0114222421244222044212424047462220412001400
+	'Bugtimys zafarullahi'		                          ?1212511??????????????021100004022216240200004021010044220202101211211100020113222201244412042112420022202220212400401
+	'Chapattimys wilsoni'		                           10210000141022021021200212001040212120422020121000102440022021?1???????????0100212321240212020000010000030002012200201
+	'Confiniummys sidiki'		                           ?????????0210020100220001000000000012222211004001010244220202121???????????021400000104421203411242000?000000012100300
+	'Diamantomys luederitzi'		                        11212211222104411021202?????????????8220200024021110444242202121112212140422??????????444220442?242004???2??0412400400
+	'Eobranisamys romeropittmanae'		                  ?????????0104042112010??????????????2040202004001010042062202121??????????????????????43322044212424044462220412001400
+	'Eosallamys paulacoutoi'		                        ?????????00040421200200212000040200140402020040010100442602021?????????????0114232201243322044212420044462220412000400
+	'Gaudeamus aegyptius'		                           1121?4???0004042123123021000000300?120412030040011104401612021412??????????0114102311242222044212024066652220412041400
+	'Gaudeamus aslius'		                              112??????00044421231230210000013102130432031040011102430612021412??????????0114152301242222044212023066652210412340400
+	'Gaudeamus cf. aslius'		                          ?12???????????????????021100004321002043203004001110243161202141??????????????????????????????????????????????????0400
+	'Gaudeamus hylaeus'		                             112??????00000421231240211000003102130412031040011103400612021412??????????0114152301242322044212024066652220412041400
+	'Hodsahibia spp.'		                               ??21241034202422124220021100014021112220200014121010144210202121??1211100020110212221244112041112420022202220112320401
+	'Hystrix depereti'		                              ?121220140004430120023031200024400008040203004001?10441061202140???????????00??2324412433??044212420144700020412000401
+	'Hystrix primigenia'		                            ?12122014?????????????031200024400008040203004001?10444062202140???????????00??2324412443??044212420077700000312000401
+	'Incamys spp.'		                                  1121141150?044?2112024021200002210018044203004001010440262202141?1?????????0114141441244222044212424055552220412201400
+	'Lindsaya derabugtiensis'		                       ??2??????4110302110220??????????????0220202004001010244222202131??12100610001142222012422020400111200000?0000012220200
+	'Lophibaluchia spp.'		                            ??2??????4010301102220??????????????2241202004021010144222202131??121114001???????????44212043012320044462220012220400
+	'Metaphiomys beadnelli'		                         11211611621012021001202?????????????4220200004021110144221202121?12212140422??????????42212044212320044002220412200400
+	'Ottomania proavita'		                            ?????????1210002100220000000000001012230212004101110044222201121?1021003102021400000104421?031112420008100220012100400
+	'Paraphiomys spp.'		                              11212611442104001001202?????????????2220220004021010444240202121222212140422??????????42212044212220045652220412200400
+	'”Paraphiomys” simonsi'		                     11???????201030?1001202?????????????8220220104021110444242202101?12212140402??????????42112040112320044??22?041220030?
+	'Paraulacodus indicus'		                          ??2??????41104001101222????????????182002200040210104422622?21?1??2212160402??????????42212044212020066652220412400400
+	'Petrokozlovia notos'		                           1021?????????????????00210012240102080222000020010104440022001011?12???????0100212200?22222020000020000??00?0012000200
+	'Phiocricetomys minutus'		                        ?12??????21102001002232?????????????0020200004012110444211-021-1??????????????????????????2???????????????????????0200
+	'Phiomys'		                                       ?12??????21002021002202?????????????0220200004020110344222202121??????????????????????43???04??1??200???????0?12??0300
+	'Phiomys paraphiomyoides'		                       ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	'Phiomys andrewsi'		                              ?????????1102322110220021100004310112020202004?10010144221202121???????????0114222201244212043212420077042220412100101
+	'Phiomys hammudai'		                              ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	'”Phiomys” lavocati'		                        112??????2110200100220021200104000?10030200004011110444212202131211211100002??????????420?203111102006???2??0012200200
+	'”Phiomys aff. paraphiomyoides”'		            ?12??????21002021002102?????????????0220200004020110344222202121??????????????????????432?2044212420077??22?0412200300
+	'Platypittamys brachyodon'		                      112106116?????????????0110000044100100402000040010100442622021412??????????0114242201244212044212420022202220412000400
+	'Protophiomys aegyptensis'		                      ??2??????1112322112220??????????????2132202104001010244221202121??1211101000114222201144212044112220000042110212220301
+	'Protophiomys algeriensis'		                      ??212411521114321122200210010043111120322020040011102442222021?1??1212101120112212201?44212044112220000041220012220300
+	'Protophiomys durattalahensis'		                  ?????????0104322110220??????????????2032202004?01110144220202121??1211170310112222201244212044112320000042100312230300
+	'Protophiomys aff. durattalahensis'		             ??????????????????????021100004210112032202004?01010144220202121??1211140020114222201244212043112420000042200312230300
+	'Sacaresia moyaeponsi'		                          ???10???520100420201200222001030210142002040030210100440422021412102121610201??24044104240200???2420066650000002110400
+	'Sallamys pascuali'		                             1121?411?0004301120010021200002210014010200004001010444262202141?1?????????0114142201024022044212220047202220410000400
+	'Talahphiomys libycus'		                          ????????????????????????????????????0110?01004011?104442112?21????121116001???????????42212041?12320065042100012220200
+	'Talahphiomys lavocati'		                         ?????????2110100111220??????????????0010?01004021?1044421120214???121116000???????????42212041112020044042200012100200
+	'Thryonomys swinderianus'		                       11214401401041401200212?????????????8210200004001110444262202131222212160402??????????43002034?0202006446222?412000400
+	'Tsaganomys altaicus'		                           212144112220024220?120031200104420?180422000040010100440622?202121221200100011?222201114020044?00020000000000012000400
+	'Waslamys attiai'		                               ?12??????1102321111220021100104410112032202004101110144220202121?11211171320102222201244212041112320070032000112230301
+	'Yuomys cavioides'		                              102???????????????????0212011044100080002000040010104440202001211??????????0110212001?42310200000020000000000012000400
+	'New genus and species 3 (l-41)'		                112??????2110202110220021200104200010031201004021110344221202121211011100302??????????42212141112020006??22?0412220200
+	'New genus and species 2 (l-41)'		                112??????3104122110220021100004221012220211004110110044221202101211111170420112222201243112044212420077042200402100101
+	'New genus and species 1 (l-41)'		                112??????3003112110220021100104222012220211004020110144221202131211211170410114222201043112044212420077742220412100300
+	'New genus and species (quarry a & e)'		          112??????2?0312211022001????????????222021100401011014422120213121????????????????????43112044212420077042110412100100
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 118;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; timeSaved 1344375944592 ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 1909999657831123361 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 8193944356083296173 ; mqVersion 274 ; checksumv 0 2 225008109 null getNumChars 118 numChars 118 getNumTaxa 51 numTaxa 51 short true bits 511 states 511 sumSquaresStatesOnly 1577841.0 sumSquares 1577841.0 NumFiles 1 NumMatrices 1 ; mqVersion ; endTell ; getWindow ; tell It ; suppress ; setResourcesState false false 228 ; setPopoutState 400 ; setExplanationSize 0 ; setAnnotationSize 0 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 791 668 ; setLocation 46 30 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; desuppress ; endTell ; getEmployee #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord ; tell It ; showDataWindow #8193944356083296173 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker ; tell It ; getWindow ; tell It ; getTable ; tell It ; rowNamesWidth 111 ; endTell ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 563 601 ; setLocation 46 30 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; endTell ; setActive ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; colorCells #mesquite.charMatrices.NoColor.NoColor ; colorRowNames #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor ; colorColumnNames #mesquite.charMatrices.CharGroupColor.CharGroupColor ; colorText #mesquite.charMatrices.NoColor.NoColor ; setBackground White ; toggleShowNames off ; toggleShowTaxonNames on ; toggleTight off ; toggleThinRows off ; toggleShowChanges on ; toggleSeparateLines off ; toggleShowStates on ; toggleAutoWCharNames on ; toggleAutoTaxonNames off ; toggleShowDefaultCharNames off ; toggleConstrainCW on ; toggleBirdsEye off ; toggleShowPaleGrid off ; toggleShowPaleCellColors off ; togglePaleInapplicable on ; toggleShowBoldCellText off ; toggleAllowAutosize on ; toggleColorsPanel off ; toggleDiagonal on ; setDiagonalHeight 80 ; toggleLinkedScrolling on ; toggleScrollLinkedTables off ; endTell ; showWindow ; getWindow ; tell It ; forceAutosize ; endTell ; getEmployee #mesquite.charMatrices.ColorByState.ColorByState ; tell It ; setStateLimit 9 ; toggleUniformMaximum on ; endTell ; getEmployee #mesquite.charMatrices.ColorCells.ColorCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector ; tell It ; autotabOff ; endTell ; getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor ; tell It ; panelOpen true ; endTell ; endTell ; endTell ; endTell ;
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 118 ;
+ENDBLOCK;

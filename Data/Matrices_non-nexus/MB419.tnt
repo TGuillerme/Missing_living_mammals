@@ -1,0 +1,1213 @@
+nstates cont; 
+xread
+
+'CON TUTTI!!!!!!!!'
+
+
+
+1249 45
+
+
+
+&[cont]
+
+Hesperocyon				0.858-0.902	1.071-1.233	1.402		0.902-1.102	0.998-1.402	0.470-0.543	0.942-0.979	1.213	1.023	0.976-1.022	1.116-1.183	0.968-1.045
+Urocyon_cinereoargenteus    		0.908-0.969	1.037-1.134	0.856-0.996	0.796-1.069	0.914-1.601	0.425-0.668	0.857-1.322	1.013-1.104	0.806-0.975	1.066-1.191	0.920-1.246	1.014-1.110
+Atelocynus_microtis                  	0.985-1.006	1.014-1.153	0.912-1.141	0.921-1.145	0.570-0.779	0.875-1.100	0.758-0.924	0.850-0.960	0.799-1.150	0.925-1.025	1.031-1.124	0.998-1.074
+Canis_aureus				0.986-1.010	0.925-0.946	0.912-0.920	0.949-1.029	0.852-0.905	0.832-0.904	0.846-0.878	0.977-1.087	0.922-1.317	1.002-1.079	0.899-0.931	0.971-1.019
+Canis_latrans                        	1.037-1.077	0.927-0.980	0.884-1.028	1.049-1.083	0.971-1.435	1.190-1.260	0.952-1.146	0.960-1.049	0.860-1.154	0.929-1.020	0.875-0.889	0.942-0.970
+Canis_lupus                          	1.029-1.075	0.829-0.938	0.789-0.921	0.950-1.225	1.024-1.405	1.689-2.368	1.002-1.123	0.890-0.987	0.814-0.895	0.966-1.006	0.824-0.928	0.874-0.969
+Canis_mesomelas				0.980-1.035	0.954-0.958	0.871-0.954	0.852-1.004	0.862-1.082	0.700-0.853	0.850-1.084	1.019-1.046	1.009-1.106	1.047		0.887		1.080
+Canis_simensis				1.082-1.093	1.084-1.104	1.101-1.129	0.945-1.001	0.856-1.068	0.881-0.930	0.874-0.917	0.987-1.017	1.094-1.129	0.973		0.981		0.990
+Cerdocyon_thous                      	0.905-1.023	0.970-1.167	0.883-1.110	0.980-1.123	0.714-1.253	0.610-0.957	0.925-1.364	0.789-1.123	0.587-1.059	0.925-1.051	0.896-1.080	0.985-1.101
+Chrysocyon_brachyurus             	1.029-1.085	0.997-1.098	0.769-0.879	1.016-1.320	0.714-0.861	1.169-1.390	0.862-0.936	0.956-1.153	0.942-1.115	0.892-1.097	0.93-1.093	0.967-1.039
+Cuon_alpinus				0.920-0.975	0.862-0.901	1.028-1.244	0.976-1.134	0.906-1.220	1.189-1.382	0.979-1.033	1.012-1.137	0.762-0.846	1.053-1.111	0.844-0.858	0.919-0.960
+Dusicyon_australis			?		?		1.106		?		1.037		?		0.988		1.026		?		1.072		?		1.267
+Lycalopex_culpaeus                 	0.992-1.077	1.000-1.099	0.990-1.131	1.012-1.101	0.759-1.062	0.836-0.912	0.893-1.094	0.942-1.106	0.825-1.229	0.891-1.053	0.966-1.023	0.920-1.022
+Lycalopex_griseus                     	0.978-1.067	0.999-1.080	1.046-1.327	0.859-1.009	0.650-1.441	0.495-0.711	0.984-1.198	0.894-1.054	0.914-1.280	0.864-1.032	0.876-1.000	0.980-1.078
+Lycalopex_gymnocercus                 	0.985-1.046	0.996-1.103	0.899-1.146	0.873-1.048	0.808-1.343	0.598-0.844	0.844-1.221	0.943-1.196	0.966-1.265	0.893-0.971	0.887-1.079	0.931-1.128
+Lycalopex_sechurae                    	0.895-1.003	1.035-1.130	0.923-1.089	0.902-0.974	0.670-1.132	0.425-0.627	0.864-0.945	0.875-0.939	0.900-1.270	0.892-1.239	1.060-1.227	1.003-1.104
+Lycalopex_vetulus			0.916-0.970	1.027-1.078	1.030-1.288	0.778-0.912	0.896-1.534	0.470-0.546	0.826-0.958	0.929-0.992	1.149-1.255	0.930-1.042	1.005-1.218	1.062-1.171
+Lycalopex_fulvipes			0.982		1.014		1.086		1.034		1.097		0.630		0.904		1.013		?		0.981		0.979		1.033
+Lycaon_pictus				0.948-1.021	0.748-0.852	0.897-1.045	0.924-1.081	0.783-1.410	1.460-2.157	0.903-1.159	0.913-1.139	0.738-0.902	0.881-1.063	0.754-0.941	0.914-0.973
+Nyctereutes_procyonoides		0.926-0.995	0.975-1.045	0.852-1.166	0.898-0.941	0.767-0.991	0.633-0.978	0.882-0.939	1.011-1.037	0.746-0.928	1.008-1.087	0.970-1.093	0.990-1.033
+Otocyon_megalotis			0.956-0.988	1.078-1.164	0.847-1.057	0.816-0.882	0.829-1.100	0.507-0.644	0.707-0.970	0.828-1.123	0.742-0.937	0.948-1.091	1.727-1.868	1.164-1.337
+Canis_adustus				1.042		1.015-1.057	0.969-0.980	1.008-1.108	0.624-0.751	0.781-0.978	0.891-1.005	0.957-1.061	1.145-1.202	1.031-1.043	0.964-0.986	1.052-1.153
+Speothos_venaticus			0.898-0.922	0.996-1.082	1.079-1.256	0.961-1.314	0.909-1.348	0.871-1.092	0.960-1.041	0.768-1.038	0.675-0.820	0.914-1.020	1.117-1.201	0.884-0.988
+
+Vulpes_lagopus				0.973-1.001	0.971-1.020	1.014-1.104	0.947-0.986	1.344-1.752	0.587-0.840	1.026-1.082	0.966-1.038	1.023-1.075	0.870-0.983	0.897-0.997	0.942-1.010
+Vulpes_vulpes                        	0.994-1.034	0.999-1.103	1.012-1.249	0.929-1.031	0.788-1.308	0.589-0.748	0.932-1.342	0.856-1.063	1.014-1.220	0.893-0.972	0.909-1.004	0.972-1.034
+Vulpes_zerda				0.911-0.921	1.092-1.115	1.163-1.245	0.613-0.627	0.956-1.302	0.260-0.307	0.957-1.116	0.836-1.091	1.252-1.291	0.894-0.979	1.107-1.165	1.035-1.085
+Canis_rufus				1.043-1.053	0.951-1.030	0.949-1.045	0.982-1.117	1.003-1.259	1.091-1.375	0.943-0.974	0.922-0.974	1.116		1.033-1.074	0.898-0.921	0.942-0.953
+Theriodictis_platensis			1.033-1.048	0.813-0.863	0.944-1.015	1.077-1.130	0.804-0.964	2.021-2.349	1.021-1.252	1.025-1.099	0.873		0.941-1.084	0.770-0.772	0.882-0.975
+Theriodictis_tarijensis			?		?		?		?		?		?		?		?		?		?		?		0.958
+Protocyon_scagliarum			?		0.833		?		1.012		0.922		2.278		1.287		?		?		1.073		?		?
+Protocyon_troglodytes			1.083		0.748		?		?		?		?		1.353		1.065		0.701		0.974-1.074	?		0.899-0.956
+Canis_dirus				0.982-1.088	0.796-0.890	0.733-0.878	1.090-1.291	0.813-1.073	2.390-3.321	0.937-1.275	0.941-1.315	0.726-0.870	1.018-1.164	0.715-0.826	0.867-0.998
+Canis_nehringi				1.046		0.832		0.837		1.172		1.069		2.196		1.057		?		0.827		1.192		0.822		0.889
+Canis_gezi				1.158		0.772		?		1.077		?		2.726		?		?		?		0.987		0.733		0.867-0.888
+Dusicyon_avus				1.021-1.048	0.936-.942	0.956-1.042	0.998-1.004	0.855		1.121		1.078		1.125		1.110		1.020-1.052	0.882		0.940-0.994
+Canis_armbrusteri			1.064-1.141	0.834-0.958	0.914-0.959	0.804-1.176	0.911-1.036	2.255		0.945-1.104	0.943		0.902		1.016-1.077	?		0.933-1.025
+Mesocyon_coryphaeus			0.897		1.071		0.985		0.869		1.081		?		?		1.136		?		0.969-1.110	?		0.953-0.984
+Phlaocyon_leucosteus			0.880		0.967		1.018		0.820		1.130		0.850		1.064		0.908		?		1.127		1.115		1.090-1.119
+Archaeocyon_leptodus			0.868		1.228		?		0.957		1.237		0.430		1.008		?		?		?		?		?
+Leptocyon_vafer				?		1.206		1.116		0.900		1.080		0.583		0.870		?		?		0.939		?		?
+Eucyon_davisi				0.994		0.936		0.841-1.008	0.985		0.946-1.203	?		0.921		1.037		0.826-1.139	1.017		?		0.973-0.990
+
+?Theriodictis				?		?		?		?		?		?		1.01		?		?		?		?		0.92
+?Chrysocyon				?		?		?		?		?		?		0.85		?		?		0.96		?		0.99-1.22
+?Cerdocyon_sp				?		?		?		?		?		?		0.96		1.60		?		1.11		?		1.06
+?Cerdocyon_avius			?		?		?		?		?		?		?		?		?		?		?		0.90
+
+
+&[cont]
+Hesperocyon			1.257		1.003
+Atelocynus_microtis         	0.986-4.022	0.900-0.9717
+Canis_aureus			0.966-0.980	0.966-0.984
+Canis_latrans                   0.918-0.926	1.007-1.027
+Canis_lupus                     0.858-0.928	0.958-1.001
+Canis_mesomelas			0.903-0.925	1.017-1.043
+Canis_simensis			0.936		0.999
+Cerdocyon_thous                 0.982-1.043	0.954-1.005
+Chrysocyon_brachyurus           0.894-0.933	1.016-1.057
+Cuon_alpinus			1.063		0.960
+Lycalopex_culpaeus              1.025-1.067	1.003-1.012
+Lycalopex_griseus               1.062-1.073	1.028-1.067
+Lycalopex_gymnocercus           1.036-1.053	1.030-1.049
+Lycalopex_sechurae              0.968-1.132	0.936-1.082
+Lycaon_pictus			0.868-0.922	0.960-1.002
+Nyctereutes_procyonoides	1.057-1.127	0.948-1.005
+Otocyon_megalotis		0.974-0.994	1.066-1.094
+Canis_adustus			0.938-0.971	0.990-1.001
+Speothos_venaticus		0.950-1.029	0.870-0.957
+Urocyon_cinereoargenteus    	1.29-1.070	1.003-1.024
+Vulpes_lagopus			1.023-1.048	1.076-1.106
+Vulpes_vulpes                   0.996-1.025	1.029-1.091
+Vulpes_zerda			1.092-1.141	1.143-1.152
+Theriodictis_platensis		0.920		0.937-0.972
+Canis_dirus			0.875		1.013
+Dusicyon_avus			0.979		0.979
+Phlaocyon_leucosteus		1.170		0.895
+
+
+
+				
+
+&[num]
+
+Hesperocyon				0	0	0	0	0	0	0	0	0	0	?	?	0	0	1	0	0	0	0	0	[0 2]	0	0	[0 1]	0	0	0	0	1	?	0	0	0	?	1	0	[0 1]	0	0	0	0	0	0	0	0	0	0	4	[01]	1	0	0	0	0	[0 1]	0	0	0	[01]	1	1	0	0	0	[0 1]	1	0	1	1	0	0	[01]	0	0	0	0	0	1	[01]	0	0	1	0	0
+Atelocynus_microtis     		[2 3]	[1 2]	0	0	0	1	0	1	1	1	0	0	1	0	1	0	1	0	1	0	2	1	0	[0 1 2]	0	0	1	1	2	0	1	0	0	0	1	0	[0 1]	1	1	0	[0 1]	0	[0 1]	0	0	0	[0 1]	0	0	[0 1]	0	0	1	0	[0 1]	0	0	0	0	1	1	0	0	[0 1]	0	[0 1]	0	0	0	1	0	2	0	0	0	1	[0 1]	1	[0 1]	[0 1]	0	1	1	4
+Canis_aureus				3	[12]	1	2	0	1	0	1	1	1	1	[0 1]	1	0	1	[01]	0	0	1	1	2	1	[0 1]	1	1	0	1	0	1	0	1	[01]	[0 1]	0	0	[01]	[0 1]	1	0	0	[0 1]	1	1	0	0	0	1	3	[0 1]	1	[0 1]	0	1	0	1	0	0	0	0	1	1	0	0	[0 1]	[0 1]	1	1	0	0	1	0	2	0	[01]	1	1	0	[0 1]	[0 1]	[0 1 2]	[0 1]	1	1	4
+Canis_latrans                        	3	[1 2]	1	[12]	0	1	0	1	1	1	1	1	1	0	1	[01]	0	0	1	0	2	1	0	[12]	[01]	0	[1 2]	[01]	1	0	1	0	1	0	0	1	[0 1]	[01]	0	0	0	1	1	0	0	0	1	3	[0 1]	1	0	0	1	0	1	0	0	0	0	1	1	0	0	[0 1]	[01]	[01]	[0 1]	0	0	1	0	2	[0 1]	1	1	1	0	[01]	[0 1]	[0 1]	[0 1]	1	1	4
+Canis_lupus                          	[1 2]	2	[01]	2	1	1	0	1	1	1	1	1	1	0	1	[0 1]	[0 1]	0	1	0	2	1	0	[1 2]	1	0	2	1	[1 2]	0	1	0	1	0	0	1	[0 1]	[01]	0	0	0	1	1	[01]	0	0	1	3	[0 1]	1	[0 1 2]	0	1	[0 1]	0	[0 1]	1	1	[0 1]	1	1	0	0	[0 1]	[0 1]	1	1	0	0	1	0	2	0	[0 1]	1	1	0	[1 2]	[0 1 2]	[0 1]	0	1	1	4
+Canis_mesomelas				3	1	1	2	0	1	0	1	1	1	1	0	1	0	1	0	0	0	1	0	[0 2]	1	0	[0 1]	0	0	1	[0 1]	[1 2]	0	1	[0 1]	[0 1]	0	0	1	0	[01]	0	0	0	1	1	0	0	0	1	3	[0 1]	[0 1]	0	0	1	0	1	0	0	0	0	1	1	0	0	0	0	0	[0 1]	0	0	1	0	2	0	0	0	1	0	[0 1]	[0 1]	0	[0 1]	1	1	4
+Canis_simensis				3	2	1	2	0	1	0	1	1	1	1	0	1	0	1	1	0	0	1	0	2	2	0	1	1	0	2	1	1	0	1	0	1	0	0	[01]	0	1	0	0	0	1	1	0	[0 1]	0	1	3	0	1	1	0	1	0	0	0	[0 1]	0	0	1	1	0	0	0	0	[0 1]	[0 1]	0	0	0	0	2	0	0	0	1	0	1	0	1	0	1	1	4
+Cerdocyon_thous                      	3	[1 2]	[0 1]	0	0	1	0	1	1	1	1	0	1	0	0	0	0	0	1	0	0	1	0	1	0	1	[0 1]	0	[1 2]	0	1	0	0	0	1	0	1	1	2	1	1	0	1	[0 1]	[0 1]	[0 1]	[0 1]	0	0	[0 1]	0	0	1	0	[0 1]	0	0	0	0	1	1	0	0	[0 1]	0	[0 1]	0	0	0	1	0	2	[0 1]	0	0	1	0	1	[0 1]	[0 1 2]	0	[0 1]	1	2
+Chrysocyon_brachyurus             	[2 3]	[1 2]	0	3	0	1	0	1	1	1	1	1	1	0	1	1	[0 1]	1	1	0	2	2	0	2	0	0	2	1	[0 1 2]	0	1	0	0	1	0	0	0	1	0	0	[0 1]	[0 1]	1	0	1	0	1	0	0	0	0	0	1	0	[0 1]	0	0	1	0	1	0	0	0	[0 1]	0	[0 1]	0	0	0	[0 1]	0	2	[0 1]	0	0	1	1	1	0	[0 1]	0	1	1	3
+Cuon_alpinus				3	2	[01]	2	0	1	0	1	1	1	1	0	1	0	1	1	1	1	1	0	[0 2]	1	0	2	0	0	0	0	1	0	1	0	0	?	0	[01]	[0 1]	1	0	0	0	1	1	0	0	0	0	3	[01]	1	1	0	1	1	0	1	1	1	1	1	3	0	0	0	[0 1]	1	1	[0 1]	[0 1]	[01]	0	3	0	0	0	0	?	[1 2]	2	0	0	0	1	4
+Dusicyon_australis			3	2	0	1	0	1	0	1	1	1	?	?	1	0	1	0	1	0	1	0	0	1	0	1	0	0	1	0	1	?	1	0	0	?	0	0	1	1	0	0	1	0	1	0	0	0	1	0	0	0	2	0	1	0	?	0	?	0	0	1	1	0	0	0	0	0	0	0	0	1	0	2	0	0	0	0	?	1	0	0	0	1	1	3
+Lycalopex_culpaeus                 	[2 3]	[1 2]	0	1	0	1	0	1	1	1	0	0	1	0	1	0	1	0	1	0	[0 2]	1	0	1	0	0	1	0	[12]	0	1	0	0	0	0	0	0	[0 1]	0	0	[0 1]	0	1	0	[0 1]	0	1	0	0	0	[0 1]	0	1	0	[01]	0	0	0	0	1	1	0	0	[0 1]	0	[0 1]	0	0	0	1	0	2	[0 1]	0	0	1	0	[0 1]	1	[0 1]	[0 1]	1	1	3
+Lycalopex_griseus                     	3	[1 2]	0	0	0	1	0	1	1	1	0	0	1	0	1	0	[0 1]	0	1	0	0	1	0	[0 1 2]	0	0	[0 1]	0	[0 1 2]	0	1	0	0	0	0	0	0	[0 1]	0	0	[0 1]	[0 1]	1	0	0	0	1	0	[0 1]	0	[0 1]	0	1	0	[0 1]	0	0	0	0	1	1	0	0	[0 1]	0	[0 1]	0	0	0	[0 1]	0	2	[0 1]	0	0	1	[0 1]	[0 1]	[0 1]	[0 1 2]	[0 1]	1	1	3
+Lycalopex_gymnocercus                 	3	[1 2]	0	0	0	1	0	1	1	1	0	0	1	0	1	0	[0 1]	0	1	0	[0 2]	1	0	[0 1 2]	0	0	1	0	[1 2]	0	1	[0 1]	0	0	0	0	0	[0 1]	0	0	1	0	1	0	0	0	1	0	0	[0 1]	[0 1]	0	1	0	[0 1]	0	[0 1]	0	0	1	1	0	0	[0 1]	0	[0 1]	0	0	0	[0 1]	0	2	[0 1]	[0 1]	0	1	[0 1]	[0 1]	[0 1]	[0 1 2]	[0 1]	1	1	3
+Lycalopex_sechurae                    	3	[1 2]	[01]	0	0	1	0	1	1	1	1	0	1	0	1	0	1	0	1	0	0	1	[0 1]	[0 1 2]	0	0	[0 1]	0	[1 2]	0	1	0	0	0	0	0	0	1	0	0	[0 1]	0	1	0	0	[0 1]	1	0	0	[0 1]	0	0	1	0	[0 1]	0	0	0	0	[0 1]	1	0	0	[0 1]	0	1	0	0	0	[0 1]	0	2	0	0	0	[0 1]	0	[0 1]	0	[0 2]	0	1	1	3
+Lycalopex_vetulus			3	[1 2]	[01]	0	0	1	0	1	1	1	1	0	1	0	1	0	[01]	0	1	[0 1]	0	1	0	[0 1]	0	0	0	0	[1 2]	0	1	[01]	0	0	0	0	0	1	0	0	1	0	1	0	0	[01]	[01]	0	0	[01]	0	0	1	0	[01]	0	0	0	0	[12]	1	0	0	1	0	[01]	0	0	0	1	0	2	[01]	0	0	1	[0 1]	0	[01]	[1 2]	[0 1]	1	1	3
+Lycalopex_fulvipes			3	2	0	0	0	1	0	1	1	1	?	0	1	0	1	0	0	0	1	0	0	1	0	1	0	0	1	0	1	0	1	0	0	?	0	0	0	1	0	0	1	0	1	?	?	?	1	0	0	0	0	0	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	1	0	2	0	0	0	1	?	0	1	1	0	1	?	?
+Lycaon_pictus				[2 3]	[1 2]	[01]	2	0	1	0	1	1	1	1	1	1	0	1	[01]	1	0	1	[0 1]	2	1	[0 1]	[0 1]	0	0	1	[0 1]	1	0	1	0	0	0	0	1	0	[01]	0	0	[0 1]	1	1	0	0	0	0	4	[01]	[01]	1	0	1	1	0	1	1	1	1	1	[2 3]	[0 1]	0	0	1	1	1	[0 1]	1	1	0	3	[0 1]	0	0	0	?	2	[23]	0	0	[0 1]	1	4
+Nyctereutes_procyonoides		3	[1 2]	[01]	0	0	1	0	[0 1]	1	1	0	0	1	0	1	0	1	0	1	0	[0 2]	1	0	[1 2]	0	0	0	0	[1 2]	0	1	[0 1]	0	0	1	0	2	1	0	1	1	0	1	0	0	[0 1]	0	0	0	0	0	0	1	0	1	0	0	0	0	1	1	0	0	0	0	[01]	0	0	0	1	0	2	0	1	0	1	[01]	1	[01]	1	0	1	1	2
+Otocyon_megalotis			3	[1 2]	1	0	0	1	0	0	1	0	?	?	0	0	1	[0 1]	1	0	1	0	1	2	0	2	0	0	1	0	[12]	0	1	0	0	0	0	0	2	1	0	1	1	0	1	1	1	1	1	2	0	0	0	0	1	0	1	0	0	1	0	2	0	0	0	0	0	[0 1]	0	0	[0 1]	1	0	2	0	0	0	1	[01]	1	1	1	0	2	0	2
+Canis_adustus				3	2	[0 1]	2	0	1	0	1	1	1	1	0	1	0	1	0	0	1	1	0	2	1	0	1	1	0	[1 2]	[0 1]	[0 1]	0	1	0	1	0	0	1	0	1	0	0	1	1	1	0	0	0	1	3	0	0	0	0	1	0	1	0	0	0	0	1	1	0	0	[0 1]	0	1	0	0	0	1	0	2	0	1	[0 1]	1	0	[0 1]	[0 1]	2	[0 1]	1	1	4
+Speothos_venaticus			1	2	0	0	0	1	0	1	1	1	0	0	1	1	1	0	1	0	1	1	[0 2]	0	[0 1]	[0 1]	0	0	0	0	[1 2]	0	1	0	0	1	1	0	1	1	2	1	0	0	1	0	0	0	[0 1]	1	0	[0 1]	1	1	1	1	0	1	1	1	1	0	?	?	?	?	0	0	0	0	0	0	1	3	0	0	0	0	?	?	2	0	?	0	1	4
+
+Urocyon_cinereoargenteus    		3	1	1	0	0	1	0	0	1	0	?	?	0	0	1	0	[0 1]	0	1	[0 1]	1	1	0	[1 2]	0	0	0	0	1	0	1	0	0	?	0	0	2	1	0	1	[01]	0	1	[0 1]	0	[0 1]	1	2	0	0	0	0	1	0	1	0	0	0	0	1	1	0	0	[0 1]	0	0	0	0	0	1	0	[1 2]	0	[0 1]	0	1	[0 1]	0	[0 1]	1	[0 1]	1	0	2
+Vulpes_lagopus				3	[1 2]	1	0	0	1	0	0	1	0	?	?	0	0	1	[01]	0	0	1	0	[0 2]	1	0	0	0	0	1	0	[01]	0	1	1	0	0	0	0	0	1	0	0	1	0	1	0	0	0	1	0	0	0	0	0	1	0	[0 1]	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	[1 2]	0	1	0	[0 1]	0	1	[0 1]	0	0	1	0	1
+Vulpes_vulpes                        	3	1	1	0	0	1	0	0	1	0	?	?	0	0	1	0	0	0	1	0	0	1	0	[0 1]	0	0	1	0	1	0	1	1	0	0	0	0	0	[0 1]	0	0	0	0	1	0	0	1	[0 1]	0	0	[01]	0	0	1	0	[0 1]	0	0	0	0	1	1	0	0	0	[0 1]	[0 1]	0	0	0	[0 1]	0	[1 2]	0	[0 1]	0	1	0	1	[0 1]	[0 1]	0	1	0	1
+Vulpes_zerda				3	1	1	0	0	1	0	0	1	0	?	?	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	1	1	0	0	0	0	0	1	0	0	1	0	1	0	1	[0 1]	1	2	0	0	0	0	1	0	[0 1]	0	0	0	0	1	1	0	0	[0 1]	0	0	0	1	[0 1]	1	0	[1 2]	[0 1]	[0 1]	0	1	0	1	1	1	0	1	0	1
+Canis_rufus 				3	2	1	2	0	1	0	1	1	1	1	1	1	0	1	[01]	[0 1]	0	1	0	2	1	0	[1 2]	[0 1]	0	1	[0 1]	1	0	1	0	[01]	0	0	1	0	1	0	0	0	1	1	0	0	0	1	3	1	1	1	0	1	0	1	0	0	[0 1]	0	1	1	0	0	[0 1]	[0 1]	1	1	0	0	1	0	2	0	1	1	1	0	1	0	0	0	1	1	4
+Theriodictis_platensis			1	[1 2]	0	2	0	1	0	1	1	1	1	1	1	0	1	0	0	0	1	0	2	1	1	1	0	[0 1]	?	0	1	1	1	0	0	[0 1]	0	0	1	1	1	0	0	0	1	0	0	0	1	0	0	0	2	0	1	1	0	1	1	1	1	1	2	[0 1]	0	0	0	[0 1]	[0 1]	0	0	0	[0 1]	2	0	[0 1]	0	[0 1]	0	2	2	[0 1]	0	[0 1]	?	[23]
+Theriodictis_tarijensis			?	?	?	?	0	?	?	1	1	1	?	?	1	?	?	?	?	?	1	?	2	1	1	?	?	?	?	?	?	?	?	?	0	?	?	0	1	?	?	?	?	?	?	?	?	?	1	0	?	1	2	0	1	1	0	1	1	1	1	1	?	0	1	0	0	[0 1]	1	0	0	0	1	[2 3]	0	0	0	[0 1]	0	2	2	1	0	1	?	?
+Protocyon_scagliarum			1	0	0	2	0	1	?	1	1	1	?	?	1	0	1	0	?	0	1	0	2	1	1	1	?	1	?	?	?	?	?	0	0	0	0	0	1	1	1	0	?	?	?	?	?	?	1	0	1	1	2	0	1	1	0	1	1	1	1	1	3	1	0	0	0	1	0	0	?	0	1	3	0	0	0	0	?	2	2	0	0	1	?	?
+Protocyon_troglodytes			1	1	0	?	0	?	?	?	1	1	1	1	1	0	1	0	0	0	1	0	2	1	1	1	0	0	?	0	1	1	?	0	0	?	0	0	1	1	1	0	[01]	0	1	?	?	0	[0 1]	0	[0 1]	[0 1]	2	0	1	1	0	1	1	1	1	1	3	0	[0 1]	0	0	[0 1]	0	0	0	0	1	3	0	0	0	0	?	2	2	0	0	[0 1]	?	?
+Canis_dirus				2	[1 2]	1	2	1	1	[01]	1	1	1	1	1	1	0	1	1	[0 1]	0	1	0	2	1	0	[12]	0	0	2	1	1	0	1	0	1	0	0	1	[01]	1	0	0	0	1	1	0	0	0	[01]	3	[0 1]	1	[12]	0	1	[01]	[01]	[01]	1	0	[01]	1	[1 2]	0	0	[01]	[01]	1	1	0	0	1	0	2	0	[01]	1	1	[01]	1	[12]	[01]	[01]	1	1	?
+Canis_nehringi				2	1	1	2	1	1	1	1	1	1	?	?	1	0	1	1	0	0	1	0	2	1	0	1	0	0	?	?	1	?	?	0	1	0	0	1	1	1	0	0	?	?	?	?	?	?	1	3	0	1	2	0	1	0	0	1	1	0	1	1	1	0	0	0	0	1	1	0	0	1	0	2	0	1	?	1	?	1	2	0	0	1	?	?
+Canis_gezi				1	2	0	2	0	1	0	1	1	1	?	1	1	0	1	0	0	?	1	0	2	1	1	?	?	1	?	?	?	?	?	0	0	?	0	?	1	?	?	?	0	0	1	?	?	?	1	0	0	0	2	0	1	1	0	0	1	1	0	1	2	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	2	2	0	0	1	?	2
+Dusicyon_avus				[3 2]	2	0	1	0	1	0	1	1	1	?	?	1	0	1	0	0	0	1	0	0	1	0	1	0	0	1	0	1	0	1	0	0	?	0	0	0	?	0	0	1	0	1	0	0	0	1	0	0	0	[0 1]	0	1	0	[0 1]	0	0	0	0	1	[1 2]	0	0	0	0	0	[0 1]	0	0	[01]	0	2	0	0	0	1	[0 1]	1	0	[0 1]	0	1	?	?
+Canis_armbrusteri		  	[32]	[12]	1	2	0	1	0	1	1	1	1	1	1	0	1	[01]	[01]	0	1	0	2	1	0	2	1	0	1	1	1	0	1	0	[01]	0	0	1	0	[01]	0	0	0	?	?	?	?	?	[01]	3	1	1	1	0	1	0	[01]	0	1	0	0	1	1	0	0	0	0	[01]	[01]	0	0	1	0	2	1	1	1	1	[01]	[01]	1	[01]	0	1	1	4
+Mesocyon_coryphaeus			0	2	1	0	0	0	0	0	0	0	?	?	1	0	1	0	1	0	0	0	2	0	0	1	0	0	?	1	?	?	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	[01]	4	0	1	[01]	0	0	0	0	0	0	0	[01]	1	1	0	0	0	0	1	[01]	1	1	0	0	0	0	0	0	0	?	1	2	0	0	1	0	0
+Phlaocyon_leucosteus			2	2	1	0	0	1	0	0	1	?	?	?	0	0	1	0	0	0	0	1	2	0	0	2	0	0	?	?	1	?	1	0	0	0	1	0	[0 1]	1	0	0	?	?	1	?	?	?	0	1	0	0	0	0	1	0	?	0	0	0	0	1	1	0	0	0	0	0	0	0	0	1	0	2	[0 1]	[0 1]	0	1	0	0	1	1	0	1	?	?
+Archaeocyon_leptodus			2	0	1	0	0	1	0	0	0	0	?	?	0	0	1	0	0	0	0	0	0	0	0	?	0	0	?	0	?	?	1	0	0	?	[0 1]	0	0	0	0	0	0	0	0	?	?	?	0	4	[0 1]	1	0	0	1	0	[0 1]	0	0	0	0	1	1	0	0	0	[0 1]	1	0	[0 1]	1	0	0	1	0	[0 1]	0	1	0	[0 1]	[0 1]	0	0	1	0	0
+Leptocyon_vafer				3	2	1	0	0	1	0	0	1	0	?	?	0	0	1	0	0	?	1	0	0	0	0	?	?	0	?	?	?	?	1	1	0	?	0	0	0	0	0	0	?	?	?	?	?	?	1	0	?	?	0	0	1	0	0	0	0	0	0	1	1	0	0	0	0	1	0	0	1	0	0	1	0	1	0	1	0	1	?	0	0	1	?	0
+Eucyon_davisi				3	2	1	0	0	1	0	1	1	1	?	?	1	0	1	0	0	0	1	0	2	1	0	2	0	0	?	?	1	?	1	1	0	0	?	0	0	1	0	0	?	1	1	?	?	?	1	3	0	0	0	0	1	0	1	0	?	0	0	1	1	0	0	0	0	1	0	0	0	1	0	1	0	1	1	1	0	1	1	2	0	1	?	?
+
+
+?Theriodictis				?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	1	1	1	0	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	0	0	[23]	0	[01]	1	1	0	1	1	0	0	1	?	?
+?Chrysocyon				?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	0	1	0	0	?	?	?	?	?	?	1	0	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	0	0	[01]	0	0	1	0	2	0	0	0	[01]	0	0	1	2	1	1	?	?
+?Cerdocyon_sp				?	?	?	?	?	?	?	?	?	?	?	?	0	?	?	0	?	?	?	?	?	1	?	?	?	?	?	?	?	?	?	?	?	?	?	?	1	?	?	1	1	0	1	?	0	0	0	2	0	0	0	0	?	0	1	0	?	?	0	1	?	?	?	?	0	0	1	0	0	1	0	2	1	1	?	1	0	0	?	1	0	1	?	?
+?Cerdocyon_avius			?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	1	1	0	?	?	?	?	?	?	?	?	?	?	?	?	?	1	0	1	0	0	0	0	?	?	?	?	?	?	?	?	?	?	?	0	1	1	?	?	1	?	?	?	?	?	1	?	?
+
+					
+
+
+&[num]				
+Hesperocyon			0	1	?	?	?	2	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	1	0	0	0	0	0
+Atelocynus_microtis             [0 1]	1	0	[0 1]	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	1	1	0	1	0	1	1	1	0	1	1
+Canis_aureus			1	1	0	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	[0 1]	[0 1]	1	0	1	?
+Canis_latrans                   [01]	1	0	1	[12]	[12]	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	[01]	1	0	1	0	1	1	1	0	1	1
+Canis_lupus                     1	1	0	1	[12]	2	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	[01]	1	0	1	1	[12]	1	1	0	1	1
+Canis_mesomelas			1	1	0	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	1	1	0	1	0	1	1	1	0	1	?
+Canis_simensis			1	1	0	1	1	?	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	1	1	0	1	0	0	1	1	0	1	?
+Cerdocyon_thous                 0	1	0	[0 1]	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	1	1	0	1	1
+Chrysocyon_brachyurus           0	[2 3]	0	2	0	0	0	0	1	1	1	1	1	1	2	1	1	1	1	1	[0 1]	0	1	1	[0 1]	1	0	1	0	2	[0 1]	1	0	1	?
+Cuon_alpinus			1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	1	1	0	1	0	0	1	1	0	1	?
+
+Lycalopex_culpaeus              0	0	0	0	0	[12]	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	[0 1]	1	0	1	?
+Lycalopex_griseus               0	0	0	[0 2]	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	[0 1]	1	0	1	0	1	1	1	0	1	?
+Lycalopex_gymnocercus           0	0	0	0	[0 1]	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	[0 1]	1	0	1	?
+Lycalopex_sechurae              0	0	0	0	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	[0 1]	1	0	1	0	1	1	1	0	1	1
+Lycalopex_vetulus		?	?	?	?	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	?	?	?	1	1	0	1	0	1	0	1	1	1	0	1	1
+Lycaon_pictus			1	1	0	1	2	2	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	1	1	0	1	0	[01]	1	1	1	1	1
+Nyctereutes_procyonoides	0	1	0	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	0	1	[0 1]	0	1	1	0	0	0	1	0	1	1	1	0	1	1
+Otocyon_megalotis		0	3	0	0	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	1	1	0	1	?
+Canis_adustus			?	1	0	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	[0 1]	1	0	1	0	[0 1]	1	1	0	1	?
+Speothos_venaticus		0	0	1	0	0	[1 2]	2	0	1	1	1	1	1	1	0	1	0	0	0	0	0	0	1	1	[0 1]	0	1	0	1	0	1	1	0	1	1
+Urocyon_cinereoargenteus    	0	1	0	0	0	2	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	[01]	1	0	1	0	[01]	1	1	0	1	1
+Vulpes_lagopus			0	1	0	0	0	2	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	2	1	1	0	1	?
+Vulpes_vulpes                   0	1	0	0	[0 1]	0	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	1	1	0	1	1
+Vulpes_zerda			0	1	0	0	0	0	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	1	1	0	1	?
+Canis_rufus			1	1	0	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	0	1	1	0	1	?
+Theriodictis_platensis		0	2	0	?	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	1	[01]	0	1	1	2	[0 1]	1	?	?	1
+Protocyon_troglodytes		?	?	?	?	?	?	1	1	1	1	1	1	1	1	1	1	1	1	0	?	?	?	?	?	?	1	0	1	1	?	?	?	?	?	?
+Canis_dirus			1	1	0	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	1	[0 1]	1	1	0	1	?
+Canis_gezi			?	?	?	?	?	?	?	?	1	1	?	1	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?	?
+Dusicyon_avus			0	?	0	0	0	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	0	1	1	0	1	0	1	0	1	1	1	0	1	?
+Mesocyon_coryphaeus		?	?	?	?	?	?	1	0	0	0	0	0	0	0	?	0	?	0	0	?	?	?	0	0	1	0	1	0	0	1	?	?	?	?	?
+Phlaocyon_leucosteus		0	1	?	?	?	2	1	0	0	0	0	0	0	0	0	0	0	1	0	?	?	?	1	0	0	0	1	0	0	1	0	0	0	0	?
+Archaeocyon_leptodus		?	?	?	?	?	?	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	1	[01]	0	1	1	1	0	0	?
+
+?Cerdocyon_avius		0	?	?	?	?	?	1	0	1	1	1	1	1	1	1	1	?	1	0	?	?	0	1	1	0	?	?	?	?	2	1	1	0	?	?																																																																																																																																															
+
+
+
+
+&[num]	
+Atelocynus_microtis		0?	?2100 		01002 		01100 		01221 		?1?00		1010?			10???		?????	?????			?????		0????	???0?	???0?		????0		0????	?????	?????	????1	02???		?????	???	
+Canis_aureus			2[01]	11200		02112		11200		01?20		10000		20301			[123]1111	10011	2?1?0			21101		10110	11110	21120		011?[12]	00?0?	??1?0	1????	???13	02???		?????	???	          
+Canis_latrans                   ?1	1[12][12]00	00112		11[12]00	0[12]110	10000		11[23]01		[123]1112	11011	21010			2[01]1?1	1?010	11010	20121		?111[12]	01011	12110	?0000	11113	02???		?????	???	     
+Canis_lupus                     ?2	2[0123][012]00	0012[12]	11[12]0[01]	1[12]12[01]	1[01]0[01]0	[12][01][123]01		[234]11[12]1	210?1	2[01][01][01][01]	2[01]101	10010	11020	[12]0121	2221[12]	01011	12111	10000	10113	02111		00001	100	     
+Canis_mesomelas			?[01]	11100		02132		11200		02?20		00000		21201			[12]0110	00012	2?100			21101		000?0	?1010	10120		011?[12]	00???	????0	1????	????3	02???		?????	???	
+Canis_simensis			??	?0300		01101		11100		01020		00000		11301			311??		??0??	?00?1			210??		?????	??000	11???		12??[01]	0????	?????	?????	?????	?????		?????	???	
+Cerdocyon_thous                 1?	?2100		01112		11[01]00	01220		00100		11201			01002		01100	100??			21000		?0???	??10?	0????		?1111		01100	1010?	????1	????1	00011		10001	100	     
+Chrysocyon_brachyurus           0?	21310		01221		20100		02001		?1?00		11301			401[12]1	12111	20000			01001		0??1?	?0000	01210		10??0		0??01	1121?	00?1?	????2	02011		11001	100	  
+Cuon_alpinus			22	20300		00002		00[01]00	01020		00000		11[23]01		[23]1112	2?012	2[01]0[01][01]		211?1		0?10?	?1?20	2??2?		12??2		2????	????1	?????	????3	02???		?????	???	
+Dusicyon_australis		2?	?1200		0?001		11200		01100		00000		???0?			2????		?????	?????			?????		?????	?????	?????		?????		?????	?????	?????	?????	?????		?????	???	
+Lycalopex_culpaeus              2?	?1100		020?1		11?00		0?120		00000		21200			1101?		?????	?????			?????		?????	??01?	?????		?????		0????	?????	?????	????1	02???		?????	??? 	   
+Lycalopex_griseus               2?	?1100		020?1		11?00		0?120		00000		?1200			000??		????0	2????			?????		0????	??010	??12?		?????		0????	?????	?????	????1	02???		?????	???      
+Lycalopex_gymnocercus           2?	?1100		020?1		11?00		0?120		00000		?1200			000??		????0	2????			?????		0????	??010	??12?		?????		0????	?????	?????	????1	02???		?????	???	      
+Lycalopex_sechurae              ??	?1000		02001		11100		01120		00000		?1200			0????		?????	?????			?????		?????	???0?	?????		?????		0????	?????	?????	????1	02???		?????	???	      
+Lycalopex_vetulus		??	?1100		02001		11100		02120		00000		11200			0????		?????	?????			?????		?????	???0?	?????		?????		1????	?????	?????	????1	02???		?????	???	
+Lycalopex_fulvipes		??	?2100		02001		11100		01120		00?00		?1200			0?????		?????	?????			1????		?????	??0??	?????		???00		?????	?????	?????	???1	02???		?????	???
+Lycaon_pictus			22	22210		00001		00010		11000		00020		02001			[34]0212	2?011	11011			20111		0110?	11120	20?22		02222		2????	???11	1???0	10??3	02???		?????	???	
+Nyctereutes_procyonoides	1?	01200		11002		21210		11011		?1?01		?2201			00101		10001	20000			010??		0????	??001	?1300		00??0		0????	?????	?01??	????0	0[01]1??	??000	??0	
+Otocyon_megalotis		20	01110		12001		21201		02021		?1001		?220?			00100		1?10?	21[01]00		20111		01001	00001	?032?		?10?1		1????	?????	?????	???10	01100		00111	100	
+Canis_adustus			?0	11100		02002		11200		01?20		10000		1?300			[123]11?0	??0?0	1????			?1??1		?????	??000	?012?		?????		0????	?????	?????	?????	?????		?????	???	
+Speothos_venaticus		01	?2100		00001		00010		00011		?1?10		10201			112[01]2	12110	10?0?			2?011		01101	00120	20120		?2222		22100	11201	00?10	001?1	02011		11001	100	
+Urocyon_cinereoargenteus    	?0	01101		02001		11100		01220		00000		10310			[01]0101	??101	11100			1?1??		0????	0?00?	?13??		?0000		0?011	0?01?	?1111	02010	01100		0000?	000	
+Vulpes_lagopus			22	0[03]000	01000		2021[01]	0201[01]	0[01]000	[12][01][13]10		[01]1001	?0000	11[01]00		111??		0????	0?000	??010		?1000		0????	0????	?10?1	02000	101??		??000	011	
+Vulpes_vulpes                   21	1[123][023]01	02001		21[12]01	?2000		10000		[012]0[0123][01]0	[01]10[01]2	20001	11[01]00		11100		000?0	0?000	00010		?1000		00???	0???0	?1001	?2000	101??		??001	0?0	     
+Vulpes_zerda			2?	?0100		02000		11200		01120		00000		21310			01002		10000	1????			?????		?????	??10?	????0		?1???		0????	?????	?????	????0	11111		10111	100	
+
+
+
+
+&[dna]
+Urocyon_cinereoargenteus GCATTCCTGA
+Atelocynus_microtis      AGATTCTNNN
+Canis_simensis           AGATTCCTGA
+Canis_mesomelas          AGATTCCTGA
+Canis_lupus              AGGTTCCNAT
+Canis_latrans            AGRTTCCGAT
+Canis_aureus             AGGTTCCGAT
+Canis_adustus            AGATTCCGAT
+Cerdocyon_thous          AGATTCTTGA
+Chrysocyon_brachyurus    AGATTCTTGA
+Cuon_alpinus             AGATTCCTGA
+Lycalopex_vetulus        AGATTTTTGA
+Lycalopex_sechurae       AGACTCTGAT
+Lycalopex_gymnocercus    AGACTCTTGA
+Lycalopex_griseus        AGAYTCTTGA
+Lycalopex_fulvipes       AGACTCTTGA
+Lycalopex_culpaeus       AGATTTTGAT
+Lycaon_pictus            AGATTCCTGA
+Nyctereutes_procyonoides GCATCCCGAT
+Otocyon_megalotis        GCATCCCTGA
+Speothos_venaticus       AGATTCTTGA
+Vulpes_zerda             GCATCCCTGA
+Vulpes_vulpes            GCATCCCGAT
+Vulpes_lagopus           GCATCCCGAT
+
+
+
+&[dna]
+Urocyon_cinereoargenteus GAACCTT
+Atelocynus_microtis	 GATCTTT
+Canis_simensis           GAACCTT
+Canis_mesomelas          GGACCCT
+Canis_lupus              GATCTTT
+Canis_latrans            GAWCTTT
+Canis_aureus             GATCTTT
+Canis_adustus            GGACCTT
+Cerdocyon_thous          GAACTTC
+Chrysocyon_brachyurus    GAACTTT
+Cuon_alpinus             GAACCTT
+Lycalopex_vetulus        GAACTTC
+Lycalopex_sechurae       GAACTTT
+Lycalopex_gymnocercus    GAACTTT
+Lycalopex_griseus        GAACTTT
+Lycalopex_fulvipes       GAACTTT
+Lycalopex_culpaeus       GAACTTT
+Lycaon_pictus            GAACCTT
+Nyctereutes_procyonoides GAACCCT
+Otocyon_megalotis        GAACCTT
+Speothos_venaticus       GAACTTT
+Vulpes_zerda             CAATCTT
+Vulpes_vulpes            CAATCTT
+Vulpes_lagopus           CAATCTT
+
+
+
+&[dna]
+Atelocynus_microtis      A
+Canis_simensis           A
+Canis_mesomelas         A
+Canis_lupus             A
+Canis_latrans           A
+Canis_adustus            A
+Lycalopex_vetulus        A
+Lycalopex_sechurae       A
+Lycalopex_gymnocercus    A
+Canis_aureus             A
+Lycalopex_griseus        A
+Lycalopex_fulvipes       A
+Lycalopex_culpaeus       A
+Cerdocyon_thous          A
+Chrysocyon_brachyurus    A
+Cuon_alpinus             A
+Lycaon_pictus            A
+Nyctereutes_procyonoides A
+Otocyon_megalotis        A
+Speothos_venaticus       A
+Urocyon_cinereoargenteus A
+Vulpes_zerda             G
+Vulpes_vulpes            G
+Vulpes_lagopus           G
+
+&[dna]
+Atelocynus_microtis      GTGCGCCATAGCGC------ACTGG
+Canis_simensis           ATGCGCCGTAGCGC------ACTGG
+Canis_latrans            ATGCGTCGTAGCGC------ATTGG
+Canis_adustus            ATGCGCCGTAGCGC------ACTGG
+Canis_lupus              ATGCATCGTAGCGC------ATTGG
+Canis_mesomelas          ATGCGCCGTAGCGC------ACTGG
+Canis_aureus             ATGCATCGTAGCGC------ATTGG
+Cerdocyon_thous          GTGCGCCATAGCGC------ACTGG
+Chrysocyon_brachyurus    ATGCGCCGTAGCGC------ACTGG
+Cuon_alpinus             ATGCGCCGTAGCGC------ACTGG
+Lycalopex_vetulus        GTGCGCCATAGCGC------ACTGG
+Lycalopex_sechurae       ATGCGCCGTAGCGC------ACTAG
+Lycalopex_gymnocercus    ATGCGCCGTAGCGC------ACTAG
+Lycalopex_griseus        ATGCGCCGTAGCGC------ACTAG
+Lycalopex_fulvipes       GTGCGCCATAGCGC------ACTGG
+Lycalopex_culpaeus       ATGCGCCGTAGCGC------ACTAG
+Lycaon_pictus            ATGCGCCGTAGCGC------ACTGG
+Nyctereutes_procyonoides ACGTGCCGTAGGACCTTTAGACCGG
+Otocyon_megalotis        ACGCGCCGTAGGAC------ACCGG
+Speothos_venaticus       ATGCGCCGTAGCGC------ACTGG
+Urocyon_cinereoargenteus ACGTGCTGTAGGAC------ACCGG
+Vulpes_zerda             ACGCGCTG---GAGCTTTAGACCGA
+Vulpes_vulpes            ACACGCTG---GAGCTTTAGACCGA
+Vulpes_lagopus           ACACGCTG---GAGCTTTAGATCGA
+
+
+&[dna]
+Atelocynus_microtis      AATGTGGGAA
+Canis_simensis           AACGTAGGAA
+Canis_latrans            AACGTAGGAA
+Canis_adustus            AACGTAGGAA
+Canis_lupus              AACGTAGGAA
+Canis_mesomelas          AACGTAGGAA
+Canis_aureus             AACGTAGGAA
+Cerdocyon_thous          AATGTGGGAA
+Chrysocyon_brachyurus    AATGTAGGAC
+Cuon_alpinus             AACGTAGGAA
+Lycalopex_vetulus        AATGCGAGAA
+Lycalopex_sechurae       AATGTGGGAA
+Lycalopex_gymnocercus    AATGTGGGAA
+Lycalopex_griseus        AATGTGGGAA
+Lycalopex_fulvipes       AATGCGAGAA
+Lycalopex_culpaeus       AATGTGGGAA
+Lycaon_pictus            AACGTAGGAA
+Nyctereutes_procyonoides ACCGTGGAAA
+Otocyon_megalotis        ACCGTAGAAA
+Speothos_venaticus       AATGTAGGAC
+Urocyon_cinereoargenteus ACCGTAGAAA
+Vulpes_zerda             GCCCTGGAGA
+Vulpes_vulpes            GCCCTGGAGA
+Vulpes_lagopus           GCCCTGGAGA
+
+&[dna]
+Speothos_venaticus       CAGTTGGGTGCAGCCGCGCGGGGCTCTTCCGGTCGAGCGTTGCGTTACAAAGT
+Atelocynus_microtis     TAATTAGGCGCCGTCGTATGGGGCTTTTACAGTCGAGCGTTGTGTTACAAAGT
+Canis_simensis           CAATTGTGTGCCGCCGCGCGGGGATCTCCCGGTCAACCGTCGCGTTAGAAAGT
+Canis_mesomelas          CAGTTGGGTACCGCCGCGCGGGACTCTTCCAGTCGAGCGTTACGTTACGAAGT
+Canis_lupus              CAATTGTGTGCCGCCGCGCGGGGMGCTCCCGGTCGCCCGTTGCGTTAGAAAGT
+Canis_latrans            CAATTGTGTGCCGCCGCGCGGGGCGCTCCCGGTCGCGCGTTGCGTTAGAAAGT
+Canis_aureus             CAATTGTGTGCCGCCGCGCGGGGATCTCCCGGTCRACCGTCGCGTTAGAAAGT
+Canis_adustus            CAGTTGGGTGCAGCCGCGCGGGGCTTTTCCGGTCGAGCGTTACGTTACGAAGT
+Cerdocyon_thous          CAGTTGGGTGCAGCTGCGCGGGGCTCTTACGGTCGAGCGTTGTGTTACAAAGT
+Chrysocyon_brachyurus    CAGTTGGGTGCAGCCGCGCGGGGCTCTTCCGGTCAAGCGTTGCGTTACAA?GT
+Cuon_alpinus             YAATTGGGTGCCGCCGCGCGGGGCTCTCCCGGTCGACCGTTGCGTTAGAAAGT
+Lycalopex_vetulus        CAGTTGGGTGCAGCTACGCGGGGCTTTTACAGTCGAGCGTTGTGTTACAAAGT
+Lycalopex_sechurae       TAGTTRGGTGCAGCCGCGCGGGGCTCTTACGGTCGAGCGTTGTGTTACAAAGT
+Lycalopex_gymnocercus    CAGTTGGGTGCAGCTGCGCGGGGCTCTTACGGTCGAGCGTTGTGTTACAAAGT
+Lycalopex_griseus        CAGTTGGGTGCAGCTGCGCGGGGCTCTTACGGTCGAGCGTTGTGTTACAAAGT
+Lycalopex_fulvipes       CAGTTGGGTGCAGCTGCGCGGGGCTCTTACGGTCGAGCGTTGTGTTACAATAT
+Lycalopex_culpaeus       CAGTTGGGTGCAGCTGCGCGGGGCTCTTACGGTCGAGCGTTGTGTTACAATAT
+Lycaon_pictus            CAATTGGGTGCCGCCGTGCGGGGCTCTCCCGGTCGCGCGTTGCGTTACAAAGT
+Nyctereutes_procyonoides CAATTGGGCGCCGCCGCGCGGGGCTCACCCATTCGAGCTCTGCTGTACAGAGT
+Otocyon_megalotis        CAATTGGGCACCGCCGCGCGGGGCTCACTCGTTCGAGCTCTGCTTTACAGAGC
+Urocyon_cinereoargenteus TAATTAGGCGCCGTCGTATGGGGCTCACCCGGGGGAGGACTGCTGTACAGAGT
+Vulpes_lagopus           CGACCGGACGTCACCGCGC---CCTCACCCGGGGGAGCTCTGCTGCCCAGAGC
+Vulpes_vulpes            CGACCGGACGTCACCGCGC---CCTCACCTGGGGGAGCTCTGCTGCCCAGAGC
+Vulpes_zerda             TAACCGGGCGCCGCCACGCGGGGCTCACCTGGGGGAGGTCTGCTGTCCAGAGC
+
+
+
+
+&[dna]
+
+Atelocynus_microtis      GCCTTTCA-AGGGGGAAGCATGGC-T
+Lycalopex_fulvipes       GCCTTTCA-CGGGGGGAGCACGGC-T
+Canis_simensis           GCCTTTGATCCGGCGGACCATGGC-T
+Canis_mesomelas          GTCCTTCT-TGGGGGGAGCATGGC-T
+Canis_lupus              GCCTTAGATCCGGCGGACCATGGC-T
+Canis_latrans            GCCTTAGA-CGTGGGGACCATGGC-T
+Canis_aureus             GCCTTAGA-CCTGGGGAGCATGGC-T
+Canis_adustus            GTCCTTCC-TGGGGGGAGCATGGC-T
+Cerdocyon_thous          GCCTTTCA-CGGGGGGAGCACGGC-T
+Chrysocyon_brachyurus    ACCTTTCA-CGGGGGGAGCATGAC-T
+Cuon_alpinus             GCCTTAGT-TGGGGGGAGCACAGGCT
+Lycalopex_vetulus        GCCTTTCA-AGGGGGGAGCACGGC-T
+Lycalopex_sechurae       GCCTTTCA-CGGGGGGAGCACGGC-T
+Lycalopex_gymnocercus    ACCTTTCA-CGGGGGGAGCACGGC-T
+Lycalopex_griseus        GCCTTTCA-CGGGGGGAGCACGGC-T
+Lycalopex_culpaeus       GCCTTTCA-CGGGGGGAGCACGGC-T
+Lycaon_pictus            GCCTTTGA-CGTGGGAAGCATGG--T
+Nyctereutes_procyonoides GCGTCTCA-CGGGGGGGGGACGGC-T
+Otocyon_megalotis        GCGTTTCA-CGGAGGGGGGACAG--T
+Speothos_venaticus       GCCTTTCA-CGGGGGGAGCATGAC-T
+Urocyon_cinereoargenteus GCGTTTCA-CGGGGGGAAG-CGGGCC
+Vulpes_lagopus           GCGTTTCA-CGGAGAGAGGGCGGC-T
+Vulpes_vulpes            GCGTCTCA-CGGGAAGAGGGCGGC-T
+Vulpes_zerda             ACGTTTCA-CGGGAAGAGGGCGGC-C
+
+
+
+&[dna] 
+Atelocynus_microtis     GGCCTCCCCAAG-----ACAAAAAATTTTTGTT--CCCATCTGAAAAG
+Canis_simensis           GGCTTCCCCAAG-----ACAAAAAATTTTTGTT--TTCATC------G
+Canis_mesomelas          GGCTTCCCCAAG-----ACAAAAAATTTTTGTT--TCCATTTGAAAAT
+Canis_lupus              GGTTTCCCCAAG-----ACAAAAAATTTTTGTT--TTCATC------G
+Canis_latrans            GGCTTCCCCAAG-----ACAAAAAATTTTTGTT--TTCATC------G
+Canis_aureus             GGYTTCCCCAAG-----ACAAAAAATTTTTGTT--TTCATC------G
+Canis_adustus            GGCTTCCCCAAG-----ACAAAAAATTTTTGTT--TCCATTTGAAAAT
+Cerdocyon_thous          GGCCTCCCCAAG-----GCAAAAAATTTTTGTT--CCCATCTGAAAAG
+Chrysocyon_brachyurus    GGCCTCCCCAAG-----ACAAAAAATTTTTGTT--CCCATCTGAAAAG
+Cuon_alpinus             GGCTTCCCCAAG-----ACAAAAAATTTTTGTT--TCCATTTGAAAAT
+Lycalopex_vetulus        GGCCTCCCCAAG-----GCAAAAAATTTTTGTT--CCCATCTGAAGAG
+Lycalopex_gymnocercus    GGCCTCCCCAAG-----GCAAAAAATTTTTGTT--CCCATCTGAAAAG
+Lycalopex_fulvipes       GGCCTCCCCAAG-----GCAAAAAATTTTTGTT--CCCATCTGAAAAG
+Lycalopex_culpaeus       GGCCTCCCCAAG-----GCAAAAAATTTTTGTT--CCCATCTGAAAAG
+Lycaon_pictus            GGTTTCCCCAAG-----ACAAAAAATTTTTGTT--TCCATTTGAAAAT
+Speothos_venaticus       GGCCTCCCCAAG-----ACAAAAAATTTTTGTT--CCCATCTGAAAAG
+Urocyon_cinereoargenteus GGCCTCCCCAAG-----A-----G---------TATCCATCTGATAAG
+Vulpes_lagopus           AACC--------AGATGACAAAAG---------TATCTGTCTGAAAAG
+Vulpes_vulpes            AACC--------AGATGACAAAAG---------TATCTACCTGAAAAG
+Vulpes_zerda             GGCCTCCCCAAG-----ACAAAAG---------TATCTGCCTGAAAAG
+
+
+
+&[dna]
+Atelocynus_microtis      ATCGTCT
+Canis_aureus             AGYGTCT
+Canis_latrans            AKCGTCT
+Canis_lupus              ATCGTCT
+Canis_mesomelas          ATCGAAT
+Canis_simensis           AGCGTCT
+Cerdocyon_thous          ATTGTGT
+Chrysocyon_brachyurus    ATCGTCT
+Cuon_alpinus             ATCGTCT
+Lycalopex_culpaeus       ATCGTCT
+Lycalopex_griseus        ATCGTCT
+Lycalopex_gymnocercus    ATCGTCT
+Lycalopex_sechurae       ATCGTCT
+Lycalopex_vetulus        ATYGTCT
+Lycaon_pictus            ATCGTCT
+Nyctereutes_procyonoides GTCATCC
+Otocyon_megalotis        GTCATCC
+Canis_adustus            ATCGAAT
+Speothos_venaticus       ATCGTCT
+Urocyon_cinereoargenteus ATCATCC
+Vulpes_lagopus           GTTATCC
+Vulpes_vulpes            GCCATCC
+Vulpes_zerda             GTCATCC
+Lycalopex_fulvipes       ATCGTCT
+
+
+&[dna]
+Lycalopex_vetulus        GC
+Lycalopex_sechurae       GC
+Lycalopex_gymnocercus    GC
+Lycalopex_griseus        GC
+Lycalopex_fulvipes       GC
+Lycalopex_culpaeus       GC
+Canis_simensis           GT
+Canis_mesomelas          AC
+Canis_lupus              GT
+Canis_latrans            GT
+Canis_aureus             GT
+Canis_adustus            AC
+Atelocynus_microtis     GC
+Cerdocyon_thous          GC
+Chrysocyon_brachyurus    GC
+Cuon_alpinus             RY
+Lycaon_pictus            AT
+Otocyon_megalotis        GC
+Nyctereutes_procyonoides GC
+Urocyon_cinereoargenteus GC
+Speothos_venaticus       GC
+Vulpes_vulpes            GC
+Vulpes_lagopus           GC
+
+
+
+
+&[dna] 
+Atelocynus_microtis     GCG
+Canis_simensis           GCG
+Canis_mesomelas          GCG
+Canis_lupus              GCG
+Canis_latrans            GCG
+Canis_aureus             GCG
+Canis_adustus            GCG
+Cerdocyon_thous          GCG
+Chrysocyon_brachyurus    GCG
+Cuon_alpinus             GCG
+Lycalopex_vetulus        GCG
+Lycalopex_sechurae       GTG
+Lycalopex_gymnocercus    GYG
+Lycalopex_griseus        GCG
+Lycalopex_fulvipes       GTG
+Lycalopex_culpaeus       GYG
+Lycaon_pictus            GCG
+Nyctereutes_procyonoides GCG
+Otocyon_megalotis        GCG
+Speothos_venaticus       GCG
+Urocyon_cinereoargenteus GCG
+Vulpes_zerda             GTC
+Vulpes_vulpes            CCC
+Vulpes_lagopus           CCC
+
+
+&[dna]
+
+Atelocynus_microtis      NNNNCCCGGACGG
+Canis_aureus             ATCCCCTAGACGG
+Canis_latrans            ATCCCCTAGACGG
+Canis_lupus              ATCCCCTGGACGG
+Canis_mesomelas          ATCCCCCAGACGG
+Canis_simensis           ATCCCTTGGACGG
+Cerdocyon_thous          ATCCCCCGGATGG
+Chrysocyon_brachyurus    ATCCCCCGGATGG
+Cuon_alpinus             ATCCCTCGGACGG
+Lycalopex_culpaeus       ATCCCCCGGATRG
+Lycalopex_griseus        ATCCCCCGGATGG
+Lycalopex_gymnocercus    ATGCCCCGGATAG
+Lycalopex_sechurae       ATCCCCCGGATGG
+Lycalopex_vetulus        ATGCCCCGGATAG
+Lycaon_pictus            ATCCCCCAGACGG
+Nyctereutes_procyonoides GCCCCCCGAGTGG
+Otocyon_megalotis        GCCCCCCGAGTGG
+Canis_adustus            ATCCCCCAGACGG
+Speothos_venaticus       ATCCTCCGGATGG
+Urocyon_cinereoargenteus GCCCCCCGGATGG
+Vulpes_lagopus           GCCTCCCGAGTGC
+Vulpes_vulpes            GCCTCCCGAGTGC
+Vulpes_zerda             GCCTCCCGAGTGC
+Lycalopex_fulvipes       ATCCTCCGGATGG
+
+
+
+&[dna]
+Atelocynus_microtis      CGACTGCGTGGCCCCTCTAT
+Canis_aureus             CGCCTGCGTGGCCCCTCTAT
+Canis_latrans            CGCCTGCGTGGCCCCTCTAT
+Canis_lupus              TGCCTGCGTGGCCCCTCTAT
+Canis_mesomelas          CGACCGCGTGGCCCCTCTAT
+Canis_simensis           CGCCTGCGTGGCCCCTCTAT
+Cerdocyon_thous          CGACTGCGTGGCCTCTCTAT
+Chrysocyon_brachyurus    CGACTGCGTGGCCCCTCTAT
+Cuon_alpinus             CGACTGCGTGGCCCCTCTAT
+Lycalopex_culpaeus       CGACTGC----------TAG
+Lycalopex_griseus        CGACTGT---------CTAG
+Lycalopex_gymnocercus    CGACTGT---------CTAG
+Lycalopex_sechurae       CGACTATGTGGCCCCTCTAT
+Lycalopex_vetulus        CGACTACGTGGCCCCTCTAT
+Lycaon_pictus            TAACTGCGTGGCCCCTCTAT
+Nyctereutes_procyonoides CGACTGCGTGGCCCCTCCGC
+Otocyon_megalotis        CGACTGCGTGGCCCCTCCGC
+Canis_adustus            CGACCGCGTGGCCCCTCTAT
+Speothos_venaticus       CGACTGCGTGGCCCCTCTAT
+Urocyon_cinereoargenteus CAACTGCGTGGCCCCTCCGC
+Vulpes_lagopus           CGATTGCGTGGCGCCTCCGC
+Vulpes_vulpes            CGATTGCGTGGCGCCTCCGC
+Vulpes_zerda             CGATTGCGTGGCGCCTCCGC
+Lycalopex_fulvipes       CGACTGC----------TAG
+
+
+
+
+&[dna] 
+Atelocynus_microtis     GGGAAAGCCCC--ACCCCCGTTC-
+Canis_simensis           GGGAGAGCCCC--ACCCCCGTTC-
+Canis_mesomelas          GGGAGAGCCCC--ACCCCCGTTC-
+Canis_latrans            GGGAGAGCTCC--ACCCCTGTTC-
+Canis_lupus              GGGAGAGCCCC--ACCCCCGTTC-
+Canis_aureus             GGGAGAGCCCC--ACCCCCGTTC-
+Canis_adustus            GGGAGAGCCCC--ACCCCCGTTC-
+Cerdocyon_thous          GRGAAAGCCCC--ACCCCCGTTC-
+Chrysocyon_brachyurus    GAGAGAGCCCCC-ACCCCCATTC-
+Cuon_alpinus             GGGAGAGCCCC--ACCCCCAATC-
+Lycalopex_vetulus        GGGAAAGCC---TAGCCCCGTTC-
+Lycalopex_sechurae       GAGAAAGCC---TACCCCCGTTC-
+Lycalopex_gymnocercus    GGGAAAGCC---TACCCCCGTTC-
+Lycalopex_griseus        GGGAAAGCC---TACCCCCGTTC-
+Lycalopex_fulvipes       GGGAAAGCT---TACCCCCGTTC-
+Lycalopex_culpaeus       GGGAAAGCC---TACCCCCGTTC-
+Lycaon_pictus            GGGAGAGCC---CCCCCCCGTTC-
+Nyctereutes_procyonoides AGCAGA-TCCC-GACCCCCRTCCC
+Otocyon_megalotis        AGGGTGCTCC---ACCCCTACCT-
+Speothos_venaticus       GGGAGAGCCCC--ACCCCCATTC-
+Urocyon_cinereoargenteus AGGGGACTCACACACCCCCRCCC-
+Vulpes_zerda             AGCGGGCTCCCCCA----CGTCTC
+Vulpes_vulpes            AGCGGGCCCCCCCC----CGTCTC
+Vulpes_lagopus           AGCGGGCTCCCCCC----CRTCTC
+
+
+
+
+&[dna]
+Vulpes_zerda             TGA
+Vulpes_vulpes            TGA
+Vulpes_lagopus           TGA
+Canis_adustus            TGG
+Canis_aureus             TGG
+Canis_latrans            TGG
+Canis_lupus              TGG
+Canis_mesomelas          TGG
+Canis_simensis           TGG
+Atelocynus_microtis      TAG
+Cerdocyon_thous          TAG
+Chrysocyon_brachyurus    TGG
+Cuon_alpinus             TGG
+Lycalopex_vetulus        TAG
+Lycalopex_sechurae       TAG
+Lycalopex_gymnocercus    TAG
+Lycalopex_griseus        TAG
+Lycalopex_fulvipes       TAG
+Lycalopex_culpaeus       TAG
+Lycaon_pictus            TGG
+Nyctereutes_procyonoides CGA
+Otocyon_megalotis        CGA
+Speothos_venaticus       TGG
+Urocyon_cinereoargenteus TGA
+
+
+
+&[dna]
+Atelocynus_microtis      TACCCGCCATCTTC-TTTCGT
+Canis_aureus             TACCCGCTATCTTC-ATTCGT
+Canis_latrans            TACCCGCTATCTTC-ATTCGT
+Canis_lupus              TACCCGCTATCTTC-ATTTGT
+Canis_mesomelas          TACCCGCCA---CCTTTTCGT
+Canis_simensis           TACCCGCCATCTTC-ATTCGT
+Cerdocyon_thous          TACCCGCCATCTTC-TTTCGT
+Chrysocyon_brachyurus    TACCCGCTATCTTC-TTTCGT
+Cuon_alpinus             TACCCGCTATCTTC-ATTCGT
+Lycalopex_culpaeus       TACTCGCTATCTTC-TTACGT
+Lycalopex_griseus        TACCAGCTATCTTC-TTTCGT
+Lycalopex_gymnocercus    TACTCGCTATCTTC-TTACGT
+Lycalopex_sechurae       TACCAGCTATCTTC-TTTCGT
+Lycalopex_vetulus        TACCCGCTATCTTC-TTTCGT
+Lycaon_pictus            TACCCGCTATCTTC-ATTCAT
+Nyctereutes_procyonoides TTCCCGACGTCTCCCTTTTGC
+Otocyon_megalotis        TTCACGACGTCTCCCTTTCGC
+Canis_adustus            TACCCGCCAT--CC-TTTCGT
+Speothos_venaticus       TACCCGCTATCTTC-TTTCGT
+Urocyon_cinereoargenteus TTCCCGCCGTCTCC-TTTCAT
+Vulpes_lagopus           TTTCCACTATCTCT-TCTCGT
+Vulpes_vulpes            TTTCCACTATCTCTTTCTCGT
+Vulpes_zerda             GTTCCACTATCTCT-TCTCGT
+Lycalopex_fulvipes       GACCCGCTATCTTC-TTTCGT
+
+
+
+&[dna]
+Atelocynus_microtis     CTGCCCCAACAGTTTGGCGC
+Canis_simensis           CTGCCACAACAGTTTAGCGT
+Canis_mesomelas          CTGCCCCAACAGTTTGACGC
+Canis_lupus              CTGCYMCAACAGTTTGGCGC
+Canis_latrans            CTGCTACAACAGTTTGGCGT
+Canis_aureus             CTGCTACAACAGTTTGGCGC
+Canis_adustus            CTGCCCCAACAGTTTGGCGC
+Cerdocyon_thous          CTGCCCCAACAGTTTGACGC
+Chrysocyon_brachyurus    CTGCCCCAACAGTTTGGCGT
+Cuon_alpinus             CTGCTACAACAGTTTGGCGC
+Lycalopex_vetulus        CTGCCCCAACAGTTTGGCAC
+Lycalopex_sechurae       CTGCCCCAACAGTTTGGTGC
+Lycalopex_gymnocercus    CTGCCCCAACAGTTTGGCGC
+Lycalopex_griseus        CTGCCCCAACAGTTTGGCAC
+Lycalopex_fulvipes       CTGCCCCAATAGTTTNNNNN
+Lycalopex_culpaeus       CTGCCCCAACAGTTTGGCGC
+Nyctereutes_procyonoides TCGTCCCGGCGGCCTGACAC
+Lycaon_pictus            CTGCCCTAATAGTTTGGCGC
+Otocyon_megalotis        CTGTCCCAGCAGCCCGGCSC
+Speothos_venaticus       CTGCCCCAACAGTTTGGTGC
+Urocyon_cinereoargenteus TTGTCCCGGCGACCTGGCGC
+Vulpes_lagopus           CCATCCGAGCGGTCTAATGC
+Vulpes_vulpes            CCATCCGAGCGGTCCAATGC
+Vulpes_zerda             CCATCCGAGCGATCTAATGC
+
+
+&[dna]
+Atelocynus_microtis      TTCTTACACTTCAGCGCCAGGAACTTCCATAGCTCTCAGGGATTC
+Canis_mesomelas          TTCTCACACTCCGGCGCCAGGGACTTCTATAAATCTTACGGATTC
+Canis_simensis           TTCTTACACTTCGGCGCCAGGGACTGCTATAAATCTCACGGATTC
+Canis_lupus              TTCTTACACTTCGGCGCCAGGGACTGCTATAAATCTTACGGATTC
+Canis_latrans            TTCTTACACTTCGGCGCCAGGGACTGCTATAAATCTTACGGATTC
+Canis_aureus             TTCTTACACTTCGGCGCCAGGGACTGCTATAAATCTCACGGATTC
+Canis_adustus            TTCTCACACTCCAGCGCCAGGAACTTCTATAAAGCTTACGGCTTN
+Cerdocyon_thous          TTCTTACACTTCGGCGCCACGARCTTCCATAACTCTCAGGGATTC
+Chrysocyon_brachyurus    TTTTTGCACTTCGGCGCCAGGAAATTCTATAACTCTTACGGATTC
+Cuon_alpinus             TTCTTACACTTCGGCGCCAGGGACTGCTATAAATCTCACGGATTC
+Lycalopex_sechurae       TCCCTACGCTTCGGCGCCACGAACTTCCATGACCCTCAGGGCTTC
+Lycalopex_gymnocercus    TCCCTACRCTWCGGCGCCACGAMCTTCCATGACTCTCAGGGCTTC
+Lycalopex_griseus        TCCCTACGCTTCGGCGCCACGACCTTCCATGACTCTCAGGGCTNN
+Lycalopex_fulvipes       TCCCTACGCTTCGGCGCCACGACCTTCCATGACTCTCAGGGCTTN
+Lycalopex_culpaeus       TCCCTACGCTTCGGCGCCACGACCTTCCATGACTCTCAGGGCTTN
+Lycaon_pictus            TTCTTACACTTC-------GGAACTGYTATAAATCTTACGGATTC
+Nyctereutes_procyonoides TTCTTAGACCTA------AGGGAATTGCAAAAATTTTGCAGATCT
+Otocyon_megalotis        GGCTTACATCTA------AGGAACATCCAAACATTTTACAGATCT
+Speothos_venaticus       TTTTTACACTTC------AGGAAATTCTATAAATCTTGCGGATTC
+Urocyon_cinereoargenteus GTCTTGCATTTA------ACGAACTTCCAAAGATCCTACGGAGTT
+Vulpes_lagopus           GTCTTAGATCTA------AGCAGACTCTGAAGACTCTGCACACTT
+Vulpes_vulpes            GTCTTAGATCTA------AGCAGACTGTGAAGACTCTGCACACTT
+Vulpes_zerda             GTCTTAGATCTA------AGCAGACTCTAAAGACCCTGCACACTT
+
+
+
+&[dna]
+Atelocynus_microtis    	 AACTGCGGTTGAGGGTCGACAGATTTGCAGCCAACTTCTTCA
+Canis_aureus             ACCTGCGGTTAAGGGCTAACACATTTGCAGTCAACTTCTTCA
+Canis_latrans            ACCTGCGGTTAACGGCTAACACATTTGCAGTCAACTTCTTCA
+Canis_lupus              ACCTGCGGTTAAGAGCTAACACATTTGCAGTCAACTTCTTCA
+Canis_mesomelas          ACCTGCGATTAACCGCTAGCACRTTTGCAGTCGACTTCTTCA
+Canis_simensis           ACCTGCGGTTAACACTTAACACACTTGCAGTCAACTTCTTCA
+Cerdocyon_thous          CACTGCGGTTGAGGGTCGRYAGATTTGSWGCCAACTTCTTCA
+Chrysocyon_brachyurus    ACCTGCGGTTGAGAGTCGACAGATTTGCAGCCAACTTCTTCA
+Cuon_alpinus             AAATGCGGCTAATGATTAACACATTTGCAGTCAACTTCTTCA
+Lycalopex_culpaeus       ACCTGCGGTTGATGGTCGAAAGACTTGCAGCCAACTTCTTCA
+Lycalopex_griseus        ACCTGCGGCTGAKGGTCGAAAGATTTGGTGCCAACTTCTTCA
+Lycalopex_gymnocercus    ACCTGCGGTTGATRGTCGAAAGATTTGGTGCCAACTTCTTCA
+Lycalopex_sechurae       ACCTGCGGTTGATTSTCGACAGATTTGGTGCCAACTTCTTCA
+Lycalopex_vetulus        AMCTGCGGTTGAKGRYCGAAAGATTTGGTGCCAACTTCTTCA
+Lycaon_pictus            AACTGCAGTTGAGTATTAATACAT--GCAGTCAACTTCTTCA
+Nyctereutes_procyonoides ACAAGCAGTTGAAAATTAGGC--TTTGCAGTTGACTTCTTCA
+Otocyon_megalotis        ACCATTAGCTGAAGGCTAGAC--TT-GCAGTTGACTTCTTCA
+Canis_adustus            ACCTGCGGTTAACSATTAACACAT--GCAGTCAACTTCTTCA
+Speothos_venaticus       ACCTGCGGTTGAGRGTCGACAG-TTTGCAGCCAACTTCTTCA
+Urocyon_cinereoargenteus CACTTCAATTGAGAATCAAAT--TT-GCAGTCGACTTCTTCA
+Vulpes_lagopus           AACATTAGTCGGAGGTTGGAC--T--ACA-TTGA--------
+Vulpes_vulpes            AACATTAGKCGGARATTGGAC--T--ACA-TTGA--------
+Vulpes_zerda             AACATTAGTTGGAGATTGGAC--T--ACA-TTGA--------
+Lycalopex_fulvipes       ACCTGCGGTTGACGGTCGAAAGATTTGGTGCCAACTTCTTCA
+
+&[dna]
+Atelocynus_microtis     TGTCCAT
+Canis_simensis           TCTTCGC
+Canis_mesomelas          TGTTCGC
+Canis_lupus              CGTTCGC
+Canis_latrans            CSTTCGC
+Canis_aureus             CCTTCGC
+Canis_adustus            TCTTCGC
+Cerdocyon_thous          TGTCCAT
+Chrysocyon_brachyurus    TGTTCAT
+Cuon_alpinus             TCTTCGC
+Lycalopex_vetulus        TGTCCAT
+Lycalopex_sechurae       TGTCCAT
+Lycalopex_gymnocercus    TGTCCAT
+Lycalopex_griseus        TGTCCAT
+Lycalopex_fulvipes       TGTCTAT
+Lycalopex_culpaeus       TGTCYAT
+Lycaon_pictus            TGCTCGC
+Nyctereutes_procyonoides TGTTCGC
+Otocyon_megalotis        TGTTCGC
+Speothos_venaticus       TGTTCAT
+Urocyon_cinereoargenteus TGTTCGG
+Vulpes_lagopus           TGTTTGC
+Vulpes_vulpes            TGCTTGC
+Vulpes_zerda             TATTTGC
+
+
+&[dna]
+Atelocynus_microtis      GC----------------TCGCT---CA
+Canis_aureus             GCGACTAGGGTGGGCAAGCTGCC---CA
+Canis_latrans            GCGACTAGGGTGGGCAAGCTGCC---CA
+Canis_lupus              GCGACTAGGGTGGGCAAGCTGCC---CA
+Canis_mesomelas          GCGACTAGGGTGGGCAAGCCGCC---CA
+Canis_simensis           GTGACTAGGGTGGGCAAGCCGCC---CA
+Cerdocyon_thous          GC----------------TCGCT---CA
+Chrysocyon_brachyurus    GCGACTAGGGTGGGCAAGCCGTC---TA
+Cuon_alpinus             GCGACTAGGGTGGGCAAGCCGCC---CA
+Lycalopex_culpaeus       GC----------------TCGCT---CA
+Lycalopex_griseus        GC----------------TCGCT---CA
+Lycalopex_gymnocercus    GC----------------TCGCT---CA
+Lycalopex_sechurae       GC----------------TCGCT---CA
+Lycalopex_vetulus        GC----------------TCGCT---CA
+Lycaon_pictus            GCGACTAGGGTGGGCAAGCCGCC---CA
+Nyctereutes_procyonoides GGGACTAGGGTGGGCAAGCCGCC---CA
+Otocyon_megalotis        GGGACTAGGGTGGGCAAGCCGCC---CA
+Canis_adustus            GCGACTAGGGTGGGCAAGCCGCC---CA
+Speothos_venaticus       GCGACTAGGGTGGGCAAGCCGCC---TA
+Urocyon_cinereoargenteus GGGACTAGGGTGGGCAAGCCGCC---CA
+Vulpes_lagopus           AGGACTAGGGTGGGCAAGCCATCCCTCG
+Vulpes_vulpes            AGGACTAGGGTGGGCAAGCCATCCCTCG
+Vulpes_zerda             AGGACTAGGGTGGGCAAGCCATCCCTCG
+Lycalopex_fulvipes       GC----------------TCGCT---CA
+
+
+
+&[dna]
+Atelocynus_microtis     GGTCCCAGCCGTCAT
+Canis_simensis           GGTTCCAGCCGTTAT
+Canis_mesomelas          GGTTCCAGCCGTTAT
+Canis_lupus              GGTTTTAGTTATTAT
+Canis_latrans            GGTTTCAGTTATTAT
+Canis_aureus             GGTYCCAGTTRKTAT
+Canis_adustus            AGTCCCAGCCGTTRT
+Cerdocyon_thous          GGTCCCAGCCRTCAT
+Chrysocyon_brachyurus    GGTCCCAGCCGTCAT
+Cuon_alpinus             GGTCCCAGCCGTTAT
+Lycalopex_vetulus        GATCCCAACCGTCGT
+Lycalopex_sechurae       GGTCCCAGCCGTCAT
+Lycalopex_gymnocercus    GGTCCCARCCRTCGT
+Lycalopex_griseus        GATCCCAACCRTCGT
+Lycalopex_fulvipes       GGTCCCAGCCGTCAT
+Lycalopex_culpaeus       GATCCCAACCGTCAT
+Lycaon_pictus            GGTCCCAGCCGTTAT
+Nyctereutes_procyonoides GGTCCCAGCCGTCGC
+Otocyon_megalotis        GGCCCCAGCCGTTGC
+Speothos_venaticus       GGTCCCAGCCGTCAT
+Urocyon_cinereoargenteus AGCCCCAGCTATCAC
+Vulpes_lagopus           GGTCCTGGCCGGGAC
+Vulpes_vulpes            GGTCCCGGCCGGGAC
+Vulpes_zerda             GGTCCCAGCCGGCAC
+
+
+
+
+&[dna]
+
+Atelocynus_microtis      CCNATNATTCCATNNTNTANCTTTNNTNGANTNNNNAAAATGNNANNNANTNNATNATNCAANANNTNTTTNAAAANTTTNANCANNNACNAAANGTTTATANNNNANNNNCATTGNTNTTTTTATTNNTCCCATAAATCTNTNTCCGNNCNCACTTTCCNNTTTNATAAANATCNNACN
+Canis_adustus            TCCATTGTCTCACCGTATAATTTTTTCTGAGCTCTAAAGATACTACTCAATCTATCACACGATACCCATCTTAAAATTCTAGTCATTTACAAATTATTTATAATGTAACCCCATTGCCTTTTTCGTTGCTTCTACAAACTTGTATCCACCTACATTTTTTTATCTTGTAAATATCTCACC
+Canis_aureus             CCCATTATCTCTCCACGCAATTCTCTCCGAGTCCTAAAGATGTTACTCAATCTGTTACACAACACCTATCTTAAAATTTTGATCACTTATGAATTGTTTACGACGCAACTCCATTGCTCCTTTTGTTGTTTCTGCGATTCTGAATCCACCTACATTTTCTTGTCTTATGAATATCCTGTC
+Chrysocyon_brachyurus    TTCATTGTTCCACCATACAGCTTTCTTTGAACTTTGAAGATATCACTTAATCCATCATACGACATCTATTTTAAAGTTTTGATCATCCACGAGCCGTTTACAGTATAAATCCGCCGTTTTTTTTACCGCTTCCGTAAATCCGTATTTATCTACACCCTTCCATCTTGTAGATACTCTACC
+Canis_latrans            CCCATTATCTCTCCGCACAATTCTTTCCGAGTCCTGAAGATGTTACTCAATCTGTCACACAACACCTATTTTAAAATTTTGATCATTTACAAATTGTTTATAACGCAATTTCATTGCTCCTTTTATTGTCTCTGTGATTTCGCATCCACTTACATTTTCTTGTCTTGTGAATATCCTGTC
+Canis_lupus              CCCGTTATCTCTCCGCACAATTCTCTCCGAGTCTTAAAAATGTTACTCAATCTGTCATACAATGCCTATCTTAGAATTTCGATTACTTATGAATTGTTTATAACGCAATTCCATTGCTCCTTTTATTGTTTCTGTAATTCTGAATCCACTTACATTTTCTTGTCTTGTGAATATCCTGTC
+Canis_mesomelas          CCCATTGTCTCCCCGCACAATTTTTCCCGAGTCCTAAAAATGTTACTCAATTTGTCACACAACACCTATTTCAAAATTCTGGTCATTCATAAATTGTTTACAGCACAATCCCATTGCTTTTTCTACTGTTTTCGTGAATTTGTATCCACTTACATTTCTTTGTTTTGTGAATATCCCATC
+Canis_simensis           CCCGTTATCTCTCCGCACAATTCTCTCCGAGTCCTAAGGATGTTACTCAATCTGTCACACAACACCTATTTTAAGATTTCAATCACTTATAAGTTGTTTATACCGTAAATCCATTGCTCCCTTCATTGTTCCTGTGATTCTGGATCCACTTACATTTTCTTATCTTGTGAATATCCTATC
+Cerdocyon_thous          CCCATTATTCCATTATATAGCTTTTTCCGAATTTCAAAAATGCTACCTAATCTATTATGCAGTATTTGTTTCAAAACTTTAATTACTCACGAAACGTTTATAACATAAACCCATTGCTCTTTTTATTGCTCCCATAAATCTATATCCGTTCACACTTTCCCGTTTTATAAATATCCTACT
+Cuon_alpinus             CTCACTATCTCTTCACACAACTCCCCTCGAGTCCTAGAGACGCTACCCAATCTGTCACACAACACTAACCTTAAAATCTTGATCATTCATAGATTGTTTATAGTATAATTCCATCGCCTCTTTTACTGTTTCCGTGAATTTGCATCTACCTACATCTTTCTATCTTGTAAATATCCCATC
+Lycaon_pictus            CCCGCCATCTCACCGTGCAACTCTCCCCGAGTCCTAAAGATACTACTCAATTTGTCACACAACACCTATTTTAAAATTTCGACCATTTATAAACTGTTTATAATACAACCCCATTGCTCTTCTCATCGCCTCTATAATCTTAAACCCACCTACACTTTTCTACCTCGTAGATACCCTACC
+Lycalopex_culpaeus       CCTATTATTCCATCGTATAGCTTTCTTTGAGTTCCAAAAATGTTATCTAGTTTATTATACAATATTTATTTTAAAATTTTGACCATTTACGAAATATTTATAGCGCAGATTCATTGCTTTTTTTATTGTTCCCATAAATCTGTGTCCGCTCGCACTTTCCTATTTCATAAACATCCTACC
+Lycalopex_griseus        CCTATTATTCCATCGTATAACTTTCCTCGAGTTCCAAAAATGTTATTTAGTTTATTATACAACATCTATTTTAAAATTTTGACCACTTACAAAATATTTATAGCGCAGATTCATTGCTTTTTTTATTGTTCCCATAAATCTGTGTCCGCCCGCACTTTCCTATTTCATAAACATCCTACC
+Lycalopex_gymnocercus    CCTATTATTCCATCGTATAGCTTTCTTCGAGTTCCAAAAATGTCATTCAGTTTATTACACAATATCTGTTTTAAAATTTTGATCATTCACGAAATATTTATAGTGCAGATTCATTGTTTTTTTTATTGTTCCCATAAATCTATGTCCGCCCGCACTTTCCTATTTCATAAACATCCTACC
+Lycalopex_sechurae       CCTATTATTCCATCGTATAGCTTTCTTTGAGTTCCAAAAATGTTACTTAGTTCATTATACAATACCTGTTTTAAAATTTTGATCATTCACGAAATGTTTATAGCGCAGATTCATTGCTCTTTTTATTGTTCCCATAAATCTGTGTCCGCCCACACTTTCCTATTTCATAAACATCCTACC
+Lycalopex_vetulus        CCTATCATTCCATCGTGTAGCTTTCTTTGAGTCCCAAAAGTGTTATTTAGTTTATGATACAACACTTGTTTTAAAACTTTAATCATCCACGAAATATTTATAGCGCAGGTTCATTGCTTTTTTTATTATTCCCATAAATCTGTGTCCGCTCGCACTTTCCTATTTTATAAACATCTCACT
+Nyctereutes_procyonoides CCTATTGTTCTACTGTGTAATCTCTACCGAATTTCAACAATACTACTCGACCCATTGCATAACACTTATTCCGTGCTCTCAATCATTCACAAACCGCTTTCAACACAACTCCGTCGCTTTCTCTACTGCCCTTGTAAATCTACATTCACCCACACTTCTTTATCTTATAATTGTCCTACC
+Otocyon_megalotis        TTCATTATTCCATCGCGTAGCTTCGCCCGAATTTTAGCAGTATTACTCAACCCATTGCACAACACTTATTCTATGTTCTCGATTGCTTGCGAGCTACTCGTAGCGCAAATTTCCTAAAATTCG??CTACTTCTGTGGAAATTTTCTTACCCGTGATCTCCAATCCCACAGATGTTCTACC
+Speothos_venaticus       CCCGCCATCCCACCGCGCAACTCTTTTCTGGTCCTAAGAATATCATTCAATCTATTACATAACATCTGTTCTAAAGTTTCGGTCATCCATAAGCTGTTTATAGCGCAATTCTATCACCTTCTTCATTGCTTCTATAGATCTGCGTCTACCCGCGCCTTTTTATCCTGTAGATATCTCACC
+Urocyon_cinereoargenteus CTCGTTGCTCCACCGTACAATTCCATCCTGATCTTGGCAATACTGCTCAGACTGTCGCACAACGTTAATCCTTAGATTCTAATTATTCGCAAGTCATCTGCAATACGATCTTATCGACCCTTCTGTCGCTTCCGCAATCTTGTACTTACCCACGTTTCTTCACCCCACAGTCGCCTCGTC
+Vulpes_lagopus           TCCACCGCTTTACTGTGTTACCCCCTCTGAACTTTGGAAGCGTTATTCGATTCACTACGTAACGCCTATTCTTAGTTCCTAATCGATTATGGATCCTCTACGATCCAGCCTTACCGCCCCTCTCGCCGCCCCCACGAATTTACATCCACCTACGCCCATCCACTTCACAGGCGCCCTACC
+Vulpes_vulpes            TCCATTACCTTACTGTGTTACCCCCCCTAGGCTTCGGAAGCACTACTCAATCCACTACATAACGTTCACTCTTAGTCCCTAATCGCTTGCAAATCGTTCATAATGCAGCCTTACCACTTCTTTCGCCGTCCCCTCAAATTCACGTCCACCCACATTTATCCACCTTATAGGCATCCTACC
+Vulpes_zerda             TTCACCACCTTACCACACTGCCTTCTCCGAGCTCTAGTAGCACTGCTCAAACCGTTGTGCAGCGCTTATTTTAAGATCTCAATTACTCGCAGACCGCTCATGGTGCGACTTTACCATCCTCTTTCCTGTCTCTACAGGTCTGTGTTCACCCATACCCATCCACCCCGCAGACGCTCTACC
+
+
+
+
+&[dna]
+Atelocynus_microtis     CTACAGCTCCCCTATTACTCCTTTCTTTTATATATAATATCACACAAAAGTCCACTCCAATTACACATCCGCTTAACATTCAATCAACCATTATCCTATTACCCCGCAACAGCAACCATTCAAAGTAATCTTACATTTCTCTCCATATCTTTGAATTTACACCCCATCTTTCTGCCTACATGA
+Canis_adustus            TTACGGCTTCTCTACTACTCCTTTTCTTTGTACATAATGTTACACAAAAATTCCCTTCAACCACACATTCATCTAACGTTCCTTTGATTGCTGCTTTACTACCTCACAATAACAACCATCCAACATGGTCTCATACTGCTCTTCATACCATTAAGCTTGCACTCTGTTTTCCTGCCTACTTGA
+Canis_aureus             ACATGGCTTTTCTACTACTCTTTTCCCTTCCATGTAATATTACACAAAAATCCCCTCCAACCACTCATCCACTTAACACTCCTCTGACCACTACTTTACTACCCCACAATGACAACCATCCAACACAATCTTGTATTTCTCTTCATACCTCTAAGTTCGCATCTTACTTTCCCATTTACTTAA
+Chrysocyon_brachyurus    ATATGGTTCTTNTATTGTTCCTTTCTTTTGTGCACAATACTACACAAAAACTTACTTCGACCACGCGTTCACTTAACATTTATTTAACTACCATCCTATTATCTCACAATGGCAACCATTTAAAGCAGTCTCACACTTTTCTCCGTATCTTTAGGCTCACATTCTATTTTCTTATCTACTTGA
+Canis_latrans            ATATGGCTTTTCTGCTACTCTTTTCCCTTACATATGATACTACACAAAAATCCCCCCCAACCACTCGTCCACTCAACATTCCCTCGACCACTATTTTACTACCCCACAATGACGACCATCCGACACAATCTTGTACTCCTCTCCGCACCCCTAAGTTCGCATCTTGCTTTCCCATCCACTTAA
+Canis_lupus              ATATGGCTTTTCCACTACTCTTTTCTCTTACATGTAATACTACACAAAAACTCCCTCCAACCACTCATCCACTTAGCATTCCTTCGACCACTATTCTACTACCCCACAATGAGAACCATCCAACACAATCTTGTACTTCTCTTCACACCTCTAAGCTCGCATCCTACTTTCCCATCTACTTAA
+Canis_mesomelas          TTATGGTTTTTCTACTATTCTTTTCTTTTGTGTATAACACTACACAAAAATTCCCCTCAACCATACATTTACTTAACACCCCCTTGACCGCTATTCTGCTACCTCACAACAGTAACCATCCAATGTAATCTTATACTTCTCTCCGTATCTTTAAACTCACATCTTATTCTACCACCTATTCAA
+Canis_simensis           ATATGGCTTTTCTATTACTCTTTTCCCTTACATGTAATATTACACAAAAGTCCCCTCCAACCACTCATCCACTTAACATTCCATTAACCACTATTTTACCACCCCACAATGACAACCATCCAACATAATCTCGTGTTTCTCCTCACACCTTCAAGTTCGCATCTTGCCTTCCCATCTACTTAA
+Cerdocyon_thous          CTACGGCTTCTCTATCACTTCTCTCTTTTATACATAATATCACACAAAAATTCACTCCAGCCGTACATTCACCTAACATCCAACCAACCATTGCCCTATTACCTCGCAACAACAACCATCTAAAGTAACCTTACATTTCTCTTCATATTCCTAAATTTACACCCTATTCCTCTACCTACATGA
+Cuon_alpinus             TTATGACTTTTCCACTACTCCTTTTTCCTATATGTAATATTACACAAAAATTCCCTCCAACTACACATTCACTTGACATTTCCTCAACCATTATTCTACTACCTCACAACGAAAACCATTCAATACGAACTTACATCCTTCTTCACATCTCTAAATTTACATTTTGTTTTCCTATCCGCTCAA
+Lycalopex_griseus        TCACGGCTTCTCTATTACTCCTTTCTTTTATACATAATGTCACACAAAGGTCCACTCTAACCACACATTCACCTAACGTTCCATTAACCACTACCCTATTACCTCGCAATAGTAACCGTTCAAAGTAATCTTACATTTCTCTCCATACCCTTAAATTTACACCCCACCTTCCCACCTACAGAA
+Lycalopex_culpaeus       TTACGGCTTCTTTATTACTCCTTTCTTTTATACATAATGTCACACAAAGGTCCACTCTAACCACACATTCACCTAACGTTCCATTAACCACTATCCTATTACCTCGCAATAGTAACCGTTCAAAGTAATCTTACATTTCTCTCCATACCCTTAGATTTATGCCCCACCTTCCTACTTATAGAA
+Lycalopex_gymnocercus    TTACGGCTCCTCTATTACTCCTTTCTTTTATACATAATGTCACACAAAAGTCCACTCTAACCACACATTCACCTAACGTTCCACTAACCACTACCCTATTACCTCGTAATAGTAACCGTTCAAAGTAATCTTACATTTCTCTCCATACCCTTAAATTTACACCCCACCTTCCCACCTACAGAA
+Lycalopex_sechurae       TTACGGCTTCTCTATTACTCCTTTCTTCTATACGTAATGTCACACAAAAGCCCACTCTAACCACACATTCACCTAACGTTTCATTAACCACTACTCTATTACCTCGCAATAGTAACCGTTCAAAGTAATCCTACATTTCTCTCCATACCCTTAAATTTACACCCTACCTTTCCACCTATAGAA
+Lycalopex_vetulus        TTACGGCTTCTCTATTACTTCTTTCTCTTATACATAATGTCACACAAAAGCCCACTCTAACCACATATTCACCTAACGTTTCATTAACCGCTACCCTATTACCTCGCAATAGTAACCGTTCAAAGTAATCTTACATTTCTCTCCATATCCTTGAATCTATACCCCACCTTTCCACCTACAGAA
+Lycaon_pictus            CCTCGGTCTCTCTATTACTCCTTTTCTTTATACATAATACTTCATAAAAGCCCCCTCCAACTGCACACTTACTCAACATCCCTTCAATCGTTATTCTACTATCCTACAGCAACAACCATCCAGTATAGTCTTACACCTCTCTCCACACCTCCAAATTGACATCCTACTTTCCTATCTGCTTAA
+Nyctereutes_procyonoides TTACAACTTTCCTACTATCTCTTCTCCTTACATACTATACCACATAAGCATCCACTCCAACCACATATATACGTGACATTCACTCAACCGCCATCCCACCATTCCACAGTAGTACCTAGCCAACGCAATTACACACCCCACCCTACGCCACTAAACCCATATCCCGCCTTCCCATTCACTCAA
+Otocyon_megalotis        TTGTGGCTCCCCTATCACTCCTCTTCTTTACACATTATACCTCACAGGCACTCATTCCTATCATGCTCCTACCTGACATCCACTCAACCGCCATTCCGCTGCTCTACCATAAGGCCCACCTAGCGAAATTACACACTCCCCCCCGTGCCACTAGTCCCATACTCTGTTTTCCCAACCATATGA
+Speothos_venaticus       CTATAGCCCCTTTATTGTCCTCCTCCTTTCTATATAACATTACGCAGAAATCTACCCCAGCCACATATCCACGTAACACCCCTCAGGTTACTGTCCTGCTACCTCACCACAATAATTATTGAGTATGATCATACATTTCTCTCCGTACCTTCAAATTTATGTTCTATTTCCCCACCCACTTGA
+Urocyon_cinereoargenteus TTACGGTTTTTCTGTCATTCCATCTTCCTACATATTACCTCATGCAAACATTCATTCCTACCATACACACACGTAACATTCTTCCAGCCGCTACACCACCATCTCATTACAAAACCCATTCAGCGCGACCATACGCTCTCCACTGCATTATTGCACCCATACCCTGCCTTCCCGCCCACTCGA
+Vulpes_lagopus           TTATGGTTTTTTTCCTACTCCATTTTTTACTATACCGCATTATACAGACAATCACCCCAACCACTCGCTAGTCCAGTATTCAACTAACCACCACTCCACCACCTCATCATAGTACTCATTCAACGCAATCATACACTCTTTCCTATATCAGTAGATCCATATCCCAATTTCACGCCCACTTGT
+Vulpes_vulpes            TTGTGGCTTTTTTCCCACTCCATTTCTTATTACATCGCACTATACGGACACCCACTCCAACCGTTCTTTAATCCAGTATTCAACCAACTACCGCTCTATCGCCCCGTTATAACACCCACTCAATGCAATCATGCACTCTTTCCTATATCAGTGGACCCATACCCCAGTTTCACGCCCACTGGT
+Vulpes_zerda             TTATGGCTTTTTTATTACTCCACTTCTTACTACACCGTACCACACGGATACTCCCTCCAGCCGTCCACTAATCTGACACCCGACCAACCGCCATTCTACTACCCCACAATGACGACCATCCGATATAATCATACACTCCTTTCCACACCATTAAATTCACATCTTATTTTCCCAACCACTCGA
+
+
+
+&[dna]
+Atelocynus_microtis      ATACCTTGTCATTCCAGACCTCTATGTTGTAACTGATTTCTATATGTTGCACTCATCCCTTCTTCCTATCCCTCTTACAATACCATTGATATCATACGACACATTGATCACTA
+Canis_adustus            ACACCTTGTTACTCCAGGTCCTTGTGGTGTAACTGACTTTCATACACAGCACTCACCTTTCCTCCTTACATTTCCCACAACACCACCACTGTCATGTGACACATCGACCACTA
+Canis_aureus             ACACCTTGTTACTCCAGGTCCTTGTGGTGTAACCGCTCTCTATACGCAGCATTCACCCCTCCTCCTTACCTCTCCCACAACACCACCACTGTCATATGACACATTGACCACCC
+Chrysocyon_brachyurus    ACATTTTATTACTCCAGATCCCTATACTGCGACTACTTTTTATACGTTGCACTTATCCCTCTTCCCTGCCCTTCCTATAATGCCACTATTATCACGCGACGTACCGATTACTA
+Canis_latrans            ATACTCTGTTACTCCAGGCCCTTGTACTACAACCGCTTTTTATATGCAGCATTCACCTCTCCTCCCTATCTCTTTCGCAATGCTACCACTGTCATATGACACATCGACCACTA
+Canis_rufus              ATACCCTGCTACTCCAGGTCCTTGTACTGCAACCGCTTTTTATATGCAGCATTCACCTCTCC???????????????????????????????????????????????????
+Canis_simensis           ACACCCTGTTACTCCAGGTCCTTGTACTACAACTGCTTTTTATATGCAGCATCCATCTTTCCTCCTTATCTCTCTCACAATGCCACCACTGTCATATGACACATCGACCATTA
+Cerdocyon_thous           ACACCTTGTCATTCCAGATTTCTACACTGCAACTGGCTTCTATGTGCAGCACTCATCCTTTCTCCCTATTCCTCTCGCAATATCGCTAATGTTATGCGACATATTGATCGCTA
+Cuon_alpinus             ACACCTTGTTACTCCAGATCCCTGCACTACAACCGCTTTTCATATACAGCACTCACCTCTCCTCCTTATCTTTCCCATAACACCATTGCTGTCATATGTCGCATTGATCACCA
+Lycalopex_culpaeus       ACACCTTGTCATTTTAGACTTCTGCACCGCAACTGATCCCTATGTGTAGCGTCCATCCTTTCTCTCTACCCCTCCCACAATACCACTAATGTTATACGATACATCGACCACTA
+Lycalopex_griseus        ACACCTTGTCATTTTAGACTTCTGCACCGCAACTGATCCCTATATGTAGCGTCCATCCTTTCTCCCTACCCCTCCTACAATACCACTAATGTTATACGACACATCGACCACTA
+Lycalopex_gymnocercus    ACACCTTGTCATTTTAGACTTCTGCACCGCAACTGATCTCTATGTGTAGCGTCCATCCTCTCTCCCTACCCCTCTCACAATACCACTAATGTTATACGATACATCGACCACTA
+Lycalopex_sechurae       ATACCTTGTCATTTTAAACTTCTGCACCACAACTGATTTCTATATGTAGCATCCATCCTTTCTCCCTATCCCTCTCATAATACCACTAATGTTATACGACACGTCGACCA???
+Lycalopex_vetulus        ACACCTTGTCATTTTAGACTTCTGCACCGCAACTGATCCCTATGTGTAGCGTCCATCCTTTCTCTCTACCCCTCCCACAATACCACTAATGTTATACGATACATCGACCACTA
+Nyctereutes_procyonoides ACACCCCGTCATTTCCGAACCTCACAACGCAATCTATTCTCACATATCTTTCTTAACCCCTCCCCTCGCACCTTCCCCAGCGCCACTACTACCACGAACCACATCAGCTATCC
+Otocyon_megalotis        ACACCCTGTCGTTTTCGATTCCTACACCGTAACCGGCTTCCACACACGGCACTCAGCT??GTCCAGGTT?CCCCCCCCCTCCTCGCTATCGTTACATATTGCATAGATCGCCC
+Speothos_venaticus       ATGTCTTACCATTCCAAACCTTTGTGCCACAGCCGCTCCTTATACACAACACTTGCCTTTCTTCCTTATCCATCTCATAATACTACCGCTATTATACGATATACTTACTATTA
+Urocyon_cinereoargenteus ACGCCTCGCCACCCATGATCTTAGCGCCGTACCCTATCTCTGCATGCCGCACTTACTTCTCTCCCTCCCACACCCCACCGCAACACTACTACTGTATACCACATTGGTCACCC
+Vulpes_zerda             ACACCTTGTCGTTCCAAACCTTTGTGCCGCCACTTGTTCTCGTACACAACATTCGACCCTCTCCCCTACATCTCCCATAGCACTACTCCCGTCACATACTACGTAGACTATTA
+Vulpes_vulpes            GTACCTTGCCACCCTCGAATCTCGCTCCGCTACCTGTTCTTACATACAGTTCTCATCCCTCTTCTCTATACCCCCCCTAGCACTACTCCTGTTATATACCCCGTTGACCACCC
+Vulpes_lagopus           GTACCTCGTCGCTCCCGAACTTCACACCCCTCCCCATCCTCACATCTAGTTTTTAACCCTCCCTCCTATGATCTTCGCAGCACCATTACCGTCGCATACTACATCGACCAYCC
+Lycaon_pictus            ACATCCTACCACTTCAAGCTTTTATACCACAATCACTCCTCAAACATAGTACTCACTTTTTTTCCCTACTCCTCCCACAACACCACTATTGTCATACGACATATTAATCATCA
+Canis_mesomelas          AYACCTTGTCACTCYAGRYCCYYATAYTATAACCGCTYTTTAYATRTAGYRCTCATCYTTCCYCCTYAYCYCTCCCAYAATACCACYMCTGTYATATRMYMCRTYGATCATCC
+Canis_lupus              ACACCCTGTTACTCCAGGTCCYTRYACTRYAACTGCTTTCTATRTGCAGCATTCACCYCTCCTCCTYATCTCTCCCACMATACCATCACTGTCATATGACATATCGACCRCTA
+
+
+
+&[dna]
+Atelocynus_microtis      TCCAGTCTCTCCAATCTCCCAACACACCCAGCCTTTTCTTCACATACATGCCCCCATATGCCATTGTTATGGAACTCTTCAACCACCTATTTGATTACGACCATT
+Cuon_alpinus             TCTAACCTTTCCAACCTTCTACTACCTCCGGCTTTTCTTCCACGAACATGTCCCCACTCGTCCCTCTTACAGAACCTCTTAACAGTTTACCTGATCATAACCGTT
+Lycalopex_vetulus        TTCAACCTCTTCAGTCTCCTAACATCTCCAGCCCTTTCTTTACGTACACGCTCTCACCTGCCCCTTCTNTAAAATTTCTCAACCACCCATTTGATCATGGTCATC
+Otocyon_megalotis        CCCAGTTCCTCCAACTATCACTCGTCCCCAGCCTTTTATACACGCGAGCAAATCTATCCACTCCTTTAT???TACACGACAACAAGTTGCTCGCGCGTCACCAAC
+Canis_latrans            CTCAATCCCTCCAACTCTCCACTACCCCCGGCTCTTATTCCATACACACACACCCACTTGTCCTTCCTATAAATCTCCCCAGCAGTTCACTTGATCATAATCGTT
+Canis_adustus            TCTAACCCCCCTAACTTTCTACCACCCCCAGCTCCCCTTCCATACACATACTCCTACTTACCTCTCCTATAGAACCTTTTAACTATCCATTCAACTACAACTACT
+Canis_aureus             TCTAACCCTCCCAATCTTTTACCACCCTTAGCTCTTATTCCATGCATACACCCCCACTTGTCCTTCTTTTAGAACCCCTCAACAATTCACTTGATCGCCATCGTT
+Chrysocyon_brachyurus    TTCAGTCCCTCCAACTTTCTACCACTTCCAATTCTTCCTTCATACACATAGCCCCATTCACTCTCTTCACGAAACCCTCTGATTACCTACTTGATCACAACCATT
+Cerdocyon_thous          TTCAATCTCTCCAGTCTCCTAACACCTCCAGCCCTTCCTTCACGTACACACTCCCACTTACCTTTTTTATAGAACCTCTTAACCACCTATTTGATCACGACCATT
+Lycalopex_griseus        TTTAATCTCTTCAGTCTCCTAACATTCCCAGCCCTTTCTTCACGTACACGCTCTTATATGCCTTTTCTATGGAACTTCTCAACCACCTATTTGATCACGATCATC
+Lycalopex_gymnocercus    TTCAACCTCTTCAGTCTCCTAACATCCCCAGCCCTTTCTTTACGTACACGCTCTCATCTGCCCCTTCTATAAAACTTCTCAACCACCCATTTGATCATGGTCATC
+Lycalopex_sechurae       TTCAGCCTTTTTAACCTCCTAACATCCCCAGCCCTTTCTTTACGTACACACTCTCATCTGCCCCTCTTATAAAATTTCTCAACCACCCATTTAATCATGGTCATC
+Lycalopex_culpaeus       TTCAACCTCTTCAGTCTCCTAACATCCCCAGCCCTTTCTTTACGTACACGCTCTCACCTGCCCCTTCTATAAAATTTCTCAACCACCCATTTGATCATGGTCATC
+Vulpes_zerda             CCCAGTTTCTTCAACCTCCATCCACTCTCAGCCCTCCTTACCAACGAATACTCCCACTCACTCCCCATATAAAACCCCCTCACCACCTGTTTGGCCGCTACCATC
+Nyctereutes_procyonoides NNCAACCCCCCCAGATTCCACCCACACCCAGTTATCCCTCCACATGAACAATTCAGCACACATTCCGTATCAGCCTCCCCCACCATCTATTTGACCACCACTACT
+Speothos_venaticus       CCTAACCCCTCCAGCCTCCCACCACTCCCGATCCTTCCTCCACACATATGCCCCTATCTGCCTCTTCCATAAAACTTTCTGACTACTCACCTGACTACGATCATT
+Urocyon_cinereoargenteus NNCAACCCCCCTAAACCCCAGCCGCACCCGGCTCTCACTATAAACGAGCATCTTTGCTTACTCTCTACACTGAGCCTCTTCACAACTTACTCGGCCGCTACCATC
+Vulpes_vulpes            TCCAGCCTTTTCCGCCTTCACATGCACCTAGCCTTCCCACACAATGAACACTTCCACTCACCACCCCTTTGGGACCTCCTCACCACTTGTTTGATCGCCATCATC
+Vulpes_lagopus           TCCGATCYCTTCCGCCYTCACCCACCCCTAGCCCTCTCACCCAACGAACACCTCCACCCACCACCCCTCCAGAACCTCCCCACTACCTGTTTGATCACCATCATT
+Canis_lupus              TTTGRTCCTTCCAACTTTTYACCACCCCTGGCTCTTACTCCATGCACACGCWCCCACTYGTCCTTCTTATAAATCTCCTCAGTARYTCACTTGACCACAGTCGTC
+Canis_mesomelas          YCTAATCYYYCCAATYTTTYACYACYYCCRGCTCCTTTTCCATACAYATAYCCCCACTTGTCCTTTTTATWGAACTCCYCAACAGCTYACCTAACYAYAATCGCT
+
+
+
+
+;
+
+
+hold 100000;
+
+
+
+cn
+{0 0_LargoRostro;
+{1 1_anchopaladar;
+{2 2_anchofront;
+{3 3_largobula;
+{4 4_anchomuescamaset;
+{5 5_ramahorizantasl;
+{6 6_largoprocoronoideo;
+{7 7_I3;
+{8 8_altC1;
+{9 9_p4;
+{10 10_m1;
+{11 11_largotrigm1;
+{12 12Ltibia/Lradio;
+{13 13Ltibia/Lfem;
+{14 14DirP.Parocc 0:caudal 1:ventrocau 2:medio 3:ventral;
+{15 15FusPParoc 0:nofus 1tot_fus 2fus_con_tip;
+{16 16AnchoPpost 0:ang 1:ancho;
+{17 17Esc_Supraocc 0:rect 1:triangular_ancho 2:triangu_angost 3:muy_angost;
+{18 18Exp_Inion 0:no_exp 1:exp;
+{19 19ForPostPariet 0:pres 1:ausen;
+{20 20FisOrb/ForRot 0:indep 1:juntos;
+{21 21P.mastoideo 0:peq 1:grande;
+{22 22P.mastoideo_direccion 0:anteroventral 1:ventral;
+{23 23Senos_front 0:aus 1:pres;
+{24 24tamaño_senos 0:no_pen 1:pen;
+{25 25exp.Caud.Senos 0:no_exp 1:exp_caudal; 
+{26 26Yugal_eversión_lat. 0:si 1:no;
+{27 27Contactoyug/lagrimal 0:no 1:si;
+{28 28Arco_cig_arqueado 0:plano 1:si;
+{29 29Pos.muesc._mas 0:lat 1:vent;
+{30 30exp_caudal_paladar 0:ant_o_justo 1:caud;
+{31 31Borde_med._Proc_nasal 0:redondeado 1:recto;
+{32 32forma_for_infraorb 0:redond 1:angost;
+{33 33cont.Pmx_y_front. 0:no 1:si;
+{34 34cresta_sagital 0:area_lyrif 1:doble 2:_fuerte_simp;
+{35 35pos_orbita 0:BM_P4 1:BD_P4 2:M1;
+{36 36canal_aliesf 0:confluy 1:indep;
+{37 37L.nasal 0:no_llega 1:llega 2:caudal;
+{38 38forma_nasal 0:rectang 1:comp_caudalmente;
+{39 39CPO 0:bien_marcado 1:poco_marc;
+{40 40ext_Caud_Vomer 0:casi_nada 1:exp 2:muy_expand;
+{41 41Forma_preesfenoides 0:corto_y_ancho 1:largo_y_angost;
+{42 42Espina_nasal 0:poco_des 1:simple 2:doble;
+{43 43Pos_canal_para_el_N7_en_MAI 0:dorsal 1:anterior;
+{44 44Fosa_suprameatal 0:present 1:ausent;
+{45 45ext_Laterocaudal_bula 0:redond 1:agudo_y_exp;
+{46 46Forma_de_la_bula 0:globo 1:deprimida 2:hiperdes;
+{47 47septo_intrabular_interno 0:discont 1:continuo;
+{48 48des-MAE 0:largo 1:corto;
+{49 49surco_interorbitas 0:no_marcado 1:marcado;
+{50 50lob_subang 0:suave 1:bien_marcado_y_robust 2:bien_marcado_agudo;
+{51 51fac_inferointerna 0:no_exp 1:exp;
+{52 52proc_ang. 0:ganchiforme 1:rectang 2:cuadrang;
+{53 53altura_cóndilo 0:nivel_de_dent 1:más_elevados;
+{54 54diastema_I2-3 0:aus 1:presp);
+{55 55cíngulo_mesiolingual_I3 0:aus 1:pres;
+{56 56CAM_I3 0:pres 1:aus;
+{57 57CAM_I1 0:pres 1:aus;
+{58 58CAM_I2 0:pres 1:aus;
+{59 59CAD_I2 0:pres 1:aus;
+{60 60diast_pm_post 0:aus 1:pres;
+{61 61forma_Pm 0:graciles 1:mas_robusta 2:aguda 3:baja_ancha 4:aguda_alta_robusta;
+{62 62CAD_P2 0:aus 1:pres;
+{63 63CAD_P3 0:aus 1:pres;
+{64 64tam_protocono_P4 0:bien_des 1:_reduc 2:relictual;
+{65 65parastilo_P4 0:aus 1:pres;
+{66 66parastilo_de_M1 0:_bien exp 1:reduc;
+{67 67ext.mesial_del_hipocono_M1 0:expand 1:reducc;
+{68 68presencia_paracónulo_del_M1 0:aus 1:pres;
+{69 69Hipocono_del_M1 0:bien_desarrollado 1:reduc;
+{70 70Tamaño_paracono_M1 0:subigual 1:alto;
+{71 71Cíngulo_labial_M1 0:bien_des 1:reduc;
+{72 72tamaño_metacónulo_M1 0:bien_des 1:reducido;
+{73 73Presencia_M2/3 0:_sin_M2 1:con_M2 2:con_M3;
+{74 74Tamaño_metacono_del_M2 0:mas_alto 1:bien_des_y_bajo 2:peq 3:relic;
+{75 75ext.mesial_del_hipocono_M2 0:extendido, 1:no_ext;
+{76 76Número_de_raíces_del_M2 0:3 1:2;
+{77 77paracónulo_del_M2 0:aus 1:pres;
+{78 78CAD_p2 0:aus 1:pres;
+{79 79CAD_p3 0:aus 1:pres;
+{80 80CAD2ºp4 0:aus 1:pres;
+{81 81CCM_p2-3 0:aus 1:pres;
+{82 82CCM_P4 0:aus 1:pres;
+{83 83protost.m1 0:aus 1:pres;
+{84 84metacónido_m1 0:presente 1:ausente;
+{85 85desarrollo_entocónido_m1 0:cingulo_mesial 1:sin_crestas 2:con_crestas_tr 3:reduc;
+{86 86mesocónido_m1 0:aus 1:pres;
+{87 87entocóulido_m1 0:aus 1:pres;
+{88 88metastílido_m1 0:aus 1:pres;
+{89 89presencia_hipoconulido 0:aus 1:pres;
+{90 90desarrollo_hipoconulido 0:poco_des 1:bien_des;
+{91 91cíngulo_mesiolabial_del_m2 0:exp_caudalm 1:limit_mesolab 2:reducc;
+{92 92tamaño_metacónido_del_m2 0:mas_alto 1:subigual 2:reducc;
+{93 93des_entocónido_del_m2 0:cresta 1:sólo 2:doble;
+{94 94entocónulido_m2 0:aus 1:pres;
+{95 95m3/m4 (0:sin_m3, 1:con_m3 2:con_m4;
+{96 96Giro_prorreano 0:poco_des 1:largo;
+{97 97contorno_surcos_coronales 0:comprimido 1:pentagon 2:parentesis 3:corazon 4:ortog;
+{98 98Alas_atlas 0:alargadas_rectas 1:redondeadas_cortas;
+{99 99Borde_lateral_4ta_cerv 0:pequeño_surco 1:depresión_amplia_craneal 2:recto 3:concavo;
+{100 100Artic_sacro_ilium 0:2da_sacra_1/4 1:2da_sacara_es_1/2;
+{101 101Proceso:transv_3ra_sacra 0:largo_lateral 1:corto_caudal 2_corta_comprimida; 
+{102 102inserción_serrato_ventral_y_romboideo 0:en_mitad_craneal  1:algo_expandida_caudalmente 2:lleg_borde_caudal;
+{103 103músculo_redondo 0:lateral 1:lateroventral 2:ventral;
+{104 104Humero__facetas_mús_flexores_carpales_y_de_los_dedos 0:al_mismo_nivel 1:distal 2:más_distal; 
+{105 105capítulo_del_humero 0:redondeado 1:romo;
+{106 106Altura_cabeza_humero 0:similar_a_tub_mayor 1:más_baja;
+{107 107Tuberosidad_menor_humero 0:grande_expand_lateralmente 1:reducida;
+{108 108Desarrollo_cresta_endoepicond 0:desarrollada_expand_medialmente 1:reducida;
+{109 109Ext_distal_cresta_deltoidea 0:mitad_diáfisis 1:tercio_proximal;
+{110 110Fosa_olecraneana 0:poco_excavada 1:muy_excavada;
+{111 111Foramen_entepicondilar 0:presente 1:ausente;
+{112 112Diáfisis_radio 0:curvada_sentido_caudal 1:más_grácil_menos_curvada 2:muy_grácil_casi_recta;
+{113 113proceso_medial_distal_radio 0:strong 1:reduced;
+{114 114Robustez_ulna 0:similar_al_radio 1:más_grácil;
+{115 115Extremo_proximal_borde_caudal_ulna 0:convexo_a_recto 1:cóncavo;
+{116 116Largo_olécranon 0:largo 1:corto;
+{117 117Orientación_borde_distal_pubis 0:inclinda_90º 1:casi_horizontal;
+{118 118Tuberosidad_iliaca_ventral_caudal 0:ausente 1:presente;
+{119 119Tuberosidad_isquiática 0:robusta_expandida 1:poco_desarrollada;
+{120 120Fémur:tercer_trocánter 0:pequeño 1:ausente;
+{121 121Fémur:posición_inserción_músculos_glúteos_medio_y_profundo 0:en_contacto_o_casi 1:claramente_separadas;
+{122 122Altura_del_trocánter_mayor_respecto_cabeza_fémur 0:más_bajo 1:subigual 2:más_elevado;
+{123 123Tibia:extensión_cresta_tibial 0:poco_expand 1:bien_expandida;
+{124 124Surco_muscular_tibia 0:profundo_ semicircular 1:poco_profundo;
+{125 125Área_origen_músculos_tibial_posterior_flexor_digital_largo 0:ancha_medial 1:angosta_desplazada_proximomedialmente 2:más_comprimida_y_desplazada;
+{126 126Desarrollo_maléolo_medial_tibia 0:expandido 1:menos_expandido;
+{127 127Forma_faceta_sustentacular 0:triangular 1:eliptica 2:cuadrangular;
+{128 128Foramen_astragalar 0:presente 1:ausente;
+{129 129Surco_tendinoso_plantar_astrágalo 0:presente  1:ausente;
+{130 130Dedo_1_miembro_anterior 0:presente 1:ausente;
+{131 131Mt1 0:grande_>_mitad_largoMt3_y_func 1:reducidos_<;
+{132 132Baculum 0:large 1:reduced;
+{133 133Caecum_shape 0:straight 1:nearly_straight 2:convoluted;
+{134 134Number_of_mammae 0:4-7 1:8 2:10-14;
+{135 135Ratio_of_neocortex_volume_to_the_of_rest_of_brain_(total_brain_volume_minus_neocortex_volume) 0:1.22-1.31 1:1.40-1.62 2:1.66-1.83;
+{136 136Overall_colour_intensity_of_black_pigment 0:absent 1:grey_or_banded_hairs 2:general_appearance_dark;
+{137 137Overall_colour_intensity_of_red_pigment 0:absent 1:present_as_yellow_or_red_underfur 2:general_appearance_reddish_or_tan 3extensive_red_colour;
+{138 138Muzzle 0:light 1:dark;
+{139 139Facial_mask_between_nose_and_eye 0:absent 1:present;
+{140 140Facial_mask_behind_and_below_eye 0:absent 1:present;
+{141 141Mystacial_vibrissae_length_and_thickness /;
+{142 142Neck_and_back 0:no_crest 1:crest_mane;
+{143 143Back_dark_longitudinal_band 0:absent 1:narrow_stripe 2:wide_stripe 3:saddle;
+{144 144Guard_hairs'_coarseness /;
+{145 145Dorsal_guard_hairs_length_in_relation_to_body_size /;
+{146 146Dorsal_guard_hairs_banded_(agouti) 0:present 1:absent;
+{147 147Underfur_density /;
+{148 148Ear_pinnae 0:pointed 1:rounded;
+{149 149Ear_pinnae 0:light 1:dark;
+{150 150Ear_pinna_dark_rim 0:absent 1:present;
+{151 151Tail_bushiness /;
+{152 152Tail_dark_patch_on_dorsal_surface 0:absent 1:short 2:long;
+{153 153Tail_tip 0:white 1:same_as_rest_of_tail 1:black;
+{154 154Fore_legs 0:light 1:entirely_dark;
+{155 155Fore_legs_with_black_line_on_front 0:absent 1:present;
+{156 156Hind_legs 0:light 1:dark;
+{157 157Hind_feet_dark_plantar_surface 0:absent 1:present;
+{158 158Skin_darkly_pigmented /;
+{159 159Face_contrasting 0:absent 1:present;
+{160 160Face 0:darker 1:unicolour 2:lighter;
+{161 161Eye_contour 0:unicolour 1:light_ring 2:dark_around;
+{162 162Throat_and_neck 0:darker 1:unicolour 2:lighter 3:white;
+{163 163Below_eyes 0:unicolour 1:dark_patch;
+{164 164Eye_pupil 0:elliptic 1:circular;
+{165 165Female_body_mass 0:<_5_kg 1:6-9_kg 2:10-12_kg 3:13-16_kg 4:>_20_kg;
+{166 166Sexual_dimorphism_(M/F) 0:<_1_or_equal 1:>_1;
+{167 167Gestation_time 0:50-58_days 1:60-65_days 2:>_67_days;
+{168 168Neonate_mass 0:25-150_g 1:160-350_g 2:more_than_350_g;
+{169 169ge_when_eyes_open 0:5-8_days 1:9-12_days 2:more_than_13_days;
+{170 170Age_when_teeth_erupt 0:7-11_days 1:12-15_days 2:more_than_21_days;
+{171 171Age_when_eating_first_solids 0:17-21_days 1:24-28_days 2:32-40_days;
+{172 172Age_at_weaning 0:49-63_days 1:90-120_days;
+{173 173Age_when_reaching_adult_body_mass 0:90-190_days 1:more_than_200_days;
+{174 174Age_at_sexual_maturity 1:240-270_days 2:285-330_days 3:360-365_days;
+{175 175Life_span 0:40-80_months 1:100-155_months 2:more_than_165_months;
+{176 176Communal_denning_and_nursing 0:absent 1:present;
+{177 177Polygyny 0:absent_(monogamy) 1:present;
+{178 178Multiple_pairs_breeding 0:absent 1:present;
+{179 179Polyandry 0:absent_(monogamy) 1:present;
+{180 180Helpers_and/or_non-reproductive_adults 0:absent 1:females 2:both_males_and_females;
+{181 181Territorial_behaviour 0:absent 1:present;
+{182 182Multiple_litters 0:absent 1:present;
+{183 183Close_contact_(resting_in_heaps) 0:absent 1:present;
+{184 184Regurgitation 0:absent 1:present;
+{185 185Raising_lip_to_show_fangs_as_a_threat_behaviour 0:absent 1:present;
+{186 186Low_level_of_caching 0:absent 1:present;
+{187 187Handstand_urination 0:absent 1:present;
+{188 188Scratching_ground_before_or_after_urination 0:absent 1:present;
+{189 189Laying_during_submissive_display_(belly_crawl) 0:absent 1:present;
+{190 190Licking_during_greeting_ceremony 0:absent 1:present;
+{191 191Tucking_tail_between_hindlegs_as_a_subordination_posture 0:absent 1:present;
+{192 192Frequency_of_oestrus_phases 0:once_a_year 1:aseasonal;
+{193 193Size_of_prey_relative_to_body_size /;
+{194 194Social_grooming 0:rare_and_only_between_pairs 1:well_developed;
+{195 195Howling 0:absent_or_only_as_long-distance_contact_call 1:present_but_no_physical_contact close_contact_call_social_howling_in_unison;
+{196 196Defecation_at_specific_sites 0:absent 1:present;
+{197 197Tail_posture_in_dominant_animals 0:no_distinct_posture 1:straight_and_horizontal 2:raised_in_a_J-shape 3:inverted_U-shape;
+{198 198Frequency_of_tail-wagging_in_submissive_posture /;
+{199 199Estrus_duration /;
+{200 200Duration_of_copulatory_tie /;
+{201 201Average_number_of_adults_per_group_during_breeding_season /;
+{202 202Treatment_of_prey 0:aggressive_defense_of_all_food sharing_of_some_foods 1:sharing_of_most_or_all_foods;
+{203 203Treatment_of_play_object 0:aggressive_competition_(playmates_discouraged) 1:mock_competition_(playmates_encouraged) 2:sharing_without_competition;
+{204 204Cooperative_hunting absent 0:non-cooperative_but_foraging_in_proximity 1:cooperation;
+{205 205Diet 0:opportunist 1:specialised_to_small_prey 2:specialised_to_large_prey;
+{206 206ontogeny_of_the_aggressivity_over_food 0:aggressive 1:youngsters_more_aggressive_than_adults 2:non-aggressive;
+{207 207Age_of_first_killing_and_eating_of_the_prey 0:less_that_35_days 1:more_than_50_days;
+{208 208Age_of_first_social_interactions_(pawing_licking_monting) 0:less_than_15_days 1:more_than_20_days;
+{209 209Age_of_first_roll_over_as_a_submissive_expression less_than_23_days 26-35_days;
+{210 210Jaw_wrestling 0:absent_or_rare 1:common;
+{211 211Age_of_first_jaw_wrestling 0:14_days 1:22-23_days 2:35-45_days;
+{212 212Period_of_fighting_begins_at_age 0:24_days 1:30-32_days 2:40-45_days;
+{213 213Play_bow 0:absent_or_rare 1:common;
+{214 214Adults_initiate_interactions_by_assuming_a_submissive_posture 0:absent 1:present;
+{215 215Male_urinary_behaviour_is_related_to_dominance 0:absent 1:present;
+{216 216Orientation_of_attack_during_agonistic_interactions 0:towards_the_scruff_of_the_neck 1:towards_cheeks_muzzle_or_lower_jaw;
+{217 217Scruff_bite_intention_or_scruff-biting_associated_with_mating absent present;
+{218 218Dead_shake_movements 0:absent 1:present;
+{219 219Play_with_prey_terminated_when_a_conspecific_attempted_to_take_the_prey_from_its_owner absent present;
+{220 220Playing_together_at_the_same_time_with_the_cloth_('tugs-of-war') 0:rare 1:common;
+{221 221Gape 0:absent 1:less_developed 2:well_developed;
+{222 222Cut_off_response_during_higher_level_of_the_intraspecific_conflict 0:absent 1:present;
+{223 223Head_turning_and_avoidance_of_eye_contact_as_a_submissive_response absent present;
+{224 224Chromosome_diploid_number 0:less_than_74 1:74 2:76 3:78;
+{225 225Acrocentric_chromosomes 0:present 1:absent;
+{226 226Metacentric_chromosomes 0:present 1:rare 2:absent;
+{227 227Chromosome_40 0:absent 1:present;
+{228 228Chromosome_34 0:absent 1:present;
+{229 229Chromosome_36 0:absent 1:present;
+{230 230Chromosome_28 0:present 1:absent;
+{231 231Chromosome_22 0:present 1:absent;
+{232 232Terminal_segments_added_to_chromosomes_12_18_24_and_30 0:absent 1:present;
+{233 233Chromosome_31 0:present 1:absent;
+{234 234Chromosome_37 0:present 1:absent;
+{235 235Chromosome_38 0:absent 1:present;
+{236 236Reciprocal_arm_translocation 0:absent 1:present;
+{237 237Heterochromatic_short_arms 0:absent 1:added_to_chromosome_4;
+
+
+hold 100000;
+
+xgroup =0 (continuos) 0.13;
+xgroup =1 (craneo) 14.53 96.97 ;
+xgroup =2 (dientes) 54.95;
+xgroup =3 (postcraneanos) 98.132;
+xgroup =4 (misc) 133.237;
+xgroup =5 (DNA) 238. ;
+
+proc/;
+;
+
+
+
+
+xgroup =5 (comportamiento) 165.221;
+xgroup =6 (cromosomas) 222.235;
+xgroup =7 (mitocondriales) 238.1900;
+xgroup =8 (nucleares) 1901. ;
+
+
+
+proc/;
+
+
+
+
+
+

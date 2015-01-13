@@ -1,0 +1,41 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=26 NCHAR=28;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5" MISSING=? GAP=- ;
+MATRIX
+
+Allosminthus_ernos              0000000000000000000000000000
+Parasminthus_parvulus           10211100001000?5022100100000
+Parasminthus_tangingoli         1121101010100045022000101000
+Parasminthus_asiaecentralis     1121101010100005022000101000
+Parasminthus_quartus            ?????????????005012000101000
+Parasminthus_cubitalus          1011110000100005022100101000
+Parasminthus_debruijni          1011101000100015022101101100
+Parasminthus_lajeensis          10??11?0?0100???????????????
+Parasminthus_huangshuiensis     1021111110100???????????????
+Parasminthus_xiningensis        1021110000100???????????????
+Heterosminthus_orientalis       1121111011111105020011000010
+Heterosminthus_mongoliensis     1121111?11111104020111100010
+Heterosminthus_erbajevae        112111101111113?00??110??11?
+Heterosminthus_firmus           1121101011101135021001100110
+Heterosminthus_honestus         1121101001101135021001110111
+Heterosminthus_nanus            1121101011101135021001110111
+Heterosminthus_jucundus         1120111011111135010001000111
+Heterosminthus_mugodzharicus    0121??1?1111112??1??110??11?
+Heterosminthus_lanzhouensis     1121111010110144022001100010
+Heterosminthus_intermedius      1121111011110155022001100010
+Arabosminthus_quadratus         102111111010011?10001110?000
+Heterosminthus_gansus           0121111010011103100001000010
+Arabosminthus_isabellae_sp_nov  0121??1?10000113100011100000
+Gobiosminthus_qiui              1001111110000???????????????
+Shamosminthus_sodovis           0110001011000004001011101000
+Shamosminthus_tongi             0121111010000???????????????
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

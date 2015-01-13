@@ -1,0 +1,547 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 11.41.45 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=33;
+	TAXLABELS
+		'Peramus'
+		'Kielantherium'
+		'Eomaia'
+		'Prokennalestes'
+		'Murtoilestes'
+		'Bobolestes'
+		'Paranyctoides'
+		'Eozhelestes'
+		'Sheikhdzheilia'
+		'Avitotherium'
+		'Lainodon'
+		'Gallolestes'
+		'Zhelestidae gen. nov.'
+		'Parazhelestes mynbulakensis'
+		'Parazhelestes robustus'
+		'Aspanlestes'
+		'Zhelestes'
+		'Eoungulatum'
+		'Cimolestes'
+		'Maelestes'
+		'Batodon'
+		'Bulaklestes'
+		'Daulestes'
+		'Uchkudukodon'
+		'Kennalestes'
+		'Asioryctes'
+		'Ukhaatherium'
+		'Deccanolestes'
+		'Kulbeckia'
+		'Zhanglolestes'
+		'Zalambdalestes'
+		'Barunlestes'
+		'Gypsonictops'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=85;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01234";
+
+	CHARLABELS
+		 [1] 'Ultimate upper incisor'
+		 [2] 'Upper canine roots'
+		 [3] 'Diastema C P'
+		 [4] 'Premolars'
+		 [5] 'upper P1 roots'
+		 [6] 'P1 posterior diastema'
+		 [7] 'upper P3'
+		 [8] 'P4 protocone'
+		 [9] 'P4 parastylar lobe'
+		 [10] 'P4 roots'
+		 [11] 'P5 protocone'
+		 [12] 'P5 metacone'
+		 [13] 'P5 para- and metastylat lobes'
+		 [14] 'P5 cingula'
+		 [15] 'Upper molar stylar shelf'
+		 [16] 'Ectoflexus'
+		 [17] 'Preparastyle'
+		 [18] 'Stylar cusp B (stylocone)'
+		 [19] 'Preparacrista'
+		 [20] 'Preparacrista and postmetacrista'
+		 [21] 'Paracone and metacone bases'
+		 [22] 'Metacone size to paracone'
+		 [23] 'Conular region width'
+		 [24] 'Paraconule'
+		 [25] 'Metaconule'
+		 [26] 'Internal conular cristae'
+		 [27] 'Conular basins'
+		 [28] 'Protocone'
+		 [29] 'Protocone height'
+		 [30] 'Protocone antero-posterior expansion'
+		 [31] 'Procumbent protocone'
+		 [32] 'Protocone labial shift'
+		 [33] 'Lingual cingula on upper molars'
+		 [34] 'Lingual root on upper molars'
+		 [35] 'M1 parastylar lobe position to paracone'
+		 [36] 'M2 parastylar and metastylar lobe positions'
+		 [37] 'M3 width to M2'
+		 [38] 'Mandibular symphysis posterior extent'
+		 [39] 'Meckelian groove'
+		 [40] '"Coronoid" facet'
+		 [41] 'Mandibular foramen'
+		 [42] 'Mandibular foramen dorsal to prominent, oblique subpterygoid ridge'
+		 [43] 'Posteriormost mental foramen'
+		 [44] 'Masseteric fossa'
+		 [45] 'Labial mandibular foramen'
+		 [46] 'Tilting of coronoid process'
+		 [47] 'Coronoid process width'
+		 [48] 'Mandibular condyle position to alveolar level'
+		 [49] 'Peduncle of condylar process'
+		 [50] 'Angular process to condylar process'
+		 [51] 'Lower incisors'
+		 [52] 'Lower anteriormost incisor size'
+		 [53] 'Lower anteriormost incisor shape'
+		 [54] 'Lower anteriormost incisor procumbency'
+		 [55] 'Lower anteriormost incisor gorwth'
+		 [56] 'Lower anteriormost incisor root length'
+		 [57] 'Lower anteriormost incisor enamel'
+		 [58] 'i4 size'
+		 [59] 'Lower posteriormost incisor procumbency'
+		 [60] 'Lower canine'
+		 [61] 'Lower canine procumbency'
+		 [62] 'Lower canine roots'
+		 [63] 'p1 roots'
+		 [64] 'p1-p2 diastema'
+		 [65] 'p3'
+		 [66] 'p4 paraconid'
+		 [67] 'p5 length'
+		 [68] 'p5 paraconid'
+		 [69] 'p5 metaconid'
+		 [70] 'p5 lingual cingulid'
+		 [71] 'p5 talonid'
+		 [72] 'p5 talonid width'
+		 [73] 'Trigonid height'
+		 [74] 'Trigonid to talonid length'
+		 [75] 'Trigonid configuration'
+		 [76] 'Protoconid height'
+		 [77] 'Paraconid on lingual margin'
+		 [78] 'Protocristid orientation'
+		 [79] 'Talonid'
+		 [80] 'Talonid width to trigonid'
+		 [81] 'Cristid obliqua'
+		 [82] 'Entoconid'
+		 [83] 'Hypoconulid on m1-2'
+		 [84] 'Labial postcingulid'
+		 [85] 'm3 size to m2'
+	;
+	
+	STATELABELS
+		1
+		'in premaxilla'
+		'between premaxilla and maxilla'
+		'in maxilla'
+		,
+		2
+		'2'
+		'1'
+		,
+		3
+		'absent'
+		'present'
+		,
+		4
+		'5'
+		'4'
+		,
+		5
+		'2'
+		'1'
+		,
+		6
+		'absent'
+		'present'
+		,
+		7
+		'as long or longer than P2 and double-rooted'
+		'shorter than P2 and double-rooted'
+		'shorter than P2 and single-rooted'
+		'lost'
+		,
+		8
+		'absent'
+		'small, lingual bulge'
+		'with enlarged basin'
+		,
+		9
+		'absent or small'
+		'well developed'
+		,
+		10
+		'2'
+		'3'
+		,
+		11
+		'absent or narrow cingulum'
+		'smaller than paracone'
+		'approaches paracone in height'
+		,
+		12
+		'absent'
+		'swelling'
+		'large'
+		,
+		13
+		'subequal'
+		'parastylar larger'
+		,
+		14
+		'absent'
+		'present'
+		,
+		15
+		'more than 25% of tooth width'
+		'less than 25%'
+		,
+		16
+		'deep'
+		'shallow to absent'
+		,
+		17
+		'absent'
+		'present'
+		,
+		18
+		'small but distinctive'
+		'vestigial to absent'
+		,
+		19
+		'strong'
+		'weak or absent'
+		,
+		20
+		'cuspate'
+		'not cuspate'
+		,
+		21
+		'adjoined'
+		'separate'
+		,
+		22
+		'noticeably smaller'
+		'slightly smaller'
+		'subequal to larger'
+		,
+		23
+		'narrow (less than .3 total tooth width)'
+		'moderate (.31-.50 total tooth width)'
+		'wide (more than .51 total tooth width)'
+		,
+		24
+		'weak or absent'
+		'prominent, closer to protocone'
+		'prominent, midway or closer to paracone'
+		,
+		25
+		'weak or absent'
+		'prominent, closer to protocone'
+		'prominent, midway or closer to metacone'
+		,
+		26
+		'indistinctive'
+		'distinctive and wing-like'
+		,
+		27
+		'distinct para- and metaconular basins absent'
+		'present'
+		'metaconule very small or absent and metaconular basin absent'
+		,
+		28
+		'absent'
+		'present'
+		,
+		29
+		'low'
+		'tall, approaching paracone and metacone'
+		'subequal'
+		,
+		30
+		'subequal to paracone'
+		'larger than paracone'
+		,
+		31
+		'absent'
+		'present'
+		,
+		32
+		'absent (10-20%)'
+		'present (more than 21%)'
+		,
+		33
+		'absent'
+		'present'
+		,
+		34
+		'supporting paracone'
+		'supporting trigon'
+		,
+		35
+		'anterolabial'
+		'anterior'
+		,
+		36
+		'both lobes extend same distance labially'
+		'parastylar lobe is more labial'
+		'metastylar lobe is more labial'
+		,
+		37
+		'subequal'
+		'smaller'
+		,
+		38
+		'p2 or more anterior'
+		'p3 or more posterior'
+		,
+		39
+		'present'
+		'absent'
+		,
+		40
+		'present'
+		'absent'
+		,
+		41
+		'positioned on ventral shelf of a larger pterygoid fossa'
+		'opens into small depression on lingual side of ascending ramus of mandible'
+		,
+		42
+		'present'
+		'absent'
+		,
+		43
+		'below p4 or more anterior'
+		'below p5 or more posterior'
+		,
+		44
+		'bordered ventrally by well defined crest connected to condyle'
+		'crest absent; fossa extends to ventral margin of mandible'
+		,
+		45
+		'absent'
+		'present'
+		,
+		46
+		'more than 110 degrees'
+		'95 to 105 degrees'
+		,
+		47
+		'broad (roughly 2 molar lengths)'
+		'narrow (subequal to or less than molar length)'
+		,
+		48
+		'at alveolar level'
+		'slightly above alveolar level'
+		'above by more than molar length'
+		,
+		49
+		'posteriorly directed'
+		'posterodorsally directed'
+		,
+		50
+		'anterior'
+		'level with or posterior to'
+		,
+		51
+		'4'
+		'3'
+		,
+		52
+		'small, subequal to subsequent'
+		'greatly enlarged'
+		,
+		53
+		'conical'
+		'anteroposteriorly compressed'
+		,
+		54
+		'absent'
+		'present'
+		,
+		55
+		'determinate'
+		'ever-growing'
+		,
+		56
+		'not extending posteriorly below p1'
+		'extending posteriorly below p1'
+		'extending posteriorly below penultimate or ultimate premolar'
+		,
+		57
+		'covers the tooth'
+		'discontinuous posteriorly'
+		,
+		58
+		'subequal to i3'
+		'greatly reduced'
+		'absent'
+		,
+		59
+		'absent'
+		'present'
+		,
+		60
+		'enlarged'
+		'small'
+		,
+		61
+		'absent'
+		'present'
+		,
+		62
+		'2'
+		'1'
+		,
+		63
+		'2'
+		'1'
+		,
+		64
+		'absent'
+		'present, subequal to one tooth root diameter'
+		,
+		65
+		'as long or longer than p2 and double-rooted'
+		'shorter than p2 and double-rooted; could be lost in old specimens'
+		'shorter than p2 and single-rooted'
+		'lost in all specimens'
+		,
+		66
+		'vestigial or absent'
+		'distinctive'
+		,
+		67
+		'longer than p4'
+		'equal or less than p4'
+		,
+		68
+		'cingulid cusp or absent'
+		'trigonid cusp'
+		,
+		69
+		'absent'
+		'swelling'
+		'separate'
+		,
+		70
+		'complete or shortly interrupted at base of protoconid'
+		'absent'
+		,
+		71
+		'ridge-like, not basined'
+		'with incipient basin lingual to talonid ridge'
+		,
+		72
+		'narrower than anterior crown'
+		'as wide as anterior crown'
+		,
+		73
+		'twice or more the height of talonid'
+		'less than twice the height of talonid'
+		,
+		74
+		'long (more than 75% of total length)'
+		'some shortening (51-75% of total length)'
+		'anteroposterior compression of trigonid (50% or less of total length)'
+		,
+		75
+		'open, paracristid-protocristid angle more than 50 degrees'
+		'more acute, angle between 36 and 49 degrees'
+		'anteroposteriorly compressed, angle less than 35'
+		,
+		76
+		'tallest cusp on trigonid'
+		'subequal to paraconid and or metaconid'
+		'smaller than'
+		,
+		77
+		'absent'
+		'present'
+		,
+		78
+		'oblique'
+		'transverse'
+		,
+		79
+		'small heel'
+		'multicusped basin'
+		,
+		80
+		'narrower'
+		'subequal to wider, with expanded talonid basin'
+		,
+		81
+		'contacts lingual to protocristid notch'
+		'at protocristid notch'
+		'labial to protocristid notch'
+		,
+		82
+		'absent'
+		'smaller than'
+		'subequal to larger than hypoconid or hypoconulid'
+		,
+		83
+		'about equidistant from hypoconid and entoconid'
+		'about twice closer to entoconid than to hypoconid'
+		,
+		84
+		'absent'
+		'present'
+		,
+		85
+		'subequal to larger'
+		'smaller'
+		,
+	;
+	
+	MATRIX
+	'Peramus'		                              ???00000000100000?0000-00--0-----001000100{0,1}0?0010000??00?000?100000010000000000000000
+	'Kielantherium'		                        ??????????????00100000000001000001???000??0?1???????????????????????????0100001000001
+	'Eomaia'		                               0110011100????00??00001110?10??0?1???00000001001000000000000010100000?0001100?1??1000
+	'Prokennalestes'		                       ?010011100110000100000111001000001000000000010000000??00?0010000001000000110001001000
+	'Murtoilestes'		                         ????0?????????0010000111200100000100????????????????????????????????????011?001001?00
+	'Bobolestes'		                           ???0??????????00010101122101001001?00100111010????00??00?001?100100121010110011011000
+	'Paranyctoides'		                        ???0???1001{0,1}000010111111211111111110?010??{0,1}?10????00?100?1000000100000010210101112010
+	'Eozhelestes'		                          ???0?????????????????????????????????101??1?1?????00??00?100?10010??????0210001002110
+	'Sheikhdzheilia'		                       ??????????????10001111222101211001120?????1????????????????????????000111210001112100
+	'Avitotherium'		                         ??????????????1111111122210121101100???????????????????0??????0000??????1221101112?1?
+	'Lainodon'		                             ????????????????????????????????????????????????????????????????????????121010111210?
+	'Gallolestes'		                          ???????????????????????22101?11011????????1?????????????????????????????1221111112110
+	'Zhelestidae gen. nov.'		                ?????????????????????????????????????0001110110100??????????????1??000111211011112110
+	'Parazhelestes mynbulakensis'		          ??00001100110111111111222101211111120011111010000000?000?1000000100121111221011112110
+	'Parazhelestes robustus'		               ?00000?1001101111111112221012111111210111110100?0000?000?10000001???????1221011112110
+	'Aspanlestes'		                          ?0001011001101111111112221012110111201?1111010000000??00?1000000100121111211011112110
+	'Zhelestes'		                            ?110112100110111111111222101211011120111111010010000?000?10001001?0021111211011112110
+	'Eoungulatum'		                          ?100001???2211110111122221012111111?0110??1110????00?000?100010010??????1211011112111
+	'Cimolestes'		                           ?1?11031012{0,1}{0,1}0010111001221111010{0,1}10{0,2}001111{0,1}100000010110002100110300001000200001012000
+	'Maelestes'		                            ??1010210110111001110012?1?1101011020011??1011011010?10002100111201001100221011012000
+	'Batodon'		                              ???1???100111011011101122111101011?200????1????????????0???0011130002110021001101{1,2}000
+	'Bulaklestes'		                          ???1???100????0011110{0,1}1121111000011??011111?100????????0??010000300001000210001011000
+	'Daulestes'		                            ???1???1001110000011001121111000{0,1}100?0111?10100????????0?????000301001000220001011000
+	'Uchkudukodon'		                         ???1???1001010001011001121111000{0,1}1{0,1}000111110101100100000020100003010????0220001011000
+	'Kennalestes'		                          101{0,1}00{1,3}1011111001011001121111001110000111111010??1?000?0??000?01301000010210011011000
+	'Asioryctes'		                           10110032011210000111001101211001010100111101010?00?000?00?000?01311000010220011011000
+	'Ukhaatherium'		                         11110132011210000111001101211001010100??111?01??000000000000010131100?0102200?10?1?00
+	'Deccanolestes'		                        ???????111????010111121221011011010000????1????????????0???00101?00???011210101011000
+	'Kulbeckia'		                            20110032011{0,1}10100111112121112001{0,1}10100?1110100????011111111000003??121111222011111000
+	'Zhanglolestes'		                        ???0??????????????????????????????????????0???????1111?2121111002?0121111212001121001
+	'Zalambdalestes'		                       20110032111110110111112001112001010110111101{0,1}0121111111212111000300121111222111122100
+	'Barunlestes'		                          ??11??32111110110111112001?120010101111111010012111111121211100-300121111222111122101
+	'Gypsonictops'		                         ???{0,1}???211221111011111222101201111010?101111000??1?????0??0001001{0,1}002111122{1,2}011112000
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 85;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = UNORD POLYTCOUNT = MINSTEPS ;
+ENDBLOCK;

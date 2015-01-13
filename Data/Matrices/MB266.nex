@@ -1,0 +1,1233 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 05.44.39 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=17;
+	TAXLABELS
+		'Saccopteryx bilineata'
+		'Noctilio albiventris'
+		'Noctilio leporinus'
+		'Mystacina robusta'
+		'Mystacina tuberculata'
+		'Macrotus waterhousii'
+		'Macrotus californicus'
+		'Artibeus jamaicensis'
+		'Pteronotus parnellii'
+		'Pteronotus pristinus'
+		'Pteronotus personotus'
+		'Pteronotus macleayii'
+		'Pterontous quadridens'
+		'Pteronotus davyi'
+		'Pteronotus gymnonotus'
+		'Mormoops blainvillii'
+		'Mormoops megalophylla'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=209;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123456789E";
+
+	CHARLABELS
+		 [1] 'Premax max articulation'
+		 [2] 'Premax palatal branch'
+		 [3] 'Incisive foramina'
+		 [4] 'Hard palate'
+		 [5] 'Zygomatic, toothrow angle'
+		 [6] 'shape of nasals'
+		 [7] 'Nasal foramina'
+		 [8] 'rostral breadth'
+		 [9] 'rostral length'
+		 [10] 'Infraorbital foramen'
+		 [11] 'location of infaorbital foramen'
+		 [12] 'Anterior Orbit'
+		 [13] 'Postorbital process'
+		 [14] 'Zygomatic breadth'
+		 [15] 'Parietal inflation'
+		 [16] 'Epitymanic recess'
+		 [17] 'Fossa Stapedia'
+		 [18] 'Fenestra cochleae'
+		 [19] 'Periotic attachement'
+		 [20] 'Cochlea crypsis'
+		 [21] 'Cochlea Size'
+		 [22] 'Ectotympanic bulla'
+		 [23] 'Tympanic annulus'
+		 [24] 'basispheniod'
+		 [25] 'Basioccipital'
+		 [26] 'Angular process tip level'
+		 [27] 'Height of coronoid'
+		 [28] 'Upper incisors'
+		 [29] 'shape of inner upper incisors'
+		 [30] 'Size of I2'
+		 [31] 'linqual heel on  incisor'
+		 [32] 'diastema btw. i-c'
+		 [33] 'number of lower incisors'
+		 [34] 'shape of i1'
+		 [35] 'shape of i2'
+		 [36] 'P1 presence'
+		 [37] 'P3 presence'
+		 [38] 'P3-P4 diastema'
+		 [39] 'Height of P3'
+		 [40] 'p1 presence 1'
+		 [41] 'p3 presence 1'
+		 [42] 'p3  roots'
+		 [43] 'p3 crown length'
+		 [44] 'Premetacrista M1'
+		 [45] 'M3 m3 presence'
+		 [46] 'Postcristid connection'
+		 [47] 'Cristid obliqua m1, m2'
+		 [48] 'vomeronasal epithelial tube'
+		 [49] 'vommeronasal cartilage'
+		 [50] 'nasopalatine duct'
+		 [51] 'Accessory olfactory bulb'
+		 [52] 'Inferior colliculus exposure'
+		 [53] 'Tracheal expansion'
+		 [54] 'Entoglossal process'
+		 [55] 'Ceratohyal'
+		 [56] 'M. mylohyoideus form'
+		 [57] 'M. mylohyoideus insert'
+		 [58] 'M. mandibulohyoideus'
+		 [59] 'M. stylohyoideus superficial'
+		 [60] 'M. geniohyoideus form'
+		 [61] 'Paired m. geniohyoideus'
+		 [62] 'M. Sternohyoides origin'
+		 [63] 'M. geniogloss & hyogloss insert'
+		 [64] 'M. stylogossus bellies'
+		 [65] 'M. ceratohyoideus insertion'
+		 [66] 'M. ceratohyoideus insertion 1'
+		 [67] 'M. sternothryoideus origin'
+		 [68] 'M. omohyoideus'
+		 [69] 'M. sphincter colli profundus'
+		 [70] 'M. cricopharyngeus'
+		 [71] 'M. cricothyroideus'
+		 [72] 'Horny papillae size'
+		 [73] 'Lateral vallate papillae'
+		 [74] 'Medial post mech. papillae'
+		 [75] 'Baskets'
+		 [76] 'Phayngeal tongue region'
+		 [77] 'Oral papillae'
+		 [78] 'Cheeck pouches'
+		 [79] 'dermal papillae on lower lip'
+		 [80] 'lower lip'
+		 [81] 'lower lip pad'
+		 [82] 'flaps below lower lip'
+		 [83] 'Position of labio-nasals'
+		 [84] 'Nostrils'
+		 [85] 'Area between nostrils'
+		 [86] 'Noseleaf'
+		 [87] 'papillae dorsal nostril surface'
+		 [88] 'Lateral nostril projections'
+		 [89] 'tubercle on muzzle'
+		 [90] 'Interauricular band or fusion'
+		 [91] 'pinna funnel'
+		 [92] 'distal area of pinna'
+		 [93] 'lateral distal edge of pinna'
+		 [94] 'Distal tip of tragus'
+		 [95] 'Thickness of tragus'
+		 [96] 'Secondary fold on tragus'
+		 [97] 'interramal vibrissae'
+		 [98] 'Interrmal tubercle'
+		 [99] 'genal vibrissae'
+		 [100] 'Supercillary Vibrissae'
+		 [101] 'Vibrissae lat to nose'
+		 [102] 'Vib. colunm lat to nose'
+		 [103] 'Facial stripes'
+		 [104] 'dorsal fur'
+		 [105] 'ventral fur'
+		 [106] 'hair shaft length'
+		 [107] 'Dorsal stripes'
+		 [108] 'overhair and under hair'
+		 [109] 'hair scales'
+		 [110] 'scale shape'
+		 [111] 'attachment of wing-membrane to'
+		 [112] 'Wing folding digits III & IV'
+		 [113] 'Antebrachial wing sac'
+		 [114] 'Uropatagium state'
+		 [115] 'wing-calcar attachment'
+		 [116] 'calcar'
+		 [117] 'C6 ventral flanges'
+		 [118] 'C7-T1 fusion'
+		 [119] 'no. thoratic vertebrae'
+		 [120] 'neural spine on thoratic'
+		 [121] 'Height of neural spines'
+		 [122] 'T4 ventral'
+		 [123] 'neural spine T8-T12'
+		 [124] 'thoracic-lumbar fused'
+		 [125] 'ventral ridges L3'
+		 [126] 'ventral ridges, L4 and L5'
+		 [127] 'Anterior face manubrium'
+		 [128] 'Vent process to manubrium'
+		 [129] 'Ventral process tip'
+		 [130] 'Manubrium length'
+		 [131] 'Mesosternum shape'
+		 [132] 'Xiphisternum Keel'
+		 [133] 'Rib 2  to sternum'
+		 [134] 'Number costals post rib 2'
+		 [135] 'Rib anterior lamellae'
+		 [136] 'Rib posterior lamellae'
+		 [137] 'Clavicular articulation'
+		 [138] 'Clavicular lig. pit'
+		 [139] 'Coracoid'
+		 [140] 'Acromion tip ant'
+		 [141] 'Acromion tip post'
+		 [142] 'Superscapular process'
+		 [143] 'Dorsal Articular facet'
+		 [144] 'infraspinosus fossa'
+		 [145] 'Infra facet shape'
+		 [146] 'axillary border of scapula'
+		 [147] 'anterior of axillary border'
+		 [148] 'humerus head shape'
+		 [149] 'Trochiter height'
+		 [150] 'Distal humerus'
+		 [151] 'central capitulm'
+		 [152] 'distal spinous process'
+		 [153] 'Height of distal spinosus'
+		 [154] 'distal spinosus process'
+		 [155] 'olecranon protion of ulna'
+		 [156] 'shape of pisiform bone'
+		 [157] 'metacarpal formula'
+		 [158] 'WD1 phalanx'
+		 [159] 'WD II 1st phal'
+		 [160] 'WD III 3rd phal ossification'
+		 [161] 'Digit lV, 2nd phalanx'
+		 [162] 'sacral vert.'
+		 [163] 'Iliosacral articulation'
+		 [164] 'Dorsal ischal tube'
+		 [165] 'pubic spine length'
+		 [166] 'Male pubic symphysis'
+		 [167] 'Trochanters on femur'
+		 [168] 'femur ridge'
+		 [169] 'Distal femur'
+		 [170] 'Fibula'
+		 [171] 'Length of Tail'
+		 [172] 'Calcaneum'
+		 [173] 'Calcar composition'
+		 [174] 'Calcar Length'
+		 [175] 'Foot length'
+		 [176] 'Talons on claws'
+		 [177] 'M. humeropatagialis'
+		 [178] 'M. occipitopollicalis origin'
+		 [179] 'M. occipitopollcalis distal'
+		 [180] 'M. spinodeltoideus origin'
+		 [181] 'M. tres major origin'
+		 [182] 'M. teres major insertion'
+		 [183] 'M. triceps caput medialis'
+		 [184] 'M. coracobrachialis'
+		 [185] 'M. biceps brachii'
+		 [186] 'M. brachialis'
+		 [187] 'M. extensor carpi radialis long'
+		 [188] 'M. extensor policis brevis'
+		 [189] 'Origin m ext. digit. communis'
+		 [190] 'M. ext. digitorum communis'
+		 [191] 'M. ext. digiti quinti proprius'
+		 [192] 'M. flexor digitorum profundus'
+		 [193] 'M. flexor digitorum profundus 1'
+		 [194] 'M. palmaris longus C'
+		 [195] 'M. palmaris longus A'
+		 [196] 'M. palmaris longus B'
+		 [197] 'Digital Tendon Locking Mech.'
+		 [198] 'female genitalia'
+		 [199] 'Clitoris'
+		 [200] 'Eternal unterine horn'
+		 [201] 'Common uterine lumen'
+		 [202] 'Oviduct papilla'
+		 [203] 'Oviduct mucosal folds'
+		 [204] 'Ovarian ligament'
+		 [205] 'Submaxillary gland type'
+		 [206] 'Cardiac vestiblue in stomach'
+		 [207] 'Mucous pyloric glands'
+		 [208] 'Pyloric sphincter'
+		 [209] 'Brunner''s glands'
+	;
+	
+	STATELABELS
+		1
+		'fused'
+		'freely movable'
+		,
+		2
+		'well developed fused'
+		'absent no midline contact'
+		,
+		3
+		'pair present'
+		'emargination'
+		'absent'
+		,
+		4
+		'interorbital'
+		'zygo root or anterior'
+		,
+		5
+		'0-9'
+		'13-26'
+		'28-34'
+		,
+		6
+		'flat or convex'
+		'concave'
+		,
+		7
+		'none'
+		'pair of foramina'
+		,
+		8
+		'less than or equal to'
+		'greater than'
+		,
+		9
+		'less than 42% of skull'
+		'44-55%'
+		,
+		10
+		'normal'
+		'enlarged'
+		,
+		11
+		'post P4'
+		'ant M1'
+		'posterior M1'
+		'ant M2'
+		,
+		12
+		'P4'
+		'M1'
+		'anterior M2'
+		'posterior M2'
+		,
+		13
+		'present'
+		'not'
+		,
+		14
+		'greater or equal'
+		'less than mastoid'
+		,
+		15
+		'none'
+		'inflated'
+		,
+		16
+		'shallow, broad'
+		'deep, constricted'
+		,
+		17
+		'indistinct'
+		'shallow and broad'
+		'deep constricted'
+		,
+		18
+		'small or moderate'
+		'enlarged'
+		,
+		19
+		'sutured'
+		'loose'
+		,
+		20
+		'phanerocochlear'
+		'cryptocochlear'
+		,
+		21
+		'greatly enlarged'
+		'moderate'
+		,
+		22
+		'greater than .66'
+		'=.5'
+		'less than .33'
+		,
+		23
+		'inclined'
+		'semivertical'
+		,
+		24
+		'wide, shallow furrows'
+		'narrow, deep furrows'
+		'pits'
+		,
+		25
+		'not constricted'
+		'constricted'
+		,
+		26
+		'at or below toothrow'
+		'above toothrow'
+		,
+		27
+		'2x height of condyloid'
+		'1.5x height of condyloid'
+		'even or below'
+		,
+		28
+		'two pairs'
+		'one pair'
+		'none'
+		,
+		29
+		'blunt point'
+		'bilobed'
+		'trilobed'
+		'comb-like'
+		,
+		30
+		'less than.5 I1'
+		'subequal'
+		'approx equal I1'
+		'approx 2X I1'
+		,
+		31
+		'present'
+		'absent'
+		,
+		32
+		'absent'
+		'present'
+		,
+		33
+		'three pairs'
+		'two pairs'
+		'one pair'
+		,
+		34
+		'pointy'
+		'bilobed'
+		'trilobed'
+		,
+		35
+		'trilobed'
+		'bilobed'
+		'pointy'
+		'comb-like'
+		,
+		36
+		'present'
+		'absent'
+		,
+		37
+		'present'
+		'absent'
+		,
+		38
+		'absent'
+		'present'
+		,
+		39
+		'subequal P4'
+		'less than .5 P4'
+		,
+		40
+		'present'
+		'absent'
+		,
+		41
+		'present'
+		'absent'
+		,
+		42
+		'2 roots'
+		'single rooted'
+		,
+		43
+		'subequal'
+		'less than half p4'
+		'greater than 2x p4'
+		,
+		44
+		'no cuspule'
+		'labial ridge cuspule'
+		,
+		45
+		'both present'
+		'absent'
+		,
+		46
+		'prim tribosphenic'
+		'nyctalodonty'
+		'myotodonty'
+		'fruit'
+		,
+		47
+		'to postcristid'
+		'to metconid'
+		,
+		48
+		'absent'
+		'rudimentary'
+		'well developed'
+		,
+		49
+		'well-developed curved'
+		'simple bar-shaped'
+		'absent'
+		,
+		50
+		'absent'
+		'present'
+		,
+		51
+		'present'
+		'absent'
+		,
+		52
+		'exposed fully'
+		'partially exposed'
+		'not visible'
+		,
+		53
+		'none'
+		'1 ring'
+		'5-8 rings expanded'
+		'9 or more rings'
+		,
+		54
+		'absent'
+		'present'
+		,
+		55
+		'normal size'
+		'reduced'
+		'tiny or absent'
+		,
+		56
+		'no aponeurosis'
+		'aponeurosis present'
+		'clearly divided'
+		,
+		57
+		'not thyrohyal'
+		'thyrohyal'
+		,
+		58
+		'small with tendon'
+		'absent'
+		,
+		59
+		'slip present'
+		'slip absent'
+		,
+		60
+		'long tendon'
+		'short tendon'
+		'mixed tendon and fleshy'
+		'fleshy fibers direct'
+		,
+		61
+		'fused'
+		'not fused'
+		,
+		62
+		'manubrium, clavicle'
+		'manubrium, not clavicle'
+		'medial manubrium only'
+		,
+		63
+		'direct fleshy'
+		'indirect tendon'
+		'no connection'
+		,
+		64
+		'one belly'
+		'two seperated'
+		,
+		65
+		'includes ceratohyal'
+		'doesn''t'
+		,
+		66
+		'doesn''t'
+		'includes stylohyal'
+		,
+		67
+		'manubrium'
+		'both'
+		'clavicle'
+		,
+		68
+		'scapula'
+		'clavicle'
+		'absent'
+		,
+		69
+		'present'
+		'absent'
+		,
+		70
+		'single large slip'
+		'three of more slips'
+		,
+		71
+		'single muscle'
+		'divided into two'
+		,
+		72
+		'uniform'
+		'different sizes'
+		,
+		73
+		'absent'
+		'present'
+		,
+		74
+		'midline'
+		'pharangeal'
+		'to tip'
+		'no inclination'
+		,
+		75
+		'present'
+		'absent'
+		,
+		76
+		'totally bare'
+		'medially bare'
+		,
+		77
+		'absent'
+		'present'
+		,
+		78
+		'absent'
+		'present'
+		,
+		79
+		'absent'
+		'present'
+		,
+		80
+		'moderate'
+		'platelike'
+		,
+		81
+		'absent'
+		'horseshoe shaped'
+		,
+		82
+		'flaps absent'
+		'one'
+		'two flaps'
+		,
+		83
+		'protrudes anteriorally'
+		'in line with lower lip'
+		,
+		84
+		'short tubular'
+		'adjacent anterior'
+		,
+		85
+		'v-shaped notch'
+		'narrow, papillated'
+		'wide, vertical ridge'
+		'flat'
+		'tongue-shaped notch'
+		,
+		86
+		'absent'
+		'dermal ridge'
+		'simple noseleaf'
+		'complex noseleaf'
+		,
+		87
+		'absent'
+		'present'
+		,
+		88
+		'absent'
+		'rounded continuous'
+		'tab-like not continuous'
+		,
+		89
+		'absent'
+		'present'
+		,
+		90
+		'no band or fusion'
+		'interauricular band'
+		'pinnae contact at base'
+		'fused one third of length'
+		,
+		91
+		'not'
+		'funnel-shaped'
+		,
+		92
+		'lancolate'
+		'squared'
+		'rounded'
+		'deeply bifurcated'
+		,
+		93
+		'smooth'
+		'serrated'
+		,
+		94
+		'pointed'
+		'rounded'
+		'squared'
+		'bifurcated'
+		'bulb-like'
+		,
+		95
+		'thin'
+		'thickened basally and distally'
+		'centrally thickened'
+		'uniformy thick'
+		,
+		96
+		'absent'
+		'present, small'
+		'present, large'
+		,
+		97
+		'two'
+		'one present'
+		'absent'
+		,
+		98
+		'well developed'
+		'tiny perforation'
+		,
+		99
+		'two'
+		'one'
+		'absent'
+		,
+		100
+		'present'
+		'absent'
+		,
+		101
+		'two columns'
+		'one'
+		,
+		102
+		'four'
+		'three'
+		'two vibrissae'
+		,
+		103
+		'absent'
+		'present'
+		,
+		104
+		'unicolored'
+		'uni or bicolored'
+		'bicolored'
+		'bi or tricolored'
+		'tricolored'
+		'four'
+		,
+		105
+		'unicolored'
+		'uni or bicolored'
+		'bicolored'
+		'bi or tricolored'
+		,
+		106
+		'4-7 mm'
+		'8-10 mm'
+		,
+		107
+		'none'
+		'pair of stripes present'
+		'one midline stripe'
+		,
+		108
+		'same'
+		'differentiated'
+		,
+		109
+		'entire coronal'
+		'entire-repand coronal'
+		'entire-hastate coronal'
+		'dentate coronal'
+		'denticulate-sinuate coronal'
+		'denticulate-hastate coronal'
+		'denticulate coronal'
+		,
+		110
+		'divaricate'
+		'divergent'
+		'appressed'
+		,
+		111
+		'side and exposed fur'
+		'mid-dorsal line and midline'
+		,
+		112
+		'Prox lll lV post Dist III IV an'
+		'Prox lll IV not Dist III IV ant'
+		'all phalanges anterioventral'
+		,
+		113
+		'absent'
+		'wing sac present'
+		,
+		114
+		'broad'
+		'v-shaped'
+		'rudimentary'
+		,
+		115
+		'uropatagium'
+		'uropatagium and pagiopatagium'
+		,
+		116
+		'free'
+		'caudal half bound to tibia'
+		,
+		117
+		'not'
+		'enlarged'
+		,
+		118
+		'not fused'
+		'fused'
+		,
+		119
+		'fourteen'
+		'thirteen'
+		'twelve'
+		'eleven'
+		,
+		120
+		'absent'
+		'present T1-T4'
+		,
+		121
+		'decrease T1-T4'
+		'equal height T1-T4'
+		'increases T1-T4'
+		,
+		122
+		'absent'
+		'parallel ridges'
+		,
+		123
+		'present'
+		'absent'
+		,
+		124
+		'absent'
+		'2T-L1,L2'
+		'3T-3 to 5L'
+		,
+		125
+		'absent'
+		'present'
+		,
+		126
+		'absent'
+		'present'
+		,
+		127
+		'small'
+		'broad with elevated ridges'
+		,
+		128
+		'equal 90 degrees'
+		'greater than 90 degrees'
+		'acute'
+		,
+		129
+		'Compressed lat.'
+		'blunt, rounded'
+		,
+		130
+		'equal'
+		'less than width'
+		'1.5 or longer'
+		,
+		131
+		'normal'
+		'large keel'
+		'two lobes'
+		,
+		132
+		'absent'
+		'present'
+		,
+		133
+		'to manubmeso joint'
+		'manubrium only'
+		,
+		134
+		'five'
+		'six'
+		'four'
+		,
+		135
+		'absent'
+		'narrow'
+		'wide'
+		,
+		136
+		'absent'
+		'narrow'
+		'wide'
+		,
+		137
+		'coracoid'
+		'btw. acrom and coracoid'
+		,
+		138
+		'absent'
+		'present'
+		,
+		139
+		'even, not flared'
+		'flared'
+		'reduced to tiny process'
+		,
+		140
+		'absent'
+		'anteromed projection'
+		'present and fused'
+		,
+		141
+		'absent'
+		'posterolateral projection'
+		,
+		142
+		'absent'
+		'present'
+		,
+		143
+		'absent'
+		'dorsolateral groove'
+		'dorsolateral oval'
+		'dorsal flat facet'
+		,
+		144
+		'wide'
+		'narrow'
+		,
+		145
+		'narrow'
+		'subequal'
+		,
+		146
+		'very flat'
+		'slight curve'
+		'angular'
+		,
+		147
+		'rounded'
+		'flattened'
+		,
+		148
+		'round'
+		'oval or elliptical'
+		,
+		149
+		'level with head'
+		'extends beyond head'
+		,
+		150
+		'in line'
+		'facet displaced'
+		,
+		151
+		'equal to trochlea'
+		'all reduced'
+		'portion reduced'
+		,
+		152
+		'separated by notch'
+		'adjacent'
+		,
+		153
+		'less than or equal'
+		'greater trochlea'
+		,
+		154
+		'not'
+		'ventral projection'
+		,
+		155
+		'reduced'
+		'well developed'
+		,
+		156
+		'small rod of equal width'
+		'enlarged, wider at ends'
+		,
+		157
+		'5'
+		'<'
+		'4'
+		'<[state 3]'
+		'3'
+		'5<4=3'
+		'3=4=5'
+		'3=5<4'
+		'3[state 8]'
+		'<[state 9]'
+		,
+		158
+		'longer than metacarpal'
+		'subequal'
+		,
+		159
+		'normal'
+		'minute unossified or absent'
+		,
+		160
+		'long ossified'
+		'long only base ossified'
+		'long unossified'
+		'minute unossified'
+		,
+		161
+		'long'
+		'equal'
+		'short'
+		,
+		162
+		'not'
+		'fused to ischium'
+		,
+		163
+		'not'
+		'flares fossa well defined'
+		,
+		164
+		'absent'
+		'present'
+		,
+		165
+		'<=.33 illium'
+		'>=.5 illium'
+		,
+		166
+		'short'
+		'long'
+		,
+		167
+		'extended'
+		'reduced'
+		,
+		168
+		'none'
+		'rdige behind'
+		'ridge below'
+		,
+		169
+		'straight'
+		'bent'
+		,
+		170
+		'well-developed'
+		'thin'
+		'absent or unossified'
+		,
+		171
+		'absent'
+		'.5 tibia'
+		'.75 tibia'
+		'equal tibia'
+		'1.5 tibia'
+		'2x tibia'
+		,
+		172
+		'normal'
+		'medially expanded'
+		,
+		173
+		'cartilagenous'
+		'cart. and calcified base'
+		'calicified'
+		,
+		174
+		'.5x foot'
+		'subequal'
+		'1.5x foot'
+		'2x foot'
+		,
+		175
+		'<=.5 of tibia'
+		'.75-1 of tibia'
+		,
+		176
+		'absent'
+		'present'
+		,
+		177
+		'present'
+		'absent'
+		,
+		178
+		'tendinous to ant pect'
+		'not tendinous'
+		,
+		179
+		'muscle fibers'
+		'tendon'
+		,
+		180
+		'no ligament'
+		'ligament  .5-.66'
+		'ligament'
+		,
+		181
+		'.5-.66 axil. border'
+		'.25-.4 axillary border'
+		'tip of axillary border'
+		,
+		182
+		'ventral ridge humerus'
+		'vent base of pectoral crest'
+		,
+		183
+		'present'
+		'absent'
+		,
+		184
+		'small and at tip'
+		'2x larger and proximal'
+		,
+		185
+		'no sling'
+		'Sling encasing tendons'
+		,
+		186
+		'present'
+		'absent'
+		,
+		187
+		'none'
+		'sesmoid'
+		,
+		188
+		'ulna origin'
+		'ulna and radius origin'
+		,
+		189
+		'ulna and radius only'
+		'ulna, radius, humerus'
+		,
+		190
+		'insert 2 phalanx'
+		'insert 5 metacarpal'
+		,
+		191
+		'lat. epicondyle and ulna'
+		'lat. epicondyle only'
+		'm. ext. dig. communis and radiu'
+		'muscle absent'
+		,
+		192
+		'inserts on digit IV'
+		'doesn''t'
+		,
+		193
+		'inserts on digit V'
+		'doesn''t'
+		,
+		194
+		'robust'
+		'vestigal'
+		,
+		195
+		'does not'
+		'insert on two'
+		,
+		196
+		'doesn''t'
+		'inserts on three'
+		,
+		197
+		'absent'
+		'rachet-like'
+		'friction lock'
+		,
+		198
+		'transverse'
+		'ant-post'
+		,
+		199
+		'not'
+		'elongated'
+		,
+		200
+		'.75 of ext. common uterine'
+		'.5 of ext. common uterine'
+		'.25 of ext. common unterine'
+		'uterus fully simplex'
+		,
+		201
+		'short'
+		'large'
+		'very large'
+		'reduced or absent'
+		,
+		202
+		'present'
+		'absent'
+		,
+		203
+		'throughout oviduct'
+		'only etramural oviduct'
+		,
+		204
+		'to oviduct'
+		'to uterine body'
+		,
+		205
+		'mucous'
+		'serous'
+		'absent'
+		,
+		206
+		'very small, absent'
+		'large'
+		,
+		207
+		'narrow zone'
+		'broad zone'
+		,
+		208
+		'asymentrical'
+		'symentrical'
+		,
+		209
+		'few large round'
+		'abundant small round'
+		'very abundent small flat'
+		,
+	;
+	
+	MATRIX
+	'Saccopteryx bilineata'		          11-10000000000012000010211210-1-02001--01--0010?????00101100?0000021?000000000000000000000000100000010002010600010000020-010100000010011000000101100000000110013000000020220220000001000?0??????????1000010000011
+	'Noctilio albiventris'		           0020101100111001211101000120000122-11--10110021?????0??????????????????0001101000200000000100300000002000021120100001030-01000010100102110011100010100000010310201110100011113100100000000???????0?010110100?0002
+	'Noctilio leporinus'		             0020101100111001211101000120000121-11--1011002101011012001131010002000?0001101000200000000100300000002000021120100001030-01000010100102110011100010100000010310201110100011113100100000000???????0?010110100?0002
+	'Mystacina robusta'		              00000000012310010110100000110-0-22-100010100020?????01100013?2111002?????????0000000300000000000??????0???0???0002001010-10011111101000010220130010010010010101110010?0000200011???????????????????????00000?????
+	'Mystacina tuberculata'		          00000000012310010110000000110-0-22-100010100020020?????????????????????111010000000030000000000010011102210002000200?????????????????????022013?0??01001101?10111?010?000030?011????????????????????01???????????
+	'Macrotus waterhousii'		           00001000001210002110101100001000111101000000020?????01120113?010112?0101110100000011220001020020201001022100200200000020-010010001101101001000210110110001114000200011011140120010111100000010011001210??????0100
+	'Macrotus californicus'		          00001000001210002110101100001000111101000000020200?00??????????????????1110100000011220001020020201001022100200200000020-11001000110110100100021011011000111400020001101114012001011110000001001100121021110?????
+	'Artibeus jamaicensis'		           0000100100021000211000100010010011110001010-13-2010201?2011300100020010112111010001122000000003001211111110051020100001100001110010010010010002001001100001021000000110201000010???111??0????????0102103211121110
+	'Pteronotus parnellii'		           00001100001310010111021111201000121100100110020210012111011000110020101013000011011101011010010110110203200112020011102111011101010101220111012011110100100001000110111201302100001111000001002001110101110000002
+	'Pteronotus pristinus'		           00001100011310010???0??1???0???11??100?00110020??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	'Pteronotus personotus'		          000011000033110101100010012010011201001001110100111?210????????????????0130000110111310110101101101102022001420200111021011111010101011201110120011101001000010001101112013021000?????010001011001--010??????????
+	'Pteronotus macleayii'		           00001100101311010110001001201001120100100110010?????2??????????????????0130000110111010200101101101102042001420200111021010111010101011201110120111101001000010001001?12013022000?????0100010100011101111100?????
+	'Pterontous quadridens'		          00001100101311010110001001201001120100100110010?????2??????????????????0130000110111310200101101101102042001420200111021011111010101011201110120111101001000010001001?12013021000?????010001010001--01011100?????
+	'Pteronotus davyi'		               00001101002310010110001001201001120100100110020?????2????????1???????01013000011011131020010010110110200200102120010102101011101010101120111112011110100100001000100111201302200001111010001000001--010?????0????
+	'Pteronotus gymnonotus'		          00001101002310010110001001201001120100100110020????12??????????????????0130000110111310200100101101102000001021200101021010111010101011201111120111101001000010001001112013022000?????01000100000111010??????????
+	'Mormoops blainvillii'		           00002100000110110110001001201011120101100000010?????2??????????????????1110000101210101211110112002102022101310200101110-11110000101011101010120121100111111100010001112013013000?????1011100010001101011100?????
+	'Mormoops megalophylla'		          00002100000110110110001001201011120101100000010101112????????1???????011110000101210101211110112002102053101310200101110-111000001010122010101210211001110111000101011120130130000122110111000100011010?????10002
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 209;
+ENDBLOCK;
+BEGIN MACCLADE;
+Version 4.0 75 ; LastModified -1043183046 ; FileSettings editor 0 0 1 1 ; Singles 100 ; Editor 000110111111111000100 0 200 Geneva 9 100 1 all ; EditorPosition 40 4 803 1147 ; TreeWindowPosition 40 2 834 1146 ; ListWindow Characters closed Geneva 9 50 10 265 428 00 ; ListWindow Taxa closed Geneva 9 50 10 276 490 100 ; ListWindow Trees closed Geneva 9 50 10 276 490 ; ListWindow TypeSets closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ListWindow ExSets closed Geneva 9 50 10 276 490 ; ListWindow CharSets closed Geneva 9 50 10 276 490 ; ListWindow TaxSets closed Geneva 9 50 10 276 490 ; ListWindow NexusBlocks closed Geneva 9 50 10 276 490 ; ChartWindowPosition 50 30 790 1092 ; StateNamesSymbols closed Geneva 9 10 50 30 148 220 ; WindowOrder Data ; OtherSymbols &/ 00 ?- ; Correlation 0 0 1000 0 0 10011010 ; Salmo 00000001 ; EditorFile 2 ; ExportHTML _ MOSS 100 110000 ; PrettyPrint 10 ; EditorToolsPosition 701 44 115 165 ; TreeWindowProgram 10 ; TreeWindow 0000 ; Continuous 0 3 1 ; Calculations 0000001 ; SummaryMode 0 0 0 ; Charts Geneva 9 (normal) 0010 ; NexusOptions 0 0 50 001011001 ; TipLabel 1 ; TreeFont Geneva 9 (normal) ; TreeShape 1.0 1.0 0100 ; TraceLabels 0101 ; ChartColors 0 0 -1 9 11 ; ChartBiggestSpot 1 ; ChartPercent 10 ; ChartBarWidth 10 1 ; ChartVerticalAxis 10101 ; ChartMinMax 0 ; TraceAllChangesDisplay 1 1 ; BarsOnBranchesDisplay 0 0 -5536 10000 10000 10000 10000 -5536 -536 -536 -536 6 1 0000101 ; ContinuousBranchLabels 0 ; AllStatesBranchLabels 1 ; IndexNotation 2 1 ; PrintTree 10.00 2 2 2 2 2 2 2 2 2 2 2 Geneva 9 (normal) Geneva 10 (normal) Geneva 9 (normal) Geneva 9 (normal) Geneva 9 (bold ) Geneva 9 (normal) Geneva 9 (normal) 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 12 0 -39 4 -40 0 1 2 1 8 0 0 0 2 1000111000000000000100000111000 ; MatchChar 00 . ; EntryInterpretation 01 ; ColorOptions 0 ; TreeTools 0 5 4 0 10 4 0 00100111111101110 ; EditorTools 0 0 0 1000 0 0 6 3 000001011100001 ; PairAlign 2 2 3 2 1 1 2 1 3 1010 ; BothTools 1 ;
+ENDBLOCK;
+BEGIN TREES;
+TRANSLATE 1 Saccopteryx_bilineata , 2 Noctilio_albiventris , 3 Noctilio_leporinus , 4 Mystacina_robusta , 5 Mystacina_tuberculata , 6 Macrotus_waterhousii , 7 Macrotus_californicus , 8 Artibeus_jamaicensis , 9 Pteronotus_parnellii , 10 Pteronotus_pristinus , 11 Pteronotus_personotus , 12 Pteronotus_macleayii , 13 Pterontous_quadridens , 14 Pteronotus_davyi , 15 Pteronotus_gymnonotus , 16 Mormoops_blainvillii , 17 Mormoops_megalophylla ; TREE * Best_tree = (1 , ((2 , 3) , ((4 , 5) , (((6 , 7) , 8) , ((16 , 17) , ((14 , 15) , ((9 , 10) , (11 , (12 , 13))))))))) ;
+ENDBLOCK;

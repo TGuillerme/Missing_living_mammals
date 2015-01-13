@@ -1,0 +1,375 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 04.32.23 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=25;
+	TAXLABELS
+		'Microperoryctes longicauda'
+		'Peroryctes raffrayana'
+		'Echymipera rufescens'
+		'Echymipera clara'
+		'Echymipera kalubu'
+		'Isoodon macrourus'
+		'Isoodon obesulus'
+		'Isoodon auratus'
+		'Parameles nasuta'
+		'Parameles eremiana'
+		'Parameles gunnii'
+		'Parameles bougainville'
+		'Chaeropus ecaudatus'
+		'Macrotis lagotis'
+		'Macrotis leucura'
+		'Yarala burchfieldi'
+		'Yarala kida'
+		'Galadi speciosus'
+		'Djarthia murgonensis'
+		'Barinya wangala'
+		'Rhynchomeles prattorum'
+		'Mutpuracinus archibaldi'
+		'Galadi grandis'
+		'Galadi amplus'
+		'Galadi adversus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=51;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Upper incisor number'
+		 [2] 'Diastema between I4 and I5'
+		 [3] 'I5 morphology'
+		 [4] 'Degree of development of lingual shelf on P3'
+		 [5] 'P3 major cusp development'
+		 [6] 'Stylar crest on M1'
+		 [7] 'Anterior cingulum of M1'
+		 [8] 'Anterior cingulum of M3'
+		 [9] 'Direction of preparacrista of M1'
+		 [10] 'Preparacrista of M2 and M3'
+		 [11] 'Termination of postprotocrista and morphology of posterior cingulum of M1 and M2'
+		 [12] 'Termination of the postprotocrista and morphology of the posterior cingulum of M3'
+		 [13] 'Degree of development of the metaconule'
+		 [14] 'Size of stylar cusp E'
+		 [15] 'Morphology of the centrocrista'
+		 [16] 'Lobation of i3'
+		 [17] 'Length of p3'
+		 [18] 'Premolar height'
+		 [19] 'Paraconid-metaconid distance (relative to metaconid-protoconid distance) on m1-3'
+		 [20] 'Hypoconulid size and termination of the posthypocristid'
+		 [21] 'Preentocristid'
+		 [22] 'Preentocristid orientation'
+		 [23] 'Cusp within the hypoflexid region, between the talonid and trigonid on the buccal side'
+		 [24] 'Distinction between lower molar crowns and roots'
+		 [25] 'Cristid obliqua shape and termination'
+		 [26] 'Posthypocristid direction'
+		 [27] 'Hypoconulid posterior to entoconid'
+		 [28] 'Size of talonid on m4'
+		 [29] 'Snout length and premaxilla size'
+		 [30] 'Width of nasals'
+		 [31] 'Position of nasal-frontal suture/maximum posterior extension of nasals'
+		 [32] 'Infraorbital canal length'
+		 [33] 'Jugal-maxilla contact'
+		 [34] 'Lacrimal orbital rim'
+		 [35] 'Antorbital fossa'
+		 [36] 'Orbitosphenoid'
+		 [37] 'Alisphenoid'
+		 [38] 'Sphenorbital fissure and foramen rotundum'
+		 [39] 'Number of vacuities in the palate'
+		 [40] 'Presence of dividing septa between paired palatal vacuities'
+		 [41] 'Postglenoid foramen'
+		 [42] 'Morphology of the primary foramen ovale'
+		 [43] 'Morphology of the secondary foramen ovale'
+		 [44] 'Morphology of the ectotympanic'
+		 [45] 'Degree of inflation of the alisphenoid tympanic process'
+		 [46] 'Alisphenoid tympanic process shape'
+		 [47] 'Morphology of the rostral tympanic proccess of the petrosal'
+		 [48] 'Composition of the roof of the tympanic cavity'
+		 [49] 'Epitympanic recess'
+		 [50] 'Squamosal epitympanic sinus'
+		 [51] 'Supraoccipital shape'
+	;
+	
+	STATELABELS
+		1
+		'five incisors present'
+		'four incisors present (I5 lost)'
+		,
+		2
+		'absent'
+		'present'
+		,
+		3
+		'I5 similar in morphology to I1-4 ''I5 pointed and strongly canine-like'
+		'State 1'
+		,
+		4
+		'no shelf'
+		'small/weakly developed shelf'
+		'well-developed lingual shelf'
+		'well-developed lingual shelf that extends to the buccal side of P3'
+		,
+		5
+		'P3 major cusp laterally compressed'
+		'P3 major cusp laterally enlarged but not conical'
+		'P3 major cusp large and conical, but P3 is narrower than M1'
+		'P3 Major cusp large and conical, and P3 is wider than M1'
+		,
+		6
+		'stylar crest present on stylar cusp D'
+		'stylar cusp D'
+		,
+		7
+		'incomplete'
+		'complete'
+		,
+		8
+		'incomplete'
+		'complete'
+		,
+		9
+		'preparacrista anterobuccally orientated'
+		'preparacrista posterobuccally orientated but not blade-like.'
+		'preparacrista posterobuccally orientated and blade-like, parallel to postparacrista.'
+		,
+		10
+		'preparacrista terminates at St B on both M2 and M3'
+		'preparacrista terminates at St B on M2 but connects to the parastylar tip on M3'
+		'preparacrista connects to the parastylar tip on both M2 and M3'
+		,
+		11
+		'posterior cingulum absent on M1 and M2'
+		'posterior cingulum present but incomplete on M1 and M2'
+		'posterior cingulum complete on M1 but incomplete on M2'
+		'posterior cingulum complete on both M1 and M2'
+		,
+		12
+		'no posterior cingulum'
+		'incomplete posterior cingulum'
+		'complete posterior cingulum'
+		,
+		13
+		'metaconule minute or absent'
+		'metaconule small but clearly identifiable a discrete cusp'
+		'metaconule almost the same size as the protocone'
+		'metaconule equal to, or slightly larger than protocone'
+		,
+		14
+		'St E present on all molars'
+		'St E or remnant present on at least one molar'
+		'No trace of St E on any molar'
+		,
+		15
+		'postparacrista and premetacrista contact each other, forming a complete centrocrista that connects the paracone and metacone'
+		'centrocrista breeches ectoloph on M1 and M2 molars, not M3'
+		'centrocrista breeches ectoloph on all molars'
+		,
+		16
+		'i3 not bilobed'
+		'i3 bilobed'
+		,
+		17
+		'p3 longer or equal in length to p2'
+		'p3 shorter than p2'
+		,
+		18
+		'not raised'
+		'raised'
+		,
+		19
+		'wide on all molars'
+		'wide on anterior molars, narrow on posterior molars'
+		'narrow on all molars'
+		'narrow on anterior molars, paraconid lost on M3'
+		,
+		20
+		'hypoconulid is a distinct cuspid, and higher than the posthypocristid and talonid basin on all molars'
+		'hypoconulid is distinct and high on anterior molars but lower than talonid basin on m3, with the posthypocristid connecting to the entoconid on this tooth'
+		'both m2 and m3 have low hypoconulids, with posthypocristids connecting to the entoconids'
+		,
+		21
+		'present'
+		'absent'
+		,
+		22
+		'anteroposterior (entoconid blade-like)'
+		'oblique (entoconid conical)'
+		,
+		23
+		'no median buccal cusp present'
+		'median buccal cusp present'
+		,
+		24
+		'crown distinct from roots'
+		'crown and root indistinct (other than for limit of enamel)'
+		,
+		25
+		'cristid obliqua straight and never terminates on the lingual side of the trigonid'
+		'cristid obliqua straight and terminates at a lingual position against the trigonid from M1-4'
+		'cristid obliqua concave on some molars and terminates at a lingual position against the trigonid from M1-4'
+		,
+		26
+		'oblique to the tooth row axis'
+		'oblique on anterior molars, perpendicular on posterior molars.'
+		'perpendicular to the tooth row axis on all molars'
+		,
+		27
+		'hypoconulid positioned posterobuccal to the entoconid'
+		'hypoconulid positioned almost directly posterior to the entoconid'
+		,
+		28
+		'entoconid and hypoconid large, talonid relatively wide, crests clearly identifiable.'
+		'entoconid and hypoconid smaller than in state 0, talonid smaller'
+		'Further reduction of entoconid and hypoconid, talonid very small, crest poorly defined'
+		,
+		29
+		'premaxilla taller than it is long; maxilla-nasal contact longer than premaxilla-nasal contact (usually correlated with a relatively short snout)'
+		'premaxilla longer than it is tall; premaxilla-nasal contact longer than maxilla-nasal contact (usually correlated with a relatively elongate snout)'
+		,
+		30
+		'broad nasals'
+		'slender nasals'
+		,
+		31
+		'posterior to the anterior rim of the orbit when viewed laterally'
+		'nasals terminate just anterior to the orbit when viewed laterally (associated with a wide maxilla-frontal suture)'
+		'nasals terminate well anterior to the anterior margin of the orbit'
+		,
+		32
+		'long infraorbital canal'
+		'short infraorbital canal'
+		,
+		33
+		'jugal invades the maxilla and extends onto the facial region of the skull'
+		'maxilla invades the zygomatic arch so that the jugal has two thin wings around the posterior maxillary flange'
+		,
+		34
+		'lacrimal crest absent'
+		'Partially developed lacrimal crest'
+		'Fully developed lachrimal crest'
+		,
+		35
+		'antorbital fossa absent'
+		'weak or partial fossa development'
+		'very deep antorbital fossa'
+		,
+		36
+		'orbitosphenoid identifiable in lateral view as a large ossification'
+		'orbitosphenoid identifiable in lateral view as a small ossification'
+		'orbitosphenoid is very small or absent and not obvious in lateral view'
+		,
+		37
+		'alisphenoid-parietal contact'
+		'squamosal-frontal contact'
+		,
+		38
+		'sphenorbital fissure slightly larger than foramen rotundum. Both canals are tubelike in shape, especially the foramen rotundum'
+		'sphenorbital fissure is enlarged and more widely open, and there is a reduction in the length of the ''tube'' leading to the foramen rotundum''sphenorbital fissure is further enlarged and open, and there is no ''tube'' leading to the foramen rotundum, which in'
+		'State 2'
+		,
+		39
+		'one set of vacuities in the incisal region (the incisive foramina) and one in the molar region (the maxillopalatine fenestrae).'
+		'one set of vacuities in the incisal region (the incisive foramina), one set in the premolar region (''accessory vacuities'' sensu Lyne and Mort, 1981) and one set in the molar region (the maxillopalatine fenestrae)'
+		,
+		40
+		'all pairs of palatal vacuities are separated by septa'
+		'the paired maxillopalatine fenestrae lack a dividing septum'
+		,
+		41
+		'foramen bound by squamosal or squamosal and alisphenoid'
+		'foramen bounded medially by the petrosal'
+		,
+		42
+		'primary foramen ovale is between alisphenoid and petrosal'
+		'prim'
+		,
+		43
+		'secondary foramen ovale absent'
+		'secondary foramen ovale defined by a complete strut or bridge formed by the alisphenoid, but the primary foramen ovale is still visible'
+		'secondary foramen ovale present, and extensive ossification of the alisphenoid means that the primary foramen ovale is no longer visible in intact skulls'
+		,
+		44
+		'thin'
+		'somewhat thickened'
+		'further thickened'
+		'heavily thickened'
+		,
+		45
+		'alisphenoid tympanic process small, lateral and medial walls open.'
+		'alisphenoid tympanic process largely open but medial wall enclosed greater than in state 0, and hypotympanic sinus is also enlarged relative to state 0'
+		'alisphenoid tympanic process and hypotympanic sinus further enlarged.relative to state 1; hypotympanic sinus walled posteriorly by the alisphenoid'
+		'alisphenoid tympanic process and hypotympanic sinus greatly hypertrophied'
+		,
+		46
+		'flattened'
+		'ventrally rounded, anterior boundary rounded does not extend as far as the transverse foramen or foramen ovale'
+		'ventrally rounded, anterior boundary pointed and extends as far as the transverse foramen'
+		'ventrally angular, anterior boundary pointed and terminates anterior to the transverse foramen'
+		,
+		47
+		'rostral tympanic process of the petrosal absent or very small'
+		'rostral tympanic process of the petrosal forms a distinct projecting process that partially walls the posteromedial margin of the hypotympanic sinus .'
+		'rostral tympanic process of the petrosal further enlarged, forming elongate crestlike process that extends the length of the promontorium and forms posteromedial wall of the hypotympanic sinus; medial margin of petrosal overlaps basioccipital.'
+		'ventral margin of the rostral tympanic process of the petrosal extends laterally and slightly dorsally, resulting in the formation of a distinct hypotympanic sinus within the rostral tympanic process itself'
+		'further dorsal extention of the ventral margin of the rostral tympanic process relative to state 3, resulting in lateral wall to the hypotympanic sinus within the process'
+		,
+		48
+		'alisphenoid, squamosal, and petrosal all contribute to the roof of the tympanic cavity'
+		'only the alisphenoid and petrosal contribute to the roof of the tympanic cavity; there is no squamosal contribution'
+		,
+		49
+		'poorly defined and shallow'
+		'wider and deeper than the plesiomorphic state but still relatively poorly defined'
+		'deep sinus with enclosing walls that is well distinguished from remainder of auditory cavity'
+		'wide and deep sinus that extends posterolaterally'
+		,
+		50
+		'absent'
+		'present, poorly defined'
+		'wide with high posterior wall'
+		'deep and round'
+		,
+		51
+		'supraoccipital about as tall as it is wide'
+		'supraoccipital taller than it is wide'
+		,
+	;
+	
+	MATRIX
+	'Microperoryctes longicauda'		          011110002100102100100000211211211101101001100010000
+	'Peroryctes raffrayana'		               011110002100102100000000101111101112100001100000000
+	'Echymipera rufescens'		                1--11010211110210110000010111111110210000?201011001
+	'Echymipera clara'		                    1--230102100122101100001121111111121100001101011001
+	'Echymipera kalubu'		                   1--220112111222101100000111111111111100001{1,2}01011001
+	'Isoodon macrourus'		                   01032111223230210121011121101111121111001?223241231
+	'Isoodon obesulus'		                    01132111223230210021011122101111121111101?223241231
+	'Isoodon auratus'		                     01132111223230211121010122101120121111101?223241231
+	'Parameles nasuta'		                    011211002221222101220110221111201212120111112121111
+	'Parameles eremiana'		                  010311002220222110210100221211201222121011113121111
+	'Parameles gunnii'		                    011221002211202111220100221111201222121111113121111
+	'Parameles bougainville'		              01021100221121211121010022111120122212111?213121121
+	'Chaeropus ecaudatus'		                 00022100{0,2}210212110200100221011111221121111113121321
+	'Macrotis lagotis'		                    000001012000-2211130011122101111122010111?233331331
+	'Macrotis leucura'		                    010121002000-2211131010122101111122010011??33331331
+	'Yarala burchfieldi'		                  ???{0,1}00112100010101001-001012?1001110001?100???20100
+	'Yarala kida'		                         ?????0102100010???000?001012???????????????????????
+	'Galadi speciosus'		                    00?220111200111?001000001011010111100000100???11110
+	'Djarthia murgonensis'		                ???000110100100?100000000000??????????????????0?0??
+	'Barinya wangala'		                     1--010000000000?10000000000000010200010000022121021
+	'Rhynchomeles prattorum'		              1--??010221012210010000011101121101{1,2}11000111111??00
+	'Mutpuracinus archibaldi'		             1--000110200000?0000000000000001020?0?00001???00010
+	'Galadi grandis'		                      ?????0110230110?000000001011???????????????????????
+	'Galadi amplus'		                       ???120111211112?011000001011?101111???10???????????
+	'Galadi adversus'		                     ?????0111210101????????????????????????????????????
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 51;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = UNORD POLYTCOUNT = MINSTEPS ; TYPESET * default = ORD: 4 - 5 9 - 15 19 - 20 25 - 26 28 31 34 - 36 38 43 - 45 47 ;
+ENDBLOCK;

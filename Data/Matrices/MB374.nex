@@ -1,0 +1,958 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 10.08.15 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=56;
+	TAXLABELS
+		'Zygorhiza kochii'
+		'Patriocetus ehrlichii'
+		'Physeter catodon'
+		'Aetiocetus cotylalveus'
+		'Aetiocetus polydentatus'
+		'Aetiocetus weltoni'
+		'Aglaocetus moreni'
+		'Aglaocetus patulus'
+		'Archaebalaenoptera castriarquati'
+		'Aulocetus latus'
+		'Balaena ricei'
+		'Balaena mysticetus'
+		'Balaenella brachyrhynus'
+		'Balaenoptera acutorostrata'
+		'Balaenoptera bonaerensis'
+		'Balaenoptera borealis'
+		'Balaenoptera edeni'
+		'Balaenoptera musculus'
+		'Balaenoptera omurai'
+		'Balaenoptera physalus'
+		'Balaenoptera siberi'
+		'Balaenula astensis'
+		'Caperea marginata'
+		'Cephalotropis nectus'
+		'Cetotherium megalophysum'
+		'Cetotherium rathkei'
+		'Chonecetus goedertorum'
+		'Cophocetus oregonensis'
+		'Diorocetus chichibuensis'
+		'Diorocetus hiatus'
+		'Eomysticetus whitmorei'
+		'Eschrichtioides gastaldii'
+		'Eschrichtius robustus'
+		'Eubalaena glacialis'
+		'Eubalaena shinshuensis'
+		'Herpetocetus transatlanticus'
+		'Isanacetus laticephalus'
+		'Janjucetus hunderi'
+		'Mammalodon colliveri'
+		'Mauicetus lophocephalus'
+		'Megaptera hubachi'
+		'Megaptera miocaena'
+		'Megaptera novaeangliae'
+		'Metopocetus durinasus'
+		'Metopocetus vandelli'
+		'Mixocetus elysius'
+		'Nannocetus eremus'
+		'Parabalaenoptera baulinensis'
+		'Parietobalaena palmeri'
+		'Parietobalaena yamaokai'
+		'Pelocetus calvertensis'
+		'Pinocetus polonicus'
+		'Piscobalaena nana'
+		'Protororqualus cuvierii'
+		'Titanocetus sammarinensis'
+		'Uranocetus gramensis'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=150;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Length of rostral portion of maxilla'
+		 [2] 'Proximal rostrum'
+		 [3] 'Anterior half of maxilla'
+		 [4] 'Rostral curvature in lateral view'
+		 [5] 'Lateral border of maxilla anterior to lateral process'
+		 [6] 'Width of rostrum at antorbital notch (base of rostrum)'
+		 [7] 'Premaxilla in dorsal view'
+		 [8] 'Premaxillae adjacent to anterolateral corner of nasal, skull in lateral view'
+		 [9] 'Premaxillae adjacent to and at posterior edge of the nasal opening'
+		 [10] 'Posterior region of rostral edge'
+		 [11] 'Steep face on anterolateral edge of zygomatic process of maxilla clearly separating it from rostral portion of maxilla'
+		 [12] 'Anterior border of zygomatic process of maxilla and anterior border of supraorbital process of frontal in dorsal view'
+		 [13] 'Distinct pocket between the ascending process of the maxilla dorsally and the supraorbital process ventrally'
+		 [14] 'Posterior portions of maxillae'
+		 [15] 'Posterior end of ascending process of maxilla'
+		 [16] 'Antorbital notch formed by maxilla'
+		 [17] 'Anterior border of zygomatic process of maxilla projecting anteriorly beyong antorbital notch'
+		 [18] 'Palatal surface of rostrum'
+		 [19] 'Palatal window exposing vomer'
+		 [20] 'Palatal nutrient foramina and sulci'
+		 [21] 'Palatine to maxilla suture'
+		 [22] 'Anterior edge of narial fossa'
+		 [23] 'Rostrum in lateral view'
+		 [24] 'Rostrum shape'
+		 [25] 'Teeth in adult individuals'
+		 [26] 'Skull length about one-third total body length'
+		 [27] 'Diameter of orbit, as measured between the distalmost points on the orbital rims of the pre- and postorbital processes'
+		 [28] 'Anterior edge of the supraorbital process'
+		 [29] 'Transverse length of anterior edge of the supraorbital process lateral to the ascending process of the maxilla'
+		 [30] 'Posterior border of the supraorbital process'
+		 [31] 'Supraorbital processes of frontal'
+		 [32] 'Anterior border of the supraorbital process lateral to the ascending process of the maxilla, skull in dorsal view'
+		 [33] 'Shape of the supraorbital process of the frontal in dorsal view'
+		 [34] 'Anteroposterior length of the supraorbital process'
+		 [35] 'Shape of the dorsal edge of the orbit in dorsal view'
+		 [36] 'Position of the line joining the anteriormost points of the supraorbital processes of the frontals'
+		 [37] 'Dorsal edge of orbit relative to lateral edge of rostrum, skull in lateral view'
+		 [38] 'Lacrimal in dorsal view'
+		 [39] 'Maxillary infraorbital plate'
+		 [40] 'Maxillary window originating from posterior border of infraorbital plate'
+		 [41] 'Anteromedial corner of supraorbital process of frontal extending to a point medial to antorbital notch'
+		 [42] 'Angle between the posterior margin of the zygomatic process of the maxilla and the lateral margin of the ascending process of the maxilla'
+		 [43] 'Premaxillary foramina'
+		 [44] 'Maxilla to frontal suture'
+		 [45] 'Maxilla, geometry to arrangement of lateral nutrient foramina and associated sulci'
+		 [46] 'Posteriormost edge of the ascending process of maxilla'
+		 [47] 'Posteriormost edge of ascending process of maxilla situated posterior to anteriormost point of orbitotemporal crest'
+		 [48] 'Medial contact of the ascending processes of the maxillae'
+		 [49] 'Posterior extension of the premaxillae relative to the posterior extension of the maxillae'
+		 [50] 'Posterior border of the ascending process of maxilla'
+		 [51] 'Posterior border of the ascending process of maxilla 1'
+		 [52] 'Relationship between the rostral and cranial bones, skull in lateral view'
+		 [53] 'Position of inflection of premaxilla, skull in dorsal view'
+		 [54] 'Nasal, length relative to bizygomatic width'
+		 [55] 'Position of posteriormost edge of nasals'
+		 [56] 'Orbitotemporal crest'
+		 [57] 'Development of  orbitotemporal crest'
+		 [58] 'Shape of temporal fossa'
+		 [59] 'Intertemporal constriction'
+		 [60] 'Ascending process of maxilla on dorsal surface of skull'
+		 [61] 'Parietal and interparietal, if present'
+		 [62] 'Parietals in dorsal view'
+		 [63] 'Anteriormost point of the parietal and interparietal, if present'
+		 [64] 'Anteriormost point of the supraoccipital, in dorsal view'
+		 [65] 'Position of posterior apex of the nuchal crest'
+		 [66] 'Contacts of alisphenoid in temporal fossa'
+		 [67] 'Zygomatic process of squamosal'
+		 [68] 'Zygomatic process of squamosal in lateral view'
+		 [69] 'Anterior tip of zygomatic process of squamosal'
+		 [70] 'Supramastoid crest of the zygomatic process'
+		 [71] 'Axis of main squamosal development'
+		 [72] 'Transverse width of squamosal lateral to exoccipital, skull in posterior view'
+		 [73] 'Orientation of the postglenoid process in lateral view'
+		 [74] 'Orientation of the postglenoid process in posterior view'
+		 [75] 'Squamosal cleft'
+		 [76] 'Paired tubercles on supraoccipital shield'
+		 [77] 'Lateral edges of supraoccipital in dorsal view'
+		 [78] 'Twisting of the postglenoid process in ventral view'
+		 [79] 'Pterygoids in ventral view'
+		 [80] 'Position of foramen pseudo-ovale'
+		 [81] 'Basioccipital crest'
+		 [82] 'Angle formed by the basioccipital crests in ventral view'
+		 [83] 'Paroccipital process, skull in dorsal view'
+		 [84] 'Elongation of pars cochlearis towards cranial cavity, dorsally and medially'
+		 [85] 'Articulation of anterior process of periotic and tympanic bulla'
+		 [86] 'Lateral projection of anterior process'
+		 [87] 'Hiatus epitympanicus'
+		 [88] 'Proximal opening of the facial canal, internal acoustic meatus  (sensu Mead and Fordyce 2009, but excluding the proximal opening of the facial canal) and aperture for the cochlear aqueduct dorsally on the pars cochlearis are aligned'
+		 [89] 'Aperture for the cochlear aqueduct'
+		 [90] 'Morphology of the proximal opening of the facial canal'
+		 [91] 'Articulation surfaces on posterior processes of ectotympanic and periotic'
+		 [92] 'Facial sulcus distal to stylomastoid notch'
+		 [93] 'Morphology and exposure of the compound posterior process of the periotic and tympanic (whether fused or not)'
+		 [94] 'Neck of the posterior process of the periotic'
+		 [95] 'Orientation of the main axes of the tympanics as viewed in situ, skull in ventral view'
+		 [96] 'Orientation of outer lip of the tympanic'
+		 [97] 'Ventral margin of sigmoid process'
+		 [98] 'Elliptical foramen of ectotympanic bulla'
+		 [99] 'Shape of the elliptical foramen of the bulla'
+		 [100] 'Medial to dorsal lobe of tympanic bulla'
+		 [101] 'Eustachian outlet, bulla in anterior view'
+		 [102] 'Sigmoid process, lateral view'
+		 [103] 'Ridge on inside of bulla'
+		 [104] 'Ventral side of bulla'
+		 [105] 'Medial surface of middle part of mandible'
+		 [106] 'Mandibular symphysis'
+		 [107] 'Mandible in life position in lateral view'
+		 [108] 'Neck of the mandible and condyle'
+		 [109] 'Horizontal ramus of mandible in dorsal view'
+		 [110] 'Anterior extremity of the dentary relative to medial portion of the horizontal ramus'
+		 [111] 'Mandible in lateral view'
+		 [112] 'Mandibular foramen'
+		 [113] 'Anterior border of mandibular foramen'
+		 [114] 'Satellite process'
+		 [115] 'Mandible, relative position of anterior border of mandibular foramen'
+		 [116] 'Subcondylar furrow'
+		 [117] 'Coronoid process'
+		 [118] 'Mandible, postcoronoid elevation'
+		 [119] 'Articular surface of mandibular condyle'
+		 [120] 'Gingival foramen on mandible'
+		 [121] 'Sulcus for the attachment of the mylohyoid muscle on ventromedial surface of dentary'
+		 [122] 'Transverse process of atlas at the base less than or roughly equal to half the height of the articular surface'
+		 [123] 'Foramen transversarium in axis'
+		 [124] 'Cervical vertebrae'
+		 [125] 'Sternum'
+		 [126] 'Sternum 1'
+		 [127] 'Coracoid process of scapula'
+		 [128] 'Acromion process of scapula'
+		 [129] 'Humerus'
+		 [130] 'Olecranon process'
+		 [131] 'Manus'
+		 [132] 'Ventral throat grooves'
+		 [133] 'Ventral throat pouch'
+		 [134] 'Tongue'
+		 [135] 'Temporomandibular joint'
+		 [136] 'Longitudinal ridges on rostrum'
+		 [137] 'Dorsal Fin'
+		 [138] 'Baleen'
+		 [139] 'Rostral saddle'
+		 [140] 'Blowhole streaks'
+		 [141] 'Dark nape field'
+		 [142] 'Form of dorsal portion of nape streak'
+		 [143] 'Ventral nape streak'
+		 [144] 'Ear stripe'
+		 [145] 'Basal flipper colouration'
+		 [146] 'Distal flipper colouration'
+		 [147] 'Axillary patch'
+		 [148] 'Thorax field'
+		 [149] 'Caudal chevron'
+		 [150] 'Asymmetry'
+	;
+	
+	STATELABELS
+		1
+		'intermediate, rostral portion between 40 and 49% of condylobasal length excluding the premaxillae'
+		'short, rostral portion of maxilla <40% of modified condylobasal length'
+		'long, rostral portion 50% or bigger'
+		,
+		2
+		'in lateral view, below the level of the supraoccipital and frontal bones'
+		'in lateral view, raised to or above the level of the frontal and supraoccipital bones'
+		,
+		3
+		'its lateral edge in cross section forms an angle of more than 45 degrees'
+		'flattened maxilla with an angle less than 45 degrees'
+		,
+		4
+		'regular'
+		'anterior quarter of rostrum abruptly projects ventrally'
+		,
+		5
+		'concave'
+		'straight'
+		'continuously convex'
+		'divided into a short posterior part subparallel to the sagittal plane and a longer straight anterior part converging on the tip of the rostrum'
+		,
+		6
+		'fairly wide, between 40 and 54% of the bizygomatic width'
+		'narrow,  <40% of the bizygomatic width'
+		'wide, rostral width equal to or >55% of the bizygomatic width'
+		,
+		7
+		'portion anterior to nasal opening narrows or remains the same width anteriorly'
+		'widens at anterior end'
+		,
+		8
+		'stay the same width as more anteriorly on rostrum or become thinner dorsoventrally'
+		'widen dorsoventrally'
+		,
+		9
+		'do not clearly overhang maxillae'
+		'premaxillae overhang maxillae'
+		,
+		10
+		'lateral margin is straight or gently concave with skull in dorsal view'
+		'bowed outward causing a V- or U-shaped antorbital notch'
+		,
+		11
+		'absent'
+		'present'
+		,
+		12
+		'maxilla closely approximates or underlies frontal'
+		'separated by a basin (note: not the space for the reception of the lacrimal)'
+		,
+		13
+		'absent'
+		'present'
+		,
+		14
+		'situated lateral to frontals'
+		'situated lateral to nasals'
+		'situated lateral to both nasals and premaxillae'
+		,
+		15
+		'lateral edges convergent, process tapers to a point'
+		'lateral edges parallel'
+		'lateral edges divergent, posterior process transversely expanded at posterior end'
+		,
+		16
+		'absent'
+		'present'
+		,
+		17
+		'absent'
+		'present'
+		,
+		18
+		'flat or gently concave'
+		'bears pronounced longitudinal keel (formed by vomer and medial edges of maxillae) along the midline of the rostrum'
+		,
+		19
+		'absent'
+		'present'
+		,
+		20
+		'absent'
+		'present'
+		,
+		21
+		'in ventral view, suture between both palatines and both maxillae is straight transversely or bowed anteriorly'
+		'maxillae have posterior processes that separate palatines anteriorly, suture around midline is V-shaped and points posteriorly'
+		,
+		22
+		'located in posterior three quarters of rostrum'
+		'located in anterior quarter of rostrum'
+		,
+		23
+		'rostrum has a distinct step-like profile, the portion anterior to the nasals being abruptly depressed'
+		'transition from the anterior end of the rostrum to the nasals is smooth'
+		,
+		24
+		'narrow, width a antorbital notches <80% the length of the rostrum, as measured from its tip to the antorbital notches'
+		'broad, width at antorbital notches > 80% the length of the rostrum'
+		,
+		25
+		'present'
+		'absent'
+		,
+		26
+		'absent, skull shorter'
+		'present'
+		,
+		27
+		'less than 25% of bizygomatic width'
+		'25% or more'
+		,
+		28
+		'transverse line lateral to ascending process of the maxilla'
+		'anteriorly directed line lateral to the ascending process of the maxilla (lateralmost point of line is anterior)'
+		'posteriorly directed line lateral to the ascending process of the maxilla (medialmost point of line is anterior)'
+		'tapers to a point lateral to ascending process of maxilla'
+		,
+		29
+		'longer than the combined transverse length of the adjacent rostral bones (maxilla, premaxilla, nasal), as measured from the lateralmost point of the ascending process of the maxillae to the sagittal plane'
+		'shorter than the combined transverse length of the adjacent rostral bones'
+		,
+		30
+		'concave'
+		'straight'
+		,
+		31
+		'horizontal'
+		'gradually slope lateroventrally away from vertex of skull'
+		'abruptly depressed at base to a level noticeably below that of dorsal surface of interorbital region'
+		,
+		32
+		'bordered by lacrimal and maxilla'
+		'bordered by lacrimal only'
+		,
+		33
+		'medial portion as long (anteroposteriorly) as lateral'
+		'medial portion distinctly shorter than lateral, supraorbital process has a triangular outline'
+		'medial portion longer than lateral'
+		,
+		34
+		'roughly as long (at the dorsal edge of the orbit) as wide transversely or longer'
+		'wider than long (up to twice the length)'
+		'distinctly wider than long (more than twice its length above the orbit)'
+		,
+		35
+		'roughly straight or slightly concave'
+		'deeply notched in relation to total transverse width of process'
+		,
+		36
+		'passing through the nasals length'
+		'posterior or on the same level as the posterior extremity of the nasals'
+		'on the same level as the anterior extremity of the nasals'
+		'anterior to the anterior extremity of the nasals'
+		,
+		37
+		'orbit elevated above the level of the edge of the rostrum'
+		'orbit low, in line with edge of rostrum or slightly above it'
+		'below the level of the edge of rostrum'
+		,
+		38
+		'situated entirely lateral to the ascending process of the maxilla'
+		'lacrimal extends medially and separates the lateral corner of the ascending process from the more anterior portion of the maxilla'
+		,
+		39
+		'absent'
+		'present'
+		,
+		40
+		'absent'
+		'present'
+		,
+		41
+		'absent'
+		'present'
+		,
+		42
+		'larger than 90 degrees'
+		'90 degrees or smaller'
+		,
+		43
+		'absent'
+		'present'
+		,
+		44
+		'maxilla overrides anteromedial corner of supraorbital process'
+		'maxilla almost completely overrides frontal'
+		,
+		45
+		'posterior foramina with sulci radially arranged (no open maxillary groove) and anterior foramina with elongate sulci parasagittally arranged'
+		'posterior foramina coincident with open maxillary groove with numerous short transverse sulci and anterior foramina with elongate sulci parasagittally arranged'
+		'posterior foramina single, separate from open maxillary groove without well-developed sulci and anterior foramina with elongate sulci parasagittally arranged'
+		'posterior foramina multiple (roughly in two rows) without well-developed sulci (no open maxillary groove) and anterior foramina with elongate sulci parasagittally arranged'
+		,
+		46
+		'in transverse line with anterior half of supraorbital process of frontal or in line with halfway point, anteroposteriorly, of supraorbital process'
+		'in line with posterior half of supraorbital process up to the postorbital process, or in line with postorbital process of frontal'
+		'extends behind the postorbital process of the frontal'
+		'situated well anterior to anterior edge of orbit'
+		,
+		47
+		'absent'
+		'present'
+		,
+		48
+		'contact absent, processes widely separated'
+		'processes contacting at their tips or very nearly so'
+		,
+		49
+		'anterior'
+		'at the same level or posterior'
+		,
+		50
+		'transversely oriented or medial corner more posterior'
+		'lateral corner more posteriorly situated'
+		,
+		51
+		'pointed or rounded'
+		'squared off'
+		,
+		52
+		'smooth or angular transition'
+		'the two sets of bones form a distinct apex'
+		,
+		53
+		'in line with posterior half of rostrum'
+		'in line with anterior edge or anterior half of supraorbital process'
+		'in line with posterior half of supraorbital process up to the postorbital process, or in line with postorbital process of frontal'
+		,
+		54
+		'long (40% or more of bizygomatic width)'
+		'short (<40% of bizygomatic width)'
+		,
+		55
+		'in transverse line with anterior half of supraorbital process of frontal or in line with the halfway point, anteroposteriorly, of supraorbital process'
+		'in line with posterior half of supraorbital process up to the postorbital process, or in line with postorbital process of frontal'
+		'located posterior to postorbital process'
+		'just anterior to or in a transverse line with anterior edge of supraorbital process of frontal'
+		,
+		56
+		'positioned along posterior border of supraorbital process'
+		'positioned on dorsal surface of supraorbital process'
+		,
+		57
+		'mainly straight'
+		'distal half abruptly projecting posterolaterally'
+		,
+		58
+		'longer (anteroposteriorly) than wide (lateromedially), or as wide as long'
+		'wider than long'
+		,
+		59
+		'longer anteroposteriorly than wide transversely, medial edges of temporal fossae are straight'
+		'longer anteroposteriorly than wide transversely, medial edges of temporal fossae are concave'
+		'wider transversely than long anteroposteriorly'
+		,
+		60
+		'posteriormost point anterior to anteriormost point of supraoccipital'
+		'posteriormost point is posterior to anteriormost point of supraoccipital'
+		,
+		61
+		'anteriormost point behind supraorbital process of frontal, or in line with postorbital process'
+		'anteriormost point in line with supraorbital process'
+		,
+		62
+		'contact each other on the midline or are separated by an interparietal'
+		'are in place in the skull roof but are visible only as small triangular areas at edges of the intertemporal constriction, supraoccipital overlaps most of the median portions of  the parietals and obscures them'
+		'are completely absent in the skull roof'
+		,
+		63
+		'more posterior than, or in line with posterior border of ascending process of the maxilla'
+		'more anterior'
+		,
+		64
+		'in transverse line with space between posterior edge of skull (condyles or exoccipitals, whichever is more posterior) and the posteriormost point of the subtemporal crest to medial base of the zygomatic process of the squamosal'
+		'in line with gap between postorbital process and the posteriormost point of the subtemporal crest to medial base of the zygomatic process of the squamosal, or in line with the latter'
+		'in line with posterior half of supraorbital process up to the postorbital process, or in line with postorbital process of frontal'
+		'in line with anterior half of supraorbital process of frontal or halfway point, anteroposteriorly, of supraorbital process'
+		'located just anterior to or in a transverse line with anterior edge of supraorbital process of frontal'
+		,
+		65
+		'anterior to or in line with the posteriormost point of the occipital condyles'
+		'posterior to the condyles'
+		,
+		66
+		'alisphenoid located between frontal, squamosal, parietal, palatine and pterygoid'
+		'alisphenoid located between frontal, squamosal, parietal and pterygoid, but not palatine'
+		'alisphenoid located between squamosal, parietal and pterygoid, but not palatine and frontal'
+		'alisphenoid located between parietal and pterygoid, but not palatine, frontal and squamosal'
+		'no alisphenoid exposed in temporal fossa'
+		,
+		67
+		'directed anteromedially'
+		'directed anteriorly'
+		'directed anterolaterally'
+		,
+		68
+		'dorsal and ventral borders parallel or convergent'
+		'process is expanded dorsoventrally both anteriorly and posteriorly, with a medial constriction'
+		,
+		69
+		'does not contact postorbital process of frontal, anteriormost point of zygomatic process is situated entirely behind the postorbital process'
+		'does not contact postorbital process, anteriormost point of zygomatic process is situated lateral to postorbital process'
+		'anteriormost point of zygomatic process contacts or is situated below the postorbital process'
+		,
+		70
+		'present'
+		'absent'
+		,
+		71
+		'anteroposterior'
+		'dorsoventral'
+		,
+		72
+		'intermediate width, width between 10 and 34% of the distance between sagittal plane and lateral edge of exoccipital'
+		'wide, width between 35 and 49% of that distance'
+		'very wide, width 50% or more of that distance'
+		'narrow, exposed portion of squamosal <10% of that distance'
+		,
+		73
+		'subvertical to anteriorly projecting'
+		'subvertical to  posteriorly projecting'
+		,
+		74
+		'ventrally oriented'
+		'ventrolaterally oriented'
+		,
+		75
+		'absent'
+		'present'
+		,
+		76
+		'absent'
+		'present'
+		,
+		77
+		'convex'
+		'straight or concave'
+		,
+		78
+		'not twisted and roughly transverse to the sagittal axis of the skull'
+		'twisted clockwise on the left side and anticlockwise on the right side'
+		,
+		79
+		'exposed for their entire or most of their entire length'
+		'anterior half covered by palatines'
+		'pterygoids are almost entirely covered by palatines'
+		,
+		80
+		'absent'
+		'foramen lies within pterygoid'
+		'foramen located between squamosal and pterygoid'
+		'foramen lies within squamosal, contact with pterygoid (when present) by a suture'
+		'foramen located between squamosal and pterygoid, but with an incomplete outer edge'
+		,
+		81
+		'narrow transversely'
+		'wide and bulbous'
+		,
+		82
+		'diverging posteriorly'
+		'parallel or subparallel with no angle formed'
+		,
+		83
+		'extends anterior to the posterior edge of occipital condyle'
+		'level with or posterior to posterior edge of condyle'
+		,
+		84
+		'absent'
+		'present, anteroposterior width at base shorter than proximodistal length'
+		,
+		85
+		'little or no contact, or contact present with fovea epitubaria on the anterior process of the periotic'
+		'fused forming a ridge-like pedestal'
+		,
+		86
+		'absent or blunt projection on anterior process'
+		'long, blade-like projection half the length of the anterior process or longer'
+		,
+		87
+		'present'
+		'absent or indistinct'
+		,
+		88
+		'absent'
+		'present'
+		,
+		89
+		'smaller than aperture for the vestibular aqueduct'
+		'approximately the same size'
+		,
+		90
+		'roughly circular or circular and continuous with a broad (not fissure-like) hiatus Fallopii'
+		'continuous with a fissure-like hiatus Fallopii'
+		,
+		91
+		'unfused'
+		'fused in adults'
+		,
+		92
+		'short, no sulcus posterior to stylomastoid notch'
+		'long but relatively shallow sulcus on posterior process of periotic or the compound periotic-tympanic posterior process, sulcus gradually disappears distally'
+		'long and deep sulcus along the entire length of the posterior process of periotic or the compound periotic-tympanic posterior process'
+		,
+		93
+		'short, processes not or barely exposed on the lateral wall of the skull'
+		'processes exposed laterally and conical to tetrahedral, strongly widening distally'
+		'processes exposed and cylindrical or flattened'
+		,
+		94
+		'transversely constricted'
+		'transversely and dorsoventrally constricted'
+		'absent'
+		,
+		95
+		'parallel'
+		'diverging posteriorly'
+		'diverging anteriorly'
+		,
+		96
+		'faces laterally'
+		'faces ventrolaterally to ventrally'
+		,
+		97
+		'present, either as distinct margin or as posterior margin of the sigmoid process projecting anteriorly to a point ventral or anterior to the tip of the sigmoid process'
+		'absent; in its place the lateral margin of sigmoid process smoothly turns into a nearly vertical sulcus on the lateral side of the bulla'
+		,
+		98
+		'present as a distinct foramen, so that connection between ectotympanic bulla and its posterior process is split into two pedicles'
+		'outer posterior pedicle of bulla is lost, foramen is open laterally'
+		,
+		99
+		'deep, the foramen incises into the wall of the bulla below the level of the base of the conical process'
+		'shallow, the foramen does not incise into the wall of the bulla below the level of the base of the conical process'
+		,
+		100
+		'present as a distinct lobe extending to the posterior edge of the bulla and separated from the ventral lobe by a deep median furrow (posterior face of bulla bears interprominental notch)'
+		'present as an eminence on the involucrum anterior to posterior edge of bulla or absent'
+		,
+		101
+		'marked groove, ventralmost point of outlet is depressed below the level of the involucrum'
+		'ventral border of outlet is an almost horizontal rim at or close to the level of the involucrum'
+		,
+		102
+		'overlaps anterior half or more of the conical process'
+		'no or only slight overlap, conical process is well separated from posterior edge of sigmoid process'
+		,
+		103
+		'present, transverse ridge extends laterally from involucrum and partially divides cavum tympani into anterior and posterior portions'
+		'absent'
+		,
+		104
+		'transversely concave'
+		'flat or convex'
+		,
+		105
+		'flat or convex, similar to lateral surface of the mandible'
+		'distinctly flattened with respect to lateral surface of the mandible'
+		,
+		106
+		'sutured or fused'
+		'not sutured'
+		,
+		107
+		'straight'
+		'arched dorsally'
+		,
+		108
+		'forms part of the curvature of the horizontal ramus of the mandible'
+		'reflexed, giving the jaw a distinctly sinusoidal outline in dorsal view'
+		,
+		109
+		'bowed medially'
+		'straight or slightly bowed laterally, a line drawn from the posteriormost to anteriormost points stays within the body of the mandible'
+		'strongly bowed outward, line from anterior to posterior points does not entirely lie within the body of the mandible'
+		,
+		110
+		'vertical'
+		'twisted with the ventral edge shifted medially'
+		'apex of the dentary shifted to an almost horizontal position'
+		,
+		111
+		'constant height'
+		'constricted medially in a dorsoventral direction'
+		'increasing in height anterioposteriorly'
+		,
+		112
+		'dorsoventral height approximately that of the dentary'
+		'dorsoventral height about half that of the dentary or less'
+		,
+		113
+		'round'
+		'triangular'
+		,
+		114
+		'absent'
+		'present'
+		,
+		115
+		'anterior to tip of coronoid process'
+		'in line with tip or posterior edge  of coronoid process'
+		'posterior to coronoid process'
+		,
+		116
+		'absent'
+		'present medially only'
+		'deep groove on the posterior surface separating the condyle and angular process medially and laterally'
+		,
+		117
+		'anterior border convex and merging back into a horizontal dorsal border, posterior border roughly vertical, anterioposterior length at base greater than maximum dorsoventral height'
+		'anterior and posterior border roughly parallel, process points backward and overhangs the mandibular neck; anterioposterior length at base shorter than maximum dorsoventral height'
+		'anterior and posterior borders are convergent, process is triangular'
+		,
+		118
+		'absent'
+		'present'
+		,
+		119
+		'posterodorsal or posterior'
+		'articular surface is directed dorsally, neck and angular process of mandible not elevated above the ventral border of horizontal ramus of dentary'
+		'articular surface is directed dorsally, neck and angular process of mandible are elevated above the ventral border of horizontal ramus of dentary and directed posterodorsally'
+		,
+		120
+		'absent'
+		'present'
+		,
+		121
+		'absent'
+		'present'
+		,
+		122
+		'absent'
+		'present'
+		,
+		123
+		'present'
+		'absent'
+		,
+		124
+		'separate'
+		'partly fused'
+		'fused'
+		,
+		125
+		'composed of several bones'
+		'composed of one bone'
+		,
+		126
+		'several ribs attach to sternum'
+		'one rib attaches to sternum'
+		,
+		127
+		'present'
+		'absent'
+		,
+		128
+		'present'
+		'absent'
+		,
+		129
+		'longer than radius and ulna'
+		'same length'
+		'shorter than radius and ulna'
+		,
+		130
+		'present as a distinct process'
+		'absent'
+		,
+		131
+		'pentadactyl'
+		'tetradactyl'
+		,
+		132
+		'absent or few (2-10), confined to throat region'
+		'numerous and terminate midbody'
+		'numerous and extend to or posterior to the umbilicus'
+		,
+		133
+		'absent'
+		'present'
+		,
+		134
+		'muscular'
+		'reduced and predominantly connective tissue'
+		,
+		135
+		'synovial'
+		'non-synovial, fibrocartilagenous mass originates in the glenoid fossa and envelopes the mandibular condyle'
+		,
+		136
+		'absent or indistinct'
+		'single median ridge'
+		'three longitudinal ridges'
+		,
+		137
+		'present as fin or dorsal hump'
+		'absent'
+		,
+		138
+		'absent'
+		'present'
+		,
+		139
+		'absent'
+		'present'
+		'well developed'
+		,
+		140
+		'absent'
+		'present'
+		'well developed'
+		,
+		141
+		'absent'
+		'dark nape field present'
+		'nape field light'
+		,
+		142
+		'nape streak absent'
+		'V-shaped chevron'
+		'nape blaze linear to diffuse'
+		,
+		143
+		'absent'
+		'present'
+		,
+		144
+		'absent'
+		'present'
+		,
+		145
+		'uniformly coloured flipper'
+		'generally uniform but with  white leading edge'
+		'white'
+		'dark'
+		,
+		146
+		'uniformly coloured flipper'
+		'generally uniform but with a light leading edge'
+		'dark grey'
+		,
+		147
+		'absent'
+		'present'
+		'well developed'
+		,
+		148
+		'body uniformly coloured'
+		'body shows two tone pigment with darker back and lighter underside, with no indications of an intermediate light gray pigment field'
+		'light gray transitional lateral field present'
+		'thorax field and flank patch present'
+		,
+		149
+		'absent'
+		'single chevron'
+		'double chevron'
+		,
+		150
+		'absent'
+		'present but subtle'
+		'well devoped'
+		,
+	;
+	
+	MATRIX
+	'Zygorhiza kochii'		                          000000000000000000000000000000000000000?0000?0000000000000000000000000000000000300000000000000?0000000?0000000000000000000000000000??????0????????????
+	'Patriocetus ehrlichii'		                     200002?0010000?0?000?0000?1??0100102100?0?11?21000?02110002000?00?10?100000000??000000??????2?????????????00?02???????0??????????????????0????????????
+	'Physeter catodon'		                          20001210010000?0?0001010010??0100102100?0?11?21000?0??20012002100?202103000001000000000?100100?001000100000000200000?000000100000000000000000000000000
+	'Aetiocetus cotylalveus'		                    0010121110100201001?000000101001101001100000?00010000000002000010101200300000003100????????10??00?0000?0??0???????????????100?????????????????????????
+	'Aetiocetus polydentatus'		                   ?01012111010020100??000?0?10?001101001100000?00010000010002000010??120030000000?100?????????0??0???0???001002010000?10?00?????????????????????????????
+	'Aetiocetus weltoni'		                        0010121110100201001?00000?101001101001100000?1001000001000200001010120030000?003100010????110?100000000001002010000?10000?????????????????????????????
+	'Aglaocetus moreni'		                         2010321000110201010100101?000010010010100000001010000101012010021220200111?01013111???????1?2???????????11??2?0???0?2?010?????????????????????????????
+	'Aglaocetus patulus'		                        2010321000110201010100101?00001001001010000000001000010??12010030?2020011100100311101010001121?1111111?1?????????????????1?0??????????????????????????
+	'Archaebalaenoptera castriarquati'		          20101210001112110101?0101?0201202102101?1100?11010000111?1201012??2011011?1010????1?????????????????????11?12?0?????2?0?0?????????????????????????????
+	'Aulocetus latus'		                           ?01??2?000110201?1?1001?1??10?10010?1010000001111000??10012000110?10?00010?01012111?1?????121101111111?1??????????????????????????????????????????????
+	'Balaena ricei'		                             ?1101????0????01?1?1?0101???0?1??2??2???0??02??0???0??3??120?2030?????1?1??00?????00110000??????????????11??220????????11002110010????????????????????
+	'Balaena mysticetus'		                        2110110000100201010110101102001002012011000020000000013001200203012?2012100000241000110000112211011?0010110022010021?021100211001000000011000000000000
+	'Balaenella brachyrhynus'		                   ?01010000010020101?1?01?1?0200100201201?0000?30000000130012002040?2?201?100000?41010110???1?2??1?11???10??????????????????????????????????????????????
+	'Balaenoptera acutorostrata'		                201012000011122101010010100201202102101011000010111001010120111302102100111010121111100000112101111111111111210100222101010011002011111101111201321321
+	'Balaenoptera bonaerensis'		                  20101200001112210101001010020120210210101100001011100101012011130?1021001110101?111110???0112101111111111111210100222101010011002011111101021111311321
+	'Balaenoptera borealis'		                     201012000011122101010010100201202102101011000010111001010120111303102101111010121111100000112101111111111111210100222101010011002011111101111101001201
+	'Balaenoptera edeni'		                        20101200001112110101001010020120210310101100001010001101012011120210210011101012111110????112101111111111111210100222101010011002012111201????????????
+	'Balaenoptera musculus'		                     201022100011122101010010100201202103101011000110111011110121111203102102111010131111100000112101111111111111210100222101010011002012111101002000110000
+	'Balaenoptera omurai'		                       201022100011122101010010100201202103101011000110111011110120111203102102111010131111????????2101111111?111112101002221010??0????2?12111101????????????
+	'Balaenoptera physalus'		                     201012000011122101010010100201202103101011000110111011010121111203102102111010121111100000112101111111111111210100222101010011002012111101211111111212
+	'Balaenoptera siberi'		                       20102210001112210101001010020120210310101100011011101101012111120?10210011?0101?111?????????2??1??1111?11111210????22?01?1001100201??????1????????????
+	'Balaenula astensis'		                        ?0?1110?00??0201?1?1101?1?0200100201201?0000?30000010130012002040?2?2011100000?41010110???1122?1??????1011?02?0?0?21???11?????????????????????????????
+	'Caperea marginata'		                         2010100000110201010110101002002021011010000013000000013101211204131?200010101011111110000011110111111111111021010021?00101?21100201000?001101100000100
+	'Cephalotropis nectus'		                      ?01?12?00011020101?1001?1??00010010010100000?1101000011101201001??1?2?0????01???111?????????2?01?????1?1??????0???????????1???????????????????????????
+	'Cetotherium megalophysum'		                  ?0????????????????????????????1???????1??????1?110?0?11??12000110?????0010??10121110100???1211011?1?11?1??????0???????????????????????????????????????
+	'Cetotherium rathkei'		                       ?01??0??0011020111?1001?1?0100100102?0100000?11110001110012000010?10200010?011121110100???121111111111?111??2?0????????1??????????????????????????????
+	'Chonecetus goedertorum'		                    0010101110?00201001?000000101001101001100000?0001000001000200000011?0000000000031000100???110?10000000?001?01010000?10000000??00?0????????????????????
+	'Cophocetus oregonensis'		                    20102210001?0201?10100101??00010??00?0100000001010000101012010021210?0001100101311101?0000112121???????111?02?00101121010?00???0200???????????????????
+	'Diorocetus chichibuensis'		                  2010?21000110201010100101?000010010010100000000010000101012010010210200111?0100???1?????????2??11??111?111??2?00101121010?0???????????????????????????
+	'Diorocetus hiatus'		                         2010321000110201010100101000001001001010000000001000010101201001031020021000100311101000001121210110111111?02100?01121010?0???00?0????????????????????
+	'Eomysticetus whitmorei'		                    2010?21100??0201?1???0101?00000?01000?10??0???0010000010001000010?10000?100010??10001000000000?000?0000001?02000001?20010?10????00????????????????????
+	'Eschrichtioides gastaldii'		                 ?01????000110201?1?1001?1?0?0120210010100000011010000?11112010010??0?00?10?1?012111???????1?2??11??11??111?12101012121110100????20????????????????????
+	'Eschrichtius robustus'		                     20101000001102010101001010020120210010100000311010000111112011010110200110111012111110011011210111111111111121010121?111010011002010001001000000000000
+	'Eubalaena glacialis'		                       2011110000100201010110101102001002012011000023000001013001200204012?2012100000241010110000112211011?0010110022010021?021100211101100000011000000000000
+	'Eubalaena shinshuensis'		                    201?11000?1?020101?1?0101???0?10?2?1201?0000?3?00001013?012002040?2??01?1?000???101?????????2?????????????????????????????????????????????????????????
+	'Herpetocetus transatlanticus'		              ?????????????2???1??????1??10?1?????????0??0?211100??????12000110?10?00010?011?21110100101121111111111?1??????????????????????????????????????????????
+	'Isanacetus laticephalus'		                   2010221000110201010100101?0000100100101000000010100001010120100204202000100010121110100010112101111111?111??210????????10?00??????????????????????????
+	'Janjucetus hunderi'		                        1000101000100101001001110?131001101000100000?00000000100002000000?1000000?000?0?100010?????10?1000?011?00?001020000?00?00????????????????0????????????
+	'Mammalodon colliveri'		                      101020100010010100?0?1110?131?01101000100000?00000000100002000000???0?00000000??1000???000?????000000?000?001020000?00000????????????????0????????????
+	'Mauicetus lophocephalus'		                   ?0??12???0??02010????0??1??000?00100?01?0000?0001000001?001000010?1?0??????01?????00???????????0000000?1?????????????????010??????????????????????????
+	'Megaptera hubachi'		                         2010121000111211?101001010020120210210101100001010000101012011120?20110111101012111110????1121??????????11?12??10022210?01001100201???????????????????
+	'Megaptera miocaena'		                        ?01??2??001112?101?1001?1?020120210010101100000010000101012011130?20210211?010121111100???112101?1111??1??????????????????????????????????????????????
+	'Megaptera novaeangliae'		                    201010100011121101010010100201202102101011003010100001010120111304202102111010121111100000112101111111111111210100222101010011112112111001000000000100
+	'Metopocetus durinasus'		                     ?????????????20???????????????1??????????????2?11000?1????20?0110?????0110?01012??1010?1011211????????????????????????????????????????????????????????
+	'Metopocetus vandelli'		                      ?010?2?000110201?1?1001?1??10?10010010100000?2111000???0?12000110?1??00010001012111????????21?????????????????????????????????????????????????????????
+	'Mixocetus elysius'		                         2010121000??0201110100101001001001021010000001101000111101200011?21020001000101?11??????????2???????????11??2?0??01?21010??0??00??????????????????????
+	'Nannocetus eremus'		                         ?????????????????????????????01?????????0??????11??0?????1200??10?10?00010???1???11010?101121101?11111?1??????????????????????????????????????????????
+	'Parabalaenoptera baulinensis'		              2010?21000?11211?1?100101?0201202102101?1100?11010000111012011120?10210111?0101?111?????????2?01????????11?1210???2221010??0??0???????????????????????
+	'Parietobalaena palmeri'		                    201032100011020101010010100000100100101000000000100001010120100103102001100010031110101000112121111111?111?02100001121010110??????????????????????????
+	'Parietobalaena yamaokai'		                   2010321000??0201?1?100101??00010010010100000?00010000?01012010020?11?00210?01003111?1?????1?2?21111111?111?02100101121010??0??00?0????????????????????
+	'Pelocetus calvertensis'		                    2010221000110201010100101?000010010010100000001010000101012010021310200011001013111010????112101111111?111?02?00?01121010110??012?????????????????????
+	'Pinocetus polonicus'		                       ?01012100011020101?100??1000001001001010000001101000011101201001?21?200????01?1?11????????????0111111??111?02101?0??21010?10??00??????????????????????
+	'Piscobalaena nana'		                         2010121000110201110110101?0100100103101000000211100011?00120001104102000100010121110100101121101111111?111?02101002121010100??0020????????????????????
+	'Protororqualus cuvierii'		                   20101210001112110101001010020120210210101100?11010000111012011120?20110111?010??111?????????????????????11??2101?02221010100110020????????????????????
+	'Titanocetus sammarinensis'		                 20101210001?0201010100101?00001001001010000001101000011101201001?21020001000001?111?????????????????????11??2?00101?2?010100??????????????????????????
+	'Uranocetus gramensis'		                      20102210001?0201010100101??000100100101000000011?0000??1012010121?20??0211??10??111010?00?112?21111111?111?02?0000112?010?00110020????????????????????
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 150;
+ENDBLOCK;
+BEGIN TREES;
+TRANSLATE 1 Zygorhiza_kochii , 2 Patriocetus_ehrlichii , 3 Physeter_catodon , 4 Aetiocetus_cotylalveus , 5 Aetiocetus_polydentatus , 6 Aetiocetus_weltoni , 7 Aglaocetus_moreni , 8 Aglaocetus_patulus , 9 Archaebalaenoptera_castriarquati , 10 Aulocetus_latus , 11 Balaena_ricei , 12 Balaena_mysticetus , 13 Balaenella_brachyrhynus , 14 Balaenoptera_acutorostrata , 15 Balaenoptera_bonaerensis , 16 Balaenoptera_borealis , 17 Balaenoptera_edeni , 18 Balaenoptera_musculus , 19 Balaenoptera_omurai , 20 Balaenoptera_physalus , 21 Balaenoptera_siberi , 22 Balaenula_astensis , 23 Caperea_marginata , 24 Cephalotropis_nectus , 25 Cetotherium_megalophysum , 26 Cetotherium_rathkei , 27 Chonecetus_goedertorum , 28 Cophocetus_oregonensis , 29 Diorocetus_chichibuensis , 30 Diorocetus_hiatus , 31 Eomysticetus_whitmorei , 32 Eschrichtioides_gastaldii , 33 Eschrichtius_robustus , 34 Eubalaena_glacialis , 35 Eubalaena_shinshuensis , 36 Herpetocetus_transatlanticus , 37 Isanacetus_laticephalus , 38 Janjucetus_hunderi , 39 Mammalodon_colliveri , 40 Mauicetus_lophocephalus , 41 Megaptera_hubachi , 42 Megaptera_miocaena , 43 Megaptera_novaeangliae , 44 Metopocetus_durinasus , 45 Metopocetus_vandelli , 46 Mixocetus_elysius , 47 Nannocetus_eremus , 48 Parabalaenoptera_baulinensis , 49 Parietobalaena_palmeri , 50 Parietobalaena_yamaokai , 51 Pelocetus_calvertensis , 52 Pinocetus_polonicus , 53 Piscobalaena_nana , 54 Protororqualus_cuvierii , 55 Titanocetus_sammarinensis , 56 Uranocetus_gramensis ; TREE Figure_2 = (1 , ((2 , 3) , (((27 , (4 , 5 , 6)) , (38 , 39)) , (((30 , (((28 , 51 , (7 , 56)) , (37 , (55 , ((23 , (((48 , ((9 , 41 , 54) , (42 , 43))) , (17 , ((20 , (16 , (14 , 15))) , (19 , (18 , 21))))) , (32 , 33))) , (46 , (10 , 25 , 44 , 45 , 53 , (47 , (26 , 36)))) , (24 , 52))))) , (49 , (50 , (8 , 29))))) , ((11 , 12) , (13 , (22 , 34 , 35)))) , (31 , 40))))) ; TREE Figure_3 = (1 , ((2 , 3) , (((27 , (4 , 5 , 6)) , (38 , 39)) , (((30 , (29 , 49 , 50 , (8 , (7 , (56 , (28 , (51 , (37 , (55 , ((23 , (((48 , (9 , 54 , (41 , (42 , 43)))) , (17 , ((20 , (16 , (14 , 15))) , (21 , (18 , 19))))) , (32 , 33))) , (46 , (10 , 25 , 44 , 45 , 53 , (47 , (26 , 36)))) , (24 , 52))))))))))) , ((11 , 12) , (13 , (22 , 34 , 35)))) , (31 , 40))))) ; TREE Figure_4 = (1 , (2 , 3) , (((27 , (4 , 5 , 6)) , (38 , 39)) , (31 , 40 , ((30 , ((8 , 29 , (7 , (28 , 56 , (51 , (37 , (55 , (24 , 52 , (23 , ((9 , 41 , (17 , ((16 , (14 , 15)) , (20 , (21 , (18 , 19))))) , (42 , 43) , 48 , 54) , (32 , 33))) , (46 , (10 , 25 , 44 , 45 , 53 , (47 , (26 , 36))))))))))) , 49 , 50)) , (13 , (11 , 12) , (22 , 34 , 35)))))) ;
+ENDBLOCK;

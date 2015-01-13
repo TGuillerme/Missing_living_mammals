@@ -1,0 +1,315 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-7 08.32.52 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=14;
+	TAXLABELS
+		'Mammalodon colliveri'
+		'Eomysticetus whitmorei'
+		'Balaenoptera acutorostrata'
+		'Balaenoptera bonaerensis'
+		'Balaenoptera borealis'
+		'Balaenoptera edeni'
+		'Balaenoptera musculus'
+		'Balaenoptera omurai'
+		'Balaenoptera physalus'
+		'Megaptera novaeangliae'
+		'Eschrichtius robustus'
+		'Caperea marginata'
+		'Balaena mysticetus'
+		'Eubalaena sp.'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=48;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01234";
+
+	CHARLABELS
+		 [1] 'Character 1"“ Tympanic bulla, shape.'
+		 [2] 'Character 2"“ Tympanic bulla, dorsoventral compression.'
+		 [3] 'Character 3"“ Tympanic bulla, main ridge.'
+		 [4] 'Character 4"“ Tympanic bulla, median furrow.'
+		 [5] 'Character 5"“ Tympanic bulla, dorsal posterior prominence.'
+		 [6] 'Character 6"“ Tympanic bulla, involucral ridge and main ridge.'
+		 [7] 'Character 7"“ Tympanic bulla, anterolateral ridge or shelf.'
+		 [8] 'Character 8"“ Tympanic bulla, conical process height in proportion to length.'
+		 [9] 'Character 9"“ Tympanic bulla, conical process thickness.'
+		 [10] 'Character 10"“ Tympanic bulla, posterior extension.'
+		 [11] 'Character 11"“ Tympanic bulla, dorsal involucral surface in medial view.'
+		 [12] 'Character 12"“ Tympanic bulla, dorsal surface of the involucrum adjacent to the Eustachian opening.'
+		 [13] 'Character 13"“ Tympanic bulla, elevated and flattened posterior portion of medial margin of main ridge.'
+		 [14] 'Character 14"“ Tympanic bulla, length of anterior lobe.'
+		 [15] 'Character 15"“ Tympanic bulla, main ridge and involucral ridge.'
+		 [16] 'Character 16"“ Tympanic bulla, involucral ridge extends to posterior end of bulla.'
+		 [17] 'Character 17"“ Tympanic bulla, involucral ridge extends further anterior than main ridge.'
+		 [18] 'Character 18"“ Petrosal, flange (lateral projection) of the ventrolateral tuberosity of the anterior process.'
+		 [19] 'Character 19"“ Petrosal, anterior process attached to promontorium.'
+		 [20] 'Character 20"“ Petrosal, shape of anterior process apex.'
+		 [21] 'Character 21"Â“ Petrosal, anterointernal sulcus.'
+		 [22] 'Character 22"“ Petrosal, anterior process with prominent, thin, bony projections.'
+		 [23] 'Character 23"“ Petrosal, anteroexternal sulcus.'
+		 [24] 'Character 24"“ Petrosal, dorsal junction between tegmen tympani and pars cochlearis extended dorsally as robust pyramidal process.'
+		 [25] 'Character 25"“ Petrosal, orientation of posterior process.'
+		 [26] 'Character 26"Â“ Petrosal, posterior cochlear crest.'
+		 [27] 'Character 27"“ Petrosal, transverse elongation of pars cochlearis.'
+		 [28] 'Character 28"“ Petrosal, attachment for tensor tympani muscle.'
+		 [29] 'Character 29"“ Petrosal, promontorial groove on medial side of pars cochlearis (promontorium).'
+		 [30] 'Character 30"“ Petrosal, ridge on anterolateral side of pars cochlearis, in ventral view.'
+		 [31] 'Character 31"“ Petrosal, stylomastoid fossa.'
+		 [32] 'Character 32"“ Petrosal, perilymphatic foramen in dorsolateral aspect.'
+		 [33] 'Character 33"“ Petrosal, suprameatal fossa.'
+		 [34] 'Character 34"“ Petrosal, suprameatal region.'
+		 [35] 'Character 35"“ Petrosal, crista transversa.'
+		 [36] 'Character 36"“ Petrosal, fenestra cochleae size relative to fenestra vestibuli.'
+		 [37] 'Character 37"“ Petrosal, length of promontorium relative to length of anterior process.'
+		 [38] 'Character 38"“ Petrosal, arrangement of endolymphatic and perilymphatic foramina.'
+		 [39] 'Character 39"“ Petrosal, distance between apertures for endolymphatic foramen and fenestra cochleae.'
+		 [40] 'Character 40"“ Petrosal, relative size of internal openings for vestibulocochlear and facial nerve canals within internal acoustic meatus.'
+		 [41] 'Character 41"“ Petrosal, stapedial fossa and facial nerve sulcus.'
+		 [42] 'Character 42"“ Petrosal, size of stapedial fossa.'
+		 [43] 'Character 43"“ Petrosal, fossa for the malleus.'
+		 [44] 'Character 44"“ Petrosal, contact edge between stylomastoid fossa and ventral surface of promontorium.'
+		 [45] 'Character 45"“ Petrosal, hiatus Fallopii.'
+		 [46] 'Character 46"“ Petrosal, ventral flattening of promontorium.'
+		 [47] 'Character 47"“ Petrosal, endocranial opening of facial nerve canal.'
+		 [48] 'Character 48"“ Petrosal, angle between posterior process and flange of ventrolateral tuberosity.'
+	;
+	
+	STATELABELS
+		1
+		'ovoid'
+		'rhomboid'
+		,
+		2
+		'absent'
+		'present'
+		,
+		3
+		'short, confined to posterior end'
+		'long, extends to anterior end'
+		,
+		4
+		'present'
+		'absent'
+		,
+		5
+		'absent or weakly developed'
+		'conspicuous'
+		,
+		6
+		'involucral ridge coincident with medial edge (main ridge)'
+		'involucral ridge laterally retracted'
+		,
+		7
+		'absent'
+		'present'
+		,
+		8
+		'weakly developed or absent'
+		'short, height between 27-36% of length'
+		'tall, height between 41-48% of length'
+		,
+		9
+		'thick'
+		'thin anterior lip'
+		'uniformly thin'
+		,
+		10
+		'absent'
+		'present'
+		,
+		11
+		'relatively straight or slightly curved'
+		'markedly sinuous and strongly concave'
+		,
+		12
+		'convex'
+		'planar'
+		,
+		13
+		'absent'
+		'present'
+		,
+		14
+		'long, 40% or greater than total length of bulla'
+		'short, 30% or less than total length of bulla'
+		,
+		15
+		'extend parallel with one another'
+		'convergent at posterior end'
+		'convergent at anterior end'
+		,
+		16
+		'absent'
+		'present'
+		,
+		17
+		'absent'
+		'present'
+		,
+		18
+		'absent'
+		'present and small'
+		'present and large'
+		'present and hypertrophied'
+		,
+		19
+		'absent'
+		'present with an embayment'
+		'present, broadly attached (no embayment)'
+		,
+		20
+		'rounded'
+		'narrowly triangular'
+		'bluntly triangular'
+		'elongated and inflated'
+		,
+		21
+		'absent'
+		'present, located on anteromedial edge of anterior process'
+		,
+		22
+		'absent'
+		'present'
+		,
+		23
+		'present'
+		'reduced or absent'
+		,
+		24
+		'absent'
+		'present'
+		,
+		25
+		'posterolaterally relative to long axis of pars cochlearis'
+		'at right angles to pars cochlearis'
+		,
+		26
+		'absent or reduced'
+		'present, medially extending shelf adjacent to fenestra cochleae'
+		'present, ventrally directed'
+		,
+		27
+		'absent'
+		'present'
+		,
+		28
+		'present as enlarged fossa'
+		'present as groove'
+		'absent or poorly developed'
+		,
+		29
+		'absent'
+		'present'
+		,
+		30
+		'absent'
+		'present and high, forms an anterior-posterior ridge'
+		'present and well-developed'
+		,
+		31
+		'present, enlarged and extending to the pars cochlearis'
+		'present, extending to the pars cochlearis and posterior process'
+		,
+		32
+		'widely seperated from fenestra cochleae'
+		'narrowly seperated from fenestra cochleae'
+		'confluent with fenestra cochleae'
+		,
+		33
+		'present'
+		'absent'
+		,
+		34
+		'at the level of the anterior process'
+		'elevated above (dorsal) to the anterior process'
+		,
+		35
+		'low, does not reach cerebral surface'
+		'high, reaches cerebral surface'
+		,
+		36
+		'small'
+		'large'
+		,
+		37
+		'promontorium length nearly equivalent to anterior process width'
+		'promontorium length 35-70% of anterior process width'
+		,
+		38
+		'separate, with thin bony septum that is anteroposteriorly oriented'
+		'en echelon, divided by a thin bony septum that is dorsoventrally oritented'
+		,
+		39
+		'very narrow'
+		'narrow'
+		'very wide'
+		,
+		40
+		'vestibulocochlear greater than facial nerve canal opening'
+		'vestibulocochlear subequal to facial nerve canal opening'
+		,
+		41
+		'separate'
+		'confluent'
+		,
+		42
+		'small and compressed'
+		'large/hemispherical'
+		,
+		43
+		'present'
+		'partially defined'
+		'indistinct to absent'
+		,
+		44
+		'not well-developed'
+		'well-developed as a short keel'
+		'well-developed as elongate, broad flange'
+		,
+		45
+		'through ventral surface of promontorium'
+		'within juncture between promontorium and anterior process'
+		'through ventral surface of anterior process'
+		,
+		46
+		'absent'
+		'present'
+		,
+		47
+		'circular'
+		'oval'
+		'oval with anterior fissure'
+		,
+		48
+		'obtuse'
+		'approximately 90 degrees '
+		'acute'
+		,
+	;
+	
+	MATRIX
+	'Mammalodon colliveri'		                0000000??00?0?????000000?0011??01010?0?0000??000
+	'Eomysticetus whitmorei'		              000?000??000?????00000?000011?0100010010??00?000
+	'Balaenoptera acutorostrata'		          001101111001002111211010011200010100101000110111
+	'Balaenoptera bonaerensis'		            001101121001000111211010011200011010111100110101
+	'Balaenoptera borealis'		               00110111100000010{2,1}21{0,1}010011200011000111111112101
+	'Balaenoptera edeni'		                  001101121000000101210010011200011000111001112111
+	'Balaenoptera musculus'		               0011{0,1}1111110100102010010011200111100111101110011
+	'Balaenoptera omurai'		                 0011011?1000000101110110011100011???1010??110101
+	'Balaenoptera physalus'		               0011011210{0,1}010010201{0,1}0100112001{2,1}110011?10011?011
+	'Megaptera novaeangliae'		              0011{1,0}11210{0,1}000200112001001120000110111?011121001
+	'Eschrichtius robustus'		               0011000200000000011200000212020201{0,1}0010011201121
+	'Caperea marginata'		                   10110000200001010003001011011?010?1010100?20?010
+	'Balaena mysticetus'		                  11110{0,1}002000011003100011110111001001102001200002
+	'Eubalaena sp.'		                       11110{0,1}002000012003000011110111001001102011200002
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 48;
+ENDBLOCK;

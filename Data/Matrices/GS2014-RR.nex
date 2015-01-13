@@ -1,0 +1,685 @@
+
+#NEXUS
+
+[ File saved by NDE version 0.5.0, Tue Nov 18 11:40:40 2014 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=18;
+	TAXLABELS
+		Phenacodus
+		Cardiolophus
+		Pachynolophus
+		'Lophiaspis maurettei'
+		'Lophiaspis occitanicus'
+		'Lophiaspis baicherei'
+		'L baroensis'
+		'L remense'
+		'L tapirotherium'
+		'L rhinocerodes'
+		'L lautricense'
+		'P leptorhynchum'
+		'P isselense'
+		'P buchsowillanum'
+		Eomoropus
+		Litolophus
+		Paleomoropus
+		'Eolophiodon laboriensis'
+		;
+ENDBLOCK;
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=149;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012";
+	CHARLABELS
+		[1] P1
+		[2] 'number of labial cusp(s) on P2'
+		[3] 'number of lingual cusp(s) on P2'
+		[4] 'metacone of P2'
+		[5] 'parastyle on P2'
+		[6] 'preparacrista on P2'
+		[7] 'stylar fold on the ectoloph lingual face on P2'
+		[8] 'endometacrista on P2'
+		[9] 'entoconule on P2'
+		[10] 'preprotocrista on P2'
+		[11] 'connection between preprotocrista and ectoloph on P2'
+		[12] 'postprotocrista on P2'
+		[13] 'paracone and metacone on P3'
+		[14] 'furrow on the lingual side of the ectoloph on P3'
+		[15] 'furrow between paracone and metacone tips on P3'
+		[16] 'prominence of the paracone on P3'
+		[17] 'metacone position in occlusal view on P3'
+		[18] 'hypocone on P3'
+		[19] 'development of the parastyle on P3-4'
+		[20] 'postmetacrista on P3'
+		[21] 'stylar fold on the ectoloph lingual face on P3'
+		[22] 'endometacrista on P3'
+		[23] 'endoparacrista on P3'
+		[24] 'entoconule on P3'
+		[25] 'connection preprotocrista-ectoloph on P3'
+		[26] 'postprotocrista on P3'
+		[27] 'connection postprotocrista-ectoloph on P3'
+		[28] 'furrow between paracone and metacone tops on P4'
+		[29] 'prominence of the paracone on P4'
+		[30] 'metacone position in occlusal view on P4'
+		[31] 'hypocone on P4'
+		[32] 'endometacrista on P4'
+		[33] 'endoparacrista on P4'
+		[34] 'entoconule on P4'
+		[35] 'connection between preprotocrista and ectoloph on P4'
+		[36] 'paraconule on P4'
+		[37] 'postprotocrista on P4'
+		[38] 'connection between postprotocrista and ectoloph on P4'
+		[39] 'parastyle extension on M1'
+		[40] 'parastyle height on M1'
+		[41] 'connection between protoloph and ectoloph on M1-2'
+		[42] 'connection between prehypocrista and metacone on M1'
+		[43] 'metacone in occlusal view on M1'
+		[44] 'labial face of the  metacone on M1'
+		[45] 'postmetacrista orientation on M1'
+		[46] 'endoparacrista on M1'
+		[47] 'endoparacrista shape on M1'
+		[48] 'upper molars paraconule'
+		[49] 'upper molars paraconule'
+		[50] 'upper molars metaconule'
+		[51] 'separation of upper molars loph'
+		[52] 'mesostyle on M1'
+		[53] 'mesostyle size on M1'
+		[54] 'centrocrista on M1'
+		[55] 'parastyle height on M2'
+		[56] 'parastyle on M2'
+		[57] 'metacone on M2'
+		[58] 'labial side of the metacone on M2'
+		[59] 'postmetacrista orientation on M2'
+		[60] 'endoparacrista on M2'
+		[61] 'endoparacrista origin on M2'
+		[62] 'mesostyle on M2'
+		[63] 'mesostyle size on M2'
+		[64] 'centrocrista on M2'
+		[65] 'M3 parastyle in comparison to  M2 parastyle'
+		[66] 'metacone in occlusal view on M3'
+		[67] 'M3 metacone in comparison to M2 metacone'
+		[68] 'labial face of the  metacone on  M3'
+		[69] 'postmetacrista orientation on M3'
+		[70] 'endoparacrista on M3'
+		[71] 'endoparacrista shape on M3'
+		[72] 'mesostyle on M3'
+		[73] 'mesostyle size on M3'
+		[74] 'centrocrista on M3'
+		[75] p1
+		[76] 'paraconid on p2'
+		[77] 'hypoconid position on p2'
+		[78] 'protoconid and metaconid on p3'
+		[79] 'paraconid on p3'
+		[80] 'entoconid on p3'
+		[81] 'connection between hypocristid and metaconid on p3'
+		[82] 'comparison between talonid and trigonid on p3 in occlusal view'
+		[83] 'paraconid on p4'
+		[84] 'entoconid on p4'
+		[85] 'connection between hypocristid and metaconid on p4'
+		[86] 'comparison between talonid and trigonid on p4 in occlusal view'
+		[87] 'protoconid and metaconid on p4'
+		[88] 'postmetacristid on p4'
+		[89] 'metasylid on m1'
+		[90] 'metastylid on m1'
+		[91] 'connection between prehypocristid and protolophid on m1'
+		[92] 'lower molars prehypocristid direction'
+		[93] 'prehypocristid on m1'
+		[94] 'entocristid on m1'
+		[95] 'end of the paracristid on m1'
+		[96] 'metastylid on m2'
+		[97] 'metastylid on m2'
+		[98] 'connection between prehypocristid and protolophid on m2'
+		[99] 'connection between prehypocristid and protolophid on m2'
+		[100] 'prehypocristid on m2'
+		[101] 'entocristid on m2'
+		[102] 'end of the paracristide on m2'
+		[103] 'metastylid on m3'
+		[104] 'metastylid on m3'
+		[105] 'connection between prehypocristid and protolophid on m3'
+		[106] 'connection between prehypocristid and protolophid on m3'
+		[107] 'prehypocristid on m3'
+		[108] 'end of the paracristid on m3'
+		[109] 'hypoconulid size on m3'
+		[110] 'hypoconulid height on m3'
+		[111] 'lingual cristid on hypoconulid on m3'
+		[112] 'hypolophid-hypoconulid valley on m3'
+		[113] nasal
+		[114] 'nasal notch'
+		[115] 'nasal-lacrymal connection'
+		[116] 'premaxilla-maxilla suture'
+		[117] 'preorbital fossa'
+		[118] 'supraorbital foramen'
+		[119] 'postglenoid foramen'
+		[120] 'postglenoid process'
+		[121] 'posterior extension of the jugal'
+		[122] 'frontal lines junction'
+		[123] 'facial portion of the lacrymal'
+		[124] 'zygomatic arch'
+		[125] 'zygomatic arch'
+		[126] 'postorbital process of the jugal'
+		[127] 'posterior part of the zygomatic arch'
+		[128] 'occipital condyle'
+		[129] 'superior post-canine diastema length'
+		[130] 'post-canine constriction in dorsal view'
+		[131] 'post-orbital contriction position'
+		[132] 'posterior palatine foramina'
+		[133] 'ridge delimiting the choanae'
+		[134] 'choanal opening'
+		[135] 'glenoid cavity'
+		[136] 'articular surface'
+		[137] 'jugular process'
+		[138] 'jugular process orientation'
+		[139] basioccipital
+		[140] 'inferior post-canine diastema'
+		[141] 'post-canine constriction in occlusal view'
+		[142] 'mandibular symphysis'
+		[143] 'posterior extension of the mandibular symphysis'
+		[144] 'foramen mentale'
+		[145] 'anterior position of the foramen mentale'
+		[146] 'posterior position of the foramen mentale'
+		[147] 'height of the corpus mandibulae'
+		[148] 'mandibular angle'
+		[149] 'incisura vascularis'
+		;
+	STATELABELS
+		1
+			'presence '
+			'absence ',
+		2
+			'only one'
+			two,
+		3
+			'only one'
+			two,
+		4
+			'less developed than the paracone '
+			'as developed as the paracone ',
+		5
+			'absence '
+			'presence ',
+		6
+			'absence '
+			'presence ',
+		7
+			'absence '
+			'presence ',
+		8
+			'absence '
+			presence,
+		9
+			'absence '
+			'presence ',
+		10
+			'absence '
+			'presence ',
+		11
+			'absence '
+			'presence ',
+		12
+			'absence '
+			'presence ',
+		13
+			attached
+			separated,
+		14
+			'absence '
+			'presence ',
+		15
+			'absence '
+			'presence ',
+		16
+			'the same as the metacone'
+			'more important than the metacone',
+		17
+			'sagittally aligned with the paracone'
+			'more lingual than the paracone',
+		18
+			'absence '
+			'presence ',
+		19
+			'less than the half of the paracone '
+			'at least equal to the half of the paracone ',
+		20
+			'absence '
+			'presence ',
+		21
+			'absence '
+			'presence ',
+		22
+			'absence '
+			'presence ',
+		23
+			'absence '
+			'presence ',
+		24
+			'absence '
+			'presence ',
+		25
+			'absence '
+			'presence ',
+		26
+			'absence '
+			'presence ',
+		27
+			'absence '
+			'presence ',
+		28
+			'absence '
+			'presence ',
+		29
+			'the same as the metacone '
+			'more important than the metacone ',
+		30
+			'sagittally aligned with the paracone'
+			'more lingual than the paracone',
+		31
+			'absence '
+			'presence ',
+		32
+			'absence '
+			'presence ',
+		33
+			'absence '
+			'presence ',
+		34
+			'absence '
+			'presence ',
+		35
+			'absence '
+			'presence ',
+		36
+			'presence '
+			'absence ',
+		37
+			'absence '
+			'presence ',
+		38
+			'absence '
+			'presence ',
+		39
+			'less extended than the paracone '
+			'more developed than the paracone ',
+		40
+			'less than the half of the height of the paracone (without wearing)'
+			'exceeding the half of the height of the paracone (without wearing) ',
+		41
+			'absence '
+			'presence ',
+		42
+			'lingually to the metacone '
+			'mesially to the base of the metacone ',
+		43
+			'aligned with the paracone '
+			'shifted lingually ',
+		44
+			'flat or concave'
+			convex,
+		45
+			distal
+			distolabial,
+		46
+			'absence '
+			'presence ',
+		47
+			short
+			prominent,
+		48
+			'presence '
+			'absence ',
+		49
+			'quite distinct of the protoloph '
+			'fused to the protoloph ',
+		50
+			'presence '
+			'absence ',
+		51
+			valley
+			furrow,
+		52
+			'absence '
+			'presence ',
+		53
+			'smaller than the half of the height of the metacone '
+			'at least as high as the half of the height of the metacone ',
+		54
+			'having a curv labially '
+			straight,
+		55
+			'less than the half of the height of the paracone (without wearing) '
+			'doing more than the half of the height of the paracone (without wearing) ',
+		56
+			'does not exceed the tooth labial edge '
+			'makes an anterolabial projection on the tooth ',
+		57
+			'shifted lingually '
+			'aligned with the paracone ',
+		58
+			'flat or concave'
+			convex,
+		59
+			distal
+			distolabial,
+		60
+			'absence '
+			'presence ',
+		61
+			'top of the paracone '
+			'lingual face of the paracone ',
+		62
+			'absence '
+			'presence ',
+		63
+			'smaller than the half of the height of the metacone '
+			'reaching the half of the height of the metacone ',
+		64
+			'having a curve labially '
+			straight,
+		65
+			'shifted lingually'
+			'similar position'
+			'shifted labially ',
+		66
+			'aligned with the paracone '
+			'shifted lingually',
+		67
+			'shifted labially '
+			'similar position'
+			'shifted lingually',
+		68
+			'flat or concave'
+			convex,
+		69
+			distal
+			distolabial,
+		70
+			'absence '
+			'presence ',
+		71
+			'quite prominent'
+			prominent,
+		72
+			'absence '
+			'presence ',
+		73
+			'smaller than the half of the height of the metacone '
+			'at least as high as the half of the height of the metacone ',
+		74
+			'having a curve labially'
+			straight,
+		75
+			'presence '
+			'absence ',
+		76
+			'absence '
+			'presence ',
+		77
+			distocentral
+			distolabial,
+		78
+			attached
+			separated,
+		79
+			'absence '
+			'presence ',
+		80
+			'absence '
+			'presence ',
+		81
+			'absence '
+			'presence ',
+		82
+			'tal  wider '
+			'tal narrower ',
+		83
+			'absence '
+			'presence ',
+		84
+			'absence '
+			'presence ',
+		85
+			'absence '
+			'presence ',
+		86
+			'tal wider'
+			'tal narrower',
+		87
+			close
+			remoted,
+		88
+			'absence '
+			'presence ',
+		89
+			'absence '
+			'presence ',
+		90
+			weak
+			strong,
+		91
+			'contact at the base of the protolophid'
+			'contact at the top of the protolophid ',
+		92
+			'centre of the protolophid '
+			'up to the metaconid '
+			'up to the protoconid ',
+		93
+			low
+			high,
+		94
+			'absence '
+			'presence ',
+		95
+			'lingual face'
+			'base of the metaconid',
+		96
+			'absence '
+			'presence ',
+		97
+			weak
+			strong,
+		98
+			'absence '
+			'presence ',
+		99
+			'contact at the base of the protolophid '
+			'contact at the top of the protolophid ',
+		100
+			low
+			high,
+		101
+			'absence '
+			'presence ',
+		102
+			'lingual face'
+			' base of the metaconid',
+		103
+			'absence '
+			'presence ',
+		104
+			weak
+			strong,
+		105
+			'absence '
+			'presence ',
+		106
+			'contact at the base of the protolophid'
+			'contact at the top of the protolophid ',
+		107
+			low
+			'high ',
+		108
+			'lingual face'
+			'contact at the base of the metaconid ',
+		109
+			small
+			wide,
+		110
+			low
+			high,
+		111
+			absence
+			presence,
+		112
+			'narrower than the protolophid-hypolophid valley 
+
+'
+			'as large as the protolophid-hypolophid valley ',
+		113
+			'overlaying the pmx '
+			'not overlaying the pmx ',
+		114
+			'to before the canine '
+			'to the canine or behind it ',
+		115
+			presence
+			absence,
+		116
+			vertical
+			slanting,
+		117
+			absence
+			presence,
+		118
+			absence
+			presence,
+		119
+			absence
+			presence,
+		120
+			'anteriorly directed '
+			'anterolaterally directed ',
+		121
+			'to before the glenoid cavity '
+			'to the base of the glenoid cavity '
+			'to the middle of the glenoid cavity ',
+		122
+			'just behind the orbit '
+			'much more posterior ',
+		123
+			large
+			'small or reduced',
+		124
+			narrow
+			wide,
+		125
+			low
+			high,
+		126
+			'absence '
+			'presence ',
+		127
+			'up to the superior edge of the orbit '
+			'lower than the superior edge of the orbit ',
+		128
+			'elongated vertically'
+			'not high and almost rounded ',
+		129
+			short
+			long,
+		130
+			absence
+			presence,
+		131
+			'just behind the orbit '
+			'ante braincase',
+		132
+			'anterior to M2'
+			'up to M2 or behind',
+		133
+			absence
+			presence,
+		134
+			'anterior or up to M3 '
+			'behind M3',
+		135
+			'anteroventrally slanted '
+			concave,
+		136
+			trapezoidal
+			oval,
+		137
+			'as long as the post-glenoid process '
+			'less long than the post-glenoid process ',
+		138
+			ventral
+			'ventral and lateral',
+		139
+			'with a medial crest'
+			smooth,
+		140
+			short
+			long,
+		141
+			weak
+			pronounced,
+		142
+			weak
+			strong,
+		143
+			'anterior to p2'
+			'up to p2'
+			'posterior to p2',
+		144
+			'only one'
+			several,
+		145
+			'before p2'
+			'up to p2'
+			'behind p2',
+		146
+			'before p4'
+			'up to p4'
+			'behind p4',
+		147
+			'anteroposteriorly increasing '
+			' constant',
+		148
+			'ventrally extended'
+			'no extented',
+		149
+			'not very deep'
+			pronounced,
+	;
+	MATRIX
+		Phenacodus                   00--???000 -0010000-0 0000010100 0000001000 000100-000 -0-0000000 -0-0-120-0 -0-0000000 1111100011 0110111100 10110-0100 0011011010 0100001000 1010110100 ??102-001
+		Cardiolophus                 000-000000 -001000000 100000-100 0000101010 110100-001 00-1110100 -0-1001100 -0-1000010 1101110010 0200010100 0010100011 010001?010 0001011001 0010010010 -10???1?0
+		Pachynolophus                000-010001 0001000001 000000-000 0001000-00 0-0110-000 10-0010010 -0-0111100 -0-0000110 010001100- 111000-111 0011111011 110?011010 0010001011 0110110101 10000-001
+		'Lophiaspis maurettei'       100-000000 -001111001 010010-111 0000101111 111110-000 00-0110110 -0-1210000 -0-1100??? ????????11 1111011100 11???????? ???1?0???? ?????????? ?????????? ?????????
+		'Lophiaspis occitanicus'     100-???001 01?????0?? ?000111??? 00001?1111 111110-001 00-1100110 -0-1112000 -0-11????? ????????0- 111100-0-0 11???????? ?????????? ?????????? ?????????? ?????????
+		'Lophiaspis baicherei'       1????????? ?????????? ???????111 01001010?? 111110-000 00-1?00111 00-1212001 00-1?????? ?????????? ?????????? ?????????? ?????????? ?????????? ?????????? ?????????
+		'L baroensis'                110011?001 000?111001 ?11011?111 0111111100 111101?011 1001110011 ?101210101 0101100100 111111100- 000010-0-0 010-0-0111 11???????? ?????????? ?????????1 112??????
+		'L remense'                  1100110101 0001101001 100010-111 1001110-01 11111101-1 1101111101 0101110001 0101111011 110111110- 001100-101 100-101011 1100110001 ?00???1111 0110??0??1 112102100
+		'L tapirotherium'            1100111001 0111101001 1001110111 0111111-11 1111111011 1101110101 0111110001 1101111010 1010101110 0011010101 0010100010 1100?1?001 0001110111 0100000001 ?12100???
+		'L rhinocerodes'             1111110101 1001101001 100110-111 0101110-10 11101101-1 1101100101 10-1210111 1101110110 1111111110 000010-100 100-0-0010 ?1?????001 ??0?????1? ??????0??? ?????????
+		'L lautricense'              1111111111 1010110111 011110-111 1111110-10 11111101-1 1111100110 -111210000 -101111100 1001101110 00011100-0 11100--111 11???1?001 0?0111??11 ??01000?01 012100111
+		'P leptorhynchum'            1101110011 0101100001 0110111111 0110111100 1111011011 1111110001 1111212101 1101100010 010011110- 1011010111 1111100111 1110?10001 0101111010 0100000001 11211211-
+		'P isselense'                1101110001 0011101101 0100110100 0111111010 1111011011 1111110101 0101210101 0111111011 110000100- 0001110101 1110100111 11?????001 ??0?????1? ??????0??1 012111111
+		'P buchsowillanum'           1101110101 0011101101 0100111100 0110111100 11100??1-1 110111000? ?111212100 -111101010 110010100- 1011110111 1110100111 1100?0?001 2101111?-0 0????00??- ???1?????
+		Eomoropus                    0100000100 -101111001 0100011101 0010011100 101110-001 00-0110100 -0-0100100 -0-0100100 1101111011 1011111111 1111111101 00??1??110 01101?101? 0?0010100? ?????????
+		Litolophus                   0100000000 -101110011 0100010100 0010011111 101100-001 00-0110100 -0-0210100 -0-0100100 1100111111 1110111111 0011111100 0000?1?1?0 11?0110000 0101?01011 ?0101-101
+		Paleomoropus                 ?????????? ?????????? ?????????? ????????00 101100-000 00-0110100 -0-0210100 -0-0?????? ?????????? ?????????? ????????11 ?????????? ?????????? ?????????? ?????????
+		'Eolophiodon laboriensis'    100-111101 0000010001 010000-011 0100111011 1110011011 1111111001 0111200111 1101100000 1100000110 101000-101 000-0-0111 1100110011 1010111111 1010100001 111101000
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE=UNORD POLYTCOUNT=MINSTEPS;
+ENDBLOCK;
+
+BEGIN NOTES;
+	[Taxon comments]
+
+	[Character comments]
+
+	[Character state comments]
+
+	[Attribute comments]
+
+	[Taxon pictures]
+
+	[Character pictures]
+
+	[Character state pictures]
+
+	[Attribute pictures]
+ENDBLOCK;
+

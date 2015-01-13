@@ -1,0 +1,515 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 11.49.50 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=27;
+	TAXLABELS
+		'Gujaratia'
+		'Kenyapotamus ternani'
+		'Kenyapotamus coryndonae'
+		'Hexaprotodon garyam'
+		'Hippopotamus'
+		'Choeropsis'
+		'Morotochoerus ugandensis'
+		'Kulutherium rusingensis'
+		'Archaeopotamus lothagamensis'
+		'Archaeopotamus harvardi'
+		'Palaeochoerus'
+		'Hyotherium'
+		'Listriodon'
+		'Cynorca'
+		'Perchoerus'
+		'Entelodon'
+		'Anthracotherium'
+		'Elomeryx'
+		'Bothriogenys'
+		'Libycosaurus'
+		'Merycopotamus'
+		'Siamotherium'
+		'Microbunodon'
+		'Cebochoerus'
+		'Choeropotamus'
+		'Khirtharia'
+		'Gobiohyus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=84;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123";
+
+	CHARLABELS
+		 [1] 'Central upper incisors'
+		 [2] 'lower incisor root shape'
+		 [3] 'transverse section of lower incisor crowns'
+		 [4] 'lower incisor cervix morphology'
+		 [5] 'lower incisor crown structure'
+		 [6] 'lower canine general morphology'
+		 [7] 'Lower canine growth'
+		 [8] 'nuchal extension of the lower canine'
+		 [9] 'enamel extension on the lower canine'
+		 [10] 'groove on the labial side of lower canine'
+		 [11] 'P1, roots'
+		 [12] 'P2, disto lingual basin'
+		 [13] 'P3, deep indentation of cervix at middle of labial side'
+		 [14] 'P3 morphology'
+		 [15] 'P3, Protocone and lingual cingulum relations on P3'
+		 [16] 'P3, postparaconule'
+		 [17] 'P3, preparacrista'
+		 [18] 'P3, root pattern'
+		 [19] 'P4, parastyle located in the mesio-labial corner of the tooth'
+		 [20] 'P4, orientation of the preparacrista'
+		 [21] 'P4, metacone'
+		 [22] 'P4, paracone'
+		 [23] 'P4, protocone'
+		 [24] 'P4, maximal width'
+		 [25] 'P4, root pattern'
+		 [26] 'enamel ornementation'
+		 [27] 'Upper molars, paraconule'
+		 [28] 'Upper molars, paraconule 1'
+		 [29] 'Upper molars, paraconule and parastyl relationship'
+		 [30] 'Upper molars, distal extension of paraconule'
+		 [31] 'Upper molars, mesostyle'
+		 [32] 'Upper molars, connexion of labial cingulum with postparacrista and/or premetacrista'
+		 [33] 'Upper molars, postparacrista et premetacrista relationships'
+		 [34] 'Upper molars, entostyle'
+		 [35] 'Upper molars, preectostyle (parastyle)'
+		 [36] 'Upper molars, ectoparafossa'
+		 [37] 'Upper molars, endoparacrista'
+		 [38] 'Upper molars, postparafossa'
+		 [39] 'Upper molars, centroconule'
+		 [40] 'Upper molars, endometacrista'
+		 [41] 'Upper molars, postmetacrista'
+		 [42] 'Upper molars, postprotocrista'
+		 [43] 'Upper molars, secondary ectometafossule'
+		 [44] 'Upper molars, connexion of the postmetacrista to the distal cingulum'
+		 [45] 'Upper molars, distocone on M3'
+		 [46] 'Upper molars, root fusion'
+		 [47] 'Upper molars, crown height'
+		 [48] 'p2-3, distal cristid and fossids'
+		 [49] 'p3, entostylid'
+		 [50] 'p2-3, hypoconid'
+		 [51] 'p3, entoconid'
+		 [52] 'p4, occlusal shape'
+		 [53] 'p4, mesiostylid'
+		 [54] 'p4, ectoprotofossid'
+		 [55] 'p4, preprotocristide orientation'
+		 [56] 'p4, postprotofossid'
+		 [57] 'p4, entostylid'
+		 [58] 'p4, metaconide'
+		 [59] 'p4, distal accessory cusp'
+		 [60] 'p4, distal cuspids supplementary to the hypoconid'
+		 [61] 'Lower molars, roots of one lobe'
+		 [62] 'Lower molars, paraconid'
+		 [63] 'Lower molars, m1-2 labial cingulid'
+		 [64] 'Lower molars, m1-2 ectocristilid'
+		 [65] 'Lower molars, m1-2 distostylid'
+		 [66] 'Lower molars, ectoprotofossid'
+		 [67] 'Lower molars, postectoprotocristid'
+		 [68] 'Lower molars, postprotocristid distal extremity'
+		 [69] 'Lower molars, premetacristid'
+		 [70] 'Lower molars, premetafossid'
+		 [71] 'Lower molars, endometacristid'
+		 [72] 'Lower molars, postmetacristid'
+		 [73] 'Lower molars, mesoconulid'
+		 [74] 'Lower molars, postectohypocristid'
+		 [75] 'Lower molars, endohypocristid'
+		 [76] 'Lower molars, endohypofossid'
+		 [77] 'Lower molars, posthypofossid'
+		 [78] 'Lower molars, ectoentocristid'
+		 [79] 'Lower molars, fossid lingual to ectoentocristide'
+		 [80] 'Lower molars, postectoentocristid'
+		 [81] 'Lower molars, m1-2 postentocristid'
+		 [82] 'Lower molars, cingulid on m3 hypoconulid'
+		 [83] 'Lower molars, m3 ectohypocristulid'
+		 [84] 'Lower molars, m3 structure mesial to hypoconid'
+	;
+	
+	STATELABELS
+		1
+		'morphologically similar to I2-3'
+		'peg-like, morphologically different from I2-3'
+		,
+		2
+		'cylindrical'
+		'conical'
+		,
+		3
+		'strongly irregular'
+		'about rounded'
+		,
+		4
+		'no deep indentation'
+		'indented cervix, indentation as long as the root diameter on the cervix'
+		'deep indentation longuer than the root diameter at cervix'
+		,
+		5
+		'no deep fossid on lingual side'
+		'deep fossid on lingual side'
+		,
+		6
+		'approximately similar in size compared to the incisors and premolars'
+		'large canine at least in males'
+		,
+		7
+		'growth not prolonged, roots apex closed in adults'
+		'prolonged growth, root apex still open in adults'
+		,
+		8
+		'reaching below p2 or rostrally'
+		'reaching below p3-4'
+		,
+		9
+		'limited to apex'
+		'covering most of the tooth including alveolar part'
+		,
+		10
+		'absence'
+		'presence'
+		,
+		11
+		'generally unfused'
+		'generally fused'
+		,
+		12
+		'presence'
+		'absence'
+		,
+		13
+		'absence'
+		'presence'
+		,
+		14
+		'same structure as P4'
+		'clearly different from P4'
+		,
+		15
+		'independent'
+		'merging'
+		,
+		16
+		'absent'
+		'one to several'
+		,
+		17
+		'simple'
+		'devided'
+		,
+		18
+		'one mesial root, two distal not fused'
+		'one mesial root one distal'
+		'State 2'
+		,
+		19
+		'yes'
+		'no'
+		,
+		20
+		'mesial'
+		'labial'
+		,
+		21
+		'absence'
+		'presence'
+		,
+		22
+		'simple, pre and postcrista'
+		'complex, ecto and/or postfossa'
+		'more complex, endocrista and endofossa'
+		,
+		23
+		'predominently rounded, no postcrista'
+		'crescentic, postcrista'
+		,
+		24
+		'median'
+		'mesial'
+		,
+		25
+		'at least three independant roots'
+		'mesiolabial root free, fusion of lingual and distolabial roots at a significant hight'
+		'only one root'
+		,
+		26
+		'no ornementation'
+		'marked ornementation'
+		,
+		27
+		'in most cases absence, not identifiable as cusp (no apex identifiable)'
+		'presence'
+		,
+		28
+		'often simple and linked to the protocone and possibly to the mesial cingulum'
+		'always present, more or less independent, onwn crest groove'
+		,
+		29
+		'no connexion'
+		'connexion'
+		,
+		30
+		'intercallated between protocone and paracone, reaching the transverse valley'
+		'not intercallated between the mesial cusps'
+		,
+		31
+		'absent'
+		'present'
+		,
+		32
+		'absent'
+		'connexion frequent, directly or through ectocristyle (mesostyle)'
+		,
+		33
+		'forming a straight line, extremities linked in a continuous crista'
+		'do not form a straight line'
+		'forming a straitght line, extremities not touching each other'
+		,
+		34
+		'absence'
+		'présence'
+		,
+		35
+		'clearly dissociated from mesiostyle located in mesiolabial corner'
+		'not clearly dissociated form mesiostyle, may have a mesial position'
+		,
+		36
+		'absent or very shallow'
+		'deep'
+		,
+		37
+		'always absent'
+		'present (easyly lost with wear)'
+		,
+		38
+		'absent or very shallow'
+		'generally well marked'
+		,
+		39
+		'absence'
+		'presence'
+		,
+		40
+		'absence'
+		'presence'
+		,
+		41
+		'clear, closely marked by a deep fossa'
+		'absent, or only a tiny ridge of enamel with no closely marked fossa'
+		,
+		42
+		'well delimited by fossa'
+		'not delimited by clear fossa'
+		,
+		43
+		'absent, or distal or very light'
+		'present mesially at least on M1 in association with enamel fold of ectometacristule'
+		,
+		44
+		'located at the disto-buccal corner of the tooth'
+		'located on the distal face'
+		,
+		45
+		'absent'
+		'present as an accessory cups still on th cingulum'
+		,
+		46
+		'3 independant roots, the lingual being strong'
+		'4 roots fusion to the cervix may occur'
+		'4 root labial free, lingual fused'
+		,
+		47
+		'H index below 70'
+		'H index above 70'
+		,
+		48
+		'generally one postprotocristid linking to distal congulid'
+		'generally one postprotocristid and one endoprotocristid separated by an endofossid'
+		'variable pattern tending to higher complexity'
+		,
+		49
+		'generally absent'
+		'generaly present'
+		,
+		50
+		'never observed'
+		'present in at least some specimens'
+		,
+		51
+		'never observed'
+		'present a tleast in some specimens'
+		,
+		52
+		'labial and lingual walls convex'
+		'labial wall convex, lingual wall flat or slightly concave'
+		'labial and lingual walls concave'
+		,
+		53
+		'generally strong, almost forming an independent cusp'
+		'absent or weak'
+		,
+		54
+		'absence'
+		'presence'
+		,
+		55
+		'mesial'
+		'mesio-lingual'
+		,
+		56
+		'absent'
+		'present'
+		,
+		57
+		'absence'
+		'presence'
+		,
+		58
+		'absence'
+		'presence'
+		,
+		59
+		'one or more small cuspids not merged to the cingulum'
+		'one merged in the cingulum'
+		,
+		60
+		'none'
+		'one to several additional cuspids'
+		,
+		61
+		'fused'
+		'unfused'
+		,
+		62
+		'presence'
+		'absence'
+		,
+		63
+		'limited to median valley or absent'
+		'frequently extending beyond medial valley'
+		,
+		64
+		'not observed'
+		'occuring frequently'
+		,
+		65
+		'generally well expressed'
+		'occasional small when present'
+		,
+		66
+		'absent'
+		'present even if shallow'
+		,
+		67
+		'present even if reduced low in the valley (maybe present only in m1)'
+		'absent'
+		,
+		68
+		'clearly more mesial than the postmetacristid distal extremity'
+		'connecting to the postmetacristid distal extremity at the same level or slightly mesially'
+		,
+		69
+		'strong'
+		'reduced or missing'
+		,
+		70
+		'generally well marked'
+		'absent or very light'
+		,
+		71
+		'absence'
+		'presence'
+		,
+		72
+		'curving toward postprotocristid and forming a transverse bridge with it'
+		'orientated toward the center of the tooth'
+		'forming a rounded postmetaconulid not preferencially orientated'
+		,
+		73
+		'absence'
+		'presence'
+		,
+		74
+		'absence'
+		'presence'
+		,
+		75
+		'reduced not developped as a dinstinct crest'
+		'distinct crest'
+		,
+		76
+		'absent'
+		'present at least on m1'
+		,
+		77
+		'absence'
+		'presence'
+		,
+		78
+		'absence'
+		'presence'
+		,
+		79
+		'absence'
+		'presence'
+		,
+		80
+		'generally present more or less developed'
+		'absent or incipient in few specimen'
+		,
+		81
+		'never present'
+		'incipient to present at least in some specimen m2'
+		,
+		82
+		'not observed'
+		'occasionaly bordering the distal lobe'
+		,
+		83
+		'absence'
+		'presence'
+		,
+		84
+		'conulid'
+		'crest (prehypocristulid)'
+		,
+	;
+	
+	MATRIX
+	'Gujaratia'		                             0?0000000?0?000000000000001010000001000000000000000000000000?0101011-100000001011011
+	'Kenyapotamus ternani'		                  ?????11?10?10111??1??210?110??111101110?00110101?1???????0???10101010011110011101?1?
+	'Kenyapotamus coryndonae'		               00120111101?11111110011111100111111111{0,1}0001101{0,1}11112111110011101010100111{0,1}0011101110
+	'Hexaprotodon garyam'		                   001201111011110111100211110---111111010000010112111211111001111111001011000010-11111
+	'Hippopotamus'		                          0012011110-{0,1}11{0,1}11110{0,1}2-{0,1}110---111111010{0,1}0001011211121111{0,1}0{0,1}{0,1}111101001011000010-11111
+	'Choeropsis'		                            00120111100111-111100210110---111111{0,1}10000010111100211111001111111001011000010-11111
+	'Morotochoerus ugandensis'		              ?????????????????????????11101110111010000?10?0????2111110?-010101001011110111100011
+	'Kulutherium rusingensis'		               ???????????????????0011???11011?111111010011??0?????????????????????????????????????
+	'Archaeopotamus lothagamensis'		          00120111101??????????????????????????????????1?????211111001111101001011000010-11011
+	'Archaeopotamus harvardi'		               001201111011110111100211110-?-111111{0,1}10?00010112111211111?0111111100101100?010-11111
+	'Palaeochoerus'		                         110111100100010000101001001000002010001011000200000000000110010000011110101100-10000
+	'Hyotherium'		                            110111111100010100101010001001002010101111001100010010000110110000010012101110-01000
+	'Listriodon'		                            110111111100010100101210001001002010101110001100010010000110110001010010101111001000
+	'Cynorca'		                               ?10??1100?0001?000101000?01001002010101011000?000000000001101100000100101011010110-0
+	'Perchoerus'		                            110??110010001?00?101000?01000000010001011000?00???000000110?100000100101011010??000
+	'Entelodon'		                             010011000000011001000000?1100000001000011100000000001001000000000011011-1000010100--
+	'Anthracotherium'		                       010011000001011001010111{0,1}11100111101010000000101000110110000010000010010001111001011
+	'Elomeryx'		                              010010000001011001010111011100111101010000000101100110111000011101010010000101100111
+	'Bothriogenys'		                          01001000000101101?010111{0,1}11101111001010000000101000111110000011100010010001101100111
+	'Libycosaurus'		                          000011110101011111010111210-0-111101010000000201100111101000011101011100000100-01101
+	'Merycopotamus'		                         010011111101011111010110{0,1}10-0-111101010000000201100111101000011101011100000101101101
+	'Siamotherium'		                          ?100100000?001100?010100011100110001000001000100000011110001011000010010001111001011
+	'Microbunodon'		                          01001000010001100?010110?01100111001010001000?00000110111000011000010010000101001011
+	'Cebochoerus'		                           ??001000000100110?00010000101100000101100{0,1}01010101001001010001000{0,1}111010100110-10011
+	'Choeropotamus'		                         ?????00000??00100?110010?11110111101011001000000000110010000011000110010100101010010
+	'Khirtharia'		                            ??????????????????000000011010000001110001000?000000100000-0?110-001111-001?01000010
+	'Gobiohyus'		                             ????????????000??001011000111000010101000100000?0?0000010100?0100111-100001111110?11
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 84;
+ENDBLOCK;
+BEGIN SETS;
+
+ENDBLOCK;

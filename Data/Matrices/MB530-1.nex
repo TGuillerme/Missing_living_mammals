@@ -1,0 +1,296 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-7 08.36.14 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=20;
+	TAXLABELS
+		'Enaliarctos emlongi'
+		'Pteronarctos goedertae'
+		'Desmatophoca oregonensis'
+		'Allodesmus gracilis'
+		'Monachus monachus'
+		'Erignathus barbatus'
+		'Callorhinus ursinus'
+		'Proneotherium repenningi'
+		'Kamtschatarctos sinelnikovae'
+		'Neotherium mirum'
+		'Imagotaria downsi'
+		'Pelagiarctos sp.'
+		'Pontolis magnus'
+		'Gomphotaria pugnax'
+		'Dusignathus santacruzensis'
+		'Dusignathus seftoni'
+		'Protodobenus japonicus'
+		'Ontocetus emmonsi'
+		'Valenictus chulavistensis'
+		'Odobenus rosmarus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=39;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Mandible: fusion of mandibular symphysis'
+		 [2] 'Mandible: length of mandibular symphysis'
+		 [3] 'Mandible: genial tuberosity'
+		 [4] 'Mandible: anterior portion of symphyseal region'
+		 [5] 'Mandible: horizontal ramus'
+		 [6] 'Mandible: mandibular furrow'
+		 [7] 'Mandible: edentulous mandibular terminus'
+		 [8] 'Mandible: posteroventral terminus of mandibular symphysis'
+		 [9] 'Mandible: depth of horizontal ramus'
+		 [10] 'Mandible: mandibular arch'
+		 [11] 'Mandible: ventral border'
+		 [12] 'Mandible: enlarged digastric insertion'
+		 [13] 'Mandible: mandibular condyle'
+		 [14] 'Mandible: mandibular foramen'
+		 [15] 'Mandible: medial shelf of angular process'
+		 [16] 'Mandible: base of coronoid process'
+		 [17] 'Lower incisors: number'
+		 [18] 'Lower Incisors: relative size'
+		 [19] 'Lower canines: size compared to upper canines'
+		 [20] 'Lower canine: posterior crista'
+		 [21] 'Lower canines: longitudinal fluting'
+		 [22] 'Lower canines: root'
+		 [23] 'Lower canines: orientation'
+		 [24] 'Lower premolars'
+		 [25] 'Postcanines: tooth enamel'
+		 [26] 'Postcanines: crowns'
+		 [27] 'Postcanines: root lobes'
+		 [28] 'Lower postcanines: tooth row length'
+		 [29] 'Lower postcanines: paraconid cusps'
+		 [30] 'Lower postcanines: lingual cingula'
+		 [31] 'Lower premolars: hypoconid cusps'
+		 [32] 'Lower postcanines: talonid basin'
+		 [33] 'Lower P2: rooting'
+		 [34] 'Lower P3-4: rooting'
+		 [35] 'Lower M1'
+		 [36] 'Lower postcanines: metaconid'
+		 [37] 'Lower M1: rooting'
+		 [38] 'Lower M2'
+		 [39] 'Postcanine tooth wear'
+	;
+	
+	STATELABELS
+		1
+		'Absent'
+		'Present'
+		,
+		2
+		'Less than 50% of length of horizontal ramus'
+		'Greater than 50% of length of horizontal ramus'
+		,
+		3
+		'Absent or indistinct'
+		'Present; developed as small tubercle or process on anterior portion of ramus in lateral view'
+		'''Present'
+		'Present and well developed; extends well below ventral margin of ramus in lateral view'
+		'State 2'
+		,
+		4
+		'Smooth, compact bone'
+		'''Smooth, compact bone'''
+		'Rugose, vascular bone'
+		'''Rugose, vascular bone'''
+		,
+		5
+		'horizontal'
+		'upturned'
+		,
+		6
+		'absent'
+		'anterodorsal end of mandibles have a longitudinal furrow anteriorly'
+		,
+		7
+		'absent'
+		'present'
+		,
+		8
+		'Same level or anterior to p1 or p2'
+		'Posterior to the level of p2'
+		,
+		9
+		'deepest part of horizontal ramus posterior to mandibular symphysis'
+		'deepest part of horizontal ramus at posteroventral terminus of symphysis'
+		,
+		10
+		'Nearly parallel'
+		'Sharply divergent'
+		,
+		11
+		'Straight'
+		'Sinuous'
+		,
+		12
+		'Absent'
+		'Present'
+		,
+		13
+		'At or slightly above level of tooth row'
+		'Elevated above tooth row'
+		,
+		14
+		'Directed anteroventrally'
+		'Directed anterodorsally'
+		,
+		15
+		'Does not form medial shelf'
+		'Forms small medial shelf'
+		,
+		16
+		'Narrow (Less than 42% of mandible length)'
+		'''Narrow (Less than 42% of mandible length)'''
+		'Broad (Greater than or equal to 42% of mandible length)'
+		'''Broad (Greater than or equal to 42% of mandible length)'''
+		,
+		17
+		'2 incisors'
+		'1 incisor'
+		'incisors absent'
+		,
+		18
+		'Lower incisors of equal size, form transverse arcade'
+		'''Lower incisors of equal size, form transverse arcade'''
+		'Lateral incisors greater in size than medial incisors, medial incisor placed posteromedial to lateral incisor'
+		'''Lateral incisors greater in size than medial incisors, medial incisor placed posteromedial to lateral incisor'''
+		,
+		19
+		'Nearly equal (100-80%) and caniniform'
+		'''Nearly equal (100-80%) and caniniform'''
+		'Reduced (75-20%) and premolariform'
+		'''Reduced (75-20%) and premolariform'''
+		'Lower canine absent'
+		,
+		20
+		'present'
+		'absent'
+		,
+		21
+		'Absent'
+		'Present'
+		,
+		22
+		'Oval or circular in cross section'
+		'Bilobate in cross section or prominent longitudinal labial sulcus'
+		,
+		23
+		'Not procumbent and vertically oriented'
+		'Procumbent'
+		,
+		24
+		'P1-4 Present'
+		'P1-3 present, P4 Absent'
+		'Premolars absent'
+		,
+		25
+		'Well developed'
+		'Thin or patchy'
+		'Cementum only'
+		,
+		26
+		'Laterally compressed'
+		'Bulbous'
+		,
+		27
+		'Root lobes of postcanine teeth of equal or narrower width than crowns'
+		'Root lobes of postcanine teeth inflated and wider than crowns'
+		,
+		28
+		'Long (length of tooth row greater than 40% of the mandible length)'
+		'''Long (length of tooth row greater than 40% of the mandible length)'''
+		'Short (length of tooth row less than or equal to 40% of the mandible length)'
+		'''Short (length of tooth row less than or equal to 40% of the mandible length)'''
+		,
+		29
+		'Present and well developed'
+		'Absent or reduced'
+		,
+		30
+		'Present and smooth'
+		'Present and rough or crenulated.'
+		,
+		31
+		'Present'
+		'Absent'
+		,
+		32
+		'Absent'
+		'Slight concavity or small shelf'
+		,
+		33
+		'Double or bilobate'
+		'Single'
+		,
+		34
+		'Double'
+		'Single'
+		,
+		35
+		'Present'
+		'Absent'
+		,
+		36
+		'Present'
+		'Reduced'
+		'Absent'
+		,
+		37
+		'Double rooted'
+		'Single rooted'
+		,
+		38
+		'Present'
+		'Absent'
+		,
+		39
+		'Absent'
+		'Minor wear on anterior and posterior cusps or apical wear'
+		'Large wear facets on anterior and posterior edges'
+		'Heavily worn and polished'
+		,
+	;
+	
+	MATRIX
+	'Enaliarctos emlongi'		                   000000000000000000000000000000000000000
+	'Pteronarctos goedertae'		                001000000000000000000000000100000000000
+	'Desmatophoca oregonensis'		              001000001001001001000000000100000001000
+	'Allodesmus gracilis'		                   001000011011010001000000011110101102001
+	'Monachus monachus'		                     000000001001000100000000000101000000011
+	'Erignathus barbatus'		                   0010000{0,1}000110000000000000010000000001{1,3}
+	'Callorhinus ursinus'		                   000000001000011?00000000000110101102010
+	'Proneotherium repenningi'		              000000001000001000000000000100000000001
+	'Kamtschatarctos sinelnikovae'		          00100?0010000?10???????0000100010001001
+	'Neotherium mirum'		                      001000001000011000000000000100010001001
+	'Imagotaria downsi'		                     0120000010{0,1}0011001000100010101{0,1}1{1,0}{0,1}020{1,0}1
+	'Pelagiarctos sp.'		                      012100001000????01000100010?01010001001
+	'Pontolis magnus'		                       00210001101110011?010000111110010002002
+	'Gomphotaria pugnax'		                    01110001100000102?0110101111?0??110?113
+	'Dusignathus santacruzensis'		            012000011111001001010010111110111102112
+	'Dusignathus seftoni'		                   1121000{0,1}111100101?0110101111????110?11?
+	'Protodobenus japonicus'		                010000001110101001110000210110101112?11
+	'Ontocetus emmonsi'		                     012110111101101001110000210110101112?11
+	'Valenictus chulavistensis'		             1111111?110110002?2????1??????????1??1?
+	'Odobenus rosmarus'		                     11110110110111112?110002210110101112?13
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 39;
+ENDBLOCK;
+BEGIN MACCLADE;
+Version 4.0 87 ; LastModified -904149544 ; FileSettings editor 0 0 1 1 ; Singles 010 ; Editor 00011001111111100100010010 0 24 Geneva 9 150 2 all ; EditorPosition 44 6 947 1229 ; TreeWindowPosition 44 8 772 970 ; ListWindow Characters closed Geneva 9 50 10 129 495 000 ; ListWindow Taxa closed Geneva 9 50 10 225 306 100000000 ; ListWindow Trees closed Geneva 9 50 10 276 490 ; ListWindow TypeSets closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ListWindow ExSets closed Geneva 9 50 10 276 490 ; ListWindow CharSets closed Geneva 9 50 10 276 490 ; ListWindow TaxSets closed Geneva 9 50 10 276 490 ; ListWindow CharPartitions closed Geneva 9 50 10 276 490 ; ListWindow CharPartNames closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ChartWindowPosition 50 30 688 964 ; StateNamesSymbols open Geneva 9 8 50 30 160 366 ; WindowOrder Data States ; OtherSymbols & / 00 ? - ; Correlation 0 0 1000 0 0 10011010 ; Salmo 00000001 ; EditorFile 7 ; ExportHTML _ MOSS 100 110000 ; PrettyPrint 10 ; EditorToolsPosition 138 251 115 165 ; TreeToolsPosition 615 11 126 138 ; TreeWindowProgram 10 ; TreeWindow 0000 ; Continuous 0 3 1 ; Calculations 0000001 ; SummaryMode 0 0 0 ; Charts Geneva 9 ( normal ) 0010 ; NexusOptions 0 0 50 001011011 ; TipLabel 1 ; TreeFont Geneva 9 ( normal ) ; TreeShape 1.0 1.0 0100 ; TraceLabels 0101 ; ChartColors 0 0 65535 9 0 1 ; ChartBiggestSpot 1 ; ChartPercent 10 ; ChartBarWidth 10 1 ; ChartVerticalAxis 10101 ; ChartMinMax 0 ; TraceAllChangesDisplay 1 1 ; BarsOnBranchesDisplay 0 0 60000 10000 10000 10000 10000 60000 65000 65000 65000 6 1 0000101 ; ContinuousBranchLabels 0 ; AllStatesBranchLabels 1 ; IndexNotation 2 1 ; PrintTree 10.00 2 2 2 2 2 2 2 2 2 2 2 Geneva 9 ( normal ) Geneva 10 ( normal ) Geneva 9 ( normal ) Geneva 9 ( normal ) Geneva 9 ( bold ) Geneva 9 ( normal ) Geneva 9 ( normal ) 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 15407 27493 -39 4 -40 0 1 2 1 8 0 0 0 2 1000111000000000000100000111000 ; MatchChar 00 . ; EntryInterpretation 00 ; ColorOptions 00 ; TreeTools 0 5 4 0 10 4 0 00100111111101110 ; EditorTools 1 0 0 1000 0 0 6 3 1 100010101110011 ; PairAlign 2 2 3 2 1 1 2 1 3 1010 ; BothTools 1 ;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; timeSaved 1308015635953 ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 876616045086263030 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 1013192677485334360 ; checksumv 0 2 580772859 null getNumChars 31 numChars 31 getNumTaxa 15 numTaxa 15 short true bits 15 states 15 sumSquaresStatesOnly 861.0 sumSquares 861.0 NumFiles 1 NumMatrices 1 ; endTell ; getWindow ; tell It ; suppress ; setResourcesState false false 100 ; setPopoutState 400 ; setExplanationSize 0 ; setAnnotationSize 0 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1416 848 ; setLocation 282 26 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; desuppress ; endTell ; getEmployee #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord ; tell It ; showDataWindow #1013192677485334360 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker ; tell It ; getWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1316 781 ; setLocation 282 26 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; endTell ; setActive ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; colorCells #mesquite.charMatrices.NoColor.NoColor ; colorRowNames #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor ; colorColumnNames #mesquite.charMatrices.CharGroupColor.CharGroupColor ; colorText #mesquite.charMatrices.NoColor.NoColor ; setBackground White ; toggleShowNames on ; toggleShowTaxonNames on ; toggleTight off ; toggleThinRows off ; toggleShowChanges on ; toggleSeparateLines off ; toggleShowStates on ; toggleAutoWCharNames on ; toggleAutoTaxonNames off ; toggleShowDefaultCharNames off ; toggleConstrainCW on ; toggleBirdsEye off ; toggleAllowAutosize on ; toggleColorsPanel off ; toggleDiagonal on ; setDiagonalHeight 80 ; toggleLinkedScrolling on ; toggleScrollLinkedTables off ; endTell ; showWindow ; getWindow ; tell It ; forceAutosize ; endTell ; getEmployee #mesquite.charMatrices.ColorCells.ColorCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor ; tell It ; makeWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1316 781 ; setLocation 282 26 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam ; endTell ; rowsAreCharacters on ; toggleConstrainChar on ; toggleConstrainCharNum 3 ; togglePanel off ; toggleSummaryPanel off ; endTell ; showWindow ; endTell ; getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector ; tell It ; autotabOff ; endTell ; getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor ; tell It ; panelOpen true ; endTell ; endTell ; endTell ; endTell ;
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 31 ;
+ENDBLOCK;
+BEGIN TREES;
+Title Trees from "walrus_mandible.nex" ; LINK Taxa = Taxa ; TRANSLATE 1 Enaliarctos_mealsi , 2 Pteronarctos , 3 Prototaria_planicephala , 4 Prototaria_primigenia , 5 Pseudotaria_muramotoi , 6 Proneotherium_repenningi , 7 Neotherium_mirum , 8 Imagotaria_downsi , 9 Pontolis_magnus , 10 Gomphotaria_pugnax , 11 Dusignathus_santacruzensis , 12 Dusignathus_seftoni , 13 Aivukus_cedroensis , 14 Protodobenus , 15 Pelagiarctos_thomasi ; TREE UNTITLED = ((1 , 2) , ((6 , 7) , (8 , (13 , (10 , (9 , (11 , 12))))))) ;
+ENDBLOCK;

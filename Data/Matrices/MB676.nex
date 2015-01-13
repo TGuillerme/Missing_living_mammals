@@ -1,0 +1,403 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-7 08.40.02 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=27;
+	TAXLABELS
+		'Zhelestidae spp.'
+		'Protungulatum donnae'
+		'Bubogonia saskia'
+		'Protoselene spp.'
+		'Hyopsodus spp.'
+		'Litaletes disjunctus'
+		'Lessnessina spp.'
+		'Promioclaenus acolytus'
+		'Choeroclaenus turgidunculus'
+		'Mioclaenus turgidus'
+		'Molinodus suarezi'
+		'Paschatherium spp.'
+		'Dipavali petri'
+		'Louisina atavella'
+		'Louisina mirabilis'
+		'Microhyus spp.'
+		'Litomylus dissentaneus'
+		'Aletodon spp.'
+		'Gingerichia spp.'
+		'Phenacodaptes sabulosus'
+		'Apheliscus spp.'
+		'Haplaletes disceptatrix'
+		'Dorraletes diminutivus'
+		'Haplomylus spp.'
+		'Haplaletes pelicatus'
+		'Utemylus spp.'
+		'Aphronorus spp.'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=59;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01234";
+
+	CHARLABELS
+		 [1] 'p4 size'
+		 [2] 'p4 paraconid'
+		 [3] 'p4 trigonid'
+		 [4] 'p4 protoconid'
+		 [5] 'p4 talonid proportions'
+		 [6] 'p4 cristid obliqua'
+		 [7] 'p4 talonid basining'
+		 [8] 'Distention of enamel on buccal side of lower molars'
+		 [9] 'Lower molar trigonid heights'
+		 [10] 'm1?3 buccal cingulid'
+		 [11] 'm1?2 talonid widths'
+		 [12] 'm1?3 paraconid height'
+		 [13] 'm2?3 paraconid'
+		 [14] 'Position of paraconid on m1?3'
+		 [15] 'Molar paracristid'
+		 [16] 'm1?3 metaconid'
+		 [17] 'm2 cristid obliqua orientation'
+		 [18] 'm1?3 hypoconid'
+		 [19] 'Position of hypoconulid on m1?2'
+		 [20] 'Size of hypoconulid on m1?2'
+		 [21] 'Notch in postentocristid between hypoconulid and entoconid on m1?2'
+		 [22] 'm1?2 entoconulid'
+		 [23] 'm1?2 entocristid'
+		 [24] 'm2 entoconid'
+		 [25] 'm3 trigonid width'
+		 [26] 'm3 talonid width'
+		 [27] 'm3 talonid length'
+		 [28] 'P4 parastyle'
+		 [29] 'P4 metacone'
+		 [30] 'P4 protocone'
+		 [31] 'P4 preprotocrista'
+		 [32] 'P4 postprotocrista'
+		 [33] 'P4 hypocone'
+		 [34] 'M1?2 paracone'
+		 [35] 'M1?2 mesostyle'
+		 [36] 'Ends of postparacrista and premetacrista on M1?2'
+		 [37] 'M1?2 preparaconule crista'
+		 [38] 'M1?2 postmetaconule crista'
+		 [39] 'M1?2 metaconule'
+		 [40] 'M1?2 protocone'
+		 [41] 'M1?2 postprotocrista'
+		 [42] 'M1?2 postprotocingulum'
+		 [43] 'M1?2 hypocone'
+		 [44] 'M1?2 pericone'
+		 [45] 'M1?2 posterior cingulum'
+		 [46] 'Calcaneal tuber'
+		 [47] 'Fibular facet on calcaneum'
+		 [48] 'Long axis of ectal facet on calcaneum'
+		 [49] 'Calcaneal ectal facet'
+		 [50] 'Peroneal tubercle'
+		 [51] 'Medial trochlear ridge of astragalus'
+		 [52] 'Trochlear groove on astragalus'
+		 [53] 'Radius of curvature of lateral trochlear ridge of astragalus'
+		 [54] 'Astragalar foramen'
+		 [55] 'Trochlear articular surface'
+		 [56] 'Cotylar fossa on astragalus'
+		 [57] 'Lateral process on astragalar body formed by lateral projection of ectal facet'
+		 [58] 'Posteromedial projection of astragalar body'
+		 [59] 'Long axis of navicular facet of astragalus'
+	;
+	
+	STATELABELS
+		1
+		'subequal to m1 or somewhat smaller'
+		'markedly larger than m1'
+		,
+		2
+		'better developed than metaconid'
+		'as developed as metaconid'
+		'weaker than metaconid'
+		,
+		3
+		'anteroposteriorly short and high crowned'
+		'elongate and low crowned'
+		,
+		4
+		'uninflated or weakly inflated'
+		'moderately inflated'
+		'strongly inflated'
+		,
+		5
+		'anteroposteriorly elongate'
+		'abbreviated anteroposteriorly'
+		,
+		6
+		'contacts back of trigonid at level of notch between protoconid and metaconid'
+		'more buccally beneath posterior protoconid crest'
+		'cristid obliqua absent'
+		,
+		7
+		'basined'
+		'unbasined'
+		,
+		8
+		'absent'
+		'weak'
+		'strong'
+		,
+		9
+		'much higher than talonids'
+		'somewhat higher than talonids'
+		'trigonids and talonids subequal in height'
+		,
+		10
+		'absent or weak and restricted to hypoflexid'
+		'strong and complete at least around the trigonid'
+		,
+		11
+		'broader than trigonids'
+		'trigonids and talonids subequal in width'
+		'trigonids broader than talonids'
+		,
+		12
+		'tall relative to protoconids and metaconids'
+		'low'
+		,
+		13
+		'distinctly separated from metaconid'
+		'partially to completely fused to metaconid at base'
+		,
+		14
+		'at lingual margin of crown'
+		'between protoconid and metaconid'
+		,
+		15
+		'present and well developed'
+		'weak to absent'
+		,
+		16
+		'inflated, size subequal to protoconid'
+		'uninflated and smaller than protoconid'
+		,
+		17
+		'nearly parallel to anteroposterior axis of crown'
+		'oriented around 45 degrees to long axis of crown'
+		,
+		18
+		'much larger than other talonid cusps'
+		'reduced in size, smaller than entoconid'
+		,
+		19
+		'on lingual side of talonid, twinned with entoconid'
+		'in a median position, separate from hypoconid and entoconid'
+		'shifted buccally and twinned with hypoconid'
+		,
+		20
+		'much smaller than entoconid and hypoconid'
+		'slightly smaller than entoconid and hypoconid'
+		'larger than entoconid, slightly smaller than hypoconid'
+		,
+		21
+		'present'
+		'absent'
+		,
+		22
+		'absent or very weakly developed'
+		'well?developed'
+		,
+		23
+		'present and ascends posterior slope of metaconid to close talonid'
+		'present and wraps around, but does not ascend the base of the metaconid'
+		'present and terminates at the base of the entoconid'
+		'extremely faint to absent'
+		,
+		24
+		'taller than hypoconid'
+		'subequal in height to hypoconid'
+		'lower than hypoconid'
+		,
+		25
+		'subequal to or slightly wider than m2 trigonid width'
+		'somewhat narrower than m2 trigonid width'
+		'much narrower than m2 trigonid width'
+		,
+		26
+		'narrower than m3 trigonid'
+		'subequal to trigonid width'
+		,
+		27
+		'elongate'
+		'anteroposteriorly compressed'
+		,
+		28
+		'present and relatively well?developed'
+		'weak to absent'
+		,
+		29
+		'absent'
+		'weakly developed'
+		'well developed and well separated from paracone'
+		,
+		30
+		'much smaller than paracone'
+		'slightly smaller than to subequal to paracone'
+		,
+		31
+		'complete between protocone and parastyle, interrupts anterior cingulum'
+		'incomplete such that the anterior cingulum continues to parastyle uninterrupted'
+		,
+		32
+		'complete between protocone and metastyle, interrupts posterior cingulum'
+		'incomplete such that the posterior cingulum continues to metastyle uninterrupted'
+		,
+		33
+		'absent'
+		'present'
+		,
+		34
+		'subequal in size to metacone'
+		'larger than metacone'
+		,
+		35
+		'absent'
+		'present'
+		,
+		36
+		'aligned'
+		'anterior end of premetacrista terminates buccal to posterior end of postparacrista'
+		,
+		37
+		'complete from paraconule to parastyle, anterior cingulum terminates against preparaconule crista'
+		'preparaconule crista incomplete, anterior cingulum continues to parastyle'
+		,
+		38
+		'complete from metaconule to metastyle, posterior cingulum terminates against postmetaconule crista'
+		'postmetaconule crista incomplete, posterior cingulum continues to metastyle'
+		,
+		39
+		'equidistant between buccal and lingual cusps'
+		'shifted lingually, nearly in line with protocone and hypocone'
+		,
+		40
+		'greatly enlarged relative to paracone and metacone'
+		'larger, but not considerably larger, than paracone and metacone'
+		'subequal to or smaller than paracone and metacone'
+		,
+		41
+		'present'
+		'absent'
+		,
+		42
+		'absent'
+		'present'
+		,
+		43
+		'small to absent'
+		'well developed but smaller than protocone'
+		'subequal in size to protocone'
+		,
+		44
+		'absent'
+		'present'
+		,
+		45
+		'arises from same level on protocone as anterior cingulum'
+		'arises higher on protocone than anterior cingulum'
+		,
+		46
+		'short relative to body of calcaneum'
+		'relatively elongate'
+		,
+		47
+		'absent'
+		'present and relatively flat'
+		'present and strongly curved to parallel the curvature of the astragalar trochlea'
+		,
+		48
+		'subparallel to long axis of calcaneum'
+		'approximately 45 degrees to long axis of calcaneum'
+		'nearly perpendicular to long axis of calcaneum'
+		,
+		49
+		'nearly flat, with a large radius of curvature'
+		'more strongly curved, with a smaller radius of curvature'
+		'sharply divided into a medially facing posterior surface and an anteriorly facing anterior surface'
+		,
+		50
+		'anteroposteriorly short'
+		'elongate'
+		,
+		51
+		'absent such that medial portion of trochlea faces dorsomedially'
+		'present such that medial portion faces medially'
+		,
+		52
+		'shallow'
+		'deep'
+		,
+		53
+		'greater than that of medial ridge'
+		'subequal to radius of medial ridge'
+		,
+		54
+		'present'
+		'absent'
+		,
+		55
+		'only extends onto posterior surface of astragalus medially'
+		'articular surface extends onto posterior surface across width of trochlea'
+		,
+		56
+		'weak or absent'
+		'prominent and primarily dorsally oriented'
+		'prominent and medially oriented'
+		,
+		57
+		'absent'
+		'present'
+		,
+		58
+		'absent'
+		'present'
+		,
+		59
+		'oriented transversely'
+		'more parasagittally'
+		,
+	;
+	
+	MATRIX
+	'Zhelestidae spp.'		                     020000010010000010110001?00011100100000100000??????????????
+	'Protungulatum donnae'		                 01001000011000001011001100000000010000010000001101101000001
+	'Bubogonia saskia'		                     ???????01110100010010122110???????0???010?0?0??????????????
+	'Protoselene spp.'		                     000101001010{0,1}10010010{0,1}22110011110010000100100??????????????
+	'Hyopsodus spp.'		                       010001002010100010010{0,1}2101000110000001010011101110001000010
+	'Litaletes disjunctus'		                 0100010010101000100111221000{0,1}1100001110100111??????????????
+	'Lessnessina spp.'		                     010001001110100000111{0,1}2200{0,1}00110011?110100011??????????????
+	'Promioclaenus acolytus'		               010101001010100010011121100001110100110100001??????????????
+	'Choeroclaenus turgidunculus'		          0-011--01010100010021121100101--0100000100001?????001000111
+	'Mioclaenus turgidus'		                  1-021--01020100000021-02200001--011?110010001??????????????
+	'Molinodus suarezi'		                    ?20000001{0,1}201000100210311000010001000001000001220100-000010
+	'Paschatherium spp.'		                   0200020100210101101000001010210011000{0,1}020010010111110111001
+	'Dipavali petri'		                       021100001021010101200000201??????100010210100??????????????
+	'Louisina atavella'		                    020000011021010101200020201120011100111200101??????????????
+	'Louisina mirabilis'		                   020000011021010101200???201??????10?111200201??????????????
+	'Microhyus spp.'		                       0-000--220110-1101200120201121111100111110201??????????????
+	'Litomylus dissentaneus'		               011011001{0,1}11010010010021000001000000000100100??????????????
+	'Aletodon spp.'		                        111011002011011010110021100001??0000{0,1}1010{0,1}100??????????????
+	'Gingerichia spp.'		                     1-011--11011010010010021100100000101000100100??????????????
+	'Phenacodaptes sabulosus'		              110100101011011000010021100100000101110000100??????????????
+	'Apheliscus spp.'		                      1-00011010110-100001002101010001011111000000012200110111001
+	'Haplaletes disceptatrix'		              011000011101010010000000000011110000110100100??????????????
+	'Dorraletes diminutivus'		               00100000110101001001?0?1100011010000010101100??????????????
+	'Haplomylus spp.'		                      00100000110101001001102110001111000001010101-12220111112101
+	'Haplaletes pelicatus'		                 010100011011010010000000000????????????????????????????????
+	'Utemylus spp.'		                        ?-021--2101101001000-10000000110000011010100-??????????????
+	'Aphronorus spp.'		                      120101000010010010110021010101000100000100000??????????????
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 59;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; timeSaved 1329759423150 ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 1578555780564606895 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 7445905102732581916 ; mqVersion 275 ; checksumv 0 3 3658685377 null getNumChars 59 numChars 59 getNumTaxa 27 numTaxa 27 short true bits 15 states 15 sumSquaresStatesOnly 3752.0 sumSquares 3752.0 longCompressibleToShort false usingShortMatrix true NumFiles 1 NumMatrices 1 ; mqVersion ; endTell ; getWindow ; tell It ; suppress ; setResourcesState false false 380 ; setPopoutState 400 ; setExplanationSize 0 ; setAnnotationSize 0 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1185 650 ; setLocation -8 0 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; desuppress ; endTell ; getEmployee #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord ; tell It ; showDataWindow #7445905102732581916 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker ; tell It ; getWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 805 583 ; setLocation -8 0 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; setActive ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow ; colorCells #mesquite.charMatrices.NoColor.NoColor ; colorRowNames #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor ; colorColumnNames #mesquite.charMatrices.CharGroupColor.CharGroupColor ; colorText #mesquite.charMatrices.NoColor.NoColor ; setBackground White ; toggleShowNames off ; toggleShowTaxonNames on ; toggleTight off ; toggleThinRows off ; toggleShowChanges on ; toggleSeparateLines off ; toggleShowStates on ; toggleAutoWCharNames on ; toggleAutoTaxonNames off ; toggleShowDefaultCharNames off ; toggleConstrainCW on ; toggleBirdsEye off ; toggleShowPaleGrid off ; toggleShowPaleCellColors off ; togglePaleInapplicable on ; toggleShowBoldCellText off ; toggleAllowAutosize on ; toggleColorsPanel off ; toggleDiagonal on ; setDiagonalHeight 80 ; toggleLinkedScrolling on ; toggleScrollLinkedTables off ; endTell ; showWindow ; getWindow ; tell It ; forceAutosize ; endTell ; getEmployee #mesquite.charMatrices.ColorByState.ColorByState ; tell It ; setStateLimit 9 ; toggleUniformMaximum on ; endTell ; getEmployee #mesquite.charMatrices.ColorCells.ColorCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector ; tell It ; autotabOff ; endTell ; getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.silk.AnnotSummary.AnnotSummary ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.silk.CellImages.CellImages ; tell It ; togglePanel off ; toggleAnnotations off ; toggleSums off ; toggleHistory off ; toggleLocations off ; endTell ; getEmployee #mesquite.silk.StateImages.StateImages ; tell It ; togglePanel off ; toggleStateAnnotations off ; toggleCharAnnotations off ; toggleLocations off ; endTell ; getEmployee #mesquite.silk.aaManageImageIndices.aaManageImageIndices ; tell It ; setLocal ; reset ; endTell ; getEmployee #mesquite.stratigraphictools.ColorScaleCells.ColorScaleCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor ; tell It ; panelOpen true ; endTell ; endTell ; endTell ; endTell ;
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 59 ;
+ENDBLOCK;
