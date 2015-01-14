@@ -1,0 +1,13 @@
+Data explanation:
+-FritzTree_taxa.txt: list of taxa present in the FritzTree.rs200k.100trees.tre tree
+
+-pdb_taxa.csv: list of fossil taxa accessed from http://paleobiodb.org/#/ using the following search terms:
+Taxonomic level= "species"
+Taxon= "Mammalia"
+Accessed on 13/01/2015
+Only the columns "occurrence.genus_name" and "occurrence.species_name" where saved.
+
+-WilsonReederMSW.csv: Wilson & Reeder's "Mammal Species of the World" 3rd edition downloaded from: http://www.departments.bucknell.edu/biology/resources/msw3/
+Direct download: http://www.departments.bucknell.edu/biology/resources/msw3/export.asp
+Accessed on 13/01/2015
+Only the columns "Order", "Suborder", "Infraorder", "Superfamily", "Family", "Subfamily", "Tribe", "Genus", "Subgenus" and "Species" where saved.
