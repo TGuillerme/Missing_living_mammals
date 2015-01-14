@@ -1,0 +1,21 @@
+# LaTeX #
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fff
+*.lof
+*.lot
+*.out
+*.toc
+*.ttt
+*.fdb_latexmk
+
+
+# OS generated files #
+*.DS_Store
+
+
+# R #
+*.Rhistory
+*.Rapp.history
