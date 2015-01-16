@@ -126,3 +126,5 @@ MTD_p_value<-mtd_result[,7]
 primates_species<-c(OTUs_ratio, MPD_NRI[2], MPD_Null_distance[2], MPD_p_value[2], MTD_NRI[2], MTD_Null_distance[2], MTD_p_value[2])
 
 result_table[3,3]<-OTUs ; result_table[3,4:10]<-round(primates_species, digit=3)
+
+#Add function for scoring per genus and per family
