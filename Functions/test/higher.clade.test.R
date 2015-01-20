@@ -31,4 +31,7 @@ WR_list<-read.csv("../../Data/Taxon_References/WilsonReederMSW.csv", header=T, s
 
 
 #Data
-
+reference<-WR_list
+tree<-primates_tree
+species<-primates_list
+taxonomic.level="Genus"
