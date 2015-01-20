@@ -3,51 +3,43 @@
 #SYNTAX:
 #<species> being a list of species of interest
 #<tree> being a species trees
-#<taxonomic.level> which taxonomic level, should match with the reference file (case sensitive - default="Species")
-#<reference> taxonomic reference list
+#<plot> logical, whether to plot the data structure or not
+#<...> any optional arguments to be passed to plot
 ##########################
 #guillert(at)tcd.ie - 20/01/2015
 ##########################
 
-#Test
-#Tree
-#Read Fritz tree
-full_trees<-read.nexus("../../Data/Trees/FritzTree.rs200k.100trees.tre")
-set.seed(1) ; one_tree<-full_trees[[sample(1:100, 1)]]
-#Isolate primates
-primatesMRCA<-getMRCA(one_tree, c("Homo_sapiens", "Loris_tardigradus"))
+data.structure<-function(species, tree, plot=FALSE, ...){
+    #SANTIZING
+    #species
+    check.class(species, "character", " must be a vector of a subset of taxa names present in the tree.")
 
-tree<-extract.clade(one_tree, node=primatesMRCA)
+    #tree
+    check.class(tree, "phylo", " must be a phylogenetic tree.")
 
-#Species list
-LorisMRCA<-getMRCA(primates_tree, c("Galago_zanzibaricus", "Loris_tardigradus"))
-loris_tree<-extract.clade(primates_tree, LorisMRCA)
-PlathMRCA<-getMRCA(primates_tree, c("Aotus_azarae", "Ateles_belzebuth"))
-plath_tree<-extract.clade(primates_tree, PlathMRCA)
+    #plot
+    check.class(plot, "logical", " must be logical.")
 
-species<-c(sample(loris_tree$tip.label, 20), sample(plath_tree$tip.label, 60))
+    #MAKING THE DATA STRUCTURE TABLE
+    #list of all taxa
+    species_list<-tree$tip.label
 
-#taxonomic.level
-taxonomic.level="Species"
+    #Creating the data structure tabke
+    data_structure<-matrix(ncol=length(species_list), nrow=1, data=0)
 
-#Taxonomic reference
-WR_list<-read.csv("../../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
+    #column names
+    colnames(data_structure)<-species_list
 
-reference<-WR_list
+    #filling the presence absences
+    data_structure[1, match(species, species_list)]<-1
 
+    #Plotting (optional)
+    if(plot == TRUE) {
+        plot(tree, show.tip.label = FALSE, ...)
+        tiplabels(tip = which(primates_tree$tip.label %in% names(which(data_structure[1, ] == 1))), pch = 19, cex = 1)
+    }
 
-#FUNCTIONS
+    #Output
+    return(data_structure)
 
-
-#MAKING THE DATA STRUCTURE TABLE
-data.structure<-function(species, tree, taxonomic.level, reference){}
-
-#list of all taxa
-primates_list<-primates_tree$tip.label
-
-#Creating the data set with presence / absence
-data_structure<-matrix(ncol=length(primates_list), nrow=2, data=0)
-colnames(data_structure)<-primates_list
-rownames(data_structure)<-c("random", "clustered")
-data_structure[1,match(rand_primates, primates_list)]<-1
-data_structure[2,match(clustered_primates, primates_list)]<-1
+}
