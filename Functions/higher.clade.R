@@ -66,7 +66,8 @@ higher.clade<-function(species, tree, taxonomic.level, reference) {
 
     #Pruning the tree
     pruned_tree<-drop.tip(tree, species_to_remove)
+    pruned_tree$tip.label<-extracted_OTUs
 
-    return(list("OTUs"=extracted_OTUs, "tree"=pruned_tree, "Binomial"=species_to_keep))
+    return(list("OTUs"=extracted_OTUs, "tree"=pruned_tree))
     #End
 }
