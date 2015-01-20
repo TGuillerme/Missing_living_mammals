@@ -3,63 +3,18 @@
 #Ones the living taxa are extracted from all the matrices, count the proportion of available taxa per order (species levels / genus level / family level) + Faith's Phylogenetic Diversity
 #
 
+library(picante)
+
 #Test (example) on primates
 setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
+source("functions.R")
+load.functions(test=TRUE) #Set test=FALSE to speed up the loading
 
 #Read Fritz tree
 full_trees<-read.nexus("../Data/Trees/FritzTree.rs200k.100trees.tre")
 set.seed(1) ; one_tree<-full_trees[[sample(1:100, 1)]]
-
-
-#library(picante)
-#psv
-#pd
-#ses.pd
-
-data(phylocom)
-names(phylocom)
-phy <- phylocom$phylo
-comm <- phylocom$sample
-traits <- phylocom$traits
-
-#Remove extra taxa
-prunedphy <- prune.sample(comm, phy)
-
-#Communities
-par(mfrow = c(2, 3))
-for (i in row.names(comm)) {
-    plot(prunedphy, show.tip.label = FALSE, main = i)
-    tiplabels(tip = which(prunedphy$tip.label %in% names(which(comm[i, ] > 0))), pch = 19, cex = 2)
-}
-
-#Traits
-par(mfrow = c(2, 2))
-for (i in names(traits)) {
-    plot(phy, show.tip.label = FALSE, main = i)
-    tiplabels(pch = 22, col = traits[, i] + 1, bg = traits[, i] + 1, cex = 1.5)
-}
-
-#Faith's PD
-pd.result <- pd(comm, phy, include.root = TRUE)
-pd.result #low when clustered, high when even or random
-
-#Mean pairwise distance or mean nearest taxon distance
-phydist <- cophenetic(phy)
-#Mean pairwise distance
-ses.mpd.result <- ses.mpd(comm, phydist, null.model = "taxa.labels", abundance.weighted = FALSE, runs = 1000)
-ses.mpd.result
-ses.mpd.result$mpd.obs.z*-1
-#Mean nearest taxon distance
-ses.mntd.result <- ses.mntd(comm, phydist, null.model = "taxa.labels", abundance.weighted = FALSE, runs = 1000)
-ses.mntd.result
-#ntaxa Number of taxa in community
-#mpd.obs Observed mpd in community
-#mpd.rand.mean Mean mpd in null communities
-#mpd.rand.sd Standard deviation of mpd in null communities
-#mpd.obs.rank Rank of observed mpd vs. null communities
-#mpd.obs.z Standardized effect size of mpd vs. null communities (equivalent to -NRI)
-#mpd.obs.p P-value (quantile) of observed mpd vs. null communities (= mpd.obs.rank/ runs + 1)
-#runs Number of randomizations
+#Taxonomic reference
+WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
 
 #Isolate only the primates
 primatesMRCA<-getMRCA(one_tree, c("Homo_sapiens", "Loris_tardigradus"))
@@ -92,6 +47,8 @@ for (i in row.names(data_structure)) {
     plot(primates_tree, show.tip.label = FALSE, main = i)
     tiplabels(tip = which(primates_tree$tip.label %in% names(which(data_structure[i, ] > 0))), pch = 19, cex = 1)
 }
+
+#SPECIES LEVEL ANALYSIS
 
 #Faith's pd
 pd_results<-pd(data_structure, primates_tree)
@@ -127,4 +84,26 @@ primates_species<-c(OTUs_ratio, MPD_NRI[2], MPD_Null_distance[2], MPD_p_value[2]
 
 result_table[3,3]<-OTUs ; result_table[3,4:10]<-round(primates_species, digit=3)
 
-#Add function for scoring per genus and per family
+
+#HIGHER CLADE ANALYSIS
+#Genus
+full_genus_level<-higher.clade(primates_tree$tip.label, primates_tree, taxonomic.level="Genus", reference=WR_list)
+primates_tree_genus<-full_genus_level$tree
+
+
+#Collapse the data structure so that any taxa present for any Genera counts as the given Binomial name in the data_structure
+#"Empty" data structure
+data_structure_genus<-data_structure[,match(full_genus_level$Binomial,colnames(data_structure))]
+
+for(n in 1:nrow(data_structure_genus)) {
+    
+}
+
+par(mfrow = c(1, 2))
+for (i in row.names(data_structure_genus)) {
+    plot(primates_tree_genus, show.tip.label = FALSE, main = i)
+    tiplabels(tip = which(primates_tree_genus$tip.label %in% names(which(data_structure_genus[i, ] > 0))), pch = 19, cex = 1)
+}
+
+
+

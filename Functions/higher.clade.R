@@ -12,6 +12,18 @@
 
 #FUNCTIONS
 #functions for matching one name of the matrix
+
+#Get the sublist of species containing only the genus names
+binom.split<-function(taxon) {
+    return(strsplit(taxon, split="_")[[1]][1])
+}
+
+#Remove the extra species from the tree
+binom.make<-function(taxon, tree) {
+    return(grep(taxon, tree$tip.label, value=TRUE)[1])
+}
+
+
 #Extracting the first match
 
 higher.clade<-function(species, tree, taxonomic.level, reference) {
@@ -34,26 +46,27 @@ higher.clade<-function(species, tree, taxonomic.level, reference) {
         taxonomic_level<-grep(taxonomic.level, colnames(reference))
     }
 
-    #Get the sublist of species containing only the genus names
-    binom.split<-function(taxon) {
-        return(strsplit(taxon, split="_")[[1]][1])
-    }
-
+    #Extract the sublist of genera
     unique_genus<-unique(unlist(lapply(as.list(species), binom.split)))
 
     #Subset of reference containing only the genus names
     sub_ref<-reference[match(unique_genus, reference$Genus),]
 
-    #Extract the taxonomic level elements
-    pruned_species<-sub_ref[match(unique(sub_ref[,taxonomic_level]), sub_ref[,taxonomic_level]),8]
+    #Extract the taxonomic level elements (genus level)
+    extracted_genus<-sub_ref[match(unique(sub_ref[,taxonomic_level]), sub_ref[,taxonomic_level]),8]
 
-    #Remove the extra species from the tree
-    binom.make<-function(taxon, tree) {
-        return(grep(taxon, tree$tip.label, value=TRUE)[1])
-    }
-    species_to_keep<-unlist(lapply(as.list(pruned_species), binom.make, tree=tree))
+    #Make the list of OTUs (corresponding to the given taxonomic level)
+    extracted_OTUs<-sub_ref[match(extracted_genus, sub_ref[,8]), taxonomic_level]
+
+    #list of species to keep (binomial)
+    species_to_keep<-unlist(lapply(as.list(extracted_genus), binom.make, tree=tree))
+
+    #list of species to remove (binomial)
     species_to_remove<-tree$tip.label[-c(match(species_to_keep, tree$tip.label))]
+
+    #Pruning the tree
     pruned_tree<-drop.tip(tree, species_to_remove)
-    return(list(pruned_species, pruned_tree))
+
+    return(list("OTUs"=extracted_OTUs, "tree"=pruned_tree, "Binomial"=species_to_keep))
     #End
 }

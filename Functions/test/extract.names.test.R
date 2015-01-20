@@ -1,19 +1,4 @@
-#Fix data loading
-setwd("~/PhD/Projects/Missing_living_mammals/Functions")
-
-#Loading the functions
-sourceDir <- function(path, trace = TRUE, ...) {
-    for (nm in list.files(path, pattern = "[.][RrSsQq]$")) {
-    if(trace) cat(nm,":")
-        source(file.path(path, nm), ...)
-        if(trace) cat("\n")
-    }
-}
-sourceDir(".")
-
 #Testing
-library(testthat)
-setwd("test/")
 
 #Data loading
 matrix<-read.nexus.data("../../Data/Matrices/GL1988-GH.nex")

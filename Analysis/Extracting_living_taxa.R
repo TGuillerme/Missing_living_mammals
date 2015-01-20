@@ -4,9 +4,10 @@ setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
 #Load functions
 message("Loading/testing functions:", appendLF=FALSE)
 source("functions.R")
+load.functions(test=TRUE) #Set test=FALSE to speed up the loading
 message("Done\n", appendLF=FALSE)
+
 #List of matrices
-setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
 matrices_list<-list.files("../Data/Matrices/")
 
 #transform verbose warnings in read.nexus.data in messages
