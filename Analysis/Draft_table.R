@@ -8,7 +8,7 @@ library(picante)
 #Test (example) on primates
 setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
 source("functions.R")
-load.functions(test=TRUE) #Set test=FALSE to speed up the loading
+load.functions(test=FALSE) #Set test=FALSE to speed up the loading
 
 #Read Fritz tree
 full_trees<-read.nexus("../Data/Trees/FritzTree.rs200k.100trees.tre")
@@ -49,24 +49,23 @@ clustered_primates<-c(sample(loris_tree$tip.label, 20), sample(plath_tree$tip.la
 #}
 
 
-
 #Empty results table
-result_table<-data.frame("Order"=rep("Primates",3), "Taxonomic level"=c("Family", "Genus", "Species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3), "MPD(NRI)"=rep(NA,3), "MPD(NullDist)"=rep(NA,3), "p_value"=rep(NA,3), "MTD(NRI)"=rep(NA,3), "MTD(NullDist)"=rep(NA,3), "p_value"=rep(NA,3))
+result_table<-data.frame("Order"=rep("Primates",3), "Taxonomic level"=c("Family", "Genus", "Species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3), "Relative PD"=rep(NA,3), "NRI"=rep(NA,3), "MPD p_value"=rep(NA,3), "NTI"=rep(NA,3), "MNTD p_value"=rep(NA,3))
 
 #SPECIES LEVEL ANALYSIS
-data_structure<-data.structure(clustered_primates, primates_tree) #??? CHECK IF THE CALCULATIONS ARE CORRECT
-result_table[3,-c(1,2)]<-ses.fun(data_structure, primates_tree)
+data_structure<-data.structure(clustered_primates, primates_tree)
+result_table[3,-c(1,2)]<-community.structure(data_structure, primates_tree)
 
 #HIGHER CLADE ANALYSIS
 #Genus
 genus_level_data<-higher.clade(clustered_primates, primates_tree, taxonomic.level="Genus", reference=WR_list)[[1]]
 genus_level_tree<-higher.clade(primates_tree$tip.label, primates_tree, taxonomic.level="Genus", reference=WR_list)[[2]]
 genus_data_structure<-data.structure(genus_level_data, genus_level_tree)
-result_table[2,-c(1,2)]<-ses.fun(genus_data_structure, genus_level_tree)
+result_table[2,-c(1,2)]<-community.structure(genus_data_structure, genus_level_tree)
 
 #Family
 family_level_data<-higher.clade(clustered_primates, primates_tree, taxonomic.level="Family", reference=WR_list)[[1]]
 family_level_tree<-higher.clade(primates_tree$tip.label, primates_tree, taxonomic.level="Family", reference=WR_list)[[2]]
 family_data_structure<-data.structure(family_level_data, family_level_tree)
-result_table[1,-c(1,2)]<-ses.fun(family_data_structure, family_level_tree)
+result_table[1,-c(1,2)]<-community.structure(family_data_structure, family_level_tree)
 

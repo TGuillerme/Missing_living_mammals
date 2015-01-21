@@ -9,7 +9,7 @@ one_tree<-read.nexus("../../Data/Trees/FritzTree.rs200k.1tree.tre")
 #Isolate primates
 primatesMRCA<-getMRCA(one_tree, c("Homo_sapiens", "Loris_tardigradus"))
 
-tree<-extract.clade(one_tree, node=primatesMRCA)
+primates_tree<-extract.clade(one_tree, node=primatesMRCA)
 
 #Species list
 LorisMRCA<-getMRCA(primates_tree, c("Galago_zanzibaricus", "Loris_tardigradus"))

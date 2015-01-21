@@ -25,13 +25,17 @@ data.structure<-function(species, tree, plot=FALSE, ...){
     species_list<-tree$tip.label
 
     #Creating the data structure tabke
-    data_structure<-matrix(ncol=length(species_list), nrow=1, data=0)
+    data_structure<-matrix(ncol=length(species_list), nrow=2, data=0)
 
     #column names
     colnames(data_structure)<-species_list
 
+    #row names
+    rownames(data_structure)<-c("sampled", "complete")
+
     #filling the presence absences
     data_structure[1, match(species, species_list)]<-1
+    data_structure[2,]<-1
 
     #Plotting (optional)
     if(plot == TRUE) {
