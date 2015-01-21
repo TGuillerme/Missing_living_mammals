@@ -1,14 +1,17 @@
-#Standardized effect size community phylogenetic analyses
+#Community structure analyses
 ##########################
 #SYNTAX:
 #<data_structure> the presence/absence list of OTUs
 #<tree> the full tree
 #<runs> the number of randomization runs
+#<null> the null model
 ##########################
 #guillert(at)tcd.ie - 20/01/2015
 ##########################
 
-ses.fun<-function(data_structure, tree, runs=1000) {
+community.structure<-function(data_structure, tree, runs=1000, null) {
+
+    library(picante)
 
     #CALCULATE THE DIFFERENT METRICS
     #Faith's pd
