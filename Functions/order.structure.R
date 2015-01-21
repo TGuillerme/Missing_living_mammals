@@ -71,11 +71,11 @@ order.structure<-function(order, species, tree, reference, runs=1000, null="taxa
     family_level_tree<-higher.clade(tree$tip.label, tree, taxonomic.level="Family", reference=reference)[[2]]
     family_data_structure<-data.structure(family_level_data, family_level_tree)
     if(verbose == TRUE) {
-        message("Calculating the community structure at genus level: ...", appendLF=FALSE)
+        message("Calculating the community structure at family level: ...", appendLF=FALSE)
     }    
     results[1,-c(1,2)]<-community.structure(family_data_structure, family_level_tree, runs, null, ...)
     if(verbose == TRUE) {
-        message("Done\n", appendLF=FALSE)
+        message(" Done.\n", appendLF=FALSE)
     }
 
     #Output
