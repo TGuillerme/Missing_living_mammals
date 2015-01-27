@@ -1,0 +1,21 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=11 nchar= 25;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Nanoastegotherium_prostatum	??????????0101???00000?--
+Anadasypus_hondanus			1?0?0000?10001010100100--
+Anadasypus_aequatorianus	??????????0001010000100--
+Propraopus_sulcatus			300?100000010000001101100
+Pliodasypus_vergelianus		??????????100-?1001101111
+Dasypus_punctatus			20121011??101112101101100
+Dasypus_hybridus			0101000011101111101101100
+Dasypus_kappleri			2110211111101111101101100
+Dasypus_novemcinctus		1111210011101111101101100
+Dasypus_septemcinctus		0101??0021?0?1??101101100
+Dasypus_bellus				210???0??1101112101101100
+    ;
+End;

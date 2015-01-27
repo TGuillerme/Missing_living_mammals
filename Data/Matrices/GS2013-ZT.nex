@@ -1,0 +1,23 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=13 nchar= 23;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+P._australis		00-0-000-20000001000000
+N._pseudornatus		120?0100000001010011001
+N._ornatus			11111100100001010011001
+N._gouldi			11121011100001?????????
+N._paskoensis		11121011100001010011001
+G._reticulatus		00-0-000-20010100100010
+D._clavicaudatus	00-0-000-20000002113001
+P._figuratus		00-0-000-20000001111001
+P._intermedius		00-0-000-11100001012101
+H._euphractus		00-0-000-11100000012101
+Glyptotherium		00-0-000-20010100100010
+N._castellanosi		1200010000000???0???0??
+C._muricatus		00-0-000-20000000110000
+    ;
+End;

@@ -1,0 +1,56 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=46 nchar= 8;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+A._cotylalveus		0?0?????
+A._natans			0?0?0000
+A._whistleri		020?2110
+B._acutorostrata	02222224
+B._bairdii			01110001
+B._borealis			02222224
+B._cetoides			010?002?
+B._edeni			02222214
+B._musculus			02222214
+B._mysticetus		222022?3
+B._physalus			02222214
+C._commersonii		00002112
+C._marginata		222122?4
+D._atrox			0?0?000?
+D._delphis			00002200
+D._leucas			01102121
+E._glacialis		22202213
+E._robustus			12212201
+F._attenuata		00002110
+G._griseus			00102211
+Globicephala		00102111
+I._geoffrensis		01001020
+J._hunderi			020?????
+K._breviceps		01110211
+Kentriodontid		010???10
+L._acutus			00002102
+L._borealis			00002110
+L._obliquidens		00002102
+M._monoceros		0010?1?1
+M._novaeangliae		02222214
+Mesoplodon			01111201
+O._orca				00002220
+P._blainvillei		01001020
+P._calvertensis		020?212?
+P._dalli			00102121
+P._ehrlichi			0?0?????
+P._longirostris		010?222?
+P._macrocephalus	01110121
+P._phocoena			00102111
+P._sternbergi		010?????
+S._attenuata		00002210
+S._coeruleoalba		00002200
+S._longirostris		00002100
+T._shepherdi		01111201
+T._truncatus		00002202
+Z._cavirostris		01110201
+    ;
+End;

@@ -1,0 +1,32 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=21 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+[Truncated matrix. Original is 157 characters]
+
+Uropsilus_spp.			00
+Desmana_moschata		00
+Galemys_pyrenaicus		00
+Scaptonyx_fuscaudus		00
+Talpa_europea			00
+Scaptochirus_moschatus	00
+Euroscaptor_spp.		00
+Mogera_wogum			00
+Parascaptar_leucura		00
+Urotrichus_talpoides	00
+Dymecodon_pilirostris	00
+Neurotrichus_gibbsii	00
+Scapanulus_oweni		00
+Parascalops_breweri		00
+Scalopus_aquaticus		00
+Scapanus_spp.			00
+Condylura_cristata		00
+Sorex_araneus			00
+Erinaceus_europaeus		00
+Blarina_brevicauda		00
+Geotrypus_antiquus		00
+    ;
+End;

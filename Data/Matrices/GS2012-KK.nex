@@ -1,0 +1,21 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=11 nchar= 30;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+S._krabiense	00?000000000000000000000000000
+B._onoideus		200001110010110101200010111000
+E._crispus		011010121111101112101000010010
+E._armatus		0110001211111111121???00?10121
+E._borbonicus	111110121011111112112010111121
+Elomeryx_sp.	1?????1???11111????1???0000???
+Bakalovia		?1101?????01001002??00?0000???
+E._japonicus	???11?????11111?????21?0?10???
+Arretotherium	01100012001111111211??01?1?101
+Bothriogenys	20000011001000010120?110110100
+Sivameryx		?111111210011111021???10100020
+    ;
+End;

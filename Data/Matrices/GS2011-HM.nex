@@ -1,0 +1,25 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=15 nchar= 27;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Saturninia_gracilis		0000?0001?00000000100000000
+Srinitium_marteli		01?1????100??0?210??1??1111
+Clapasorex_sigei		1?1101113111113212011011100
+Oligosorex_antiquus		121101111111112111011001101
+Oligosorex_thauensis	1?1101111111112212011001101
+Meingensorex_ambiguus	121111111011022211?11110101
+Soricella_discrepans	1?1111101011022211011001111
+Carposorex_sylviae		1????111?111121112?????????
+Crocidosorex_piveteaui	1??1???????11?1010?????????
+Lartetium_prevostianum	11???11111211122110?11?1101
+Miosorex_grivensis		121111111111122212011011101
+Miosorex_desnoyersianus	2121011121111222120?1001101
+Myosorex_meini			1?1111111111122212021011101
+Crocidura_leucodon		221111110111032212021011101
+Sorex_araneus			322101112121031211011011101
+    ;
+End;

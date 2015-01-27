@@ -1,0 +1,27 @@
+#NEXUS
+
+Begin data;
+	Dimensions ntax=18 nchar=24;
+	Format datatype=standard gap=- missing=?;
+	Matrix
+	
+Hypothetic_ancestor		000000000000000000000000
+Procervulus_ginsburgi	100000000001001000?????0
+Heteroprox_larteti		10?00000000100100??????0
+Dicrocerus_elegans		100011002012011100?????1
+Muntiacus_bohlini		012202011100021001?1??10
+Muntiacus_vuquangensis	01220201121102110?021211
+Euprox_robustus			?11?02010011021101?????2
+Paracervulus_australis	011212110021021101?????2
+Metacervulus_lepidus	01220211121112111??????2
+Cervavitus_novorossiae	012212111111021110?????2
+Cervavitus_shanxius		012212111111021111?102?2
+Cervavitus_huadeensis	01221211111102111??????2
+Cervavitus_ultimus		012212111111021111?????2
+Cervavitus_fenqii		012212111111021111?????2
+Cervus_(Rusa)_elegans	01012221112202121??????3
+Cervus_elaphus			010122111121121221011203
+Rangifer_tarandus		010022111222121221012203
+Odocoileus_virginianus	010122111221021221112202
+    ;
+End;

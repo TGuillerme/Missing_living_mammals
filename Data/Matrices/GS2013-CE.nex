@@ -1,0 +1,56 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=46 nchar= 6;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Tupaia			010000
+Cynocephalus	0030?0
+Lemur			221001
+Homo			200001
+Macaca			200001
+Ochotona		003010
+Oryctolagus		003010
+Lepus			003011
+Mus				004010
+Rattus			004010
+Tachyoryctes	000010
+Spalax			?????0
+Dipus			?????0
+Jaculus			002010
+Anomalurus		003011
+Pedetes			010011
+Castor			003011
+Dipodomys		011010
+Thomomys		001010
+Geomys			001010
+Glis			?????0
+Dryomys			?????0
+Aplodontia		000010
+Marmota			000010
+Sciurus			000010
+Massoutiera		?????1
+Ctenodactylus	00?011
+Laonastes		003011
+Hystrix			100121
+Thryonomys		100121
+Petromus		100121
+Cryptomys		?????1
+Fukomys			?????1
+Bathyergus		100120
+Georychus		?????0
+Heliophobius	?????0
+Heterocephalus	?????0
+Cavia			100121
+Agouti			100121
+Erethizon		100121
+Chinchilla		100121
+Dinomys			100121
+Octodon			100121
+Echimys			100121
+Capromys		?????1
+Myocastor		100121
+    ;
+End;

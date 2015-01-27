@@ -1,0 +1,28 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=18 nchar= 26;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Pampatherium_humboldtii			000000000-----00-00-000--0
+Propalaehoplophorus_australis	00000010001100000000000000
+Eucinepeltus_petesatus			00000020001100000000001?0?
+Cochlops_muricatus				000000?000110000000001100?
+Doedicurus_clavicaudatus		000000200-----00-00-110300
+Neosclerocalyptus_paskoensis	10000010001100000000111101
+Panochthus_tuberculatus			10000010002120000000111211
+Hoplophorus_euphractus			100?00?0001120000000111211
+Pseudoplohophorus_absolutus		000000200011000?00?011?10?
+Glyptotherium_texanum			000000?0010010110001002000
+Glyptotherium_arizonae			000000?0010010110111002000
+Glyptotherium_mexicanum			?????????1001011011??02?0?
+Glyptotherium_cylindricum		00??????010010110111?02?00
+Boreostemma_acostae				0000000011001100000000200?
+Boreostemma_venezolensis		?00????01100110000?0??2?0?
+Paraglyptodon_uquiensis			0??001???100?00?1?????2?0?
+Glyptodon_munizi				01111101010010011000002000
+Glyptodon_reticulatus			01111101010010011000002000
+    ;
+End;
