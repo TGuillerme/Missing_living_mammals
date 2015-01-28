@@ -1,11 +1,12 @@
 #NEXUS
 
+[Trunctated matrix. Original matrix contains 45 characters.]
+
 Begin data;
-    Dimensions ntax=20 nchar= 45 [not full];
+    Dimensions ntax=20 nchar= 2;
     Format datatype=standard gap=- missing=?;
     Matrix
-
-20sp 45c [not full]
+    
 Prokennalestes				00
 Maelestes_gobiensis			00
 Cimolestes_magnus			00

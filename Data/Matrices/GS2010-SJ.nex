@@ -1,7 +1,7 @@
 #NEXUS
 
 Begin data;
-	Dimensions ntax=36 nchar=24;
+	Dimensions ntax=26 nchar=24;
 	Format datatype=standard gap=- missing=?;
 	Matrix
 	

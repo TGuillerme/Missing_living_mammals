@@ -1,3 +1,9 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=7 nchar=34;
+    Format datatype=standard gap=- missing=?;
+    Matrix
 
 Tiuclaenus_minutus				00000000000011111000000?0000003000
 Didolodus_multicuspis			1100000000000000011111111000000001

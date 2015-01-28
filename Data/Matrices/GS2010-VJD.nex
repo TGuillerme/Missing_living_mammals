@@ -1,7 +1,9 @@
 #NEXUS
 
+[truncated matrix. Original contains 157 characters.]
+
 Begin data;
-    Dimensions ntax=34 nchar= 45 (normaly 157);
+    Dimensions ntax=34 nchar= 43;
     Format datatype=standard gap=- missing=?;
     Matrix
 

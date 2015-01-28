@@ -4,8 +4,7 @@ Begin data;
     Dimensions ntax=15 nchar= 28;
     Format datatype=standard gap=- missing=?;
     Matrix
-
-
+    
 Orycteropus					1000000000000-00-0100010?1-1
 Cf.Erythrozootes			1000000000001000-0100???????
 Chambius					0000000000000-00-000000110-1
@@ -20,6 +19,6 @@ E.brachyrhynchus			0001111011010-11100010001010
 E.rufescens					0011111111010-11000011000010
 E.intufi					0011111011010-11100010000000
 E.myurus					1011111111011011000011000010
-Macroscelides proboscideus	01101110120011111020100110?0
+Macroscelides_proboscideus	01101110120011111020100110?0
     ;
 End;

@@ -4,7 +4,7 @@ setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
 #Load functions
 message("Loading/testing functions:", appendLF=FALSE)
 source("functions.R")
-load.functions(test=TRUE) #Set test=FALSE to speed up the loading
+load.functions(test=FALSE) #Set test=FALSE to speed up the loading
 message("Done\n", appendLF=FALSE)
 
 #List of matrices
@@ -66,7 +66,7 @@ for(matrix in 1:length(matrices_list)){
         #Else, save the matrix name and continue
         extraction_table_tmp<-data.frame("Matrix"=matrices_list[matrix],"Taxa"="FAILURE", "Characters"="FAILURE", "Living"="FAILURE","Source"="FAILURE","Tax.level"="FAILURE")
         extraction_table<-rbind(extraction_table, extraction_table_tmp)
-        message("... FAILD\n", appendLF=FALSE)
+        message("... FAILED\n", appendLF=FALSE)
     }
 }
 

@@ -1,238 +1,38 @@
 #NEXUS 
-[please cite Asher RJ, Maree S, Bronner G, Bennett NC, Bloomer P, Czechowski P, Meyer M, Hofreiter M. In Press.
-A phylogenetic estimate for golden moles (Mammalia, Afrotheria, Chrysochloridae). BMC Evolutionary Biology. 
-For graphic images of character states, see project P299 on www.morphobank.org, "matrix" tab, "view matrix", "chars" button]
+Begin data;
+	Dimensions ntax=30 nchar=144;
+	Format datatype=standard gap=- missing=?;
+	Matrix
 
-
-BEGIN TAXA;
-	TITLE Untitled_Taxa_Block;
-	DIMENSIONS  NTAX=30;
-	TAXLABELS
-	Elephantulus
-	Echinops
-	Geogale
-	Hemicentetes
-	Limnogale
-	Microgale
-	Micropotamogale
-	Oryzorictes
-	Potamogale
-	Procavia
-	Setifer
-	Tenrec
-	Ambly_corriae
-	Ambly_hott
-	Ambly_marleyi
-	Ambly_robustus
-	Ambly_septentrion
-	Calco_obtusi
-	Chlorot_leuco
-	Chlorot_arendsi
-	Chlorot_duthiae
-	Chlorot_sclateri
-	Chryso_asiatica
-	Chryso_stuhlmanni
-	Cspalax_trevel
-	Cspalax_villosus
-	Crypto_wintoni
-	Eremi_granti
-	Neambly_gunn
-	Neambly_julian;
-END;
-
-
-BEGIN CHARACTERS;
-	TITLE Untitled_Character_Matrix;
-	DIMENSIONS  NCHAR=144;
-	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8" MISSING=? GAP=- ;
-	CHARSTATELABELS  
-		1  tymp_proc_basisphen_AH21 / 0_flat 1_contrib_bulla,
-  2  piriform_fenestr_AH22 / '0_abs-solid' '1_pres-open',
-  3  CTPP_AH23 / 0_small 1_contrib_post_bulla,
-  4  RTPP_AH24 / 0_pres 1_reduced,
-  5  epitymp_recess_AH26 / 0_contin_midEar 1_enlarged,
-  6  entotympanic / 0_reduced 1_shields_tubal_canal 2_contrib_bulla,
-  7  entotymp_shape / 0_lat_elongate 1_lat_pointed 2_lat_rounded,
-  8  tubal_canal_AH27 / 0_open 1_closed,
-  9  ectotymp_exposure_AH28 / 0_apheneric 1_semiphaneric 2_phaneric,
-  10  ectotymp_expansion_AH29 / 0_ring 1_expanded,
-  11  ectotymp_eartube / 0_short 1_vent_midpt_glenoid,
-  12  malleus_af18 / 0_small 1_enlarged '2_globular-large' 3_club,
-  13  temporal_bulla / 0_pres 1_abs,
-  14  inf_stap_foramen_AH31 / 0_abs 1_pres,
-  15  inf_stapedial_fmn / 0_separate_fmOvale 1_adjacent_fmOvale 2_confluent_fmOvale,
-  16  for_ovale / 0_separate_sphenfis 1_adjacent_sphenfis,
-  17  carotid_fmn / 0_antlat_jugfm 1_ant_jugfm,
-  18  ascpharyngeal_fmn / 0_posterior 1_medial_bulla,
-  19  craniopharyng_fmn / 0_abs 1_pres,
-  20  jugFm / 0_exposed_ventral 1_dorsal_occip_cond,
-  21  basisphen_pit_AH34 / 0_flat 1_pres,
-  22  fenestrate_basioccip_AH35 / 0_solid 1_open,
-  23  'mastoid-tubercle PM AH37' / 0_abs 1_petromast_pres,
-  24  'mastoid tubercle-squam AH38' / 0_abs '1_pres-squam',
-  25  squam_length_basicr_AH39 / 0_short 1_long,
-  26  entoglenoid_process_pres_AH50 / 0_abs 1_pres,
-  27  entoglen_jaw_artic_AH51 / 0_reduced 1_pres,
-  28  entoglen_composition_AH52 / 0_squamosal '1_squam-alisphen' 2_alisphen,
-  29  ethmoid_foramen_AH46 / 0_ant_sphenorb_fissure 1_within_sphenorb_fissure,
-  30  sphenorbFis_orientation / 0_opens_anteriorly 1_opens_laterally,
-  31  alisph_canal_pres_AH32 / 0_abs 1_pres,
-  32  alisph_canal_position_AH33 / 0_lat_sphenorb_fissure 1_contin_sphenorb_fis,
-  33  optic_foramen_AH44 / 0_pres 1_abs,
-  34  optic_foramen_size_AH45 / 0_similar_V 1_smaller_V,
-  35  suboptic_foramen_AH36 / 0_abs 1_pres,
-  36  maxilla_in_orbit_AH55 / 0_reduced 1_pres_no_frontal_contact 2_pres_frontal_contact,
-  37  external_petromast_AH43 / 0_post_nuchal_crest 1_ant_nuchal_crest 2_occluded,
-  38  lambd_plate_ap23 / 0_abs 1_temp_scar_anterior,
-  39  sagittal_crest_ap26 / 0_abs 1_pres,
-  40  occiput / 0_90angle 1_mushroom,
-  41  sinus_canal_AH47 / 0_pres 1_abs,
-  42  sinus_canal_foramen_AH48 / 0_confl_sphenorb_fissure '1_betw_sphenorb-ethmoid' 2_confl_ethmoid,
-  43  frontal_proportions_AH61 / 0_elongate 1_similar_parietal 2_shorter_parietal,
-  44  crista_galli_AH65 / 0_pres 1_abs,
-  45  dual_ectopterygoid_AH40 / 0_single_pair 1_pair_on_each_side,
-  46  maxillary_proc_pterygoid_AH41 / 0_reduced 1_past_posterior_toothrow,
-  47  'sphenopal-dors palatine fmna AH49' / 0_common_recess 1_separate,
-  48  postpal_spine_AH42 / 0_small 1_large,
-  49  palatal_length / '0_>_interEAM' '1_<=_interEAM',
-  50  gr_palatine_boss / 0_flat 1_defines_grpal_medial,
-  51  zygomatic_arch_AH56 / 0_present 1_reduced,
-  52  zyg_arch_size_AH57 / 0_robust 1_slender,
-  53  max_zygoma_origin_AH58 / 0_M1 1_M2 2_M3,
-  54  max_zygoma_root_size_AH59 / 0_large 1_reduced,
-  55  lacrimal_foramen_AH53 / 0_abs 1_pres,
-  56  lacrimal_foramen_position_AH54 / 0_in_orbit_ 1_anterior_orbit,
-  57  lacrimal_flange_AH64 / 0_smooth 1_rugose 2_projection,
-  58  infraorb_canal_length_AH60 / 0_longer_than_1_cheek_tooth '1_similar-smaller_1_cheek_tooth',
-  59  post_rostrum / 0_medial_ant_zygarch 1_lateral_ant_zygarch,
-  60  nasal_shape_AH62 / 0_broad_posteriorly 1_tapered_posteriorly,
-  61  nasal_length_AH63 / 'post_edge_at-anterior_orbit' 1_post_edge_posterior_antorbit,
-  62  antlat_process_pmax / 0_abs 1_pres,
-  63  size_upper_dentition_AH66 / '0_anterior-most_enlarged' 1_similar,
-  64  premax_dentition_AH67 / 0_zero 1_one 2_two 3_three 4_five,
-  65  inter_I1_gap_AH126 / 0_narrow 1_wide,
-  66  upper_antemolars_AH68 / 0_five 1_four 2_three 3_two,
-  67  upper_canine_AH69 / 0_similar_antemolars 1_bulbous 2_trenchant,
-  68  C_metastyle / 0_reduced 1_postbuc_projects,
-  69  P2_protocone / 0_pres 1_abs,
-  70  P3_protocone_af105 / 0_pres 1_abs,
-  71  P3_parastyle / 0_flush_ant_molar_wall 1_ant_projects 2_projects_P3_longer_than_BLwide,
-  72  P3_shape_AH70 / 0_narrow 1_molariform,
-  73  P4_shape_AH71 / 0_narrow 1_molariform,
-  74  P4_carnassial_AH72 / 0_no_shearing 1_shearing,
-  75  metaconeAH73 / 0_pres 1_connate 2_reduced,
-  76  protocone_AH74 / 0_pres 1_reduced,
-  77  hypocone_AH75 / 0_pres 1_reduced,
-  78  M1_parastyle_AH76 / 0_flush_ant_wall 1_anterior_projection,
-  79  centrobuccal_cleft_AH77 / 0_flat 1_pres,
-  80  M3_pres_AH78 / 0_pres 1_abs,
-  81  M3_stylar_shelf_AH79 / 0_narrow 1_broad,
-  82  M3_mesostyle_AH80 / '0_lingual-adjacent_paracone' 1_buccal,
-  83  M3_shape / 0_as_M2 1_half_M2,
-  84  lower_ant_dentition_AH81 / 0_larger_adjacent_teeth 1_similar_adjacent_teeth 2_smaller_adjacent_teeth,
-  85  lower_antemolars_AH82 / 0_eight 1_seven 2_six 3_five 4_three,
-  86  p3_shape_AH83 / 0_narrow 1_molariform,
-  87  p4_shape_AH84 / 0_narrow 1_molariform,
-  88  p4_talonid_AH85 / 0_pres 1_abs,
-  89  molar_talonids / 0_pres 1_abs,
-  90  hypoconulid_AH86 / 0_abs 1_pres,
-  91  'hypoflexid-paracone AH87' / 0_no_occlusion 1_occlusion,
-  92  secondary_hyoflexid_basin_AH88 / 0_pres 1_abs,
-  93  m3_pres_AH89 / 0_pres 1_abs,
-  94  m3_length_AH90 / 0_longer_antemolars 1_similar_antemolars 2_shorter_antemolars,
-  95  mand_condyle_length_AH92 / 0_globular 1_transverse,
-  96  mandib_condyle_number_AH93 / 0_single_artic 1_dual_artic,
-  97  internal_coronoid_fossa_AH95 / 0_smooth 1_pocketed,
-  98  mand_coronoid / 0_flat 1_dors_projects,
-  99  angular_process_ap91_af116 / 0_narrows_distally 1_broadens_distally,
-  100  axis_keel_AH96 / 0_pres 1_ventrally_flat,
-  101  sacral_verts_AH97 / '0_two-four' '1_>five',
-  102  sacroiliac_artic_AH98 / 0_S1 '1_S1-2' '2_S2-3',
-  103  sacral_neural_spines_AH99 / 0_no_fusion 1_fused_longitudinally,
-  104  clavicle_AH100 / 0_pres 1_short 2_abs,
-  105  first_rib / 0_narrow_riblike '1_robust-broad',
-  106  sternal_keel / 0_flat '1_ant-inf_projects',
-  107  scapular_shape_AH101 / 0_triangular 1_elongate,
-  108  scap_metacromion_pres_AH102 / 0_pres 1_abs,
-  109  scap_metacrom_shape / 0_blunt 1_elongate,
-  110  scap_acromion_pres_AH104 / 0_pres 1_abs,
-  111  scap_acromion_shape_AH105 / 0_blunt 1_elongate,
-  112  scapular_spine_length_AH106 / 0_lat_glenoid 1_at_glenoid,
-  113  root_scap_spine / 0_open 1_acute_angle,
-  114  hum_head / 0_sphere 1_DV_elongate,
-  115  deltoid_trough / 0_medial_convex '1_trough-medial_concave',
-  116  med_epicondyle_pres_AH108 / 0_reduced 1_pres,
-  117  dist_hum_breadth / 0_medEpiCond_small '1_50-75%_hum_len' '2_>85%_hum_len',
-  118  entepicond_fm_humerus_AH107 / 0_pres 1_abs,
-  119  humerus_olecranon_fenestr_AH110 / 0_ossified '1_fenest-thin',
-  120  distal_ulna_AH111 / 0_carpal_artic 1_no_carpal_artic,
-  121  ulnocarp_artic_AH112 / 0_broad 1_styloid_only,
-  122  forarm_longbones_AH113 / 0_two 1_three,
-  123  digital_pad_1&2 / 0_abs 1_pres,
-  124  manual_digit_1 / 0_vestigial 1_small 2_metac_over_half_MC3 3_hypertrophied,
-  125  manual_digit_2 / 0_vestigial 1_small 2_metac_over_half_MC3 3_hypertrophied,
-  126  manual_digit_3 / 0_vestigial 1_small 2_metac_over_half_MC2 3_hypertrophied,
-  127  manual_digit_4 / 0_vestigial 1_small 2_metac_over_half_MC3 3_hypertrophied,
-  128  manual_digit_5 / 0_vestigial 1_small 2_metac_over_half_MC3 3_hypertrophied,
-  129  'number rib-bearing verts' / 0__13 1_14 2_15 3_16 4_17 5_18 6_19 7_20 8_21,
-  130  caudal_verts / 0_centra_similar_presacrals 1_centra_smaller_presacrals,
-  131  iliac_blades_AH114 / '0_round-sagittal' 1_coronal,
-  132  ilia_cranial_extent_AH115 / 0_past_sacroiliac_artic 1_even_sacroiliac_artic,
-  133  iliopectineal_tubercle_AH116 / 0_smooth 1_pres,
-  134  iliopect_tubercle_shape_AH117 / 0_medial 1_ventral,
-  135  internal_pelvic_shape_AH118 / 0_flat 1_concave,
-  136  pelvic_obt_fmn / 0_larger_acetab 1_smaller_acetab 2_abs,
-  137  pubic_symphysis_AH119 / 0_broad 1_narrow 2_separate,
-  138  pubis_angle / '0_>15_from_ilium' 1_parallel_ilium,
-  139  pubis_length_AH120 / 0_similar_ischium 1_longer_ischium,
-  140  fem_3rd_trochanter_AH122 / 0_small_proximal 1_reaches_midpoint_shaft,
-  141  prox_fibula / 0_narrow 1_AP_process,
-  142  'tibia-fibula AH123' / 0_unfused 1_fused,
-  143  distal_fibula_AH124 / 0_flat 1_concave '2_ball-condyle',
-  144  calcaneal_tubercle_AH125 / 0_blunt 1_pointed
-		;
-
-MATRIX
-[                             10        20        30        40        50        60        70        80        90        100       110       120       130       140  ]
-[                             .         .         .         .         .         .         .         .         .         .         .         .         .         .    ]
-
-Elephantulus         00100221211011001-100000010100(01)0001010000111101100001010110100130000000110000001---10010000-(01)200010101000?0010010000-011-00122220000111000000100
-Echinops             100100-020-011001-1010010111100-0102100000010100001-0011010110020120111110211101---2211100111-000101010000000001000100(01)010022222?1010-0010000001
-Geogale              111000-020-011001-000(01)01011000110112100000110100001-111100011002110011-01021111010003011001100000100010000000001000101101002222240000-001010000?
-Hemicentetes         1(01)0100-020-010-01-100001011110110102000000(01)10100001-20110101001301(02)011100021111011011001000-01000101010000000001000100001001222231110-0010100001
-Limnogale            111000-020-01(01)001??00100011000110112100001210100001-100-0101100301001011102111101002101100110010010001000?00000100010000100?222??0000-0010100101
-Microgale            111000-020-011001-10000001100011011210000(01)110100001-10110101100301(02)010101021111010021011001100100101010000000011000100001002222230000-0010100101
-Micropotamogale      101000-110-010-011100101011000110112100001210100001-100-01011003010010111020111010021(01)1100110110010001020?01-1-1?0?1010010012222?000110011100101
-Oryzorictes          111000-020-011001-000000011000110102100000110100001-101(01)010100130120111010211110100110110011001001010100000000010001000010012222(345)0000-0010100101
-Potamogale           101000-110-010-0111001010110001101(01)010001-2(01)0100001-100-0101000301001011101011101002101000100(01)10010001020001-1-10000-10000022222(34)000110010110101
-Procavia             01010220211010-01-00000011110011000020001-101(01)01000000102000000101010011100000000-022110000-011001-011120001-1-10000-1100000222281100-0000000000
-Setifer              100100-020-011001-101001011110110102100000010100001-(01)01101011002(01)12011111021100011112111001102000101010000000001000100(01)010022222(34)1010-0010100001
-Tenrec               1(01)0(01)00-020-010-011101001011110110102001000110100001-10110101001(23)01201111102110001101(12)11100110(01)0001010100000000010001001010012222(67)1110-0010100001
-Ambly_corriae        101?11102100111000(01)10000010-100-1-0?0001????00000001001(01)010??1030100101110201011---2111000111-00001??????????????????000?10123006???????????????
+Elephantulus         00100221211011001-100000010100?0001010000111101100001010110100130000000110000001---10010000-?200010101000?0010010000-011-00122220000111000000100
+Echinops             100100-020-011001-1010010111100-0102100000010100001-0011010110020120111110211101---2211100111-000101010000000001000100?010022222?1010-0010000001
+Geogale              111000-020-011001-000?01011000110112100000110100001-111100011002110011-01021111010003011001100000100010000000001000101101002222240000-001010000?
+Hemicentetes         1?0100-020-010-01-100001011110110102000000?10100001-20110101001301?011100021111011011001000-01000101010000000001000100001001222231110-0010100001
+Limnogale            111000-020-01?001??00100011000110112100001210100001-100-0101100301001011102111101002101100110010010001000?00000100010000100?222??0000-0010100101
+Microgale            111000-020-011001-10000001100011011210000?110100001-10110101100301?010101021111010021011001100100101010000000011000100001002222230000-0010100101
+Micropotamogale      101000-110-010-011100101011000110112100001210100001-100-01011003010010111020111010021?1100110110010001020?01-1-1?0?1010010012222?000110011100101
+Oryzorictes          111000-020-011001-000000011000110102100000110100001-101?010100130120111010211110100110110011001001010100000000010001000010012222?0000-0010100101
+Potamogale           101000-110-010-0111001010110001101?010001-2?0100001-100-0101000301001011101011101002101000100?10010001020001-1-10000-10000022222?000110010110101
+Procavia             01010220211010-01-00000011110011000020001-101?01000000102000000101010011100000000-022110000-011001-011120001-1-10000-1100000222281100-0000000000
+Setifer              100100-020-011001-101001011110110102100000010100001-?01101011002?12011111021100011112111001102000101010000000001000100?010022222?1010-0010100001
+Tenrec               1?0?00-020-010-011101001011110110102001000110100001-10110101001?01201111102110001101?11100110?0001010100000000010001001010012222?1110-0010100001
+Ambly_corriae        101?11102100111000?10000010-100-1-0?0001????00000001001?010??1030100101110201011---2111000111-00001??????????????????000?10123006???????????????
 Ambly_hott           101011102100111000010000010-100-1-0?0001???1000000010010010??1030100102110201011---2111000111-000011011011001000011120000101230061000-0121111121
 Ambly_marleyi        101??110210?111000110000010-100-1-0?0001????000000010010010111030100112110201111---2111000111-00001??????????????????000?1??????6???????????????
-Ambly_robustus       101?1110210?111000110000010-100-1-0?0001????00000001001(01)010??1030100101110201011---2111000111-00001??????????????????000?10123006???????????????
+Ambly_robustus       101?1110210?111000110000010-100-1-0?0001????00000001001?010??1030100101110201011---2111000111-00001??????????????????000?10123006???????????????
 Ambly_septentrion    101??110211?111000010000010-100-1-0?0001????000000010010010??1030100101110201011---2111000111-0000110110110010000111200001?1230061000-01211?1121
 Calco_obtusi         101011102100111000010000010-100-1-0?0001???1000000010011010??1030101110110201001-1-2111110111-000111021011001000011120000101230061000-01211111??
 Chlorot_leuco        101011102101112000010000010-100-1-020001???100000001001101010103010011011021100011121111101102000111021011001000011110000101230061000-012111112?
 Chlorot_arendsi      101011102101111000110000010-100-1-0?0001???1000000010011010??1030100100110201000111211100011020001110110110010000111200001012300?1000-012111112?
 Chlorot_duthiae      101011102101111100010000010-100-1-0?0001???1000000010010010??1030100101110201010101211100011020001110110110010001111200001012300?1000-0121111121
-Chlorot_sclateri     101011102101111000010000010-100-1-0?0001???1000000010010010??103010010111020101(01)10121110001102000111011011001000111120000101230061000-0121111121
-Chryso_asiatica      101011002103012111010000010-100-1-0?0001???10000000100100101?1030100101110201000101211111011020001110110110010000111200001012300610(01)0-01211111?1
+Chlorot_sclateri     101011102101111000010000010-100-1-0?0001???1000000010010010??103010010111020101?10121110001102000111011011001000111120000101230061000-0121111121
+Chryso_asiatica      101011002103012111010000010-100-1-0?0001???10000000100100101?1030100101110201000101211111011020001110110110010000111200001012300610?0-01211111?1
 Chryso_stuhlmanni    101011002103012111010000010-100-1-0?0001???100000001001?010??10301001001102010?01-12111?00110200011?0?10110010000111200001012300610?0-0121?111??
-Cspalax_trevel       10101120210201211(01)11(01)000010-100-1-020111???1000(01)01010011010??103010010111020101011121110001102000111011011000000011110000101230071000-0121011121
-Cspalax_villosus     101011202102012110110000010-10(01)11-0201(01)1???1000000010011010??10301001001102010101012111000110200011?0?10110000000111100001012300?10?0-0121?111??
-Crypto_wintoni       101011102103012100010000010-100-1-0?0001???1000000010011011??103010010(01)1102010101012111110110200011?0?10??0???00???12000011223106?0?0-0?2??1?1??
-Eremi_granti         101011102102012100000000010-010-1-0?0001???100001001001?010??103010011(01)1102010101012111110110200011?0?10110010001101100001022210410?0-0121?111??
-Neambly_gunn         101011102100111000010000010-100-1-0?0001???1000000010011010??103010010111020101(01)0-121110101102000011011011001000011120000101230061000-0121111121
-Neambly_julian       101011102100111000010000010-100-1-0?0001???1000010010011010??10301001011102010(01)1---2111110?1(01)-000011011011001000011120000101230071000-0121111121
-;
+Cspalax_trevel       10101120210201211?11?000010-100-1-020111???1000?01010011010??103010010111020101011121110001102000111011011000000011110000101230071000-0121011121
+Cspalax_villosus     101011202102012110110000010-10?11-0201?1???1000000010011010??10301001001102010101012111000110200011?0?10110000000111100001012300?10?0-0121?111??
+Crypto_wintoni       101011102103012100010000010-100-1-0?0001???1000000010011011??103010010?1102010101012111110110200011?0?10??0???00???12000011223106?0?0-0?2??1?1??
+Eremi_granti         101011102102012100000000010-010-1-0?0001???100001001001?010??103010011?1102010101012111110110200011?0?10110010001101100001022210410?0-0121?111??
+Neambly_gunn         101011102100111000010000010-100-1-0?0001???1000000010011010??103010010111020101?0-121110101102000011011011001000011120000101230061000-0121111121
+Neambly_julian       101011102100111000010000010-100-1-0?0001???1000010010011010??10301001011102010?1---2111110?1?-000011011011001000011120000101230071000-0121111121
+	;
 END;
-
-
-BEGIN paup;
-
-pset mstaxa=polymorph collapse=minbrlen;
-END;
-
-
