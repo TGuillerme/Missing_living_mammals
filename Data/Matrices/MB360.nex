@@ -1,10 +1,9 @@
 #NEXUS
 
 Begin data;
-    Dimensions ntax=12 nchar= 28;
+    Dimensions ntax=12 nchar= 28;
     Format datatype=standard gap=- missing=?;
     Matrix
-
 
 Simpsonotus             00000 00000 00000 00000 00000 000
 Colbertia               00000 00000 00000 10100 00000 ?00

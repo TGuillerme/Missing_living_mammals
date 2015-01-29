@@ -242,18 +242,18 @@ BEGIN CHARACTERS;
 	;
 	
 	MATRIX
-	'Procavia capensis'		                  0100000100011000210--110000022011000000
-	'Chrysochloris'		                      0010200000200020000--001010100000000010
-	'Rhynchocyon cirnei'		                 1110001000000010000--000001030012011001
-	'Leptorycteropus guilielmi'		          ???????00?????????1???0010?00?1000?01?1
-	'Myorycteropus africanus'		            10??????????????0?1020?10110?0100??1111
-	'Orycteropus abundulafus'		            10010121111111012011011010110111001110{0,1}
-	'Orycteropus afer'		                   100110101020001011101111010011101120101
-	'Orycteropus crassidens'		             1001??10??2?001011101011010??????????01
-	'Orycteropus depereti'		               100101200?111101??11011????????????????
-	'Orycteropus djourabensis'		           10011010??20001010100111011011100120101
-	'Orycteropus gaudryi'		                10010121{0,1}1111101201101111111?1110011101
-	'Orycteropus mauritanicus'		           10?1?121111???0???11011?????????10?1101
+	Procavia_capensis		                  0100000100011000210--110000022011000000
+	Chrysochloris		                      0010200000200020000--001010100000000010
+	Rhynchocyon_cirnei		                 1110001000000010000--000001030012011001
+	Leptorycteropus_guilielmi		          ???????00?????????1???0010?00?1000?01?1
+	Myorycteropus_africanus		            10??????????????0?1020?10110?0100??1111
+	Orycteropus_abundulafus		            10010121111111012011011010110111001110?
+	Orycteropus_afer		                   100110101020001011101111010011101120101
+	Orycteropus_crassidens		             1001??10??2?001011101011010??????????01
+	Orycteropus_depereti		               100101200?111101??11011????????????????
+	Orycteropus_djourabensis		           10011010??20001010100111011011100120101
+	Orycteropus_gaudryi		                10010121?1111101201101111111?1110011101
+	Orycteropus_mauritanicus		           10?1?121111???0???11011?????????10?1101
 	;
 ENDBLOCK;
 

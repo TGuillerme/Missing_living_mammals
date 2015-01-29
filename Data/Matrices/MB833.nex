@@ -91,42 +91,42 @@ BEGIN CHARACTERS;
 	;
 	
 	MATRIX
-	'Didelphis virginiana'		                000011
-	'Kulbeckia kulbecke'		                  000000
-	'Ukhaatherium nessovi'		                000001
-	'Zalambdalestes lechei'		               000000
-	'Zhelestid'		                           000001
-	'Chrysochloris sp.'		                   210121
-	'Elephantimorpha'		                     200010
-	'Hemicentetes semispinosum'		           110000
-	'Macroscelides proboscideus'		          210111
-	'Orycteropus afer'		                    002001
-	'Procavia capensis'		                   212120
-	'Trichechus manatus'		                  201001
-	'Dasypus novemcinctus'		                212111
-	'Atelerix albiventris'		                210100
-	'Balaenopteridae'		                     100012
-	'Bathygenys reevesi'		                  210001
-	'Canis familiaris'		                    000121
-	'Equus caballus'		                      110011
-	'Eumetopias jubatus'		                  101111
-	'Felis catus'		                         110121
-	'Manis tricuspis'		                     212010
-	'Nycteris grandis'		                    100111
-	'Pteropus lylei'		                      210101
-	'Rhinolophus ferrumequinum'		           110122
-	'Sorex monticolus'		                    210000
-	'Sus scrofa'		                          210121
-	'Tadarida brasiliensis'		               210011
-	'Tursiops truncatus'		                  101002
-	'Cavia porcellus'		                     210121
-	'Cynocephalus volans'		                 210010
-	'Homo sapiens'		                        212010
-	'Lepus californicus'		                  210101
-	'Macaca mulatta'		                      210020
-	'Mus musculus'		                        210101
-	'Sylvilagus floridanus'		               210111
-	'Tupaia glis'		                         110121
+	Didelphis_virginiana					000011
+	Kulbeckia_kulbecke						000000
+	Ukhaatherium_nessovi					000001
+	Zalambdalestes_lechei					000000
+	Zhelestid								000001
+	Chrysochloris_sp.						210121
+	Elephantimorpha							200010
+	Hemicentetes_semispinosum				110000
+	Macroscelides_proboscideus				210111
+	Orycteropus_afer						002001
+	Procavia_capensis						212120
+	Trichechus_manatus						201001
+	Dasypus_novemcinctus					212111
+	Atelerix_albiventris					210100
+	Balaenopteridae							100012
+	Bathygenys_reevesi						210001
+	Canis_familiaris						000121
+	Equus_caballus							110011
+	Eumetopias_jubatus						101111
+	Felis_catus								110121
+	Manis_tricuspis							212010
+	Nycteris_grandis						100111
+	Pteropus_lylei							210101
+	Rhinolophus_ferrumequinum				110122
+	Sorex_monticolus						210000
+	Sus_scrofa								210121
+	Tadarida_brasiliensis					210011
+	Tursiops_truncatus						101002
+	Cavia_porcellus							210121
+	Cynocephalus_volans						210010
+	Homo_sapiens							212010
+	Lepus_californicus						210101
+	Macaca_mulatta							210020
+	Mus_musculus							210101
+	Sylvilagus_floridanus					210111
+	Tupaia_glis								110121
 	;
 ENDBLOCK;
 
