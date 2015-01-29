@@ -6,15 +6,15 @@ begin data;
 dimensions ntax=9 nchar=17;
 format missing=? gap=- symbols="012";
 MATRIX
-Outgroup	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-Proticia_venezuelensis	1 0 ? 1 1 0 0 ? 0 1 0 0 0 0 ? 0 0
-Colombitherium_tolimense	1 0 ? ? 1 0 0 ? 0 2 0 0 0 0 ? 0 0
-Carolozittelia_tapiroides	2 1 0 ? 0 0 1 2 0 ? 0 0 0 1 0 0 1
-Propyrotherium_saxeum	2 0 ? 1 1 1 1 ? 0 ? 0 1 0 2 0 0 1
-Gryphodon_peruvianus	2 0 ? ? 0 ? 1 ? 0 ? 1 1 0 2 ? 1 0
-Baguatherium_jaureguii	2 0 1 1 ? 2 1 1 0 ? 1 1 ? 2 1 1 ?
-Pyrotherium_macfaddeni	2 0 1 1 1 2 2 1 1 2 1 1 1 2 0 1 1
-Pyrotherium_romeroi	2 0 1 1 1 2 2 1 1 2 1 1 1 2 0 1 1
+Outgroup	00000000000000000
+Proticia_venezuelensis	10?1100?010000?00
+Colombitherium_tolimense	10??100?020000?00
+Carolozittelia_tapiroides	210?00120?0001001
+Propyrotherium_saxeum	20?1111?0?0102001
+Gryphodon_peruvianus	20??0?1?0?1102?10
+Baguatherium_jaureguii	2011?2110?11?211?
+Pyrotherium_macfaddeni	20111221121112011
+Pyrotherium_romeroi	20111221121112011
 ;
 end;
 begin paup;
