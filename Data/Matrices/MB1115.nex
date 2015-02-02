@@ -5,7 +5,6 @@ Begin data;
     Format datatype=standard gap=- missing=?;
     Matrix
 	
-	MATRIX
 	Microperoryctes_longicauda		          011110002100102100100000211211211101101001100010000
 	Peroryctes_raffrayana		              011110002100102100000000101111101112100001100000000
 	Echymipera_rufescens		              1--11010211110210110000010111111110210000?201011001

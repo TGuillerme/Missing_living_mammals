@@ -30,6 +30,6 @@ Begin data;
     Pteropus_spec.          0010101010121110311?1?00
     Rhinolophus_rouxii      0101111021?00101401?1211
     Oryctolagus_cuniculus   10000?10203121013?10121?
-    Rodentia_(stem_species) 1?1111112?11111131110110
+    Rodentia_stem_species 1?1111112?11111131110110
 	;
 End;

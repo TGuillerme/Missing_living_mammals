@@ -1,21 +1,21 @@
 #NEXUS
 
 Begin data;
-    Dimensions ntax=12 nchar= 28;
-    Format datatype=standard gap=- missing=?;
-    Matrix
+	Dimensions ntax=12 nchar=28;
+	Format datatype=standard gap=-missing=?;
+	Matrix
 
-Simpsonotus             00000 00000 00000 00000 00000 000
-Colbertia               00000 00000 00000 10100 00000 ?00
-Oldfieldthomasia        00000 10000 00000 ?0100 11000 000
-Notopithecus            00010 10111 00001 20100 00101 210
-Protypotherium          00?10 2111? 1?001 20100 01101 210
-Campanorco              21000 1000? ???01 10100 01100 0?1
-Archaeohyrax            11101 20111 11111 11111 11110 010
-Griphotherion_peiranoi  11001 10110 00101 11000 00110 101
-Paedotherium            21101 20111 11001 11111 11110 110
-Hegetotherium           21101 20111 11001 11111 11110 110
-Trachytherus            21001 22111 01011 11111 11110 010
-Mesotherium             21001 22111 01011 01111 11110 010
-    ;
+Simpsonotus			0000000000000000000000000000
+Colbertia			0000000000000001010000000?00
+Oldfieldthomasia		000001000000000?010011000000
+Notopithecus			0001010111000012010000101210
+Protypotherium		00?102111?1?0012010001101210
+Campanorco			210001000????0110100011000?1
+Archaeohyrax			1110120111111111111111110010
+Griphotherion_peiranoi	1100110110001011100000110101
+Paedotherium			2110120111110011111111110110
+Hegetotherium		2110120111110011111111110110
+Trachytherus			2100122111010111111111110010
+Mesotherium			2100122111010110111111110010
+	;
 End;
