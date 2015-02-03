@@ -1,0 +1,203 @@
+%Authors guidlines: http://royalsocietypublishing.org/instructions-authors#question5
+
+\documentclass[12pt,letterpaper]{article}
+
+%Packages
+\usepackage{pdflscape}
+\usepackage{fixltx2e}
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{latexsym}
+\usepackage{url}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{array}
+\usepackage[version=3]{mhchem}
+\usepackage{ifthen}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{enumerate}
+\usepackage[osf]{mathpazo}
+\usepackage{dcolumn}
+\usepackage{lineno}
+\pagenumbering{arabic}
+
+
+%Pagination style and stuff
+\linespread{2}
+\raggedright
+\setlength{\parindent}{0.5in}
+\setcounter{secnumdepth}{0} 
+\renewcommand{\section}[1]{%
+\bigskip
+\begin{center}
+\begin{Large}
+\normalfont\scshape #1
+\medskip
+\end{Large}
+\end{center}}
+\renewcommand{\subsection}[1]{%
+\bigskip
+\begin{center}
+\begin{large}
+\normalfont\itshape #1
+\end{large}
+\end{center}}
+\renewcommand{\subsubsection}[1]{%
+\vspace{2ex}
+\noindent
+\textit{#1.}---}
+\renewcommand{\tableofcontents}{}
+\bibpunct{(}{)}{;}{a}{}{,}
+
+%---------------------------------------------
+%
+%       START
+%
+%---------------------------------------------
+
+\begin{document}
+
+%Running head
+\begin{flushright}
+Version dated: \today
+\end{flushright}
+\bigskip
+\noindent RH: Missing morphological data in living mammals
+
+\bigskip
+\medskip
+\begin{center}
+
+\noindent{\Large \bf Missing morphological data in living mammals}
+
+\bigskip
+
+\noindent {\normalsize \sc Thomas Guillerme$^1$$^,$$^2$$^*$, and Natalie Cooper$^1$$^,$$^2$}\\
+\noindent {\small \it 
+$^1$School of Natural Sciences, Trinity College Dublin, Dublin 2, Ireland.\\
+$^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, Ireland.}\\
+\end{center}
+\medskip
+\noindent{*\bf Corresponding author.} \textit{Zoology Building, Trinity College Dublin, Dublin 2, Ireland; E-mail: guillert@tcd.ie; Fax: +353 1 6778094; Tel: +353 1 896 2571.}\\
+\vspace{1in}
+
+%Line numbering
+\modulolinenumbers[1]
+\linenumbers
+
+%---------------------------------------------
+%
+%       ABSTRACT
+%
+%---------------------------------------------
+
+\newpage
+\begin{abstract}
+
+\end{abstract}
+
+\noindent ()\\
+
+\vspace{1.5in}
+
+\newpage 
+
+%---------------------------------------------
+%
+%       INTRODUCTION
+%
+%---------------------------------------------
+
+\section{Introduction}
+
+
+%---------------------------------------------
+%
+%       METHODS
+%
+%---------------------------------------------
+ 
+\newpage
+
+\section{Material and Methods}
+
+\section{Data collection}
+We need to use the same protocol as the GMPD to make sure our data are comparable. The original version used lots of online databases but luckily we can now just use Google Scholar! Into the Google Scholar search enter the species Latin Binomial as search keywords, followed by the search terms related to parasites. So for Marmota monax:
+
+parasite OR helminth OR virus OR bacteria OR fungi OR ectoparasite OR arthropod OR protozoa "Marmota monax"
+
+[Note that the quotation marks (" ") tell Google that you want the exact phrase Marmota monax, and the OR means it will contain Marmota monax and parasite or Marmota monax and helminth etc.]
+
+You then need to search the results for appropriate papers. This is tedious so I’d advise setting yourself a reasonable target, for example, do it for a few hours a day then do something else!
+
+You should also search for each squirrel genus independently; however I would only do this for genera with few papers on the species. If you did this for Marmota spp. you could be there forever and it’s not clear what you could do with that data.
+
+Finally you should search for common synonyms of the species. The original compiler of the database did this very thoroughly. However, I suggest just using the names from the 1993 taxonomy if they’ve changed between then and 2005. In theory the original compiler should have picked up all the old papers with data already, so you want to focus on the current taxonomy. 
+
+b) Saving the paper and reference
+Once you find a paper that looks useful download the paper and save it as a PDF. Also add the reference to EndNote. Not all the papers will end up being included in the database, but it’s quicker to add them to EndNote now and delete them later, than to add them to EndNote later.
+
+\section{search terms}
+
+\subsection{Mammalian orders terms}
+The searched mammalian order terms are available in search_terms_latin.txt or search_terms_meta.txt. The file containing the meta names is the Latin name files but with replacing the latin suffixes ([ia|ata|ea|a]) by a joker character (*) and by replacing the first letter by a upper/lower case meta character (e.g. [Aa]).
+
+\subsubsection{Ross Mounce data set}
+I selected all the matrices containing at least one of the mammalian orders names from Ross Mounce GitHub cladistic-data/nexus_files repository (accessed on the 02/12/2014).
+
+\subsection{Graeme Lloyd}
+Selecting the downloadable matrices
+
+\subsection{Morphobank}
+\textit{order}
+
+\subsection{Google scholars}
+20 first results since 2010 with the following key words:
+\textit{order} ("morphology" OR "morphological" OR "cladistic") AND characters matrix paleontology phylogeny
+
+\section{Wrong Bionmial names and typos}
+I fixed the wrong bionomial names format (e.g. H. sapiens) into the correct ones (e.g. Homo sapiens) manually using the PaleoDB and http://www.helsinki.fi/~mhaaramo/metazoa/deuterostoma/chordata/synapsida/eutheria/artiodactyla/anthracotheriidae.html and the Wilson Reeder database.
+I fixed typos and invalid characters in taxa names manually
+
+%---------------------------------------------
+%
+%       RESULTS
+%
+%---------------------------------------------
+
+\section{Results}
+
+%---------------------------------------------
+%
+%       DISCUSSION
+%
+%---------------------------------------------
+
+\section{Discussion}
+
+
+%Biology letters various stuff
+\section{Ethics statement}
+\section{Data accessibility statement}
+\section{Authors’ contributions statement}
+\section{Acknowledgements}
+\section{Funding statement}
+
+%\bibliographystyle{}
+%\bibliography{}
+
+
+%Tables
+%Figures
+
+
+%END
+\end{document}
