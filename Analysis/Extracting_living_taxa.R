@@ -7,8 +7,12 @@ source("functions.R")
 load.functions(test=FALSE) #Set test=FALSE to speed up the loading
 message("Done\n", appendLF=FALSE)
 
+#Fixing binomial names
+#system("sh ../Functions/fix_binomial.sh ../Data/Matrices_binomial/ ../Data/Matrices_binomial_change.csv")
+
+
 #List of matrices
-matrices_list<-list.files("../Data/Matrices/")
+matrices_list<-list.files("../Data/Matrices_binomial/")
 
 #transform verbose warnings in read.nexus.data in messages
 #Renaming the function (backup)
@@ -51,7 +55,7 @@ for(matrix in 1:length(matrices_list)){
     message(paste(matrices_list[matrix], ":",sep=""), appendLF=FALSE)
     #Try to load the matrix
     current_matrix<-NULL
-    try(current_matrix<-read.nex.dat(paste("../Data/Matrices/", matrices_list[matrix], sep="")), silent=TRUE)
+    try(current_matrix<-read.nex.dat(paste("../Data/Matrices_binomial/", matrices_list[matrix], sep="")), silent=TRUE)
 
     if(!is.null(current_matrix)) {
         #If successfully, proceed:
