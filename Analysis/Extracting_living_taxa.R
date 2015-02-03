@@ -75,3 +75,6 @@ extraction_table<-extraction_table[-1,]
 
 #Save the results as .rda
 save(extraction_table, file="../Data/List_of_matching_taxa.Rda")
+
+#Save the result as csv
+write.csv(extraction_table, file="../Data/List_of_matrching_taxa.csv")
