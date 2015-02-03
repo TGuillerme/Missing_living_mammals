@@ -1,0 +1,19 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=9 nchar= 18;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Chrysochloridae	0100––0–000–101001
+Tenrecidae		1?0?1–0–000–001001
+Macroscelidinae	110?1–0–010–111001
+Rhynchocyoninae	110110101001001001
+Tubulidentata	100111101000011000
+Bibymalagasia	100111101001011000
+StemHyracoidea	1?0??0111000110110
+Procaviidae		000100111100110110
+Tethytheria		?01100111?10110110
+    ;
+End;

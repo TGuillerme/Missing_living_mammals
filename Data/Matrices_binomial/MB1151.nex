@@ -1,0 +1,20 @@
+#NEXUS
+Begin data;
+    Dimensions ntax=12 nchar=16;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+	
+	Procervulus_praelucidus		          0000000001000000
+	Euprox_robustus		                  0001000000100010
+	Euprox_furcatus		                  0001000000100110
+	Ligeromeryx_praestans		          1000000111011001
+	Lagomeryx_parvulus		              2110110201?0??10
+	Lagomeryx_ruetimeyeri		          2110110201001010
+	Lagomeryx_triacuminatus		          1120101101100010
+	Lagomeryx_sp.		                  11101011?1??1010
+	Lagomeryx_coberti		              1110101111101011
+	Lagomeryx_tsaidamensis		          12101??1?1?010??
+	Lagomeryx_complicidens		          1220201211100101
+	Lagomeryx_manai		                  1220201211111101
+	;
+END;

@@ -1,0 +1,18 @@
+#NEXUS 
+
+[Tsubamoto, T., Rougier, G. W., Isaji, S., Manabe, M., and Forasiepi, A. M. 2004 New Early Cretaceous spalacotheriid symmetrodont mammal from Japan. Acta Palaeontologica Polonica 49:329-346.]
+
+Begin data;
+	Dimensions ntax=8 nchar=29;
+	Format datatype=standard symbols="0123" gap=-;
+	Matrix
+Kuehneotherium	00000000000000000000000000000
+Zhangheotherium	00111001110000010000001000001
+Spalacotherium	11011111110010010000001110011
+Spalacotheroides	1???2?01110011010?110012?????
+Spalacotheridium	1???21111100110111121?1??????
+Spalacolestes	1???2111111111111112111211110
+Symmetrodontoides	1???3?11111111111112111??1???
+Symmetrolestes	11?0101111001?????????1110011
+;
+end;

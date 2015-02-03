@@ -1,0 +1,348 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 06.35.16 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=22;
+	TAXLABELS
+		'Canis lupus'
+		'Cryptoprocta ferox'
+		'Dinictis felina'
+		'Pseudaelurus ssp.'
+		'Metailurus major'
+		'Metailurus parvulus'
+		'Paramachairodus'
+		'Machairodus aphanistus'
+		'Nimravides ssp.'
+		'Dinofelis cristata'
+		'Dinofelis barlowi'
+		'Dinofelis petteri'
+		'Amphimachairodus giganteus'
+		'Xenosmilus hodsonae'
+		'Homotherium crenatidens'
+		'Homotherium latidens'
+		'Homotherium serum'
+		'Megantereon cultridens'
+		'Megantereon nihowanensis'
+		'Megantereon whitei'
+		'Smilodon fatalis'
+		'Smilodon populator'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=50;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Upper incisor arcade'
+		 [2] 'Upper C1 morphology'
+		 [3] 'Carinae on Upper C1'
+		 [4] 'lower canine morphology'
+		 [5] 'Upper M2'
+		 [6] 'Upper M1'
+		 [7] 'Upper P4 protocone'
+		 [8] 'Upper P4 protocone angulation'
+		 [9] 'Upper P4 protocone position'
+		 [10] 'Upper P4 parastyle'
+		 [11] 'Upper P4 anterior cingulum'
+		 [12] 'Upper P4 anterolateral edge'
+		 [13] 'Relative size of Upper P4 to CBL'
+		 [14] 'Relative size of Upper P3 to CBL'
+		 [15] 'Upper P3 posterior cingulum'
+		 [16] 'Upper P3 parastyle'
+		 [17] 'Mediolateral width of Upper P3'
+		 [18] 'Upper P2'
+		 [19] 'Upper P1'
+		 [20] 'Lower m3'
+		 [21] 'Lower m2'
+		 [22] 'Lower m1'
+		 [23] 'Anterior edge of lower m1 protoconid'
+		 [24] 'Relative height of lower m1 major cusps'
+		 [25] 'carnassial rotation'
+		 [26] 'Relative size of lower p4'
+		 [27] 'Lower p4 paraconid'
+		 [28] 'Lower p2'
+		 [29] 'Lower p1'
+		 [30] 'Mandibular glenoid'
+		 [31] 'Preglenoid process'
+		 [32] 'Infraorbital fenestra'
+		 [33] 'Anterior rim of orbit'
+		 [34] 'Snout area'
+		 [35] 'Size of mastoid process'
+		 [36] 'Jugal-maxilla suture'
+		 [37] 'Upper P3-P4 junction relative to infraorbital fenestra'
+		 [38] 'Nasal extension past maxilla-frontal suture'
+		 [39] 'Jugal postorbital process'
+		 [40] 'Facial length relative to CBL'
+		 [41] 'Angle between occipital condyles'
+		 [42] 'Relative width across incisor arcade'
+		 [43] 'Relative palatal width across upper P3'
+		 [44] 'Alisphenoid canal'
+		 [45] 'Posterior lacerate foramen'
+		 [46] 'Mandibular flange'
+		 [47] 'Relative size of coronoid process'
+		 [48] 'Retroarticular process'
+		 [49] 'Mandibular fossa'
+		 [50] 'Posterior part of horizintal mandibular ramus'
+	;
+	
+	STATELABELS
+		1
+		'strongly partabolic'
+		'slightly parabolic'
+		'straight'
+		,
+		2
+		'conical-oval in cross section'
+		'primitive sabertoothed, flattened'
+		'greatly flattened and scimitartoothed'
+		'greatly flattened and dirktoothed'
+		,
+		3
+		'absence of crenulations and serrations'
+		'presence of crenulations'
+		'presence of serrations'
+		,
+		4
+		'large and caniniform'
+		'reduced'
+		'greatly reduced and incisiform'
+		,
+		5
+		'presence'
+		'absence'
+		,
+		6
+		'large, multicuspid m1 anteriorly directed'
+		'reduced, multicuspid m1 transversely directed'
+		'greatly reduced, knoblike'
+		'absence'
+		,
+		7
+		'ver latge, elongate usually cusped'
+		'reduced'
+		'markedly reduced and usually uncusped'
+		'strongly reduced or absent'
+		,
+		8
+		'strongly anteriorly directed'
+		'lingually directed'
+		,
+		9
+		'rostral to paracone'
+		'at paracone-parastyle junction'
+		'medial to paracone'
+		,
+		10
+		'absent or indistinct'
+		'large'
+		,
+		11
+		'indistinct'
+		'distinct, often forming ridge'
+		'forming distinct ectoparastyle'
+		,
+		12
+		'rounded and medially directed'
+		'straight or sinusoid'
+		'distinctly medially directed forming trough'
+		,
+		13
+		'short'
+		'large'
+		,
+		14
+		'large'
+		'reduced'
+		'greatly reduced'
+		,
+		15
+		'forming a ridge'
+		'forming posterior accessory cusp'
+		'indistinct'
+		,
+		16
+		'indistinct or absent'
+		'distinct cusp'
+		,
+		17
+		'narrow across the metacone relative to paracone'
+		'wide across the metacone relative to paracone'
+		,
+		18
+		'unreduced and multicuspid'
+		'greatly reduced'
+		'absent'
+		,
+		19
+		'unreduced'
+		'greatly reduced'
+		'absent'
+		,
+		20
+		'present'
+		'absent'
+		,
+		21
+		'present'
+		'absent'
+		,
+		22
+		'large talonid basin with 3 cusps'
+		'distinct talonid with or without metaconid'
+		'little if any talonid'
+		,
+		23
+		'forming curved (sickleshaped) edge'
+		'short vertical edge at notch followed by long straight crest'
+		,
+		24
+		'low paraconid relative to protoconid'
+		'tall paraconid relative to protoconid'
+		,
+		25
+		'absent'
+		'present'
+		,
+		26
+		'small relative to mandible length'
+		'large relative to mandible length'
+		,
+		27
+		'distinctly asymmetrical'
+		'bilaterally symmetrical'
+		,
+		28
+		'present'
+		'absent'
+		,
+		29
+		'present'
+		'absent'
+		,
+		30
+		'facing anteriorly'
+		'facing ventrally'
+		,
+		31
+		'weak or absent'
+		'strongly developed'
+		,
+		32
+		'situated distinctly anterior to orbit'
+		'close to orbit'
+		,
+		33
+		'situated above or behind P4 metastyle'
+		'above P4 paraconbe or at paracone-parastyle junction'
+		'State 2'
+		'State 2'
+		'State 2'
+		,
+		34
+		'low relative to braincase'
+		'distinctly elevated'
+		,
+		35
+		'small, sometimes knoblike'
+		'well developed and elongate'
+		'distinctly enlarged'
+		'enormous, obscuring bulla in lateral view'
+		,
+		36
+		'strongly sinusoid'
+		'weakly sinusoid or straight'
+		,
+		37
+		'posterior to infraorbital fenestra'
+		'anterior to infraorbital fenestra'
+		,
+		38
+		'yes'
+		'no'
+		,
+		39
+		'small, rounded, often almost absent'
+		'tall and triangular'
+		,
+		40
+		'elongate'
+		'abbreviated'
+		,
+		41
+		'low'
+		'high'
+		,
+		42
+		'narrow'
+		'wide'
+		'extremely wide'
+		,
+		43
+		'narrow relative to CBL'
+		'wide relative to CBL'
+		'extremely wide relative to CBL'
+		,
+		44
+		'present'
+		'absent'
+		,
+		45
+		'confluent with petrobasilar foramen'
+		'separate from petrobasilar foramen'
+		,
+		46
+		'absent'
+		'small'
+		'large'
+		,
+		47
+		'large'
+		'short'
+		,
+		48
+		'posteriorly or posteroventrally directed'
+		'ventrally directed'
+		,
+		49
+		'terminates posterior to carnassial'
+		'terminates well anterior to posterior edge of carnassial'
+		,
+		50
+		'slender relative to ramus length'
+		'robust relative to ramus length'
+		,
+	;
+	
+	MATRIX
+	Canis_lupus										00000010000000000000000000000000000000000000000000
+	Cryptoprocta_ferox								10001200110110200011110001100011200100011010000000
+	Dinictis_felina									12101100201210000121010001111111201100010010110000
+	Pseudaelurus_ssp.								21001100111110101111111101101011201101111010000011
+	Metailurus_major									21001211111110011221111101111111201101011011000011
+	Metailurus_parvulus								21001211111110111221111001111111201101111011000011
+	Paramachairodus									2101120011111001112111110110111120110111101?000011
+	Machairodus_aphanistus							22111200111110011121111101101111101101111?10000011
+	Nimravides_ssp.									21011210011110011121111101101001?0110111101?000011
+	Dinofelis_cristata								10011201111110011121121101111111101?0101?111000011
+	Dinofelis_barlowi								?1?11211111110011121121101111111101?01?11?11000011
+	Dinofelis_petteri								?0?11211111110011121111101111011101101?1??11000011
+	Amphimachairodus_giganteus					03221211212111111121111111101111112110011111011011
+	Xenosmilus_hodsonae								0322133120011220122112?111111111112?10011211011111
+	Homotherium_crenatidens						03221231210112211221121111111111112110011211011111
+	Homotherium_latidens							02221231210112211221121111111111112?10011211011111
+	Homotherium_serum								02221231210112211221121111111111112?10011211011111
+	Megantereon_cultridens							13021221111111011121111111111111112100011011021111
+	Megantereon_nihowanensis						13021221111111011121121111111111112100011011021111
+	Megantereon_whitei								13021221111111011221121111111111112100011011021111
+	Smilodon_fatalis									13121211212111111221111111111111113100011121011111
+	Smilodon_populator								13121221212111111221111111111111113100011121011111
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 50;
+ENDBLOCK;

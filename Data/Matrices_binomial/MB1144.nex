@@ -1,0 +1,18 @@
+#NEXUS
+Begin data;
+    Dimensions ntax=10 nchar=32;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+	Aaptoryctes_ivyi		                 1111111211110011?111001111111100
+	Asioryctes_nemegetensis		             00000000000000000000000000000000
+	Eoryctes_melanus		                 111110112000??21????010121100101
+	Ottoryctes_winkleri		                 11111000200011211101010121100000
+	Palaeoryctes_cruoris		             ????1100111110???101000121111111
+	Palaeoryctes_jepseni		             ?111100120001010????0?01?1110111
+	Palaeoryctes_puercensis		             ?1111002200000101110111001101101
+	Palaeoryctes_punctatus		             1111100??000??10????????211??111
+	Aceroryctes_dulcis		                 ?????????001??????0101012110?001
+	Lainoryctes_youzwyshyni		             ?????????????????10?001121100111
+	;
+END;

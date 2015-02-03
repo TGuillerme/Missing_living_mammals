@@ -1,0 +1,19 @@
+#NEXUS
+
+[!Martin, T. and Averianov, A. O. 2004. A new docodont (mammalia) from the middle jurassic of kyrgyzstan, central asia. Journal of Vertebrate Paleontology 24:195-201.]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=8 NCHAR=7;
+	FORMAT SYMBOLS= "0 1 2 3" MISSING=? GAP=-;
+MATRIX
+Woutersia				0000000
+Borealestes				0011001
+Haldanodon				0011011
+Docodon					0011011
+Simpsonodon				1111201
+Tashkumyrodon_gen.nov.	1001100
+Sibirotherium			1001300
+Tegotherium				1101300
+;
+end;
+

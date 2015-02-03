@@ -1,0 +1,606 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-7 08.36.26 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=23;
+	TAXLABELS
+		'Enaliarctos emlongi'
+		'Pteronarctos goedertae'
+		'Callorhinus ursinus'
+		'Desmatophoca oregonensis'
+		'Allodesmus gracilis'
+		'Erignathus barbatus'
+		'Monachus monachus'
+		'Prototaria primigenia'
+		'Proneotherium repenningi'
+		'Neotherium mirum'
+		'Kamtschatarctos sinelnikovae'
+		'Pseudotaria muramotoi'
+		'Imagotaria downsi'
+		'Pelagiarctos sp.'
+		'Pontolis magnus'
+		'Dusignathus santacruzensis'
+		'Dusignathus seftoni'
+		'Gomphotaria pugnax'
+		'Aivukus cedrosensis'
+		'Protodobenus japonicus'
+		'Ontocetus emmonsi'
+		'Valenictus chulavistensis'
+		'Odobenus rosmarus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=90;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Rostral process of premaxilla'
+		 [2] 'anterior narial opening'
+		 [3] 'Ascending process of premaxilla along nasal'
+		 [4] 'Nasal posterior end'
+		 [5] 'Incisive foramen'
+		 [6] 'Infraorbital foramen'
+		 [7] 'Ventral tuberosity of zygomatic root'
+		 [8] 'Anteroventral process of jugal'
+		 [9] 'Palate'
+		 [10] 'Palatal margin of maxilla'
+		 [11] 'Palatine'
+		 [12] 'Hamular process of pterygoid'
+		 [13] 'Pterygoid strut'
+		 [14] 'Fossa muscularis on orbital wall'
+		 [15] 'Antorbital process'
+		 [16] 'Supraorbital process'
+		 [17] 'Interorbital bar'
+		 [18] 'Postorbital process of Jugal'
+		 [19] 'Zygomatic process of squamosal'
+		 [20] 'Orbital vacuity'
+		 [21] 'Optic foramen and orbitosphenoid'
+		 [22] 'Internal auditory meatus'
+		 [23] 'Epitympanic recess'
+		 [24] 'Anterior opening of carotid canal'
+		 [25] 'Squamosal fossa on external auditory meatus'
+		 [26] 'Glenoid fossa'
+		 [27] 'Tranverse ridge on squamosal'
+		 [28] 'Pseudosylvian sulcus'
+		 [29] 'Bony tentorium'
+		 [30] 'Basioccipital'
+		 [31] 'Posterior lacerate foramen'
+		 [32] 'Lambdoidal crest'
+		 [33] 'Mastoid process'
+		 [34] 'Paroccipital process'
+		 [35] 'Mandible: fusion of mandibular symphysis'
+		 [36] 'Mandible: length of mandibular symphysis'
+		 [37] 'Mandible: genial tuberosity'
+		 [38] 'Mandible: anterior portion of symphyseal region'
+		 [39] 'Mandible: horizontal ramus'
+		 [40] 'Mandible: mandibular furrow'
+		 [41] 'Mandible: edentulous mandibular terminus'
+		 [42] 'Mandible: posteroventral terminus of mandibular symphysis'
+		 [43] 'Mandible: depth of horizontal ramus'
+		 [44] 'Mandible: mandibular arch'
+		 [45] 'Mandible: ventral border'
+		 [46] 'Mandible: enlarged digastric insertion'
+		 [47] 'Mandible: mandibular condyle'
+		 [48] 'Mandible: mandibular foramen'
+		 [49] 'Mandible: medial shelf of angular process'
+		 [50] 'Mandible: base of coronoid process'
+		 [51] 'Upper Incisors, number'
+		 [52] 'Upper I3 proportions'
+		 [53] 'Lower incisors: number'
+		 [54] 'Lower Incisors: relative size'
+		 [55] 'Upper Canine'
+		 [56] 'Lower canines: size compared to upper canines'
+		 [57] 'Lower canine: posterior crista'
+		 [58] 'Lower canines: longitudinal fluting'
+		 [59] 'Lower canines: root'
+		 [60] 'Lower canines: orientation'
+		 [61] 'Lower premolars'
+		 [62] 'Postcanines: tooth enamel'
+		 [63] 'Postcanines: crowns'
+		 [64] 'Postcanines: root lobes'
+		 [65] 'Lower postcanines: tooth row length'
+		 [66] 'Lower postcanines: paraconid cusps'
+		 [67] 'Lower postcanines: lingual cingula'
+		 [68] 'Lower premolars: hypoconid cusps'
+		 [69] 'Lower postcanines: talonid basin'
+		 [70] 'Lower postcanines: metaconid'
+		 [71] 'Upper P1-2, cingulum'
+		 [72] 'Lower P2: rooting'
+		 [73] 'Lower P3-4: rooting'
+		 [74] 'Upper P3, roots'
+		 [75] 'Upper P4, protocone shelf'
+		 [76] 'Upper P4, roots'
+		 [77] 'Upper M1, roots'
+		 [78] 'Lower M1'
+		 [79] 'Lower M1: rooting'
+		 [80] 'Upper M2, roots'
+		 [81] 'Lower M2'
+		 [82] 'Postcanine tooth wear'
+		 [83] 'Humerus, deltoid tubercle'
+		 [84] 'Humerus, diameter of distal trochlea'
+		 [85] 'Radius, distal end'
+		 [86] 'Metacarpal I, insertion of pollicle extensor'
+		 [87] 'Scapholunar'
+		 [88] 'Astragalus, calcaneal process'
+		 [89] 'Calcaneum, calcaneal tuber'
+		 [90] 'Entocuneiform/mesocuneiform articulation'
+	;
+	
+	STATELABELS
+		1
+		'absent'
+		'present'
+		,
+		2
+		'''large'
+		'State 1'
+		'State 2'
+		,
+		3
+		'''overlap with nasal long, no contact of nasal and maxilla'''
+		'''short, no contact of ascending process and frontal'''
+		'very short'
+		,
+		4
+		'converging'
+		'''parallel with broad V-shaped frontal/maxillary suture'''
+		'''parallel with tranversely straight frontal/maxillary suture'''
+		'diverging'
+		'penetrating to frontal'
+		,
+		5
+		'distinct pair'
+		'foramina coalesced'
+		'trilobed pits'
+		'single pit or reduced'
+		,
+		6
+		'small'
+		'large'
+		,
+		7
+		'absent'
+		'present'
+		,
+		8
+		'moderate'
+		'''long, reaching M1 alveolus'''
+		'absent'
+		,
+		9
+		'flat'
+		'arched tranversely'
+		'arched tranversely and longitudinally'
+		,
+		10
+		'slightly divergent'
+		'nearly parallel'
+		'posteriorly very wide'
+		,
+		11
+		'small'
+		'long and posterlaterally expanded'
+		'''telescoped, underlying alisphenoid'''
+		,
+		12
+		'small and narrow'
+		'large and broad'
+		,
+		13
+		'slender'
+		'dorsoventrally thin and laterally projected'
+		'dorsoventrally thick and laterally broad'
+		'laterally thin and broad'
+		,
+		14
+		'present'
+		'absent'
+		,
+		15
+		'small ridge on frontal'
+		'prominent on frontal and maxilla'
+		'prominent only on maxilla'
+		'absent'
+		,
+		16
+		'small bump'
+		'absent'
+		'''large and shelf-like'''
+		,
+		17
+		'''moderate in width, broader than intertemporal region'''
+		'''narrow, parallel-sided'''
+		'very broad and short'
+		'State 3'
+		,
+		18
+		'small'
+		'dorsally projected'
+		,
+		19
+		'long and slender'
+		'short and slender'
+		'dorsoventrally broad'
+		'exaggerated'
+		,
+		20
+		'absent'
+		'''present, anteriorly positioned'''
+		'''present, posteriorly positioned'''
+		,
+		21
+		'plate-like'
+		'funnel-shaped'
+		,
+		22
+		'rounded'
+		'bilobed'
+		'canals for nerves VII and VIII separated'
+		,
+		23
+		'small'
+		'large'
+		'very large'
+		,
+		24
+		'proportionate'
+		'retracted'
+		,
+		25
+		'present'
+		'reduced'
+		,
+		26
+		'deep'
+		'shallow'
+		'laterally shortened'
+		,
+		27
+		'absent'
+		'present'
+		,
+		28
+		'''present, deep'''
+		'reduced or absent'
+		,
+		29
+		'far from petrosal'
+		'appressed to petrosal'
+		'reduced'
+		,
+		30
+		'''narrow and parallel-sided'''
+		'broad and pentagonal'
+		,
+		31
+		'rounded'
+		'tranversely expanded'
+		'fissure'
+		,
+		32
+		'''crestlike, posterodorsally projected'''
+		'''flattened, anterodorsally projected'''
+		,
+		33
+		'small'
+		'large'
+		'very large as widest part of skull'
+		'pachyostotic'
+		,
+		34
+		'small and separated from mastoid process'
+		'enlarged posteriorly but still separated from mastoid process'
+		'moderately sized and joined with mastoid process by continous ridge'
+		'''flattened and plate-like'''
+		,
+		35
+		'Absent'
+		'Present'
+		,
+		36
+		'Less than 50% of length of horizontal ramus'
+		'Greater than 50% of length of horizontal ramus'
+		,
+		37
+		'Absent or indistinct'
+		'Present; developed as small tubercle or process on anterior portion of ramus in lateral view'
+		'''Present'
+		'Present and well developed; extends well below ventral margin of ramus in lateral view'
+		'State 2'
+		,
+		38
+		'Smooth, compact bone'
+		'''Smooth, compact bone'''
+		'Rugose, vascular bone'
+		'''Rugose, vascular bone'''
+		,
+		39
+		'horizontal'
+		'upturned'
+		,
+		40
+		'absent'
+		'anterodorsal end of mandibles have a longitudinal furrow anteriorly'
+		,
+		41
+		'absent'
+		'present'
+		,
+		42
+		'Same level or anterior to p1 or p2'
+		'Posterior to the level of p2'
+		,
+		43
+		'deepest part of horizontal ramus posterior to mandibular symphysis'
+		'deepest part of horizontal ramus at posteroventral terminus of symphysis'
+		,
+		44
+		'Nearly parallel'
+		'Sharply divergent'
+		,
+		45
+		'Straight'
+		'Sinuous'
+		,
+		46
+		'Absent'
+		'Present'
+		,
+		47
+		'At or slightly above level of tooth row'
+		'Elevated above tooth row'
+		,
+		48
+		'Directed anteroventrally'
+		'Directed anterodorsally'
+		,
+		49
+		'Does not form medial shelf'
+		'Forms small medial shelf'
+		,
+		50
+		'Narrow (Less than 42% of mandible length)'
+		'''Narrow (Less than 42% of mandible length)'''
+		'Broad (Greater than or equal to 42% of mandible length)'
+		'''Broad (Greater than or equal to 42% of mandible length)'''
+		,
+		51
+		'3'
+		'2'
+		'1'
+		'upper incisors absent'
+		,
+		52
+		'moderate'
+		'long and slender'
+		'premolariform'
+		'absent'
+		,
+		53
+		'2 incisors'
+		'1 incisor'
+		'incisors absent'
+		,
+		54
+		'Lower incisors of equal size, form transverse arcade'
+		'''Lower incisors of equal size, form transverse arcade'''
+		'Lateral incisors greater in size than medial incisors, medial incisor placed posteromedial to lateral incisor'
+		'''Lateral incisors greater in size than medial incisors, medial incisor placed posteromedial to lateral incisor'''
+		,
+		55
+		'Proportionate'
+		'tusk-like'
+		'''tusk-like with globular osteodentin'''
+		,
+		56
+		'Nearly equal (100-80%) and caniniform'
+		'''Nearly equal (100-80%) and caniniform'''
+		'Reduced (75-20%) and premolariform'
+		'''Reduced (75-20%) and premolariform'''
+		'Lower canine absent'
+		,
+		57
+		'present'
+		'absent'
+		,
+		58
+		'Absent'
+		'Present'
+		,
+		59
+		'Oval or circular in cross section'
+		'Bilobate in cross section or prominent longitudinal labial sulcus'
+		,
+		60
+		'Not procumbent and vertically oriented'
+		'Procumbent'
+		,
+		61
+		'P1-4 Present'
+		'P1-3 present, P4 Absent'
+		'Premolars absent'
+		,
+		62
+		'Well developed'
+		'Thin or patchy'
+		'Cementum only'
+		,
+		63
+		'Laterally compressed'
+		'Bulbous'
+		,
+		64
+		'Root lobes of postcanine teeth of equal or narrower width than crowns'
+		'Root lobes of postcanine teeth inflated and wider than crowns'
+		,
+		65
+		'Long (length of tooth row greater than 40% of the mandible length)'
+		'''Long (length of tooth row greater than 40% of the mandible length)'''
+		'Short (length of tooth row less than or equal to 40% of the mandible length)'
+		'''Short (length of tooth row less than or equal to 40% of the mandible length)'''
+		,
+		66
+		'Present and well developed'
+		'Absent or reduced'
+		,
+		67
+		'Present and smooth'
+		'Present and rough or crenulated.'
+		,
+		68
+		'Present'
+		'Absent'
+		,
+		69
+		'Absent'
+		'Slight concavity or small shelf'
+		,
+		70
+		'Present'
+		'Reduced'
+		'Absent'
+		,
+		71
+		'distinct but small'
+		'well developed with cuspules'
+		'weak and bulbous'
+		'P1-P2 absent'
+		,
+		72
+		'Double or bilobate'
+		'Single'
+		,
+		73
+		'Double'
+		'Single'
+		,
+		74
+		'double rooted'
+		'single and bilobed'
+		'single and cylindrical'
+		'P3 absent'
+		,
+		75
+		'anteromedially placed'
+		'posteromedially placed with small cuspules'
+		'reduced or absent'
+		,
+		76
+		'triple rooted'
+		'double rooted'
+		'single rooted'
+		'P4 absent'
+		,
+		77
+		'triple rooted'
+		'double rooted'
+		'single rooted'
+		'M1 absent'
+		,
+		78
+		'Present'
+		'Absent'
+		,
+		79
+		'Double rooted'
+		'Single rooted'
+		,
+		80
+		'double rooted'
+		'single rooted'
+		'M2 absent'
+		,
+		81
+		'Present'
+		'Absent'
+		,
+		82
+		'Absent'
+		'Minor wear on anterior and posterior cusps or apical wear'
+		'Large wear facets on anterior and posterior edges'
+		'Heavily worn and polished'
+		,
+		83
+		'on pectoral crest'
+		'on lateral edge of crest'
+		'off crest'
+		,
+		84
+		'medial lip same or smaller diameter as distal capitulum'
+		'medial lip diameter greater than distal capitulum'
+		,
+		85
+		'unexpanded'
+		'expanded with small radial process'
+		'expanded with large radial process'
+		,
+		86
+		'smooth'
+		'pit'
+		'rugosity'
+		,
+		87
+		'no pit for magnum'
+		'''well-formed pit'''
+		,
+		88
+		'absent'
+		'present'
+		'elongated'
+		,
+		89
+		'straight'
+		'medially prominent'
+		,
+		90
+		'abutting'
+		'overlapping'
+		,
+	;
+	
+	MATRIX
+	Enaliarctos_emlongi				1000000000000000000001000000000000000000000000000000000000000000000000000000100100????????
+	Pteronarctos_goedertae				100000100000000000000?0000000000020010000000000000000000000000001000000000111001000???????
+	Callorhinus_ursinus				1003000001000122000100001001000002000000001000011?0000000000000011010201112220011000100000
+	Desmatophoca_oregonensis				00241001?2101130112001210000000001001000001001001001010000000000100001100021?0010000??????
+	Allodesmus_gracilis				02242001?21011301120012101010?100100100001101101000101000000001111010221122220010100100111
+	Erignathus_barbatus				10240012020031213130022002012020300010000?000110000000000000000010000000002110021?00100200
+	Monachus_monachus					002400020200312131310220020120103000000000100100011000000000000010100000002110021100100200
+	Prototaria_primigenia				1100001000002010000101100010100002????????????????00??0???????????????1??0110??1??????????
+	Proneotherium_repenningi				110000100000211000110??00000?00002000000001000001000000000000000100000100011000101?????111
+	Neotherium_mirum					11100010001021111011011000001000030010000010000110000000000000001000111000110000010121111?
+	Kamtschatarctos_sinelnikovae			?????0??0?102???101??????0????????00100?0010000?10??????????0000100011?00???000001????????
+	Pseudotaria_muramotoi				??100010101021101??101100001100003?????????????????0??0??????????????????0?11??0??????????
+	Imagotaria_downsi					11100000101021111011011001011100130120000010?00110?0010000100010101?121??111100??10121111?
+	Pelagiarctos_sp.					??????????????????????????????????012100001000??????01?000100010?01011?00????00?01????????
+	Pontolis_magnus					11110000101001111011011001011100130021000110111001001?00100001111100121001?210000201?11111
+	Dusignathus_santacruzensis			??????????????????1???1?010?1??01?0120000111110010?00110100101111101122112???01?120111????
+	Dusignathus_seftoni				1111211010???11120110?1?01011?00131121000?11110010?01?10110101111?????21122220111?012??11?
+	Gomphotaria_pugnax					11110000101??11120110???0101?1?00?0111000110000010112?10110111111?0???21122220111301211111
+	Aivukus_cedrosensis				1122011010???111211??11011011???130??000?0?00?????12??00??0002????????21122220121301221???
+	Protodobenus_japonicus				1122?1??202121?12????????101?1????01000000111010100001211000011011010221122221?211????????
+	Ontocetus_emmonsi					112121102021211121121110110111012301211011110110101201211000021011010221122221?2111122111?
+	Valenictus_chulavistensis			112101102021211121121?101101?101231111111?11011000332?22????1?????????3??3?331?21?21221111
+	Odobenus_rosmarus					11223110202121112112111011011101231111011011011111222?211000221011010221122331?21321221111
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 90;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS ;
+ENDBLOCK;
+BEGIN MACCLADE;
+Version 4.0 87 ; LastModified 1670560655 ; FileSettings editor 0 0 52 1 ; Singles 000 ; Editor 00011001111111100100010010 0 24 Geneva 9 100 1 all ; EditorPosition 44 8 691 963 ; TreeWindowPosition 44 8 696 970 ; ListWindow Characters closed Geneva 9 50 10 273 523 000 ; ListWindow Taxa closed Geneva 9 50 10 276 490 100000000 ; ListWindow Trees closed Geneva 9 50 10 276 490 ; ListWindow TypeSets closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ListWindow ExSets closed Geneva 9 50 10 276 490 ; ListWindow CharSets closed Geneva 9 50 10 276 490 ; ListWindow TaxSets closed Geneva 9 50 10 276 490 ; ListWindow CharPartitions closed Geneva 9 50 10 276 490 ; ListWindow CharPartNames closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ChartWindowPosition 50 30 688 964 ; StateNamesSymbols open Geneva 9 10 462 345 192 535 ; WindowOrder Data States ; OtherSymbols &/ 00 ?- ; Correlation 0 0 1000 0 0 10011010 ; Salmo 00000001 ; EditorFile 2 ; ExportHTML _ MOSS 100 110000 ; PrettyPrint 10 ; EditorToolsPosition 577 48 115 165 ; TreeWindowProgram 10 ; TreeWindow 0000 ; Continuous 0 3 1 ; Calculations 0000001 ; SummaryMode 0 0 0 ; Charts Geneva 9 (normal) 0010 ; NexusOptions 0 0 50 001011011 ; TipLabel 1 ; TreeFont Geneva 9 (normal) ; TreeShape 1.0 1.0 0100 ; TraceLabels 0101 ; ChartColors 0 0 65535 9 0 1 ; ChartBiggestSpot 1 ; ChartPercent 10 ; ChartBarWidth 10 1 ; ChartVerticalAxis 10101 ; ChartMinMax 0 ; TraceAllChangesDisplay 1 1 ; BarsOnBranchesDisplay 0 0 60000 10000 10000 10000 10000 60000 65000 65000 65000 6 1 0000101 ; ContinuousBranchLabels 0 ; AllStatesBranchLabels 1 ; IndexNotation 2 1 ; PrintTree 10.00 2 2 2 2 2 2 2 2 2 2 2 Geneva 9 (normal) Geneva 10 (normal) Geneva 9 (normal) Geneva 9 (normal) Geneva 9 (bold ) Geneva 9 (normal) Geneva 9 (normal) 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 15407 27493 -39 4 -40 0 1 2 1 8 0 0 0 2 1000111000000000000100000111000 ; MatchChar 00 . ; EntryInterpretation 00 ; ColorOptions 00 ; TreeTools 0 5 4 0 10 4 0 00100111111101110 ; EditorTools 0 0 0 1000 0 0 6 3 1 100010101110011 ; PairAlign 2 2 3 2 1 1 2 1 3 1010 ; BothTools 1 ;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; timeSaved 1352936497405 ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 3911595062107251537 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 4573493673694734958 ; checksumv 0 2 1955323101 null getNumChars 90 numChars 90 getNumTaxa 23 numTaxa 23 short true bits 31 states 31 sumSquaresStatesOnly 9298.0 sumSquares 9298.0 NumFiles 1 NumMatrices 1 ; endTell ; getWindow ; tell It ; suppress ; setResourcesState true false 100 ; setPopoutState 400 ; setExplanationSize 0 ; setAnnotationSize 0 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 700 464 ; setLocation 8 8 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; desuppress ; endTell ; endTell ;  Dàå€«  ÿ40 €€ÿÿ
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 90 ;
+ENDBLOCK;

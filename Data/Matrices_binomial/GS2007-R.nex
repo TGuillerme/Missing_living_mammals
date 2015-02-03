@@ -1,0 +1,49 @@
+#NEXUS
+[WARNING: This matrix does not contain all the characters, see the original at N. Rybczynski-2007~Castorid Phylogenetics: Implications for the Evolution of Swimming and Tree-Exploitation in Beavers-Journal of Mammalian Evolution14(1)1:35]
+[Original matrix contains=88]
+
+Begin data;
+	Dimensions ntax=38 nchar=2;
+	Format datatype=standard gap=- missing=?;
+	Matrix
+	
+    Agnotocastor_coloradensis   02
+    Agnotocastor_praeteraedens  02
+    Agnotocastor_sp             02
+    Anchitheriomys              01
+    Capacikala_sp.1             01
+    Capacikala_sp.2             0?
+    Castor_fiber                02
+    Castoroides_ohioensis       11
+    Dipoides_sp                 0?
+    Dipoides_smithi             1?
+    Dipoides_stirtoni           12
+    Dipoides_tanneri            01
+    Eucastor_tortus             00
+    Euhapsis_breugerorum        02
+    Euhapsis_ellicotae          01
+    Euroxenomys_minutum         0?
+    Eutypomys_thomsoni          00
+    Fossorcastor_greeni         01
+    Hystricops_venustus         02
+    Migmacastor_procumbodens    02
+    Palaeocastor_fossor         00
+    Palaeocastor_magnus         00
+    Palaeocastor_c.f.nebrasc.   01
+    Palaeocastor_peninsulatus   0?
+    Palaeocastor_c.f.simplicid. 00
+    Palaeocastor_wahlerti       02
+    Palaeocastor_sp             ?2
+    Paramyscopei                01
+    Paramys_delicatus           00
+    Priusaulax_browni           ?2
+    Procastoroides_idahoensis   ??
+    Pseudopaleocastor           00
+    Pseudotomus_robustus        0?
+    Sinocastor_anderssoni       02
+    Steneofiberdepereti         02
+    Steneofiber_eseri           02
+    Trogontherium_cuvieri       00
+    NewTaxonA                   01
+    ;
+End;

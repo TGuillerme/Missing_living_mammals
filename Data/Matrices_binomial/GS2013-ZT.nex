@@ -1,0 +1,23 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=13 nchar= 23;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Propalaehoplohorus_australis		00-0-000-20000001000000
+Neosclerocalyptus:_pseudornatus		120?0100000001010011001
+Neosclerocalyptus:_ornatus			11111100100001010011001
+Neosclerocalyptus:_gouldi			11121011100001?????????
+Neosclerocalyptus:_paskoensis		11121011100001010011001
+Glyptodon_reticulatus		00-0-000-20010100100010
+Doedicurus_clavicaudatus	00-0-000-20000002113001
+Plohophorus_figuratus		00-0-000-20000001111001
+Panochthus_intermedius		00-0-000-11100001012101
+Hoplophorus_euphractus		00-0-000-11100000012101
+Glyptotherium		00-0-000-20010100100010
+Neosclerocalyptus_castellanosi		1200010000000???0???0??
+Cochlops_muricatus		00-0-000-20000000110000
+    ;
+End;

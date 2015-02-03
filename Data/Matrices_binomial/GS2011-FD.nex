@@ -1,0 +1,26 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=16 nchar= 10;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Procavia_capensis			0000000000
+Phophatherium_escuillei		0000000000
+Numidotherium_koholense		0000010000
+Barytherium_grave			0000010000
+Moeritherium_trigodon		0000000001
+Prodeinotherium_hobley		0100000000
+Phiomia_serridens			0000001000
+Mammut_americanum			1111101000
+Gomphotherium_angustidens	1111101000
+Anancus_arvernensis			1111101000
+Loxodonta_africana			1112202100
+Elephas_planifrons			1112202100
+Elephas_maximus				1112202110
+Palaeoloxodon_mnaidriensis	1112202100
+Mammuthus_meridionalis		1112202130
+Mammuthus_primigenius		2112202140
+    ;
+End;

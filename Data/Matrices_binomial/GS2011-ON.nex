@@ -1,0 +1,62 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=52 nchar= 8 (not full);
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Dromiciops_gliroides			01000010
+Perameles_gunnii				00110000
+Murexia_longicaudata			10?10010
+Echymipera_kalubu				10?10000
+Sminthopsis_crassicaudata		10?10000
+Caenolestes_fuliginosus			01-10110
+Rhyncholestes_raphanurus		01-10110
+Caluromys_lanatus				00000100
+Caluromys_philander				00000100
+Caluromysiops_irrupta			11000000
+Chacodelphys_formosa			11110010
+Chironectes_minimus				11110010
+Cryptonanus_chacoensis			11110010
+Cryptonanus_unduaviensis		11110010
+Didelphis_albiventris			11110010
+Didelphis_marsupialis			11110010
+Didelphis_virginiana			11110010
+Glironia_venusta				11110010
+Gracilinanus_aceramarcae		11110010
+Gracilinanus_agilis				11110010
+Gracilinanus_emiliae			11110010
+Gracilinanus_microtarsus		11110010
+Hyladelphys_kalinowskii			11100111
+Lestodelphys_halli				11110010
+Lutreolina_crassicaudata		11110010
+Marmosa_(Marmosa)_lepida		11110010
+Marmosa_(Marmosa)_mexicana		11110010
+Marmosa_(Marmosa)_murina		11110010
+Marmosa_(Marmosa)_robinsoni		11110010
+Marmosa_(Marmosa)_rubra			11110010
+Marmosa_(Micoureus)_demerarae	11110010
+Marmosa_(Micoureus)_paraguayana	11110010
+Marmosa_(Micoureus)_regina		11110010
+Marmosops_impavidus				11110010
+Marmosops_incanus				11110010
+Marmosops_noctivagus			11110010
+Marmosops_parvidens				11110010
+Marmosops_pinheiroi				11110010
+Metachirus_nudicaudatus			11110010
+Monodelphis_brevicaudata		11110010
+Monodelphis_emiliae				11110010
+Monodelphis_peruviana			11110010
+Monodelphis_theresa				11110010
+Philander_frenatus				11110010
+Philander_mcilhennyi			11110010
+Philander_opossum				11110010
+Thylamys_macrurus				11110010
+Thylamys_pallidior				11110010
+Thylamys_pusillus				11110010
+Thylamys_venustus				11110010
+Tlacuatzin_canescens			11110010
+Sairadelphys_tocantinensis		11110010
+    ;
+End;

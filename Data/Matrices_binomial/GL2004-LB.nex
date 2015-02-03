@@ -1,0 +1,25 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=18;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Siamotherium_krabiense        000000?0?00000000?
+Microbunodon_minimum          000201101011111011
+Microbunodon_milaensis_sp_n   ?????????01111101?
+Microbunodon_silistrense      000101?01011111011
+Anthracotherium_magnum        111211010100000110
+Anthracotherium_monsvialense  111211010100000110
+Anthracotherium_chaimanei     1112110??10000?00?
+Anthracokeryx_ulnifer         011201101000011000
+Anthracokeryx_thailandicus    001201?01011111001
+Anthracothema_pangan          11101001?100??000?
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;

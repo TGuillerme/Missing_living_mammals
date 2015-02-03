@@ -1,0 +1,31 @@
+#NEXUS
+
+[Trunctated matrix. Original matrix contains 45 characters.]
+
+Begin data;
+    Dimensions ntax=20 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+    
+Prokennalestes				00
+Maelestes_gobiensis			00
+Cimolestes_magnus			00
+Proviverra_typica			00
+Apterodon_langebadreae		00
+Apterodon_macrognathus		00
+Apterodon_altidens			00
+Apterodon_saghensis			00
+Apterodon_gaudryi			00
+Quasiapterodon_minutus		00
+Dissopsalis_carnifex		00
+Dissopsalis_pyroclasticus	00
+Anasinopa_leakeyi			00
+Metasinopa_fraasi			00
+Metasinopa_napaki			00
+Kyawdawia_lupina			00
+Pratritemnodon_indicus		00
+Arfia_opisthotoma			00
+Arfia_langebadreae			00
+Arfia_gingerichi			00
+    ;
+End;

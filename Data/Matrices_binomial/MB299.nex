@@ -1,0 +1,870 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 10.44.06 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=30;
+	TAXLABELS
+		'Elephantulus rufescens'
+		'Echinops telfairi'
+		'Geogale aurita'
+		'Hemicentetes'
+		'Limnogale'
+		'Microgale'
+		'Micropotamogale'
+		'Oryzorictes tetradactylus'
+		'Potamogale velox'
+		'Procavia capensis'
+		'Setifer setosus'
+		'Tenrec ecaudatus'
+		'Amblysomus corriae'
+		'Amblysomus hottentotus'
+		'Amblysomus marleyi'
+		'Amblysomus robustus'
+		'Amblysomus septentrionalis'
+		'Calcochloris obtusirostris'
+		'Huetia leucorhinus'
+		'Carpitalpa arendsi'
+		'Chlorotalpa duthieae'
+		'Chlorotalpa sclateri'
+		'Chrysochloris asiatica'
+		'Chrysochloris stuhlmanni'
+		'Chrysospalax trevelyani'
+		'Chrysospalax villosus'
+		'Cryptochloris wintoni'
+		'Eremitalpa granti'
+		'Neamblysomus gunningi'
+		'Neamblysomus julianae'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=144;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123456789";
+
+	CHARLABELS
+		 [1] 'tymp proc basisphen AH21'
+		 [2] 'piriform fenestr AH22'
+		 [3] 'CTPP AH23'
+		 [4] 'RTPP AH24'
+		 [5] 'epitymp recess AH26'
+		 [6] 'entotympanic'
+		 [7] 'entotymp shape'
+		 [8] 'tubal canal AH27'
+		 [9] 'ectotymp exposure AH28'
+		 [10] 'ectotymp expansion AH29'
+		 [11] 'ectotymp eartube'
+		 [12] 'malleus af18'
+		 [13] 'temporal bulla'
+		 [14] 'inf stap foramen AH31'
+		 [15] 'inf stapedial fmn'
+		 [16] 'for ovale'
+		 [17] 'carotid fmn'
+		 [18] 'ascpharyngeal fmn'
+		 [19] 'craniopharyng fmn'
+		 [20] 'jugFm'
+		 [21] 'basisphen pit AH34'
+		 [22] 'fenestrate basioccip AH35'
+		 [23] 'mastoid-tubercle PM AH37'
+		 [24] 'mastoid tubercle-squam AH38'
+		 [25] 'squam length basicr AH39'
+		 [26] 'entoglenoid process pres AH50'
+		 [27] 'entoglen jaw artic AH51'
+		 [28] 'entoglen composition AH52'
+		 [29] 'ethmoid foramen AH46'
+		 [30] 'sphenorbFis orientation'
+		 [31] 'alisph canal pres AH32'
+		 [32] 'alisph canal position AH33'
+		 [33] 'optic foramen AH44'
+		 [34] 'optic foramen size AH45'
+		 [35] 'suboptic foramen AH36'
+		 [36] 'maxilla in orbit AH55'
+		 [37] 'external petromast AH43'
+		 [38] 'lambd plate ap23'
+		 [39] 'sagittal crest ap26'
+		 [40] 'occiput'
+		 [41] 'sinus canal AH47'
+		 [42] 'sinus canal foramen AH48'
+		 [43] 'frontal proportions AH61'
+		 [44] 'crista galli AH65'
+		 [45] 'dual ectopterygoid AH40'
+		 [46] 'maxillary proc pterygoid AH41'
+		 [47] 'sphenopal-dors palatine fmna AH49'
+		 [48] 'postpal spine AH42'
+		 [49] 'palatal length'
+		 [50] 'gr palatine boss'
+		 [51] 'zygomatic arch AH56'
+		 [52] 'zyg arch size AH57'
+		 [53] 'max zygoma origin AH58'
+		 [54] 'max zygoma root size AH59'
+		 [55] 'lacrimal foramen AH53'
+		 [56] 'lacrimal foramen position AH54'
+		 [57] 'lacrimal flange AH64'
+		 [58] 'infraorb canal length AH60'
+		 [59] 'post rostrum'
+		 [60] 'nasal shape AH62'
+		 [61] 'nasal length AH63'
+		 [62] 'antlat process pmax'
+		 [63] 'size upper dentition AH66'
+		 [64] 'premax dentition AH67'
+		 [65] 'inter I1 gap AH126'
+		 [66] 'upper antemolars AH68'
+		 [67] 'upper canine AH69'
+		 [68] 'C metastyle'
+		 [69] 'P2 protocone'
+		 [70] 'P3 protocone af105'
+		 [71] 'P3 parastyle'
+		 [72] 'P3 shape AH70'
+		 [73] 'P4 shape AH71'
+		 [74] 'P4 carnassial AH72'
+		 [75] 'metaconeAH73'
+		 [76] 'protocone AH74'
+		 [77] 'hypocone AH75'
+		 [78] 'M1 parastyle AH76'
+		 [79] 'centrobuccal cleft AH77'
+		 [80] 'M3 pres AH78'
+		 [81] 'M3 stylar shelf AH79'
+		 [82] 'M3 mesostyle AH80'
+		 [83] 'M3 shape'
+		 [84] 'lower ant dentition AH81'
+		 [85] 'lower antemolars AH82'
+		 [86] 'p3 shape AH83'
+		 [87] 'p4 shape AH84'
+		 [88] 'p4 talonid AH85'
+		 [89] 'molar talonids'
+		 [90] 'hypoconulid AH86'
+		 [91] 'hypoflexid-paracone AH87'
+		 [92] 'secondary hyoflexid basin AH88'
+		 [93] 'm3 pres AH89'
+		 [94] 'm3 length AH90'
+		 [95] 'mand condyle length AH92'
+		 [96] 'mandib condyle number AH93'
+		 [97] 'internal coronoid fossa AH95'
+		 [98] 'mand coronoid'
+		 [99] 'angular process ap91 af116'
+		 [100] 'axis keel AH96'
+		 [101] 'sacral verts AH97'
+		 [102] 'sacroiliac artic AH98'
+		 [103] 'sacral neural spines AH99'
+		 [104] 'clavicle AH100'
+		 [105] 'first rib'
+		 [106] 'sternal keel'
+		 [107] 'scapular shape AH101'
+		 [108] 'scap metacromion pres AH102'
+		 [109] 'scap metacrom shape'
+		 [110] 'scap acromion pres AH104'
+		 [111] 'scap acromion shape AH105'
+		 [112] 'scapular spine length AH106'
+		 [113] 'root scap spine'
+		 [114] 'hum head'
+		 [115] 'deltoid trough'
+		 [116] 'med epicondyle pres AH108'
+		 [117] 'dist hum breadth'
+		 [118] 'entepicond fm humerus AH107'
+		 [119] 'humerus olecranon fenestr AH110'
+		 [120] 'distal ulna AH111'
+		 [121] 'ulnocarp artic AH112'
+		 [122] 'forarm longbones AH113'
+		 [123] 'digital pad 1&2'
+		 [124] 'manual digit 1'
+		 [125] 'manual digit 2'
+		 [126] 'manual digit 3'
+		 [127] 'manual digit 4'
+		 [128] 'manual digit 5'
+		 [129] 'number rib-bearing verts'
+		 [130] 'caudal verts'
+		 [131] 'iliac blades AH114'
+		 [132] 'ilia cranial extent AH115'
+		 [133] 'iliopectineal tubercle AH116'
+		 [134] 'iliopect tubercle shape AH117'
+		 [135] 'internal pelvic shape AH118'
+		 [136] 'pelvic obt fmn'
+		 [137] 'pubic symphysis AH119'
+		 [138] 'pubis angle'
+		 [139] 'pubis length AH120'
+		 [140] 'fem 3rd trochanter AH122'
+		 [141] 'prox fibula'
+		 [142] 'tibia-fibula AH123'
+		 [143] 'distal fibula AH124'
+		 [144] 'calcaneal tubercle AH125'
+	;
+	
+	STATELABELS
+		1
+		'0 flat'
+		'1 contrib bulla'
+		,
+		2
+		'0 abs-solid'
+		'1 pres-open'
+		,
+		3
+		'0 small'
+		'1 contrib post bulla'
+		,
+		4
+		'0 pres'
+		'1 reduced'
+		,
+		5
+		'0 contin midEar'
+		'1 enlarged'
+		,
+		6
+		'0 reduced'
+		'1 shields tubal canal'
+		'2 contrib bulla'
+		,
+		7
+		'0 lat elongate'
+		'1 lat pointed'
+		'2 lat rounded'
+		,
+		8
+		'0 open'
+		'1 closed'
+		,
+		9
+		'0 apheneric'
+		'1 semiphaneric'
+		'2 phaneric'
+		,
+		10
+		'0 ring'
+		'1 expanded'
+		,
+		11
+		'0 short'
+		'1 vent midpt glenoid'
+		,
+		12
+		'0 small'
+		'1 enlarged'
+		'2 globular-large'
+		'3 club'
+		,
+		13
+		'0 pres'
+		'1 abs'
+		,
+		14
+		'0 abs'
+		'1 pres'
+		,
+		15
+		'0 separate fmOvale'
+		'1 adjacent fmOvale'
+		'2 confluent fmOvale'
+		,
+		16
+		'0 separate sphenfis'
+		'1 adjacent sphenfis'
+		,
+		17
+		'0 antlat jugfm'
+		'1 ant jugfm'
+		,
+		18
+		'0 posterior'
+		'1 medial bulla'
+		,
+		19
+		'0 abs'
+		'1 pres'
+		,
+		20
+		'0 exposed ventral'
+		'1 dorsal occip cond'
+		,
+		21
+		'0 flat'
+		'1 pres'
+		,
+		22
+		'0 solid'
+		'1 open'
+		,
+		23
+		'0 abs'
+		'1 petromast pres'
+		,
+		24
+		'0 abs'
+		'1 pres-squam'
+		,
+		25
+		'0 short'
+		'1 long'
+		,
+		26
+		'0 abs'
+		'1 pres'
+		,
+		27
+		'0 reduced'
+		'1 pres'
+		,
+		28
+		'0 squamosal'
+		'1 squam-alisphen'
+		'2 alisphen'
+		,
+		29
+		'0 ant sphenorb fissure'
+		'1 within sphenorb fissure'
+		,
+		30
+		'0 opens anteriorly'
+		'1 opens laterally'
+		,
+		31
+		'0 abs'
+		'1 pres'
+		,
+		32
+		'0 lat sphenorb fissure'
+		'1 contin sphenorb fis'
+		,
+		33
+		'0 pres'
+		'1 abs'
+		,
+		34
+		'0 similar V'
+		'1 smaller V'
+		,
+		35
+		'0 abs'
+		'1 pres'
+		,
+		36
+		'0 reduced'
+		'1 pres no frontal contact'
+		'2 pres frontal contact'
+		,
+		37
+		'0 post nuchal crest'
+		'1 ant nuchal crest'
+		'2 occluded'
+		,
+		38
+		'0 abs'
+		'1 temp scar anterior'
+		,
+		39
+		'0 abs'
+		'1 pres'
+		,
+		40
+		'0 90angle'
+		'1 mushroom'
+		,
+		41
+		'0 pres'
+		'1 abs'
+		,
+		42
+		'0 confl sphenorb fissure'
+		'1 betw sphenorb-ethmoid'
+		'2 confl ethmoid'
+		,
+		43
+		'0 elongate'
+		'1 similar parietal'
+		'2 shorter parietal'
+		,
+		44
+		'0 pres'
+		'1 abs'
+		,
+		45
+		'0 single pair'
+		'1 pair on each side'
+		,
+		46
+		'0 reduced'
+		'1 past posterior toothrow'
+		,
+		47
+		'0 common recess'
+		'1 separate'
+		,
+		48
+		'0 small'
+		'1 large'
+		,
+		49
+		'0 > interEAM'
+		'1 <= interEAM'
+		,
+		50
+		'0 flat'
+		'1 defines grpal medial'
+		,
+		51
+		'0 present'
+		'1 reduced'
+		,
+		52
+		'0 robust'
+		'1 slender'
+		,
+		53
+		'0 M1'
+		'1 M2'
+		'2 M3'
+		,
+		54
+		'0 large'
+		'1 reduced'
+		,
+		55
+		'0 abs'
+		'1 pres'
+		,
+		56
+		'0 in orbit'
+		'1 anterior orbit'
+		,
+		57
+		'0 smooth'
+		'1 rugose'
+		'2 projection'
+		,
+		58
+		'0 longer than 1 cheek tooth'
+		'1 similar-smaller 1 cheek tooth'
+		,
+		59
+		'0 medial ant zygarch'
+		'1 lateral ant zygarch'
+		,
+		60
+		'0 broad posteriorly'
+		'1 tapered posteriorly'
+		,
+		61
+		'post edge at-anterior orbit'
+		'1 post edge posterior antorbit'
+		,
+		62
+		'0 abs'
+		'1 pres'
+		,
+		63
+		'0 anterior-most enlarged'
+		'1 similar'
+		,
+		64
+		'0 zero'
+		'1 one'
+		'2 two'
+		'3 three'
+		'4 five'
+		,
+		65
+		'0 narrow'
+		'1 wide'
+		,
+		66
+		'0 five'
+		'1 four'
+		'2 three'
+		'3 two'
+		,
+		67
+		'0 similar antemolars'
+		'1 bulbous'
+		'2 trenchant'
+		,
+		68
+		'0 reduced'
+		'1 postbuc projects'
+		,
+		69
+		'0 pres'
+		'1 abs'
+		,
+		70
+		'0 pres'
+		'1 abs'
+		,
+		71
+		'0 flush ant molar wall'
+		'1 ant projects'
+		'2 projects P3 longer than BLwide'
+		,
+		72
+		'0 narrow'
+		'1 molariform'
+		,
+		73
+		'0 narrow'
+		'1 molariform'
+		,
+		74
+		'0 no shearing'
+		'1 shearing'
+		,
+		75
+		'0 pres'
+		'1 connate'
+		'2 reduced'
+		,
+		76
+		'0 pres'
+		'1 reduced'
+		,
+		77
+		'0 pres'
+		'1 reduced'
+		,
+		78
+		'0 flush ant wall'
+		'1 anterior projection'
+		,
+		79
+		'0 flat'
+		'1 pres'
+		,
+		80
+		'0 pres'
+		'1 abs'
+		,
+		81
+		'0 narrow'
+		'1 broad'
+		,
+		82
+		'0 lingual-adjacent paracone'
+		'1 buccal'
+		,
+		83
+		'0 as M2'
+		'1 half M2'
+		,
+		84
+		'0 larger adjacent teeth'
+		'1 similar adjacent teeth'
+		'2 smaller adjacent teeth'
+		,
+		85
+		'0 eight'
+		'1 seven'
+		'2 six'
+		'3 five'
+		'4 three'
+		,
+		86
+		'0 narrow'
+		'1 molariform'
+		,
+		87
+		'0 narrow'
+		'1 molariform'
+		,
+		88
+		'0 pres'
+		'1 abs'
+		,
+		89
+		'0 pres'
+		'1 abs'
+		,
+		90
+		'0 abs'
+		'1 pres'
+		,
+		91
+		'0 no occlusion'
+		'1 occlusion'
+		,
+		92
+		'0 pres'
+		'1 abs'
+		,
+		93
+		'0 pres'
+		'1 abs'
+		,
+		94
+		'0 longer antemolars'
+		'1 similar antemolars'
+		'2 shorter antemolars'
+		,
+		95
+		'0 globular'
+		'1 transverse'
+		,
+		96
+		'0 single artic'
+		'1 dual artic'
+		,
+		97
+		'0 smooth'
+		'1 pocketed'
+		,
+		98
+		'0 flat'
+		'1 dors projects'
+		,
+		99
+		'0 narrows distally'
+		'1 broadens distally'
+		,
+		100
+		'0 pres'
+		'1 ventrally flat'
+		,
+		101
+		'0 two-four'
+		'1 >five'
+		,
+		102
+		'0 S1'
+		'1 S1-2'
+		'2 S2-3'
+		,
+		103
+		'0 no fusion'
+		'1 fused longitudinally'
+		,
+		104
+		'0 pres'
+		'1 short'
+		'2 abs'
+		,
+		105
+		'0 narrow riblike'
+		'1 robust-broad'
+		,
+		106
+		'0 flat'
+		'1 ant-inf projects'
+		,
+		107
+		'0 triangular'
+		'1 elongate'
+		,
+		108
+		'0 pres'
+		'1 abs'
+		,
+		109
+		'0 blunt'
+		'1 elongate'
+		,
+		110
+		'0 pres'
+		'1 abs'
+		,
+		111
+		'0 blunt'
+		'1 elongate'
+		,
+		112
+		'0 lat glenoid'
+		'1 at glenoid'
+		,
+		113
+		'0 open'
+		'1 acute angle'
+		,
+		114
+		'0 sphere'
+		'1 DV elongate'
+		,
+		115
+		'0 medial convex'
+		'1 trough-medial concave'
+		,
+		116
+		'0 reduced'
+		'1 pres'
+		,
+		117
+		'0 medEpiCond small'
+		'1 50-75% hum len'
+		'2 >85% hum len'
+		,
+		118
+		'0 pres'
+		'1 abs'
+		,
+		119
+		'0 ossified'
+		'1 fenest-thin'
+		,
+		120
+		'0 carpal artic'
+		'1 no carpal artic'
+		,
+		121
+		'0 broad'
+		'1 styloid only'
+		,
+		122
+		'0 two'
+		'1 three'
+		,
+		123
+		'0 abs'
+		'1 pres'
+		,
+		124
+		'0 vestigial'
+		'1 small'
+		'2 metac over half MC3'
+		'3 hypertrophied'
+		,
+		125
+		'0 vestigial'
+		'1 small'
+		'2 metac over half MC3'
+		'3 hypertrophied'
+		,
+		126
+		'0 vestigial'
+		'1 small'
+		'2 metac over half MC2'
+		'3 hypertrophied'
+		,
+		127
+		'0 vestigial'
+		'1 small'
+		'2 metac over half MC3'
+		'3 hypertrophied'
+		,
+		128
+		'0 vestigial'
+		'1 small'
+		'2 metac over half MC3'
+		'3 hypertrophied'
+		,
+		129
+		'0  13'
+		'1 14'
+		'2 15'
+		'3 16'
+		'4 17'
+		'5 18'
+		'6 19'
+		'7 20'
+		'8 21'
+		,
+		130
+		'0 centra similar presacrals'
+		'1 centra smaller presacrals'
+		,
+		131
+		'0 round-sagittal'
+		'1 coronal'
+		,
+		132
+		'0 past sacroiliac artic'
+		'1 even sacroiliac artic'
+		,
+		133
+		'0 smooth'
+		'1 pres'
+		,
+		134
+		'0 medial'
+		'1 ventral'
+		,
+		135
+		'0 flat'
+		'1 concave'
+		,
+		136
+		'0 larger acetab'
+		'1 smaller acetab'
+		'2 abs'
+		,
+		137
+		'0 broad'
+		'1 narrow'
+		'2 separate'
+		,
+		138
+		'0 >15 from ilium'
+		'1 parallel ilium'
+		,
+		139
+		'0 similar ischium'
+		'1 longer ischium'
+		,
+		140
+		'0 small proximal'
+		'1 reaches midpoint shaft'
+		,
+		141
+		'0 narrow'
+		'1 AP process'
+		,
+		142
+		'0 unfused'
+		'1 fused'
+		,
+		143
+		'0 flat'
+		'1 concave'
+		'2 ball-condyle'
+		,
+		144
+		'0 blunt'
+		'1 pointed'
+		,
+	;
+	
+	MATRIX
+	Elephantulus_rufescens									00100221211011001-100000010100?0001010000111101100001010110100130000000110000001---10010000-?200010101000?0010010000-011-00122220000111000000100
+	Echinops_telfairi											100100-020-011001-1010010111100-0102100000010100001-0011010110020120111110211101---2211100111-000101010000000001000100?010022222?1010-0010000001
+	Geogale_aurita													111000-020-011001-000?01011000110112100000110100001-111100011002110011-01021111010003011001100000100010000000001000101101002222240000-001010000?
+	Hemicentetes														1?0100-020-010-01-100001011110110102000000?10100001-20110101001301?011100021111011011001000-01000101010000000001000100001001222231110-0010100001
+	Limnogale															111000-020-01?001??00100011000110112100001210100001-100-0101100301001011102111101002101100110010010001000?00000100010000100?222??0000-0010100101
+	Microgale															111000-020-011001-10000001100011011210000?110100001-10110101100301?010101021111010021011001100100101010000000011000100001002222230000-0010100101
+	Micropotamogale												101000-110-010-011100101011000110112100001210100001-100-01011003010010111020111010021?1100110110010001020?01-1-1?0?1010010012222?000110011100101
+	Oryzorictes_tetradactylus							111000-020-011001-000000011000110102100000110100001-101?010100130120111010211110100110110011001001010100000000010001000010012222?0000-0010100101
+	Potamogale_velox												101000-110-010-0111001010110001101?010001-2?0100001-100-0101000301001011101011101002101000100?10010001020001-1-10000-10000022222?000110010110101
+	Procavia_capensis											01010220211010-01-00000011110011000020001-101?01000000102000000101010011100000000-022110000-011001-011120001-1-10000-1100000222281100-0000000000
+	Setifer_setosus												100100-020-011001-101001011110110102100000010100001-?01101011002?12011111021100011112111001102000101010000000001000100?010022222?1010-0010100001
+	Tenrec_ecaudatus												1?0?00-020-010-011101001011110110102001000110100001-10110101001?01201111102110001101?11100110?0001010100000000010001001010012222?1110-0010100001
+	Amblysomus_corriae											101?11102100111000?10000010-100-1-0?0001????00000001001?010??1030100101110201011---2111000111-00001??????????????????000?10123006???????????????
+	Amblysomus_hottentotus									101011102100111000010000010-100-1-0?0001???1000000010010010??1030100102110201011---2111000111-000011011011001000011120000101230061000-0121111121
+	Amblysomus_marleyi											101??110210?111000110000010-100-1-0?0001????000000010010010111030100112110201111---2111000111-00001??????????????????000?1??????6???????????????
+	Amblysomus_robustus										101?1110210?111000110000010-100-1-0?0001????00000001001?010??1030100101110201011---2111000111-00001??????????????????000?10123006???????????????
+	Amblysomus_septentrionalis							101??110211?111000010000010-100-1-0?0001????000000010010010??1030100101110201011---2111000111-0000110110110010000111200001?1230061000-01211?1121
+	Calcochloris_obtusirostris							101011102100111000010000010-100-1-0?0001???1000000010011010??1030101110110201001-1-2111110111-000111021011001000011120000101230061000-01211111??
+	Huetia_leucorhinus											101011102101112000010000010-100-1-020001???100000001001101010103010011011021100011121111101102000111021011001000011110000101230061000-012111112?
+	Carpitalpa_arendsi											101011102101111000110000010-100-1-0?0001???1000000010011010??1030100100110201000111211100011020001110110110010000111200001012300?1000-012111112?
+	Chlorotalpa_duthieae										101011102101111100010000010-100-1-0?0001???1000000010010010??1030100101110201010101211100011020001110110110010001111200001012300?1000-0121111121
+	Chlorotalpa_sclateri										101011102101111000010000010-100-1-0?0001???1000000010010010??103010010111020101?10121110001102000111011011001000111120000101230061000-0121111121
+	Chrysochloris_asiatica									101011002103012111010000010-100-1-0?0001???10000000100100101?1030100101110201000101211111011020001110110110010000111200001012300610?0-01211111?1
+	Chrysochloris_stuhlmanni								101011002103012111010000010-100-1-0?0001???100000001001?010??10301001001102010?01-12111?00110200011?0?10110010000111200001012300610?0-0121?111??
+	Chrysospalax_trevelyani								10101120210201211?11?000010-100-1-020111???1000?01010011010??103010010111020101011121110001102000111011011000000011110000101230071000-0121011121
+	Chrysospalax_villosus									101011202102012110110000010-10?11-0201?1???1000000010011010??10301001001102010101012111000110200011?0?10110000000111100001012300?10?0-0121?111??
+	Cryptochloris_wintoni									101011102103012100010000010-100-1-0?0001???1000000010011011??103010010?1102010101012111110110200011?0?10??0???00???12000011223106?0?0-0?2??1?1??
+	Eremitalpa_granti											101011102102012100000000010-010-1-0?0001???100001001001?010??103010011?1102010101012111110110200011?0?10110010001101100001022210410?0-0121?111??
+	Neamblysomus_gunningi									101011102100111000010000010-100-1-0?0001???1000000010011010??103010010111020101?0-121110101102000011011011001000011120000101230061000-0121111121
+	Neamblysomus_julianae									101011102100111000010000010-100-1-0?0001???1000010010011010??10301001011102010?1---2111110?1?-000011011011001000011120000101230071000-0121111121
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 144;
+ENDBLOCK;
+BEGIN CODONS;
+CODESET * UNTITLED = universal: 1 - 145 ;
+ENDBLOCK;
+BEGIN MACCLADE;
+Version 4.0 84 ; LastModified -965564089 ; FileSettings editor 0 0 1 1 ; Singles 100 ; Editor 0001100111111110010001001 0 24 Geneva 9 100 1 all ; EditorPosition 46 6 627 387 ; TreeWindowPosition 46 6 801 1102 ; ListWindow Characters closed Geneva 9 50 10 129 418 000 ; ListWindow Taxa closed Geneva 9 50 10 129 490 100000 ; ListWindow Trees closed Geneva 9 50 10 276 490 ; ListWindow TypeSets closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ListWindow ExSets closed Geneva 9 50 10 276 490 ; ListWindow CharSets closed Geneva 9 50 10 276 490 ; ListWindow TaxSets closed Geneva 9 50 10 276 490 ; ListWindow CharPartitions closed Geneva 9 50 10 276 490 ; ListWindow CharPartNames closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ChartWindowPosition 52 30 788 1092 ; StateNamesSymbols closed Geneva 9 10 50 30 148 220 ; WindowOrder Data ; OtherSymbols & / 00 ? - ; Correlation 0 0 1000 0 0 10011010 ; Salmo 00000001 ; EditorFile 2 ; ExportHTML _ MOSS 100 110000 ; PrettyPrint 10 ; EditorToolsPosition 705 121 115 165 ; TreeWindowProgram 10 ; TreeWindow 0000 ; Continuous 0 3 1 ; Calculations 0000001 ; SummaryMode 0 0 0 ; Charts Geneva 9 ( normal ) 0010 ; NexusOptions 0 0 50 001011001 ; TipLabel 1 ; TreeFont Geneva 9 ( normal ) ; TreeShape 1.0 1.0 0100 ; TraceLabels 0101 ; ChartColors 0 0 65535 9 0 1 ; ChartBiggestSpot 1 ; ChartPercent 10 ; ChartBarWidth 10 1 ; ChartVerticalAxis 10101 ; ChartMinMax 0 ; TraceAllChangesDisplay 0 1 ; BarsOnBranchesDisplay 0 0 60000 10000 10000 10000 10000 60000 65000 65000 65000 6 1 0100101 ; ContinuousBranchLabels 0 ; AllStatesBranchLabels 1 ; IndexNotation 2 1 ; PrintTree 5.93 2 2 4 2 2 2 2 2 2 2 2 Geneva 9 ( normal ) Geneva 10 ( normal ) Geneva 9 ( normal ) Geneva 9 ( normal ) Geneva 9 ( bold ) Geneva 9 ( normal ) Geneva 9 ( normal ) 83 115 13 45 116 148 13 45 149 181 13 45 182 214 13 45 180 63 0 0 678 456 626 35 692 35 692 288 24 35 1 1 1 1 0 0 -39 4 -40 0 0 15 1 8 16 16 0 2 0100110100010001010100000110000 ; MatchChar 00 . ; EntryInterpretation 01 ; ColorOptions 00 ; TreeTools 0 5 4 0 10 4 0 00100111111101110 ; EditorTools 0 0 0 1000 0 0 6 3 0 100000101110001 ; PairAlign 2 2 3 2 1 1 2 1 3 1010 ; BothTools 1 ;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 355000514969567647 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 7101545918738171534 ; tell It ; setDefaultOrder 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 146 110 109 111 112 113 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 148 ; attachments ; endTell ; checksum 0 1637296927 null ; endTell ; getEmployee #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord ; tell It ; showDataWindow #7101545918738171534 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker ; tell It ; getWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1090 502 ; setLocation 86 112 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; endTell ; setActive ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; colorCells #mesquite.charMatrices.NoColor.NoColor ; setBackground White ; toggleShowNames on ; toggleTight off ; toggleShowChanges on ; toggleSeparateLines off ; toggleShowStates on ; toggleAutoWCharNames on ; toggleShowDefaultCharNames off ; toggleConstrainCW on ; setColumnWidth 16 ; toggleBirdsEye off ; toggleColorsPanel off ; birdsEyeWidth 2 ; toggleLinkedScrolling on ; toggleScrollLinkedTables off ; endTell ; showWindow ; getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor ; tell It ; makeWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1090 502 ; setLocation 86 112 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam ; endTell ; rowsAreCharacters on ; toggleConstrainChar on ; toggleConstrainCharNum 3 ; togglePanel off ; toggleSummaryPanel off ; endTell ; showWindow ; endTell ; getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.ColorCells.ColorCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector ; tell It ; autotabOff ; endTell ; endTell ; endTell ; endTell ;
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 145 ;
+ENDBLOCK;

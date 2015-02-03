@@ -1,0 +1,35 @@
+#NEXUS
+
+Begin data;
+	Dimensions ntax=26 nchar=24;
+	Format datatype=standard gap=- missing=?;
+	Matrix
+	
+    Didelphis_marsupialis   101111102010211140110111
+    Orycteropus_afer        011001112010800190110011
+    Elephantulus_myurus     0111111?2111111130110010
+    Setifer_setosus         101111102110110030110110
+    Eremitalpa_granti       101101102100110030?00110
+    Procavia_capensis       101111112100210130101110
+    Loxodonta_africana      000010010130700041112200
+    Trichechus_manatus      0000010103322101?100?211
+    Dugong_dugong           0000010103322?0121002211
+    Dasypus_novemcinctus    101011102001510180110010
+    Zaedyus_pichiy          10?111102001110150100?10
+    Bradypus_tridactylus    111??1112002310?511?0010
+    Equus_ferus             100?00110020710150012210
+    Sus_scrofa              101?10112000610160010111
+    Bos_taurus              101000112000410140111110
+    Canis_lupus             101111112220410031?00001
+    Felis_silvestris        100001102220310131110201
+    Manis_javanica          11111?011000210150110101
+    Erinaceus_europaeus     011111112?0011013?010110
+    Suncus_spec.            001111102110110131010110
+    Talpa_europaea          011?1110201011003???0110
+    Tupaia_belangeri        10111?11211011113?100110
+    Pteropus_spec.          0010101010121110311?1?00
+    Rhinolophus_rouxii      0101111021?00101401?1211
+    Oryctolagus_cuniculus   10000?10203121013?10121?
+    Rodentia_stem_species 1?1111112?11111131110110
+	;
+End;

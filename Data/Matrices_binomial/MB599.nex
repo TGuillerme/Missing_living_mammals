@@ -1,0 +1,395 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 05.45.32 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=18;
+	TAXLABELS
+		'Carollia subrufa'
+		'Platyrrhinus albericoi'
+		'Platyrrhinus aurarius'
+		'Platyrrhinus brachycephalus'
+		'Platyrrhinus chocoensis'
+		'Platyrrhinus dorsalis'
+		'Platyrrhinus ismaeli'
+		'Platyrrhinus helleri'
+		'Platyrrhinus infuscus'
+		'Platyrrhinus lineatus'
+		'Platyrrhinus masu'
+		'Platyrrhinus matapalensis'
+		'Platyrrhinus nigellus'
+		'Platyrrhinus recifinus'
+		'Platyrrhinus vittatus'
+		'Sturnira erythromos'
+		'Uroderma magnirostrum'
+		'Vampyrodes caraccioli'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=60;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Facial stripes'
+		 [2] 'Brightness of facial stripe'
+		 [3] 'Facial stripe coloration'
+		 [4] 'Basal protuberance where the genal vibrissae are implanted'
+		 [5] 'Number of vibrissae surrounding the margins of the noseleaf in a single array'
+		 [6] 'Number of vibrissae present on the upper lip ventral to the vibrissae that surround the margins of the noseleaf'
+		 [7] 'Number of submental vibrissae on each side of the chin'
+		 [8] 'Interramal vibrissae'
+		 [9] 'Inferior border of horseshoe'
+		 [10] 'Parallel folds located in the pinna'
+		 [11] 'Dorsal stripe'
+		 [12] 'Length of the dorsal fur'
+		 [13] 'Bands of contrast in the dorsal fur'
+		 [14] 'Bands of contrast in the ventral fur'
+		 [15] 'Hair on the dorsum of the feet'
+		 [16] 'Posterior edge of the uropatagium'
+		 [17] 'Distribution of the fringe of hair on the edge of the uropatagium'
+		 [18] 'Posterior border of the hard palate'
+		 [19] 'Postorbital process'
+		 [20] 'Paraoccipital process'
+		 [21] 'Apophysis in the paraoccipital process'
+		 [22] 'Fossa on the squamosal end of the zygomatic arch lateral to the the glenoid fossa'
+		 [23] 'Posterior clinoid processes'
+		 [24] 'Upper median incisors'
+		 [25] 'Lobulation of the upper lateral incisors'
+		 [26] 'Alignment of P3 in the toothrow'
+		 [27] 'Size of the P3 with regard to P4'
+		 [28] 'Stylar cusps on the posterior face of P4'
+		 [29] 'Sulcus on the posterior face of P4'
+		 [30] 'Sulcus on the anterior face of P4'
+		 [31] 'Fossa on the hypoconal basin of P4'
+		 [32] 'M1 Parastyle'
+		 [33] 'M1 Mesostyle'
+		 [34] 'Labial cingulum at the base of the M1 metacone'
+		 [35] 'Sulcus on the posterior face of the M1 paracone'
+		 [36] 'Lingual cingulum on the base of the M1 metacone'
+		 [37] 'Sulcus on the posterior face of the paracone not joined to the cingulum of the lingual face of the metacone on M1'
+		 [38] 'M1 metastyle'
+		 [39] 'M1 protocone'
+		 [40] 'M2 parastyle'
+		 [41] 'Labial cingulum of the M2 paracone'
+		 [42] 'Stylar cusp on the lingual face of the M2 paracone'
+		 [43] 'M2 metastyle'
+		 [44] 'Stylar cusp on the lingual face of the M2 metacone'
+		 [45] 'Lingual cingulum of the M2 metacone'
+		 [46] 'M2 hypoconal basin'
+		 [47] 'Two sulci on the lingual face of the main cone of p4'
+		 [48] 'Cones on the posterior face of p4 (one lingual and the other one labial)'
+		 [49] 'Labial and lingual cingulum of p4'
+		 [50] 'Stylid cusps on the anterior or antero lingual face of the main cone of p4'
+		 [51] 'Stylid cusp on the posterior face of the main cone of p4'
+		 [52] 'm1 paraconid'
+		 [53] 'm1 cingulum'
+		 [54] 'Stylid cusps on the anterior face of the m1 protoconid'
+		 [55] 'm1 metaconid'
+		 [56] 'm2 hypoconid'
+		 [57] 'Stylid cusp between the metaconid and protoconid on m2'
+		 [58] 'Cingula on m2'
+		 [59] 'Third and fifth metacarpal arrangement'
+		 [60] 'Insertion of the posterior edge of the plagiopatagium'
+	;
+	
+	STATELABELS
+		1
+		'absent'
+		'present'
+		,
+		2
+		'dorsomedial and ventrolateral stripes obviously subequal'
+		'dorsomedial stripe more marked than the ventrolateral stripe'
+		,
+		3
+		'brilliant-white'
+		'dark'
+		,
+		4
+		'absent'
+		'present'
+		,
+		5
+		'nine vibrissae present'
+		'eight vibrissae present'
+		'seven vibrissae present'
+		'six vibrissae present'
+		,
+		6
+		'one vibrissa present on each side of the face'
+		'two vibrissae present'
+		,
+		7
+		'absence of submental vibrissae'
+		'two submental vibrissae present'
+		'three submental vibrissae present'
+		'four submental vibrissae present'
+		'five submental vibrissae present'
+		,
+		8
+		'absence'
+		'one interrramal vibrissa present'
+		'two interramal vibrissae present'
+		,
+		9
+		'inferior border with no distinct boundary between horseshoe and lip'
+		'inferior border partially joined to the upper lip'
+		'inferior border completely free'
+		,
+		10
+		'absent'
+		'poorly marked but distinguishable'
+		'well marked'
+		,
+		11
+		'absent'
+		'indistinct'
+		'definite but narrow'
+		'brilliant-white and wide'
+		,
+		12
+		'Long, > 8 mm'
+		'medium, average, 6.30-7.50 mm'
+		'short, < 6.30 mm '
+		,
+		13
+		'Bicolored'
+		'tricolored'
+		'tetracolored'
+		,
+		14
+		'Unicolored'
+		'bicolored'
+		'tricolored'
+		'tetracolored'
+		,
+		15
+		'Sparse and short'
+		'intermediate in density and length'
+		'dense and long'
+		,
+		16
+		'"V" shaped'
+		'"U" shaped'
+		,
+		17
+		'Absent'
+		'usually hairy, occassionally sparsely'
+		'densely haired'
+		,
+		18
+		'"U" shaped'
+		'"V" shaped'
+		,
+		19
+		'Absent or poorly developed'
+		'moderately developed'
+		'well developed'
+		,
+		20
+		'Poorly developed, almost imperceptible'
+		'moderately developed'
+		'well developed'
+		,
+		21
+		'Present'
+		'absent'
+		,
+		22
+		'Absent or almost imperceptible'
+		'shallow'
+		'deep'
+		,
+		23
+		'Absent'
+		'present'
+		,
+		24
+		'In contact'
+		'without contact'
+		,
+		25
+		'Monolobed'
+		'bilobed'
+		,
+		26
+		'P3 aligned along the axis of the toothrow'
+		'P3 aligned transversally to the toothrow'
+		,
+		27
+		'P3 slightly smaller than P4'
+		'P3 about half size of P4'
+		,
+		28
+		'P4 lacking stylar cusps or with one stylar cusp present'
+		'two stylar cusps present'
+		,
+		29
+		'absent'
+		'present'
+		,
+		30
+		'absent'
+		'present'
+		,
+		31
+		'Shallow'
+		'deep'
+		,
+		32
+		'absent'
+		'present'
+		,
+		33
+		'absent'
+		'present'
+		,
+		34
+		'absent'
+		'present'
+		'stylar cusp on the labial cingulum of the M1 metacone'
+		,
+		35
+		'absent'
+		'present'
+		,
+		36
+		'absent'
+		'lingual cingulum present at the base of the M1 metacone'
+		'stylar cusp on the lingual cingulum of the M1 metacone'
+		,
+		37
+		'absent'
+		'present'
+		,
+		38
+		'absent'
+		'present'
+		,
+		39
+		'Well developed, large'
+		'moderately developed'
+		'small and blunt'
+		,
+		40
+		'absent'
+		'present'
+		,
+		41
+		'absent'
+		'present'
+		,
+		42
+		'absent'
+		'present'
+		,
+		43
+		'absent'
+		'present'
+		,
+		44
+		'absent'
+		'present'
+		,
+		45
+		'absent'
+		'lingual cingulum of the M2 metacone restricted to the metacone'
+		'lingual cingulum of the M2 metacone continuous to the paracone'
+		,
+		46
+		'Developed'
+		'rudimentary or small'
+		,
+		47
+		'absent'
+		'present'
+		,
+		48
+		'Two cones present'
+		'one cone present on either the labial or lingual face'
+		'no cones present'
+		,
+		49
+		'Both cingula absent'
+		'only one cingulum present, either the lingual or labial'
+		'both cingula present'
+		,
+		50
+		'absent'
+		'one stylid cusp present'
+		'two stylid cusps present'
+		,
+		51
+		'absent'
+		'present'
+		,
+		52
+		'Present'
+		'absent'
+		,
+		53
+		'absent'
+		'only the labial cingulum present'
+		'both labial and lingual cingula present'
+		,
+		54
+		'Absent'
+		'present'
+		,
+		55
+		'Well-developed'
+		'poorly developed'
+		'absent'
+		,
+		56
+		'Present'
+		'absent'
+		,
+		57
+		'Absent'
+		'present'
+		,
+		58
+		'Both cingula labial and lingual absent'
+		'labial cingulum present'
+		'both cingula present'
+		,
+		59
+		'Length of M III > M V'
+		'length of M III = M V'
+		'length of M III < M V'
+		,
+		60
+		'Onto the ankle region'
+		'onto the first metatarsal'
+		,
+	;
+	
+	MATRIX
+	Carollia_subrufa					0--021020201120100211000000000000000-110000001020001001000?0
+	Platyrrhinus_albericoi				1100303?212011212?121010?11111101212011111011010200121111211
+	Platyrrhinus_aurarius				101030312220221121121210011111000212011110101010100121211221
+	Platyrrhinus_brachycephalus			1001214121?112?11?00101??11111?1?11?0?01101010102211212112?1
+	Platyrrhinus_chocoensis				101020?1?22?11111?0?1?1001111100021?0?211?1020101001212102?1
+	Platyrrhinus_dorsalis				101030312120121?11011210011111?0021?0121??1120102001212112?1
+	Platyrrhinus_ismaeli				101030312120122121?11110?11111?0?2121121?11?1010200121111221
+	Platyrrhinus_helleri				1001??312??1111?2?11101?01111101?1110?21101010102111212?1201
+	Platyrrhinus_infuscus				10103?32??12120?1?12111??1111111?21201111111?0102001210102?1
+	Platyrrhinus_lineatus				100120312131122120221010?111110?0?120111101??010200121011221
+	Platyrrhinus_masu					10103011?23112212?011?10111111?002120111?11?10102001212112?1
+	Platyrrhinus_matapalensis			1001203221211?0?2?00101??11111?1?1110?111010?010201121211?01
+	Platyrrhinus_nigellus				10103?3122?0122?2?011?10011111?0??1?011110?0?010200?21?11221
+	Platyrrhinus_recifinus				10012030213122212011111?011111110111011110102010200121210201
+	Platyrrhinus_vittatus				111030322230112?1?11101001111110021201?111111010210121111221
+	Sturnira_erythromos					0--100200000232120010000?00000000000-01000000001100000000020
+	Uroderma_magnirostrum				100120302221110?00220001111110001011101000101111100110210201
+	Vampyrodes_caraccioli				10013031213102101?111010011110?01210-11110010110110110211121
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 60;
+ENDBLOCK;

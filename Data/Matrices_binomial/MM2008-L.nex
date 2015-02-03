@@ -1,0 +1,29 @@
+#NEXUS
+
+[!Lambert, O. A new porpoise (cetacea, odontoceti, phocoenidae) from the pliocene of the north sea. Journal of Vertebrate Paleontology 28:863-872.]
+
+begin data;
+dimensions ntax=16 nchar=27;
+format missing=? gap=- symbols="0123";
+MATRIX
+Kentriodon_pernix	00000?0000000000000000?????
+Delphinodon_dividum	10000?0000?00?20?00?0000???
+Salumiphocaena	110210002010??11?0?????????
+Piscolithax_tedfordi	1012101112011?1?00???0?????
+Piscolithax_boreios	0002100122010?00???????????
+Piscolithax_longirostris	0002100112001?00101000?????
+Lomacetus	010210012000000??0????00???
+Australithax	?1021001200011?????????????
+Haborophocoena	?011101?2011?0?0???????????
+Septemtriocetus	?011101?200111?????????????
+Phocoena_sinus	2002110121011?3111100110001
+Phocoena_dioptrica	200211012?1111311?2?0011110
+Phocoena_phocoena	20?2110?2?1111211??11001101
+Phocoenoides_dalli	20021?01??11112?13211100010
+Neophocaena_phocaenoides	2112110?2?11?131111100?0000
+Phocoena_spinipinnis	2?0211012101113111100100000;
+end;
+begin sets;
+taxset fossil = Kentriodon_pernix Delphinodon_dividum Lomacetus Salumiphocaena Australithax Septemtriocetus Haborophocoena Piscolithax_longirostris Piscolithax_boreios Piscolithax_tedfordi;
+taxset extant = Phocoena_spinipinnis Neophocaena_phocaenoides Phocoenoides_dalli Phocoena_phocoena Phocoena_dioptrica Phocoena_sinus;
+end;

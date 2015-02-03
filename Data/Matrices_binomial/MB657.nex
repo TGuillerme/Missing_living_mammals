@@ -1,0 +1,676 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 05.25.27 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=54;
+	TAXLABELS
+		'Nyctomys sumichrasti'
+		'Peromyscus maniculatus'
+		'Delomys sublineatus'
+		'Thomasomys baeops'
+		'Wiedomys pyrrhorhinos'
+		'Amphinectomys savamis'
+		'Handleyomys intectus'
+		'Holochilus brasiliensis'
+		'Holochilus chacarius'
+		'Lundomys molitor'
+		'Melanomys caliginosus'
+		'Microryzomys minutus'
+		'Neacomys minutus'
+		'Neacomys musseri'
+		'Neacomys spinosus'
+		'Nectomys apicalis'
+		'Nectomys squamipes'
+		'Nesoryzomys narboroughi'
+		'Nesoryzomys swarthi'
+		'Oecomys bicolor'
+		'Oecomys catherinae'
+		'Oecomys concolor'
+		'Oecomys mamorae'
+		'Oecomys trinitatis'
+		'Oligoryzomys flavescens'
+		'Oligoryzomys fornesi'
+		'Oligoryzomys fulvescens'
+		'Oligoryzomys nigripes'
+		'Oligoryzomys stramineus'
+		'Oryzomys albigularis'
+		'Oryzomys alfaroi'
+		'Oryzomys angouya'
+		'Oryzomys balneator'
+		'Oryzomys chapmani'
+		'Oryzomys couesi'
+		'Oryzomys hammondi'
+		'Oryzomys lamia'
+		'Oryzomys levipes'
+		'Oryzomys macconnelli'
+		'Oryzomys megacephalus'
+		'Oryzomys melanotis'
+		'Oryzomys palustris'
+		'Oryzomys polius'
+		'Oryzomys russatus'
+		'Oryzomys subflavus'
+		'Oryzomys talamancae'
+		'Oryzomys xanthaeolus'
+		'Oryzomys yunganus'
+		'Pseudoryzomys simplex'
+		'Scolomys ucayalensis'
+		'Sigmodontomys alfari'
+		'Sigmodontomys aphrastus'
+		'Zygodontomys brevicauda'
+		'Zygodontomys cherriei'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=99;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Mammae - mammae number and position'
+		 [2] 'Manus - claws size and shape'
+		 [3] 'Manus - ungual tufts presence'
+		 [4] 'Hindfeet - Hypothenar pad presence'
+		 [5] 'Hindfeet - plantar pads size and position'
+		 [6] 'Hindfeet - Plantar surface texture'
+		 [7] 'Hindfeet - Ungual tufts presense'
+		 [8] 'Hindfeet - Natatory fringes presence'
+		 [9] 'Hindfeet - Interdigital webbing presence and size'
+		 [10] 'Hindfeet - Dorsal surface hair color'
+		 [11] 'Tail - Ventral surface hairs color'
+		 [12] 'Tail - Fur presence'
+		 [13] 'Pelage - Spines presence'
+		 [14] 'Pelage - Ventral fur base color'
+		 [15] 'Pelage - Countershading presence'
+		 [16] 'Pelage - Subauricular patches presence'
+		 [17] 'Rostrum - Rostral tube presence'
+		 [18] 'Rostrum- Nasals posterior terminus shape'
+		 [19] 'Rostrum - Nasals extension'
+		 [20] 'Rostrum - Premaxillaries extension'
+		 [21] 'Rostrum - Lacrimal sutures'
+		 [22] 'Orbital region - Interorbital region shape'
+		 [23] 'Orbital region - Postorbital ridge presence'
+		 [24] 'Braincase - Frontosquamosal suture colinearity'
+		 [25] 'Braincase - Parietals lateral expansion'
+		 [26] 'Braincase - Interparietal shape'
+		 [27] 'Braincase - Basicranial flexion extent'
+		 [28] 'Zygomata - Zygomatic plate anterior shape'
+		 [29] 'Zygomata - Posterior margin of zygomatic plate position'
+		 [30] 'Zygomata - Jugal presence and size'
+		 [31] 'Palate - Incisive foramina extension'
+		 [32] 'Palate - Palate posterior extension'
+		 [33] 'Palate - Bony palate surface'
+		 [34] 'Palate - Posterolateral palatal pits presence'
+		 [35] 'Basicranium- Parapterygoid fossae height'
+		 [36] 'Basicranium - Sphenopalatine vacuities presence and size'
+		 [37] 'Basicranium - Carotid circulation foramina configuration'
+		 [38] 'Basicranium - Alisphenoid strut presence'
+		 [39] 'Basicranium - Alisphenoid canal anterior opening presence'
+		 [40] 'Basicranium - Subsquamosal fenestra presence'
+		 [41] 'Bullae - Ectotympanic bullae size and extension'
+		 [42] 'Bullae - Posterior suspensory process of squamosal presence'
+		 [43] 'Bullae - Mastoid ossification'
+		 [44] 'Mandible -Mental foramen position'
+		 [45] 'Mandible - Capsular process presence and development'
+		 [46] 'Mandible - Superior and inferior masseteric ridges shape'
+		 [47] 'Mandible - Masseteric crest anterior edge position'
+		 [48] 'Hyoid - Hyoid shape'
+		 [49] 'Molar roots - M1 labial accessory root presence'
+		 [50] 'Molar roots - m1 roots number'
+		 [51] 'Molar roots - m2 roots number'
+		 [52] 'Incisors - Procumbency degree'
+		 [53] 'Incisors - Enamel band of upper incisors shape'
+		 [54] 'Molars - General pattern'
+		 [55] 'Molars - Labial flexi presence'
+		 [56] 'Molars - Maxillary toothrows orientation'
+		 [57] 'Molars - Flexi penetration'
+		 [58] 'M1 - Anterocone division'
+		 [59] 'M1 - Anteroloph presence and development'
+		 [60] 'M1 - Protostyle presence'
+		 [61] 'M1 - Paracone-protocone connection'
+		 [62] 'M1 & M2 Mesolophs presence and development'
+		 [63] 'M1 - Median mure-protocone connection'
+		 [64] 'M2 - Protoflexus presence'
+		 [65] 'M2 - Paracone accessory loph presence'
+		 [66] 'M2 - Mesoflexus internal fossetti number'
+		 [67] 'M3 - Mesoloph presence'
+		 [68] 'M3 - Posteroloph presence'
+		 [69] 'M3 - Hypoflexus development'
+		 [70] 'm1 - Anteromedian flexid and anteromedian fossettid presence'
+		 [71] 'm1 - Anterolabial cingulum presence'
+		 [72] 'm1 - Ectolophid and ectostylid presence'
+		 [73] 'm1 & m2 - Mesolophids presense and size'
+		 [74] 'm2 - Anterolabial cingulum presence'
+		 [75] 'm2 & m3 - Anterolophid presence'
+		 [76] 'm3 - Anterolabial margin shape, protoflexid presence'
+		 [77] 'm3 - Posteroflexid presence and size'
+		 [78] 'Ribs - Ribs number'
+		 [79] 'Ribs - Tuberculum of first rib articulation'
+		 [80] 'Vertebrae - Anapophyses presense'
+		 [81] 'Vertebrae - Hemal arches presence and shape'
+		 [82] 'Humerus - Entepicondylar foramen presence'
+		 [83] 'Humerus - Supratrochlear foramen presence'
+		 [84] 'Calcaneum - Trochlear process position'
+		 [85] 'Penis - Bacular mounds presence'
+		 [86] 'Penis - Bacular cartilaginous apparatus shape'
+		 [87] 'Penis - Nonspinous tissue of crater rim extension'
+		 [88] 'Penis - Dorsal papilla spine presence'
+		 [89] 'Penis - Urethral processes subapical lobule on ventral surface presence'
+		 [90] 'Reproductive tract - Preputial glands presence and number'
+		 [91] 'Reproductive tract - Prostate glands presence'
+		 [92] 'Reproductive tract - Anterior prostate glands presence'
+		 [93] 'Reproductive tract - Vesicular glands presense and shape'
+		 [94] 'Reproductive tract - Preputial glands extension'
+		 [95] 'Reproductive tract - Dorsal prostates presence and number'
+		 [96] 'Reproductive tract - Ampullary glands shape'
+		 [97] 'Reproductive tract - Vesicular gland subterminal flexure shape'
+		 [98] 'Gall bladder - Gall bladder presence'
+		 [99] 'Stomach - Gastric glandular epithelium distribution'
+	;
+	
+	STATELABELS
+		1
+		'Four mammae present in inguinal and abdominal pairs'
+		'six mammae in inguinal, abdominal, and postaxial pairs'
+		'eight mammae in inguinal, abdominal, postaxial, and pectoral pairs'
+		,
+		2
+		'Claws of manus small, not extending much beyond digital pads, not keeled'
+		'claws long, extending conspicuously beyond digit pads and ventrally, keeled for about half their length'
+		,
+		3
+		'Ungual tufts at base of manual claws present and long'
+		'reduced or absent'
+		,
+		4
+		'Hypothenar pad of pes present'
+		'absent or vestigial'
+		,
+		5
+		'Plantar pads on hindfeet large and fleshy, interdigitals 1-4 set close together, often in contact'
+		'pads smaller but still fleshy, interdigitals 1 and 4 displaced proximally relative to 2 and 3'
+		'interdigital pads distributed as in state 1 but extremely small and with low relief'
+		,
+		6
+		'Plantar surface of hindfeet smooth, without well-developed squamae'
+		'plantar surface covered with squamae'
+		,
+		7
+		'Ungual tufts present on all claws of hindfoot as a uniform thick sheath extending tobeyond claw tip'
+		'tufts absent on digit I (dI), present on dII dV as a uniform thick sheath extending tobeyond claw tip'
+		'tufts absent on dI, present as sparse cover and with few hairs extending beyond the claw tip on dII-dV'
+		'tufts extremely reducedabsent on all claws'
+		,
+		8
+		'Natatory fringes on hindfeet absent'
+		'present'
+		,
+		9
+		'Interdigital webbing on hindfeet absent'
+		'present but small, not extending to first interphalangeal joint of any digit'
+		'present and long, extending to beyond first interphalangeal joints of digits II, III, and IV'
+		,
+		10
+		'Dorsal surface of hindfeet densely covered with white hairs, feet appear solid white'
+		'dorsal surface sparsely covered with short silvery hairs, feet appear grayish whitepale tan'
+		'dorsal surface covered with dark hairs, feet appear brown'
+		'dorsal surface densely covered with brown and white/silvery hairs'
+		'dorsal surface densely covered with brown and white silvery hairs'
+		,
+		11
+		'Ventral surface of tail covered with dark hairs'
+		'covered with hairs with dark basal band and white distal band'
+		'covered with white hairs'
+		,
+		12
+		'Tail densely furred, scales not visible even at higher magnification'
+		'tail sparsely furred, scales macroscopically obvious'
+		,
+		13
+		'Dorsal and ventral fur without grooved spines'
+		'with grooved spines'
+		,
+		14
+		'Ventral fur with plumbeous dark gray base'
+		'ventral fur entirely white, without dark base'
+		,
+		15
+		'Dorsal and ventral colors sharply delimited, dorsum much darker than pale ventral surface, resulting in conspicuous countershading'
+		'dorsal and ventral colors subtly delimited, dorsum slightly darker than ventral surface, resulting in weak countershading'
+		'limits of dorsal and ventral colors indistinct, ventral surface dark, countershading absent'
+		,
+		16
+		'Subauricular patches absent'
+		'present'
+		,
+		17
+		'Rostral tube absent'
+		'present'
+		,
+		18
+		'Nasals with blunt posterior margin'
+		'nasals with acutely pointed terminus, forming a sharp angle'
+		,
+		19
+		'Nasals short, not extending posteriorly beyond the triple-point suture between the maxillary, frontal, and lacrimal'
+		'long, extending posteriorly well beyond the maxillary-frontal-lacrimal suture'
+		,
+		20
+		'Premaxillaries long, extending posteriorly beyond the nasals'
+		'shorter, extending posteriorly to about the same level as the nasals'
+		'very short, terminating anterior to the nasals'
+		,
+		21
+		'Lacrimal equally contacting maxillary and frontal bones'
+		'lacrimal contacting mainly maxillary'
+		,
+		22
+		'Interorbital region symmetrically constricted (hourglass-shapedamphoral), with rounded supraorbital margins'
+		'interorbital region symmetrically constricted with squared supraorbital margins'
+		'interorbital region symmetrically constricted with conspicuously beaded supraorbital margins'
+		'interorbital region convergent anteriorly (cuneate) with weakly beaded supraorbital margins'
+		'interorbital region convergent anteriorly with well-developed supraorbital crests'
+		,
+		23
+		'Postorbital ridge absent, posterior orbital wall without conspicuous relief, frontosquamosal suture exposed'
+		'postorbital ridge present and concealing frontosquamosal suture in most old specimens'
+		,
+		24
+		'Frontosquamosal suture colinear with the frontoparietal suture, dorsal facet of frontal never in contact with squamosal'
+		'frontosquamosal suture anterior to frontoparietal suture, leading to an area of contact between dorsal facet of frontal and squamosal'
+		,
+		25
+		'Parietals restricted to the dorsal surface of the braincase,slightly expanded below the lateral edges of the dorsal at about the squamosal root of the zygomatic arch'
+		'parietals deeply expanded onto lateral surface of the braincase'
+		,
+		26
+		'Interparietal wider than posterior border of frontals, in contact with squamosal'
+		'interparietal strap-shaped, nearly as wide as posterior border of frontals, but not in contact with squamosal'
+		'interparietal wedge-shaped, about half as wide as posterior border of frontals, not in contact with squamosal'
+		,
+		27
+		'Basicranial flexion weakly pronounced, foramen magnum oriented mostly caudad'
+		'strongly pronounced, foramen magnum oriented mostly posteroventrally'
+		,
+		28
+		'Zygomatic plate narrow and zygomatic notch indistinct, anterior border of plate flat, below or slightly in front of anterior margin of superior maxillary root of zygoma'
+		'plate broad with moderate deep notch, anterodorsal margin smoothly rounded, conspicuously anterior to superior maxillary root of zygoma'
+		'plate broad and notch conspicuous, anterodorsal margin produced as a sharp corner or spinous process, conspicuously anterior to superior maxillary root of zygoma'
+		,
+		29
+		'Posterior margin of zygomatic plate situated anterior to the alveolus of M1'
+		'approximately even with the alveolus of M1'
+		,
+		30
+		'Jugal present and large, maxillary and squamosal processes of the zygoma not overlapping'
+		'jugal present and small, maxillary and squamosal processes overlapping, but not in contact'
+		'jugal absent,reduced to slivers of bones, maxillary and squamosal processes in contact'
+		,
+		31
+		'Posterior margins of incisive foramina conspicuously projecting between first molars'
+		'terminating anteriorly or at the front of first molar alveoli'
+		,
+		32
+		'Palate short, mesopterygoid fossa extends anteriorly between the molar rows'
+		'palate of intermediate length, mesopterygoid fossa extends anteriorly between the maxillary bones but not between M3s'
+		'palate long, mesopterygoid fossa does not extend anteriorly between the maxillary bones'
+		,
+		33
+		'Bony palate flat, with shallow lateral excavations, never with median longitudinal ridge'
+		'with deep lateral troughs separated by median longitudinal ridge'
+		,
+		34
+		'Posterolateral palatal pits absent'
+		'one simple small foramen present at each side of the posterior palate'
+		'posterolateral palatal pits always present as conspicuous perforations, usually more than one foramen, not recessed in fossae or recessed in shallow depression'
+		'posterolateral palatal pits always present as perforations within deeply recessed fossa, generally with three foramina, one directed posteriorly, one anteriorly, and one dorsally'
+		,
+		35
+		'Parapterygoid fossae at same level as palate'
+		'parapterygoid fossae dorsally excavated but not reaching level of mesopterygoid roof'
+		'parapterygoid fossae deeply excavated, reaching level of mesopterygoid roof'
+		,
+		36
+		'Sphenopalatine vacuities present as large apertures along the presphenoid, reaching basisphenoid'
+		'vacuities present but reduced, generally as narrow openings, anterior to basisphenoid-presphenoid suture'
+		'vacuities absent, mesopterygoid roof totally ossified'
+		'vacuities present but reduced, situated posterior to basisphenoid-presphenoid suture'
+		,
+		37
+		'Stapedial foramen and posterior opening of alisphenoid canal large, squamosal-alisphenoid groove and sphenofrontal foramen present'
+		'stapedial foramen and posterior opening of alisphenoid canal large, squamosal-alisphenoid groove and sphenofrontal foramen absent'
+		'stapedial foramen and posterior opening of alisphenoid canal small, squamosal-alisphenoid groove and sphenofrontal foramen absent, secondary branch crosses dorsal surface of pterygoid plate'
+		,
+		38
+		'Alisphenoid strut present, buccinator-masticatory and accessory foramen ovale separate'
+		'strut absent, buccinator-masticatory and foramen ovale confluent'
+		,
+		39
+		'Anterior opening of alisphenoid canal present, large'
+		'absent'
+		,
+		40
+		'Subsquamosal fenestra present'
+		'fenestra vestigial or absent'
+		,
+		41
+		'Ectotympanic bullae small, exposed flange of periotic extends to internal carotid canal'
+		'ectotympanic bullae intermediate, exposed wedge of periotic smaller and not contributing to wall of carotid canal'
+		'ectotympanic bullae large, periotic bone mostly masked in ventral view'
+		,
+		42
+		'Posterior suspensory process of squamosal present and connected to the tegmen tympani'
+		'posterior suspensory process absent, tegmen tympani not touching or barely in contact with squamosal'
+		,
+		43
+		'Mastoid completely ossified,with a diminutive pit in the dorsal contact with the exoccipital border'
+		'mastoid with conspicuous fenestra'
+		,
+		44
+		'Mental foramen opens laterally, at body of mandible'
+		'mental foramen opens dorsally, at the diastema'
+		,
+		45
+		'Capsular process of lower incisor alveolus absent'
+		'projection present but reduced as a slight rounded elevation'
+		'projection present, well developed as a conspicuous swelling with acute projection'
+		,
+		46
+		'Superior and inferior masseteric ridges converge anteriorly as an open chevron'
+		'anterior portion of ridges conjoined as single crest'
+		,
+		47
+		'Anterior edge of masseteric crests below m1'
+		'edge anterior to m1, extending to diastema'
+		,
+		48
+		'Entoglossal process of basihyal present as small knob, basihyal arched, and thyrohyal long, greater thanequal to the length of the basihyal'
+		'entoglossal process absent, basihyal straight, and thyrohyal short, less than length of basihyal'
+		,
+		49
+		'Labial accessory root of M1 absent'
+		'present'
+		,
+		50
+		'two'
+		'three'
+		'four'
+		,
+		51
+		'Second lower molar with two roots'
+		'three roots'
+		,
+		52
+		'Incisors opisthodont'
+		'orthodont'
+		,
+		53
+		'Enamel band of upper incisors smoothly rounded,flattened but without labial bevel'
+		'band flattened medially, with distinct labial bevel'
+		,
+		54
+		'Molars bunodont and brachydont'
+		'molars planar and hypsodont'
+		,
+		55
+		'Labial flexi not patent, closed off by labial cingula'
+		'labial flexi patent, cingula absent'
+		,
+		56
+		'Maxillary toothrows parallel'
+		'anteriorly convergent'
+		,
+		57
+		'Flexi of M1 and M2 do not interpenetrate'
+		'flexi meet at midline, enamel overlaps'
+		'flexi interpenetrate'
+		,
+		58
+		'Anterocone of M1 divided into labial and lingual conules by anteromedian flexus'
+		'anterocone partially divided into labial and lingual conules by internal fold of procingulum, anteromedian flexus absent'
+		'anterocone undivided, anteromedian flexus and internal fold of procingulum absent'
+		,
+		59
+		'Anteroloph on M1 well-developed and discrete, reaching the labial cingulum, anteroflexus present'
+		'anteroloph present but small, not reaching the labial cingulum, anteroflexus absent'
+		'anteroloph fused with anterocone labially, anteroflexus present as small fossette'
+		'anteroloph and anteroflexus absent'
+		,
+		60
+		'Protostyle on M1 absent'
+		'present'
+		,
+		61
+		'Paracone of M1 connected to protocone by enamel bridge situated at posteriormost end of protocone'
+		'paracone connected to protocone by enamel bridge situated at anterior portion of protocone'
+		'protocone and paracone forming single dentine basin without enamel connection'
+		,
+		62
+		'Mesolophs on M1 and M2 well-developed, extending from the median mure to the labial cingulum, fused with mesostyle'
+		'mesolophs small, not extending to labial cingulum and not fused with the mesostyle'
+		'mesolophs on M1 and M2 absent'
+		,
+		63
+		'Median mure connected to protocone on M1'
+		'median mure not connected to protocone'
+		,
+		64
+		'Protoflexus of M2 present'
+		'absent'
+		,
+		65
+		'Paracone on M2 without accessory loph'
+		'accessory loph present posterior to paracone'
+		,
+		66
+		'Mesoflexus present as single internal labial fossette on M2'
+		'mesoflexus divided into labial and medial fossetti'
+		,
+		67
+		'Mesoloph on M3 present and well developed'
+		'absent or vestigial'
+		,
+		68
+		'Posteroloph on M3 present'
+		'absent'
+		,
+		69
+		'Hypoflexus on M3 present, remaining excavated until later wear stages'
+		'hypoflexus absent or diminutive, disappearing with little occlusal wear'
+		,
+		70
+		'Anteromedian flexid and anteromedian fossettid absent on first lower molar'
+		'anteromedian flexid absent but anteromedian fossettid present'
+		'anteromedian flexid present and anteromedian fossettid absent'
+		,
+		71
+		'Anterolabial cingulum on m1 absent'
+		'long anterolabial cingulum present'
+		,
+		72
+		'Ectolophid and ectostylid on m1 absent'
+		'present'
+		,
+		73
+		'Mesolophids present and well developed on m1 and m2'
+		'mesolophids present in unworn dentition but small, not extending to lingual cingulum'
+		'mesolophids completely absent'
+		,
+		74
+		'Anterolabial cingulum present on m2'
+		'absent'
+		,
+		75
+		'Anterolophid absent or weakly expressed on m2 and m3'
+		'anterolophid and companion metaflexid distinct'
+		,
+		76
+		'Anterolabial margin of m3 with shelf-like cingulum, separated from protoconid by protoflexid'
+		'anterolabial margin of m3 smoothly rounded, without cingulum, protoflexid absent'
+		,
+		77
+		'Posteroflexid on m3 present, well developed'
+		'posteroflexid present as a small groove, obvious only in juveniles, obliterated with wear'
+		'posteroflexid absent'
+		,
+		78
+		'13 ribs present'
+		'12 ribs'
+		,
+		79
+		'Tuberculum of first rib articulates with transverse process of first thoracic vertebra only'
+		'first rib contacts transverse processes of both the first thoracic and seventh cervical vertebrae'
+		,
+		80
+		'Anapophyses present on the 17th thoracico-lumbar vertebra'
+		'anapophyses absent or vestigial'
+		,
+		81
+		'Hemal arches absent between caudal vertebrae 2 and 3'
+		'hemal arches present, with simple posterior border'
+		'present, with spinous posterior border'
+		,
+		82
+		'Entepicondylar foramen of humerus present'
+		'absent'
+		,
+		83
+		'Supratrochlear foramen in humerus absent'
+		'present'
+		,
+		84
+		'Trochlear process of calcaneum at the same level as posterior articular facet, trochlear process broad and shelf-like'
+		'gap between proximal edge of trochlear process and posterior articular facet, process shorter and less shelf-like'
+		,
+		85
+		'Lateral bacular mounds absent or diminutive'
+		'present as large protuberances'
+		,
+		86
+		'Large bacular cartilaginous apparatus with central digit more robust than lateral digits'
+		'reduced cartilaginous apparatus with slim central digit'
+		'bifid cartilaginous apparatus with central digit absent'
+		,
+		87
+		'Nonspinous tissue of crater rim does not conceal bacular mounds'
+		'nonspinous tissue conceals bacular mounds'
+		,
+		88
+		'Dorsal papilla of glans penis spineless'
+		'spinous'
+		'apex of dorsal papilla with sinlge spine'
+		,
+		89
+		'Subapical lobule on ventral surface of urethral processes absent'
+		'present'
+		'State 2'
+		,
+		90
+		'Two pairs of preputial glands present'
+		'one pair present'
+		'preputial glands absent'
+		,
+		91
+		'Two pairs of ventral prostate glands present'
+		'ventral prostate glands absent'
+		,
+		92
+		'Anterior prostate glands present'
+		'absent'
+		,
+		93
+		'Vesicular glands present, large, shaped like a caneinverted "J"'
+		'vesicular glands present, shaped like small diverticula'
+		'vesicular glands absent'
+		,
+		94
+		'Preputial glands extend tobeyond the ventral flexure of the penis'
+		'do not extend to the ventral flexure of the penis'
+		,
+		95
+		'Dorsal prostates absent'
+		'one pair present'
+		'two pairs present'
+		,
+		96
+		'Ampullary glands forming tufts of tubules that extend cranially from the base of the vas deferens'
+		'ampullary glands compact, not elaborate'
+		,
+		97
+		'Subterminal flexure of vesicular gland rounded and smooth'
+		'irregularly lobed and notched'
+		'small and finger-shaped'
+		,
+		98
+		'Gall bladder present'
+		'absent'
+		,
+		99
+		'Gastric glandular epithelium of stomach limited to antrum, not extending beyond incisura angularis'
+		'gastric glandular epithelium covers antrum and proximal portion of corpus near esophageal opening'
+		,
+	;
+	
+	MATRIX
+	Nyctomys_sumichrasti			0000000001000100000004000000001001030001000010000000000000000000100001010000000000000??000112000?10
+	Peromyscus_maniculatus			10000100002000001001000001000000000000001010100000000000000000100?0110101000200000000????2000????0?
+	Delomys_sublineatus				200011000111000010010000010110000101010010110001000000002000000000000111000000100111?????????????00
+	Thomasomys_baeops				100000100101001100?2000011001100011220001010200111000000000000000000021100000011?1001??10100001?000
+	Wiedomys_pyrrhorhinos			200001000100001000?2030001010001011001002010000?11000000000000010000021000000111111110?00??????????
+	Amphinectomys_savamis			???????121?10000000214?00201101203?1???1???01?0????1?0?????????????????????????????????????????????
+	Handleyomys_intectus			100010100101001000121000?201111202020100011010011?1100002200000001011111000?011?111??????????????10
+	Holochilus_brasiliensis			201121312101001000011211110201111?2020002110211112101111223001110?000110200021102111101011000011011
+	Holochilus_chacarius			?0112131210100100001121111020112122020002100211?12101111223002110?000110200021???????????????????11
+	Lundomys_molitor				21112131210100100011010011021102122121001110100102?00011101001000?10011010002110211110000????????10
+	Melanomys_caliginosus			2000112002010020001?140112011111021221011100110?120100000220100100001110000001112111110001000011010
+	Microryzomys_minutus			2000111001110020001100000110021102110100011020010000000000001000000102100000011111111??0?1000011011
+	Neacomys_minutus				20001110010111000012040001010112021101000110200?00000000000010000001111000000?????????0????????????
+	Neacomys_musseri				20001110010111000012040001010112021111000110100?00000000000010000001111000010???????10000????????11
+	Neacomys_spinosus				200011100101110000120400010101120211010001?0200?100000000200100000011110000001111111100001000111010
+	Nectomys_apicalis				2011213121010010011204011201111103122101110021011200000012200001000011100001011?21?1?????????????11
+	Nectomys_squamipes				20012121210100100112140111011111031?2101110011011200000012200001000001100000011?21?110???1000011011
+	Nesoryzomys_narboroughi			?0001110002000110001110011011102031021012100211112000000000010010000011000000110011111??01111?11?10
+	Nesoryzomys_swarthi				?0001110001000110001110011011001031021002100211112?000000????????????????????1102111???????????????
+	Oecomys_bicolor					2000001001010100000114001100011202120?00?1?0200?100000001200000010001111000001111101101001???????10
+	Oecomys_catherinae				20000010010100000001040011001112021201001101100?10000000120000001000011100000??????????????????????
+	Oecomys_concolor				2000001001010110000104001100011202122?00?110100?100000001000000010000111000001101101101001000011010
+	Oecomys_mamorae					20000110010101100001040011000?12021221001110100?10000000120000001000011100000111111?10100????????10
+	Oecomys_trinitatis				2000001001010000000114001100011202120?00?1?0200?11000000120000001000011100000111111110???????????10
+	Oligoryzomys_flavescens			20001110011100100011000001010212020011000111201?00000000000010000000111000000111?11?100101???????1?
+	Oligoryzomys_fornesi			20001110011100100011000001010212020011000111201?000000000000100000001110000001???????????1?????????
+	Oligoryzomys_fulvescens			200011100111001000110000010102120200110001112011000000000000100000000110000001112111100102000?11010
+	Oligoryzomys_nigripes			200011100111000000?1000001010212020011000111201100000000000010000000011000000111211?100102???????10
+	Oligoryzomys_stramineus			20001110011100000011000001010212020011000111201?00000000000010000000111000000??????????????????????
+	Oryzomys_albigularis			200010100111000100010000?101121103110?0011?010010100000020000000000011110000011?111110100????????10
+	Oryzomys_alfaroi				2000101001210000000?0300?10111120?1001001110100?121000000200100001011111000001??????110001000011110
+	Oryzomys_angouya				200011000111000000?1?1001?011101031021001110200?11000000000110000100011100000110210110100100001101?
+	Oryzomys_balneator				20001110010101000012000001000211021101000111200?01000000000010000001021000000???????10000????????11
+	Oryzomys_chapmani				200010100101000000010300?101?11203102100111?200?12100000020010000101111000000111111?11000????????10
+	Oryzomys_couesi					20012120011100100001140012010102031221001110200?12?00000020010000100011000100111211110011????????10
+	Oryzomys_hammondi				200010200?0100100001030111001011011201010100000?00?10000220010010000011100010????????????????????10
+	Oryzomys_lamia					2000101001210000001203000101121202120?001100200?01000000120000000001010000000????????????????????1?
+	Oryzomys_levipes				200010100111000000011100??011110031100001110100?01000000200000000000111100000110111110100????????1?
+	Oryzomys_macconnelli			200010100121000000010300??011112021201001100000101000000120010000101011100000110111110100????????10
+	Oryzomys_megacephalus			200010100111000000011100010111120?1?110011100001000000000200000000010111000001111111101001000010110
+	Oryzomys_melanotis				2000111001110000000103000101011203100100?110100?121000000200?00001011110000001111111110001000011210
+	Oryzomys_palustris				2011212011210000001114001201010203102100111010011??000000100100001000110001001112111101111000011110
+	Oryzomys_polius					20001100002100100001040012011101032020001110010100?000000000000000001110001001?????????????????????
+	Oryzomys_russatus				2000101001210000000103000101111102120?0011002001010000001200000001010110000001101111?????????????1?
+	Oryzomys_subflavus				2000111001110000000104001?010?010310210111?12001120000000100?0000100?11000000110211111000????????10
+	Oryzomys_talamancae				200010100111000000010300?10111120?11010011?0100?000000002200000000011111000001101111101001000010110
+	Oryzomys_xanthaeolus			200011100111000000??14001?01?1020310210111?0110112100000002010010000111000000110211?11000????????10
+	Oryzomys_yunganus				200?1010012100000001030001011112021211001110000?0000000012000000010111110000011?111?10100????????10
+	Pseudoryzomys_simplex			2001212011210000001113001102010202102?001110200112100000013011000?10010020001111211111?001???????11
+	Scolomys_ucayalensis			1001111001011010011213000200001202122110110010010001000002201001001111100000011101111?100????????10
+	Sigmodontomys_alfari			200121201201000000??140111010?110211210111002?01121000001220000100001110010101102111110001000?2101?
+	Sigmodontomys_aphrastus			20012030020100200112140111000011011121011100?00?12?10000222000010000111000110????????????????????11
+	Zygodontomys_brevicauda			200011100111001000?1040002011?02021?21001101101100100000023022010?10011020002111?111101001000011010
+	Zygodontomys_cherriei			200010100111001000?1040002011102021001011101211100100000023022010?11011020002111?111101001000011010
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 99;
+ENDBLOCK;

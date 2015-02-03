@@ -1,0 +1,24 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=14 nchar= 18;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Eomoropus							0?110001000--11111
+Moropus								0?100001000111?111
+Anisodon_macedonicus				111111111110010110
+Chalicotherium_brevirostris			1?1101110001101111
+Anisodon_grande		001111110100011110
+Lgr_1065_(C._?goldfussi)			001?00110101101111
+Chalicotherium_goldfussi			???1?0110111101?10
+Vathylakkos_(Anisodon_sp.)			1????1111110?????0
+Butleria_rusingensis				0011011101??11?111
+Nestoritherium_(Anisodon)_sivalense	10011110010-01011?
+Nestoritherium_linxiaense			00?111?10111000100
+Hesperotherium_sinense				100010?00101000110
+Kalimantsia_bulgarica				?????11101011?????
+Anisodon_sp._from_Dorn-Dürkheim		1?1?11110111110110
+    ;
+End;

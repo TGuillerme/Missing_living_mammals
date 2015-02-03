@@ -1,0 +1,38 @@
+#NEXUS
+
+[!Antoñanzas, R. L., Sen, S., and Mein, P. 2004. Systematics and phylogeny of the cane rats (rodentia: Thryonomyidae). Zoological Journal of the Linnean Society 142:423-444.
+ALL DENTAL]
+
+BEGIN DATA;
+DIMENSIONS NTAX=23 NCHAR=22;
+FORMAT SYMBOLS= "0123" MISSING=? GAP=-;
+        MATRIX
+Phiomys_andrewsi			000000-000000000000000
+Metaphiomys_schaubi			000120-010020000000000
+Gaudeamus_aegyptius			010000-111100011?10111
+Sacaresia_moyaeponsi		000100-000000010110110
+Paraphiomys_simonsi			?11-210110100000000102
+Paraphiomys_pigotti			111-210001120001001001
+Neosciuromys_africanus		111-211100120001?00012
+Paraphiomys_sp.nov.KSA		?????1000012???1?0?000
+Apodecter_stromeri			111-211100012211000001
+Paraphiomys_orangeus		101-111110110011000001
+Paraphiomys_hopwoodi		111-21000012101100?111
+Paraphiomys_renelavocati_sp.nov.	111-211100010111001111
+Epiphiomys_coryndoni		?001210000012011?02001
+Paraphiomys_occidentalis	111-210100110001?02111
+Paraphiomys_shipmani		111-01111010201??????0
+Kochalia_geespei			011-110100000010000001
+Paraulacodus_indicus		111-111100112011210011
+Paraulacodus_johanesi		111-111100110011210011
+Paraphiomys_afarensis		111-21110010000100?011
+Paraphiomys_roessneri		101-10-100000211012001
+Paraphiomys_australis		101-20-100002210?10011
+Thryonomys_swinderianus		110110-100110011310111
+Thryonomys_gregorianus		110110-100100011310111
+;
+END;
+BEGIN ASSUMPTIONS;
+        OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS ;
+END;
+

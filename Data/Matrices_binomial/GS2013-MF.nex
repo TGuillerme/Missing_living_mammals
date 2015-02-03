@@ -1,0 +1,21 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=11 nchar= 25;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Caluromys		0000000001100000?00000000
+Ukhaatherium	000010001???00?????1001??
+Kulbeckia		000010?0011010??????001??
+Zalambdalestes	00001010011110?????10010?
+Chilecebus		001000000???1011?01?01???
+Hyopsodus		010000000?1?100??10?00?1?
+MNHN-F-BRD23	00000000011111??101000000
+Notostylops		0000001101111111001011000
+Altitypotherium	00101120011102100??10100?
+Pachyrukhos		0011100001111010111?11001
+Cochilius		110001011???1011????01???
+    ;
+End;

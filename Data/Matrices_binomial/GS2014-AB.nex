@@ -1,0 +1,19 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=9 nchar= 34;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Alcidedorbignya_inopinata		0020101110001001101110101001000000
+Asmithwoodwardia_scotti			001020001000100000110000000000100?
+Didolodus_multicuspis			??0?0??010000000000000-00?00-0100?
+Notoetayoa_gargantuai			1??0?1???010101?0??2?1??200?001101
+Etayoa_bacatensis				?020?21100101011001231101001100001
+Carodnia_feruglioi				?????????111-11201--21111011000111
+Carodnia_cf._feruglioi			??21???11111-1120??-21111011010?0?
+Carodnia_vieirai				112102111101-11201--21111011010111
+Carodnia_inexpectans_sp._nov.	112101112011-11201--21111111100001
+    ;
+End;

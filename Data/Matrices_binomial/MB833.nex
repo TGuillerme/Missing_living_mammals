@@ -1,0 +1,135 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-8 04.49.00 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=36;
+	TAXLABELS
+		'Didelphis virginiana'
+		'Kulbeckia kulbecke'
+		'Ukhaatherium nessovi'
+		'Zalambdalestes lechei'
+		'Zhelestid'
+		'Chrysochloris sp.'
+		'Elephantimorpha'
+		'Hemicentetes semispinosum'
+		'Macroscelides proboscideus'
+		'Orycteropus afer'
+		'Procavia capensis'
+		'Trichechus manatus'
+		'Dasypus novemcinctus'
+		'Atelerix albiventris'
+		'Balaenopteridae'
+		'Bathygenys reevesi'
+		'Canis familiaris'
+		'Equus caballus'
+		'Eumetopias jubatus'
+		'Felis catus'
+		'Manis tricuspis'
+		'Nycteris grandis'
+		'Pteropus lylei'
+		'Rhinolophus ferrumequinum'
+		'Sorex monticolus'
+		'Sus scrofa'
+		'Tadarida brasiliensis'
+		'Tursiops truncatus'
+		'Cavia porcellus'
+		'Cynocephalus volans'
+		'Homo sapiens'
+		'Lepus californicus'
+		'Macaca mulatta'
+		'Mus musculus'
+		'Sylvilagus floridanus'
+		'Tupaia glis'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=6;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123";
+
+	CHARLABELS
+		 [1] 'Posterior Entry of Lateral Semicircular Canal'
+		 [2] 'Position of the Lateral Semicircular Canal with respect to Posterior Semicircular Canal'
+		 [3] 'Largest Semicircular Arc Radius of Curvatue'
+		 [4] 'Shape of Cochlear Spiral'
+		 [5] 'Coiling of the Cochlea'
+		 [6] 'Percent Volume of the Cochlea'
+	;
+	
+	STATELABELS
+		1
+		'Secondary Common Crus'
+		'Posterior Ampulla'
+		'Vestibule'
+		,
+		2
+		'Low (SLI = 0.0)'
+		'High (SLI > 0.0)'
+		,
+		3
+		'Anterior Semicircular Canal'
+		'Lateral Semicircular Canal'
+		'Posterior Semicircular Canal'
+		,
+		4
+		'low (aspect ratio equals 0.55 and below)'
+		'high (aspect ratio above 0.55)'
+		,
+		5
+		'1-2 turns (360-720 degrees)'
+		'2-3 turns (720-1080 degrees)'
+		'3+ turns (>1080 degrees)'
+		,
+		6
+		'"‰¤50%'
+		'51-75%'
+		'>75%'
+		,
+	;
+	
+	MATRIX
+	Didelphis_virginiana					000011
+	Kulbeckia_kulbecke						000000
+	Ukhaatherium_nessovi					000001
+	Zalambdalestes_lechei					000000
+	Zhelestid								000001
+	Chrysochloris_sp.						210121
+	Elephantimorpha							200010
+	Hemicentetes_semispinosum				110000
+	Macroscelides_proboscideus				210111
+	Orycteropus_afer						002001
+	Procavia_capensis						212120
+	Trichechus_manatus						201001
+	Dasypus_novemcinctus					212111
+	Atelerix_albiventris					210100
+	Balaenopteridae							100012
+	Bathygenys_reevesi						210001
+	Canis_familiaris						000121
+	Equus_caballus							110011
+	Eumetopias_jubatus						101111
+	Felis_catus								110121
+	Manis_tricuspis							212010
+	Nycteris_grandis						100111
+	Pteropus_lylei							210101
+	Rhinolophus_ferrumequinum				110122
+	Sorex_monticolus						210000
+	Sus_scrofa								210121
+	Tadarida_brasiliensis					210011
+	Tursiops_truncatus						101002
+	Cavia_porcellus							210121
+	Cynocephalus_volans						210010
+	Homo_sapiens							212010
+	Lepus_californicus						210101
+	Macaca_mulatta							210020
+	Mus_musculus							210101
+	Sylvilagus_floridanus					210111
+	Tupaia_glis								110121
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 6;
+ENDBLOCK;

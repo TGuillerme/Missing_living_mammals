@@ -1,0 +1,545 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-7 08.37.28 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=24;
+	TAXLABELS
+		'Protungulatum'
+		'Chriacus'
+		'Arctocyon'
+		'Arctocyonides'
+		'Loxolophus'
+		'Periptychus'
+		'Mithrandir'
+		'Ectoconus'
+		'Hyopsodus'
+		'Haplomylus'
+		'Apheliscus'
+		'Tetraclaenodon'
+		'Ectocion'
+		'Meniscotherium'
+		'Phenacodus'
+		'Homogalax'
+		'Hyracotherium'
+		'Diacodexis'
+		'Rhynchocyon'
+		'Procavia'
+		'Pleuraspidotherium'
+		'Orthaspidotherium'
+		'Moeritherium'
+		'Radinskya'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=86;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'P2 protocone'
+		 [2] 'P3 metacone'
+		 [3] 'P4 protocone'
+		 [4] 'P4 metacone'
+		 [5] 'P4'
+		 [6] 'P3-P4 paracone'
+		 [7] 'P4 conules'
+		 [8] 'M1-2 parastyles project'
+		 [9] '9. M3'
+		 [10] 'Molar and premolar enamel'
+		 [11] 'Molar relief'
+		 [12] 'Mesostyle on M1-2 '
+		 [13] 'Ectoflexus on M2 '
+		 [14] 'Stylar shelf on M1-2'
+		 [15] 'Postprotocrista on M1-2'
+		 [16] 'Cuspules on the parastylar lobe of M1-2'
+		 [17] 'Protocone expansion'
+		 [18] 'Hypoloph on M1-2'
+		 [19] 'Lingual cingulum on M1-2'
+		 [20] 'Hypocone on M1-2 '
+		 [21] 'Pericone on upper molars'
+		 [22] 'Lower jaw postcanine diastema'
+		 [23] 'Lower canines'
+		 [24] 'Metaconid on p3'
+		 [25] 'Paraconid on p4'
+		 [26] 'Metaconid on p4'
+		 [27] 'The p4 talonid'
+		 [28] 'The p4'
+		 [29] 'Lower molar talonid'
+		 [30] 'The m1-3 metaconid'
+		 [31] 'protocristid'
+		 [32] 'Metastylid on m1-3'
+		 [33] 'The m3'
+		 [34] 'Paraconid on m1-2'
+		 [35] 'Hypoconulid on m1-2'
+		 [36] 'Hypoconulid on m3'
+		 [37] 'Talonid of m2'
+		 [38] 'Talonid width of m2'
+		 [39] 'Greater tuberosity of humerus'
+		 [40] 'Humeral head'
+		 [41] 'Deltopectoral crest'
+		 [42] 'Entepicondylar foramen'
+		 [43] 'Supratrochlear foramen'
+		 [44] 'Medial epicondyle'
+		 [45] 'Lateral supracondylar ridge'
+		 [46] 'Lateral articular shelf of the humerus'
+		 [47] 'Olecranon'
+		 [48] 'Number of functional digits in the hand'
+		 [49] 'Distal phalanges of the forelimb shape'
+		 [50] 'Greater trochanter of the femur'
+		 [51] 'Orientation of lesser trochanter of the femur'
+		 [52] 'Third trochanter of the femur'
+		 [53] 'Fovea capitis of the femur'
+		 [54] 'Tibia and fibula'
+		 [55] 'Contact between talus and cuboid'
+		 [56] 'Lateral process on talus'
+		 [57] 'Trochlear articular surface of the talus'
+		 [58] 'Talar ectal facet'
+		 [59] 'Medial trochlear ridge of the talus'
+		 [60] 'Trochlear groove of the talus'
+		 [61] 'Talar sustentacular facet'
+		 [62] 'Talar canal'
+		 [63] 'Cotylar fossa'
+		 [64] 'Tuber calcanei'
+		 [65] 'Talar and sustentacular facets of the calcaneus'
+		 [66] 'Talar facet of the calcaneus (orientation)'
+		 [67] 'Talar facet of the calcaneus (shape)'
+		 [68] 'Fibular facet of calcaneus'
+		 [69] 'Sustentacular facet of the calcaneus'
+		 [70] 'Peroneal tubercle'
+		 [71] 'Number of functional digits in the foot'
+		 [72] 'Supraorbital process'
+		 [73] 'Contact of frontal and maxilla in the orbit'
+		 [74] 'Lacrimal tubercle'
+		 [75] 'Height of mandibular condyle relative to dentition'
+		 [76] 'Rostral opening of the infraorbital canal'
+		 [77] 'Shape of nasals'
+		 [78] 'Preglenoid process'
+		 [79] 'Sulcus on promontorium for internal carotid artery'
+		 [80] '80. Alisphenoid canal'
+		 [81] 'Mastoid foramen'
+		 [82] 'Postglenoid foramen'
+		 [83] 'Coronoid canal of dentary'
+		 [84] 'Foramen rotundum'
+		 [85] 'Upper incisors '
+		 [86] 'Posterior corner of the orbit superior to'
+	;
+	
+	STATELABELS
+		1
+		'absent '
+		'present '
+		,
+		2
+		'absent '
+		'present '
+		,
+		3
+		'small or absent '
+		'sub-equal in size to paracone '
+		,
+		4
+		'absent '
+		'present '
+		,
+		5
+		'distinctly enlarged'
+		'not enlarged '
+		,
+		6
+		'not laterally compressed'
+		'anteroposteriorly elongated and laterally compressed '
+		,
+		7
+		'no conules '
+		'paraconule and/or metaconule '
+		'paraconule and metaconule are incorporated into the protoloph and metaloph'
+		,
+		8
+		'labially or anterolabially '
+		'anteriorly '
+		,
+		9
+		'smaller than M2 '
+		'larger than M2 '
+		'extremely reduced or absent '
+		,
+		10
+		'not wrinkled or folded'
+		'wrinkled '
+		'heavily folded '
+		,
+		11
+		'cusps acute '
+		'bunodont '
+		'bunoselenodont '
+		'lophodont '
+		'bunolophodont '
+		,
+		12
+		'absent '
+		'small and cingular '
+		'well-developed '
+		,
+		13
+		'deep '
+		'shallow '
+		'absent '
+		,
+		14
+		'strong '
+		'reduced '
+		'absent '
+		'New state'
+		,
+		15
+		'developed '
+		'not developed '
+		,
+		16
+		'present '
+		'absent '
+		,
+		17
+		'expanded lingually '
+		'not expanded lingually '
+		,
+		18
+		'absent '
+		'present '
+		,
+		19
+		'absent '
+		'present '
+		,
+		20
+		'small, cingular or absent '
+		'moderately developed '
+		'equal in size to the protocone'
+		,
+		21
+		'small or absent'
+		'large, almost equal to the hypocone'
+		,
+		22
+		'short or absent '
+		'long '
+		,
+		23
+		'slightly enlarged (larger than the incisors and p1 '
+		'significantly enlarged '
+		'smaller, or equal in size to i3 '
+		'absent '
+		,
+		24
+		'absent '
+		'present '
+		,
+		25
+		'absent or reduced '
+		'anteriorly projecting '
+		'lingual '
+		,
+		26
+		'absent '
+		'present '
+		,
+		27
+		'simple, with one cusp '
+		'with more than one cusp '
+		,
+		28
+		'much narrower than m1 '
+		'close to m1 in width '
+		'distinctly swollen '
+		,
+		29
+		'much lower than the trigonid '
+		'only slightly lower than the trigonid '
+		'same height as the trigonid'
+		,
+		30
+		'inflated '
+		'not inflated '
+		,
+		31
+		'just one crest connecting protoconid and metaconid'
+		'there is a "-''second"-- protocristid, curved posteriorly '
+		,
+		32
+		'absent '
+		'present '
+		,
+		33
+		'unreduced '
+		'significantly reduced or absent '
+		'enlarged '
+		,
+		34
+		'unreduced '
+		'reduced and twinned with the metaconid '
+		'shifted towards the midline of the tooth'
+		'incorporated into the protolophid '
+		,
+		35
+		'cusped '
+		'crest-like '
+		,
+		36
+		'well-developed'
+		'small '
+		'absent '
+		'forms a separate lobe '
+		,
+		37
+		'longer or equal than the trigonid '
+		'shorter than the trigonid '
+		,
+		38
+		'less than the trigonid '
+		'sub-equal to trigonid '
+		,
+		39
+		'even with the head '
+		'projects above the head '
+		,
+		40
+		'spherical '
+		'anteroposteriorly elongated '
+		,
+		41
+		'sharp and long '
+		'weak and short '
+		'tall and robust '
+		,
+		42
+		'present '
+		'absent '
+		,
+		43
+		'absent '
+		'present '
+		,
+		44
+		'moderately developed '
+		'prominent '
+		,
+		45
+		'not enlarged '
+		'slightly enlarged '
+		,
+		46
+		'absent '
+		'present '
+		,
+		47
+		'not enlarged, straight '
+		'greatly enlarged and inflected medially '
+		'deflected posteriorly '
+		,
+		48
+		'five '
+		'fewer than five '
+		,
+		49
+		'laterally compressed (typical claw) '
+		'hoof-like, flattened dorsoventrally '
+		'very elongated, flattened'
+		,
+		50
+		'even or lower than the head'
+		'taller than the head '
+		,
+		51
+		'medially '
+		'posteromedially '
+		,
+		52
+		'small and proximally placed '
+		'small and displaced distally '
+		'large and placed proximally'
+		'large and displaced distally '
+		,
+		53
+		'centrally positioned'
+		'marginally positioned '
+		'absent '
+		,
+		54
+		'not fused '
+		'fused distally '
+		,
+		55
+		'present '
+		'absent '
+		,
+		56
+		'present and small '
+		'large and shelf-like '
+		'completely absent '
+		,
+		57
+		'no posterior extension '
+		'only medial rim extends posteriorly '
+		'extends onto the posterior side of the trochlea '
+		,
+		58
+		'narrow '
+		'broad '
+		,
+		59
+		'absent '
+		'present '
+		,
+		60
+		'New state'
+		'moderately deep (U-shaped) '
+		'deep (V-shaped) '
+		'absent '
+		,
+		61
+		'circular '
+		'elongated '
+		,
+		62
+		'present '
+		'absent '
+		,
+		63
+		'absent '
+		'present, facing laterally '
+		'facing dorsally '
+		,
+		64
+		'short '
+		'intermediate in length '
+		'long '
+		,
+		65
+		'not confluent '
+		'confluent '
+		,
+		66
+		'sub-parallel to the long axis of calcaneus '
+		'oriented at 45º to the calcaneus '
+		'nearly 90º '
+		,
+		67
+		'gently convex '
+		'strongly convex '
+		'divided into two surfaces '
+		,
+		68
+		'flat '
+		'highly convex '
+		,
+		69
+		'no distal extension'
+		'has a distal extension '
+		,
+		70
+		'small or absent '
+		'large '
+		,
+		71
+		'five '
+		'fewer than five '
+		,
+		72
+		'absent '
+		'present '
+		,
+		73
+		'absent '
+		'present '
+		,
+		74
+		'absent '
+		'present '
+		,
+		75
+		'below the level of dentition'
+		' even with the superior aspect of dentition '
+		'substantially superior to t0he dentition '
+		,
+		76
+		'over P4 or M1 '
+		'rostral to or above P3 '
+		'between P3 and P4 '
+		,
+		77
+		'posteriorly narrow with a wedge-like suture with the frontals '
+		'posteriorly broad with transverse suture with the frontals '
+		,
+		78
+		'absent '
+		'present '
+		,
+		79
+		'present '
+		'absent '
+		,
+		80
+		'absent '
+		'present '
+		,
+		81
+		'present '
+		'absent '
+		,
+		82
+		'present '
+		'absent '
+		,
+		83
+		'absent '
+		'present '
+		,
+		84
+		'absent '
+		'present '
+		,
+		85
+		'all incisors smaller than canines'
+		'One pair of upper incisors greatly enlarged '
+		,
+		86
+		'M2 or further caudally'
+		'M1'
+		'premolars '
+		,
+	;
+	
+	MATRIX
+	Protungulatum				0000000000001000000000?011000000000000???????????????000101000001110100???2???0???0?0?
+	Chriacus					11010001000001111010001011000000010011000000000000000000101000001110010???????????0?00
+	Arctocyon				 01000001011001010011001000001010110000011001101020100000111000010020010101210100000100
+	Arctocyonides				0000000001100101001200101100101011001100000000100000000010101001???0??01001200?0000000
+	Loxolophus				00000001011011000010001010001000020011??1001101000?3?000001000010100010?000200???00?00
+	Periptychus				1000111002100100000010012102201012000100100110101101?000010000010100100001210?????0?00
+	Mithrandir				10000011001101000000100011121010020001001?011010?1?1?000101000001100100???22??????0?00
+	Ectoconus				 10101110021100000000100021122010100000001001101011?100000?10?001???0?001112200???00?00
+	Hyopsodus				 10101110021100000000100001102000010011010010000000?20000100000001110000001110101000000
+	Haplomylus				?001001100101211000100000110100011001100001000???112?10020120111122100????????????0?0?
+	Apheliscus				00000001001112110000000000101000110011??0000000??112?100201201111201000??????????0????
+	Tetraclaenodon				0111001100111200001100011110200111001100000001001013?0012010010?010010000?2100????0?00
+	Ectocion					11110011002212010012001111112001110011100?10012011?3?00120121001110010000?220??1??0?00
+	Meniscotherium				01110011002222111012000021112001231111100010012011131011201200020110100101201101100100
+	Phenacodus				01110011002212010012000111112001110011100010012011?3?0112012?1010110100001200111100100
+	Homogalax				 11110021103022111112002121102100231111100110012111131010??11??0112101011?12211?1100?00
+	Hyracotherium				11110021103022111112012111112101231111100110012111131010211111010220101101221111100100
+	Diacodexis				0000000100001100000000001100000001001110011000011111101020121101100100101022010?100000
+	Rhynchocyon				00010011201011101002002?2111200010021000001000?00112?110201201120220001000200001000?00
+	Procavia					11110011103022111102013121112001231311101110000111101110211201201210011101221001011111
+	Pleuraspidotherium			 0111001010222210100000212?112000011201111101000??100000010100001001?10?00?210101100100
+	Orthaspidotherium			011100001022121010000?2011002000010100???1?????????????010100001011?10?00?210101?00100
+	Moeritherium				 111100011040121010120131211120002?0301001000000??100101201030101111?10?000211001?01112
+	Radinskya				 0?11001?0040221011020??????????????????????????????????????????????????101??100100?1?0
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 86;
+ENDBLOCK;

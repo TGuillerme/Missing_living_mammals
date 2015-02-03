@@ -1,0 +1,56 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=46 nchar= 8;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Aetiocetus_cotylalveus		0?0?????
+Ambulocetus_natans			0?0?0000
+Albireo_whistleri		020?2110
+Balaenoptera_acutorostrata	02222224
+Berardius_bairdii			01110001
+Balaenoptera_borealis			02222224
+Basilosaurus_cetoides			010?002?
+Balaenoptera_edeni			02222214
+Balaenoptera_musculus			02222214
+Balaena_mysticetus		222022?3
+Balaenoptera_physalus			02222214
+Cephalorhynchus_commersonii		00002112
+Caperea_marginata		222122?4
+Dorudon_atrox			0?0?000?
+Delphinus_delphis			00002200
+Delphinapterus_leucas			01102121
+Eubalaena_glacialis		22202213
+Eschrichtius_robustus			12212201
+Feresa_attenuata		00002110
+Grampus_griseus			00102211
+Globicephala		00102111
+Inia_geoffrensis		01001020
+Janjucetus_hunderi			020?????
+Kogia_breviceps		01110211
+Kentriodontid		010???10
+Lagenorhynchus_acutus			00002102
+Lissodelphis_borealis			00002110
+Lagenorhynchus_obliquidens		00002102
+Monodon_monoceros		0010?1?1
+Megaptera_novaeangliae		02222214
+Mesoplodon			01111201
+Orcinus_orca				00002220
+Pontoporia_blainvillei		01001020
+Squalodon_calvertensis		020?212?
+Phocoenoides_dalli			00102121
+Patriocetus_ehrlichi			0?0?????
+Piscolithax_longirostris		010?222?
+Physeter_macrocephalus	01110121
+Phocoena_phocoena			00102111
+Parapontoporia_sternbergi		010?????
+Stenella_attenuata		00002210
+Stenella_coeruleoalba		00002200
+Stenella_longirostris		00002100
+Tasmacetus_shepherdi		01111201
+Tursiops_truncatus		00002202
+Ziphius_cavirostris		01110201
+    ;
+End;

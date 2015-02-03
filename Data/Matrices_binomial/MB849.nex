@@ -1,0 +1,342 @@
+#NEXUS
+
+[ File output by Morphobank v3.0 (http://www.morphobank.org); 2014-12-5 10.34.48 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=22;
+	TAXLABELS
+		'Homogalax'
+		'Isectolophus'
+		'Eomoropus'
+		'Moropus'
+		'Heptodon'
+		'Helaletes'
+		'Colodon'
+		'Protapirus'
+		'Tapirus'
+		'Lophialetes'
+		'Schlosseria'
+		'Deperetella'
+		'Hyrachyus'
+		'Amynodon'
+		'Hyracodon'
+		'Juxia'
+		'Paraceratherium'
+		'Trigonias'
+		'Subhyracodon'
+		'Uintaceras'
+		'Hyracotherium'
+		'Phenacodus'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=47;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="012345";
+
+	CHARLABELS
+		 [1] 'Nasals length'
+		 [2] 'Nasals'
+		 [3] 'lacrimal'
+		 [4] 'Premaxilla'
+		 [5] 'Incisive foramen'
+		 [6] 'Maxillary (preorbital ) fossa'
+		 [7] 'Infraorbital foramen'
+		 [8] 'Posterior edge of narial incisions'
+		 [9] 'Supraorbital foramen'
+		 [10] 'Postglenoid foramen'
+		 [11] 'Postglenoid process'
+		 [12] 'Anterior face of postglenoid process'
+		 [13] 'Posttympanic process'
+		 [14] 'Postcotyloid process'
+		 [15] 'Acromion process of scapula'
+		 [16] 'Deltopectoral crest of humerus'
+		 [17] 'Entepicondylar foramen'
+		 [18] 'Capitulum of humerus'
+		 [19] 'Lateral process of proximal radius'
+		 [20] 'Radial facet of scaphoid'
+		 [21] 'Anterior iliac crest'
+		 [22] 'Fovea of femur'
+		 [23] 'Lesser trochanter of femur'
+		 [24] 'Medial trochlear ridge of femur'
+		 [25] 'Gastrocnemius fossa of femur'
+		 [26] 'Patella'
+		 [27] 'Intercondyloid tubercles of tibia'
+		 [28] 'Trochlea of astragalus'
+		 [29] 'sustentacular and distal calcaneus facets of astragalus'
+		 [30] 'Ectocuneiform'
+		 [31] 'Navicular facet of astragalus'
+		 [32] 'Pes'
+		 [33] 'Upper incisors'
+		 [34] 'I1'
+		 [35] 'I2'
+		 [36] 'Postcanine diastema'
+		 [37] 'upper P1'
+		 [38] 'lower p1'
+		 [39] 'Upper premolar cross lophs'
+		 [40] 'Upper molar parastyles'
+		 [41] 'Upper molar paraconules'
+		 [42] 'Upper molar metaconules'
+		 [43] 'Metastyle'
+		 [44] 'Lower molar metastylid'
+		 [45] 'Lower molar metastylid (i.e., twinned metaconid)'
+		 [46] 'm3 hypoconulid'
+		 [47] 'Upper molar premetaconule crista//lower molar lingual postcristid'
+	;
+	
+	STATELABELS
+		1
+		'long'
+		'short'
+		,
+		2
+		'posteriorly narrow'
+		'posteriorly broad'
+		,
+		3
+		'present'
+		'absent'
+		'State 2'
+		,
+		4
+		'small, contacts nasals'
+		'robust, no nasal contact'
+		'small, no nasal contact'
+		,
+		5
+		'paired'
+		'single, large, median'
+		,
+		6
+		'shallow or absent'
+		'well-developed'
+		'vertical groove'
+		,
+		7
+		'over premolars'
+		'over molars'
+		,
+		8
+		'over canine or P1'
+		'over P4 or molars'
+		'retracted and stepped'
+		,
+		9
+		'absent'
+		'present'
+		,
+		10
+		'present'
+		'absent'
+		,
+		11
+		'facing anterior'
+		'facing anterolateral'
+		,
+		12
+		'flat, undivided'
+		'convex, with median ridge'
+		,
+		13
+		'long'
+		'short'
+		,
+		14
+		'absent'
+		'present'
+		,
+		15
+		'present'
+		'absent'
+		,
+		16
+		'absent or low ridge'
+		'present, hooks laterally'
+		,
+		17
+		'present'
+		'absent'
+		,
+		18
+		'unkeeled'
+		'keeled'
+		,
+		19
+		'present'
+		'absent'
+		,
+		20
+		'round, short lunar contact'
+		'emarginated lunar contact'
+		'long, straight lunar contact'
+		,
+		21
+		'convex'
+		'concave'
+		,
+		22
+		'marginal'
+		'central'
+		,
+		23
+		'prominent'
+		'reduced or absent'
+		,
+		24
+		'equal'
+		'medial larger with tuberosity'
+		,
+		25
+		'absent'
+		'present'
+		,
+		26
+		'unflattened'
+		'flattened, with medial process'
+		'flattened, elongate'
+		,
+		27
+		'lateral higher'
+		'medial higher'
+		,
+		28
+		'lined up above neck'
+		'laterally offset from neck'
+		'State 2'
+		,
+		29
+		'separate'
+		'confluent'
+		'confluent, form ridge'
+		'distal calc facet absent'
+		,
+		30
+		'posterior process absent'
+		'posterior process present'
+		,
+		31
+		'not saddle-shaped'
+		'saddle-shaped'
+		,
+		32
+		'pentadactyl'
+		'tridactyl'
+		,
+		33
+		'spatulate'
+		'conical'
+		'buccolingually compressed'
+		'tusk-like'
+		'absent'
+		,
+		34
+		'not chisel shaped'
+		'chisel shaped'
+		'absent'
+		,
+		35
+		'present, non-lanceolate'
+		'lanceolate'
+		'absent'
+		,
+		36
+		'short or absent'
+		'long'
+		,
+		37
+		'present, diastema behind'
+		'present, no diastema behind'
+		'absent'
+		,
+		38
+		'present, diastema behind'
+		'present, no diastema behind'
+		'absent'
+		,
+		39
+		'unconnected'
+		'connected into U'
+		,
+		40
+		'large'
+		'small, narrow'
+		,
+		41
+		'distinct'
+		'indistinct or absent'
+		,
+		42
+		'distinct'
+		'indistinct or absent'
+		,
+		43
+		'strong, undeflected'
+		'strong, labially deflected'
+		'lingually deflected'
+		'absent'
+		,
+		44
+		'mesiolingually directed'
+		'labially positioned'
+		,
+		45
+		'present'
+		'absent'
+		,
+		46
+		'present, prominent'
+		'present, small and narrow'
+		'absent'
+		,
+		47
+		'present'
+		'absent'
+		,
+	;
+	
+	MATRIX
+	Homogalax		                01???0?00?00???011001000???0001100000000000100?
+	Isectolophus		             ?1???00?00100?????00100????????1???01100110110?
+	Eomoropus		                ?1???00?1?0010?????0??0????00011???1?200010000?
+	Moropus		                  010?00011?001010110011000002001140012200010002?
+	Heptodon		                 01100000001000?0110010001000001100011100110111?
+	Helaletes		                0111020200100000110010001000001100011100110111?
+	Colodon		                  1111?2020?10?0?0110010001?00001100011100110111?
+	Protapirus		               111112010?100??????1????????????00011100110112?
+	Tapirus		                  1111120101100010110110001010101100011100110112?
+	Lophialetes		              11??0?010????000110010?012000011?0011110110110?
+	Schlosseria		              ?1????0?0????0??1??0?????2?00011?0011110110110?
+	Deperetella		              ????????????????1110???0?2000011???11100110112?
+	Hyrachyus		                0100000000100010110010001001101100011100110112?
+	Amynodon		                 01001110011100??11121000?001111100012201111112?
+	Hyracodon		                0100000000100010110010001001201110011101112112?
+	Juxia		                    01?0?1000?1000????101?????00001100011101113112?
+	Paraceratherium		          0101110101110010111010110101?01110211101113112?
+	Trigonias		                0102100001110111111210111101111121111101113112?
+	Subhyracodon		             0102100001110111111210111101111121111101113112?
+	Uintaceras		               0100?000011101111112?010?00111112??11101110112?
+	Hyracotherium		            0100000000000000110010000000001100000000000000?
+	Phenacodus		               00200000000000?00000000000000?0000000000000000?
+	;
+ENDBLOCK;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1 - 47;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS ; USERTYPE branch1 (CSTREE) = ( ( 2 ) 1 , 3 ) 0 ; USERTYPE branch2 (CSTREE) = ( 1 , ( 2 ) 3 , 4 ) 0 ; TYPESET * UNTITLED = unord: 1 - 7 9 - 28 30 - 47 , ord: 8 29 ; EXSET no_teeth = 33 - 46 ; EXSET postcranial = 1 - 14 33 - 46 ; EXSET cranial = 15 - 46 ; EXSET teeth = 1 - 32 ;
+ENDBLOCK;
+BEGIN MACCLADE;
+Version 4.0 84 ; LastModified -1042641770 ; FileSettings editor 0 0 1 1 ; Singles 110 ; Editor 0001100111111110010001001 0 24 Geneva 9 100 1 all ; EditorPosition 293 -27 419 1251 ; TreeWindowPosition 46 6 731 1230 ; ListWindow Characters closed Geneva 9 110 530 641 556 000 ; ListWindow Taxa closed Geneva 9 50 10 276 490 100000 ; ListWindow Trees closed Geneva 9 50 10 276 490 ; ListWindow TypeSets closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ListWindow ExSets closed Geneva 9 50 10 276 490 ; ListWindow CharSets closed Geneva 9 50 10 276 490 ; ListWindow TaxSets closed Geneva 9 50 10 276 490 ; ListWindow CharPartitions closed Geneva 9 50 10 276 490 ; ListWindow CharPartNames closed Geneva 9 50 10 276 490 ; ListWindow WtSets closed Geneva 9 50 10 276 490 ; ChartWindowPosition 52 30 718 1220 ; StateNamesSymbols open Geneva 9 10 53 474 192 479 ; WindowOrder States Data ; OtherSymbols & / 00 ? - ; Correlation 0 0 1000 0 0 10011010 ; Salmo 00000001 ; EditorFile 2 ; ExportHTML _ MOSS 100 110000 ; PrettyPrint 10 ; EditorToolsPosition 611 46 115 165 ; TreeWindowProgram 10 ; TreeWindow 0000 ; Continuous 0 3 1 ; Calculations 0000001 ; SummaryMode 0 0 0 ; Charts Geneva 9 ( normal ) 0010 ; NexusOptions 0 0 50 001011001 ; TipLabel 1 ; TreeFont Geneva 9 ( normal ) ; TreeShape 1.0 1.0 1100 ; TraceLabels 0101 ; ChartColors 0 0 65535 9 0 1 ; ChartBiggestSpot 1 ; ChartPercent 10 ; ChartBarWidth 10 1 ; ChartVerticalAxis 10101 ; ChartMinMax 0 ; TraceAllChangesDisplay 1 1 ; BarsOnBranchesDisplay 0 0 60000 10000 10000 10000 10000 60000 65000 65000 65000 6 1 0000101 ; ContinuousBranchLabels 0 ; AllStatesBranchLabels 1 ; IndexNotation 2 1 ; PrintTree 10.00 2 2 2 2 2 2 2 2 2 2 2 Geneva 9 ( normal ) Geneva 10 ( normal ) Geneva 9 ( normal ) Geneva 9 ( normal ) Geneva 9 ( bold ) Geneva 9 ( normal ) Geneva 9 ( normal ) 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 239 4112 -39 4 -40 0 1 2 1 8 0 0 0 2 1000111000000000000100000111000 ; MatchChar 00 . ; EntryInterpretation 01 ; ColorOptions 10 ; TreeTools 0 5 4 0 10 4 0 00100111111101110 ; EditorTools 0 0 0 1000 0 0 6 3 0 100000101110001 ; PairAlign 2 2 3 2 1 1 2 1 3 1010 ; BothTools 1 ;
+ENDBLOCK;
+BEGIN MESQUITE;
+MESQUITESCRIPTVERSION 2 ; TITLE AUTO ; tell ProjectCoordinator ; timeSaved 1358189642236 ; getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa ; tell It ; setID 0 629939649883884041 ; endTell ; getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters ; tell It ; setID 0 6096251128227347815 ; mqVersion 275 ; checksumv 0 3 1109513426 null getNumChars 47 numChars 47 getNumTaxa 22 numTaxa 22 short true bits 31 states 31 sumSquaresStatesOnly 3064.0 sumSquares 3064.0 longCompressibleToShort false usingShortMatrix true NumFiles 1 NumMatrices 1 ; mqVersion ; endTell ; getWindow ; tell It ; suppress ; setResourcesState false false 100 ; setPopoutState 400 ; setExplanationSize 0 ; setAnnotationSize 0 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1129 557 ; setLocation 6 22 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; endTell ; desuppress ; endTell ; getEmployee #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord ; tell It ; showDataWindow #6096251128227347815 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker ; tell It ; getWindow ; tell It ; setExplanationSize 30 ; setAnnotationSize 20 ; setFontIncAnnot 0 ; setFontIncExp 0 ; setSize 1029 490 ; setLocation 6 22 ; setFont SanSerif ; setFontSize 10 ; getToolPalette ; tell It ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; endTell ; setActive ; setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam ; colorCells #mesquite.charMatrices.NoColor.NoColor ; colorRowNames #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor ; colorColumnNames #mesquite.charMatrices.CharGroupColor.CharGroupColor ; colorText #mesquite.charMatrices.NoColor.NoColor ; setBackground White ; toggleShowNames on ; toggleShowTaxonNames on ; toggleTight off ; toggleThinRows off ; toggleShowChanges on ; toggleSeparateLines off ; toggleShowStates on ; toggleAutoWCharNames on ; toggleAutoTaxonNames off ; toggleShowDefaultCharNames off ; toggleConstrainCW on ; toggleBirdsEye off ; toggleShowPaleGrid off ; toggleShowPaleCellColors off ; togglePaleInapplicable on ; toggleShowBoldCellText off ; toggleAllowAutosize on ; toggleColorsPanel off ; toggleDiagonal on ; setDiagonalHeight 80 ; toggleLinkedScrolling on ; toggleScrollLinkedTables off ; endTell ; showWindow ; getWindow ; tell It ; forceAutosize ; endTell ; getEmployee #mesquite.charMatrices.ColorByState.ColorByState ; tell It ; setStateLimit 9 ; toggleUniformMaximum on ; endTell ; getEmployee #mesquite.charMatrices.ColorCells.ColorCells ; tell It ; setColor Red ; removeColor off ; endTell ; getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel ; tell It ; togglePanel off ; endTell ; getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector ; tell It ; autotabOff ; endTell ; getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip ; tell It ; showStrip off ; endTell ; getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor ; tell It ; panelOpen true ; endTell ; endTell ; endTell ; endTell ;
+ENDBLOCK;
+BEGIN MESQUITECHARMODELS;
+ProbModelSet * UNTITLED = Mk1 (est.) : 1 - 47 ;
+ENDBLOCK;
+BEGIN TREES;
+Title Trees from "tapiros.nex" ; LINK Taxa = Taxa ; TRANSLATE 1 Homogalax , 2 Isectolophus , 3 Eomoropus , 4 Moropus , 5 Heptodon , 6 Helaletes , 7 Colodon , 8 Protapirus , 9 Tapirus , 10 Lophialetes , 11 Schlosseria , 12 Deperetella , 13 Hyrachyus , 14 Amynodon , 15 Hyracodon , 16 Juxia , 17 Paraceratherium , 18 Trigonias , 19 Subhyracodon , 20 Uintaceras , 21 Hyracotherium , 22 Phenacodus ; TREE UNTITLED = (22 , (21 , 1 , (3 , 4) , (2 , (((9 , 8) , 6 , 7) , 5) , (13 , (15 , (16 , (14 , (17 , ((18 , 19) , 20))))))))) ;
+ENDBLOCK;

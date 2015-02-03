@@ -1,0 +1,23 @@
+#NEXUS
+
+Begin data;
+    Dimensions ntax=13 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+
+Proailurus_lemanensis		00
+Promegantereon_ogygia		00
+Paramachaerodus_orientalis	00
+Paramachaerodus_maximiliani	00
+Rhizosmilodon_fiteae		00
+Smilodon_gracilus			00
+Smilodon_fatalis			00
+Smilodon_populator			00
+Megantereon_cultridens		00
+Megantereon_hesperus		00
+Machairodus_aphanistus		00
+Homotherium_serum			00
+Machairodus_coloradensis	00
+    ;
+End;
