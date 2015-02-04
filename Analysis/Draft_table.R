@@ -32,7 +32,7 @@ plath_tree<-extract.clade(primates_tree, PlathMRCA)
 clustered_primates<-c(sample(loris_tree$tip.label, 20), sample(plath_tree$tip.label, 60))
 
 
-clustered_results<-order.structure("Primates (clustered)", clustered_primates, primates_tree, WR_list)
+clustered_results<-order.structure("Primates (clustered)", clustered_primates, primates_tree, WR_list, verbose=TRUE)
 
 #Empty results table
 result_table_clustered<-data.frame("Order"=rep("Primates (cluster)",3), "Taxonomic level"=c("Family", "Genus", "Species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3), "Relative PD"=rep(NA,3), "NRI"=rep(NA,3), "MPD p_value"=rep(NA,3), "NTI"=rep(NA,3), "MNTD p_value"=rep(NA,3))
