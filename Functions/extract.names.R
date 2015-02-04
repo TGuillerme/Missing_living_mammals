@@ -17,10 +17,11 @@ find.match<-function(matrix_taxon, Ref_list_element) {
     if(length(to_match) == 0) {
         match_found<-FALSE
     } else {
-        #Making sure it matches exactly
-        match_test<-regexec(matrix_taxon, to_match[1], ignore.case=TRUE)
         #Check if the number of matching characters in to_match is the same length as the ones in matrix_taxon (i.e. full match)
-        if(attr(match_test[[1]], "match.length")==nchar(to_match[1])) {
+        match_length<-nchar(matrix_taxon)
+
+        #If any grep match has the same number of characters
+        if(any(nchar(to_match) == match_length)) {
             match_found<-TRUE
         } else {
             match_found<-FALSE
@@ -48,15 +49,21 @@ check.split<-function(matrix_taxon, Ref_list_element) {
 
         #Is the genus name matching?
         genus_match<-find.match(genus, Ref_list_element)
+
         if(genus_match == TRUE) {
             #Find the genus name
-            genus_match<-grep(genus, as.character(unlist(Ref_list_element)), ignore.case=TRUE, value=TRUE)[1]
+            genus_match<-grep(genus, as.character(unlist(Ref_list_element)), ignore.case=TRUE, value=TRUE)
+            #Selecting the first one that has the same number of characters
+            genus_match<-genus_match[which(nchar(genus_match) == nchar(genus))[1]]
 
             #Is the species name matching?
             species_match<-find.match(genus, Ref_list_element)
             if(species_match == TRUE) {
                 #Find the species name
-                species_match<-grep(species, as.character(unlist(Ref_list_element)), ignore.case=TRUE, value=TRUE)[1]
+                species_match<-grep(species, as.character(unlist(Ref_list_element)), ignore.case=TRUE, value=TRUE)
+                #Selecting the first one that has the same number of characters
+                species_match<-species_match[which(nchar(species_match) == nchar(species))[1]]
+                
             } else {
                 species_match<-NA
             }
@@ -211,4 +218,30 @@ extract.names<-function(matrix, references, verbose=FALSE) {
     }
 
     return(output)
+}
+
+#Extra checking function to match the names measured as NAs with Wilson Reeder's list 
+check.NA<-function(NA_taxa, Reference) {
+    #Check if the name contains a "_" or not
+    if(length(grep("_", NA_taxa))!=0) {
+        NA_taxa<-strsplit(NA_taxa, split="_")[[1]][1]
+    }
+
+    #Check if the name contains a "." or not
+    if(length(grep(".", NA_taxa))!=0) {
+        NA_taxa<-strsplit(NA_taxa, split="_")[[1]][1]
+    }
+
+    #Check if it correspond to any column name in WR
+    column_names<-names(Reference)[match(NA_taxa, Reference)]
+
+    #Replacing column_names by NA if empty or by the first column if not NA
+    if(length(column_names) == 0) {
+        column_names<-NA
+    } else {
+        if(length(column_names) > 1) {
+            column_names<-column_names[1]
+        }
+    }
+    return(column_names)
 }
