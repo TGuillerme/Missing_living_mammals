@@ -4,11 +4,12 @@
 #<order> the name of the order
 #<taxa> a vector of species with morphological data or a tree
 #<reference> the list of taxonomical references
+#<verbose> whether to be verbose or not
 ##########################
-#guillert(at)tcd.ie - 21/01/2015
+#guillert(at)tcd.ie - 04/02/2015
 ##########################
 
-extract.order<-function(order, taxa, reference) {
+extract.order<-function(order, taxa, reference, verbose=FALSE) {
     
     #SANTIZING
     #order
@@ -31,6 +32,10 @@ extract.order<-function(order, taxa, reference) {
         }
     }
 
+    #verbose
+    check.class(verbose, "logical", " must be logical.")
+
+
     #SELECT ONLY THE TAXA FROM THE GIVEN ORDER
     Sub_reference<-reference[which(reference == order),]
 
@@ -42,6 +47,12 @@ extract.order<-function(order, taxa, reference) {
         #Empty data frame for eventual taxonomic changes
         taxa_change<-data.frame("Original"=NA, "Match"=NA)
 
+        #Verbose
+        if(verbose == TRUE) {
+            message("Scanning the reference list:", appendLF=FALSE)
+        }        
+
+
         for(taxon in 1:length(taxa)) {
             #Is the taxon in the Sub_reference?
             test<-which(Sub_reference == taxa[taxon])
@@ -52,7 +63,7 @@ extract.order<-function(order, taxa, reference) {
 
             } else {
                 #Is it a binomial name?
-                if(grep("_", taxa[taxon])==1) {
+                if(length(grep("_", taxa[taxon]))==1) {
                     #Split the binomial name
                     binomial<-check.split(taxa[taxon], Sub_reference)
 
@@ -70,16 +81,28 @@ extract.order<-function(order, taxa, reference) {
                     if(!is.na(binomial[1]) & is.na(binomial[2])) {
                         #Only genera name matches
                         taxon_change<-c(taxa[taxon], binomial[1])
-                        message(paste(taxa[taxon], " did not match but ", binomial[1], " did.", sep=""))
+                        warning(paste("\n", taxa[taxon], " did not match but ", binomial[1], " did.", sep=""))
                         taxa_change<-rbind(taxa_change, taxon_change)
                         }
 
+                    } else {
+                        #Name is not matching nor binomial
+                        match_taxon<-FALSE
                     }
 
                 }
 
                 #Replace the logical vector for which taxa to keep
                 taxa_to_keep[taxon]<-match_taxon
+
+                #Verbose
+                if(verbose == TRUE) {
+                    message(".", appendLF=FALSE)
+                }
+            }
+            #Verbose
+            if(verbose == TRUE) {
+                message("Done.\n", appendLF=FALSE)
             }
     }
 
@@ -89,6 +112,11 @@ extract.order<-function(order, taxa, reference) {
 
         #Select the taxa present in the tree present in the order only
         taxa_to_keep<-rep(NA, length(full_taxa))
+
+        #Verbose
+        if(verbose == TRUE) {
+            message("Scanning the reference list:", appendLF=FALSE)
+        }   
 
         for(taxon in 1:length(full_taxa)) {
             #Is the taxon in the Sub_reference?
@@ -100,7 +128,7 @@ extract.order<-function(order, taxa, reference) {
 
             } else {
                 #Is it a binomial name?
-                if(grep("_", full_taxa[taxon])==1) {
+                if(length(grep("_", full_taxa[taxon]))==1) {
                     #Split the binomial name
                     binomial<-check.split(full_taxa[taxon], Sub_reference)
 
@@ -119,6 +147,17 @@ extract.order<-function(order, taxa, reference) {
 
             #Replace the logical vector for which taxa to keep
             taxa_to_keep[taxon]<-match_taxon
+
+            #Verbose
+            if(verbose == TRUE) {
+                message(".", appendLF=FALSE)
+            }
+
+        }
+    
+        #Verbose
+        if(verbose == TRUE) {
+            message("Done.\n", appendLF=FALSE)
         }
 
         #Select the order MRCA containing all these taxa
@@ -126,16 +165,26 @@ extract.order<-function(order, taxa, reference) {
 
         #Prune the tree
         order_tree<-extract.clade(taxa, node=order_MRCA)
+
     }
 
     #Preparing the output
     if(taxa_is_tree == FALSE) {
+        #Kept taxa
+        taxa_kept<-taxa[taxa_to_keep]
+
         #If taxa_change is more than one row (first=NA)
         if(nrow(taxa_change) > 1) {
             taxa_change<-taxa_change[-1,]
-            output<-list("Order"=taxa[taxa_to_keep],"Taxa changes"=taxa_change)
+
+            #Replacing the original names in the table by the changes
+            for (taxon in 1:nrow(taxa_change)) {
+                taxa_kept[match(taxa_change$Original[taxon], taxa_kept)]<-taxa_change$Match[taxon]
+            }
+
+            output<-list("Taxa"=taxa_kept,"Changes"=taxa_change)
         } else {
-            output<-taxa[taxa_to_keep]
+            output<-taxa_kept
         }
     } else {
         output<-order_tree

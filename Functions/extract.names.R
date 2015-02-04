@@ -13,7 +13,7 @@
 #Extracting the first match
 find.match<-function(matrix_taxon, Ref_list_element) {
     options(warn=-1)
-    to_match<-grep(matrix_taxon, as.character(unlist(Ref_list_element)), ignore.case=TRUE, value=TRUE)
+    to_match<-grep(matrix_taxon, as.character(unlist(Ref_list_element)), ignore.case=FALSE, value=TRUE)
     if(length(to_match) == 0) {
         match_found<-FALSE
     } else {
