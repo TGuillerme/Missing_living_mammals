@@ -13,7 +13,7 @@
 "13","GL1988-GH.nex","Anthracothema","116","FALSE","Paleobio database","Genus"
 "14","GL1988-GH.nex","Bothriodontinae","116",NA,NA,NA
 "15","GL1988-GH.nex","Hippopotamidae","116","TRUE","Wilson & Reeder","Family"
-"16","GL1988-GH.nex","D.pakistanensis","116",NA,NA,NA
+"16","GL1988-GH.nex","Diacodexis_pakistanensis","116","FALSE","Paleobio database","Species"
 "17","GL1988-GH.nex","Bunomerycidae","116",NA,NA,NA
 "18","GL1988-GH.nex","Agriochoeridae","116",NA,NA,NA
 "19","GL1988-GH.nex","Merycoidodontidae","116",NA,NA,NA
@@ -686,7 +686,7 @@
 "686","GL2013-MN.nex","Pappocricetodon_schaubi","67","FALSE","Paleobio database","Species"
 "687","GL2013-MN.nex","Paracricetodon_dehmi","67","FALSE","Paleobio database","Species"
 "688","GL2013-MN.nex","Paracricetodon_spectabilis","67","FALSE","Paleobio database","Species"
-"689","GL2013-MN.nex","PARACRICETOPS_VIRGATOINCISUS","67",NA,NA,NA
+"689","GL2013-MN.nex","Paracricetops_wirgatoincisus","67",NA,NA,NA
 "690","GL2013-MN.nex","Pseudocricetodon_montalbanensis","67","FALSE","Paleobio database","Species"
 "691","GL2013-MN.nex","Pseudocricetodon_thaleri","67","FALSE","Paleobio database","Species"
 "692","GL2013-MN.nex","Raricricetodon_minor","67",NA,NA,NA
@@ -2121,11 +2121,11 @@
 "2121","GS2012-KK.nex","Arretotherium","30","FALSE","Paleobio database","Genus"
 "2122","GS2012-KK.nex","Bothriogenys","30","FALSE","Paleobio database","Genus"
 "2123","GS2012-KK.nex","Sivameryx","30","FALSE","Paleobio database","Genus"
-"2124","GS2012-MB.nex","TUPAIOIDEA","39",NA,NA,NA
+"2124","GS2012-MB.nex","Tupaioidea","39",NA,NA,NA
 "2125","GS2012-MB.nex","LEMUROIDEA","39","TRUE","Wilson & Reeder","Superfamily"
-"2126","GS2012-MB.nex","LORISOIDEA","39",NA,NA,NA
-"2127","GS2012-MB.nex","TARSIOIDEA","39",NA,NA,NA
-"2128","GS2012-MB.nex","CEBOIDEA","39",NA,NA,NA
+"2126","GS2012-MB.nex","Lorisoidea","39",NA,NA,NA
+"2127","GS2012-MB.nex","Tarsioidea","39",NA,NA,NA
+"2128","GS2012-MB.nex","Ceboidea","39",NA,NA,NA
 "2129","GS2012-MB.nex","Cercopithecidea","39",NA,NA,NA
 "2130","GS2012-MB.nex","HOMINOIDEA","39","TRUE","Wilson & Reeder","Superfamily"
 "2131","GS2012-MB.nex","Darwinius","39","FALSE","Paleobio database","Genus"
@@ -9087,7 +9087,7 @@
 "9087","MM2010-MD.nex","Metatitan_relictus","87",NA,NA,NA
 "9088","MM2010-MD.nex","Metatitan_khaitshinus","87",NA,NA,NA
 "9089","MM2010-MD.nex","Nasamplus_progressus","87",NA,NA,NA
-"9090","MM2010-MD.nex","Protembolotherium_efr","87",NA,NA,NA
+"9090","MM2010-MD.nex","Protembolotherium_efremovi","87",NA,NA,NA
 "9091","MM2010-MD.nex","Embolotherium_andrewsi","87","FALSE","Paleobio database","Species"
 "9092","MM2010-MD.nex","Embolotherium_grangeri","87","FALSE","Paleobio database","Species"
 "9093","MM2010-MD.nex","Pachytitan_ajax","87",NA,NA,NA
