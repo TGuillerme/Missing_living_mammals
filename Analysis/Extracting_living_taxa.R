@@ -77,6 +77,39 @@ for(matrix in 1:length(matrices_list)){
 #Removing the first (dummy) line of the extraction_table
 extraction_table<-extraction_table[-1,]
 
+#DOUBLE CHECK THE NAs
+
+#Extract NAs
+NA_species<-extraction_table[which(is.na(extraction_table$Living)),]
+NA_taxa<-NA_species$Taxa
+
+#Checking if the NAs are not in the tree
+doubleCheck_tree<-match(NA_taxa, Reference_list[[1]])
+doubleCheck_tree<-which(!is.na(doubleCheck_tree))
+
+#Checking if the NAs are not in Wilson Reeder's list
+doubleCheck_WR<-vector()
+message("\nChecking:", appendLF=FALSE)
+for(taxa in 1:length(NA_taxa)) {
+    doubleCheck_WR[taxa]<-check.NA(NA_taxa[taxa], Reference_list[[2]])
+    message(".", appendLF=FALSE)
+}
+message("Done.\n", appendLF=FALSE)
+
+
+#If any taxa are not NA, replace them in the table by living==TRUE and tax.level
+#For the Wilson Reeder
+NA_species$Living[which(!is.na(doubleCheck_WR))]<-TRUE
+NA_species$Source[which(!is.na(doubleCheck_WR))]<-"WR"
+NA_species$Tax.level[which(!is.na(doubleCheck_WR))]<-doubleCheck_WR[which(!is.na(doubleCheck_WR))]
+#For the tree
+NA_species$Living[which(!is.na(doubleCheck_tree))]<-TRUE
+NA_species$Source[which(!is.na(doubleCheck_tree))]<-"Fritz"
+NA_species$Tax.level[which(!is.na(doubleCheck_tree))]<-"Species"
+
+#Replace NA_species back in the table
+extraction_table[which(is.na(extraction_table$Living)),]<-NA_species
+
 #Save the results as .rda
 save(extraction_table, file="../Data/List_of_matching_taxa.Rda")
 
