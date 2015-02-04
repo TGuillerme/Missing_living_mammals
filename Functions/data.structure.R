@@ -40,7 +40,7 @@ data.structure<-function(species, tree, plot=FALSE, ...){
     #Plotting (optional)
     if(plot == TRUE) {
         plot(tree, show.tip.label = FALSE, ...)
-        tiplabels(tip = which(primates_tree$tip.label %in% names(which(data_structure[1, ] == 1))), pch = 19, cex = 1)
+        tiplabels(tip = which(tree$tip.label %in% names(which(data_structure[1, ] == 1))), pch = 19, cex = 1)
     }
 
     #Output

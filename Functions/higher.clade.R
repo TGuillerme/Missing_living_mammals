@@ -52,6 +52,11 @@ higher.clade<-function(species, tree, taxonomic.level, reference) {
     #Subset of reference containing only the genus names
     sub_ref<-reference[match(unique_genus, reference$Genus),]
 
+    #Removing NAs
+    if(any(is.na(sub_ref[,1]))) {
+        sub_ref<-sub_ref[-which(is.na(sub_ref[,1])),]
+    }
+    
     #Extract the taxonomic level elements (genus level)
     extracted_genus<-sub_ref[match(unique(sub_ref[,taxonomic_level]), sub_ref[,taxonomic_level]),8]
 
@@ -60,6 +65,11 @@ higher.clade<-function(species, tree, taxonomic.level, reference) {
 
     #list of species to keep (binomial)
     species_to_keep<-unlist(lapply(as.list(extracted_genus), binom.make, tree=tree))
+
+    #Removing NAs
+    if(any(is.na(species_to_keep))) {
+        species_to_keep<-species_to_keep[-which(is.na(species_to_keep))]
+    }
 
     #list of species to remove (binomial)
     species_to_remove<-tree$tip.label[-c(match(species_to_keep, tree$tip.label))]
