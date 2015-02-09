@@ -34,8 +34,10 @@ extraction_table150<-extraction_table[which(as.numeric(extraction_table$Characte
 #200 Characters
 extraction_table200<-extraction_table[which(as.numeric(extraction_table$Characters) >= 200),]
 
+#Select the number of characters
+extraction_table<-extraction_table200
+
 #Selecting the living taxa (for a minimal number of characters)
-extraction_table<-extraction_table1
 living_taxa<-extraction_table[which(extraction_table$Living == TRUE),]
 living_taxa_list<-unique(living_taxa$Taxa)
 
@@ -98,4 +100,4 @@ for (order in 2:length(orders)) {
 }
 ,silent=TRUE)
 
-write(results, file="results_1.rda")
+write(results, file="results_200.Rda")
