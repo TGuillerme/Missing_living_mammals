@@ -16,7 +16,26 @@ WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stri
 #source("Extracting_living_taxa.R")
 load("../Data/List_of_matching_taxa.Rda")
 
-#Selecting the living taxa
+#Fixing the number of characters for truncated matrices
+extraction_table[which(extraction_table$Matrix == "GS2007-R.nex"), 3]<-88
+extraction_table[which(extraction_table$Matrix == "GS2010-VJD.nex"), 3]<-157
+extraction_table[which(extraction_table$Matrix == "GS2012-GM.nex"), 3]<-45
+extraction_table[which(extraction_table$Matrix == "GS2012-SM.nex"), 3]<-157
+
+#Creating sub tables with a minimum number of characters
+#1 Character
+extraction_table1<-extraction_table[which(as.numeric(extraction_table$Characters) >= 1),]
+#50 Characters
+extraction_table50<-extraction_table[which(as.numeric(extraction_table$Characters) >= 50),]
+#100 Characters
+extraction_table100<-extraction_table[which(as.numeric(extraction_table$Characters) >= 100),]
+#150 Characters
+extraction_table150<-extraction_table[which(as.numeric(extraction_table$Characters) >= 150),]
+#200 Characters
+extraction_table200<-extraction_table[which(as.numeric(extraction_table$Characters) >= 200),]
+
+#Selecting the living taxa (for a minimal number of characters)
+extraction_table<-extraction_table1
 living_taxa<-extraction_table[which(extraction_table$Living == TRUE),]
 living_taxa_list<-unique(living_taxa$Taxa)
 
@@ -25,9 +44,6 @@ living_taxa_list<-unique(living_taxa$Taxa)
 #   TO DO: Sort by number of characters?
 #
 #################################
-
-
-
 
 
 
@@ -81,3 +97,5 @@ for (order in 2:length(orders)) {
     results<-rbind(results, results_tmp)
 }
 ,silent=TRUE)
+
+write(results, file="results_1.rda")
