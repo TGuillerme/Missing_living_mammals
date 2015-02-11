@@ -12,6 +12,7 @@ siren character matrix morphology OR morphological OR cladistic
 pilos character matrix morphology OR morphological OR cladistic
 cingul character matrix morphology OR morphological OR cladistic
 scandentia character matrix morphology OR morphological OR cladistic
+dermoptera character matrix morphology OR morphological OR cladistic
 primates character matrix morphology OR morphological OR cladistic
 lagomorph character matrix morphology OR morphological OR cladistic
 rodent character matrix morphology OR morphological OR cladistic
@@ -19,6 +20,7 @@ erinaceomorph character matrix morphology OR morphological OR cladistic
 soricomorph character matrix morphology OR morphological OR cladistic
 cetace character matrix morphology OR morphological OR cladistic
 artiodactyl character matrix morphology OR morphological OR cladistic
+cetartiodactyla character matrix morphology OR morphological OR cladistic
 chiropter character matrix morphology OR morphological OR cladistic
 perissodactyla character matrix morphology OR morphological OR cladistic
 pholidot character matrix morphology OR morphological OR cladistic
