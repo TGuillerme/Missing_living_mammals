@@ -117,6 +117,26 @@ $^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, 
 %---------------------------------------------
 
 \section{Introduction}
+%Restrict to two paragraphs?
+
+We need trees with both living and fossil taxa blablablablabla
+
+However, because of the nature of TEM matrices, we can have a lot of missing data blabalbalbal
+
+Some missing has more effect on recovering the correct topology than others. Missing living taxa are important! Or they are available (because we have molecular data at least).
+
+In this study we want to have a accurate overlook of the state of morphological availability in mammals.
+
+Also, when data is available, we want to know how the data is distributed along the clade. Because it is irrealistic or unnecessary to sample the whole clade, we want the data to be at least randomly distributed (so no bias) or at the best evenly distributed (so every clade is sampled). However, what we don't want is that data to be clustered.
+
+After looking at the data availability and it's distribution, we propose several strategies to improve data coverage in weekly sampled orders.
+
+Questions:
+\begin{enumerate}
+\item{-How many taxa with morphological data are available among each living mammals order?}
+\item{-Within each order, how is this data distributed?}
+\item{-How can we improve the data coverage in taxa with non random distributed data}
+\end{enumerate}
 
 
 %---------------------------------------------
@@ -128,22 +148,73 @@ $^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, 
 \newpage
 
 \section{Material and Methods}
+\subsection{Matrices search}
+To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank, graeamlloyd.com and rossmounce's github. We downloaded all the matrices containing any fossil or living mammal taxa from these data bases. Additionally we ran a thorough search for matrices that might not have been uploaded on the previously cited data bases through a Google Scholar search. We downloaded the eventual additional morphological matrices from any of the 20 first papers matching with our selected key words and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded @@@ % Number of matrices
+matrices containing a total of @@@%Number of living OTUs
+operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar).
 
-\section{Data collection}
-We need to use the same protocol as the GMPD to make sure our data are comparable. The original version used lots of online databases but luckily we can now just use Google Scholar! Into the Google Scholar search enter the species Latin Binomial as search keywords, followed by the search terms related to parasites. So for Marmota monax:
+We then transformed all the matrices to be in the same nexus format. We then standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. H. sapiens was transformed in Homo sapiens). We assigned each species as being either living or fossil using a taxonomic matching algorithm. We considered living all the OTUs that where either present in Fritz supper tree or in Wilson Reeders taxonomy. We considered fossil all the OTUs that where present in the Paleobiology database. For the OTUs neither labelled as living or fossil we tried to decompose the taxa name (i.e. Homo_sapiens became Homo and sapiens) and tried to match the to Wilson Reeders taxonomy at any taxonomic level (Genus_species, Genus, Family, etc...). The matching taxa where labelled as living and the ones still not matching where ignored and labelled as not applicable (NA).
 
-parasite OR helminth OR virus OR bacteria OR fungi OR ectoparasite OR arthropod OR protozoa "Marmota monax"
+\subsection{Data availability analysis}
+\subsubsection{Data availability}
+Relative proportion of available data per order.
+\subsubsection{Spread of the available data}
+PD/NRI/NTI to null.
+\subsubsection{Data spread improvement strategy}
+Phylotargeting
 
-[Note that the quotation marks (" ") tell Google that you want the exact phrase Marmota monax, and the OR means it will contain Marmota monax and parasite or Marmota monax and helminth etc.]
+All the following procedure is repeatable and available on github.
 
-You then need to search the results for appropriate papers. This is tedious so I’d advise setting yourself a reasonable target, for example, do it for a few hours a day then do something else!
+%---------------------------------------------
+%
+%       RESULTS
+%
+%---------------------------------------------
 
-You should also search for each squirrel genus independently; however I would only do this for genera with few papers on the species. If you did this for Marmota spp. you could be there forever and it’s not clear what you could do with that data.
+\section{Results}
+Table 1: data availability
 
-Finally you should search for common synonyms of the species. The original compiler of the database did this very thoroughly. However, I suggest just using the names from the 1993 taxonomy if they’ve changed between then and 2005. In theory the original compiler should have picked up all the old papers with data already, so you want to focus on the current taxonomy. 
+Table 2: randomness
 
-b) Saving the paper and reference
-Once you find a paper that looks useful download the paper and save it as a PDF. Also add the reference to EndNote. Not all the papers will end up being included in the database, but it’s quicker to add them to EndNote now and delete them later, than to add them to EndNote later.
+Table 3: phylotargeting
+
+Figure 1: example of good and bad coverage (artiodactyles and carnivores)?
+
+%---------------------------------------------
+%
+%       DISCUSSION
+%
+%---------------------------------------------
+
+\section{Discussion}
+
+How to compare morphological characters?
+
+How to combine these matrices?
+
+%Biology letters various stuff
+\section{Ethics statement}
+\section{Data accessibility statement}
+All data is available and reproducible on github.
+\section{Authors’ contributions statement}
+Conceived and designed the experiments: TG NC. Performed the experiments: TG. Analyzed the data: TG. Wrote the paper: TG NC.
+\section{Acknowledgements}
+April Wright, David Bapst and Graeme Lloyd.
+\section{Funding statement}
+This work was funded by a European Commission CORDIS Seventh Framework Programme (FP7) Marie Curie CIG grant (proposal number: 321696).
+
+
+
+%\bibliographystyle{}
+%\bibliography{}
+
+
+%Tables
+%Figures
+
+
+\section{SOM}
+1- Data collection: key words, clade (ordinal) metacharacters, Google Search terms, Google Search protocol, Google Search rarefaction curve.
 
 \section{search terms}
 
@@ -162,41 +233,10 @@ Selecting the downloadable matrices
 \subsection{Google scholars}
 20 first results since 2010 with the following key words:
 \textit{order} ("morphology" OR "morphological" OR "cladistic") AND characters matrix paleontology phylogeny
+Why 20 first results? Because rarefaction curve, check supplemetaries
 
 \section{Wrong Bionmial names and typos}
-I fixed the wrong bionomial names format (e.g. H. sapiens) into the correct ones (e.g. Homo sapiens) manually using the PaleoDB and http://www.helsinki.fi/~mhaaramo/metazoa/deuterostoma/chordata/synapsida/eutheria/artiodactyla/anthracotheriidae.html and the Wilson Reeder database.
-I fixed typos and invalid characters in taxa names manually
-
-%---------------------------------------------
-%
-%       RESULTS
-%
-%---------------------------------------------
-
-\section{Results}
-
-%---------------------------------------------
-%
-%       DISCUSSION
-%
-%---------------------------------------------
-
-\section{Discussion}
-
-
-%Biology letters various stuff
-\section{Ethics statement}
-\section{Data accessibility statement}
-\section{Authors’ contributions statement}
-\section{Acknowledgements}
-\section{Funding statement}
-
-%\bibliographystyle{}
-%\bibliography{}
-
-
-%Tables
-%Figures
+I fixed the wrong bionomial names format (e.g. H. sapiens) into the correct ones (e.g. Homo sapiens) manually using the abreviation list in the concerned publications.
 
 
 %END
