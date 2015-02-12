@@ -5,6 +5,7 @@
 #<taxa> a vector of taxa with morphological data
 #<tree> the full tree of the order
 #<reference> the list of taxonomical references
+#<metric> a list of metrics
 #<runs> the number of randomization runs
 #<null> the null model. See ?ses.pd for more details (default = "taxa.labels")
 #<verbose> whether to be verbose or not (default=FALSE)
@@ -13,7 +14,7 @@
 #guillert(at)tcd.ie - 04/02/2015
 ##########################
 
-order.structure<-function(order, taxa, tree, reference, runs=1000, null="taxa.labels", verbose=FALSE, ...) {
+order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NTI", "NRI"), runs=1000, null="taxa.labels", verbose=FALSE, ...) {
     #LIBRARIES
     require(picante)
 
