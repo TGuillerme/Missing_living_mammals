@@ -78,7 +78,9 @@ for (character_threshold in 1:length(extraction_list)) {
         tree<-extract.order(orders[order], one_tree, WR_list, verbose=TRUE)
         #If tree is null (monospecific order!) then abort the rest
         if(is.null(tree)) {
-            results_tmp<-data.frame("Order"=rep(orders[order],3), "Taxonomic level"=c("Species", "Genus", "Family"), "Number of OTUs"=rep("1/1"), "Percentage of OTUs"=rep(1), "Relative PD"=rep(NA,3), "NRI"=rep(NA,3), "MPD p_value"=rep(NA,3), "NTI"=rep(NA,3), "MNTD p_value"=rep(NA,3))
+            results_tmp<-matrix(nrow=3, ncol=ncol(results), data=NA)
+            results_tmp<-as.data.frame(results_tmp)
+            names(results_tmp)<-names(results)
         } else {
             taxa<-extract.order(orders[order], living_taxa_list, WR_list, verbose=TRUE)
             #Replace taxa by a vector if there was any taxonomic correction
@@ -96,5 +98,5 @@ for (character_threshold in 1:length(extraction_list)) {
     }
     ,silent=TRUE)
 
-    write(results, file=results_names[[character_threshold]])
+    write(results, file=results_names[character_threshold])
 }
