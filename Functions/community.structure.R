@@ -60,7 +60,7 @@ community.structure<-function(data_structure, tree, metric=c("PD", "NTI", "NRI")
         NRI<-mpd_result$mpd.obs.z[1]*-1
 
         #Significance of difference from NULL
-        MPD_p_value<-mpd_result$mpd.obs.p[1]
+        NRI_p_value<-mpd_result$mpd.obs.p[1]
     }
 
     #SES.NTI
@@ -72,7 +72,7 @@ community.structure<-function(data_structure, tree, metric=c("PD", "NTI", "NRI")
         NTI<-mtnd_result$mntd.obs.z[1]*-1
 
         #Significance of difference from NULL
-        MNTD_p_value<-mtnd_result$mntd.obs.p[1]
+        NTI_p_value<-mtnd_result$mntd.obs.p[1]
     }
 
     #OTU presence / absence
