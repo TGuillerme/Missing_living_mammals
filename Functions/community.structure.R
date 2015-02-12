@@ -19,7 +19,7 @@ community.structure<-function(data_structure, tree, metric=c("PD", "NTI", "NRI")
     #metric
     check.class(metric, "character", " must be 'PD', 'NTI', 'NRI' or any combination of them.")
     metrics_avail<-c("PD", "NTI", "NRI")
-    if(any(match(metric, metrics_avail))) {
+    if(any(is.na(match(metric, metrics_avail)))) {
         stop("metric must be 'PD', 'NTI', 'NRI' or any combination of them.")
     }
 

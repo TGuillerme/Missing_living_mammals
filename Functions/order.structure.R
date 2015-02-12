@@ -93,7 +93,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NTI", "N
     if(verbose == TRUE) {
         message("Calculating the community structure at species level: ...", appendLF=FALSE)
     }
-    results[3,-c(1,2)]<-community.structure(data_structure, tree, runs, null, ...)
+    results[3,-c(1,2)]<-community.structure(data_structure, tree, metric, runs, null, ...)
     if(verbose == TRUE) {
         message("Done\n", appendLF=FALSE)
     } 
@@ -120,7 +120,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NTI", "N
         if(verbose == TRUE) {
             message("Calculating the community structure at genus level: ...", appendLF=FALSE)
         }    
-        results[2,-c(1,2)]<-community.structure(genus_data_structure, genus_level_tree, runs, null, ...)
+        results[2,-c(1,2)]<-community.structure(genus_data_structure, genus_level_tree, metric, runs, null, ...)
         if(verbose == TRUE) {
             message("Done\n", appendLF=FALSE)
         }
@@ -144,7 +144,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NTI", "N
             message("Calculating the community structure at family level: ...", appendLF=FALSE)
         }    
         
-        results[1,-c(1,2)]<-community.structure(family_data_structure, family_level_tree, runs, null, ...)
+        results[1,-c(1,2)]<-community.structure(family_data_structure, family_level_tree, metric, runs, null, ...)
         
         if(verbose == TRUE) {
             message(" Done.\n", appendLF=FALSE)
