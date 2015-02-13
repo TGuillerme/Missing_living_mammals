@@ -119,7 +119,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
     mono_test<-unique(Sub_reference$Genus) ; mono_test<-mono_test[-which(mono_test=="")]
     if(length(mono_test) < 2) {
         message("Order is monogeneric.")
-        results[2,-c(1,2)]<-rep(NA,7)
+        results[2,-c(1,2)]<-rep(NA,nrow(results))
     } else {
         #Tree
         genus_level_tree<-higher.clade(tree$tip.label, tree, taxonomic.level="Genus", reference=Sub_reference)[[2]]
@@ -147,7 +147,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
     mono_test<-unique(Sub_reference$Family) ; mono_test<-mono_test[-which(mono_test=="")]
     if(length(mono_test) < 2) {
         message("Order is monofamilial.")
-        results[1,-c(1,2)]<-rep(NA,7)
+        results[1,-c(1,2)]<-rep(NA,nrow(results))
     } else {    
 
         #Tree
