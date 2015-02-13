@@ -79,6 +79,10 @@ for (character_threshold in 1:length(extraction_list)) {
         #If tree is null (monospecific order!) then abort the rest
         if(is.null(tree)) {
             results_tmp<-matrix(nrow=3, ncol=ncol(results), data=NA)
+            results_tmp[,1]<-rep(orders[order],3)
+            results_tmp[,2]<-c("Family", "Genus", "Species")
+            results_tmp[,3]<-rep("1/1",3)
+            results_tmp[,4]<-rep("100",3)
             results_tmp<-as.data.frame(results_tmp)
             names(results_tmp)<-names(results)
         } else {
@@ -98,5 +102,5 @@ for (character_threshold in 1:length(extraction_list)) {
     }
     ,silent=TRUE)
 
-    write(results, file=results_names[character_threshold])
+    save(results, file=results_names[character_threshold])
 }

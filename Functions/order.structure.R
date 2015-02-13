@@ -14,7 +14,7 @@
 #guillert(at)tcd.ie - 04/02/2015
 ##########################
 
-order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NTI", "NRI"), runs=1000, null="taxa.labels", verbose=FALSE, ...) {
+order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "NTI"), runs=1000, null="taxa.labels", verbose=FALSE, ...) {
     #LIBRARIES
     require(picante)
 
@@ -43,7 +43,22 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NTI", "N
 
     #ANALYSING THE DISTRIBUTION OF SPECIES PER ORDER WITH MORPHOLOGICAL DATA
     #Empty table
-    results<-data.frame("Order"=rep(order,3), "Taxonomic level"=c("Family", "Genus", "Species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3), "Relative PD"=rep(NA,3), "NRI"=rep(NA,3), "MPD p_value"=rep(NA,3), "NTI"=rep(NA,3), "MNTD p_value"=rep(NA,3))
+    results<-data.frame("Order"=rep(order,3), "Taxonomic level"=c("Family", "Genus", "Species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3))
+    #Adding two columns per metric
+    if(any(metric == "PD")) {
+        results$PD<-rep(NA,3)
+        results$PD_p<-rep(NA,3)
+    }
+
+    if(any(metric == "NRI")) {
+        results$NRI<-rep(NA,3)
+        results$NRI_p<-rep(NA,3)
+    }
+
+   if(any(metric == "NTI")) {
+        results$NTI<-rep(NA,3)
+        results$NTI_p<-rep(NA,3)
+    }
 
     #Sort the list of taxa per species/genera/family
     #Reference list for the order

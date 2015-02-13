@@ -11,7 +11,7 @@
 #guillert(at)tcd.ie - 20/01/2015
 ##########################
 
-community.structure<-function(data_structure, tree, metric=c("PD", "NTI", "NRI"), runs=1000, null="taxa.labels", ...) {
+community.structure<-function(data_structure, tree, metric=c("PD", "NRI", "NTI"), runs=1000, null="taxa.labels", ...) {
 
     library(picante)
 
