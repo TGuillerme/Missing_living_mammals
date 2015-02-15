@@ -48,7 +48,7 @@ community.structure<-function(data_structure, tree, metric=c("PD", "NRI", "NTI")
         PD<-pd_result$pd.obs.z[1]*-1
 
         #Significance of difference from NULL
-        PD_p_value<-pd_result$mpd.obs.p[1]
+        PD_p_value<-pd_result$pd.obs.p[1]
     }
 
     #SES.NRI
