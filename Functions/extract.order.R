@@ -57,7 +57,7 @@ extract.order<-function(order, taxa, reference, verbose=FALSE) {
 
             #Verbose
             if(verbose == TRUE) {
-                message("Scanning the reference list:", appendLF=FALSE)
+                message("Scanning the reference list: ", appendLF=FALSE)
             }        
 
 
@@ -123,7 +123,7 @@ extract.order<-function(order, taxa, reference, verbose=FALSE) {
 
             #Verbose
             if(verbose == TRUE) {
-                message("Scanning the reference list:", appendLF=FALSE)
+                message("Scanning the reference list: ", appendLF=FALSE)
             }   
 
             for(taxon in 1:length(full_taxa)) {
