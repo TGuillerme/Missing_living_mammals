@@ -69,7 +69,6 @@ for (character_threshold in 1:length(extraction_list)) {
 
 
     #Loop through the rest
-    try(
     for (order in 2:length(orders)) {
         #verbose
         message(paste("\n",orders[order], " analysis.\n", sep=""), appendLF=FALSE)
@@ -93,14 +92,11 @@ for (character_threshold in 1:length(extraction_list)) {
             }
 
             #Calculate the data structure in the order
-            try(
             results_tmp<-order.structure(orders[order], taxa, tree, WR_list, verbose=TRUE, runs=1000)
-            ,silent=TRUE)
         }
         #Combine the temporary results
         results<-rbind(results, results_tmp)
     }
-    ,silent=TRUE)
 
     save(results, file=results_names[character_threshold])
 }
