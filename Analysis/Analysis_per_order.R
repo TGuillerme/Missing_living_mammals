@@ -54,6 +54,7 @@ for (character_threshold in 1:length(extraction_list)) {
 
     #First order
     #Extract orders
+    message(paste("\n",orders[1], " analysis.\n", sep=""), appendLF=FALSE)
     tree<-extract.order(orders[1], one_tree, WR_list, verbose=TRUE)
     taxa<-extract.order(orders[1], living_taxa_list, WR_list, verbose=TRUE)
     #Replace taxa by a vector if there was any taxonomic correction
