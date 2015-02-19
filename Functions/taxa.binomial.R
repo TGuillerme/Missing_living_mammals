@@ -50,5 +50,5 @@ taxa.binomial<-function(taxa,Sub_reference) {
         }
 
     }
-    return(taxa_binomial)
+    return(list(taxa_binomial, taxa_nonbinom))
 }

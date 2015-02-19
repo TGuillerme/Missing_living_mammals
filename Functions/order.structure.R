@@ -64,7 +64,9 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
     #Reference list for the order
     Sub_reference<-subset(reference[which(reference == order),])
 
-    taxa_binomial<-taxa.binomial(taxa, Sub_reference)
+    taxa_binomial_non<-taxa.binomial(taxa, Sub_reference)
+    taxa_binomial<-taxa_binomial_non[[1]]
+    taxa_nonbinom<-taxa_binomial_non[[2]]
 
     #Check if all the taxa_binomial are actually present in the tree
     taxa_binomial<-taxa_binomial[-which(is.na(match(taxa_binomial, tree$tip.label)))]

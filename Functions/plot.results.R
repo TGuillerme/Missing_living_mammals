@@ -10,7 +10,7 @@ plot.results<-function(order, col_branch, reference, verbose=FALSE) {
     #Substracting the reference list for the order only
     Sub_reference<-subset(reference[which(reference == order),])
     #Making the list of taxa binomial
-    order_taxa<-taxa.binomial(order_taxa, Sub_reference)
+    order_taxa<-taxa.binomial(order_taxa, Sub_reference)[[1]]
     #Selecting the right edges
     taxa_edges<-which.edge(order_tree, order_taxa)
     edge_colors<-rep(col_branch[2], nrow(order_tree$edge))
