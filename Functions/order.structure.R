@@ -25,7 +25,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
 
     #taxa
     check.class(taxa, "character", " must be a vector of characters.")
-    check.length(taxa, 1, " must be a vector of characters.", errorif=TRUE)
+    #check.length(taxa, 1, " must be a vector of characters.", errorif=TRUE)
 
     #tree
     check.class(tree, "phylo", " must be a phylogenetic tree.")
