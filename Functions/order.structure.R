@@ -225,7 +225,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
             #Tree
             family_level_tree<-higher.clade(tree$tip.label, tree, taxonomic.level="Family", reference=reference)[[2]]
             #Data
-            family_level_data<-higher.clade(taxa, tree, taxonomic.level="Family", reference=reference)[[1]]
+            family_level_data<-higher.clade(taxa_binomial, tree, taxonomic.level="Family", reference=reference)[[1]]
             family_data_structure<-data.structure(family_level_data, family_level_tree)
             if(verbose == TRUE) {
                 message("Calculating the community structure at family level: ...", appendLF=FALSE)
@@ -238,7 +238,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
                 results[1,-c(1,2)]<-community.structure(family_data_structure, family_level_tree, metric, runs, null, ...)
             }
             if(verbose == TRUE) {
-                message(" Done.\n", appendLF=FALSE)
+                message("Done.\n", appendLF=FALSE)
             }
         }
     
