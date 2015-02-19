@@ -66,6 +66,9 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
 
     taxa_binomial<-taxa.binomial(taxa, Sub_reference)
 
+    #Check if all the taxa_binomial are actually present in the tree
+    taxa_binomial<-taxa_binomial[-which(is.na(match(taxa_binomial, tree$tip.label)))]
+
     #Test if the order is monogeneric or monofamilial
     #Monogeneric?
     mono_test<-unique(Sub_reference$Genus) ; mono_test<-mono_test[-which(mono_test=="")]
