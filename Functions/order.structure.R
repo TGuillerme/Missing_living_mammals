@@ -69,7 +69,12 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
     taxa_nonbinom<-taxa_binomial_non[[2]]
 
     #Check if all the taxa_binomial are actually present in the tree
-    taxa_binomial<-taxa_binomial[-which(is.na(match(taxa_binomial, tree$tip.label)))]
+    #Selecting the non-matching taxa
+    matching_test<-which(is.na(match(taxa_binomial, tree$tip.label)))
+    #If any non matching taxa, remove them from the set
+    if(length(matching_test) >= 1) {
+        taxa_binomial<-taxa_binomial[-matching_test]
+    }
 
     #Test if the order is monogeneric or monofamilial
     #Monogeneric?
