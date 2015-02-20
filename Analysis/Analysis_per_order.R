@@ -11,6 +11,9 @@ set.seed(1) ; one_tree<-full_trees[[sample(1:100, 1)]]
 
 #Loading the taxonomic reference list
 WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
+#Changing ARTIODACTYLA and CETACEA to CETARTIODACTYLA
+WR_list$Order[which(WR_list$Order == "ARTIODACTYLA")]<-"CETARTIODACTYLA"
+WR_list$Order[which(WR_list$Order == "CETACEA")]<-"CETARTIODACTYLA"
 
 #Loading the list of present taxa
 #source("Extracting_living_taxa.R")
