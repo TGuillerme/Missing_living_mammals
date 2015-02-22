@@ -1,6 +1,12 @@
-plot.results<-function(order, col_branch, reference, verbose=FALSE) {
+plot.results<-function(order, taxa, col_branch=c("red","grey"), reference, verbose=FALSE) {
+    #Diversitree
+    require(diversitree)
     #Extracting the tree
     order_tree<-extract.order(order, one_tree, reference, verbose)
+    #Stopping if the tree is two small
+    if(Ntip(order_tree)<3) {
+        stop("To few tips in the tree.")
+    }
     #Extracting the taxa with morphological data
     order_taxa<-extract.order(order, living_taxa_list, reference, verbose)
     #Saving only the taxa (discard the change log)
@@ -25,8 +31,8 @@ plot.results<-function(order, col_branch, reference, verbose=FALSE) {
         #Selecting the genera name
         genus<-strsplit(order_tree$tip.label[taxon],"_")[[1]][1]
         #Selecting the corresponding family name in the reference list
-        family_class[[taxon]]<-Sub_reference$Family[grep(genus, Sub_reference$Genus)[1]]
+        family_class[[taxon]]<-Sub_reference$Family[match(genus, Sub_reference$Genus)][1]
     }
     #Plot the phylogeny (radial)
-    trait.plot(order_tree, order_tree$tip.state, cols=list(A=("white")), class=family_class, font=1, cex.lab=1, edge.color=edge_colors)
+    trait.plot(order_tree, order_tree$tip.state, cols=list(A=("white")), class=family_class, font=1, cex.lab=0.7, edge.color=edge_colors)
 }

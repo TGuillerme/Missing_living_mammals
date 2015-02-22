@@ -26,9 +26,9 @@ extraction_table[which(extraction_table$Matrix == "GS2012-SM.nex"), 3]<-157
 
 #Creating sub tables with a minimum number of characters
 #1 Character
-extraction_table1<-extraction_table[which(as.numeric(extraction_table$Characters) >= 1),]
+extraction_table1 <- extraction_table[which(as.numeric(extraction_table$Characters) >= 1),]
 #75 Characters
-extraction_table75<-extraction_table[which(as.numeric(extraction_table$Characters) >= 75),]
+extraction_table75<- extraction_table[which(as.numeric(extraction_table$Characters) >= 75),]
 #150 Characters
 extraction_table150<-extraction_table[which(as.numeric(extraction_table$Characters) >= 150),]
 #300 Characters
@@ -73,7 +73,6 @@ for (column in 1:ncol(table_to_print)) {
 }
 #Fixing the column names
 colnames(table_to_print)<-c("Order", "Taxonomic level", "Fraction of OTUs", "Percentage of OTUs")
-
 #Saving the table
 print(xtable(table_to_print), file="../Manuscript/Tables/morpho_taxa_proportion.tex", include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells)
 
@@ -99,15 +98,19 @@ table_to_print[,1]<-capwords(table_to_print[,1], strict=TRUE)
 for (column in 1:ncol(table_to_print)) {
     table_to_print[signif_data, column]<-paste('BOLD',table_to_print[signif_data, column], sep="")
 }
-
 #Fixing the column names
 colnames(table_to_print)<-c("Order", "Taxonomic level", "Fraction of OTUs", "Percentage of OTUs", "PD", "p-value")
-
 #Saving the table
 print(xtable(table_to_print), file="../Manuscript/Tables/data_structure.tex", include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells)
 
 ############################################
 #Figure (phylogeny example)
 ############################################
+
 #Setting the colour scheme (data, no data)
-plot.results(order="CARNIVORA", col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
+orders<-unique(WR_list$Order)
+plot.results(order=orders[19], taxa=living_taxa_list, col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
+# [1] "MONOTREMATA"      "DIDELPHIMORPHIA"  "PAUCITUBERCULATA" "MICROBIOTHERIA"   "NOTORYCTEMORPHIA" "DASYUROMORPHIA"   "PERAMELEMORPHIA"  "DIPROTODONTIA"   
+# [9] "AFROSORICIDA"     "MACROSCELIDEA"    "TUBULIDENTATA"    "HYRACOIDEA"       "PROBOSCIDEA"      "SIRENIA"          "CINGULATA"        "PILOSA"          
+#[17] "SCANDENTIA"       "DERMOPTERA"       "PRIMATES"         "RODENTIA"         "LAGOMORPHA"       "ERINACEOMORPHA"   "SORICOMORPHA"     "CHIROPTERA"      
+#[25] "PHOLIDOTA"        "CARNIVORA"        "PERISSODACTYLA"   "CETARTIODACTYLA" 
