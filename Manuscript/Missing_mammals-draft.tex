@@ -7,7 +7,7 @@
 \usepackage{fixltx2e}
 \usepackage{textcomp}
 \usepackage{fullpage}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{float}
 \usepackage{latexsym}
 \usepackage{url}
@@ -27,6 +27,7 @@
 \usepackage[osf]{mathpazo}
 \usepackage{dcolumn}
 \usepackage{lineno}
+\usepackage{longtable}
 \pagenumbering{arabic}
 
 
@@ -55,7 +56,7 @@
 \noindent
 \textit{#1.}---}
 \renewcommand{\tableofcontents}{}
-\bibpunct{(}{)}{;}{a}{}{,}
+%\bibpunct{(}{)}{;}{a}{}{,}
 
 %---------------------------------------------
 %
@@ -90,8 +91,8 @@ $^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, 
 \vspace{1in}
 
 %Line numbering
-\modulolinenumbers[1]
-\linenumbers
+%\modulolinenumbers[1]
+%\linenumbers
 
 %---------------------------------------------
 %
@@ -118,18 +119,24 @@ $^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, 
 
 \section{Introduction}
 %Restrict to two paragraphs?
+Studying both living and fossil taxa together in macrovelutionary studies is becoming increasingly common among evolutionary biologists \cite{jacksonwhat2006,quentaldiversity2010,dietlconservation2011,slaterunifying2013,fritzdiversity2013}. One trending method, called Total Evidence allows to combine molecular data from living taxa and morphological data from both living and fossil taxa (e.g. \cite{pyrondivergence2011,ronquista2012,schragocombining2013,slaterunifying2013,beckancient2014,Meseguer01032015}). This promising method allows to apply integrative phylogenetic inference methods such as tip-dating \cite{ronquista2012,Drummond01082012,BEASTmaster}. However, because the Total Evidence method requires a lot of data (both molecular and morphological for both living and fossil taxa), this method has been shown to be sensible to missing morphological data \cite{GuillermeCooper}.
 
-We need trees with both living and fossil taxa blablablablabla
+In fact, \cite{GuillermeCooper} demonstrates that when few living taxa coded, topological recovery is bad.
+For example, a given phylogeny containing two clades A and B containing only living taxa,
+when using a Total Evidence method, molecular data is available for both clades but morphological data is only available for clade A for any reason. Then, the addition of any fossil taxa X related to clade B will lead to a wrong topological placement of this fossil taxa X, branching it somewhere in the clade A instead of the clade B because no morphological data is available to support the placement of the fossil taxa X in clade B.  
 
-However, because of the nature of TEM matrices, we can have a lot of missing data blabalbalbal
+%Main rant
+If there is no overlapping characters between a living clade and a fossil one, then it is impossible to branch and fossil taxa to that clade. This can be due to evolutionary history (i.e. a fossil angiosperm has no overlapping characters with a living mammal) and is expected. However, this can also be due to missing data (i.e. a fossil primates has no overlapping data with living primates because no data is available for living primates) and will produce artefactual wrong phylogenies (i.e. the fossil primate NOT branching in the primate clade).
 
-Some missing has more effect on recovering the correct topology than others. Missing living taxa are important! Or they are available (because we have molecular data at least).
 
-In this study we want to have a accurate overlook of the state of morphological availability in mammals.
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1\textwidth]{MissingDataFigure.pdf}
+\caption{Example of topological errors due to missing morphological data in living taxa. If a phylogeny contains two clades, for example Proboscidea and Cetartiodactyla, with molecular data for both but only morphological data for Proboscidea. If an additional Cetartiodactyla fossil (with no molecular data) will be added to the phylogeny, it will erroneously branch with the Proboscidea clade instead of the Cetartiodactyla one.}
+\label{Figure_missing_data_problem}
+\end{figure}
 
-Also, when data is available, we want to know how the data is distributed along the clade. Because it is irrealistic or unnecessary to sample the whole clade, we want the data to be at least randomly distributed (so no bias) or at the best evenly distributed (so every clade is sampled). However, what we don't want is that data to be clustered.
-
-After looking at the data availability and it's distribution, we propose several strategies to improve data coverage in weekly sampled orders.
+In this study we investigate the amount of living mammal taxa with available morphological data to assess the potential caveats in building Total Evidence mammal phylogenetic trees. As well as the data availability, we calculate the structure of the data to make sure that clades with a relatively high amount of data are not only containing all taxa from a single clade and none from another clade.
 
 Questions:
 \begin{enumerate}
@@ -149,21 +156,29 @@ Questions:
 
 \section{Material and Methods}
 \subsection{Matrices search}
-To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank, graeamlloyd.com and rossmounce's github. We downloaded all the matrices containing any fossil or living mammal taxa from these data bases. Additionally we ran a thorough search for matrices that might not have been uploaded on the previously cited data bases through a Google Scholar search. We downloaded the eventual additional morphological matrices from any of the 20 first papers matching with our selected key words and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded @@@ % Number of matrices
-matrices containing a total of @@@%Number of living OTUs
+To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank, graeamlloyd.com and rossmounce's github. We downloaded all the matrices containing any fossil or living mammal taxa from these data bases. Additionally we ran a thorough search for matrices that might not have been uploaded on the previously cited data bases through a Google Scholar search. We downloaded the eventual additional morphological matrices from any of the 20 first papers matching with our selected key words and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded 256 % @@@ Number of matrices
+matrices containing a total of 9411 % @@@ Number of living OTUs
 operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar).
 
-We then transformed all the matrices to be in the same nexus format. We then standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. H. sapiens was transformed in Homo sapiens). We assigned each species as being either living or fossil using a taxonomic matching algorithm. We considered living all the OTUs that where either present in Fritz supper tree or in Wilson Reeders taxonomy. We considered fossil all the OTUs that where present in the Paleobiology database. For the OTUs neither labelled as living or fossil we tried to decompose the taxa name (i.e. Homo_sapiens became Homo and sapiens) and tried to match the to Wilson Reeders taxonomy at any taxonomic level (Genus_species, Genus, Family, etc...). The matching taxa where labelled as living and the ones still not matching where ignored and labelled as not applicable (NA).
+We then transformed all the matrices to be in the same nexus format. We then standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. H. sapiens was transformed in Homo sapiens). We assigned each species as being either living or fossil using a taxonomic matching algorithm. We considered living all the OTUs that where either present in Fritz supper tree or in Wilson Reeders taxonomy. We considered fossil all the OTUs that where present in the Paleobiology database. For the OTUs neither labelled as living or fossil we tried to decompose the OTUs name (i.e. $Homo\_sapiens$ became $Homo$ and $sapiens$) and tried to match the to Wilson Reeders taxonomy at any taxonomic level (Family, Genus, $Genus\_species$, etc.). The matching OTUs where labelled as living and the ones still not matching where ignored and labelled as not applicable (NA).
 
 \subsection{Data availability analysis}
-\subsubsection{Data availability}
-Relative proportion of available data per order.
-\subsubsection{Spread of the available data}
-PD/NRI/NTI to null.
-\subsubsection{Data spread improvement strategy}
-Phylotargeting
+\subsubsection{Number of characters threshold}
+From all the 256 % @@@ Number of matrices
+matrices, we selected only the ones that had at least 100 morphological characters. This arbitrary threshold number of morphological characters was chosen to be in adequacy with \cite{GuillermeCooper} and \cite{harrisonamong-character2014}. Also this threshold avoids biases towards small matrices that could be either not informative (e.g. too few characters) or made of non-applicable characters (e.g. antlers which are sexual dimorphic characters proper to a specific clade).
 
-All the following procedure is repeatable and available on github.
+\subsubsection{Data availability}
+To assess the data availability per mammal order, we calculated the percentage of OTUs with morphological data for three different taxonomic level (Family, Genera and Species). We highlighted all the orders containing less than 25\% of living taxa with morphological data because their amount of missing data ($>$75\%) was higher than in \cite{GuillermeCooper} and therefore highly probable of suffering from the effect of missing data. 
+
+\subsubsection{Available data structure}
+For the order with no morphological data for all OTUs at the three different taxonomic levels (Family, Genera and Species), we investigated the structure of the available data to test if it was either (i) randomly distributed, (ii) over-dispersed or (iii) clustered. To measure the structure of the available data we used classic community structure metric from the picante R package \cite{picante} where we compared the structure of the available data for each order to the structure of a potentially fully sampled data (i.e. only the OTUs with available morphological data \textit{vs.} all the OTUs).
+For each orders and taxonomic level that presented OTUs with no available morphological data, we calculated the Net Relatedness Index (NRI) which quantifies the overall distribution of the data with negative values showing more dispersed data and positive values more clustered data than expected by the null model \cite{webb2002phylogenies}. We choose to present only the NRI values because they have been shown to be slightly less sensitive to the structure of the phylogeny (i.e. branch length and topology) \cite{NRI,journal.pone.0004390} but we also calculated the two other common phylogenetic structure indices: Faith's Phylogenetic Distance (PD)\cite{Faith19921} and the Nearest Taxon Index (NTI) \cite{webb2002phylogenies}. Both metrics are available in the Supplementary results.
+
+%\subsubsection{Data improvement strategy}
+%Phylotargeting
+%This part as not been done at all! I was looking for a non-GUI version of Arnold and Nunn's software but there is none (Arnold confirmed by email). Therefore because I was focusing on the part above and to make it repeatable I didn't did that part yet. However, I still planing on doing it!
+
+All the following procedure is repeatable and available on GitHub. %Or what is the right way to show it's reproducible?
 
 %---------------------------------------------
 %
@@ -172,13 +187,37 @@ All the following procedure is repeatable and available on github.
 %---------------------------------------------
 
 \section{Results}
-Table 1: data availability
 
-Table 2: randomness
+\subsection{Data availability}
+We extracted 1422 living mammal OTUs from the 256 matrices with a minimum of 6 characters and a maximum of 4541. After removing all the matrices with less than 100 the number of extracted living mammals OTUs was down to 815. 11/28 orders have less than 25\% of taxa with morphological data at a species level and 24/28 orders have less than 75\% taxa with available morphological data. At the Genus level however only 3/28 orders have less than 25\% of taxa with morphological data and 16/28 have less than 75\%. Finally, at the family level no order has less than 25\% taxa with available morphological data and only 5/28 have less than 75\% ~\ref{Table_morpho_taxa_proportion}.
 
-Table 3: phylotargeting
+\renewcommand\baselinestretch{1.2}\selectfont
+\begin{center}
+%\caption{Proportion of available OTUs with morphological data per order and per taxonomic level. We highlighted in bold the orders that have more than 75\% of missing data for each taxonomic level. Note that it is possible that more data is available at a higher taxonomic level (Genus $>$ Species) since if the species name for an OTU was not or miss specified, we still counted the OTU for higher taxonomic level analysis.}
+\input{Table_morpho_taxa_proportion}
+\label{Table_morpho_taxa_proportion}
+\end{center}
+\renewcommand\baselinestretch{2}\selectfont
 
-Figure 1: example of good and bad coverage (artiodactyles and carnivores)?
+\subsection{Available data structure}
+Among the orders containing OTUs with no morphological data, only two orders (Carnivora and Chiroptera) are significantly clustered both at the species and the genus level but not at the family level ~\ref{Table_data_structure}.
+\renewcommand\baselinestretch{1.2}\selectfont
+\begin{center}
+%\caption{Data structure for the orders with OTUs without morphological data per taxonomic level. The the Net Relatedness Index (NRI) is negative, the OTUs are more dispersed than expected by chance (random); when the NRI is positive, the OTUs are more clustered by expected by chance. The p-value indicates the significance in difference from the null model (random).}
+\input{Table_data_structure}
+\label{Table_data_structure}
+\end{center}
+\renewcommand\baselinestretch{2}\selectfont
+Two contrasted results are shown on figure~\ref{Figure_example_coverage} with randomly distributed data in Cetartiodactyla (Fig.~\ref{Figure_example_coverage}A) and clustered available data in Carnivora (mainly Canida;e Fig.~\ref{Figure_example_coverage}B). 
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1\textwidth]{example_coverage.pdf}
+\caption{Distribution of available morphological data across cetartiodactyles (\textbf{A}) and carnivores (\textbf{B}). Edges are colored in grey when no morphological data is available or in red when data is available.}
+\label{Figure_example_coverage}
+\end{figure}
+
+%\subsection{Data improvement strategy}
+
 
 %---------------------------------------------
 %
@@ -188,29 +227,33 @@ Figure 1: example of good and bad coverage (artiodactyles and carnivores)?
 
 \section{Discussion}
 
-How to compare morphological characters?
+%\subsection{Data availability}
+It's pretty bad
 
-How to combine these matrices?
+%\subsection{Available data structure}
+But good news! It's at least mainly random
+
+%Caveats
+However, we counted only the raw number of characters here and not there similarity. It might be that actually the amount of available data here is lower due to non overlap of characters....
+
+%Let's code some data
+So let's go coding some data and using opensource traceable data bases like morphobank!
+
+
 
 %Biology letters various stuff
 \section{Ethics statement}
 \section{Data accessibility statement}
-All data is available and reproducible on github.
+All data is available and reproducible on GitHub.
 \section{Authors’ contributions statement}
 Conceived and designed the experiments: TG NC. Performed the experiments: TG. Analyzed the data: TG. Wrote the paper: TG NC.
 \section{Acknowledgements}
-April Wright, David Bapst and Graeme Lloyd.
+Nick Matzke, April Wright, David Bapst and Graeme Lloyd.
 \section{Funding statement}
 This work was funded by a European Commission CORDIS Seventh Framework Programme (FP7) Marie Curie CIG grant (proposal number: 321696).
 
-
-
-%\bibliographystyle{}
-%\bibliography{}
-
-
-%Tables
-%Figures
+\bibliographystyle{vancouver}
+\bibliography{References}
 
 
 \section{SOM}
@@ -219,10 +262,10 @@ This work was funded by a European Commission CORDIS Seventh Framework Programme
 \section{search terms}
 
 \subsection{Mammalian orders terms}
-The searched mammalian order terms are available in search_terms_latin.txt or search_terms_meta.txt. The file containing the meta names is the Latin name files but with replacing the latin suffixes ([ia|ata|ea|a]) by a joker character (*) and by replacing the first letter by a upper/lower case meta character (e.g. [Aa]).
+The searched mammalian order terms are available in $search_terms_latin.txt$ or $search_terms_meta.txt$. The file containing the meta names is the Latin name files but with replacing the latin suffixes ([ia|ata|ea|a]) by a joker character (*) and by replacing the first letter by a upper/lower case meta character (e.g. [Aa]).
 
 \subsubsection{Ross Mounce data set}
-I selected all the matrices containing at least one of the mammalian orders names from Ross Mounce GitHub cladistic-data/nexus_files repository (accessed on the 02/12/2014).
+I selected all the matrices containing at least one of the mammalian orders names from Ross Mounce GitHub $cladistic-data/nexus_files$ repository (accessed on the 02/12/2014).
 
 \subsection{Graeme Lloyd}
 Selecting the downloadable matrices
@@ -237,6 +280,11 @@ Why 20 first results? Because rarefaction curve, check supplemetaries
 
 \section{Wrong Bionmial names and typos}
 I fixed the wrong bionomial names format (e.g. H. sapiens) into the correct ones (e.g. Homo sapiens) manually using the abreviation list in the concerned publications.
+
+
+\section{Supplementary results}
+%Tables
+%Figures
 
 
 %END
