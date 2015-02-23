@@ -1,4 +1,4 @@
-plot.results<-function(order, taxa, col_branch=c("red","grey"), reference, verbose=FALSE) {
+plot.results<-function(order, taxa, col_branch=c("red","grey"), reference, verbose=FALSE, ...) {
     #Diversitree
     require(diversitree)
     #Extracting the tree
@@ -34,5 +34,5 @@ plot.results<-function(order, taxa, col_branch=c("red","grey"), reference, verbo
         family_class[[taxon]]<-Sub_reference$Family[match(genus, Sub_reference$Genus)][1]
     }
     #Plot the phylogeny (radial)
-    trait.plot(order_tree, order_tree$tip.state, cols=list(A=("white")), class=family_class, font=1, cex.lab=0.7, edge.color=edge_colors)
+    trait.plot(order_tree, order_tree$tip.state, cols=list(A=("white")), class=family_class, font=1, cex.lab=0.7, edge.color=edge_colors, ...)
 }

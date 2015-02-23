@@ -11,8 +11,11 @@ full_trees<-read.nexus("../Data/Trees/FritzTree.rs200k.100trees.tre")
 set.seed(1) ; one_tree<-full_trees[[sample(1:100, 1)]]
 
 #Loading the taxonomic reference list
+#Loading the taxonomic reference list
 WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
-Reference<-WR_list
+#Changing ARTIODACTYLA and CETACEA to CETARTIODACTYLA
+WR_list$Order[which(WR_list$Order == "ARTIODACTYLA")]<-"CETARTIODACTYLA"
+WR_list$Order[which(WR_list$Order == "CETACEA")]<-"CETARTIODACTYLA"
 
 #Loading the list of present taxa
 #source("Extracting_living_taxa.R")
@@ -49,7 +52,7 @@ living_taxa_list<-unique(living_taxa$Taxa)
 ######################
 
 #Loading the results
-load("results_1.Rda")
+load("results_150.Rda")
 
 ############################################
 #Table with the number of taxa containing morphological data
@@ -59,7 +62,7 @@ load("results_1.Rda")
 table_to_print<-results[,c(1:4)]
 #Rounding to two digits only
 table_to_print[,4]<-round(as.numeric(table_to_print[,4]), digit=2)
-#Select the rows with less than 25% data
+#Select the rows with less than 25% data = >75% missing data
 low_data<-which(table_to_print[,4]<25)
 #make the whole table as.character
 for (column in 1:ncol(table_to_print)) {
@@ -74,7 +77,7 @@ for (column in 1:ncol(table_to_print)) {
 #Fixing the column names
 colnames(table_to_print)<-c("Order", "Taxonomic level", "Fraction of OTUs", "Percentage of OTUs")
 #Saving the table
-print(xtable(table_to_print), file="../Manuscript/Tables/morpho_taxa_proportion.tex", include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells)
+print(xtable(table_to_print), file="../Manuscript/morpho_taxa_proportion.tex", include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells)
 
 ############################################
 #Table with the data structure for each taxa
@@ -101,16 +104,20 @@ for (column in 1:ncol(table_to_print)) {
 #Fixing the column names
 colnames(table_to_print)<-c("Order", "Taxonomic level", "Fraction of OTUs", "Percentage of OTUs", "PD", "p-value")
 #Saving the table
-print(xtable(table_to_print), file="../Manuscript/Tables/data_structure.tex", include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells)
+print(xtable(table_to_print), file="../Manuscript/data_structure.tex", include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells)
 
 ############################################
 #Figure (phylogeny example)
 ############################################
 
 #Setting the colour scheme (data, no data)
-orders<-unique(WR_list$Order)
-plot.results(order=orders[19], taxa=living_taxa_list, col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
-# [1] "MONOTREMATA"      "DIDELPHIMORPHIA"  "PAUCITUBERCULATA" "MICROBIOTHERIA"   "NOTORYCTEMORPHIA" "DASYUROMORPHIA"   "PERAMELEMORPHIA"  "DIPROTODONTIA"   
-# [9] "AFROSORICIDA"     "MACROSCELIDEA"    "TUBULIDENTATA"    "HYRACOIDEA"       "PROBOSCIDEA"      "SIRENIA"          "CINGULATA"        "PILOSA"          
-#[17] "SCANDENTIA"       "DERMOPTERA"       "PRIMATES"         "RODENTIA"         "LAGOMORPHA"       "ERINACEOMORPHA"   "SORICOMORPHA"     "CHIROPTERA"      
-#[25] "PHOLIDOTA"        "CARNIVORA"        "PERISSODACTYLA"   "CETARTIODACTYLA" 
+pdf("../Manuscript/example_coverage.pdf", with=16.6, height=8)
+#quartz(width = 16.6, height = 8) #A4 landscape
+#quartz(width = 8.3, height = 5.8) #A5 landscape
+op<-par(mfrow=c(1,2), oma=c(0,1,0,1))
+plotA<-plot.results(order="CETARTIODACTYLA", taxa=living_taxa_list, col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
+text(x=(plotA$x.lim[1]-plotA$x.lim[1]*0.05),y=(plotA$y.lim[2]-plotA$y.lim[2]*0.05),"A",cex=3)
+plotB<-plot.results(order="CARNIVORA", taxa=living_taxa_list, col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
+text(x=(plotB$x.lim[1]-plotB$x.lim[1]*0.05),y=(plotB$y.lim[2]-plotB$y.lim[2]*0.05),"B",cex=3)
+par(op)
+dev.off()

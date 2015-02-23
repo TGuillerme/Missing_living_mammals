@@ -30,18 +30,22 @@ extraction_table[which(extraction_table$Matrix == "GS2012-SM.nex"), 3]<-157
 extraction_table1<-extraction_table[which(as.numeric(extraction_table$Characters) >= 1),]
 #75 Characters
 extraction_table75<-extraction_table[which(as.numeric(extraction_table$Characters) >= 75),]
+#94 Characters
+extraction_table100<-extraction_table[which(as.numeric(extraction_table$Characters) >= 100),]
+#138 Characters
+extraction_table125<-extraction_table[which(as.numeric(extraction_table$Characters) >= 125),]
 #150 Characters
 extraction_table150<-extraction_table[which(as.numeric(extraction_table$Characters) >= 150),]
 #300 Characters
 extraction_table300<-extraction_table[which(as.numeric(extraction_table$Characters) >= 300),]
 #list
-extraction_list=list(extraction_table1,extraction_table75,extraction_table150,extraction_table300)
-results_names=c("results_1.Rda","results_75.Rda","results_150.Rda","results_300.Rda")
+extraction_list=list(extraction_table1,extraction_table75, extraction_table100, extraction_table125, extraction_table150,extraction_table300)
+results_names=c("results_1.Rda","results_75.Rda","results_100.Rda","results_125.Rda","results_150.Rda","results_300.Rda")
 
 #Print the analysis by series of characters length
 
-for (character_threshold in 1:length(extraction_list)) {
-
+#for (character_threshold in 1:length(extraction_list)) {
+for (character_threshold in 3:4) {
     #Select the number of characters
     extraction_table<-extraction_list[[character_threshold]]
 
