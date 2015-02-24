@@ -1,4 +1,4 @@
-summary.results<-function(results, metric, file.save, caption) {
+summary.results<-function(results, metric, save.path, file.save, caption, environement) {
 
     if(metric == "proportion") {
         ############################################
@@ -26,7 +26,8 @@ summary.results<-function(results, metric, file.save, caption) {
         #Saving the table
         table<-xtable(table_to_print)
         caption(table)<-caption
-        print(table, file=file.save, include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells, caption.placement="top")
+        label(table)<-file.save
+        print(table, file=paste(save.path,file.save, ".tex",sep=""), include.rownames=FALSE, tabular.environment=environement, floating=FALSE, sanitize.text.function=bold.cells, caption.placement="top")
 
     } else {
 
@@ -56,6 +57,7 @@ summary.results<-function(results, metric, file.save, caption) {
         #Saving the table
         table<-xtable(table_to_print)
         caption(table)<-caption
-        print(table, file=file.save, include.rownames=FALSE, tabular.environment="longtable", floating=FALSE, sanitize.text.function=bold.cells, caption=caption, caption.placement="top")
+        label(table)<-file.save
+        print(table, file=paste(save.path,file.save, ".tex", sep=""), include.rownames=FALSE, tabular.environment=environement, floating=FALSE, sanitize.text.function=bold.cells, caption=caption, caption.placement="top")
     }
 }

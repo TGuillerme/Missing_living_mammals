@@ -62,13 +62,13 @@ load("results_100.Rda")
 #Table with the number of taxa containing morphological data
 ############################################
 caption<-"Proportion of available OTUs with morphological data per order and per taxonomic level. We highlighted in bold the orders that have more than 75\\% of missing data for each taxonomic level. Note that it is possible that more data is available at a higher taxonomic level (Genus $>$ Species) since if the species name for an OTU was not or miss specified, we still counted the OTU for higher taxonomic level analysis."
-summary.results(results, metric="proportion", file.save="../Manuscript/morpho_taxa_proportion.tex", caption=caption)
+summary.results(results, metric="proportion", save.path="../Manuscript/", file.save="Table_morpho_taxa_proportion", caption=caption, environement="longtable")
 
 ############################################
 #Table with the data structure for each taxa
 ############################################
 caption<-"Data structure for the orders with OTUs without morphological data per taxonomic level. When the Net Relatedness Index (NRI) is negative, the OTUs are more dispersed than expected by chance (random); when the NRI is positive, the OTUs are more clustered by expected by chance. The p-value indicates the significance in difference from the null model (random)."
-summary.results(results, metric="NRI", file.save="../Manuscript/data_structure.tex", caption=caption)
+summary.results(results, metric="NRI",save.path="../Manuscript/", file.save="Table_data_structure", caption=caption, environement="longtable")
 
 
 ############################################
@@ -120,19 +120,19 @@ dev.off()
 #Table with the data structure for each taxa
 ############################################
 caption<-"Data structure for the orders with OTUs without morphological data per taxonomic level. When the Nearest Taxon Index (NTI) is negative, the OTUs are more dispersed than expected by chance (random); when the NTI is positive, the OTUs are more clustered by expected by chance. The p-value indicates the significance in difference from the null model (random)."
-summary.results(results, metric="NTI", file.save="../Manuscript/Supplementary/Supp_data_structureNTI.tex", caption=caption)
+summary.results(results, metric="NTI", save.path="../Manuscript/Supplementary/",file.save="Supp_data_structureNTI", caption=caption, environement="longtable")
 caption<-"Data structure for the orders with OTUs without morphological data per taxonomic level. When the Faith's Phylogenetic Distance (PD). The p-value indicates the significance in difference from the null model (random)."
-summary.results(results, metric="PD", file.save="../Manuscript/Supplementary/Supp_data_structurePD.tex", caption=caption)
+summary.results(results, metric="PD", save.path="../Manuscript/Supplementary/",file.save="Supp_data_structurePD", caption=caption, environement="longtable")
 
 #Results for threshold 1
 load("results_1.Rda")
 #Supplementary tables (wrapper)
 caption<-"Proportion of available OTUs with morphological data per order and per taxonomic level (Character threshold = 1). We highlighted in bold the orders that have more than 75\\% of missing data for each taxonomic level. Note that it is possible that more data is available at a higher taxonomic level (Genus $>$ Species) since if the species name for an OTU was not or miss specified, we still counted the OTU for higher taxonomic level analysis."
-summary.results(results, metric="proportion", file.save="../Manuscript/Supplementary/morpho_taxa_proportion_threshold1.tex", caption=caption)
+summary.results(results, metric="proportion", save.path="../Manuscript/Supplementary/",file.save="morpho_taxa_proportion_threshold1", caption=caption, environement="longtable")
 caption<-"Data structure for the orders with OTUs without morphological data per taxonomic level (Character threshold = 1). When the Net Relatedness Index (NRI) is negative, the OTUs are more dispersed than expected by chance (random); when the NRI is positive, the OTUs are more clustered by expected by chance. The p-value indicates the significance in difference from the null model (random)."
-summary.results(results, metric="NRI", file.save="../Manuscript/Supplementary/Supp_data_structureNRI_threshold1.tex", caption=caption)
+summary.results(results, metric="NRI", save.path="../Manuscript/Supplementary/",file.save="Supp_data_structureNRI_threshold1", caption=caption, environement="longtable")
 caption<-"Data structure for the orders with OTUs without morphological data per taxonomic level (Character threshold = 1). When the Nearest Taxon Index (NTI) is negative, the OTUs are more dispersed than expected by chance (random); when the NTI is positive, the OTUs are more clustered by expected by chance. The p-value indicates the significance in difference from the null model (random)."
-summary.results(results, metric="NTI", file.save="../Manuscript/Supplementary/Supp_data_structureNTI_threshold1.tex", caption=caption)
+summary.results(results, metric="NTI", save.path="../Manuscript/Supplementary/",file.save="Supp_data_structureNTI_threshold1", caption=caption, environement="longtable")
 caption<-"Data structure for the orders with OTUs without morphological data per taxonomic level (Character threshold = 1). When the Faith's Phylogenetic Distance (PD). The p-value indicates the significance in difference from the null model (random)."
-summary.results(results, metric="PD", file.save="../Manuscript/Supplementary/Supp_data_structurePD_threshold1.tex", caption=caption)
+summary.results(results, metric="PD", save.path="../Manuscript/Supplementary/",file.save="Supp_data_structurePD_threshold1", caption=caption, environement="longtable")
 
