@@ -76,15 +76,19 @@ summary.results(results, metric="NRI",save.path="../Manuscript/", file.save="Tab
 ############################################
 
 #Setting the colour scheme (data, no data)
-pdf("../Manuscript/example_coverage.pdf", width=16.6, height=8)
+#Separated in two plots for visibility
+#pdf("../Manuscript/example_coverage.pdf", width=16.6, height=8)
+pdf("../Manuscript/example_coverageA.pdf")
 #quartz(width = 16.6, height = 8) #A4 landscape
 #quartz(width = 8.3, height = 5.8) #A5 landscape
-op<-par(mfrow=c(1,2), oma=c(0,1,0,1))
+#op<-par(mfrow=c(1,2), oma=c(0,1,0,1))
 plotA<-plot.results(order="CETARTIODACTYLA", taxa=living_taxa_list, col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
-text(x=(plotA$x.lim[1]-plotA$x.lim[1]*0.05),y=(plotA$y.lim[2]-plotA$y.lim[2]*0.05),"A",cex=3)
+dev.off()
+#text(x=(plotA$x.lim[1]-plotA$x.lim[1]*0.05),y=(plotA$y.lim[2]-plotA$y.lim[2]*0.05),"A",cex=3)
+pdf("../Manuscript/example_coverageB.pdf")
 plotB<-plot.results(order="CARNIVORA", taxa=living_taxa_list, col_branch=c("red", "grey"), reference=WR_list, verbose=TRUE)
-text(x=(plotB$x.lim[1]-plotB$x.lim[1]*0.05),y=(plotB$y.lim[2]-plotB$y.lim[2]*0.05),"B",cex=3)
-par(op)
+#text(x=(plotB$x.lim[1]-plotB$x.lim[1]*0.05),y=(plotB$y.lim[2]-plotB$y.lim[2]*0.05),"B",cex=3)
+#par(op)
 dev.off()
 
 #Isolating the order names
