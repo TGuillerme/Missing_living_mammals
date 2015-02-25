@@ -80,6 +80,7 @@ Version dated: \today
 \noindent{\Large \bf Morphological data availability in living mammals}
 %Or: Missing morphological data in living mammals - but I prefer the first one emphasizing on the availability of it. The data is not missing per se, it's just not coded!
 
+%Key words: total evidence method, data structure, phylogenetic, living, fossil, topology
 \bigskip
 
 \noindent {\normalsize \sc Thomas Guillerme$^1$$^,$$^2$$^*$, and Natalie Cooper$^1$$^,$$^2$}\\
@@ -119,15 +120,15 @@ $^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, 
 %---------------------------------------------
 
 \section{Introduction}
-Studying both living and fossil taxa together in macrovelutionary studies is becoming increasingly common among evolutionary biologists \cite{jacksonwhat2006,quentaldiversity2010,dietlconservation2011,slaterunifying2013,fritzdiversity2013}. One trending method, called Total Evidence allows to combine molecular data from living taxa and morphological data from both living and fossil taxa (e.g. \cite{pyrondivergence2011,ronquista2012,schragocombining2013,slaterunifying2013,beckancient2014,Meseguer01032015}). This promising method allows to apply integrative phylogenetic inference methods such as tip-dating \cite{ronquista2012,Drummond01082012,BEASTmaster}. However, because the Total Evidence method requires a lot of data (both molecular and morphological for both living and fossil taxa), this method has been shown to be sensible to missing morphological data \cite{GuillermeCooper}.
+%We need fossils - dangerously paraphrased from the missing data paper
+Studying both living and fossil taxa together in essential to fully understand macrovelutionary patterns and processes and is becoming increasingly common among evolutionary biologists \cite{jacksonwhat2006,quentaldiversity2010,dietlconservation2011,slaterunifying2013,fritzdiversity2013}. Combining the global biodiversity (living and fossil) in such studies allows for example, to improve accuracy of the timing of diversification events (e.g. \cite{ronquista2012}), to better understand relationships among lineages (e.g. \cite{beckancient2014}) or to infer biogeographical patterns through time (e.g. \cite{Meseguer01032015}).
+%We can use TEM for that
+In order to do so, one must efficiently combine living and fossil taxa data in macroevolutionary models. One trending method, called the total evidence method, allows to combine molecular data from living taxa and morphological data from both living and fossil taxa in a supermatrix (e.g. \cite{pyrondivergence2011,ronquista2012,schragocombining2013,slaterunifying2013,beckancient2014,Meseguer01032015}). This method allows to use all the available data and to treat fossil as tips rather than nodes and allows integrative phylogenetic inference methods such as tip-dating \cite{ronquista2012,Drummond01082012,BEASTmaster}.
 
-In fact, \cite{GuillermeCooper} demonstrates that when few living taxa coded, topological recovery is bad.
-For example, a given phylogeny containing two clades A and B containing only living taxa,
-when using a Total Evidence method, molecular data is available for both clades but morphological data is only available for clade A for any reason. Then, the addition of any fossil taxa X related to clade B will lead to a wrong topological placement of this fossil taxa X, branching it somewhere in the clade A instead of the clade B because no morphological data is available to support the placement of the fossil taxa X in clade B.  
-
-%Main rant
-If there is no overlapping characters between a living clade and a fossil one, then it is impossible to branch and fossil taxa to that clade. This can be due to evolutionary history (i.e. a fossil angiosperm has no overlapping characters with a living mammal) and is expected. However, this can also be due to missing data (i.e. a fossil primates has no overlapping data with living primates because no data is available for living primates) and will produce artefactual wrong phylogenies (i.e. the fossil primate NOT branching in the primate clade).
-
+%But missing data in living taxa problem
+However, the total evidence method requires a lot of data, both molecular and morphological for both living and fossil taxa. Entire sections of this data can sometimes be difficult or impossible to collect for every taxa present in the analysis. For example, fossil have really rarely molecular data available and morphological characters are rarely collected when molecular data is available (e.g. \cite{O'Leary08022013} \textit{vs.} \cite{meredithimpacts2011}). Therefore, the ability of this method to recover correct topology is expected to decrease with missing data and especially when few morphological data overlaps between the living and the fossil taxa \cite{GuillermeCooper}. %Owwwww the sneaky self cite ;-).
+The effect of missing data is most important on topology when too few living taxa have available morphological data \cite{GuillermeCooper}.
+For example, if there is no morphological available for any living taxa of a clade, it is impossible to link a fossil to this clade because no morphological data will overlap between the fossil (regardless the amount of data available for the fossil) and the living taxa (that have no morphological data). This property of the total evidence can lead to important topological incongruities because the fossil will only be able to branch to a clade of living taxa that contains morphological data, even if in reality, the fossil clearly does not belong to this clade (see figure ~\ref{Figure_missing_data_problem}).
 
 \begin{figure}[!htbp]
 \centering
@@ -136,15 +137,14 @@ If there is no overlapping characters between a living clade and a fossil one, t
 \label{Figure_missing_data_problem}
 \end{figure}
 
-In this study we investigate the amount of living mammal taxa with available morphological data to assess the potential caveats in building Total Evidence mammal phylogenetic trees. As well as the data availability, we calculate the structure of the data to make sure that clades with a relatively high amount of data are not only containing all taxa from a single clade and none from another clade.
+%What we're doing
+It is therefore crucial to understand the distribution of the available morphological data for living taxa in a clade before using a total evidence approach because missing living taxa with morphological data can lead to two topological artefacts: (1) the impossibility for a fossil to branch in the right clade if there is no morphological data available in this clade; and (2) the higher probability for a fossil to branch within a wrong clade that has more morphological data available for living taxa than the right clade.
 
-Questions:
-\begin{enumerate}
-\item{-How many taxa with morphological data are available among each living mammals order?}
-\item{-Within each order, how is this data distributed?}
-\item{-How can we improve the data coverage in taxa with non random distributed data}
-\end{enumerate}
+In this study, we assess the level of available data in living mammals in order to highlight the two caveats described above.
+%In this study we investigate the amount of living mammal taxa with available morphological data to detect the two potential caveats described above that could lead to topological errors when building total evidence mammal phylogenetic trees.
+We extracted living mammals taxa with available morphological data from 256 phylogenetic matrices available online and measured the proportion of morphological data availability for each mammalian order (1). Additionally, in the mammalian orders where data was missing, we estimated the structure of the available data to detect if the available data was biases towards certain clades only or if it was randomly distributed (2).
 
+%Finaly using phylogenetic targeting (CITE), we proposed a strategy to fill the gaps.
 
 %---------------------------------------------
 %
@@ -156,7 +156,7 @@ Questions:
 
 \section{Material and Methods}
 \subsection{Matrices search}
-To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank (\textttt{http://www.morphobank.org/}), Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce/cladistic-data/tree/master/nexus_files}). We downloaded all the matrices containing any fossil or living mammal taxa from these data bases. Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously cited data bases. We downloaded the eventual additional morphological matrices from any of the 20 first papers matching with our selected key words and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded 256 % @@@ Number of matrices
+To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank (\texttt{http://www.morphobank.org/}), Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}). We downloaded all the matrices containing any fossil or living mammal taxa from these data bases. Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously cited data bases. We downloaded the eventual additional morphological matrices from any of the 20 first papers matching with our selected key words and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded 256 % @@@ Number of matrices
 matrices containing a total of 9411 % @@@ Number of living OTUs
 operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar).
 
@@ -176,7 +176,7 @@ For each orders and taxonomic levels that presented OTUs with no available morph
 
 %\subsubsection{Data improvement strategy}
 %Phylotargeting
-%This part as not been done at all! I was looking for a non-GUI version of Arnold and Nunn's software but there is none (Arnold confirmed by email). Therefore because I was focusing on the part above and to make it repeatable I didn't did that part yet. However, I still planing on doing it!
+%This part as not been done at all! I was looking for a non-GUI version of Arnold and Nunn's software but there is none (Arnold confirmed by email). Therefore because I was focusing on the part above and to make it repeatable I didn't did that part yet. However, I still planing on doing it! I just need to find a bit of time to write some code to make it non-GUI (and to be able to use big trees).
 
 All the following procedure is repeatable and available on GitHub. %Or what is the right way to show it's reproducible?
 
@@ -205,12 +205,19 @@ Among the orders containing at least one OTU with no available morphological dat
 \end{center}
 \renewcommand\baselinestretch{2}\selectfont
 
-Two contrasted results are shown on figure~\ref{Figure_example_coverage} with randomly distributed data in Cetartiodactyla (Fig.~\ref{Figure_example_coverage}A) and clustered available data in Carnivora (mainly Canida; Fig.~\ref{Figure_example_coverage}B). 
+Two contrasted results are shown on figure ~\ref{Figure_example_coverageA} and ~\ref{Figure_example_coverageB} with randomly distributed data in Cetartiodactyla (figure ~\ref{Figure_example_coverageA}) and clustered available data in Carnivora (mainly Canida; figure ~\ref{Figure_example_coverageB}). 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=1\textwidth]{example_coverage.pdf}
-\caption{Distribution of available morphological data across cetartiodactyles (\textbf{A}) and carnivores (\textbf{B}). Edges are colored in grey when no morphological data is available or in red when data is available.}
-\label{Figure_example_coverage}
+    \includegraphics[width=1\textwidth]{example_coverageA.pdf}
+\caption{Distribution of available morphological data across Cetartiodactyla. Edges are colored in grey when no morphological data is available or in red when data is available.}
+\label{Figure_example_coverageA}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1\textwidth]{example_coverageB.pdf}
+\caption{Distribution of available morphological data across Carnivora. Edges are colored in grey when no morphological data is available or in red when data is available.}
+\label{Figure_example_coverageB}
 \end{figure}
 
 %\subsection{Data improvement strategy}
@@ -223,18 +230,22 @@ Two contrasted results are shown on figure~\ref{Figure_example_coverage} with ra
 %---------------------------------------------
 
 \section{Discussion}
+%Data collection
+We know we might have missed some data but we performed a thorough and repeatable search and still managed to collected 1422 OTUs which represents 38\% of all living mammals
 
 %\subsection{Data availability}
-The amount of living taxa with no available morphological data was surprisingly high at the species level (24/28 orders have less than 75\% taxa with available morphological data) which can lead to topological misplacements of fossils in Total Evidence trees. For example in Carnivora, their is no available data for Herpestidae, therefore any fossil Herpestidae will not be able to be correctly placed in the phylogeny (Fig.~\ref{Figure_example_coverage}B). On the other hand, any Carnivora fossil with uncertain phylogenetic affinities (\textit{Incertae sedis}) will have a higher probability of branching by chance within the Canidae because they are oversampled within the Carnivora (Fig.~\ref{Figure_example_coverage}B).
+The amount of living taxa with no available morphological data was surprisingly high at the species level (24/28 orders have less than 75\% taxa with available morphological data) which can lead to topological misplacements of fossils in Total Evidence trees. The effect of missing living taxa with morphological data has no significant impact on inferring the correct topology up to 25\% of missing data, beyond that threshold, both the position of "flying" taxa and the clades are significantly different from the correct topology \cite{GuillermeCooper}. At the species level within mammals, it is therefore likely to see topological artefacts for the placement of fossil taxa. However, the data availability is more promising at higher taxonomic level (i.e. the Genus and the Family level). This value is probably more important to consider since there is a slight discrepancy between neontological species and paleontological species. While the second ones are described based on accurately measured morphology, genetic distance, spacial distribution and even behaviour, the second one are usually estimate based on morphological, spatial and temporal differences only. Because of the lack of behavioural and genetic data, it is likely that cryptic species are often ignored in palaeontological data. Therefore, most palaeontological studies are using the Genus level for their smallest taxonomic OTU. In this frame of palaeontological data usage, the data availablity at the Genus level in living mammals should be our priority concern.
 
 %\subsection{Available data structure}
-However, it is encouraging that for most orders (except Carnivora and Chiroptera), the few available data is randomly distributed, therefore the addition of fossil taxa is likely to not be biased by oversampling but will probably branch near the taxa that has the most similar available data (as expected).
+However, it is encouraging that for most orders (except Carnivora and Chiroptera), the few available data is randomly distributed, therefore the addition of fossil taxa is likely to not be biased by oversampling but will probably branch near the taxa that has the most similar available data (as expected). When only few data is available, the ideal scenario will be that the data is over-dispersed (i.e. that there is data in at least every sub-clade) in order to maximize the possibilities of the fossil to branch in the right clade. In the second scenario, when the data is randomly distributed we expected no special bias in the placement of the fossil \cite{GuillermeCooper}. However, in the third scenario, when the data is clustered we expect two major biases to occur: (1) first, the fossil will not be able to branch within a clade containing no data (e.g. Herpestidae in Carnivora; figure ~\ref{Figure_example_coverageB}), and (2) second, the fossil will have a higher probability, at random, to branch within the clade containing most of the available data (e.g. Canidae in Carnivora; figure ~\ref{Figure_example_coverageB}).
+
+%For example in Carnivora, their is no available data for Herpestidae, therefore any fossil Herpestidae will not be able to be correctly placed in the phylogeny (figure ~\ref{Figure_example_coverageB}). On the other hand, any Carnivora fossil with uncertain phylogenetic affinities (\textit{Incertae sedis}) will have a higher probability of branching by chance within the Canidae because they are oversampled within the Carnivora (figure ~\ref{Figure_example_coverageB}).
 
 %Caveats
 In this study we only used the raw number of characters and not there similarity. This might not work in reality since the data may actually not overlap. It might be that actually the amount of available data here is lower due to non overlap of characters....
 
 %Let's code some data
-So let's go coding some data and using opensource traceable data bases like morphobank!
+Since the only way to fix missing data issues is to collect the missing data, it queit encouraging to know that the morphological data is available through natural history museum collections and that online plateforms and tools exist and are opperational to facilitate this giant task through collaboration and sharing open source and traceable data!
 
 
 
@@ -253,7 +264,7 @@ This work was funded by a European Commission CORDIS Seventh Framework Programme
 \bibliography{References}
 
 
-\section{SOM}
+%\section{SOM}
 
 \input{Supplementary/Supplementary}
 
