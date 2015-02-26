@@ -128,21 +128,21 @@ In order to do so, one must efficiently combine living and fossil taxa data in m
 %But missing data in living taxa problem
 However, the total evidence method requires a lot of data, both molecular and morphological for both living and fossil taxa. Entire sections of this data can sometimes be difficult or impossible to collect for every taxa present in the analysis. For example, fossil have really rarely molecular data available and morphological characters are rarely collected when molecular data is available (e.g. \cite{O'Leary08022013} \textit{vs.} \cite{meredithimpacts2011}). Therefore, the ability of this method to recover correct topology is expected to decrease with missing data and especially when few morphological data overlaps between the living and the fossil taxa \cite{GuillermeCooper}. %Owwwww the sneaky self cite ;-).
 The effect of missing data is most important on topology when too few living taxa have available morphological data \cite{GuillermeCooper}.
-For example, if there is no morphological available for any living taxa of a clade, it is impossible to link a fossil to this clade because no morphological data will overlap between the fossil (regardless the amount of data available for the fossil) and the living taxa (that have no morphological data). This property of the total evidence can lead to important topological incongruities because the fossil will only be able to branch to a clade of living taxa that contains morphological data, even if in reality, the fossil clearly does not belong to this clade (see figure ~\ref{Figure_missing_data_problem}).
+For example, if there is no morphological available for any living taxa of an entire clade, it is impossible to link a fossil taxon to this clade because no morphological data will overlap between the fossil (regardless the amount of data available for the fossil) and the living taxa (that have no morphological data). This property of the total evidence method can lead to important topological incongruities because the fossil will only be able to branch to a clade of living taxa that contains morphological data, even if in reality, the fossil taxon does not belong to that clade (see figure ~\ref{Figure_missing_data_problem}).
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{MissingDataFigure.pdf}
-\caption{Example of topological errors due to missing morphological data in living taxa. If a phylogeny contains two clades, for example Proboscidea and Cetartiodactyla, with molecular data for both but only morphological data for Proboscidea. If an additional Cetartiodactyla fossil (with no molecular data) will be added to the phylogeny, it will erroneously branch with the Proboscidea clade instead of the Cetartiodactyla one.}
+\caption{Example of topological errors due to missing morphological data in living taxa. If a phylogeny contains two clades, for example Proboscidea and Cetartiodactyla, with molecular data for both (in grey) but only morphological data for Proboscidea only (in red). If an additional Cetartiodactyla fossil (with no molecular data) is added to the phylogeny, it will erroneously branch with the Proboscidea clade instead of the Cetartiodactyla one because no morphological data will overlap between the fossil Cetartiodactyla and the living ones.}
 \label{Figure_missing_data_problem}
 \end{figure}
 
 %What we're doing
-It is therefore crucial to understand the distribution of the available morphological data for living taxa in a clade before using a total evidence approach because missing living taxa with morphological data can lead to two topological artefacts: (1) the impossibility for a fossil to branch in the right clade if there is no morphological data available in this clade; and (2) the higher probability for a fossil to branch within a wrong clade that has more morphological data available for living taxa than the right clade.
+It is therefore crucial to understand the distribution of the available morphological data for living taxa in a clade before using a total evidence approach because missing living taxa with morphological data can lead to two topological artefacts: (1) the impossibility for a fossil to branch in the right clade if there is no morphological data available in this clade \cite{GuillermeCooper}; and (2) the higher probability for a fossil to branch within a wrong clade that has more morphological data available for living taxa than the right clade \cite{GuillermeCooper}.
 
 In this study, we assess the level of available data in living mammals in order to highlight the two caveats described above.
 %In this study we investigate the amount of living mammal taxa with available morphological data to detect the two potential caveats described above that could lead to topological errors when building total evidence mammal phylogenetic trees.
-We extracted living mammals taxa with available morphological data from 256 phylogenetic matrices available online and measured the proportion of morphological data availability for each mammalian order (1). Additionally, in the mammalian orders where data was missing, we estimated the structure of the available data to detect if the available data was biases towards certain clades only or if it was randomly distributed (2).
+We extracted living mammals taxa with available morphological data from 256 phylogenetic matrices available online and measured the proportion of morphological data availability for each mammalian order. Additionally, in the mammalian orders where data was missing, we estimated the structure of the available data to detect if the available data was biases towards certain clades only or if it was randomly distributed using the Net Relatedness Index \cite{webb2002phylogenies}.
 
 %Finaly using phylogenetic targeting (CITE), we proposed a strategy to fill the gaps.
 
@@ -152,27 +152,27 @@ We extracted living mammals taxa with available morphological data from 256 phyl
 %
 %---------------------------------------------
  
-\newpage
+%\newpage
 
 \section{Material and Methods}
 \subsection{Matrices search}
-To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank (\texttt{http://www.morphobank.org/}), Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}). We downloaded all the matrices containing any fossil or living mammal taxa from these data bases. Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously cited data bases. We downloaded the eventual additional morphological matrices from any of the 20 first papers matching with our selected key words and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded 256 % @@@ Number of matrices
+To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank (\texttt{http://www.morphobank.org/}) \cite{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}). We downloaded all the matrices containing any fossil or living mammal taxa from these databases. Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously cited data bases. We downloaded the additional morphological characters matrices from the 20 first Google search results matching with our selected keywords and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure). We downloaded 256 % @@@ Number of matrices
 matrices containing a total of 9411 % @@@ Number of living OTUs
-operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar).
+operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar). The list of matrices is available in the supplementary materials.
 
-We then transformed all the matrices to be in the same nexus format. We then standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. \textit{H. sapiens} was transformed in \textit{Homo sapiens}). We assigned each species as being either living or fossil using a taxonomic matching algorithm. We designated as living OTU all the OTUs that where either present in \cite{FritzTree} or \cite{wilson2005mammal}. We designated as fossil OTUs all the OTUs that where present in the Paleobiology database. For the OTUs neither labelled as living or fossil we tried to decompose the OTUs name (i.e. $Homo\_sapiens$ became $Homo$ and $sapiens$) and tried to match the to Wilson Reeders taxonomy at any taxonomic level (Family, Genus, $Genus\_species$, etc.). The matching OTUs where labelled as living and the ones still not matching where ignored and labelled as non-applicable (NA; see supplementary material for more details on the taxonomic matching algorithm).
+We then transformed all the matrices to be in the same nexus format. We also standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. \textit{H. sapiens} was transformed in \textit{Homo sapiens}). We assigned each species as being either living or fossil using a taxonomic matching algorithm. We designated as living OTU all the OTUs that where either present in \cite{FritzTree} or \cite{wilson2005mammal}. We designated as fossil OTUs all the OTUs that where present in the Paleobiology database. For the OTUs neither labelled as living or fossil we tried to decompose the OTUs name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with any taxonomic level (Family, Genus, Species, etc.) from \cite{wilson2005mammal}. The matching OTUs where labelled as living and the ones still not matching where ignored and labelled as non-applicable (NA; see supplementary material for more details on the taxonomic matching algorithm).
 
 \subsection{Data availability analysis}
 \subsubsection{Number of characters threshold}
 From all the 256 % @@@ Number of matrices
-matrices, we selected only the ones that had at least 100 morphological characters. This arbitrary threshold of a minimal number of morphological characters was chosen to be in adequacy with \cite{GuillermeCooper} and \cite{harrisonamong-character2014}. Also this threshold avoids biases towards small matrices that could be either not informative (e.g. too few characters not allowing character overlap among matrices; see discussion) or made of non-applicable characters (e.g. antlers which are sexual dimorphic characters proper to a specific clade).
+matrices, we selected only the ones that displayed at least 100 morphological characters per OTU. This arbitrary threshold of a minimal number of morphological characters was chosen to be in adequacy with \cite{GuillermeCooper} and \cite{harrisonamong-character2014}. Also this threshold avoids biases towards small matrices that could be either not informative \cite{wagner2000} (e.g. too few characters not allowing character overlap among matrices) or made of non-applicable characters \cite{Brazeau2011} (e.g. antlers which are sexual dimorphic characters proper to a specific clade).
 
 \subsubsection{Data availability}
-To assess the data availability per mammal order, we calculated the percentage of OTUs with morphological data for three different taxonomic levels: Family, Genera and Species. We highlighted all the orders containing less than 25\% of living taxa with morphological data because their amount of missing data ($>$75\%) was higher than in \cite{GuillermeCooper} and therefore highly probable of suffering from the effect of missing data. 
+To assess the data availability per mammal order, we calculated the percentage of OTUs with morphological data for three different taxonomic levels: Family, Genus and Species. We highlighted all the orders containing less than 25\% of living taxa with morphological data because their amount of missing data ($>$75\%) was higher than in \cite{GuillermeCooper} and therefore highly probable of having wrong topology due to the missing data. On the opposite, orders with up to 25\% of missing data (75\% of available data) were shown to have no significant effect on topology \cite{GuillermeCooper}. We therefore used this value as a threshold of "good" data sampling. 
 
 \subsubsection{Available data structure}
-For the orders with no morphological data for all its OTUs at the three different taxonomic levels (Family, Genera and Species), we investigated the structure of the available data to test if it was either (i) randomly distributed, (ii) over-dispersed or (iii) clustered. To measure the structure of the available data we used classic community structure metric from the \texttt{picante} R package \cite{picante}. We compared the structure of the available data for each order to the structure of a potentially fully sampled order (i.e. only the OTUs with available morphological data \textit{versus} all the OTUs).
-For each orders and taxonomic levels that presented OTUs with no available morphological data, we calculated the Net Relatedness Index (NRI) which quantifies the overall distribution of the data with negative values showing more dispersed data and positive values more clustered data than expected by the null model \cite{webb2002phylogenies}. We choose to present only the NRI values because they have been shown to be slightly less sensitive to the structure of the phylogeny (i.e. branch length and topology) \cite{NRI,journal.pone.0004390} but we also calculated the two other common phylogenetic structure indices: Faith's Phylogenetic Distance (PD) \cite{Faith19921} and the Nearest Taxon Index (NTI) \cite{webb2002phylogenies}. Both metrics are available in the Supplementary results.
+For the orders with no morphological data for all its OTUs at the three different taxonomic levels (Family, Genus and Species), we investigated the structure of the available data to test if it was either (i) randomly distributed, (ii) over-dispersed or (iii) clustered. To measure the structure of the available data we used classic community structure metric from the \texttt{picante} R package \cite{picante}. We compared the structure of the available data for each order to the structure of a potentially fully sampled order (i.e. only the OTUs with available morphological data \textit{versus} all the OTUs).
+For each orders and taxonomic levels that presented OTUs with no available morphological data, we calculated the Net Relatedness Index (NRI) which quantifies the overall distribution of the data with negative values showing more dispersed data and positive values more clustered data than expected by the null model (random) \cite{webb2002phylogenies}. We choose to present only the NRI values because they have been shown to be slightly less sensitive to the structure of the phylogeny (i.e. branch length and topology) \cite{NRI,journal.pone.0004390} but we also calculated the two other common phylogenetic structure indices: Faith's Phylogenetic Distance (PD) \cite{Faith19921} and the Nearest Taxon Index (NTI) \cite{webb2002phylogenies}. Both metrics are available in the Supplementary results.
 
 %\subsubsection{Data improvement strategy}
 %Phylotargeting
@@ -189,7 +189,7 @@ All the following procedure is repeatable and available on GitHub. %Or what is t
 \section{Results}
 
 \subsection{Data availability}
-We extracted 1422 living mammal OTUs from the 256 matrices with a minimum of 6 characters and a maximum of 4541. After removing all the matrices with less than 100 characters, the number of extracted living mammals OTUs was down to 815. 11/28 orders have less than 25\% of taxa with morphological data at a species level and 24/28 orders have less than 75\% taxa with available morphological data. At the Genus level however only 3/28 orders have less than 25\% of taxa with morphological data and 16/28 have less than 75\%. Finally, at the family level no order has less than 25\% taxa with available morphological data and only 5/28 have less than 75\% (table~\ref{Table_morpho_taxa_proportion}).
+We extracted 1422 living mammal OTUs from the 256 matrices with a minimum of 6 characters and a maximum of 4541 per OTU. After removing all the matrices with less than 100 morphological characters, the number of extracted living mammals OTUs was down to 815. 11/28 orders have less than 25\% of taxa with morphological data at a species level and 24/28 orders have less than 75\% taxa with available morphological data. At the Genus level however only 3/28 orders have less than 25\% of taxa with morphological data and 16/28 have less than 75\%. Finally, at the family level no order has less than 25\% taxa with available morphological data and only 5/28 have less than 75\% (table~\ref{Table_morpho_taxa_proportion}).
 
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
@@ -198,14 +198,16 @@ We extracted 1422 living mammal OTUs from the 256 matrices with a minimum of 6 c
 \renewcommand\baselinestretch{2}\selectfont
 
 \subsection{Available data structure}
-Among the orders containing at least one OTU with no available morphological data, only two orders (Carnivora and Chiroptera) are significantly clustered both at the species and the genus level but not at the family level (table~\ref{Table_data_structure}).
+Among the orders containing at least one OTU with no available morphological data, only four orders are significantly clustered: Dirpotodontia, Carnivora and Chiroptera both at the species and the genus level and Rodentia at the species level only (table~\ref{Table_data_structure}).
+
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
 \input{Table_data_structure}
 \end{center}
 \renewcommand\baselinestretch{2}\selectfont
 
-Two contrasted results are shown on figure ~\ref{Figure_example_coverageA} and ~\ref{Figure_example_coverageB} with randomly distributed data in Cetartiodactyla (figure ~\ref{Figure_example_coverageA}) and clustered available data in Carnivora (mainly Canida; figure ~\ref{Figure_example_coverageB}). 
+Two contrasted results are shown on figure ~\ref{Figure_example_coverageA} and ~\ref{Figure_example_coverageB} with randomly distributed data in Cetartiodactyla (figure ~\ref{Figure_example_coverageA}) and clustered available data in Carnivora (mainly Canidae; figure ~\ref{Figure_example_coverageB}).
+
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{example_coverageA.pdf}
@@ -230,8 +232,17 @@ Two contrasted results are shown on figure ~\ref{Figure_example_coverageA} and ~
 %---------------------------------------------
 
 \section{Discussion}
+Our results show that even though relations among living mammals are well known in a molecular framework (e.g. \cite{FritzTree,meredithimpacts2011,May-Collado-PeerJ}) only little morphological data is available. This is primarily due to the fact that that morphological studies are mainly focusing on fossil taxa rather than living taxa (e.g. \cite{O'Leary08022013,ni2013oldest}). However, data availability varies in its structure as well as across taxonomic levels. Higher taxonomic levels are always better sampled than lower ones (table~\ref{Table_morpho_taxa_proportion}) and within these taxonomic levels, the structure of available data is mostly random apart for four orders (table\ref{Table_data_structure}).
+
 %Data collection
 We know we might have missed some data but we performed a thorough and repeatable search and still managed to collected 1422 OTUs which represents 38\% of all living mammals
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1\textwidth]{../andrew/citations.jpg}
+\caption{ }
+\label{bla}
+\end{figure}
 
 %\subsection{Data availability}
 The amount of living taxa with no available morphological data was surprisingly high at the species level (24/28 orders have less than 75\% taxa with available morphological data) which can lead to topological misplacements of fossils in Total Evidence trees. The effect of missing living taxa with morphological data has no significant impact on inferring the correct topology up to 25\% of missing data, beyond that threshold, both the position of "flying" taxa and the clades are significantly different from the correct topology \cite{GuillermeCooper}. At the species level within mammals, it is therefore likely to see topological artefacts for the placement of fossil taxa. However, the data availability is more promising at higher taxonomic level (i.e. the Genus and the Family level). This value is probably more important to consider since there is a slight discrepancy between neontological species and paleontological species. While the second ones are described based on accurately measured morphology, genetic distance, spacial distribution and even behaviour, the second one are usually estimate based on morphological, spatial and temporal differences only. Because of the lack of behavioural and genetic data, it is likely that cryptic species are often ignored in palaeontological data. Therefore, most palaeontological studies are using the Genus level for their smallest taxonomic OTU. In this frame of palaeontological data usage, the data availablity at the Genus level in living mammals should be our priority concern.
@@ -265,7 +276,13 @@ This work was funded by a European Commission CORDIS Seventh Framework Programme
 
 
 %\section{SOM}
-
+\newcommand{\beginsupplement}{%
+    \setcounter{table}{0}
+    \renewcommand{\thetable}{S\arabic{table}}%
+    \setcounter{figure}{0}
+    \renewcommand{\thefigure}{S\arabic{figure}}%
+}
+\beginsupplement
 \input{Supplementary/Supplementary}
 
 
