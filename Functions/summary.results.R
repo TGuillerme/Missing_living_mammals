@@ -52,8 +52,10 @@ summary.results<-function(results, metric, save.path, file.save, caption, enviro
         for (column in 1:ncol(table_to_print)) {
             table_to_print[signif_data, column]<-paste('BOLD',table_to_print[signif_data, column], sep="")
         }
+        #Removing column Fraction
+        table_to_print<-table_to_print[,-3]
         #Fixing the column names
-        colnames(table_to_print)<-c("Order", "Taxonomic level", "Fraction of OTUs", "Percentage of OTUs", metric, "p-value")
+        colnames(table_to_print)<-c("Order", "Taxonomic level", "Percentage of OTUs", metric, "p-value")
         #Saving the table
         table<-xtable(table_to_print)
         caption(table)<-caption
