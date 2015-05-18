@@ -171,24 +171,18 @@ Additionally, in the mammalian orders where data was missing, we estimated the s
 
 \section{Material and Methods}
 \subsection{Matrices search}
-To investigate the available living taxa with morphological data, we downloaded morphological matrices from three main public databases: morphobank (\texttt{http://www.morphobank.org/} \citep{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/} and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}.
+To investigate the living mammals with available morphological data, we downloaded cladistic matrices from three major public databases: morphobank (\texttt{http://www.morphobank.org/}) \citep{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}).
 We downloaded all the matrices containing any fossil or living mammal taxa from these databases.
-Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously cited data bases.
-We downloaded the additional morphological characters matrices from the 20 first Google search results matching with our selected keywords and with any of the 35 taxonomic levels (see supplementary materials for detailed description of the procedure).
+Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously mentioned data bases.
+We downloaded the additional cladistic matrices from the 20 first Google search results matching with our selected keywords and with any of the 35 taxonomic levels (mammals Orders, Infraclasses and Class; see supplementary materials for detailed description of the procedure).
 We downloaded 256 % @@@ Number of matrices
 matrices containing a total of 9411 % @@@ Number of living OTUs
 operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar).
-The list of matrices is available in the supplementary materials.
+The full list of matrices with their associated citations is available in the supplementary materials. % link
 
-We then transformed all the matrices to be in the same nexus format.
-We also standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e.
-\textit{H.
-sapiens} was transformed in \textit{Homo sapiens}.
-We assigned each species as being either living or fossil using a taxonomic matching algorithm.
-We designated as living OTU all the OTUs that where either present in \citep{FritzTree} or \citep{wilson2005mammal}.
-We designated as fossil OTUs all the OTUs that where present in the Paleobiology database.
-For the OTUs neither labelled as living or fossil we tried to decompose the OTUs name (i.e.
-\textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens} and tried to match the first element with any taxonomic level (Family, Genus, Species, etc.) from \citep{wilson2005mammal}.
+We then transformed all the matrices to be in nexus format.
+We also standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. \textit{H. sapiens} was transformed in \textit{Homo sapiens}).
+We assigned each species as being either living or fossil using a taxonomic matching algorithm described as follow: (1) we designated as living OTU all the OTUs that where either present in \citep{FritzTree} or \citep{wilson2005mammal}; (2)we designated as fossil OTUs all the OTUs that where present in the Paleobiology database and (3) for the OTUs neither labelled as living or fossil we tried to decompose the OTUs name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens} and tried to match the first element with any taxonomic level (Family, Genus, Species, etc.) from \citep{wilson2005mammal}. % link
 The matching OTUs where labelled as living and the ones still not matching where ignored and labelled as non-applicable (NA; see supplementary material for more details on the taxonomic matching algorithm).
 
 \subsection{Data availability analysis}
