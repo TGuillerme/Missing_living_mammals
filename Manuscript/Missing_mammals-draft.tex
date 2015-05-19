@@ -109,7 +109,7 @@ $^3$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 %---------------------------------------------
 % NC: I've commented this out so I don't have to keep scrolling past in in the PDF
 %\newpage
-%\begin{abstract}
+%\begin{abstract} % 200 words, all keywords written in abstract if possible.
 %Studying changes in global biodiversity through time and space is essential.
 %For that we need methods to combine both palaeontological and neontological data.
 %One promising method, the Total Evidence method, allows such thing but needs a lot of data.
@@ -186,20 +186,23 @@ We find???
  
 %\newpage
 
-\section{Material and Methods}
+\section{Materials and Methods}
 \subsection{Matrices search}
-To investigate the living mammals with available cladistic data, we downloaded cladistic matrices from three major public databases: morphobank (\texttt{http://www.morphobank.org/}) \citep{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}).
-We downloaded all the matrices containing any living or/and fossil mammal taxa from these databases.
-Additionally we ran a thorough Google Scholar search for matrices that might not have been uploaded on the previously mentioned data bases.
-We downloaded the additional cladistic matrices from the 20 first Google search results matching with our selected keywords and with any of the 35 taxonomic levels (mammals Orders, Infraclasses and Class; see supplementary materials for detailed description of the procedure).
+We downloaded all cladistic matrices containing any living or/and fossil mammal taxa from three major public databases: morphobank (\texttt{http://www.morphobank.org/}) \citep{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}).
+We also performed a systematic Google Scholar search for matrices that might not have been uploaded on these databases (see see Supplementary Materials for a detailed description of the search procedure).
+%We downloaded the additional cladistic matrices from the 20 first search results matching with our selected keywords and with any of the 35 taxonomic levels (mammals Orders, Infraclasses and Class; see supplementary materials for detailed description of the procedure). % NC: Can possibly delete this and stick in supplement
 In total, we downloaded 256 % @@@ Number of matrices
-matrices with 9411 % @@@ Number of living OTUs
-operational taxonomic units (OTUs) from the combination of both searches (public repositories and Google Scholar). % link
+matrices containing 9411 % @@@ Number of living OTUs
+operational taxonomic units (OTUs). % link
+% NC: Might need to explain what you mean by OTUs, I'm assuming you mean genera or species etc.
+% NC: do you mean 9411 different OTUs or total OTUs? Might be good to have a number of unique OTUs as well.
 
 %We transformed all the matrices to be in nexus format.
-We standardised the taxonomic nomenclature by fixing invalid binomial inputs to match with the official taxonomic nomenclature rules (i.e. \textit{H. sapiens} was transformed in \textit{Homo sapiens}).
-We assigned each species as being either living or fossil using a taxonomic matching algorithm described as follow: (1) we designated as living OTU all the OTUs that where either present in \citep{FritzTree} or \citep{wilson2005mammal}; (2) we designated as fossil OTUs all the OTUs that where present in the Paleobiology database and (3) for the OTUs neither labelled as living or fossil we tried to decompose the OTUs name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with any taxonomic level (Family, Genus, Species, etc.) from \citep{wilson2005mammal}. % link
+We standardised the taxonomy of our OTUs by fixing invalid binomial inputs to match with standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
+We assigned each species as being either ``living'' or ``fossil'' as follows: (1) we designated as ``living'' all the OTUs that where either present in \citep{FritzTree} or \citep{wilson2005mammal}; (2) we designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleodb.org} %NC: Check website
+); and (3) for the OTUs neither labeled as living or fossil we tried to decompose the OTUs name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with any taxonomic level (Family, Genus, Species, etc.) from \citep{wilson2005mammal}. % link
 The matching OTUs where labelled as living and the ones still not matching where ignored and labelled as non-applicable (NA; see supplementary material for more details on the taxonomic matching algorithm).
+% NC: Wonder if more can go in supp mat
 
 \subsection{Data availability analysis}
 \subsubsection{Number of characters threshold}
@@ -318,10 +321,10 @@ Since the data for living mammals is usually easily available in world wide vast
 \section{Ethics statement}
 \section{Data accessibility statement}
 All data is available and reproducible on GitHub.
-\section{Authors’ contributions statement}
-Conceived and designed the experiments: TG NC. Performed the experiments: TG. Analyzed the data: TG. Wrote the paper: TG NC.
+\section{Authors' contributions statement}
+Conceived and designed the experiments: TG NC. Performed the experiments: TG. Analyzed the data: TG. Wrote the paper: TG NC. % NC: Write this in the proper proceedings style. All authors gave final approval for publication.
 \section{Acknowledgements}
-Nick Matzke, April Wright, David Bapst and Graeme Lloyd. %Or whatever order.
+Nick Matzke, April Wright, David Bapst and Graeme Lloyd. %Or whatever order. % NC: Alphabetical?
 \section{Funding statement}
 This work was funded by a European Commission CORDIS Seventh Framework Programme (FP7) Marie Curie CIG grant (proposal number: 321696).
 
