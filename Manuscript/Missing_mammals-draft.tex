@@ -81,7 +81,7 @@ Version dated: \today
 \medskip
 \begin{center}
 
-\noindent{\Large \bf Morphological data availability in living mammals}
+\noindent{\Large \bf Morphological data is lacking for living mammals}
 %Or: Missing cladistic data in living mammals - but I prefer the first one emphasizing on the availability of it. The data is not missing per se, it's just not coded!
 % NC: sometimes the better title is one that answers the question rather than giving the topic. e.g., "Morphological data is lacking for living species" or similar
 
@@ -140,42 +140,26 @@ There is an increasing consensus among evolutionary biologists that studying bot
 For example, including both living and fossil taxa in evolutionary studies can improve the accuracy of timing diversification events \citep[e.g.][]{ronquista2012}, our understanding of relationships among lineages \citep[e.g.][]{beckancient2014}, and our ability to infer biogeographical patterns through time \citep[e.g.][]{Meseguer01032015}.
 To perform such analyses it is necessary to combine living and fossil taxa in phylogenetic trees.
 One increasingly popular method, the Total Evidence method \citep{eernissetaxonomic1993,ronquista2012}, combines molecular data from living taxa and morphological data from both living and fossil taxa in a supermatrix \citep[e.g.][]{pyrondivergence2011,ronquista2012,schragocombining2013,slaterunifying2013,beckancient2014,Meseguer01032015}, producing a phylogeny with living and fossil taxa at the tips. 
-These phylogenies can be dated using methods such as tip-dating \citep{ronquista2012,Drummond01082012,Wood01032013,BEASTmaster} and incorporated into macroevolutionary studies (e.g. ).
+These phylogenies can be dated using methods such as tip-dating \citep{ronquista2012,Drummond01082012,Wood01032013} and incorporated into macroevolutionary studies \citep[e.g.][]{ronquista2012,Wood01032013,slaterphylogenetic2013}.
 
 A downside of the Total Evidence method is that it requires a lot of data.
-One must collect molecular data for living taxa and morphological data for both living and fossil taxa; two types of data that require fairly different technical skills \citep[e.g.][]{meredithimpacts2011} \textit{vs.} \citep{O'Leary08022013}.
-% NC: Is that really what these papers show? They use differnt data but they don't talk about the technical skills! Might be better just to say something like (e.g., PCR/sequencing vs. anatomical description)
+One must collect molecular data for living taxa and morphological data for both living and fossil taxa; two types of data that require fairly different technical skills (e.g. molecular sequencing \textit{vs.} anatomical description).
 Additionally, large chunks of this data can be difficult, or even impossible, to collect for every taxon present in the analysis.
-For example, fossils very rarely have molecular data and incomplete fossil preservation may restrict the amount of morphological data available. % NC: Worth metioning fossil preservation here briefly as it is also an issue?
-Additionally, since the molecular phylogenetics revolution, it has become less common to collect morphological characters for living taxa when molecular data is available \citep[e.g.][]{slaterphylogenetic2013,beckancient2014}.
-%NC: Do these references actually say this??? Sounds like that's what you are saying
+For example, fossils very rarely have molecular data and incomplete fossil preservation may restrict the amount of morphological data available \citep{sansomfossilization2013}. % NC: Worth metioning fossil preservation here briefly as it is also an issue?
+Additionally, since the molecular phylogenetics revolution, it has become less common to collect morphological characters for living taxa when molecular data is available (e.g. in \cite{slaterphylogenetic2013}, only 13\% of the 169 living taxa have coded morphological data).
 Unfortunately this missing data can lead to errors in phylogenetic inference; in fact, simulations show that the ability of the Total Evidence method to recover the correct phylogenetic topology decreases when there is a low overlap between morphological data in the living and fossil taxa \citep{GuillermeCooper}, regardless the overall amount of morphological data available for the fossils (or the amount of molecular data available for the living species).
 The effect of missing data on topology is greatest when living taxa have little morphological data.
 This is because (1) a fossil cannot branch in the correct clade if there is no overlapping morphological data in the clade; and (2) a fossil has a higher probability of branching within a clade with more morphological data available for living taxa, regardless of whether this is the correct clade or not \citep{GuillermeCooper}. 
-This can lead to serious topological errors (see Figure ~\ref{Figure_missing_data_problem}). 
-
-% NC: OK so I know we did a paper on this but you can't just cite it every sentence. Need to put in a few more refs to other people's work or just cite us once or twice. I've condensed it which should help
-
-\begin{figure}[!htbp]
-\centering
-    \includegraphics[width=1\textwidth]{MissingDataFigure.pdf}
-\caption{Example of topological errors due to missing morphological data in living taxa.
-The phylogeny contains two clades, Aves and Mammalia, with molecular data (grey) for both but only morphological data (red) for Aves.
-If a mammalian fossil species (with no molecular data) is added to the phylogeny, it will erroneously branch with the Aves instead of the Mammalia because no morphological data will overlap between the fossil mammals and the living ones.}
-\label{Figure_missing_data_problem}
-\end{figure}
-
-%What we're doing
+%This can lead to serious topological errors (see Figure ~\ref{Figure_missing_data_problem}). 
 
 The issues above highlight that it is crucial to have sufficient morphological data for living taxa in a clade before using a Total Evidence approach.
-However, it is unclear how much morphological data for living taxa is actually available (i.e. already coded from specimens of living species and deposited in phylogenetic matrices), and how this data is distributed.
-Intuitively, most people assume this kind of data has already been collected, but our experiences suggest otherwise.
-To investigate this further, here we assess the amount of available morphological data for living mammals to determine whether sufficient data exists to build reliable Total Evidence phylogenies in this group.
+However, it is unclear how much morphological data for living taxa is actually available (i.e. already coded from living taxa specimens and deposited in phylogenetic matrices accessible online), and how this data is distributed.
+Intuitively, most people assume this kind of data has already been collected, but empirical data suggest otherwise (e.g. in \cite{ronquista2012,slaterphylogenetic2013,beckancient2014}).
+To investigate this further, we assess the amount of available morphological data for living mammals to determine whether sufficient data exists to build reliable Total Evidence phylogenies in this group.
 We collected cladistic data from @256 phylogenetic matrices available online and measured the proportion of cladistic data available for each mammalian order.
-Additionally, if the available data is randomly distributed across clades, the topological errors should be less extreme than if the data is biased towards particulars groups.
-Therefore, in the mammalian orders where data was missing, we determined whether the available cladistic data was phylogenetically overdispersed or clustered. 
-We find???
-% NC: Needs some summing up sentence or a we find sentence?
+%Additionally, if the available data is randomly distributed across clades, the topological errors should be less extreme than if the data is biased towards particulars groups.
+Additionally, because of the two topological caveats mentioned above, we determined whether the available cladistic data was phylogenetically overdispersed or clustered in the mammalian orders where data was missing. 
+We find that available morphological data for living mammals is scarce but generally randomly distributed and therefore suggest that an effort be made in collecting and sharing this type of data to improve Total Evidence tip-dated phylogenies.
 
 
 %---------------------------------------------
