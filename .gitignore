@@ -19,3 +19,7 @@
 # R #
 *.Rhistory
 *.Rapp.history
+
+*.gz
+*.log
+*.pdf
