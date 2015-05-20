@@ -187,45 +187,50 @@ We find???
 %\newpage
 
 \section{Materials and Methods}
-\subsection{Matrices search}
-We downloaded all cladistic matrices containing any living or/and fossil mammal taxa from three major public databases: morphobank (\texttt{http://www.morphobank.org/}) \citep{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}).
-We also performed a systematic Google Scholar search for matrices that might not have been uploaded on these databases (see see Supplementary Materials for a detailed description of the search procedure).
+\subsection{Data collection and standardisation}
+We downloaded all cladistic matrices containing any living or/and fossil mammal taxa from three major public databases: Morphobank (\texttt{http://www.morphobank.org/}) \citep{morphobank}, Graeme Lloyd's website (\texttt{http://graemetlloyd.com/}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}).
+% NC: give link to actual repo and actual bit of graemes website these things are found on?
+We also performed a systematic Google Scholar search for matrices that were not uploaded to these databases (see see Supplementary Materials for a detailed description of the search procedure).
 %We downloaded the additional cladistic matrices from the 20 first search results matching with our selected keywords and with any of the 35 taxonomic levels (mammals Orders, Infraclasses and Class; see supplementary materials for detailed description of the procedure). % NC: Can possibly delete this and stick in supplement
 In total, we downloaded 256 % @@@ Number of matrices
 matrices containing 9411 % @@@ Number of living OTUs
 operational taxonomic units (OTUs). % link
 % NC: Might need to explain what you mean by OTUs, I'm assuming you mean genera or species etc.
+We refer to OTUs instead of species because?
 % NC: do you mean 9411 different OTUs or total OTUs? Might be good to have a number of unique OTUs as well.
+
+% NC; probably need some comment to say this is collecting all the data!
 
 %We transformed all the matrices to be in nexus format.
 We standardised the taxonomy of our OTUs by fixing invalid binomial inputs to match with standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
-We assigned each species as being either ``living'' or ``fossil'' as follows: (1) we designated as ``living'' all the OTUs that where either present in \citep{FritzTree} or \citep{wilson2005mammal}; (2) we designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleodb.org} %NC: Check website
-); and (3) for the OTUs neither labeled as living or fossil we tried to decompose the OTUs name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with any taxonomic level (Family, Genus, Species, etc.) from \citep{wilson2005mammal}. % link
-The matching OTUs where labelled as living and the ones still not matching where ignored and labelled as non-applicable (NA; see supplementary material for more details on the taxonomic matching algorithm).
-% NC: Wonder if more can go in supp mat
+We designated as ``living'' all the OTUs that where either present in the phylogeny of Fritz \textit{et al}. \citep{FritzTree} or the taxonomy of Wilson \& Reeder \citep{wilson2005mammal}, and designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleodb.org} %NC: Check website
+For OTUs that did not appear in these three sources we first decomposed the name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (Family, Genus etc.).
+Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; see Supplementary Material for more details).
 
-\subsection{Data availability analysis}
-\subsubsection{Number of characters threshold}
-From all the 256 % @@@ Number of matrices
-matrices, we selected only the ones that coded at least 100 cladistic characters per OTU.
-This arbitrary threshold of a minimal number of cladistic characters was chosen to be in adequacy with \citep{GuillermeCooper} and \citep{harrisonamong-character2014}.
-Also this threshold avoids biases towards small matrices that could be either non-informative \citep{wagner2000} (e.g. too few characters not allowing character overlap among matrices) or that contained non-applicable characters \citep{Brazeau2011} (e.g. antlers ramification which is a only applicable to cervidae).
+%\subsection{Data availability analysis}
+%\subsubsection{Number of characters threshold}
+% NC: I'm not sure why you did this. You might need to explain more - let's discuss. Otherwise it looks like we are deliberately making the data coverage look worse by omitting data.
+Next we selected only matrices containing at least 100 cladistic characters per OTU.
+This arbitrary threshold was chosen to correspond with the number of characters used in \citep{GuillermeCooper} and \citep{harrisonamong-character2014}.
+Additionally, this threshold avoids biases towards small matrices that are often non-informative, because they contain too few characters so there is no character overlap among matrices \citep{wagner2000}, or contain characters that are highly specific and thus non-applicable across large clades \citep{Brazeau2011} (e.g. ``antler ramifications'' is a character than is only applicable to Cervidae not all mammals).
 
-\subsubsection{Data availability}
-To assess the data availability per mammal order, we calculated the percentage of OTUs with cladistic data for three different taxonomic levels: Family, Genus and Species.
-We highlighted all the orders containing less than 25\% of living taxa with cladistic data because their amount of missing data ($>$75\%) was higher than in \citep{GuillermeCooper} and therefore likely to induce topological errors.
-On the opposite, orders with up to 25\% of missing data (75\% of available data) were shown to have no significant effect on topology \citep{GuillermeCooper}.
-We therefore used this value as a threshold of ``bad'' ($<$ 25\% available) and ``good'' ($>$ 75\% available) data coverage.
+% NC: Some summing up statement about how many matrices were actually usuable, how many OTUs, how many unique OTUs etc.
 
-\subsubsection{Available data structure}
-For the orders that contained OTUs with no cladistic data at any of the three different taxonomic levels (Family, Genus and Species), we investigated whether the structure of the available data was either (i) randomly distributed, (ii) over-dispersed or (iii) clustered by using cNet Relatedness Index (NRI) metric \citep{webb2002phylogenies} using the \texttt{picante} R package \citep{picante}.
-The NRI quantifies the overall distribution of the observed data compared to a model where all the data is sampled for each OTU. Negative NRI values are showing more over-dispersed than expected by the null model (random) and positive values are showing more clustered data \citep{webb2002phylogenies}.
+\subsection{Data availability and distribution}
+To assess the availability of cladistic data for each mammalian Order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: Family, Genus and species.
+We used these different taxonomic levels because some clades are well covered at the Family or Genus level, but poorly covered at the species level.
+We consider Orders with \textless 25\% of living taxa with cladistic data as having poor data coverage, and Orders with up \textmore 75\% of living taxa with cladistic data as having good data coverage. 
+
+For Orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) over-dispersed or (iii) clustered with respect to phylogeny, using the Net Relatedness Index (NRI) metric \citep{webb2002phylogenies} in the \texttt{picante} R package \citep{picante}. % NC: Need to cite R too
+NRI is a metric from community phylogenetics that quantifies the distribution of the observed data compared to a model where all the data is sampled for each OTU. 
+%NC: NO! Not true unless you did something special. It assumes you have the same number of data points, but they are distributed at random. Then compares how different the observed is from random. Needs more work here. 
+Negative NRI values show more over-dispersed than expected by the null model (random) and positive values are showing more clustered data \citep{webb2002phylogenies}.
 We choose NRI metric because is has been shown to be slightly less sensitive to the structure of the phylogeny (i.e. branch length and topology) \citep{NRI,journal.pone.0004390} but we also calculated two other common phylogenetic structure indices: Faith's Phylogenetic Distance (PD) \citep{Faith19921} and the Nearest Taxon Index (NTI) \citep{webb2002phylogenies}.
+% NC: Again No. NRI is actually skewed due to branch length distributions - see my 2008 proc b paper. Maybe worth saying it's been used in other studies then you can cite my ecology letters paper from 2012. Yay citations
 Both metrics are available in the Supplementary results.
+% NC: Both metrics? What other metric :) 
 
-%\subsubsection{Data improvement strategy}
-%Too long for this paper and actually still a lot of work to do (transform the code of phylotargeting + come up with a valid strategy)
-
+% NC: OK needs a bit of work, a bit more clarification of what is going on here. We can chat tomorrow.
 %---------------------------------------------
 %
 %       RESULTS
