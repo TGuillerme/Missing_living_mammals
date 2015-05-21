@@ -1,9 +1,20 @@
 % latex table generated in R 3.1.1 by xtable 1.7-3 package
 % Fri Feb 27 10:08:44 2015
+
+% NC: Might be good to have genus and species with small letters
+% NC: I switched OTUs for taxa so you don't have to define it. If this is incorrect we need to change it back and define in the legend.
+% NC: Also taxa are arranged according to higher level taxonomy I see. Might be good to separate that to make the table easier to read: e.g.
+%Marsupalia
+%Didelphimorphia & Family & 1/1 & 100 \\ 
+% Otherwise it might be better in alphabetical order? Easier to find the clade you want that way. Same for the other table too.
+
 \begin{longtable}{llll}
-\caption{Proportion of available OTUs with morphological data per order and per taxonomic level. We highlighted in bold the orders that have more than 75\% of missing data for each taxonomic level. Note that it is possible that more data is available at a higher taxonomic level (Genus $>$ Species) since if the species name for an OTU was not or miss specified, we still counted the OTU for higher taxonomic level analysis.} \\ 
+\caption{Number of taxa with available cladistic data for mammalian orders at three taxonomic levels. Orders in bold have \textgreater 75\% of missing data at each taxonomic level, i.e. ``poor'' data coverage. 
+% NC: What about good data coverage? Should we not highlight them somehow too?
+% Note that it is possible that more data is available at a higher taxonomic level (Genus $>$ Species) since if the species name for an OTU was not or miss specified, we still counted the OTU for higher taxonomic level analysis. % NC: Isn't that obvious? Maybe put in text???
+} \\ 
   \hline
-Order & Taxonomic level & Fraction of OTUs & Percentage of OTUs \\ 
+Order & Taxonomic level & Proportion of taxa with data & \% taxa with data \\ 
   \hline
 Monotremata & Family & 2/2 & 100 \\ 
   Monotremata & Genus & 2/3 & 66.67 \\ 

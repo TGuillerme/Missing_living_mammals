@@ -1,14 +1,18 @@
 % latex table generated in R 3.1.1 by xtable 1.7-3 package
 % Fri Feb 27 10:08:44 2015
+
+% NC: Might be good to have genus and species with small letters
+% NC: I switched OTUs for taxa so you don't have to define it. If this is incorrect we need to change it back and define in the legend.
+% NC: Also please reduce the numbers on the percentage column to 2 decimal places only, i.e. 66.67 not 66.667
 \begin{longtable}{lllll}
-\caption{Data structure for the orders with OTUs without morphological data per taxonomic level. When the Net Relatedness Index (NRI) is negative, the OTUs are more dispersed than expected by chance (random); when the NRI is positive, the OTUs are more clustered by expected by chance. The p-value indicates the significance in difference from the null model (random).} \\ 
+\caption{Phylogenetic distribution of taxa with available cladistic data for mammalian orders without 100\% data coverage, at two taxonomic levels. When Net Relatedness Index (NRI) is negative, taxa are more phylogenetically dispersed than expected by chance; when NRI is positive, taxa are more phylogenetically clustered by expected by chance. The p-value indicates whether NRI differs significantly from the null expectation.} \\ 
   \hline
-Order & Taxonomic level & Percentage of OTUs & NRI & p-value \\ 
+Order & Taxonomic level & \% of taxa with data & NRI & p-value \\ 
   \hline
-Monotremata & Genus & 66.667 & -0.695 & 0.663 \\ 
-  Monotremata & Species & 50 & -0.966 & 0.566 \\ 
-  Didelphimorphia & Species & 47.619 & -1.33 & 0.915 \\ 
-  Paucituberculata & Genus & 66.667 & -0.756 & 0.682 \\ 
+Monotremata & genus & 66.667 & -0.695 & 0.663 \\ 
+  Monotremata & species & 50 & -0.966 & 0.566 \\ 
+  Didelphimorphia & species & 47.619 & -1.33 & 0.915 \\ 
+  Paucituberculata & genus & 66.667 & -0.756 & 0.682 \\ 
   Paucituberculata & Species & 40 & -0.64 & 0.493 \\ 
   Dasyuromorphia & Genus & 31.818 & -1.102 & 0.894 \\ 
   Dasyuromorphia & Species & 12.5 & -1.098 & 0.93 \\ 
@@ -46,7 +50,6 @@ Monotremata & Genus & 66.667 & -0.695 & 0.663 \\
   Cetartiodactyla & Family & 95.238 & 0.352 & 0.193 \\ 
   Cetartiodactyla & Genus & 59.375 & -3.221 & 1 \\ 
   Cetartiodactyla & Species & 34.084 & -2.768 & 1 \\ 
-   \hline
 \hline
 \label{Table_data_structure}
 \end{longtable}
