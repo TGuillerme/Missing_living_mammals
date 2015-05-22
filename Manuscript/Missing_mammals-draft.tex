@@ -221,14 +221,21 @@ Both metrics are available in the Supplementary results.
 %
 %---------------------------------------------
 
+% NC: Need to make a decision of Genus vs genus, Order vs order etc. I'd probably go for small letters actually. Do this throughout
+% NC: Note Figure and Table always have capital letters. For figure 2A or 2B don't put - (not 2-B for example) 
+
 \section{Results}
 
-\subsection{Data availability}
+%\subsection{Data availability}
 We extracted 1422 living mammal OTUs from the 256 matrices with a minimum of 6 and a maximum of 4541 coded cladistic characters per OTU.
 After removing all the matrices with less than 100 cladistic characters, the number of extracted living mammals OTUs was down to 815.
-11/28 orders have less than 25\% of OTUs with cladistic data at a species level and 24/28 orders have less than 75\% taxa with available cladistic data.
-At the Genus level however only 3/28 orders have less than 25\% of taxa with cladistic data and 16/28 have less than 75\%.
-Finally, at the family level no order has less than 25\% taxa with available cladistic data and only 5/28 have less than 75\% (table \ref{Table_morpho_taxa_proportion}).
+% NC: Ah sorry I've asked you to add this in above. I reckon it goes up in the methods.
+In the @@@ cladistic matrices extracted in our searches, 11 out of 28 mammalian orders have \textless 25\% of species with cladistic data and 24 orders have less \textless 75\% species with available cladistic data.
+At the Genus level, only 3 orders have \textless 25\% of taxa with cladistic data and 16 orders have less than 75\%.
+Finally, at the family level no order has \textless 25\% taxa with available cladistic data and only 5 orders have \textless 75\% (table \ref{Table_morpho_taxa_proportion}).
+
+% NC: Results need to match the methods. So are we looking at "good" versus "poor"? That makes more sense to me. So how many have good coverage i.e. >75% and how many have poor coverage i.e. <25%. I think this will help.
+% NC: Can probably also just say that there are 28 orders once, then say how many fit into each category or it's needlessly repetitive. We can write this together to save time
 
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
@@ -236,8 +243,8 @@ Finally, at the family level no order has less than 25\% taxa with available cla
 \end{center}
 \renewcommand\baselinestretch{2}\selectfont
 
-\subsection{Available data structure}
-Among the orders containing OTUs with no available cladistic data, only two orders are significantly clustered: Carnivora and Chiroptera both at the species and the genus level (table~\ref{Table_data_structure}).
+%\subsection{Available data structure}
+Among the mammalian orders containing OTUs with no available cladistic data, only two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species and the genus level (Table~\ref{Table_data_structure}).
 
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
@@ -245,16 +252,16 @@ Among the orders containing OTUs with no available cladistic data, only two orde
 \end{center}
 \renewcommand\baselinestretch{2}\selectfont
 
-Two contrasted results are shown on figure \ref{Figure_example_coverage} with randomly distributed data in Cetartiodactyla (figure \ref{Figure_example_coverage}-A) and clustered available data in Carnivora (mainly Canidae; figure \ref{Figure_example_coverage}-B).
+Two contrasting results are shown on Figure \ref{Figure_example_coverage} with randomly distributed data in Cetartiodactyla (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered data in Carnivora (mainly Canidae; figure \ref{Figure_example_coverage}B).
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{example_coverage.pdf}
-\caption{Distribution of available cladistic data across two different clades (A: Cetartiodactyla; B: Carnivora).
+\caption{Phylogenetic distribution of available cladistic data across two mammalian orders (A: Cetartiodactyla; B: Carnivora).
 Edges are colored in grey when no cladistic data is available or in red when data is available.}
 \label{Figure_example_coverage}
 \end{figure}
-
+% NC: Can we change the colours, red sucks. Otherwise I like the figure a lot.
 
 %\subsection{Data improvement strategy}
 
