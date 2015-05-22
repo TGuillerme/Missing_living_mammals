@@ -3,6 +3,10 @@
 
 #Checking the class of an object and returning an error message if != class
 check.class<-function(object, class, msg, errorif=FALSE) {
+    #Set msg if missing
+    if(missing(msg)) {
+        msg<-paste(" must be ", class, ".", sep="")
+    }
     #check if object is class.
     if(length(class) == 1) {
         if(errorif==FALSE) {
@@ -43,6 +47,7 @@ check.length<-function(object, length, msg, errorif=FALSE) {
         }        
     }
 }
+
 
 
 #Cleaning a tree so that the species match with the ones in a table
