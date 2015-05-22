@@ -95,7 +95,7 @@ $^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, 
 $^3$Department of Life Sciences, Natural History Museum, Cromwell Road, London, SW7 5BD, UK.}\\
 \end{center}
 \medskip
-\noindent{*\bf Corresponding author.} \textit{Zoology Building, Trinity College Dublin, Dublin 2, Ireland; E-mail: guillert@tcd.ie; Fax: +353 1 6778094; Tel: +353 1 896 2571.}\\ % NC: Might need to reconsider the email here as it won't be your email anymore when you leave. Or do you get to keep it forever? 
+\noindent{*\bf Corresponding author.} \textit{Zoology Building, Trinity College Dublin, Dublin 2, Ireland; E-mail: guillert@tcd.ie; Fax: +353 1 6778094; Tel: +353 1 896 2571.}\\  
 \vspace{1in}
 
 %Line numbering
@@ -180,39 +180,45 @@ In total, we downloaded 256 % @@@ Number of matrices
 matrices containing 9411 % @@@ Number of living OTUs
 operational taxonomic units (OTUs). % link
 % NC: Might need to explain what you mean by OTUs, I'm assuming you mean genera or species etc.
+% because some trees have species, some have subspecies etc.
 We refer to OTUs instead of species because?
 % NC: do you mean 9411 different OTUs or total OTUs? Might be good to have a number of unique OTUs as well.
-
+% NC: Explain the genera vs species - ie how you might have more at one level than expected.
 % NC; probably need some comment to say this is collecting all the data!
 
 %We transformed all the matrices to be in nexus format.
 We standardised the taxonomy of our OTUs by fixing invalid binomial inputs to match with standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
-We designated as ``living'' all the OTUs that where either present in the phylogeny of Fritz \textit{et al}. \citep{FritzTree} or the taxonomy of Wilson \& Reeder \citep{wilson2005mammal}, and designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleodb.org} %NC: Check website
+We designated as ``living'' all the OTUs that where either present in the phylogeny of Fritz \textit{et al}. \citep{FritzTree} or the taxonomy of Wilson \& Reeder \citep{wilson2005mammal}, and designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleodb.org} %NC: Check website or reference
 For OTUs that did not appear in these three sources we first decomposed the name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (Family, Genus etc.).
 Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; see Supplementary Material for more details).
 
 %\subsection{Data availability analysis}
 %\subsubsection{Number of characters threshold}
 % NC: I'm not sure why you did this. You might need to explain more - let's discuss. Otherwise it looks like we are deliberately making the data coverage look worse by omitting data.
+
+% NC: START with - small matrices are shit for these reasons.
+
 Next we selected only matrices containing at least 100 cladistic characters per OTU.
 This arbitrary threshold was chosen to correspond with the number of characters used in \citep{GuillermeCooper} and \citep{harrisonamong-character2014}.
 Additionally, this threshold avoids biases towards small matrices that are often non-informative, because they contain too few characters so there is no character overlap among matrices \citep{wagner2000}, or contain characters that are highly specific and thus non-applicable across large clades \citep{Brazeau2011} (e.g. ``antler ramifications'' is a character than is only applicable to Cervidae not all mammals).
+% NC: We also did it with all data.
 
 % NC: Some summing up statement about how many matrices were actually usuable, how many OTUs, how many unique OTUs etc.
 
 \subsection{Data availability and distribution}
 To assess the availability of cladistic data for each mammalian Order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: Family, Genus and species.
 We used these different taxonomic levels because some clades are well covered at the Family or Genus level, but poorly covered at the species level.
-We consider Orders with \textless 25\% of living taxa with cladistic data as having poor data coverage, and Orders with up \textmore 75\% of living taxa with cladistic data as having good data coverage. 
+We consider Orders with \textless 25\% of living taxa with cladistic data as having poor data coverage, and Orders with up \textgreater 75\% of living taxa with cladistic data as having good data coverage. 
 
 For Orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) over-dispersed or (iii) clustered with respect to phylogeny, using the Net Relatedness Index (NRI) metric \citep{webb2002phylogenies} in the \texttt{picante} R package \citep{picante}. % NC: Need to cite R too
+% NC: Put NTI and PD up here too then just describe NRI.
 NRI is a metric from community phylogenetics that quantifies the distribution of the observed data compared to a model where all the data is sampled for each OTU. 
 %NC: NO! Not true unless you did something special. It assumes you have the same number of data points, but they are distributed at random. Then compares how different the observed is from random. Needs more work here. 
 Negative NRI values show more over-dispersed than expected by the null model (random) and positive values are showing more clustered data \citep{webb2002phylogenies}.
 We choose NRI metric because is has been shown to be slightly less sensitive to the structure of the phylogeny (i.e. branch length and topology) \citep{NRI,journal.pone.0004390} but we also calculated two other common phylogenetic structure indices: Faith's Phylogenetic Distance (PD) \citep{Faith19921} and the Nearest Taxon Index (NTI) \citep{webb2002phylogenies}.
 % NC: Again No. NRI is actually skewed due to branch length distributions - see my 2008 proc b paper. Maybe worth saying it's been used in other studies then you can cite my ecology letters paper from 2012. Yay citations
 Both metrics are available in the Supplementary results.
-% NC: Both metrics? What other metric :) 
+
 
 % NC: OK needs a bit of work, a bit more clarification of what is going on here. We can chat tomorrow.
 %---------------------------------------------
@@ -231,7 +237,7 @@ We extracted 1422 living mammal OTUs from the 256 matrices with a minimum of 6 a
 After removing all the matrices with less than 100 cladistic characters, the number of extracted living mammals OTUs was down to 815.
 % NC: Ah sorry I've asked you to add this in above. I reckon it goes up in the methods.
 In the @@@ cladistic matrices extracted in our searches, 11 out of 28 mammalian orders have \textless 25\% of species with cladistic data and 24 orders have less \textless 75\% species with available cladistic data.
-At the Genus level, only 3 orders have \textless 25\% of taxa with cladistic data and 16 orders have less than 75\%.
+At the Genus level, only three orders have \textless 25\% of taxa with cladistic data and 16 orders have less than 75\%.
 Finally, at the family level no order has \textless 25\% taxa with available cladistic data and only 5 orders have \textless 75\% (table \ref{Table_morpho_taxa_proportion}).
 
 % NC: Results need to match the methods. So are we looking at "good" versus "poor"? That makes more sense to me. So how many have good coverage i.e. >75% and how many have poor coverage i.e. <25%. I think this will help.
@@ -273,22 +279,23 @@ Edges are colored in grey when no cladistic data is available or in red when dat
 %---------------------------------------------
 
 \section{Discussion}
-Our results show that even though relations among living mammals are well known in a molecular framework \citep[e.g.][]{FritzTree,meredithimpacts2011,May-Collado-PeerJ} only little cladistic data is available.
-This is primarily due to the fact that that cladistic studies are mainly focusing on fossil taxa rather than living taxa \citep[e.g.][]{O'Leary08022013,ni2013oldest}.
-However, data availability varies in its structure as well as across taxonomic levels.
-Higher taxonomic levels are always better sampled than lower ones (table \ref{Table_morpho_taxa_proportion}) and within these taxonomic levels, the structure of available data is mostly random apart for two orders (table \ref{Table_data_structure})b.
+Our results show that although phylogenetic relationships among living mammals are well-resolved \citep[e.g.][]{FritzTree,meredithimpacts2011,May-Collado-PeerJ}, most of the data used to build these phylogenies is molecular, and very little cladistic data is available for living mammals compared to fossil mammals \citep[e.g.][]{O'Leary08022013,ni2013oldest}.
+This has implications for building Total Evidence phylogenies containing both living and fossil mammals as without sufficient cladistic data for living species, fossil placements in these trees is very uncertain \citep{GuillermeCooper}.
+However, data coverage in living mammals varies across taxonomic levels and in its phylogenetic distribution.
+Higher taxonomic levels are always better sampled than lower ones and within these taxonomic levels, the available data is mostly randomly distributed across the phylogeny, apart from in Carnivora and Chiroptera.
+% NC: You don't generally refer to results tables etc in the discussion
 
 %\subsection{Data availability}
-The amount of living taxa with no available cladistic data was surprisingly high at the species level: 24/28 orders have less than 75\% taxa with available cladistic data (and two of the 28 orders are monospecific!).
-This threshold of 75\% available data is the maximum amount of possible missing data (25\%) before having a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
-Beyond this threshold, there is a noteworthy displacement of the wildcard taxa (\textit{sensu} \citep{kearneyfragmentary2002}) as well as a important decrease in the conservation of clades \citep{GuillermeCooper}.
-At the species level within most orders of mammals, it is therefore likely to see topological artefacts for the placement of fossil taxa.
-However, the data availability seems to be less an issue at higher taxonomic level (i.e. the Genus and the Family level).
+The number of living taxa with no available cladistic data was surprisingly high at the species-level: 24 out of 28 orders have \textless 75\% taxa with available cladistic data (and two of the 28 orders are monospecific!).
+This threshold of 75\% available data represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
+Beyond this threshold, there is considerable displacement of wildcard taxa (\textit{sensu} \citep{kearneyfragmentary2002}) and decreases in clade conservation \citep{GuillermeCooper}.
+Therefore, at the species-level within most orders of mammals, we expect to see topological artefacts for the placement of fossil taxa. % NC: Rephrase
+However, data coverage seems to be less of an issue at higher taxonomic levels (i.e. genus- and family-level).
 This point is important to consider from a practical point of view because of the slight discrepancy between the neontological and the palaeontological concept of species.
-While neontological species are described on accurately measured morphology, genetic distance, spacial distribution and even behaviour \citep[e.g.][]{kellymolecular2014}, palaeontological data can be based only on morphological, spatial and temporal data \citep[e.g.][]{ni2013oldest}.
+While neontological species are described on accurately measured morphology, genetic distance, spatial distribution and even behaviour \citep[e.g.][]{kellymolecular2014}, palaeontological data can be based only on morphological, spatial and temporal data \citep[e.g.][]{ni2013oldest}.
 Because of this difference between neontological species (\textit{sensu} reproductive isolates) and paleontological species (\textit{sensu} morpho-species %or "morphological clusters"?
 ), most palaeontological studies are using the Genus level for their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
-In this frame of palaeontological data usage, the data availability at the Genus level in living mammals should be our priority concern.
+In this frame of palaeontological data usage, the data availability at the genus-level in living mammals should be our priority concern.
 
 %\subsection{Available data structure}
 Regardless the low level of available data, it is encouraging that for most orders (except Carnivora and Chiroptera), data is randomly distributed across the phylogeny.
@@ -303,20 +310,21 @@ This means that fossils with uncertain phylogentic affinities (\textit{Incertae 
 %On the other hand, any Carnivora fossil with uncertain phylogenetic affinities (\textit{Incertae sedis} will have a higher probability of branching by chance within the Canidae because they are oversampled within the Carnivora (figure ~\ref{Figure_example_coverage}-B.
 
 %Caveats
-In this study, we treated all cladistic matrices to be equal in a similar way that molecular matrices are: for example if a matrix A contains 100 characters for taxa X and Y, and a matrix B contains 50 characters for taxa X and Z, we assumed that both matrices can be combined in a supermatrix containing 150 characters for taxon X, 100 for taxon Y and 50 for taxon Z.
-However, it is clear that cladistic data cannot be treated that way \citep{Brazeau2011}.
-In fact, for the same taxon, some characters might overlap (e.g. matrix A has a character coding for the shape of a particular morphological feature and matrix B as a first character coding for the presence of this morphological feature and a second one coding for its shape; in this case, these three characters are compound characters \citep{Brazeau2011}).
-However, in reasonably sized matrices ($>$ 100 characters \citep{GuillermeCooper,harrisonamong-character2014} it is more likely that a number of characters are consistently conserved among the different matrices (e.g. within primates literature, the character \textit{p7} - the size of the $4^{th}$ lower premolar paraconid - is consistent for more than 15 years \citep{ross1998phylogenetic,seiffert2003fossil,marivaux2005anthropoid,seiffert2005basal,bloch2007new,kay2008anatomy,silcox2008biogeographic,seiffert2009convergent,tabuce2009anthropoid,boyer2010astragalar,seiffert2010fossil,marivaux2013djebelemur,ni2013oldest}).
-A conservative approach to avoid compound characters could be to select only the most recent matrix for each group.
+In this study, we treated all cladistic matrices as equal in a similar way to molecular matrices. 
+For example, if matrix A contained 100 characters for taxa X and Y, and matrix B contained 50 different characters for taxa X and Z, we assumed that both matrices can be combined in a supermatrix containing 150 independent characters for taxon X, 100 for taxon Y and 50 for taxon Z.
+Unfortunately, cladistic data cannot always be treated in this way because some characters may overlap.
+For example, if matrix A has a character coding for the shape of a particular morphological feature and matrix B has a character coding for the presence of this morphological feature and a second character coding for its shape then these three characters are non-independent compound characters \citep{Brazeau2011}.
+However, in reasonably sized matrices (\textgreater 100 characters; \citealp{GuillermeCooper,harrisonamong-character2014}) it is more likely that a number of characters are consistently conserved among the different matrices (e.g. within the Primate literature, the character \textit{p7} - the size of the $4^{th}$ lower premolar paraconid - has been used consistently for \textgreater 15 years; \citealp[e.g.][]{ross1998phylogenetic,seiffert2003fossil,marivaux2005anthropoid,seiffert2005basal,bloch2007new,kay2008anatomy,silcox2008biogeographic,seiffert2009convergent,tabuce2009anthropoid,boyer2010astragalar,seiffert2010fossil,marivaux2013djebelemur,ni2013oldest}). % NC: Remove some of these
+A conservative approach to avoid compound characters would be to select only the most recent matrix for each group, but this would result in the loss of a lot of data.
 
 %Let's code some data
-Following the recommendations in \citep{GuillermeCooper}, one should code cladistic characters for a maximum of living species in order to improve the topology of Total Evidence trees containing both living and fossil taxa.
-Since the data for living mammals is usually easily available in world wide vast natural history collections, we propose that an increased effort in coding morphological characters from living species should be done via engaging in collaborative data collection projects through web portals such as \textit{morphobank} \citep{morphobank}.
+Following the recommendations in \citep{GuillermeCooper}, to improve the accuracy of the topology of Total Evidence trees containing both living and fossil taxa, one should code cladistic characters for as many living species possible. 
+Since the data for living mammals is usually easily available in world wide vast natural history collections, we propose that an increased effort in coding morphological characters from living species should be done via engaging in collaborative data collection projects through web portals such as \textit{Morphobank} \citep{morphobank}.
 
 %Biology letters various stuff
 \section{Ethics statement}
 \section{Data accessibility statement}
-All data is available and reproducible on GitHub.
+All data and analysis code is available on GitHub.
 \section{Authors' contributions statement}
 Conceived and designed the experiments: TG NC. Performed the experiments: TG. Analyzed the data: TG. Wrote the paper: TG NC. % NC: Write this in the proper proceedings style. All authors gave final approval for publication.
 \section{Acknowledgements}
@@ -336,7 +344,7 @@ This work was funded by a European Commission CORDIS Seventh Framework Programme
     \renewcommand{\thefigure}{S\arabic{figure}}%
 }
 \beginsupplement
-\input{Supplementary/Supplementary}
+%\input{Supplementary/Supplementary}
 
 
 %END
