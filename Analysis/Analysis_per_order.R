@@ -87,7 +87,7 @@ for (character_threshold in 3:4) {
         if(is.null(tree)) {
             results_tmp<-matrix(nrow=3, ncol=ncol(results), data=NA)
             results_tmp[,1]<-rep(orders[order],3)
-            results_tmp[,2]<-c("Family", "Genus", "Species")
+            results_tmp[,2]<-c("family", "genus", "species")
             results_tmp[,3]<-rep("1/1",3)
             results_tmp[,4]<-rep("100",3)
             results_tmp<-as.data.frame(results_tmp)

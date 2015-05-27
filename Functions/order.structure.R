@@ -43,7 +43,7 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
 
     #ANALYSING THE DISTRIBUTION OF SPECIES PER ORDER WITH MORPHOLOGICAL DATA
     #Empty table
-    results<-data.frame("Order"=rep(order,3), "Taxonomic level"=c("Family", "Genus", "Species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3))
+    results<-data.frame("Order"=rep(order,3), "Taxonomic level"=c("family", "genus", "species"), "Number of OTUs"=rep(NA,3), "Percentage of OTUs"=rep(NA,3))
     #Adding two columns per metric
     if(any(metric == "PD")) {
         results$PD<-rep(NA,3)

@@ -59,7 +59,7 @@ table.result<-function(results, order, metric, thresholds=c(25,75)) {
 
 #    axis(side=2, at=1:(length(order)*3), labels=rev(rep(c("Family", "Genera", "Species"), 3)), las=2)
     axis(side=2)
-    axis(side=2, at=1:(length(order)*3), labels=rev(rep(c("Family", "Genera", "Species"), 3)), las=2)
+    axis(side=2, at=1:(length(order)*3), labels=rev(rep(c("family", "genus", "species"), 3)), las=2)
 
 
 
