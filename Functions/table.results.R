@@ -2,72 +2,142 @@
 ##########################
 #SYNTAX:
 #<results> a result table from previous functions
-#<order> which order to plot
 #<metric> which metric to print
 #<thresholds> threshold values (default=c(25,75))
+#<split> whether to split the table in smaller ones (environement will be ignored if split is not null)
+#<save.path> where to save the table
+#<file.save> name (or chain name) for saving the table
+#<caption> table caption (if split option is called, the caption will only appear for the first table)
+#<environement> table environement
 ##########################
-#guillert(at)tcd.ie - 22/05/2015
+#environement(at)tcd.ie - 27/05/2015
 ##########################
 
-table.result<-function(results, order, metric, thresholds=c(25,75)) {
-    #SANITIZING
-
-    #results
-    check.class(results, 'data.frame')
-    #names
-    if(length( match(names(results), c("Order", "Taxonomic.level", "Number.of.OTUs", "Percentage.of.OTUs"))[-which(is.na(match(names(results), c("Order", "Taxonomic.level", "Number.of.OTUs", "Percentage.of.OTUs"))))] ) != 4) {
-        stop("Wrong headers names.")
-    }
-
-    #order
-    check.class(order, 'character')
-
-    #metric
-    check.class(metric, 'character')
-    if(length(grep(metric, names(results))) == 0) {
-        stop(paste(metric, "not found in the data.frame."))
-    }
-    if(length(grep(paste(metric, "p", sep="_"), names(results))) == 0) {
-        stop(paste(metric, "p-value not found in the data.frame."))
-    }
-
-    #thresholds
-    check.class(thresholds, 'numeric')
-
-    #CREATING THE TABLE/FIGURE
-    #Isolating the orders
-    if(length(order != 1)) {
-        results_tmp<-results[which(results$Order == order[1]),]
-        for(ord in 2:length(order)) {
-            results_tmp<-rbind(results_tmp, results[which(results$Order == order[ord]),])
-        }
-    } else {
-        results_tmp<-results[which(results$Order == order),]
-    }
+table.result<-function(results, metric, threshold=c(25,75), split=NULL, save.path, file.save, caption, environement) {
+    
+    #DEBUG
+    warning("Debug mode is ON (table.result)")
+    #results -> must be a table
+    metric=c("NRI", "NTI") #-> can be a list (or 0) but must be present in the results header
+    threshold=c(25,75) #-> can be any values (or NULL) between 0 and 100
+    split=c(24,30,30) #-> can be a list of values (sub-tables) or NULL
+    save.path="../Manuscript/" #-> must be text
+    file.save="Tab_test" #-> must be text
+    caption="Here's my caption" #-> must be text
+    environement="tabular" #if split != null set to table. Else must be text
 
     #barplot
     #percentages<-table(as.numeric(results_tmp$Percentage.of.OTUs))
     #names(percentages) <- rep(c("Family", "Genera", "Species"), length(order))
     #percentages[]<-as.numeric(results_tmp$Percentage.of.OTUs)
-    
 
-    barplot(rev(as.numeric(results_tmp$Percentage.of.OTUs)), horiz=TRUE, xaxt="n", yaxt="n", main="percentage of OTUs")
-    for(thresh in 1:length(thresholds)) {
-        abline(v=thresholds[thresh], lty=2)
+    #Selecting the metric columns
+    metric_col<-NULL
+    #Select the columns of metrics
+    for(met in 1:length(metric)) {
+        metric_col[met]<-grep(metric[met], names(results))
     }
-    axis(side=3)
+    #Select the columns of p_values
+    for(met in 1:length(metric)) {
+        metric_col[length(metric)+met]<-grep(metric[met], names(results))+1
+    }
 
-#    axis(side=2, at=1:(length(order)*3), labels=rev(rep(c("Family", "Genera", "Species"), 3)), las=2)
-    axis(side=2)
-    axis(side=2, at=1:(length(order)*3), labels=rev(rep(c("family", "genus", "species"), 3)), las=2)
+    #Creating the sub table
+    table_to_print<-results[,c(1:4,metric_col)]
+    #make the text part of the table as.character
+    table_to_print[,c(1,2)]<-apply(table_to_print[,c(1,2)], 2, as.character)
+    #make the numeric part as numeric
+    table_to_print[,c(4:(4+2*length(metric)))]<-apply(table_to_print[,c(4:(4+2*length(metric)))], 2, as.numeric)
+    #Change cases
+    table_to_print[,1]<-capwords(table_to_print[,1], strict=TRUE)
+    table_to_print[,2]<-tolower(table_to_print[,2])
+    #Order alphabetically
+    table_to_print<-table_to_print[order(table_to_print[,1]),]
+
+    #Marking the significant differences with stars
+    significant_storage<-NULL
+    for(met in 1:length(metric)) {
+        #Isolating the metrics (and rounding)
+        metrics<-round(table_to_print[,4+met], digit=2)
+        #Isolating the pvalues
+        p_values<-table_to_print[,4+met+2]
+
+        #replacing the metrics with stars if pvalue > 0.05
+        #One star
+        one_star<-which(p_values <= 0.05)
+        significant_storage<-c(significant_storage, one_star)
+        if(length(one_star) != 0) {
+            metrics[one_star]<-paste(metrics[one_star], "*", sep="")
+        }
+        #Two stars
+        two_star<-which(p_values <= 0.005)
+        significant_storage<-c(significant_storage, two_star)
+        if(length(one_star) != 0) {
+            metrics[two_star]<-paste(metrics[two_star], "*", sep="")
+        }
+        #Three stars
+        three_star<-which(p_values <= 0.0005)
+        significant_storage<-c(significant_storage, three_star)
+        if(length(three_star) != 0) {
+            metrics[three_star]<-paste(metrics[three_star], "*", sep="")
+        }
+
+        #Replace NA by blank (space)
+        metrics[which(is.na(metrics))]<-" "
+
+        #Replacing the results in the final tables
+        table_to_print[,4+met]<-metrics
+    }
+
+    #Removing the p_value columns
+    table_to_print<-table_to_print[,1:(length(metric)+4)]
+
+    #Mark the significant rows to be highlighted in the LaTeX table (BOLD)
+    #Saving the percentage column for later
+    percentages<-table_to_print[,4]
+    #Selecting the significant data (rows)
+    for (column in 1:ncol(table_to_print)) {
+        table_to_print[unique(significant_storage), column]<-paste('BOLD',table_to_print[unique(significant_storage), column], sep="")
+    }
+    bold.cells<-function(x) gsub('BOLD(.*)',paste('\\\\textbf{\\1','}',sep=""),x)
+    #refilling the percentage columne
+    table_to_print[,4]<-percentages
 
 
+    #Creating the folder for storing the graphical elements
+    new_folder<-paste(save.path, "Table_figures/", sep="")
+    system(paste("mkdir", new_folder))
+
+    #Make sure the percentage column is numeric
+
+    #Creating all the barplots
+    for(row in 1:nrow(table_to_print)) {
+        #pdf settings
+        pdf(paste(new_folder, "bar", row , ".pdf", sep=""))
+        #margin settings
+        par(mar=c(0,1,0,1))
+        #par plot
+        barplot(table_to_print[ row ,4], horiz=TRUE, xlim=c(1,100), xaxt="n")
+        #threshold lines
+        for(line in 1:length(threshold)) {
+            abline(v=threshold[line], lty=2,lwd=5)
+        }
+        dev.off()
+    }
+
+    #Replacing percentage column by the graphs links
+    bar_template<-"\\includegraphics[width=\\linewidth, height=0.25\\linewidth]{Table_figures/"
+    for(row in 1:nrow(table_to_print)) {
+        table_to_print[ row ,4]<-paste(bar_template, "bar", row ,".pdf}", sep="")
+    }
 
 
-            plot(1,1 , xlab="", ylab="", ylim = c(1 - xspc, ncol(mulTree.mcmc) + xspc), xlim = coeff.lim, type = "n", xaxt = "n", yaxt="n", bty = "n", ...)
-            #coeff.estimates (is x)
-            axis(side = 3)
-            #terms (is y)
-            axis(side = 2, at = 1:ncol(mulTree.mcmc), labels = rev(terms), las=2) #reverse the terms to go from top to bottom
+    #Fixing the column names
+    colnames(table_to_print)<-c("Order", "Taxonomic level", "Proportion of taxa", "Coverage", c(metric))
+    #Saving the table
+    table<-xtable(table_to_print)
+    caption(table)<-caption
+    label(table)<-file.save
+    print(table, file=paste(save.path,file.save, ".tex", sep=""), include.rownames=FALSE, tabular.environment=environement, floating=FALSE, sanitize.text.function=bold.cells, caption=caption, caption.placement="top")
 
 }
