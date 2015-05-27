@@ -179,7 +179,7 @@ Therefore for some orders, we sampled more genus than species (Table \ref{Table_
 
 To select the lower valid taxonomic level, we standardised the taxonomy of our OTUs by fixing invalid binomial inputs to match with standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
 We designated as ``living'' all the OTUs that where either present in the phylogeny of Fritz \textit{et al}. \citep{FritzTree} or the taxonomy of Wilson \& Reeder \citep{wilson2005mammal}, and designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleobiodb.org/}).
-For OTUs that did not appear in these three sources we first decomposed the name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (Family, Genus etc.).
+For OTUs that did not appear in these three sources we first decomposed the name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
 Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; see Supplementary Material for more details).
 
 The number of character per matrices ranged from @6 to @4541.
@@ -191,8 +191,8 @@ We extracted @1422 unique living mammal OTUs from the @256 matrices with a minim
 After removing all the matrices with less than 100 cladistic characters, the number of extracted living mammals OTUs was down to @815 from @number matrices.
 
 \subsection{Data availability and distribution}
-To assess the availability of cladistic data for each mammalian Order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: Family, Genus and species.
-We used these different taxonomic levels because some clades are well covered at the Family or Genus level, but poorly covered at the species level.
+To assess the availability of cladistic data for each mammalian Order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species.
+We used these different taxonomic levels because some clades are well covered at the family or genus level, but poorly covered at the species level.
 We consider Orders with \textless 25\% of living taxa with cladistic data as having poor data coverage (hereafter ``low'' coverage), and Orders with up \textgreater 75\% of living taxa with cladistic data as having good data coverage (hereafter ``high'' coverage). 
 
 For Orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) over-dispersed or (iii) clustered with respect to phylogeny, using the Nearest Taxon Index (NTI) metric \citep{webb2002phylogenies} in the \texttt{picante R} package \citep{picante,R}.
@@ -217,12 +217,10 @@ However, the results of the NRI and PD calculations are available in the supplem
 %---------------------------------------------
 
 \section{Results}
-In the @@@ cladistic matrices extracted in our searches, 11 out of 28 mammalian orders have \textless 25\% of species with cladistic data and 24 have less \textless 75\% species with available cladistic data.
-At the Genus level, only three orders have \textless 25\% of taxa with cladistic data and 16 have less than 75\%.
-Finally, at the family level no order has \textless 25\% taxa with available cladistic data and only 5 have \textless 75\% (Table \ref{Table_morpho_taxa_proportion}).
+In the @@@ cladistic matrices extracted in our searches, @11 out of @28 mammalian orders have a ``low'' coverage (\textless 25\%) of species with cladistic data and @24 have a ``high'' coverage (\textgreater 75\%).
+At the genus level, only @three orders have a ``low'' coverage of taxa with cladistic data and @16 have a ``high'' coverage.
+Finally, at the family level @no order has a ``low'' coverage and only @5 have a ``high'' coverage (Table \ref{Table_morpho_taxa_proportion}).
 
-% NC: Results need to match the methods. So are we looking at "good" versus "poor"? That makes more sense to me. So how many have good coverage i.e. >75% and how many have poor coverage i.e. <25%. I think this will help.
-% TG: I will change it when I'll recalculate the results, it'll be " 15/25 mammals have "low" coverage and 1/25 have "high" coverage"
 % TG: Same for the table, I will do the new table combinations later (need some proper coding since I don't wan't to use illustrator - my first paper 100\% reproducible by copy paste!)
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
@@ -230,7 +228,7 @@ Finally, at the family level no order has \textless 25\% taxa with available cla
 \end{center}
 \renewcommand\baselinestretch{2}\selectfont
 
-Among the mammalian orders containing OTUs with no available cladistic data, only two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species and the genus level (Table~\ref{Table_data_structure}).
+Among the mammalian orders containing OTUs with no available cladistic data, only @two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species and the genus level (Table~\ref{Table_data_structure}).
 
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
@@ -262,15 +260,15 @@ This has implications for building Total Evidence phylogenies containing both li
 However, data coverage in living mammals varies across taxonomic levels and in its phylogenetic distribution.
 Higher taxonomic levels are always better sampled than lower ones and within these taxonomic levels, the available data is mostly randomly distributed across the phylogeny, apart from in Carnivora and Chiroptera.
 
-The number of living taxa with no available cladistic data was surprisingly high at the species-level: 24 out of 28 orders have \textless 75\% taxa with available cladistic data (and two of the 28 orders are monospecific!).
-This threshold of 75\% available data represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
+The number of living taxa with no available cladistic data was surprisingly high at the species-level: @24 out of @28 orders have a ``high'' coverage of taxa with available cladistic data (and two of the 28 orders are monospecific!).
+This threshold of 75\% available data (``high'' coverage) represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
 Beyond this threshold, there is considerable displacement of wildcard taxa (\textit{sensu} \citep{kearneyfragmentary2002}) and decreases in clade conservation \citep{GuillermeCooper}.
 Therefore we expect a high probability of topological artefacts for the placement of fossil taxa at the species-level in most mammalian orders.
 However, data coverage seems to be less of an issue at higher taxonomic levels (i.e. genus- and family-level).
 This point is important to consider from a practical point of view because of the slight discrepancy between the neontological and the palaeontological concept of species.
 While neontological species are described on accurately measured morphology, genetic distance, spatial distribution and even behaviour \citep[e.g.][]{kellymolecular2014}, palaeontological data can be based only on morphological, spatial and temporal data \citep[e.g.][]{ni2013oldest}.
 Because of this difference between neontological species (\textit{sensu} reproductive isolates) and paleontological species (\textit{sensu} morpho-species %or "morphological clusters"?
-), most palaeontological studies are using the Genus level for their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
+), most palaeontological studies are using the genus level for their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
 In this frame of palaeontological data usage, the data availability at the genus-level in living mammals should be our priority concern.
 
 Regardless the low level of available data, it is encouraging that for most orders (except Carnivora and Chiroptera), data is randomly distributed across the phylogeny.
