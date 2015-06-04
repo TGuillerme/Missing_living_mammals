@@ -106,27 +106,34 @@ table.result<-function(results, metric, threshold=c(25,75), split=NULL, save.pat
 
     #Creating the folder for storing the graphical elements
     new_folder<-paste(save.path, "Table_figures/", sep="")
-    system(paste("mkdir", new_folder))
+    #If folder does not exist or is empty, create it
+    if(length(list.files(new_folder)) == 0) {
+        system(paste("mkdir", new_folder))
+    } else {
+    #Else remove it and create a new one
+        system(paste("rm -R", new_folder))
+        system(paste("mkdir", new_folder))
+    }
 
     #Make sure the percentage column is numeric
 
     #Creating all the barplots
     for(row in 1:nrow(table_to_print)) {
         #pdf settings
-        pdf(paste(new_folder, "bar", row , ".pdf", sep=""))
+        pdf(paste(new_folder, "bar", row , ".pdf", sep=""), width=4, height=1)
         #margin settings
         par(mar=c(0,1,0,1))
         #par plot
         barplot(table_to_print[ row ,4], horiz=TRUE, xlim=c(1,100), xaxt="n")
         #threshold lines
         for(line in 1:length(threshold)) {
-            abline(v=threshold[line], lty=2,lwd=5)
+            abline(v=threshold[line], lty=3,lwd=1)
         }
         dev.off()
     }
 
     #Replacing percentage column by the graphs links
-    bar_template<-"\\includegraphics[width=\\linewidth, height=0.25\\linewidth]{Table_figures/"
+    bar_template<-"\\includegraphics[width=0.20\\linewidth, height=0.05\\linewidth]{Table_figures/"
     for(row in 1:nrow(table_to_print)) {
         table_to_print[ row ,4]<-paste(bar_template, "bar", row ,".pdf}", sep="")
     }
