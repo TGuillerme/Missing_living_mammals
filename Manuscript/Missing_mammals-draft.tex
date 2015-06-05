@@ -33,9 +33,6 @@
 \usepackage{longtable}
 \pagenumbering{arabic}
 
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %Pagination style and stuff % NC: Note that these are all syst biol specific.
 \linespread{2}
@@ -147,7 +144,7 @@ These phylogenies can be dated using methods such as tip-dating \citep{ronquista
 A downside of the Total Evidence method is that it requires a lot of data.
 One must collect molecular data for living taxa and morphological data for both living and fossil taxa; two types of data that require fairly different technical skills (e.g. molecular sequencing \textit{vs.} anatomical description).
 Additionally, large chunks of this data can be difficult, or even impossible, to collect for every taxon present in the analysis.
-For example, fossils very rarely have molecular data and incomplete fossil preservation (e.g. soft \textit{vs.} hard tissues) may restrict the amount of morphological data available \citep{sansomfossilization2013}. % NC: Worth metioning fossil preservation here briefly as it is also an issue?
+For example, fossils very rarely have molecular data and incomplete fossil preservation may restrict the amount of morphological data available \citep{sansomfossilization2013}. % NC: Worth metioning fossil preservation here briefly as it is also an issue?
 Additionally, since the molecular phylogenetics revolution, it has become less common to collect morphological characters for living taxa when molecular data is available (e.g. in \cite{slaterphylogenetic2013}, only 13\% of the 169 living taxa have coded morphological data).
 Unfortunately this missing data can lead to errors in phylogenetic inference; in fact, simulations show that the ability of the Total Evidence method to recover the correct phylogenetic topology decreases when there is a low overlap between morphological data in the living and fossil taxa \citep{GuillermeCooper}, regardless the overall amount of morphological data available for the fossils (or the amount of molecular data available for the living species).
 The effect of missing data on topology is greatest when living taxa have little morphological data.
@@ -225,23 +222,19 @@ At the genus level, only @three orders have a ``low'' coverage of taxa with clad
 Finally, at the family level @no order has a ``low'' coverage and only @5 have a ``high'' coverage (Table \ref{Table_morpho_taxa_proportion}).
 
 % TG: Same for the table, I will do the new table combinations later (need some proper coding since I don't wan't to use illustrator - my first paper 100\% reproducible by copy paste!)
+\renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
-\input{Table_results}
+\input{Table_morpho_taxa_proportion}
 \end{center}
-
-%\renewcommand\baselinestretch{1.2}\selectfont
-%\begin{center}
-%\input{Table_morpho_taxa_proportion}
-%\end{center}
-%\renewcommand\baselinestretch{2}\selectfont
+\renewcommand\baselinestretch{2}\selectfont
 
 Among the mammalian orders containing OTUs with no available cladistic data, only @two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species and the genus level (Table~\ref{Table_data_structure}).
 
-%\renewcommand\baselinestretch{1.2}\selectfont
-%\begin{center}
-%\input{Table_data_structure}
-%\end{center}
-%\renewcommand\baselinestretch{2}\selectfont
+\renewcommand\baselinestretch{1.2}\selectfont
+\begin{center}
+\input{Table_data_structure}
+\end{center}
+\renewcommand\baselinestretch{2}\selectfont
 
 Two contrasting results are shown on Figure \ref{Figure_example_coverage} with randomly distributed data in Cetartiodactyla (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered data in Carnivora (mainly Canidae; Figure \ref{Figure_example_coverage}B).
 
