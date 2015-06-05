@@ -196,24 +196,41 @@ This threshold was chosen to correspond with the number of characters used in \c
 After removing all matrices with \textless 100 characters, we retained @1422 unique living mammal OTUs from @256 matrices for our analyses.
 
 \subsection{Data availability and distribution}
-To assess the availability of cladistic data for each mammalian Order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species.
-We used these different taxonomic levels because some clades are well covered at the family or genus level, but poorly covered at the species level.
-We consider Orders with \textless 25\% of living taxa with cladistic data as having poor data coverage (hereafter ``low'' coverage), and Orders with up \textgreater 75\% of living taxa with cladistic data as having good data coverage (hereafter ``high'' coverage). 
+To assess the availability of cladistic data for each mammalian order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species.
+We used these different taxonomic levels because some clades are well covered at the family- or genus-level, but poorly covered at the species-level.
+We consider orders with \textless 25\% of living taxa with cladistic data as having poor data coverage (hereafter ``low'' coverage), and orders with \textgreater 75\% of living taxa with cladistic data as having good data coverage (hereafter ``high'' coverage). 
 
-For Orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) over-dispersed or (iii) clustered with respect to phylogeny, using the Nearest Taxon Index (NTI) metric \citep{webb2002phylogenies} in the \texttt{picante R} package \citep{picante,R}.
-The NTI is based on the mean nearest neighbour distance (MNND) and is calculated as follow:
-\begin{equation}
-NTI=-(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})})
-\end{equation}
-Where $\overline{MNND}_{obs}$ is the mean distance between each $n$ taxa with available cladistic data within each order; $\overline{MNND}_{n}$ is the expected random MNND for $n$ taxa estimated by calculating the MNND from $n$ randomly drawn taxa repeated 1000 times and $\sigma(MNND_{n})$ is the standard deviation of the 1000 random MNND$_{n}$.
-Negative NTI values shows more over-dispersed data than expected by chance (random) and positive values are showing more clustered data \citep{webb2002phylogenies}.
-Similarly, we also calculated the Nearest Relatedness Index (NRI) \citep{webb2002phylogenies,Cooper2012} and the Faith's phylogenetic distance (PD) \citep{Faith19921}.
-Both NRI and PD are calculated in the same way as the NTI (\((observed-\mu(random))/\sigma(random)\)) but they use respectively the mean phylogenetic distance (MPD) and the sum of branch lengths (SBL) instead of the MNND \citep{Faith19921,webb2002phylogenies,Cooper2012}. 
+For orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: Nearest Taxon Index \citep[NTI;][]{webb2002phylogenies} and Net Relatedness Index \citep[NRI;][]{webb2002phylogenies}. 
+%*** see end of methods for explanation.
+Both metrics were calculated using the \texttt{picante} package in R \citep{picante,R}.
+% NC: It's not going to add much to the wordcount to explain both. But move PD to supp?
 
-Because the aim of this study is to understand the structure of the available cladistic data in mammals we prefered the NTI over the NRI or the PD metrics.
-In fact, the NTI metric is more sensitive to the phylogenetic structure (clustering or over-dispersion) at the tips of phylogeny \citep{Cooper2008}.
+% NC: Note that you had mis-defined MNND
+NTI \citep{webb2002phylogenies} is based on mean nearest neighbour distance (MNND) and is calculated as follows:
+  \begin{equation}
+    NTI=-\left(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})}\right)
+  \end{equation}
+where $\overline{MNND}_{obs}$ is the observed mean distance among $n$ focal taxa and their nearest neighbour in the phylogeny,
+% NC: Sorry this still isn't quite right. Check my paper for a nicer way of writing it.
+$\overline{MNND}_{n}$ is the expected random MNND for $n$ taxa estimated by calculating the MNND from $n$ taxa randomly drawn from the phylogeny and repeated 1000 times, and $\sigma(MNND_{n})$ is the standard deviation of the 1000 random MNND values. 
+NRI is similar but is based on mean phylogenetic distance (MPD) as follows:
+  \begin{equation}
+    NRI=-\left(\frac{\overline{MPD}_{obs}-\overline{MPD}_{n}}{\sigma(MPD_{n})}\right)
+  \end{equation}
+where $\overline{MPD}_{obs}$ is the observed mean phylogenetic distance among $n$ focal taxa, $\overline{MPD}_{n}$ is the expected random MPD for $n$ taxa estimated by calculating the MPD from $n$ taxa randomly drawn from the phylogeny and repeated 1000 times, and $\sigma(MPD_{n})$ is the standard deviation of the 1000 random MPD values.
+Negative NTI and NRI values show that the focal taxa are more overdispersed across the phylogeny than expected by chance, and positive values show that the focal taxa are more clustered across the phylogeny than expected by chance. %*** see end of methods for explanation.
+We calculated NTI and NRI values for each mammalian order separately, at each different taxonomic level. 
+For each analysis our focal taxa were those with available cladistic data at that taxonomic level and the phylogeny was the phylogeny of the order pruned from \citep{}. % cite  Bininda Emonds?
+% NC: Tried to make this more specific here. It's important to note that you used the order not the whole mammal phylogeny each time.
+
+%Because the aim of this study is to understand the structure of the available cladistic data in mammals we prefered the NTI over the NRI or the PD metrics.
+%In fact, the NTI metric is more sensitive to the phylogenetic structure (clustering or over-dispersion) at the tips of phylogeny \citep{Cooper2008}.
 %and also because previous studies have shown that NRI is biased towards detecting overdispersion \citep{Kembel2006,Swenson2006}. TG: Useless in this case?
-However, the results of the NRI and PD calculations are available in the supplementary.
+%However, the results of the NRI and PD calculations are available in the supplementary.
+
+% NC: Actually I think we discussed that NRI and NTI show different things? So it's worth including both (you can get the wording from my 2008 paper). This can go up with the intro to the metrics somewhere (I have *** the two places it might fit)
+
+We also report the results using another metric, Phylogenetic Distance \citep[PD;][]{Faith19921}, in the Supplementary Information. % link?
 
 %---------------------------------------------
 %
@@ -223,8 +240,8 @@ However, the results of the NRI and PD calculations are available in the supplem
 
 \section{Results}
 In the @@@ cladistic matrices extracted in our searches, @11 out of @28 mammalian orders have a ``low'' coverage (\textless 25\%) of species with cladistic data and @24 have a ``high'' coverage (\textgreater 75\%).
-At the genus level, only @three orders have a ``low'' coverage of taxa with cladistic data and @16 have a ``high'' coverage.
-Finally, at the family level @no order has a ``low'' coverage and only @5 have a ``high'' coverage (Table \ref{Table_morpho_taxa_proportion}).
+At the genus-level, only @three orders have a ``low'' coverage of taxa with cladistic data and @16 have a ``high'' coverage.
+Finally, at the family-level @no order has a ``low'' coverage and only @5 have a ``high'' coverage (Table \ref{Table_morpho_taxa_proportion}).
 
 % TG: Same for the table, I will do the new table combinations later (need some proper coding since I don't wan't to use illustrator - my first paper 100\% reproducible by copy paste!)
 \renewcommand\baselinestretch{1.2}\selectfont
@@ -233,7 +250,7 @@ Finally, at the family level @no order has a ``low'' coverage and only @5 have a
 \end{center}
 \renewcommand\baselinestretch{2}\selectfont
 
-Among the mammalian orders containing OTUs with no available cladistic data, only @two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species and the genus level (Table~\ref{Table_data_structure}).
+Among the mammalian orders containing OTUs with no available cladistic data, only @two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species- and the genus-level (Table~\ref{Table_data_structure}).
 
 \renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
@@ -273,7 +290,7 @@ However, data coverage seems to be less of an issue at higher taxonomic levels (
 This point is important to consider from a practical point of view because of the slight discrepancy between the neontological and the palaeontological concept of species.
 While neontological species are described on accurately measured morphology, genetic distance, spatial distribution and even behaviour \citep[e.g.][]{kellymolecular2014}, palaeontological data can be based only on morphological, spatial and temporal data \citep[e.g.][]{ni2013oldest}.
 Because of this difference between neontological species (\textit{sensu} reproductive isolates) and paleontological species (\textit{sensu} morpho-species %or "morphological clusters"?
-), most palaeontological studies are using the genus level for their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
+), most palaeontological studies are using the genus-level for their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
 In this frame of palaeontological data usage, the data availability at the genus-level in living mammals should be our priority concern.
 
 Regardless the low level of available data, it is encouraging that for most orders (except Carnivora and Chiroptera), data is randomly distributed across the phylogeny.
