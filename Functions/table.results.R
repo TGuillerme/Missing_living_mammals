@@ -4,32 +4,26 @@
 #<results> a result table from previous functions
 #<metric> which metric to print
 #<thresholds> threshold values (default=c(25,75))
-#<split> whether to split the table in smaller ones (environement will be ignored if split is not null)
 #<save.path> where to save the table
 #<file.save> name (or chain name) for saving the table
 #<caption> table caption (if split option is called, the caption will only appear for the first table)
 #<environement> table environement
 ##########################
-#environement(at)tcd.ie - 27/05/2015
+#environement(at)tcd.ie - 05/06/2015
 ##########################
 
-table.result<-function(results, metric, threshold=c(25,75), split=NULL, save.path, file.save, caption, environement) {
+table.result<-function(results, metric, threshold=c(25,75), save.path, file.save, caption, environement) {
     
     #DEBUG
-    warning("Debug mode is ON (table.result)")
+    #warning("Debug mode is ON (table.result)")
     #results -> must be a table
-    metric=c("NRI", "NTI") #-> can be a list (or 0) but must be present in the results header
-    threshold=c(25,75) #-> can be any values (or NULL) between 0 and 100
-    split=c(24,30,30) #-> can be a list of values (sub-tables) or NULL
-    save.path="../Manuscript/" #-> must be text
-    file.save="Tab_test" #-> must be text
-    caption="Here's my caption" #-> must be text
-    environement="tabular" #if split != null set to table. Else must be text
-
-    #barplot
-    #percentages<-table(as.numeric(results_tmp$Percentage.of.OTUs))
-    #names(percentages) <- rep(c("Family", "Genera", "Species"), length(order))
-    #percentages[]<-as.numeric(results_tmp$Percentage.of.OTUs)
+    #metric=c("NRI", "NTI") #-> can be a list (or 0) but must be present in the results header
+    #threshold=c(25,75) #-> can be any values (or NULL) between 0 and 100
+    #split=c(24,30,30) #-> can be a list of values (sub-tables) or NULL
+    #save.path="../Manuscript/" #-> must be text
+    #file.save="Tab_test" #-> must be text
+    #caption="Here's my caption" #-> must be text
+    #environement="longtable" #if split != null set to table. Else must be text
 
     #Selecting the metric columns
     metric_col<-NULL
@@ -145,6 +139,12 @@ table.result<-function(results, metric, threshold=c(25,75), split=NULL, save.pat
     table<-xtable(table_to_print)
     caption(table)<-caption
     label(table)<-file.save
+    align(table)<-c("l", "l", "L{1.8cm}", "C{2cm}", "l", "c", "c")
     print(table, file=paste(save.path,file.save, ".tex", sep=""), include.rownames=FALSE, tabular.environment=environement, floating=FALSE, sanitize.text.function=bold.cells, caption=caption, caption.placement="top")
+
+    cat("Add the following to your document header:\n
+\\newcolumntype{L}[1]{>{\\raggedright\\let\\newline\\\\\\arraybackslash\\hspace{0pt}}m{#1}}
+\\newcolumntype{C}[1]{>{\\centering\\let\\newline\\\\\\arraybackslash\\hspace{0pt}}m{#1}}
+\\newcolumntype{R}[1]{>{\\raggedleft\\let\\newline\\\\\\arraybackslash\\hspace{0pt}}m{#1}}")
 
 }

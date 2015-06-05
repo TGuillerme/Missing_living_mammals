@@ -33,6 +33,9 @@
 \usepackage{longtable}
 \pagenumbering{arabic}
 
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %Pagination style and stuff % NC: Note that these are all syst biol specific.
 \linespread{2}
@@ -222,19 +225,23 @@ At the genus level, only @three orders have a ``low'' coverage of taxa with clad
 Finally, at the family level @no order has a ``low'' coverage and only @5 have a ``high'' coverage (Table \ref{Table_morpho_taxa_proportion}).
 
 % TG: Same for the table, I will do the new table combinations later (need some proper coding since I don't wan't to use illustrator - my first paper 100\% reproducible by copy paste!)
-\renewcommand\baselinestretch{1.2}\selectfont
 \begin{center}
-\input{Table_morpho_taxa_proportion}
+\input{Table_results}
 \end{center}
-\renewcommand\baselinestretch{2}\selectfont
+
+%\renewcommand\baselinestretch{1.2}\selectfont
+%\begin{center}
+%\input{Table_morpho_taxa_proportion}
+%\end{center}
+%\renewcommand\baselinestretch{2}\selectfont
 
 Among the mammalian orders containing OTUs with no available cladistic data, only @two orders, Carnivora and Chiroptera, are significantly phylogenetically clustered both at the species and the genus level (Table~\ref{Table_data_structure}).
 
-\renewcommand\baselinestretch{1.2}\selectfont
-\begin{center}
-\input{Table_data_structure}
-\end{center}
-\renewcommand\baselinestretch{2}\selectfont
+%\renewcommand\baselinestretch{1.2}\selectfont
+%\begin{center}
+%\input{Table_data_structure}
+%\end{center}
+%\renewcommand\baselinestretch{2}\selectfont
 
 Two contrasting results are shown on Figure \ref{Figure_example_coverage} with randomly distributed data in Cetartiodactyla (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered data in Carnivora (mainly Canidae; Figure \ref{Figure_example_coverage}B).
 
