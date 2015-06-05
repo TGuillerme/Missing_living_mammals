@@ -133,9 +133,6 @@ $^3$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 %       INTRODUCTION
 %
 %---------------------------------------------
-
-%NC: I've changed cladistic to morphological throughout but you might want to change it back...
-
 \newpage 
 \section{Introduction}
 There is an increasing consensus among evolutionary biologists that studying both living and fossil taxa is essential for fully understanding macroevolutionary patterns and processes \citep{jacksonwhat2006,quentaldiversity2010,dietlconservation2011,slaterunifying2013,fritzdiversity2013,Wood01032013}.
@@ -147,12 +144,11 @@ These phylogenies can be dated using methods such as tip-dating \citep{ronquista
 A downside of the Total Evidence method is that it requires a lot of data.
 One must collect molecular data for living taxa and morphological data for both living and fossil taxa; two types of data that require fairly different technical skills (e.g. molecular sequencing \textit{vs.} anatomical description).
 Additionally, large chunks of this data can be difficult, or even impossible, to collect for every taxon present in the analysis.
-For example, fossils very rarely have molecular data and incomplete fossil preservation may restrict the amount of morphological data available \citep{sansomfossilization2013}. % NC: Worth metioning fossil preservation here briefly as it is also an issue?
+For example, fossils very rarely have molecular data and incomplete fossil preservation may restrict the amount of morphological data available \citep{sansomfossilization2013}. 
 Additionally, since the molecular phylogenetics revolution, it has become less common to collect morphological characters for living taxa when molecular data is available (e.g. in \cite{slaterphylogenetic2013}, only 13\% of the 169 living taxa have coded morphological data).
 Unfortunately this missing data can lead to errors in phylogenetic inference; in fact, simulations show that the ability of the Total Evidence method to recover the correct phylogenetic topology decreases when there is a low overlap between morphological data in the living and fossil taxa \citep{GuillermeCooper}, regardless the overall amount of morphological data available for the fossils (or the amount of molecular data available for the living species).
 The effect of missing data on topology is greatest when living taxa have few morphological data.
 This is because (1) a fossil cannot branch in the correct clade if there is no overlapping morphological data in the clade; and (2) a fossil has a higher probability of branching within a clade with more morphological data available for living taxa, regardless of whether this is the correct clade or not \citep{GuillermeCooper}. 
-%This can lead to serious topological errors (see Figure ~\ref{Figure_missing_data_problem}). 
 
 The issues above highlight that it is crucial to have sufficient morphological data for living taxa in a clade before using a Total Evidence approach.
 However, it is unclear how much morphological data for living taxa is actually available (i.e. already coded from museum specimens and deposited in phylogenetic matrices accessible online), and how this data is distributed across clades.
@@ -206,7 +202,7 @@ We consider orders with \textless 25\% of living taxa with cladistic data as hav
 For orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: Nearest Taxon Index \citep[NTI;][]{webb2002phylogenies} and Net Relatedness Index \citep[NRI;][]{webb2002phylogenies}. 
 %*** see end of methods for explanation.
 Both metrics were calculated using the \texttt{picante} package in R \citep{picante,R}.
-% NC: It's not going to add much to the wordcount to explain both. But move PD to supp?
+% NC: It's not going to add much to the wordcount to explain both. But move PD to supp
 
 % NC: Note that you had mis-defined MNND
 NTI \citep{webb2002phylogenies} is based on mean nearest neighbour distance (MNND) and is calculated as follows:
@@ -245,24 +241,9 @@ We also report the results using another metric, Phylogenetic Distance \citep[PD
 Across the @@@ cladistic matrices we extracted, @11 out of @28 mammalian orders have low coverage (\textless 25\% of species with cladistic data) and @24 have high coverage (\textgreater 75\% of species with cladistic data) at the species-level.
 At the genus-level, only @three orders have low coverage of taxa and @16 have high coverage, and at the family-level, @no orders have low coverage and @5 have high coverage (Table \ref{Table_morpho_taxa_proportion}).
 
-% TG: Same for the table, I will do the new table combinations later (need some proper coding since I don't wan't to use illustrator - my first paper 100\% reproducible by copy paste!)
-\begin{center}
 \input{Table_results}
-\end{center}
-
-%\renewcommand\baselinestretch{1.2}\selectfont
-%\begin{center}
-%\input{Table_morpho_taxa_proportion}
-%\end{center}
-%\renewcommand\baselinestretch{2}\selectfont
 
 Among the mammalian orders containing OTUs with no available cladistic data, only @two orders, Carnivora and Chiroptera, have OTUs with cladistic data that are significantly phylogenetically clustered at the species- and the genus-level (Table~\ref{Table_data_structure}).
-
-%\renewcommand\baselinestretch{1.2}\selectfont
-%\begin{center}
-%\input{Table_data_structure}
-%\end{center}
-%\renewcommand\baselinestretch{2}\selectfont
 
 Two contrasting results are shown in Figure \ref{Figure_example_coverage} with randomly distributed OTUs with cladistic data in Cetartiodactyla (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered OTUs with cladistic data in Carnivora (mainly Canidae; Figure \ref{Figure_example_coverage}B).
 
@@ -282,42 +263,44 @@ Edges are colored in grey when no cladistic data is available for a species or i
 
 \section{Discussion}
 Our results show that although phylogenetic relationships among living mammals are well-resolved \citep[e.g.][]{FritzTree,meredithimpacts2011,May-Collado-PeerJ}, most of the data used to build these phylogenies is molecular, and very little cladistic data is available for living mammals compared to fossil mammals \citep[e.g.][]{O'Leary08022013,ni2013oldest}.
-This has implications for building Total Evidence phylogenies containing both living and fossil mammals as without sufficient cladistic data for living species, fossil placements in these trees is very uncertain \citep{GuillermeCooper}.
-However, data coverage in living mammals varies across taxonomic levels and in its phylogenetic distribution.
+This has implications for building Total Evidence phylogenies containing both living and fossil mammals, as without sufficient cladistic data for living species, fossil placements in these trees are very uncertain \citep{GuillermeCooper}.
+However, cladistic data coverage in living mammals varies across taxonomic levels and in its phylogenetic distribution.
 Higher taxonomic levels are always better sampled than lower ones and within these taxonomic levels, the available data is mostly randomly distributed across the phylogeny, apart from in Carnivora and Chiroptera.
+% NC: Add a sentence saying this means things might not be quite so bad? Need to justify the "However". however what?
 
-The number of living taxa with no available cladistic data was surprisingly high at the species-level: @24 out of @28 orders have a ``high'' coverage of taxa with available cladistic data (and two of the 28 orders are monospecific!).
-This threshold of 75\% available data (``high'' coverage) represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
+The number of living mammalian taxa with no available cladistic data was surprisingly high at the species-level: only @24 out of @28 orders have a high coverage of taxa with available cladistic data (and two of the 28 orders are monospecific!). % NC: Bit odd to say it's suprisingly high then say there are lots of orders with "high" coverage. I've added an "only" but 24 of 28 sounds quite good to me...
+This high coverage threshold of 75\% of taxa with available cladistic data represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
 Beyond this threshold, there is considerable displacement of wildcard taxa (\textit{sensu} \citep{kearneyfragmentary2002}) and decreases in clade conservation \citep{GuillermeCooper}.
 Therefore we expect a high probability of topological artefacts for the placement of fossil taxa at the species-level in most mammalian orders.
 However, data coverage seems to be less of an issue at higher taxonomic levels (i.e. genus- and family-level).
-This point is important to consider from a practical point of view because of the slight discrepancy between the neontological and the palaeontological concept of species.
-While neontological species are described on accurately measured morphology, genetic distance, spatial distribution and even behaviour \citep[e.g.][]{kellymolecular2014}, palaeontological data can be based only on morphological, spatial and temporal data \citep[e.g.][]{ni2013oldest}.
-Because of this difference between neontological species (\textit{sensu} reproductive isolates) and paleontological species (\textit{sensu} morpho-species %or "morphological clusters"?
-), most palaeontological studies are using the genus-level for their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
-In this frame of palaeontological data usage, the data availability at the genus-level in living mammals should be our priority concern.
+This point is important from a practical point of view because of the slight discrepancy between the neontological and palaeontological concept of species.
+While neontological species are described using morphology, genetic distance, spatial distribution and even behaviour \citep[e.g.][]{kellymolecular2014}, palaeontological data can be based only on morphological, spatial and temporal data \citep[e.g.][]{ni2013oldest}.
+Because of this difference between neontological species (i.e. reproductive isolates) and paleontological species (i.e. morpho-species), most palaeontological studies are using the genus-level as their smallest OTU \citep[e.g.][]{ni2013oldest,O'Leary08022013}.
+Thus data availability at the genus-level in living mammals should be our primary concern when aiming to build phylogenies of living and fossil taxa.
 
-Regardless the low level of available data, it is encouraging that for most orders (except Carnivora and Chiroptera), data is randomly distributed across the phylogeny.
-There are three different scenarii, regarding the distribution of the available data, for predicting how fossils can branch in relation to living taxa.
-When only few data is available, the ideal scenario will be that it is over-dispersed (i.e. that there is data in at least every sub-clade) in order to maximize the possibilities of the fossil to branch in the right clade.
-In the second scenario, when the data is randomly distributed we expected no special bias in the placement of the fossil \citep{GuillermeCooper}.
-However, in the third scenario, when the data is clustered we expect two major biases to occur: (1) first, the fossil will not be able to branch within a clade containing no data (e.g. Herpestidae in Carnivora; Figure \ref{Figure_missing_data_problem} and \ref{Figure_example_coverage}B), and (2) second, the fossil will have a higher probability, at random, to branch within the clade containing most of the available data (e.g. a Carnivora fossil will have more chance to branch, randomly, to the Canidae clade than any other clade in Carnivora; Figure \ref{Figure_example_coverage}-B).
-This means that fossils with uncertain phylogentic affinities (\textit{Incertae sedis}) will have a higher probability of branching by chance within the most sampled clade.
-
-%For example in Carnivora, their is no available data for Herpestidae, therefore any fossil Herpestidae will not be able to be correctly placed in the phylogeny (figure ~\ref{Figure_example_coverage}-B.
-%On the other hand, any Carnivora fossil with uncertain phylogenetic affinities (\textit{Incertae sedis} will have a higher probability of branching by chance within the Canidae because they are oversampled within the Carnivora (figure ~\ref{Figure_example_coverage}-B.
+When only a few species with cladistic data are available, the ideal scenario is for them to be phylogenetically overdispersed (i.e. that there is data for at least every sub-clade) to maximize the possibilities of a fossil branching from the right clade.
+The second best scenario is that species with cladistic data are randomly distributed across the phylogeny. 
+In this scenario we expected no special bias in the placement of the fossil \citep{GuillermeCooper}, it is therefore encouraging that for all orders except Carnivora and Chiroptera, species with cladistic data were randomly distributed across the phylogeny of each order.
+The worst case scenario for fossil placement is that species with cladistic data are phylogenetically clustered. 
+In this situation we expect two major biases to occur: first, the fossil will not be able to branch within a clade containing no data, and second, the fossil will have a higher probability, at random, of branching within the clade containing most of the available data.
+This means that fossils with uncertain phylogenetic affinities (\textit{incertae sedis}) will have a higher probability of branching within the most sampled clade just by chance.
+Our results suggest that this may be an issue in Carnivora and Chiroptera. 
+For example, a Carnivora fossil will be unable to branch in the Herpestidae that has no species with cladistic data, and will also have more chance to branch, randomly, within the Canidae clade than any other clade in Carnivora (Figure \ref{Figure_example_coverage}-B).
+Thus placements of Carnivoran fossils should be viewed with suspicion. % NC: OK gotta be a better way to say that.
 
 %Caveats
 In this study, we treated all cladistic matrices as equal in a similar way to molecular matrices. 
 For example, if matrix A contained 100 characters for taxa X and Y, and matrix B contained 50 different characters for taxa X and Z, we assumed that both matrices can be combined in a supermatrix containing 150 independent characters for taxon X, 100 for taxon Y and 50 for taxon Z.
 Unfortunately, cladistic data cannot always be treated in this way because some characters may overlap.
-For example, if matrix A has a character coding for the shape of a particular morphological feature and matrix B has a character coding for the presence of this morphological feature and a second character coding for its shape then these three characters are non-independent compound characters \citep{Brazeau2011}.
-However, in reasonably sized matrices (\textgreater 100 characters; \citealp{GuillermeCooper,harrisonamong-character2014}) it is more likely that a number of characters are consistently conserved among the different matrices (e.g. within the Primate literature, the character \textit{p7} - the size of the $4^{th}$ lower premolar paraconid - has been used consistently for \textgreater 15 years; \citealp[e.g.][]{ross1998phylogenetic,seiffert2003fossil,marivaux2005anthropoid,seiffert2005basal,bloch2007new,kay2008anatomy,silcox2008biogeographic,seiffert2009convergent,tabuce2009anthropoid,boyer2010astragalar,seiffert2010fossil,marivaux2013djebelemur,ni2013oldest}). % NC: Remove some of these
+For example, if matrix A has a character coding for the shape of a particular morphological feature and matrix B has a character coding for the presence of this morphological feature and a second character coding for its shape, then these three characters are non-independent compound characters \citep{Brazeau2011}.
+However, in reasonably sized matrices (\textgreater 100 characters; \citealp{GuillermeCooper,harrisonamong-character2014}) it is more likely that a number of characters are consistently conserved among the different matrices (e.g. within the Primate literature, the character \textit{p7} - the size of the $4^{th}$ lower premolar paraconid - has been used consistently for \textgreater 15 years; \citealp[e.g.][]{ross1998phylogenetic,seiffert2003fossil,marivaux2005anthropoid,seiffert2005basal,bloch2007new,kay2008anatomy,silcox2008biogeographic,seiffert2009convergent,tabuce2009anthropoid,boyer2010astragalar,seiffert2010fossil,marivaux2013djebelemur,ni2013oldest}). % NC: Remove some of these!!!
 A conservative approach to avoid compound characters would be to select only the most recent matrix for each group, but this would result in the loss of a lot of data.
 
 %Let's code some data
 Following the recommendations in \citep{GuillermeCooper}, to improve the accuracy of the topology of Total Evidence trees containing both living and fossil taxa, one should code cladistic characters for as many living species possible. 
-Since the data for living mammals is usually easily available in world wide vast natural history collections, we propose that an increased effort in coding morphological characters from living species should be done via engaging in collaborative data collection projects through web portals such as \textit{Morphobank} \citep{morphobank}.
+Because the data for living mammals is usually readily available in natural history collections, we propose that an increased effort be put into coding morphological characters from living species, possibly by engaging in collaborative data collection projects through web portals such as \textit{Morphobank} \citep{morphobank}.
+
+% NC: OK needs a summing up sentence!!!
 
 %Biology letters various stuff
 \section{Ethics statement}
