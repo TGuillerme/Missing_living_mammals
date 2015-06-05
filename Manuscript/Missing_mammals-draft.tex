@@ -169,30 +169,31 @@ We recommend that efforts be made to collect and share more cladistic data for l
 %       METHODS
 %
 %---------------------------------------------
-
 \section{Materials and Methods}
 \subsection{Data collection and standardisation}
-We downloaded all cladistic matrices containing any living or/and fossil mammal taxa from three major public databases: Morphobank (\texttt{http://www.morphobank.org/}) \citep{morphobank}, Graeme Lloyd's website (\texttt{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce/cladistic-data}).
-We also performed a systematic Google Scholar search for matrices that were not uploaded to these databases (see Supplementary Materials for a detailed description of the search procedure).
+We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases (accessed @th of July 2015): Morphobank \citep[\texttt{http://www.morphobank.org/};][]{morphobank}, Graeme Lloyd's website (\texttt{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce/cladistic-data}).
+We also performed a systematic Google Scholar search (accessed @th of July 2015) for matrices that were not uploaded to these databases (see Supplementary Materials for a detailed description of the search procedure).
 In total, we downloaded @256 % Number of matrices
-matrices containing unique @9411 % Number of unique OTUs
+matrices containing @9411 unique % Number of unique OTUs
 operational taxonomic units (OTUs).
-In this study, we refer to OTUs rather than species since the entries in the downloaded matrices were not standardized and ranged from specific specimen names to family level.
-When possible, we considered the OTUs at their lowest valid taxonomic level (species) but some OTUs where only at a higher valid taxonomic level (e.g. genus or family).
-Therefore for some orders, we sampled more genus than species (Table \ref{Table_morpho_taxa_proportion}).
+In this study, we refer to OTUs rather than species since the entries in the downloaded matrices were not standardized and ranged from specific specimen names %NC: Do you mean names of individual specimens or subspecies?
+to the family-level.
+Where possible, we considered OTUs at their lowest valid taxonomic level (i.e. species) but some OTUs were only valid at a higher taxonomic level (e.g. genus or family).
+Therefore for some orders, we sampled more genera than species (Table \ref{Table_morpho_taxa_proportion}).
 
-To select the lower valid taxonomic level, we standardised the taxonomy of our OTUs by fixing invalid binomial inputs to match with standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
-We designated as ``living'' all the OTUs that where either present in the phylogeny of Fritz \textit{et al}. \citep{FritzTree} or the taxonomy of Wilson \& Reeder \citep{wilson2005mammal}, and designated as ``fossil'' all the OTUs that were present in the Paleobiology database (\texttt{https://paleobiodb.org/}).
-For OTUs that did not appear in these three sources we first decomposed the name (i.e. \textit{Homo$\_$sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
+To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
+We designated as ``living'' all OTUs that were either present in the phylogeny of \citet{FritzTree} or the taxonomy of \citet{wilson2005mammal}, and designated as ``fossil'' all OTUs that were present in the Paleobiology database (\texttt{https://paleobiodb.org/}).
+For OTUs that did not appear in these three sources, we first decomposed the name (i.e. \textit{Homo sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
 Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; see Supplementary Material for more details).
 
-The number of character per matrices ranged from @6 to @4541.
-This range led to difficulties in comparing the available data between matrices because (1) small matrices have less chance of having character overlapping with other matrices \citep{wagner2000} and (2) small matrices are more likely to contain a higher proportion of specific characters non-applicable across large clades \citep{Brazeau2011} (e.g. ``antler ramifications'' is a character that is only applicable to Cervidae not all mammals).
-Therefore we selected only matrices containing at least 100 cladistic characters per OTU.
-This arbitrary threshold was chosen to correspond with the number of characters used in \citep{GuillermeCooper} and \citep{harrisonamong-character2014}.
+The number of characters in each matrix ranged from @6 to @4541.
+Matrices with few characters % NC: matrices can be small in two ways - with few characters and with few species. Here you just mention few characters so I've made it more specific.
+are problematic when comparing available data among matrices because (1) they have less chance of having characters that overlap with those of other matrices \citep{wagner2000} and (2) they are more likely to contain a higher proportion of specific characters that are not-applicable across large clades \citep[][e.g. ``antler ramifications'' is a character that is only applicable to Cervidae not all mammals]{Brazeau2011}.
+% NC: Is this true really? Does it always follow that if you've very few characters you also have very specific characters? Maybe so...
+Therefore we selected only matrices containing \textgreater 100 characters per OTU.
+This threshold was chosen to correspond with the number of characters used in \citet{GuillermeCooper} and \citet{harrisonamong-character2014}.
 
-We extracted @1422 unique living mammal OTUs from the @256 matrices with a minimum of 6 and a maximum of 4541 coded cladistic characters per OTU.
-After removing all the matrices with less than 100 cladistic characters, the number of extracted living mammals OTUs was down to @815 from @number matrices.
+After removing all matrices with \textless 100 characters, we retained @1422 unique living mammal OTUs from @256 matrices for our analyses.
 
 \subsection{Data availability and distribution}
 To assess the availability of cladistic data for each mammalian Order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species.
