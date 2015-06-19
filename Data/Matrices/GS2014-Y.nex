@@ -1,0 +1,26 @@
+#NEXUS
+
+[Original matrix contains 42 characters]
+
+Begin data;
+    Dimensions ntax=14 nchar= 00;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+    
+Dasyuridae	00
+Muribacinus_gadiyuli	00
+Badjcinus_turnbulli	00
+Ngamalacinus_timmulvaneyi	00
+Maximucinus_muirheadae	00
+Mutpuracinus_archibaldi	00
+Nimbacinus_dicksoni	00
+Nimbacinus_richi	00
+Wabulacinus_ridei	00
+Tyarrpecinus_rothi	00
+Thylacinus_macknessi	00
+Thylacinus_potens	00
+Thylacinus_megiriani	00
+Thylacinus_cynocephalus 	00
+	;
+END;
+

@@ -1,0 +1,33 @@
+#NEXUS
+
+[Original matrix contains 48 characters]
+
+Begin data;
+    Dimensions ntax=22 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+Prokennalestes 00
+Zalambdalestes 00
+Proalestes 00
+Gypsonictops 00
+Leptacodon 00
+Cqrnilestes 00
+Prosarcodon 00
+Sarcodon 00
+Archaeoryctes 00
+Wanolestes 00
+Ardynictis 00
+Zeucitherium 00
+Kennatherium 00
+Khaichinula 00
+Erlikotherium 00
+Ergilictis 00
+Didymonoconus 00
+Archaeomangus 00
+Jiajianictis 00
+Tshotgoria 00
+Hunanictis 00
+Mongoloryctes 00
+    ;
+End;

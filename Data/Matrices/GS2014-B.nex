@@ -1,0 +1,59 @@
+#NEXUS
+
+[Original matrix contains 27c]
+
+Begin data;
+    Dimensions ntax=48 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+Marsupialia			00
+Hyracoidea			00
+Embrithopoda		00
+Proboscidea			00
+Sirenia				01
+Desmostylia			10
+Tubulidentata		00
+Bibymalagasia		00
+Macroscelididae		00
+Tenrecoidea			01
+Zalambdalestes		00
+Xenarthra			00
+Hyopsodus			11
+Meniscotherium		10
+Phenacodus			10
+Pleuraspidotherium	10
+Arctocyon			10
+Leptictis			00
+Eulipotyphla		00
+Cetartiodactyla		10
+Perissodactyla		10
+Glires				00
+Archonta			00
+Notongulata			00
+Marsupialia			00
+Hyracoidea			01
+Embrithopoda		01
+Proboscidea			01
+Sirenia				11
+Desmostylia			00
+Tubulidentata		00
+Bibymalagasia		00
+Macroscelididae		01
+Tenrecoidea			00
+Zalambdalestes		01
+Xenarthra			01
+Hyopsodus			00
+Meniscotherium		01
+Phenacodus			01
+Pleuraspidotherium	01
+Arctocyon			00
+Leptictis			01
+Eulipotyphla		01
+Cetartiodactyla		01
+Perissodactyla		00
+Glires				01
+Archonta			01
+Notongulata			01
+    ;
+End;

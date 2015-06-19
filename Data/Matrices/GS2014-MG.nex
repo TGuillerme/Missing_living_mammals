@@ -1,0 +1,30 @@
+#NEXUS
+
+[orignial matrix contains 40 characters]
+
+Begin data;
+    Dimensions ntax=18 nchar= 20;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+   
+Molossus_molossus		000000000–0000000030
+Tadarida_brasiliensis		10100100200201001101
+Eumops_a.auripendulus		11100112001012111130
+Eumops_a.major		11100112001012111130
+Eumops_bonariensis		11110111111212111101
+Eumops_dabbenei		11100012021212111120
+Eumops_delticus		11100111111212111101
+Eumops_glaucinus		11110010001212111120
+Eumops_hansae		21112211111212111101
+Eumops_maurus		111100120011?2111130
+Eumops_nanus		11110111111212111101
+Eumops_patagonicus		11110111111212111101
+Eumops_p.californicus		11120010021212111120
+Eumops_p.perotis		11120010021212111120
+Eumops_sp.nov.		11110010011212111110
+Eumops_trumbulli		11120010021212111110
+Eumops_u.sonoriensis		11110012021212111120
+Eumops_u.underwoodi		11110012021212111120
+	;
+END;
+
