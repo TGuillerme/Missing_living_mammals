@@ -1,13 +1,11 @@
 #Loading the functions
-setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
+
 source("functions.R")
 load.functions(test=FALSE) #Set test=FALSE to speed up the loading
 library(picante)
 
 #Loading the tree
-full_trees<-read.nexus("../Data/Trees/FritzTree.rs200k.100trees.tre")
-#Selecting one random tree
-set.seed(1) ; one_tree<-full_trees[[sample(1:100, 1)]]
+mam_tree<-read.nexus("../Data/Trees/mammalST_MSW05_best_chrono.tre")
 
 #Loading the taxonomic reference list
 WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
@@ -24,28 +22,29 @@ extraction_table[which(extraction_table$Matrix == "GS2007-R.nex"), 3]<-88
 extraction_table[which(extraction_table$Matrix == "GS2010-VJD.nex"), 3]<-157
 extraction_table[which(extraction_table$Matrix == "GS2012-GM.nex"), 3]<-45
 extraction_table[which(extraction_table$Matrix == "GS2012-SM.nex"), 3]<-157
+extraction_table[which(extraction_table$Matrix == "GS1997-V.nex"), 3]<-40
+extraction_table[which(extraction_table$Matrix == "GS2013-MS.nex"), 3]<-48
+extraction_table[which(extraction_table$Matrix == "GS2014-MG.nex"), 3]<-40
+extraction_table[which(extraction_table$Matrix == "GS2014-MaL.nex"), 3]<-98
+extraction_table[which(extraction_table$Matrix == "GS2015-RR.nex"), 3]<-149
+extraction_table[which(extraction_table$Matrix == "GS2014-B.nex"), 3]<-27
+extraction_table[which(extraction_table$Matrix == "GS2014-Y.nex"), 3]<-42
 
 #Creating sub tables with a minimum number of characters
 #1 Character
 extraction_table1<-extraction_table[which(as.numeric(extraction_table$Characters) >= 1),]
-#75 Characters
-extraction_table75<-extraction_table[which(as.numeric(extraction_table$Characters) >= 75),]
-#94 Characters
+
+#100 Characters
 extraction_table100<-extraction_table[which(as.numeric(extraction_table$Characters) >= 100),]
-#138 Characters
-extraction_table125<-extraction_table[which(as.numeric(extraction_table$Characters) >= 125),]
-#150 Characters
-extraction_table150<-extraction_table[which(as.numeric(extraction_table$Characters) >= 150),]
-#300 Characters
-extraction_table300<-extraction_table[which(as.numeric(extraction_table$Characters) >= 300),]
-#list
-extraction_list=list(extraction_table1,extraction_table75, extraction_table100, extraction_table125, extraction_table150,extraction_table300)
-results_names=c("results_1.Rda","results_75.Rda","results_100.Rda","results_125.Rda","results_150.Rda","results_300.Rda")
+
+#Combine the sub tables
+extraction_list=list(extraction_table1, extraction_table100)
+results_names=c("results_1.Rda","results_100.Rda")
 
 #Print the analysis by series of characters length
 
 #for (character_threshold in 1:length(extraction_list)) {
-for (character_threshold in 3:4) {
+for (character_threshold in 1:2) {
     #Select the number of characters
     extraction_table<-extraction_list[[character_threshold]]
 
@@ -62,7 +61,7 @@ for (character_threshold in 3:4) {
     #First order
     #Extract orders
     message(paste("\n",orders[1], " analysis.\n", sep=""), appendLF=FALSE)
-    tree<-extract.order(orders[1], one_tree, WR_list, verbose=TRUE)
+    tree<-extract.order(orders[1], mam_tree, WR_list, verbose=TRUE)
     taxa<-extract.order(orders[1], living_taxa_list, WR_list, verbose=TRUE)
     #Replace taxa by a vector if there was any taxonomic correction
     if(class(taxa) != "character") {
@@ -82,7 +81,7 @@ for (character_threshold in 3:4) {
         message(paste("\n",orders[order], " analysis.\n", sep=""), appendLF=FALSE)
 
         #Extract orders
-        tree<-extract.order(orders[order], one_tree, WR_list, verbose=TRUE)
+        tree<-extract.order(orders[order], mam_tree, WR_list, verbose=TRUE)
         #If tree is null (monospecific order!) then abort the rest
         if(is.null(tree)) {
             results_tmp<-matrix(nrow=3, ncol=ncol(results), data=NA)

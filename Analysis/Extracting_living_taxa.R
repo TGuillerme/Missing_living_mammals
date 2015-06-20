@@ -1,5 +1,4 @@
 #Extracting the living taxa from all the matrices
-setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
 
 #Load functions
 message("Loading/testing functions:", appendLF=FALSE)
@@ -36,14 +35,14 @@ body(read.nex.dat)[[20]]<-substitute(
 
 #List of references
 #Fritz tree
-tree_list<-read.table("../Data/Taxon_References/FritzTree_taxa.txt", header=F, stringsAsFactors=F)
+tree_list<-read.table("../Data/Taxon_References/Bininda-emonds_taxa.txt", header=F, stringsAsFactors=F)
 #Wilson Reeder's Mammals Species of the World
 WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
 #Palaeobiology database
 Paleo_list<-read.csv("../Data/Taxon_References/pdb_taxa.csv", header=T, stringsAsFactors=F)
 #Combining the references
 Reference_list<-list(tree_list, WR_list, Paleo_list)
-names(Reference_list)<-c("Fritz Tree", "Wilson & Reeder", "Paleobio database")
+names(Reference_list)<-c("Bininda-emonds Tree", "Wilson & Reeder", "Paleobio database")
 
 #Building the empty table
 extraction_table<-data.frame("Matrix"=NA,"Taxa"=NA, "Characters"=NA, "Living"=NA,"Source"=NA,"Tax.level"=NA)
@@ -104,7 +103,7 @@ NA_species$Source[which(!is.na(doubleCheck_WR))]<-"WR"
 NA_species$Tax.level[which(!is.na(doubleCheck_WR))]<-doubleCheck_WR[which(!is.na(doubleCheck_WR))]
 #For the tree
 NA_species$Living[which(!is.na(doubleCheck_tree))]<-TRUE
-NA_species$Source[which(!is.na(doubleCheck_tree))]<-"Fritz"
+NA_species$Source[which(!is.na(doubleCheck_tree))]<-"Bininda-emonds"
 NA_species$Tax.level[which(!is.na(doubleCheck_tree))]<-"Species"
 
 #Replace NA_species back in the table
@@ -114,4 +113,4 @@ extraction_table[which(is.na(extraction_table$Living)),]<-NA_species
 save(extraction_table, file="../Data/List_of_matching_taxa.Rda")
 
 #Save the result as csv
-write.csv(extraction_table, file="../Data/List_of_matrching_taxa.csv")
+write.csv(extraction_table, file="../Data/List_of_matching_taxa.csv")
