@@ -1,8 +1,8 @@
-plot.results<-function(order, taxa, col_branch=c("red","grey"), reference, verbose=FALSE, ...) {
+plot.results<-function(order, taxa, col_branch=c("red","grey"), reference, tree, verbose=FALSE,...) {
     #Diversitree
     require(diversitree)
     #Extracting the tree
-    order_tree<-extract.order(order, one_tree, reference, verbose)
+    order_tree<-extract.order(order, tree, reference, verbose)
     #Stopping if the tree is two small
     if(Ntip(order_tree)<3) {
         stop("To few tips in the tree.")
