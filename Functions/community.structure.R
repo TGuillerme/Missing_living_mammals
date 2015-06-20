@@ -41,10 +41,25 @@ community.structure<-function(data_structure, tree, metric=c("PD", "NRI", "NTI")
 
     #SES.PD
     if(any(metric == "PD")) {
-        #Mean pairwise distance
-        pd_result<-ses.pd(data_structure, tree, null.model=null, runs=runs, ...)
 
-        #Nearest relatedness index; NRI=0 -> random ; NRI<0 -> over-dispersion (good) ; NRI>0 -> clustering (bad)
+        #If tree is not rooted, add one
+        if(!is.rooted(tree)) {
+            root_tmp<-rtree(2)
+            tree_tmp<-bind.tree(tree, root_tmp)
+            tree_tmp<-drop.tip(tree_tmp,"t2")
+            tree_rooted<-root(tree_tmp, "t1", resolve.root=TRUE)
+
+            #Mean pairwise distance
+            pd_result<-ses.pd(data_structure, tree_rooted, null.model=null, runs=runs, ...)
+
+        } else {
+
+            #Mean pairwise distance
+            pd_result<-ses.pd(data_structure, tree, null.model=null, runs=runs, ...)            
+
+        }
+
+        #Faith's PD; PD=0 -> random ; PD<0 -> over-dispersion (good) ; PD>0 -> clustering (bad)
         PD<-pd_result$pd.obs.z[1]*-1
 
         #Significance of difference from NULL
