@@ -1,0 +1,39 @@
+#NEXUS
+
+[Original matrix contains 98 characters]
+
+Begin data;
+    Dimensions ntax=27 nchar= 30;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+
+Drymoreomys_albimaculatus		?00001000300000010020300120000
+Noronhomys_vespuccii		??????????????????01?11?110112
+Holochilus_primigenus		??????????????????????????????
+Carletonomys_cailoi		????????????????????????????1?
+Holochilus_sciureus		?011213121?1001000011411110201
+Holochilus_chacarius		?01121312101001000011211110201
+Holochilus_brasiliensis		201121312101001000011211110201
+Pseudoryzomys_simplex		200121201121000000111300110201
+Amphinectomys_savamis		???????121?10000000214?0020110
+Cerradomys_subflavus		2000111001110000000104001?010B
+Eremoryzomys_polius		200011000021001000010400120110
+Hylaeamys_megacephalus		200010100111000000011300010111
+Lundomys_molitor		211121312101001000110100110211
+Melanomys_caliginosus		2000112002010020001?1401120111
+Neacomys_spinosus		200011100101110000120400010101
+Nectomys_squamipes		200121212101001001121401110111
+Nesoryzomys_narboroughi		?00011100020001100011100110111
+Nesoryzomys_swarthi		?00011100010001100011100110110
+Oecomys_catherinae		200000100101000000010400110011
+Oligoryzomys_flavescens		200011100111001000110000010102
+Oligoryzomys_nigripes		200011100111000000?10000010102
+Oryzomys_couesi		200121200111001000011400120101
+Oryzomys_palustris		201121201121000000111400120101
+Sigmodontomys_alfari		200121201201000000?B140111010B
+Tanyuromys_aphrastus		200121300?01002001121401110000
+Sooretamys_angouya		200011000101000000?1?1001?0111
+Aegialomys_xanthaeolus		200011100111000000?B14001?01?1
+
+    ;
+End;

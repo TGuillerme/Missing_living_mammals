@@ -1,0 +1,52 @@
+#NEXUS
+
+[Original matrix contains 40 characters]
+
+Begin data;
+    Dimensions ntax=41 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+    
+Outgroup 00
+Damalacra_acalla 00
+Damalacra_neanica 00
+Beatragus_whitei 00
+Beatragus_antiquus 00
+Beatragus_hunteri 00
+Damaliscus_lunatus 00
+Damaliscus_dorcas 00
+Damaliscus_ademassui 00
+Damaliscus_niro 00
+Damaliscus_agelaius 00
+Damaliscus_hadari 00
+Awashia_suwai 00
+Parmularius_pandatus 00
+Parmularius_braini 00
+Parmularius_eppsi 00
+Parmularius_altidens 00
+Parmularius_rugosus 00
+Parmularius_parvus 00
+Parmularius_ambiguus 00
+Parmularius_angusticornis 00
+Damalops_sidihakomai 00
+Damalops_denendorai 00
+Damalops_palaeindicus 00
+Megalotragus_kattwinkeli 00
+Megalotragus_kattwinkeli_isaaci 00
+Megalotragus 00
+Megalotragus_kattwinkeli_2 00
+Megalotragus_priscus 00
+Megalotragus_atopocranion 00
+Rabaticeras_arambourgi 00
+Alcelaphus_buselaphus 00
+Rabaticeras_porrocornutus 00
+Rabaticeras_lemutai 00
+Alcelaphus_lichtensteini 00
+Oreonagor_tournoueri 00
+Oreonagor 00
+Connochaetes_gentryi 00
+Connochaetes_taurinus 00
+Connochaetes_africanus 00
+Connochaetes_gnou 00
+    ;
+End;

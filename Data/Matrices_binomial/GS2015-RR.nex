@@ -1,0 +1,29 @@
+#NEXUS
+
+[Original matrix contains 149 characters]
+
+Begin data;
+    Dimensions ntax=18 nchar= 2;
+    Format datatype=standard gap=- missing=?;
+    Matrix
+    
+Phenacodus_intermedius		00
+Cardiolophus		00
+Pachynolophus_livinierensis		00
+Lophiaspis_maurettei		10
+Lophiaspis_occitanicus		10
+Lophiaspis_baicherei		10
+Lophiodon_remense		10
+Lophiodon_tapirotherium		10
+Lophiodon_rhinocerodes		10
+Lophiodon_lautricense		10
+Lophiodon_baroensis		10
+Paralophiodon_leptorhynchum		10
+Paralophiodon_isselense		10
+Paralophiodon_buchsowillanum		10
+Eomoropus_amarorum		00
+Litolophus_gobiensis		00
+Paleomoropus_jepseni		00
+Eolophiodon_laboriense		00
+;
+end;
