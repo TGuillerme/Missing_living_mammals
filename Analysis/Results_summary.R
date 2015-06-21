@@ -70,7 +70,7 @@ table.result(results, metric=c("NRI","NTI"), threshold=c(25,75), save.path="../M
 
 #Bugged!
 #caption<-"Number of taxa with available cladistic data for mammalian orders at three taxonomic levels. The coverage represents the proportion of taxa with available morphological data. The left vertical bar represents 25\\% of available data (``low'' coverage if \\textless 25\\%); The right vertical bar represents 75\\% of available data (``high'' coverage if \\textgreater 75\\%). When the Net Relatedness Index (NRI) and the Nearest Taxon Index (NTI) are negative, taxa are more phylogenetically dispersed than expected by chance; when NRI or NTI are positive, taxa are more phylogenetically clustered by expected by chance. Significant NRI or NTI are highlighted in bold. One star (*) represents a p-value between 0.05 and 0.005; two starts between 0.005 and 0.0005 and three stars a p-value less than 0.0005."
-#table.result(results, metric=c("NRI","NTI", "PD"), threshold=c(25,75), save.path="../Manuscript/Supplementary/results_PD_100c/", file.save="Table_results_PD", caption=caption, environement="longtable")
+#table.result(results, metric=c("PD","NRI","NTI"), threshold=c(25,75), save.path="../Manuscript/Supplementary/results_PD_100c/", file.save="Table_results_PD", caption=caption, environement="longtable")
 
 
 ############################################
@@ -100,7 +100,7 @@ OTUS_total<-OTUS_number_val[-seq(from=1, to=length(OTUS_number_val), by=2)]
 supp_order<-orders[which(as.numeric(OTUS_total) >= 20)]
 
 #Supplementary figures (orders with more than 20 taxa)
-for (order in 1:length(supp_order)) {
+for (order in 11:length(supp_order)) {
     pdf(paste("../Manuscript/Supplementary/Supp_figure_", supp_order[[order]], ".pdf", sep=""))
     op<-par(mfrow=c(1,1), oma=c(0,1,0,1))
     plot.results(order=supp_order[[order]], tree=mam_tree, taxa=living_taxa_list, col_branch=c("blue", "grey"), reference=WR_list, verbose=TRUE)
