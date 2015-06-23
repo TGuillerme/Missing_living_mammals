@@ -137,7 +137,6 @@
   year={2013},
   issn={0169-5347},
   doi={http://dx.doi.org/10.1016/j.tree.2013.05.004},
-  url={http://www.sciencedirect.com/science/article/pii/S0169534713001110},
   author={Susanne A. Fritz and Jan Schnitzler and Jussi T. Eronen and Christian Hof and Katrin Böhning-Gaese and Catherine H. Graham}
 }
 
@@ -521,6 +520,7 @@ URL = {http://sysbio.oxfordjournals.org/content/62/2/264.abstract},
 eprint = {http://sysbio.oxfordjournals.org/content/62/2/264.full.pdf+html}, 
 journal = {Systematic Biology} 
 }
+
 @article{eernissetaxonomic1993,
   title={Taxonomic congruence versus total evidence, and amniote phylogeny inferred from fossils, molecules, and morphology.},
   author={Eernisse, D. and Kluge, A.},
