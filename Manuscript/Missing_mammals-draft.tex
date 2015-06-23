@@ -88,14 +88,12 @@ Version dated: \today
 % NC: sometimes the better title is one that answers the question rather than giving the topic. e.g., "Morphological data is lacking for living species" or similar
 % TG: maybe worth considering the special issue as well? "Putting fossils in tree" so maybe something like "There is not enough morphological data for living mammals to branch fossils in the trees."
 % TG: or some poetic... "Living and dead mammals: morphological data is lacking in living for combined analysis"
-
-%Key words: Total Evidence method, data structure, phylogenetic, living, fossil, topology
 \bigskip
 
 \noindent {\normalsize \sc Thomas Guillerme$^1$$^,$$^2$$^,$$^*$ and Natalie Cooper$^1$$^,$$^2$$^,$$^3$}\\
 \noindent {\small \it 
 $^1$School of Natural Sciences, Trinity College Dublin, Dublin 2, Ireland.\\
-$^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, Ireland.\\
+$^2$Trinity Centre for Biodiversity Research, Trinity College Dublin, Dublin 2, Ireland.\\ %Should we remove that one for word count?
 $^3$Department of Life Sciences, Natural History Museum, Cromwell Road, London, SW7 5BD, UK.}\\
 \end{center}
 \medskip
@@ -113,18 +111,22 @@ $^3$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 %---------------------------------------------
 % NC: Time to sort this out!
 \newpage
-\begin{abstract} % 200 words, all keywords written in abstract if possible.
-Studying changes in global biodiversity through time and space is essential.
-For that we need methods to combine both palaeontological and neontological data.
-One promising method, the Total Evidence method, allows such thing but needs a lot of data.
-Especially cladistic data from living taxa to allow the fossil taxa to accurately branch in the trees.
-Despite two centuries of morphological studies on living taxa, scientists using and generating such data mainly focus on palaeontological data.
-Therefore, even in well known groups such as mammal, there is a huge gap in our knowledge of cladistic data for living mammals.
-In this study, using phylogenetic community structure methods, we quantify the availability of data in each mammalian order.
-And maybe at the end of the paper we propose some discussion on how to improve all that (go in museums!).
+\begin{abstract} % 200 words, all keywords written in abstract if possible. TG: That's 195 words for now.
+Combining living and fossil in the same analysis data is crucial for studying changes in global biodiversity through time.
+One method allowing to combine this data is the Total Evidence method that uses both molecular data for living species and morphological data for both living and fossil species.
+With this method, a good overlap of morphological data between living and fossil taxa is crucial for accurately inferring the phylogenies’ topology.
+
+Since the advent of DNA, molecular data has become easily and widely available.
+However, despite two centuries of morphological studies, scientists using and generating such data mainly focus on palaeontological data.
+Therefore, there is a gap in our knowledge of neontological morphological data even in well studied groups such as mammals.
+
+In this study, we quantify the morphological data available for living mammal taxa.
+We then analyse the structure of the available data by testing if it is clustered or evenly spread across the phylogeny.
+We found that 78\% of mammalian orders have less than 25\% data available at the species level.
+However, we found that the available is often randomly distributed among these orders apart from six of them where the data is clustered
 \end{abstract}
 
-\noindent ()\\
+%\noindent Key words: Total Evidence method, data structure, phylogenetic, fossil, topology\\ Excluded from word count.
 
 \vspace{1.5in}
 
@@ -168,10 +170,9 @@ We recommend that efforts be made to collect and share more cladistic data for l
 %
 %---------------------------------------------
 \section{Materials and Methods}
-% NC: Need to add the dates, or date ranges, of your data collection below instead of @
 \subsection{Data collection and standardisation}
-We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases (accessed @th of July 2015): Morphobank \citep[\texttt{http://www.morphobank.org/};][]{morphobank}, Graeme Lloyd's website (\texttt{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce/cladistic-data}).
-We also performed a systematic Google Scholar search (accessed @th of July 2015) for matrices that were not uploaded to these databases (see Supplementary Materials for a detailed description of the search procedure).
+We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases (accessed 10th of June 2015): Morphobank \citep[\texttt{http://www.morphobank.org/};][]{morphobank}, Graeme Lloyd's website (\texttt{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce/cladistic-data}).
+We also performed a systematic Google Scholar search (accessed 11th of June 2015) for matrices that were not uploaded to these databases (see Supplementary Materials for a detailed description of the search procedure).
 In total, we downloaded 286 matrices containing a total of 11010 operational taxonomic units (OTUs) of which 5228 were unique. % Number of unique OTUs (including fossils)
 In this study, we refer to OTUs rather than species since the entries in the downloaded matrices were not standardised and ranged from specific individual specimen names (i.e. the name of a collection item) to the family-level.
 Where possible, we considered OTUs at their lowest valid taxonomic level (i.e. species) but some OTUs were only valid at a higher taxonomic level (e.g. genus or family).
@@ -196,7 +197,6 @@ We consider orders with \textless 25\% of living taxa with cladistic data as hav
 
 For orders with \textless 100\% cladistic data coverage at any taxonomic level, we investigated whether the available cladistic data was (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: the Nearest Taxon Index \citep[NTI;][]{webb2002phylogenies} and the Net Relatedness Index \citep[NRI;][]{webb2002phylogenies}. 
 NTI is most sensitive to clustering or overdispersion near the tips, whereas NRI is more sensitive to clustering or overdispersion across the whole phylogeny \citep{Cooper2008}. 
-% NC: I moved this back up to keep it shorter.
 Both metrics were calculated using the \texttt{picante} package in R \citep{picante,R}.
 
 NTI \citep{webb2002phylogenies} is based on mean nearest neighbour distance (MNND) and is calculated as follows:
@@ -204,7 +204,6 @@ NTI \citep{webb2002phylogenies} is based on mean nearest neighbour distance (MNN
     NTI=-\left(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})}\right)
   \end{equation}
 where $\overline{MNND}_{obs}$ is the observed mean distance between each of $n$ taxa with cladistic data and its nearest neighbour with cladistic data in the phylogeny, 
-% NC: Argh still wrong definition of MNND, I've fixed it myself. It's PAIRWISE!!!
 $\overline{MNND}_{n}$ is the mean of 1000 mean MNND between $n$ randomly drawn taxa, and $\sigma(MNND_{n})$ is the standard deviation of these 1000 random MNND values.
 NRI is similar but is based on mean phylogenetic distance (MPD) as follows:
   \begin{equation}
@@ -223,9 +222,8 @@ For each analysis our focal taxa were those with available cladistic data at tha
 %---------------------------------------------
 
 \section{Results}
-% NC: Need to replace these @?
-Across the @126 cladistic matrices we extracted, @22 out of 28 mammalian orders have low coverage (\textless 25\% of species with cladistic data) and @six have high coverage (\textgreater 75\% of species with cladistic data) at the species-level.
-At the genus-level, @three orders have low coverage and @12 have high coverage, and at the family-level, no orders have low coverage and @23 have high coverage (Table \ref{Table_morpho_taxa_proportion}).
+Across the 126 cladistic matrices we extracted, 22 out of 28 mammalian orders have low coverage (\textless 25\% of species with cladistic data) and six have high coverage (\textgreater 75\% of species with cladistic data) at the species-level.
+At the genus-level, three orders have low coverage and 12 have high coverage, and at the family-level, no orders have low coverage and 23 have high coverage (Table \ref{Table_morpho_taxa_proportion}).
 
 \input{Table_results}
 % NC: Can probably cut words from the table legend too 
@@ -256,7 +254,7 @@ This has implications for building Total Evidence phylogenies containing both li
 Cladistic data coverage in living mammals varies across taxonomic levels and in its phylogenetic distribution.
 Higher taxonomic levels are always better sampled than lower ones and within these taxonomic levels, the available data is mostly randomly distributed across the phylogeny, apart from in six orders).
 
-The number of living mammalian taxa with no available cladistic data was surprisingly high at the species-level: only @six out of @28 orders have a high coverage of taxa with available cladistic data (and two of the 28 orders are monospecific!).
+The number of living mammalian taxa with no available cladistic data was surprisingly high at the species-level: only six out of 28 orders have a high coverage of taxa with available cladistic data (and two of the 28 orders are monospecific!).
 This high coverage threshold of 75\% of taxa with available cladistic data represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \citep{GuillermeCooper}.
 Beyond this threshold, there is considerable displacement of wildcard taxa (\textit{sensu} \citep{kearneyfragmentary2002}) and decreases in clade conservation \citep{GuillermeCooper}.
 Therefore we expect a high probability of topological artefacts for the placement of fossil taxa at the species-level in most mammalian orders.
@@ -275,7 +273,7 @@ This means that fossils with uncertain phylogenetic affinities (\textit{incertae
 Our results suggest that this may be an issue, at the genus-level, in Carnivora, Cetartiodactyla, Chiroptera and Soricomorpha. 
 For example, a Carnivora fossil will be unable to branch in the Herpestidae that has no species with cladistic data, and will also have more chance to branch, randomly, within the Canidae clade than any other clade in Carnivora (Figure \ref{Figure_example_coverage}B).
 Thus, in Total Evidence trees, placements of some carnivoran fossils should considered with caution. 
-% NC: Trying not to piss off GraHam - really it's weird stuff appearing in Carnivora that we are concerned by, not all Carnivora
+% NC: Trying not to piss off GraHam - really it's weird stuff appearing in Carnivora that we are concerned by, not all Carnivora. TG: I think it's mainly Graham's work that focuses on canids.
 In this study, we treated all cladistic matrices as equal in a similar way to molecular matrices. 
 For example, if matrix A contained 100 characters for taxa X and Y, and matrix B contained 50 different characters for taxa X and Z, we assumed that both matrices can be combined in a supermatrix containing 150 independent characters for taxon X, 100 for taxon Y and 50 for taxon Z.
 Unfortunately, cladistic data cannot always be treated in this way because some characters may overlap.
@@ -288,7 +286,7 @@ Despite the absence of good cladistic data coverage for living mammals, the Tota
 Following the recommendations in \citep{GuillermeCooper}, we need to code cladistic characters for as many living species possible. 
 Fortunately, data for living mammals is usually readily available in natural history collections, therefore, we propose that an increased effort be put into coding morphological characters from living species, possibly by engaging in collaborative data collection projects through web portals such as \textit{Morphobank} \citep{morphobank}.
 % NC: Still feels like it needs one final sentence to round it all off. Many something like below, but less crappy:
-Such an effort would be valuable not only to phylogeneticists, but also to any researcher interested in the diversity of life on Earth.
+Such an effort would be valuable not only to phylogeneticists, but also to any researcher focusing understanding macroevolutionary patterns and processes.%interested in the diversity of life on Earth.
 
 %Biology letters various stuff
 \section{Ethics statement}
