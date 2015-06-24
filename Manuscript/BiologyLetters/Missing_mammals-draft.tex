@@ -111,6 +111,7 @@ $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 % NC: Time to sort this out!
 \newpage
 \begin{abstract} % 200 words, all keywords written in abstract if possible. TG: That's 195 words for now.
+% TG: BIOLOGY LETTERS FORMAT: cut down to 150 words?
 Combining living and fossil in the same analysis data is crucial for studying changes in global biodiversity through time.
 One method allowing to combine this data is the Total Evidence method that uses both molecular data for living species and morphological data for both living and fossil species.
 With this method, a good overlap of morphological data between living and fossil taxa is crucial for accurately inferring the phylogenies’ topology.
@@ -136,6 +137,8 @@ However, we found that the available is often randomly distributed among these o
 %---------------------------------------------
 \newpage 
 \section{Introduction}
+% TG: BIOLOGY LETTERS FORMAT: Combine paragraph 1 and 2?
+
 There is an increasing consensus among evolutionary biologists that studying both living and fossil taxa is essential for fully understanding macroevolutionary patterns and processes \cite{slaterunifying2013,fritzdiversity2013,Wood01032013}.
 For example, including both living and fossil taxa in evolutionary studies can improve the accuracy of timing diversification events (e.g. \cite{ronquista2012}, our understanding of relationships among lineages (e.g. \cite{beckancient2014}, and our ability to infer biogeographical patterns through time (e.g. \cite{Meseguer01032015}.
 To perform such analyses it is necessary to combine living and fossil taxa in phylogenetic trees.
@@ -170,6 +173,13 @@ We recommend that efforts be made to collect and share more cladistic data for l
 %---------------------------------------------
 \section{Materials and Methods}
 \subsection{Data collection and standardisation}
+
+%TG: I think we can put a lot of that in the supplementaries: the essential is:
+% 1-We download matrices
+% 2-We selected living OTUs with > 100 characters
+% 3-We counted the percentage of available OTUs on Bininda-Emonds tree (low/high coverage)
+% 4-We calculated NTI/NRI
+
 We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases (accessed 10th of June 2015): Morphobank (\url{http://www.morphobank.org/} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{https://github.com/rossmounce/cladistic-data}).
 We also performed a systematic Google Scholar search (accessed 11th of June 2015) for matrices that were not uploaded to these databases (see Supplementary Materials for a detailed description of the search procedure).
 In total, we downloaded 286 matrices containing a total of 11010 operational taxonomic units (OTUs) of which 5228 were unique. % Number of unique OTUs (including fossils)
@@ -220,12 +230,14 @@ For each analysis our focal taxa were those with available cladistic data at tha
 %
 %---------------------------------------------
 
+
 \section{Results}
 Across the 126 cladistic matrices we extracted, 22 out of 28 mammalian orders have low coverage (\textless 25\% of species with cladistic data) and six have high coverage (\textgreater 75\% of species with cladistic data) at the species-level.
 At the genus-level, three orders have low coverage and 12 have high coverage, and at the family-level, no orders have low coverage and 23 have high coverage (Table \ref{Table_morpho_taxa_proportion}).
 
 \input{Table_results}
 % NC: Can probably cut words from the table legend too 
+% TG: YES! Otherwise I think that the text is down to the minimum (we can obviously remove few words here and there)
 
 Among the mammalian orders containing OTUs with no available cladistic data, only six orders had significantly clustered data (Carnivora, Cetartiodactyla, Chiroptera and Soricomorpha at both species- and genus-level and Afrosoricida and Pholidota at the species-level only) and no order had significantly overdispersed data at any taxonomic level (Table~\ref{Table_data_structure}).
 
@@ -246,6 +258,12 @@ Edges are colored in grey when no cladistic data is available for a species and 
 %---------------------------------------------
 
 \section{Discussion}
+%TG: Again, we can cut a shit load down. The essential would be:
+% 1-Not much data is available
+% 2-But at least is randomly distributed
+% 3-We need to collect more of it
+
+
 Our results show that although phylogenetic relationships among living mammals are well-resolved (e.g. \cite{BinindaEmonds,meredithimpacts2011}) , most of the data used to build these phylogenies is molecular, and very little cladistic data is available for living mammals compared to fossil mammals (e.g. \cite{O'Leary08022013,ni2013oldest}).
 This has implications for building Total Evidence phylogenies containing both living and fossil mammals, as without sufficient cladistic data for living species, fossil placements in these trees are very uncertain \cite{GuillermeCooper}.
 Cladistic data coverage in living mammals varies across taxonomic levels and in its phylogenetic distribution.
@@ -300,6 +318,7 @@ This work was funded by a European Commission CORDIS Seventh Framework Programme
 
 \bibliographystyle{vancouver}
 \bibliography{References}
+% TG: we can maybe remove one or two references (28) but I think we're already at the minimum...
 
 %\section{SOM}
 \newcommand{\beginsupplement}{%
