@@ -94,9 +94,9 @@ $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 \noindent{*\bf Corresponding author.} \textit{guillert@tcd.ie}\\  
 \vspace{1in}
 
-%Line numbering REMOVE FOR WORDCOUNT
-%\modulolinenumbers[1]
-%\linenumbers
+#Line numbering
+\modulolinenumbers[1]
+\linenumbers
 
 %---------------------------------------------
 %
@@ -155,25 +155,12 @@ We also determine whether the available cladistic data is phylogenetically overd
 %---------------------------------------------
 \section{Materials and Methods}
 \subsection{Data collection and standardisation}
-We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases %(accessed 10th of June 2015)
-: Morphobank (\url{http://www.morphobank.org/} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{https://github.com/rossmounce/cladistic-data}).
-We also performed a systematic Google Scholar search %(accessed 11th of June 2015) 
-for matrices that were not uploaded to these databases (see Supplementary Materials for a detailed description of the search procedure).
-% In total, we downloaded 286 matrices containing a total of 11010 operational taxonomic units (OTUs) of which 5228 were unique. % Number of unique OTUs (including fossils)
+We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases: Morphobank (\url{http://www.morphobank.org/} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{https://github.com/rossmounce/cladistic-data}).
+We also performed a systematic Google Scholar search for matrices that were not uploaded to these databases (see Supplementary Materials Section 1 for a detailed description of the search procedure).
 In total, we downloaded 286 matrices containing 5228 unique operational taxonomic units (OTUs). 
-We used OTUs rather than species since entries in the matrices ranged from species to families, and standardised the taxonomy as described in Supplementary Materials. 
+We used OTUs rather than species since entries in the matrices ranged from species to families, and standardised the taxonomy as described in Supplementary Materials (section 1). 
 We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{BinindaEmonds} or the taxonomy of \cite{wilson2005mammal}.
 
-%In this study, we refer to OTUs rather than species since the entries in the downloaded matrices were not standardised and ranged from specific individual specimen names (i.e. the name of a collection item) to the family-level.
-%Where possible, we considered OTUs at their lowest valid taxonomic level (i.e. species) but some OTUs were only valid at a higher taxonomic level (e.g. genus or family).
-%Therefore for some orders, we sampled more genera than species (Table \ref{Table_morpho_taxa_proportion}).
-
-%To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
-%We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{BinindaEmonds} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' all OTUs that were present in the Paleobiology database (\url{https://paleobiodb.org/}).
-%For OTUs that did not appear in these three sources, we first decomposed the name (i.e. \textit{Homo sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
-%Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; see Supplementary Material for more details).
-
-% The number of characters in each matrix ranged from 6 to 4541.
 Matrices with few characters are problematic when comparing available data among matrices because (1) they have less chance of having characters that overlap with those of other matrices \cite{wagner2000} and (2) they are more likely to contain a higher proportion of specific characters that are not-applicable across large clades (e.g. ``antler ramifications'' is a character that is only applicable to Cervidae not all mammals \cite{Brazeau2011}).
 Therefore we selected only matrices containing \textgreater 100 characters for each OTU.
 This threshold was chosen to correspond with the number of characters used in \cite{GuillermeCooper} and \cite{harrisonamong-character2014}.
@@ -182,7 +169,6 @@ After removing matrices with \textless 100 characters, we retained 1074 unique l
 
 \subsection{Data availability and distribution}
 To assess the availability of cladistic data for each mammalian order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species.
-%We used these different taxonomic levels because some clades are well covered at the family- or genus-level, but poorly covered at the species-level. % NC: Probably obvious?
 We consider orders with \textless 25\% of living taxa with cladistic data as having low data coverage, and orders with \textgreater 75\% of living taxa with cladistic data as having high data coverage. 
 
 We investigated whether the available cladistic data for each order was (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: the Nearest Taxon Index (NTI; \cite{webb2002phylogenies}) and the Net Relatedness Index (NRI; \cite{webb2002phylogenies}). 
@@ -276,17 +262,6 @@ This work was funded by a European Commission CORDIS Seventh Framework Programme
 
 \bibliographystyle{vancouver}
 \bibliography{References}
-
-%\section{SOM}
-\newcommand{\beginsupplement}{%
-    \setcounter{table}{0}
-    \renewcommand{\thetable}{S\arabic{table}}%
-    \setcounter{figure}{0}
-    \renewcommand{\thefigure}{S\arabic{figure}}%
-}
-\beginsupplement
-\input{Supplementary/Supplementary}
-
 
 %END
 \end{document}
