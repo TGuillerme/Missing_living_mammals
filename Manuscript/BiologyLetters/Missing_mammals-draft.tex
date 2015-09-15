@@ -175,15 +175,15 @@ We investigated whether the available cladistic data for each order was (i) rand
 NTI is most sensitive to clustering or overdispersion near the tips, whereas NRI is more sensitive to clustering or overdispersion across the whole phylogeny \cite{Cooper2008}. 
 Both metrics were calculated using the \texttt{picante} package in R \cite{picante,R}.
 
-NTI \cite{webb2002phylogenies} is based on mean nearest neighbour distance (MNND) and is calculated as follows:
+NTI \cite{webb2002phylogenies} is based on mean nearest neighbour distance ($MNND$) and is calculated as follows:
   \begin{equation}
-    NTI=-\left(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})}\right)
+    \text{NTI}=-\left(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})}\right)
   \end{equation}
 where $\overline{MNND}_{obs}$ is the observed mean distance between each of $n$ taxa with cladistic data and its nearest neighbour with cladistic data in the phylogeny, 
-$\overline{MNND}_{n}$ is the mean of 1000 mean MNND between $n$ randomly drawn taxa, and $\sigma(MNND_{n})$ is the standard deviation of these 1000 random MNND values.
-NRI is calculated in the same way, but MNND is replaced by mean phylogenetic distance (MPD) as follows:
+$\overline{MNND}_{n}$ is the mean of 1000 $MNND$ between $n$ randomly drawn taxa, and $\sigma(MNND_{n})$ is the standard deviation of these 1000 random $MNND$ values.
+NRI is calculated in the same way, but $MNND$ is replaced by mean phylogenetic distance ($MPD$) as follows:
   \begin{equation}
-    NRI=-\left(\frac{\overline{MPD}_{obs}-\overline{MPD}_{n}}{\sigma(MPD_{n})}\right)
+    \text{NRI}=-\left(\frac{\overline{MPD}_{obs}-\overline{MPD}_{n}}{\sigma(MPD_{n})}\right)
   \end{equation}
 where $\overline{MPD}_{obs}$ is the observed mean phylogenetic distance of the tree containing only the $n$ taxa with cladistic data.
 Negative NTI and NRI values show that the focal taxa are more overdispersed across the phylogeny than expected by chance, and positive values reflect clustering.
@@ -238,8 +238,8 @@ This point is important from a practical point of view because of the slight dis
 While neontological species are described using morphology, genes, distribution etc.; palaeontological species can be based only on morphological, spatial and temporal data (e.g. \cite{ni2013oldest}).
 Therefore, most palaeontological studies use genus as their smallest OTU (e.g. \cite{ni2013oldest,O'Leary08022013}), so data availability at the genus-level in living mammals should be our primary concern when building phylogenies of living and fossil taxa.
 
-When few species have available cladistic data, the ideal scenario is for them to be phylogenetically overdispersed to maximize the possibilities of a fossil branching from the right clade.
-The second best scenario is that species with cladistic data are randomly distributed across the phylogeny. 
+When few species have available cladistic data, the ideal scenario is for them to be phylogenetically overdispersed to maximize the possibilities of a fossil branching in the right clade.
+The second best scenario is that species with cladistic data are randomly distributed across the phylogenies. 
 Here we expect no special bias in the placement of fossils \cite{GuillermeCooper}, it is therefore encouraging that for most orders, species with cladistic data were randomly distributed across the phylogeny.
 The worst case scenario for fossil placement is that species with cladistic data are phylogenetically clustered. 
 Then we expect two major biases to occur: first, fossils will not be able to branch within a clade containing no data, and second, fossils will have higher probability of branching within the most sampled clade by chance. 
