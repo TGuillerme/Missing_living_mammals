@@ -1,14 +1,13 @@
 #Rarefaction analysis
 
 #Loading the functions
-setwd("~/PhD/Projects/Missing_living_mammals/Analysis")
 source("functions.R")
 load.functions(test=FALSE) #Set test=FALSE to speed up the loading
 library(picante)
 
 #Loading the list of present taxa
 #source("Extracting_living_taxa.R")
-load("../Data/List_of_matching_taxa.Rda")
+load("../Data/List_of_matching_taxa/List_of_matching_taxa.Rda")
 
 #Fixing the number of characters for truncated matrices
 extraction_table[which(extraction_table$Matrix == "GS2007-R.nex"), 3]<-88
@@ -38,7 +37,7 @@ repo_taxa<-unique(repositories$Taxa)
 
 
 #Loading the google search results
-Google_search<-read.csv("../Data/GSresults.csv")
+Google_search<-read.csv("../Data/Search/GSresults.csv")
 #Setting the matrix column as character
 Google_search$Counts<-as.character(Google_search$Matrix)
 

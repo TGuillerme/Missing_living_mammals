@@ -21,7 +21,7 @@ WR_list$Order[which(WR_list$Order == "CETACEA")]<-"CETARTIODACTYLA"
 
 #Loading the list of present taxa
 #source("Extracting_living_taxa.R")
-load("../Data/List_of_matching_taxa.Rda")
+load("../Data/List_of_matching_taxa/List_of_matching_taxa.Rda")
 
 #Fixing the number of characters for truncated matrices
 extraction_table[which(extraction_table$Matrix == "GS2007-R.nex"), 3]<-88

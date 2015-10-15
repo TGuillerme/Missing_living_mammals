@@ -11,7 +11,7 @@ message("Done\n", appendLF=FALSE)
 
 
 #List of matrices
-matrices_list<-list.files("../Data/Matrices_binomial/")
+matrices_list<-list.files("../Data/Matrices_binomial/Matrices/")
 
 #transform verbose warnings in read.nexus.data in messages
 #Renaming the function (backup)
@@ -54,7 +54,7 @@ for(matrix in 1:length(matrices_list)){
     message(paste(matrices_list[matrix], ":",sep=""), appendLF=FALSE)
     #Try to load the matrix
     current_matrix<-NULL
-    try(current_matrix<-read.nex.dat(paste("../Data/Matrices_binomial/", matrices_list[matrix], sep="")), silent=TRUE)
+    try(current_matrix<-read.nex.dat(paste("../Data/Matrices_binomial/Matrices/", matrices_list[matrix], sep="")), silent=TRUE)
 
     if(!is.null(current_matrix)) {
         #If successfully, proceed:
@@ -110,7 +110,7 @@ NA_species$Tax.level[which(!is.na(doubleCheck_tree))]<-"Species"
 extraction_table[which(is.na(extraction_table$Living)),]<-NA_species
 
 #Save the results as .rda
-save(extraction_table, file="../Data/List_of_matching_taxa.Rda")
+save(extraction_table, file="../Data/List_of_matching_taxa/List_of_matching_taxa.Rda")
 
 #Save the result as csv
-write.csv(extraction_table, file="../Data/List_of_matching_taxa.csv")
+write.csv(extraction_table, file="../Data/List_of_matching_taxa/List_of_matching_taxa.csv")
