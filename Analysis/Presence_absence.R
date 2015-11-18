@@ -8,7 +8,7 @@ load.functions(test=FALSE) #Set test=FALSE to speed up the loading
 
 #Example data input
 #Read Fritz tree
-one_tree<-read.nexus("../Data/Trees/FritzTree.rs200k.1tree.tre")
+one_tree<-read.nexus("../Data/Trees/mammalST_MSW05_best_chrono.tre")
 #Taxonomic reference
 WR_list<-read.csv("../Data/Taxon_References/WilsonReederMSW.csv", header=T, stringsAsFactors=F)
 
