@@ -10,6 +10,7 @@
 *.toc
 *.ttt
 *.fdb_latexmk
+*.fls
 
 
 # OS generated files #
