@@ -1,0 +1,1 @@
+pandoc -o Missing_mammals-draft.docx Missing_mammals-draft.tex --bibliography References.bib --filter pandoc-citeproc --csl apa.csl
