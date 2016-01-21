@@ -131,7 +131,7 @@ We downloaded available matrices containing fossil and/or living mammal taxa fro
 \texttt{Mammalia; Monotremata; Marsupialia; Placentalia; Macroscelidea; Afrosoricida; Tubulidentata; Hyracoidea; Proboscidea; Sirenia; Pilosa; Cingulata; Scandentia; Dermoptera; Primates; Lagomorpha; Rodentia; Erinaceomorpha; Soricomorpha; Cetacea; Artiodactyla; Cetartiodactyla; Chiroptera; Perissodactyla; Pholidota; Carnivora; Didelphimorphia; Paucituberculata; Microbiotheria; Dasyuromorphia; Peramelemorphia; Notoryctemorphia; Diprotodontia}.
 
 Details about each public repository specific search option is listed below.
-Note that some matrices have been downloaded from more than one database but that it is not an issue since we are interested in the total number of unique living OTUs and that if some where present in more than one matrix, they still only counted as one single OTU.
+Note that some matrices have been downloaded from more than one database but that it is not an issue since we are interested in the total number of unique living OTUs and that if some were present in more than one matrix, they still only counted as one single OTU.
 
 \subsubsection{Morphobank}
 We accessed the Morphobank repository (\texttt{http://www.morphobank.org/}) on the 10th of June 2015 and used the keywords listed above in the search menu.
@@ -147,7 +147,7 @@ We then ran a shell script to select only the matrices that had any text element
 To make the matrix selection more thorough, we ignored the keywords case as well as the latin suffix (\textit{ia}, \textit{ata}, \textit{ea}, and \textit{a}).
 
 \subsection{Google scholars (accessed 11th of June 2015)}
-To make sure we didn't miss any extra matrix that wasn't available on one of these repository, we ran a Google Scholar search on the 5th of January. 
+To make sure we didn't miss any extra matrix that wasn't available on one of these repositories, we ran a Google Scholar search on the 5th of January. 
 We downloaded the additional cladistic matrices from the 20 first search results matching with our selected keywords and with any of the 35 taxonomic levels (mammals Orders, Infraclasses and Class).
 We used the following key words:
 
@@ -155,28 +155,28 @@ We used the following key words:
 
 were \textit{order} was replaced by all the keywords listed above. For each 33 keywords, we selected the 20 first papers to match the Google search published since 2010 resulting in 660 papers.
 Among these papers, not all contained relevant data (discrete morphological characters AND mammalian data).
-We selected only the 20 first results per search term to avoid downloading articles that were to irrelevant. Among the 660 papers, only 50 contained a total of 425 extra living OTUs (Figure ~\ref{Supp_figure_google_searches}).
+We selected only the 20 first results per search term to avoid downloading articles that were too irrelevant. Among the 660 papers, only 50 contained a total of 425 extra living OTUs (Figure ~\ref{Supp_figure_google_searches}).
 Also we decided to select only the articles published since 2010 because nearly every one of the recent published matrix contains both a fraction of morphological characters and OTUs from previous studies.
 For example in primates the character \textit{p7} coded first by \cite{ross1998phylogenetic} is reused with the same living species in \cite{seiffert2003fossil}, \cite{marivaux2005anthropoid}, \cite{seiffert2005basal}, \cite{bloch2007new}, \cite{bloch2007new}, \cite{kay2008anatomy}, \cite{silcox2008biogeographic}, \cite{seiffert2009convergent}, \cite{tabuce2009anthropoid}, \cite{boyer2010astragalar}, \cite{seiffert2010fossil}, \cite{marivaux2013djebelemur} and \cite{ni2013oldest}.
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{Supp_figure_google_searches.pdf}
-\caption{Google searches additional OTUs rarefaction curve. The x axis represent the number of google scholar matches (papers, books or abstracts) and the y axis represents the cumulative number of additional living OTUs per google scholar match.}
+\caption{Google searches additional OTUs rarefaction curve. The x-axis represent the number of Google Scholar matches (papers, books or abstracts) and the y-axis represents the cumulative number of additional living OTUs per google scholar match.}
 \label{Supp_figure_google_searches}
 \end{figure}
 
-The list of all the 286 download matrices is available on % PREMALINK TO THE MATRICES LIST (TRANSFORM TO CSV!)
+The list of all the 286 download matrices is available on \url{https://github.com/TGuillerme/Missing_living_mammals}.
 The matrices contained a total of 11010 operational taxonomic units (OTUs) of which 5228 were unique.
-In this study, we refer to OTUs rather than species since the entries in the downloaded matrices were not standardised and ranged from specific individual specimen names (i.e. the name of a collection item) to the family-level.
+In this study, we refer to OTUs rather than species because the entries in the downloaded matrices were not standardised and ranged from specific individual specimen names (i.e. the name of a collection item) to the family-level.
 Where possible, we considered OTUs at their lowest valid taxonomic level (i.e. species) but some OTUs were only valid at a higher taxonomic level (e.g. genus or family).
 Therefore for some orders, we sampled more genera than species.
 
 \subsection{Standardising the matrices}
 We transformed all the non-nexus matrices (tnt, word, excel, jpeg) to nexus format manually.
 We then cleaned the nexus matrices by removing any extra information (trees, continuous characters, morphological characters description, molecular data) to end up with nexus matrices containing only the discrete morphological data.
-We then manually fixed the wrong bionomial names format (e.g. \textit{H. sapiens}) into the correct ones (e.g. \textit{Homo sapiens}) using the abbreviation list in the concerned publications. 
-All the standardised matrices are available on % PREMALINK TO THE STANDARDISED MATRICES
+We then manually fixed the incorrectly-formatted bionomial names format (e.g. \textit{H. sapiens} became \textit{Homo sapiens}) using the abbreviation list in the concerned publications. 
+All the standardised matrices are available on \url{https://github.com/TGuillerme/Missing_living_mammals}.
 
 \subsection{Selecting the living OTUs}
 

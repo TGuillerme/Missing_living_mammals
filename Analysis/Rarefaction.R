@@ -86,6 +86,6 @@ for (mat in 1:nrow(sub_results)) {
 Additional_data<-sort(as.numeric(Google_search$Counts), decreasing=TRUE)
 pdf("../Manuscript/Supplementary/Supp_figure_google_searches.pdf")
 op<-par(bty="l")
-plot(cumsum(Additional_data), type="l", ylab="Number of additional OTUs", xlab="Google Scholars papers")
+plot(cumsum(Additional_data), type="l", ylab="Number of additional OTUs", xlab="Google Scholar papers")
 par(op)
 dev.off()

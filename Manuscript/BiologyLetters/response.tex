@@ -59,7 +59,7 @@
 
 \begin{document}
 
-\textbf{RE: MPE-15-254}\\
+\textbf{RE: Decision on Manuscript ID RSBL-2015-1003}\\
 \bigskip
 Dear Surayya Johar,\\
 \bigskip
@@ -79,21 +79,57 @@ We are very grateful to the four referees for their helpful and constructive com
 \subsection{Reviewer 1 specific comments:}
 \begin{enumerate}
 \item{\textcolor{blue}{P.2, line 43: ``chunks'' is not an appropriate term to use in a scientific paper. Use a more formal term.}}
-\item{\textcolor{blue}{P.2, L53 \& L55: ``branch'' is the wrong verb. You want to say something like ``fossils will not be placed accurately within the phylogeny'' }}
+We replaced ``chunks'' by ``parts'' on p.@, line@.
+
+\item{\textcolor{blue}{P.2, L53 \& L55: ``branch'' is the wrong verb. You want to say something like ``fossils will not be placed accurately within the phylogeny''.}}
+We replaced ``fossils cannot branch in the correct clade'' by ``fossils will not be placed accurately within the correct clade'' on p.@, line@.
+
 \item{\textcolor{blue}{P3, L78: ``since'' should be ``because.'' Since should be used for time, not causation.}}
+We replaced ``since'' by ``because'' on p.@, line@.
+
 \item{\textcolor{blue}{P3, L85: ``not-applicable'' should not be hyphenated.}}
+We removed the hyphen on p.@, line@.
+
 \item{\textcolor{blue}{P3, L120: How much of a difference does the 25\% or less coverage make to the capacity of Total Evidence phylogenetic analyses to resolve relationships? Does your simulation study have a way of quantifying or describing the probability of getting the ``right'' answer with this little data? It would also help if you could show in your data table what the clades were that had better than 75\% coverage. It’s not immediately evident from reading Table 1.}}
+
+% TO DO. To the question, hard to give a value for the probability of getting the ``right'' tree but 25% missing living leads to 0.5 wild card taxa displacement and between 0.8 and 0.4 clade conservation on a linear scale from 1 to 0 with one being the right tree and 0 being a random tree.
+
 \item{\textcolor{blue}{P5, L137: ``taxa'' should be ``OTUs.''}}
+We replaced ``taxa'' by ``OTUs'' on p.@, line@.
+
 \item{\textcolor{blue}{P5, L165 \& 166: This sentence also misuses ``branch'' as on P.2. Reword for correct verb usage.}}
+We replaced ``unable to branch in the Herpestidae'' by ``unable to be placed in the Herpestidae clade'' on p.@, line@.
+
 \item{\textcolor{blue}{ESM 1, p. 2: ``If some where present'' should be ``if some were present.''}}
+We fixed this typo.
+
 \item{\textcolor{blue}{ESM 1, p. 3: ``one of these repository'' should be ``one of these repositories.''}}
+We fixed this typo.
+
 \item{\textcolor{blue}{ESM 1, p. 4: ``that were to irrelevant'' should be ``that were too irrelevant.''}}
+We fixed this typo.
+
 \item{\textcolor{blue}{ESM 1, p. 4: ``of the recent published matrix'' should be ``of the recently published matrices.''}}
+We fixed this typo.
+
 \item{\textcolor{blue}{ESM 1, p. 4: First sentence of the paragraph in the middle of the page is a sentence fragment, and needs to state where the matrices are available.}}
+We finished the sentence by adding the URL: ``The list of all the 286 download matrices is available on \url{https://github.com/TGuillerme/Missing_living_mammals}.''
+
 \item{\textcolor{blue}{ESM 1, p. 4: ``since the entries in the…'' should be ``because the entries in the…'' Since refers to time, not causation.}}
+We fixed this typo.
+
 \item{\textcolor{blue}{ESM 1, p. 5: axis title should be ``Google Scholar matches,'' not ``Google Scholars matches.'' Figure caption should capitalize ``Google Scholar.'' Y-axis and X-axis should be hyphenated.}}
-\item{\textcolor{blue}{ESM 1, p. 6: ``wrong binomial names format'' should be ``incorrectly-formatted binomial names,'' and ``into the correct ones'' should be deleted. Fixing is assumed to turn incorrect things into correct ones. Also, the sentence starting the paragraph under ``Selecting the living OTUs'' repeats the exact same thing as this sentence.}}
+We fixed the typo in the figure and the caption as well as in the code for reproducing this figure.
+
+\item{\textcolor{blue}{ESM 1, p. 6: ``wrong binomial names format'' should be ``incorrectly-formatted binomial names,'' and ``into the correct ones'' should be deleted.
+Fixing is assumed to turn incorrect things into correct ones.
+Also, the sentence starting the paragraph under ``Selecting the living OTUs'' repeats the exact same thing as this sentence.}}
+We modified the sentence to: ``[we] fixed the incorrectly-formatted bionomial names format (e.g. \textit{H. sapiens} became \textit{Homo sapiens})''
+
 \item{\textcolor{blue}{ESM 2 seems to be almost completely redundant with Table 1. Is there some more efficient way of dealing with this information?}}
+
+%TO DO: not sure but maybe we'll just put the 1 character threshold thingy.
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%
@@ -161,6 +197,26 @@ So, it will not be random: they probably will latch themselves onto the longest 
 
 \section{Reviewer 4:}
 \begin{enumerate}
+\item{\textcolor{blue}{Reviewer 1’s most substantial complaints (the year and page number cut offs for google scholar searches) seem at least partially valid.
+However, in my experience older studies tend to be smaller (due to computing limitations) and to commonly reoccur anyway due to data set reuse.
+The authors also already state that subsequent search results tended to yield no substantial additional data, and by the reviewer’s own admission the assembled data seem to look correct.
+Thus a recollecting of the data doesn’t seem necessary (but see further comments below).}}
+
+\item{\textcolor{blue}{Reviewer 2 (Graham Slater)’s complaint are - in my view - the most substantial.
+I agree that the >100 characters cut off is not as strongly justified as it might be.
+However, as the authors have run their protocol without this threshold this is easily fixed by at least briefly mentioning how this affects their results in the main text (not relegating it to the ESM where no actual discussion is provided).
+From my reading of the two tables only 11 of the orders seem to have below 25\% coverage at the species-level (not 22 as the authors state in the main text!) when the threshold is used, and this improves slightly to 10 for when the threshold is removed.
+As this difference isn’t dramatic it seems worth mentioning.
+Reviewer 2 also notes that some important studies may be missed.
+This seems valid (I am aware of the biases in Ross Mounce’s data collection protocol, and obviously my own) and I am sure there are many more data sets that could be sampled.
+In particular I am aware of a number of studies that can only be found in books and hence are not easily accessed even if they occur in a google scholar search.
+I do not expect the authors to more thoroughly search the literature for all possible cladistic analyses of mammals, however, as this is a major task.
+(I should know, it has been a long term project of mine for years.)
+Nevertheless, it does deserve mention in the discussion as a potential bias in the results.
+I don’t think this undermines the study, but rather should be viewed as both a reason for optimism and an acknowledgement of a separate problem (i.e., access to cladistic data) which multiple publications already cover (e.g., see Ross Mounce’s work).}}
+
+\item{\textcolor{blue}{Reviewer 3 (Pete Wagner)’s major problem - with which I agree - is semantic, and thus easily fixable with a few explicit caveats (e.g., ``by cladistic we mean...'').}}
+
 \item{\textcolor{blue}{One point I would add of my own is that the orders used are obviously very variable in size (species number), so what about total coverage?
 This could surely be synthesised from the tables and would be a nice simple way to compare the with and without threshold results.
 Similarly, I think Reviewer 3’s [We assume Graeme Lloyd is refering to Graham Slater's reviewe (reviewer 2)] %or same as comment before: no names!
