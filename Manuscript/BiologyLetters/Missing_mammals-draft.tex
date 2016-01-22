@@ -157,7 +157,7 @@ We also determine whether the available cladistic data is phylogenetically overd
 %---------------------------------------------
 \section{Materials and Methods}
 \subsection{Data collection and standardisation}
-We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases: MorphoBank (\url{http://www.morphobank.org/} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{https://github.com/rossmounce/cladistic-data}).
+We downloaded all cladistic matrices containing any living and/or fossil mammal taxa from three major public databases: MorphoBank (\url{morphobank.org} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}).
 We also performed a systematic Google Scholar search for matrices that were not uploaded to these databases (see Electronic Supplementary Material (ESM) for a detailed description of the search procedure).
 In total, we downloaded 286 matrices containing 5228 unique operational taxonomic units (OTUs). 
 We used OTUs rather than species because% rev 1.2.3
@@ -183,13 +183,13 @@ NTI \cite{webb2002phylogenies} is based on mean nearest neighbour distance ($MNN
   \begin{equation}
     \text{NTI}=-\left(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})}\right)
   \end{equation}
-where $\overline{MNND}_{obs}$ is the observed mean distance between each of $n$ taxa with cladistic data and its nearest neighbour with cladistic data in the phylogeny, 
+where $\overline{MNND}_{obs}$ is the observed mean branch length between each of $n$ taxa with cladistic data and its nearest neighbour with cladistic data in the phylogeny, 
 $\overline{MNND}_{n}$ is the mean of 1000 $MNND$ between $n$ randomly drawn taxa, and $\sigma(MNND_{n})$ is the standard deviation of these 1000 random $MNND$ values.
 NRI is calculated in the same way, but using the mean phylogenetic distance ($MPD$):
   \begin{equation}
     \text{NRI}=-\left(\frac{\overline{MPD}_{obs}-\overline{MPD}_{n}}{\sigma(MPD_{n})}\right)
   \end{equation}
-where $\overline{MPD}_{obs}$ is the observed mean phylogenetic distance of the tree containing only the $n$ taxa with cladistic data.
+where $\overline{MPD}_{obs}$ is the observed mean phylogenetic branch length of the tree containing only the $n$ taxa with cladistic data.
 Negative NTI and NRI values show that the focal taxa are more overdispersed across the phylogeny than expected by chance, and positive values reflect clustering.
 
 We calculated NTI and NRI values for each mammalian order separately, at each different taxonomic level. 
@@ -252,7 +252,7 @@ This point is important from a practical point of view because of the slight dis
 While neontological species are described using morphology, genes, distribution etc.; palaeontological species can be based only on morphological, spatial and temporal data (e.g. \cite{ni2013oldest}).
 Therefore, most palaeontological studies use the genus as their smallest OTU (e.g. \cite{ni2013oldest,O'Leary08022013}), so data availability at the genus-level in living mammals should be our primary concern when building phylogenies of living and fossil taxa.
 
-When few species have available cladistic data, the ideal scenario is for them to be phylogenetically overdispersed to maximize the possibilities of a fossil branching in the right clade.
+When few species have available cladistic data, the ideal scenario is for them to be evenly distributed (as measured by phylogenetic overdispersion) to maximize the possibilities of a fossil branching in the right clade.
 The second best scenario is that species with cladistic data are randomly distributed across the phylogenies. 
 Here we expect no special bias in the placement of fossils \cite{GuillermeCooper}, it is therefore encouraging that for most orders, species with cladistic data were randomly distributed across the phylogeny.
 The worst case scenario for fossil placement is that species with cladistic data are phylogenetically clustered. 

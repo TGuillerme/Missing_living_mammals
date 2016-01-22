@@ -134,14 +134,14 @@ Details about each public repository specific search option is listed below.
 Note that some matrices have been downloaded from more than one database but that it is not an issue since we are interested in the total number of unique living OTUs and that if some were present in more than one matrix, they still only counted as one single OTU.
 
 \subsubsection{Morphobank}
-We accessed the Morphobank repository (\texttt{http://www.morphobank.org/}) on the 10th of June 2015 and used the keywords listed above in the search menu.
+We accessed the Morphobank repository (\url{morphobank.org}) on the 10th of June 2015 and used the keywords listed above in the search menu.
 We downloaded the data associated with each project matching with the keyword.
 
 \subsubsection{Graeme Lloyd}
-We accessed Graeme Lloyd's website repository (\texttt{http://graemetlloyd.com/}) on the 10th of June 2015 and downloaded all the matrices that were available with a direct download link in the mammal data section of the website (\texttt{http://graemetlloyd.com/matrmamm.html}).
+We accessed Graeme Lloyd's website repository (\url{graemetlloyd.com/matrmamm.html}) on the 10th of June 2015 and downloaded all the matrices that were available with a direct download link in the mammal data section of the website (\texttt{http://graemetlloyd.com/matrmamm.html}).
 
 \subsubsection{Ross Mounce}
-We accessed Ross Mounce's GitHub repository (\texttt{https://github.com/rossmounce}) on the 11th of June 2015 and downloaded all 601 matrix.
+We accessed Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}) on the 11th of June 2015 and downloaded all 601 matrix.
 We then ran a shell script to select only the matrices that had any text element that match with one of the search terms.
 % LINK WHICH SHELL SCRIPT
 To make the matrix selection more thorough, we ignored the keywords case as well as the latin suffix (\textit{ia}, \textit{ata}, \textit{ea}, and \textit{a}).
@@ -166,7 +166,7 @@ For example in primates the character \textit{p7} coded first by \cite{ross1998p
 \label{Supp_figure_google_searches}
 \end{figure}
 
-The list of all the 286 download matrices is available on \url{https://github.com/TGuillerme/Missing_living_mammals}.
+The list of all the 286 download matrices is available on \url{github.com/TGuillerme/Missing_living_mammals/tree/master/Data/Matrices}.
 The matrices contained a total of 11010 operational taxonomic units (OTUs) of which 5228 were unique.
 In this study, we refer to OTUs rather than species because the entries in the downloaded matrices were not standardised and ranged from specific individual specimen names (i.e. the name of a collection item) to the family-level.
 Where possible, we considered OTUs at their lowest valid taxonomic level (i.e. species) but some OTUs were only valid at a higher taxonomic level (e.g. genus or family).
@@ -176,10 +176,9 @@ Therefore for some orders, we sampled more genera than species.
 We transformed all the non-nexus matrices (tnt, word, excel, jpeg) to nexus format manually.
 We then cleaned the nexus matrices by removing any extra information (trees, continuous characters, morphological characters description, molecular data) to end up with nexus matrices containing only the discrete morphological data.
 We then manually fixed the incorrectly-formatted bionomial names format (e.g. \textit{H. sapiens} became \textit{Homo sapiens}) using the abbreviation list in the concerned publications. 
-All the standardised matrices are available on \url{https://github.com/TGuillerme/Missing_living_mammals}.
+All the standardised matrices are available on \url{github.com/TGuillerme/Missing_living_mammals/tree/master/Data/Matrices_binomial/Matrices}.
 
 \subsection{Selecting the living OTUs}
-
 To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
 We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{bininda-emondsthe2007} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' all OTUs that were present in the Paleobiology database (\url{https://paleobiodb.org/}).
 For OTUs that did not appear in these three sources, we first decomposed the name (i.e. \textit{Homo sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
@@ -193,7 +192,7 @@ Any OTUs that still had no matches in the sources above were designated as non-a
 \end{figure}
 
 \section{2 - Data reproducibility}
-Every step of the analysis (apart from downloading and standardisation of the matrices) is entirely repeatable via GitHub (\url{https://github.com/TGuillerme/Missing_living_mammals}).
+Every step of the analysis (apart from downloading and standardisation of the matrices) is entirely repeatable via GitHub (\url{github.com/TGuillerme/Missing_living_mammals}).
 %Needs to fix this in GitHub
 %1-Rarefaction ?
 %2-Selecting the OTUs
