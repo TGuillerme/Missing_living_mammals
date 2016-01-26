@@ -48,7 +48,7 @@ extraction_list=list(extraction_table1, extraction_table100)
 results_names=c("results_1.Rda","results_100.Rda")
 
 #Select the character threshold
-extraction_table<-extraction_list[[2]]
+extraction_table<-extraction_list[[1]]
 
 #Selecting the living taxa (for a minimal number of characters)
 living_taxa<-extraction_table[which(extraction_table$Living == TRUE),]
@@ -59,7 +59,8 @@ living_taxa_list<-unique(living_taxa$Taxa)
 ######################
 
 #Loading the results
-load("results_100.Rda")
+load("results_1.Rda")
+#load("results_100.Rda")
 
 
 ############################################
@@ -100,7 +101,7 @@ OTUS_total<-OTUS_number_val[-seq(from=1, to=length(OTUS_number_val), by=2)]
 supp_order<-orders[which(as.numeric(OTUS_total) >= 20)]
 
 #Supplementary figures (orders with more than 20 taxa)
-for (order in 11:length(supp_order)) {
+for (order in 1:length(supp_order)) {
     pdf(paste("../Manuscript/Supplementary/Supp_figure_", supp_order[[order]], ".pdf", sep=""))
     op<-par(mfrow=c(1,1), oma=c(0,1,0,1))
     plot.results(order=supp_order[[order]], tree=mam_tree, taxa=living_taxa_list, col_branch=c("blue", "grey"), reference=WR_list, verbose=TRUE)
