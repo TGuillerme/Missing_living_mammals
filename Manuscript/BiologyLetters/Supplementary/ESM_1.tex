@@ -175,11 +175,11 @@ Therefore for some orders, we sampled more genera than species.
 \subsection{Standardising the matrices}
 We transformed all the non-nexus matrices (tnt, word, excel, jpeg) to nexus format manually.
 We then cleaned the nexus matrices by removing any extra information (trees, continuous characters, morphological characters description, molecular data) to end up with nexus matrices containing only the discrete morphological data.
-We then manually fixed the incorrectly-formatted bionomial names format (e.g. \textit{H. sapiens} became \textit{Homo sapiens}) using the abbreviation list in the concerned publications. 
+We then manually fixed the incorrectly-formatted binomial names (e.g. \textit{H. sapiens} became \textit{Homo sapiens}) using the abbreviation list in the concerned publications. 
 All the standardised matrices are available on \url{github.com/TGuillerme/Missing_living_mammals/tree/master/Data/Matrices_binomial/Matrices}.
 
 \subsection{Selecting the living OTUs}
-To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
+%To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
 We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{bininda-emondsthe2007} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' all OTUs that were present in the Paleobiology database (\url{https://paleobiodb.org/}).
 For OTUs that did not appear in these three sources, we first decomposed the name (i.e. \textit{Homo sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
 Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; Figure ~\ref{Supp_figure_Taxonomic_algorithm}).
