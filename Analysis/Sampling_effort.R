@@ -71,6 +71,9 @@ if(any(is.infinite(sampled_species))) {sampled_species[which(is.infinite(sampled
 total_species <- log(as.numeric(sapply(strsplit(results[which(results[,2] == "species"),3], split="/"), "[", 2)))
 
 
+
+pdf("../Manuscript/Supplementary/Supp_figure_sampling_effort.pdf", width = 8, height = 3.6)
+#quartz(width = 8, height = 3.6)
 par(mfrow = (c(1,3)), bty = "n")
 
 total <- total_families
@@ -79,9 +82,9 @@ model <- summary(lm(sampled + 0 ~ total))
 plot(total, sampled, pch=19, col="grey", xlim = c(0,max(total)), ylim = c(0,max(total)),
     ylab = "sampled families (log)", xlab = "total families (log)")
 abline(model$coefficients[[1]], model$coefficients[[2]])
-text(max(total) - 0.9*max(total), max(total) - 0.1*max(total),
+text(max(total) - 0.85*max(total), max(total) - 0.1*max(total),
     bquote(italic(R)^2 == .(format(model$r.squared, digits = 3))) )
-text(max(total) - 0.9*max(total), max(total) - 0.15*max(total),
+text(max(total) - 0.85*max(total), max(total) - 0.15*max(total),
     bquote(italic(b) == .(format(model$coefficients[[2]], digits = 3))))
 
 total <- total_genera
@@ -90,9 +93,9 @@ model <- summary(lm(sampled + 0 ~ total))
 plot(total, sampled, pch=19, col="grey", xlim = c(0,max(total)), ylim = c(0,max(total)),
     ylab = "sampled genera (log)", xlab = "total genera (log)")
 abline(model$coefficients[[1]], model$coefficients[[2]])
-text(max(total) - 0.9*max(total), max(total) - 0.1*max(total),
+text(max(total) - 0.85*max(total), max(total) - 0.1*max(total),
     bquote(italic(R)^2 == .(format(model$r.squared, digits = 3))) )
-text(max(total) - 0.9*max(total), max(total) - 0.15*max(total),
+text(max(total) - 0.85*max(total), max(total) - 0.15*max(total),
     bquote(italic(b) == .(format(model$coefficients[[2]], digits = 3))))
 
 
@@ -102,7 +105,8 @@ model <- summary(lm(sampled + 0 ~ total))
 plot(total, sampled, pch=19, col="grey", xlim = c(0,max(total)), ylim = c(0,max(total)),
     ylab = "sampled species (log)", xlab = "total species (log)")
 abline(model$coefficients[[1]], model$coefficients[[2]])
-text(max(total) - 0.9*max(total), max(total) - 0.1*max(total),
+text(max(total) - 0.85*max(total), max(total) - 0.1*max(total),
     bquote(italic(R)^2 == .(format(model$r.squared, digits = 3))) )
-text(max(total) - 0.9*max(total), max(total) - 0.15*max(total),
+text(max(total) - 0.85*max(total), max(total) - 0.15*max(total),
     bquote(italic(b) == .(format(model$coefficients[[2]], digits = 3))))
+dev.off()
