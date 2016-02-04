@@ -182,7 +182,7 @@ NTI \cite{webb2002phylogenies} is based on mean nearest neighbour distance ($MNN
   \begin{equation}
     \text{NTI}=-\left(\frac{\overline{MNND}_{obs}-\overline{MNND}_{n}}{\sigma(MNND_{n})}\right)
   \end{equation}
-where $\overline{MNND}_{obs}$ is the observed mean branch length between each of $n$ taxa with available anatomical characters and its nearest neighbour with available anatomical characters in the phylogeny, 
+where $\overline{MNND}_{obs}$ is the observed mean sum of the branch lengths between each of $n$ taxa with available anatomical characters and its nearest neighbour with available anatomical characters in the phylogeny, 
 $\overline{MNND}_{n}$ is the mean of 1000 $MNND$ between $n$ randomly drawn taxa, and $\sigma(MNND_{n})$ is the standard deviation of these 1000 random $MNND$ values.
 NRI is calculated in the same way, but using the mean phylogenetic distance ($MPD$):
   \begin{equation}
@@ -242,7 +242,7 @@ Beyond this threshold, there is considerable displacement of wildcard taxa and d
 Therefore we expect difficulties in placement of fossils at the species-level in most mammalian orders, but fewer issues at higher taxonomic levels.
 This point is important from a practical point of view because of the slight discrepancy between neontological and palaeontological species concepts.
 While neontological species are described using morphology, genes, distribution etc.; palaeontological species can be based only on morphological, spatial and temporal data (e.g. \cite{ni2013oldest}).
-Therefore, most palaeontological studies use the genus as their smallest OTU (e.g. \cite{ni2013oldest,O'Leary08022013}), so data availability at the genus-level in living mammals should be our primary concern when building phylogenies of living and fossil taxa.
+Therefore, many palaeontological studies use the genus (or monospecific genera) as their smallest OTU (e.g. \cite{ni2013oldest,O'Leary08022013}), so data availability at the genus-level in living mammals should be our primary concern when building phylogenies of living and fossil taxa.
 
 When few species have available anatomical characters, the ideal scenario is for them to be evenly distributed (as measured by phylogenetic overdispersion) to maximize the possibilities of a fossil branching in the right clade.
 The second best scenario is that species with available anatomical characters are randomly distributed across the phylogenies. 
