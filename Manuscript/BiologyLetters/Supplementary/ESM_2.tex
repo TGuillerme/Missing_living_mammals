@@ -125,7 +125,11 @@ $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 
 
 \section{Supplementary results - 1}
-The following section contains supplementary blalbalbal....
+The following section contains a supplementary analysis looking at the sampling effort for all the mammalian orders at the three different taxonomic levels (family, genus and species).
+We calculated linear regressions %TG: does one calculate regressions? I would go for drawing regressions but that's not semantically correct...
+between the logged number of sampled taxonomic levels per order against the logged total number of total taxonomic levels and fixed the intercept to 0.
+This way we could calculate the slope of the regressions (\textit{b}) indicating the sampling effort (i.e. if the slope is 1, the sampling effort is maximum along each order for the taxonomic level, if 0 there is no significant sampling) and the fit of the regressions (\textit{R$^2$}).
+The code for this analysis is available at this link \url{https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Sampling_effort.R}.
 
 \begin{figure}[!htbp]
 \centering
@@ -133,6 +137,11 @@ The following section contains supplementary blalbalbal....
 \caption{Sampling effort across all mammalian orders on the three different taxonomic levels. The \textit{R$^2$} and the slope (\textit{b}) are reported for each linear model.}
 \label{Supp_Figure_sampling}
 \end{figure}
+
+This analysis shows suggests that the sampling effort reflects diversity for each taxonomic level (i.e. morphological characters were collected for each order according to it's size; Figure \ref{Supp_Figure_sampling}).
+However, it is worth noting that this relation is stronger at higher taxonomic level (i.e. family, \textit{R$^2$}=0.99 \textit{b}=0.936) in comparison to the species level (\textit{R$^2$}=0.852 \textit{b}=0.711).
+These results might be simply due to the increase of elements between each taxonomic levels (i.e. number of species $>$ genera $>$ families)
+Nonetheless it is probable that mammalian morphological phylogeneticists did actually focused on resolving higher level relationships among mammalian orders (see Table 1 in the main text).
 
 \newpage
 
