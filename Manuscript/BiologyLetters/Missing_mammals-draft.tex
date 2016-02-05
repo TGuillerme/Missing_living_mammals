@@ -156,19 +156,20 @@ We also determine whether the available anatomical characters are phylogenetical
 %---------------------------------------------
 \section{Materials and Methods}
 \subsection{Data collection and standardisation}
-We downloaded all cladistic matrices %TG: I left "cladistic" here 'cause that's what the matrix is (even folloowing Peter's definition)!
+We downloaded all cladistic matrices %TG: I left "cladistic" here 'cause that's what the matrix is (even following Peter's definition)!
  containing any living and/or fossil mammal taxa from three major public databases: MorphoBank (\url{morphobank.org} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}).
 We also performed a systematic Google Scholar search for matrices that were not uploaded to these databases (see Electronic Supplementary Material (ESM) for a detailed description of the search procedure).
 In total, we downloaded 286 matrices containing 5228 unique operational taxonomic units (OTUs). 
 We used OTUs rather than species because entries in the matrices ranged from species to families, and standardised the taxonomy as described in the ESM. 
 We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{BinindaEmonds} or the taxonomy of \cite{wilson2005mammal}.
 
-Matrices with few characters are problematic when comparing available data among matrices because (1) they have less chance of having overlapping characters with other matrices \cite{wagner2000} and (2) they are more likely to contain specific characters that are not applicable% rev 1.2.4
- across large clades (e.g. ``antler ramifications'' is a character that is only applicable to Cervidae \cite{Brazeau2011}).
-Therefore we selected only matrices containing \textgreater 100 characters for each OTU.
-This threshold was chosen to correspond with the number of characters used in \cite{GuillermeCooper} and \cite{harrisonamong-character2014}.
-Results of analyses with no threshold are available in the ESM. 
-After removing matrices with \textless 100 characters, we retained 1074 unique living OTUs from 126 matrices. % 1601 unique living OTUs for 286 matrices (no threshold)
+% Matrices with few characters are problematic when comparing available data among matrices because (1) they have less chance of having overlapping characters with other matrices \cite{wagner2000} and (2) they are more likely to contain specific characters that are not applicable% rev 1.2.4
+%  across large clades (e.g. ``antler ramifications'' is a character that is only applicable to Cervidae \cite{Brazeau2011}).
+% Therefore we selected only matrices containing \textgreater 100 characters for each OTU.
+% This threshold was chosen to correspond with the number of characters used in \cite{GuillermeCooper} and \cite{harrisonamong-character2014}.
+% Results of analyses with no threshold are available in the ESM. 
+% After removing matrices with \textless 100 characters, we retained 1074 unique living OTUs from 126 matrices. % 1601 unique living OTUs for 286 matrices (no threshold)
+We retained 1601 unique living OTUs from 286 matrices.
 
 \subsection{Data availability and distribution}
 To assess the availability of anatomical characters for each mammalian order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species. %TG: changed cladistic datat to anatomical characters
@@ -202,11 +203,12 @@ For each analysis our focal taxa were those with available anatomical characters
 
 
 \section{Results}
-22 of 28 orders % Change that!
- have low coverage (\textless 25\% species with available anatomical characters) and six have high coverage %Change that!
-  (\textgreater 75\% species with available anatomical characters) at the species-level.
-At the genus-level, three orders have low coverage and 12 have high coverage, and at the family-level, no orders have low coverage and 23 have high coverage (Table\ref{Table_results}).
+11 out of 28 orders have low coverage (\textless 25\% species with available anatomical characters) and 7 have high coverage (\textgreater 75\% species with available anatomical characters) at the species-level.
+At the genus-level, one order have low coverage and 15 have high coverage, and at the family-level, no orders have low coverage and 25 have high coverage (Table\ref{Table_results}).
 
+%TG: former results:
+% 22 of 28 orders have low coverage (\textless 25\% species with available anatomical characters) and six have high coverage (\textgreater 75\% species with available anatomical characters) at the species-level.
+% At the genus-level, three orders have low coverage and 12 have high coverage, and at the family-level, no orders have low coverage and 23 have high coverage (Table\ref{Table_results}).
 
 %TG: don't clean up this caption please!
 %\caption{Number of taxa with available cladistic data for mammalian orders at three taxonomic levels. The left vertical bar represents low coverage (\textless 25\%); the right vertical bar represents high coverage (\textgreater 75\%). Negative Net Relatedness Index (NRI) and Nearest Taxon Index (NTI) values indicate phylogenetic overdispersion; positive values indicate phylogenetic clustering. Significant NRI or NTI values are in bold. *p \textless 0.05; **p \textless 0.01; ***p \textless 0.001.} \\ 
@@ -214,9 +216,9 @@ At the genus-level, three orders have low coverage and 12 have high coverage, an
 
 \input{Table_results}
 
-Only six orders had significantly clustered data (Afrosoricida and Pholidota at the species-level, and Carnivora, Cetartiodactyla, Chiroptera and Soricomorpha at both species- and genus-level) and none had significantly overdispersed data (Table~\ref{Table_results}).
+Only seven orders had significantly clustered data (Cetartiodactyla, Cingulata, Pilosa and Rodentia at the species-level and Carnivora, Chiroptera and Soricomorpha at both species- and genus-level) and none had significantly overdispersed data (Table~\ref{Table_results}).
 
-Figure \ref{Figure_example_coverage} shows randomly distributed OTUs with cladistic data in Primates (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered OTUs with cladistic data in Carnivora (mainly Canidae; Figure \ref{Figure_example_coverage}B).
+Figure \ref{Figure_example_coverage} shows randomly distributed OTUs with cladistic data in Primates (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered OTUs with cladistic data in Carnivora (mainly Canidae and Urisdae but no Herpestidae; Figure \ref{Figure_example_coverage}B).
 
 \begin{figure}[!htbp]
 \centering
@@ -236,7 +238,7 @@ Blue branches indicate available anatomical characters for the species.}
 Our results show that although phylogenetic relationships among living mammals are well-resolved (e.g. \cite{BinindaEmonds,meredithimpacts2011}), most of the data used to build these phylogenies is molecular, and few anatomical characters are available for living mammals compared to fossils (e.g. \cite{O'Leary08022013,ni2013oldest}).
 This has implications for building Total Evidence phylogenies containing both living and fossil mammals, as without sufficient available anatomical characters for living species, fossil placements in these trees are very uncertain \cite{GuillermeCooper}.
 
-The number of living mammalian OTUs with no available anatomical characters was surprisingly high at the species-level: only six out of 28 orders have a high coverage of taxa with available anatomical characters.
+The number of living mammalian OTUs with no available anatomical characters was surprisingly high at the species-level: only seven out of 28 orders have a high coverage of taxa with available anatomical characters.
 This high coverage threshold of 75\% of taxa with available anatomical characters represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \cite{GuillermeCooper}.
 Beyond this threshold, there is considerable displacement of wildcard taxa and decreased clade conservation \cite{GuillermeCooper}.
 Therefore we expect difficulties in placement of fossils at the species-level in most mammalian orders, but fewer issues at higher taxonomic levels.
@@ -249,9 +251,9 @@ The second best scenario is that species with available anatomical characters ar
 Here we expect no special bias in the placement of fossils \cite{GuillermeCooper}, it is therefore encouraging that for most orders, species with available anatomical characters were randomly distributed across the phylogeny.
 The worst case scenario for fossil placement is that species with available anatomical characters are phylogenetically clustered. 
 Then we expect two major biases to occur: first, fossils will not be able to branch within a clade containing no data, and second, fossils will have higher probability of branching within the most sampled clade by chance. 
-Our results suggest that this may be problematic at the genus-level in Carnivora, Cetartiodactyla, Chiroptera and Soricomorpha. 
+Our results suggest that this may be problematic at the genus-level in Carnivora, Chiroptera and Soricomorpha. 
 For example, a Carnivora fossil will be unable to be placed in the Herpestidae clade% rev 1.2.7
-, and will have more chance to randomly branch within Canidae (Figure \ref{Figure_example_coverage}B).
+, and will have more chance to randomly branch within Canidae or Ursidae (Figure \ref{Figure_example_coverage}B).
 
 Despite the absence of good cladistic data coverage for living mammals, %TG: I think leaving cladistic here is OK no?
  the Total Evidence method still seems to be the most promising way of combining living and fossil data for macroevolutionary analyses. 
