@@ -59,17 +59,10 @@ for (character_threshold in 1:1) {
     #Calculate the structure of the data for the first order to initiate the loop
 
     #Analysis for all mammals
-
     message(paste("\n","Mammalia (Class)", " analysis.\n", sep=""), appendLF=FALSE)
     tree<-extract.order("Mammalia (Class)", mam_tree, WR_list, verbose=TRUE)
     taxa<-extract.order("Mammalia (Class)", living_taxa_list, WR_list, verbose=TRUE)
 
-
-    #Extract orders
-    message(paste("\n",orders[1], " analysis.\n", sep=""), appendLF=FALSE)
-    tree<-extract.order(orders[1], mam_tree, WR_list, verbose=TRUE)
-    taxa<-extract.order(orders[1], living_taxa_list, WR_list, verbose=TRUE)
-    #Replace taxa by a vector if there was any taxonomic correction
     if(class(taxa) != "character") {
         taxa<-taxa$Taxa
     }
@@ -77,9 +70,7 @@ for (character_threshold in 1:1) {
     #Calculate the data structure in the order
     results<-order.structure("Mammalia (Class)", taxa, tree, WR_list, metric=c("NTI", "NRI"), verbose=TRUE)
 
-
     #Calculate the structure of the data for the other orders through a loop
-
 
     #Loop through the rest
     for (order in 1:length(orders)) {
