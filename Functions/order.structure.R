@@ -14,7 +14,7 @@
 #guillert(at)tcd.ie - 04/02/2015
 ##########################
 
-order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "NTI"), runs=1000, null="taxa.labels", verbose=FALSE, ...) {
+order.structure<-function(order, taxa, tree, reference, metric=c("NRI", "NTI"), runs=1000, null="taxa.labels", verbose=FALSE, ...) {
     #LIBRARIES
     require(picante)
 
@@ -62,7 +62,11 @@ order.structure<-function(order, taxa, tree, reference, metric=c("PD", "NRI", "N
 
     #Sort the list of taxa per species/genera/family
     #Reference list for the order
-    Sub_reference<-subset(reference[which(reference == order),])
+    if(order == "Mammalia (Class)") {
+        Sub_reference <- reference
+    } else {
+        Sub_reference<-subset(reference[which(reference == order),])
+    }
 
     taxa_binomial_non<-taxa.binomial(taxa, Sub_reference)
     taxa_binomial<-taxa_binomial_non[[1]]

@@ -8,11 +8,12 @@
 #<file.save> name (or chain name) for saving the table
 #<caption> table caption (if split option is called, the caption will only appear for the first table)
 #<environement> table environement
+#<col.threshold> a vector of colours that must be the length of threshold + 1
 ##########################
 #environement(at)tcd.ie - 05/06/2015
 ##########################
 
-table.result<-function(results, metric, threshold=c(25,75), save.path, file.save, caption, environement) {
+table.result<-function(results, metric, threshold=c(25,75), save.path, file.save, caption, environement, col.threshold=c("grey", "grey", "grey")) {
     
     #DEBUG
     #warning("Debug mode is ON (table.result)")
@@ -64,13 +65,13 @@ table.result<-function(results, metric, threshold=c(25,75), save.path, file.save
             metrics[one_star]<-paste(metrics[one_star], "*", sep="")
         }
         #Two stars
-        two_star<-which(p_values <= 0.005)
+        two_star<-which(p_values <= 0.01)
         significant_storage<-c(significant_storage, two_star)
         if(length(one_star) != 0) {
             metrics[two_star]<-paste(metrics[two_star], "*", sep="")
         }
         #Three stars
-        three_star<-which(p_values <= 0.0005)
+        three_star<-which(p_values <= 0.0001)
         significant_storage<-c(significant_storage, three_star)
         if(length(three_star) != 0) {
             metrics[three_star]<-paste(metrics[three_star], "*", sep="")
@@ -109,7 +110,32 @@ table.result<-function(results, metric, threshold=c(25,75), save.path, file.save
         system(paste("mkdir", new_folder))
     }
 
+
+
+    #~~~~~~~~~~~~~~~~
     #Make sure the percentage column is numeric
+    #~~~~~~~~~~~~~~~~
+
+    #Colour threshold selector
+    # WARNING: develop this function to match any threshold number!
+    col.selector <- function(threshold_value, threshold, col.threshold) {
+        if(length(threshold) > 2) {
+            stop("col.selector internal function only works with two threshold values for now.")
+        }
+        #threshold is greater than any threshold?
+        if(threshold_value >= max(threshold)) {
+            return(col.threshold[3])
+        } else {
+            #threshold is smaller than any threshold?
+            if(threshold_value <= min(threshold)) {
+                return(col.threshold[1])
+            } else {
+                return(col.threshold[2])
+            }
+        }
+    }
+
+
 
     #Creating all the barplots
     for(row in 1:nrow(table_to_print)) {
@@ -118,10 +144,10 @@ table.result<-function(results, metric, threshold=c(25,75), save.path, file.save
         #margin settings
         par(mar=c(0,1,0,1))
         #par plot
-        barplot(table_to_print[ row ,4], horiz=TRUE, xlim=c(1,100), xaxt="n")
+        barplot(table_to_print[ row ,4], horiz=TRUE, xlim=c(1,100), xaxt="n", col=col.selector(table_to_print[ row ,4], threshold, col.threshold))
         #threshold lines
         for(line in 1:length(threshold)) {
-            abline(v=threshold[line], lty=3,lwd=1)
+            abline(v=threshold[line], lty=1,lwd=4) # CHANGE LINE WIDTH HERE
         }
         dev.off()
     }

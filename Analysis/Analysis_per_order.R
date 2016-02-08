@@ -38,13 +38,13 @@ extraction_table1<-extraction_table[which(as.numeric(extraction_table$Characters
 extraction_table100<-extraction_table[which(as.numeric(extraction_table$Characters) >= 100),]
 
 #Combine the sub tables
-extraction_list=list(extraction_table1, extraction_table100)
-results_names=c("results_1.Rda","results_100.Rda")
+extraction_list=list(extraction_table1)#, extraction_table100)
+results_names=c("results_1.Rda")#,"results_100.Rda")
 
 #Print the analysis by series of characters length
 
 #for (character_threshold in 1:length(extraction_list)) {
-for (character_threshold in 1:2) {
+for (character_threshold in 1:1) {
     #Select the number of characters
     extraction_table<-extraction_list[[character_threshold]]
 
@@ -58,7 +58,13 @@ for (character_threshold in 1:2) {
 
     #Calculate the structure of the data for the first order to initiate the loop
 
-    #First order
+    #Analysis for all mammals
+
+    message(paste("\n","Mammalia (Class)", " analysis.\n", sep=""), appendLF=FALSE)
+    tree<-extract.order("Mammalia (Class)", mam_tree, WR_list, verbose=TRUE)
+    taxa<-extract.order("Mammalia (Class)", living_taxa_list, WR_list, verbose=TRUE)
+
+
     #Extract orders
     message(paste("\n",orders[1], " analysis.\n", sep=""), appendLF=FALSE)
     tree<-extract.order(orders[1], mam_tree, WR_list, verbose=TRUE)
@@ -69,14 +75,14 @@ for (character_threshold in 1:2) {
     }
 
     #Calculate the data structure in the order
-    results<-order.structure(orders[1], taxa, tree, WR_list, metric=c("PD", "NTI", "NRI"), verbose=TRUE)
+    results<-order.structure("Mammalia (Class)", taxa, tree, WR_list, metric=c("NTI", "NRI"), verbose=TRUE)
 
 
     #Calculate the structure of the data for the other orders through a loop
 
 
     #Loop through the rest
-    for (order in 2:length(orders)) {
+    for (order in 1:length(orders)) {
         #verbose
         message(paste("\n",orders[order], " analysis.\n", sep=""), appendLF=FALSE)
 
