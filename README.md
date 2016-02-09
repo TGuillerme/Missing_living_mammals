@@ -1,10 +1,9 @@
-# Assessment of cladistic data availability for living mammals
+# Assessment of available anatomical characters for phylogenetic analysis among living mammals
 [Thomas Guillerme](http://tguillerme.github.io) and [Natalie Cooper](http://nhcooper123.github.io/).
 
 This repository contains all the code and data used in the manuscript.
-###### Manuscript in prep. for Biology Letters.
+###### Manuscript in review for Biology Letters.
 A preprint is available [here](http://biorxiv.org/content/early/2015/07/28/022970).
-
 
 -------
 
@@ -32,4 +31,5 @@ Finally, the third step summarises the results of the analysis in step 2 and gen
 Note that the output is a table in `LaTeX` format.
 
 #### Supplementary analysis
-* [Google scholar search rarefaction](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Rarefaction.R)
+* [Google Scholar search rarefaction](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Rarefaction.R)
+* [Sampling effort](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Sampling_effort.R)
