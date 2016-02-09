@@ -142,8 +142,7 @@ We accessed Graeme Lloyd's website repository (\url{graemetlloyd.com/matrmamm.ht
 
 \subsubsection{Ross Mounce}
 We accessed Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}) on the 11th of June 2015 and downloaded all 601 matrix.
-We then ran a shell script to select only the matrices that had any text element that match with one of the search terms.
-% LINK WHICH SHELL SCRIPT
+We then ran a shell script to select only the matrices that had any text element that match with one of the search terms (\url{https://github.com/TGuillerme/Missing_living_mammals/blob/master/Functions/select.files.sh}).
 To make the matrix selection more thorough, we ignored the keywords case as well as the latin suffix (\textit{ia}, \textit{ata}, \textit{ea}, and \textit{a}).
 
 \subsection{Google scholars (accessed 11th of June 2015)}
@@ -155,9 +154,15 @@ We used the following key words:
 
 were \textit{order} was replaced by all the keywords listed above. For each 33 keywords, we selected the 20 first papers to match the Google search published since 2010 resulting in 660 papers.
 Among these papers, not all contained relevant data (discrete morphological characters AND mammalian data).
-We selected only the 20 first results per search term to avoid downloading articles that were too irrelevant. Among the 660 papers, only 50 contained a total of 425 extra living OTUs (Figure ~\ref{Supp_figure_google_searches}).
+We selected only the 20 first results per search term to avoid downloading articles that were too irrelevant.
+Among the 660 papers, only 50 contained a total of 425 extra living OTUs (Figure ~\ref{Supp_figure_google_searches}).
 Also we decided to select only the articles published since 2010 because nearly every one of the recent published matrix contains both a fraction of morphological characters and OTUs from previous studies.
 For example in primates the character \textit{p7} coded first by \cite{ross1998phylogenetic} is reused with the same living species in \cite{seiffert2003fossil}, \cite{marivaux2005anthropoid}, \cite{seiffert2005basal}, \cite{bloch2007new}, \cite{bloch2007new}, \cite{kay2008anatomy}, \cite{silcox2008biogeographic}, \cite{seiffert2009convergent}, \cite{tabuce2009anthropoid}, \cite{boyer2010astragalar}, \cite{seiffert2010fossil}, \cite{marivaux2013djebelemur} and \cite{ni2013oldest}.
+
+For example, the six living primates used in \cite{ross1998phylogenetic} (\textit{Aotus trivirgatus, Galago demidoff, Lemur catta, Microcebus murinus, Nycticebus coucang and Saimiri sciureus}) and their associated characters are reused along with more living species and characters in \cite{seiffert2003fossil}, \cite{marivaux2005anthropoid}, \cite{seiffert2005basal}, \cite{bloch2007new}, \cite{bloch2007new}, \cite{kay2008anatomy}, \cite{silcox2008biogeographic}, \cite{seiffert2009convergent}, \cite{tabuce2009anthropoid}, \cite{boyer2010astragalar}, \cite{seiffert2010fossil}, \cite{marivaux2013djebelemur} and \cite{ni2013oldest}.
+
+
+
 
 \begin{figure}[!htbp]
 \centering
@@ -180,9 +185,10 @@ All the standardised matrices are available on \url{github.com/TGuillerme/Missin
 
 \subsection{Selecting the living OTUs}
 %To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
-We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{bininda-emondsthe2007} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' all OTUs that were present in the Paleobiology database (\url{https://paleobiodb.org/}).
+We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{bininda-emondsthe2007} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' (i.e. OTUs not present in the two previous data sets) all OTUs that were present in the Paleobiology database (\url{https://paleobiodb.org/}).
 For OTUs that did not appear in these three sources, we first decomposed the name (i.e. \textit{Homo sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
 Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; Figure ~\ref{Supp_figure_Taxonomic_algorithm}).
+Non-applicable OTUs were either specimen IDs with no related taxa (e.g. \textit{FMNHPR2081}), abbreviation that were not described in the associated paper (e.g. \textit{Ho.sap.}), non-mammals \textit{stricto-sensu} (e.g. \textit{Sinoconodon}), non standard taxonomic level (e.g. \textit{Spalcotheriids}) invalid taxonomic designation (e.g. \textit{sp\_nov\_1} or \textit{Outgroup}) or typos (e.g. \textit{Hobo sabpiens}).
 
 \begin{figure}[!htbp]
 \centering

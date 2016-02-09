@@ -79,11 +79,18 @@ As shown in ESM1 Figure 1, the number of OTUs with morphological cladistic data 
 Additionally, as Graeme Lloyd mentions, ``older studies tend to be smaller (due to computing limitations) and to commonly reoccur anyway due to data set reuse'' (Reviewer 4, comment 1).
 Following these two observations, we think that including the 20 most recent results % NC: Is that what you did? TG: yep.
  for each order (and higher taxonomic level) was a good balance between the time spent looking for papers, the number of OTUs extracted and the repeatability of the study.
-% TG: try to modify in the paper or improve response.
+We are aware however that we might have missed some specific studies (see Reviewer 2 comment 2) but are confident that our protocol gives a good overall picture of the data availability and that the three repositories used before the Google Scholar search (MorphoBank, Graeme Lloyd's and Ross Mounce's) contained most of the available data.
+In fact, as mentioned in ESM 1, part 1 ``among the 660 papers [collected from the Google Scholar search], only 50 contained a total of 425 extra living OTUs''.
 
 \item{\textcolor{blue}{Similarly, I find the 2010 date cutoff troubling, because I'm not sure that the argument that these recent studies contain a fraction of the previously published characters and OTUs allows you to make a comprehensive statement about the availability of character data. What about the fraction that isn't included? This is a question that needs to be better addressed before you will convince readers that this is really all the data that is out there.}}
 
-%TO DO! Same answer as above?
+We chose this cutoff date to filter our analysis towards accessible data only (see Reviewer 2 comment 2).
+Additionally, we observed that in newer studies (i.e. post 2010), living taxa with anatomical data were rarely added an usually reused from former studies (with sometimes the addition of extra characters).
+We modified the sentence in the ESM1 part 1:
+
+``For example in primates the character p7 coded first by [1] is reused with the same living species in [2], [3], [4], [5], [5], [6], [7], [8], [9], [10], [11], [12] and [13].''
+
+\noindent to: ``For example, the six living primates used in [1] (\textit{Aotus trivirgatus, Galago demidoff, Lemur catta, Microcebus murinus, Nycticebus coucang and Saimiri sciureus}) and their associated characters are reused along with more living species and characters in [2], [3], [4], [5], [5], [6], [7], [8], [9], [10], [11], [12] and [13].''.
 
 \end{enumerate}
 \subsection{Reviewer 1 specific comments:}
@@ -102,7 +109,11 @@ We removed the hyphen.
 
 \item{\textcolor{blue}{P3, L120: How much of a difference does the 25\% or less coverage make to the capacity of Total Evidence phylogenetic analyses to resolve relationships? Does your simulation study have a way of quantifying or describing the probability of getting the ``right'' answer with this little data? It would also help if you could show in your data table what the clades were that had better than 75\% coverage. It's not immediately evident from reading Table 1.}}
 
-% TO DO. To the question, hard to give a value for the probability of getting the ``right'' tree but 25% missing living leads to 0.5 wild card taxa displacement and between 0.8 and 0.4 clade conservation on a linear scale from 1 to 0 with one being the right tree and 0 being a random tree.
+The straight relationship between the living species coverage and the Total Evidence phylogeny topology is hard to quantify precisely and depends on both the metric used for measuring topological differences and the method used to infer the tree.
+Our simulation showed that topology tend to get closer to a random one as morphological data is missing but that in the case of the missing living species, the other parameters we tested (missing data in the fossil record and number of morphological characters) add no significant effect (i.e. when a certain amount of living taxa are missing, the other parameters do not have any extra influence).
+In our simulations we tested 5 different level of missing living taxa (0\%, 10\%, 25\%, 50\% and 75\% of missing living taxa) and we observed that the three first levels had no significant negative effect on topology in relation with the amount of missing data in the fossil record and the number of morphological characters but that the fifth level (75\% of missing living taxa, i.e. 25\% coverage) had a strong negative effect.
+
+Also, we highlighted the different levels of coverage in Table 1 as follow: at any taxonomic level, orders with less than 25\% coverage are highlighted in blue (or dark grey in the black and white version) and orders with more than 75\% coverage are highlithed in orange (or light grey in the black and white version).
 
 \item{\textcolor{blue}{P5, L137: ``taxa'' should be ``OTUs.''}}
 We replaced ``taxa'' with ``OTUs''
@@ -151,10 +162,8 @@ We therefore removed ESM 2 and renamed ESM 3 to ESM 2
 \begin{enumerate}
 \item{\textcolor{blue}{The authors state on page 3 lines 82-90 that they avoided matrices with ``few characters'' due to lower probability of overlapping characters with other matrices and so only selected matrices containing >100 characters. First, a lack of overlapping characters doesn’t seem justifiable, at least to my mind, as a reason to exclude a matrix if the ultimate goal is to infer the placement of extinct taxa relative to extant taxa. Antler ramifications, to use the authors' example, are likely to be a very useful character when attempting to resolve relationships among living and extinct artiodactyls, even if they cannot be coded for monotremes. To flip the argument, a matrix of 200 + characters for mysticetes is similarly likely to contain many non-applicable characters from the perspective of talpids. I do understand that the authors are thinking downstream in terms of super matrices for higher level analyses, but smaller matrices are going to be just as relevant for reaching this goal. You don't have much space in the ms I understand, but surely this needs to be addressed?!}}
 
-%TO DO: let's just remove this threshold thingy since I seem to be the only one to be convinced by it ;)...
-% NC: Yep that seems sensible
 We removed the analysis with a threshold of OTUs with at least 100 characters and replaced it with the analysis without any minimal number of morphological characters.
-We retracted the paragraph aout the character threshold analysis and updated the results of figure 1 and table 1 to contain all living OTUs; we removed the redundant ESM 2 and we updated the figures
+We retracted the paragraph about the character threshold analysis and updated the results of figure 1 and table 1 to contain all living OTUs; we removed the redundant ESM 2 and we updated the figures
 
 \item{\textcolor{blue}{Along these lines, a 100 character limit may seem rational but this is actually, from a practical perspective, very large. molecular matrices of this size would, of course, be laughed at but many of the most robust phylogenetic studies I'm familiar with come in well under this size. I suspect, but cannot be sure, that this partially explains the poor species level coverage the authors find; higher level studies can readily accumulate large numbers of characters because vastly different morphologies are being compared, often using families or genera as exemplars, leading to an abundance of easily defined characters. Species level studies, on the other, are often focused within families or genera to make them more manageable, but here characters are quickly exhausted. To give some random examples that I'm familiar with, Salles (1992) species-level study of Felidae (all species) was based on 44 characters, Wang and Carranza- Casta\~{n}eda's 2008 study of Mephitidae (\textasciitilde50\% of species but all genera) was based on 38 characters, and Bryant et al's 1993 study of Mustelid genera was of 46 characters. These are all important studies, but do not feature here because of the 100 character limit. At the very least I think this results in a downplaying of previous phylogenetic efforts by morphologists in the results. At worst it misrepresents the state of affairs dramatically. Is 100 really the minimum number you want to go with at all phylogenetic scales?}}
 
@@ -172,13 +181,6 @@ Such matrices are likely to not be included in Total Evidence analysis due to th
 
 \item{\textcolor{blue}{I finally am a little skeptical of the sampling done. Looking at Figure 1B, again the clade I'm most familiar with, representation for carnivorans appears very poor. Notwithstanding the issues discussed above regarding matrices with < 100 characters, there are definitely matrices out there that fulfill the authors' requirements that are not represented. For example, a 349 character matrix with near complete sampling at the species is available for Viverridae, Prionodontidae, and Eupleridae in Gaubert et al (2005 Syst Biol.). Going through each clade in the supplement seems beyond the scope of reviewing duties, but I am concerned that if this one matrix can be missed others may have been missed too. I think a reexamination of the literature may be warranted using taxon specific search terms.}}
 
-%TO DO: OK, I think there is a problem here. Either we have to rerun the matrix downloading procedure and be sure we include the ones specified by the reviewers (the correct way!) but that WILL take more than a week. Or else we just add the matrices that are suggested y the reviewers but I have the feeling that that is a bit of cheating (i.e. we're hand picking some data here) - basically that'll just add more carnivora.
-%I think one argument could be to emphasize on one of the points we add in a former version of the manuscript (can't find it): "by available data we mean data in a standard format that can be directly downloaded from the internet (i.e. many of the papers we looked at had no link to their data or the link was broken, meaning that the data is effectively only available upon specific request to the authors [baaaad!!!])."
-
-% NC: Hmmm. I'm concerned about this, and I think your "quick and dirty" solution is pretty dishonest. I think you're going to need to look at your data collection procedure again. 
-% First we need to understand *why* is the paper Graham mentions missing? Because you focus on data from 2010 onwards? Because it's not in Graeme or Ross' databases? Need to understand how it got missed out. Does it appear if you get rid of the 10/20 search results only and search lots of results? Is there a problem with search terms? The answer to this will help us decide how to proceed from here.
-% NC: Although you don't want to waste a huge amount of time on this, you also don't want a reputation for being sloppy, nor a reputation for glossing over your errors. Also it's important for personal research integrity. If that means you spend two weeks recollecting the data then that will have to be accepted. Note that two weeks is really a very short amount of time in the usual 2 years it takes to write a paper (Martin will be expecting you to have brought some work over from your PhD), but you will need to ask for an extension on the corrections. This won't be a problem. Either way this comment will have to explain how the papers Graham mentions are missed out. If you can do that and it's sensible then explaining the latter point about locating the data is probably fine. And I know you're busy - welcome to the world post PhD! All things happen at once...
-
 We dealt with this comment by removing the matrix size threshold and adding a paragraph to the discussion explaining that some matrices might not be included in this study (see reviewer's 2 comments 1 and 2).
 Concerning the Gaubert et al. 2005's study specifically, this study unfortunately did not contain any easily available matrix.
 In fact, the matrix mentioned as Appendix 2 in the paper is not present in the article and neither the TreeBase accession numbers (``S1255'', ``M2193'') nor the provided URL (``www.systematicbiology.org'') links to the matrix.
@@ -193,8 +195,6 @@ We also added a sentence mentioning these results in the manuscript:
 ``It is also encouraging to note that the sampling effort is consistent with diversity at each taxonomic level and there is therefore no direct bias in sampling at any taxonomic level (ESM 2, Figure 1).
 '' p.@ lines@@
 
-
-% NC: May also want to add something to the main text.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%
@@ -214,8 +214,9 @@ We changed the title as the reviewer suggested.
 [...] Still, several papers estimate that the sampling of mammal species (based on cranial characters include teeth) actually is pretty darned good [...].
 Thus, we might be able to richly populate FBD and tip-dating analyses with a LOT of extinct species.}}
 
-%TO DO
-% NC: worth commenting here that we are looking at the living species?
+We totally agree with this comment.
+In fact, among the 286 matrices used in this analysis, we found 5228 unique OTUs including 3627 fossil ones which is pretty impressive knowing the amount of work required to collect data for a single specimen!
+However, in this study, we focused only on the amount of living taxa (1601 unique OTUs containing 847 species) as a way to solve the problems associated with the lack of living taxa on tree topology described in Guillerme \& Cooper 2016. 
 
 \item{\textcolor{blue}{Finally, I would add: who the heck submits a paper for a special volume 6 weeks early?!?!? You make the rest of us look bad!}}
 This paper formed part of my PhD thesis that I submitted in September which partially explains the swift submission!
@@ -238,6 +239,7 @@ As a side note and for future reference for the authors, a large number of phylo
 (These were formerly at my website at the Field Museum, but that site obviously disappeared when I moved to the Smithsonian.)
 Because of the nature of the projects for which I was using these datasets, most of them are species-level, but some are genus-level, too.}}
 
+We thank the reviewer for this mention and we will be sure to use this database for future studies.
 % NC: If you end up needing to redo the data collection it might be worth checking the PBDB...
 
 \item{\textcolor{blue}{Lines 164-166: ``For example, a Carnivora fossil will be unable to branch in the Herpestidae, and will have more chance to randomly branch within Canidae (Figure 1B).'' 
@@ -249,7 +251,11 @@ This is the opposite of Felsenstein's long branch: insofar as skeletal character
 That in turn means that the fossil herpestids are going to be ``attracted'' to non-zero length branches elsewhere, with long branches in related groups such as canids being particularly good candidates because there is a higher chance of homoplasies between canids and herpesitds on the longer branches.
 So, it will not be random: they probably will latch themselves onto the longest reasonably branch among the closest relatives for which anatomical data are present.}}
 
-% NC: Yep he's right, modify the sentence to account for this. Also cite a long branch attraction stuff. Check if Pete has written anything - it'd be nice to cite him as he's been so helpful.
+We do agree with this comment and changed this comment to:
+``For example, a Carnivora fossil will be unable to be placed in the Herpestidae clade due to the fact that they have no anatomical characters available (i.e. extant Herpestidae have a zero-length branches for anatomical characters).
+Such fossil, however, will have a higher probability to be placed along a branch that contains many anatomical characters (i.e. long branches for anatomical characters, e.g. Canidae or Ursidae (Figure 1B).''
+
+% NC: Yep he's right, modify the sentence to account for this. Also cite a long branch attraction stuff. Check if Pete has written anything - it'd be nice to cite him as he's been so helpful. % TG: I looked for relevant paper on this "short-branch repulsion" but didn't found any that's mildly relevant from Peter...
 
 \end{enumerate}
 
@@ -264,7 +270,7 @@ However, in my experience older studies tend to be smaller (due to computing lim
 The authors also already state that subsequent search results tended to yield no substantial additional data, and by the reviewer's own admission the assembled data seem to look correct.
 Thus a recollecting of the data doesn't seem necessary (but see further comments below).}}
 
-% NC: This is clearly a get out clause to get this done more rapidly. 
+We developed description of our data collection protocol in the ESM 1 (see Reviewer 1 comment 2) and underlined the caveats in the discussion (see Reviewer 2 comment 2).
 
 \item{\textcolor{blue}{Reviewer 2 (Graham Slater)'s complaint are - in my view - the most substantial.
 I agree that the >100 characters cut off is not as strongly justified as it might be.
@@ -279,9 +285,7 @@ I do not expect the authors to more thoroughly search the literature for all pos
 Nevertheless, it does deserve mention in the discussion as a potential bias in the results.
 I don't think this undermines the study, but rather should be viewed as both a reason for optimism and an acknowledgement of a separate problem (i.e., access to cladistic data) which multiple publications already cover (e.g., see Ross Mounce's work).}}
 
-% NC: OK so Graeme is going with your "data accessibility" idea here to get round having to redo the data collection. I think this will be ok as long as you add comments to that effect in the text, and work out why Graham's papers are missing.
-
-% NC: Get rid of the 100 characters thing (I never really understood why it was needed), and make sure all the results are definitely correct.
+We removed the character threshold in the whole analysis and specified what we meant by ``data accessibility'' in the discussion (see Reviewer 2 comment 2).
 
 \item{\textcolor{blue}{Reviewer 3 (Pete Wagner)'s major problem - with which I agree - is semantic, and thus easily fixable with a few explicit caveats (e.g., ``by cladistic we mean...'').}}
 
@@ -289,9 +293,11 @@ I don't think this undermines the study, but rather should be viewed as both a r
 This could surely be synthesised from the tables and would be a nice simple way to compare the with and without threshold results.
 Similarly, I think Reviewer 3's [We assume Graeme Lloyd is refering to Graham Slater's reviewe (reviewer 2)] %or same as comment before: no names!
  graphs are a nice potential addition to the ESM.}}
-\end{enumerate}
 
-% NC: Easy enough to add a line to all the tables for total coverage
+We added the data coverage among all mammals in the Table 1 (``Mammalia (Class)'') and added it to the methods, results and discussion.
+We also added the Reviewer 2's extra analysis suggestion to the ESM 2 part 1.
+
+\end{enumerate}
 
 \subsection{Reviewer 4 specific comments:}
 \begin{enumerate}
@@ -303,37 +309,51 @@ We removed the ``http://www.'' part of the URLs.
 We fixed this typo.
 
 \item{\textcolor{blue}{Line 104 - It's not completely clear to me how ``distance'' is measured. Is this branch-lengths on a time-scaled tree? Or just a node count?}}
-We have clarified this by changing ``observed mean distance between each of $n$ taxa'' to ``observed mean sum of the branch lengths between each of $n$ taxa''. % NC: Fix in document %TG:done
+We have clarified this by changing ``observed mean distance between each of $n$ taxa'' to ``observed mean sum of the branch lengths between each of $n$ taxa''.
 
 \item{\textcolor{blue}{Line 117 - It's not clear to me how supraspecific values were calculated if the reference phylogeny (ref 10) is species-level. Are you using the node subtending the higher taxon or something else?}}
-%TO CHECK!
-% NC: Probably you've pruned the phylogeny to include only species within each order/family?
+We pruned Bininda-Emonds et al's phylogeny for each order in order to include only the species within this order using the the functions:
+
+\texttt{nodeX <- ape::getMRCA(treeAllMammals, listOfSpeciesFromOrderX)}\\
+\texttt{treeOrderX <- ape::drop.tip(treeAllMammals, nodeX)}\\
+
+We added the following sentence to in the methods:
+``For each analysis our focal taxa were those with available anatomical characters at that taxonomic level and the phylogeny was that of the order pruned from [10]. For each order, we pruned the phylogeny from [10] to include only the species/genus/families from this order.''. p@. lines@@.
+
 
 \item{\textcolor{blue}{Line 149 - ``most palaeontological studies use the genus as their smallest OTU'' I'm not sure if this is strictly true. It's more that shorter OTU names are commonly used. After all at least one actual specimen has to be coded and in my experience if you read the paper usually only a single species is used. Palaeontologists are just bad at using proper binomials in their matrices (which is an issue, but a different one). In addition ref 20 is actually all species-level OTUs! (I didn't check ref 21.)}}
-%To CHECK, do we actually care? 
-% NC: Just change it from "most" to "many", or say paleo studies commonly feature only one species in a genus.
+
 We modified this statement by stating that ``many palaeontological studies use the genus (or monospecific genera) as their smallest OTU''.
 
 \item{\textcolor{blue}{Line 154 - ``phylogenetically overdispersed'' Purely semantic, but I guess what you mean is that even sampling would be ideal, and this is *measured* using phylogenetic over-dispersion.}}
+
 We changed ``the ideal scenario is for them to be phylogenetically overdispersed'' to ``the ideal scenario is for them to be evenly distributed (as measured by phylogenetic overdispersion)''.
 
 \item{\textcolor{blue}{Line 245 - The caption could be more informative regarding the random and clustered distributions that these figures represent.}}
+
 We changed the caption to: ``Phylogenetic distribution of species with available cladistic data across two orders (A: Primates; B: Carnivora). Blue branches indicate available cladistic data for the species. Available cladistic data is randomly distributed in Primates (A) and clustered in Carnivora (B).''.
 
 \item{\textcolor{blue}{ESM 1 - Incomplete sentence: ``The list of all the 286 download matrices is available on''}}
-we fixed this typo. See reviewer 1 specific comment 12.
+
+We fixed this typo. See reviewer 1 specific comment 12.
 
 \item{\textcolor{blue}{ESM 1 - Incomplete sentence: ``All the standardised matrices are available on''}}
+
 We fixed this typo. See reviewer 1 specific comment 12.
 
 \item{\textcolor{blue}{ESM 1 - ``designated as ``fossil'' all OTUs that were present in the Paleobiology database'' The database contains extant taxa too, although these should be marked as such. I guess this doesn't matter given the flow chart in Figure 2, but is something the authors should be aware of. (Obviously more generally living species can have fossil records, or at least plenty of fossils are assigned to extant species.)}}
-%TO DO: change ``fossil'' to ``non living OTU''? As in OTU that is not present in the Wilson Reeder list or the Bininda Emonds tree?
+
+We do agree with this point (in a similar way: \textit{Thylacinus cynocephalus} is present in Wilson Reader's list but can not be designated as ``living'') and thus added a precision to what we mean by ``fossil'' OTU in the ESM 1: ``i.e. OTUs not present in the two previous data sets [Wilson Reeder and Binida-Emonds]''.
 
 \item{\textcolor{blue}{ESM 1 Figure 2 - How many OTUs were ignored? And based on the (assumed) cursory inspection of the authors what are they? Higher taxa? Specimens? Or just species you can't reconcile with your three data sets?}}
-%TO DO: add the number of ignored OTUs. I think they're mainly specimen IDs without species names.
+
+1549 of the 11010 OTUs were ignored.
+We added the following sentence to the ESM 1 to explain which OTUs were considered as NAs.
+``Non-applicable OTUs were either specimen IDs with no related taxa (e.g. \textit{FMNHPR2081}), abbreviation that were not described in the associated paper (e.g. \textit{Ho.sap.}), non-mammals \textit{stricto-sensu} (e.g. \textit{Sinoconodon}), non standard taxonomic level (e.g. \textit{Spalcotheriids}) invalid taxonomic designation (e.g. \textit{sp\_nov\_1} or \textit{Outgroup}) or typos (e.g. \textit{Hobo sabpiens}).''
 
 \item{\textcolor{blue}{ESM 2 - ``The following section contains supplementary results to the main body: the available data structure using the NTI and the PD metric'' Abbreviations should be introduced when first used, not later as they are here.}}
 We changed this to ``using the Net Relatedness Index (NRI) and the Nearest Taxon Index (NTI) metrics''.
+
 \end{enumerate}
 
 

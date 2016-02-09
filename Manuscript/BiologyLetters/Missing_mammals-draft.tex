@@ -172,10 +172,10 @@ We designated as ``living'' all OTUs that were either present in the phylogeny o
 We retained 1601 unique living OTUs from 286 matrices.
 
 \subsection{Data availability and distribution}
-To assess the availability of anatomical characters for each mammalian order, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species. %TG: changed cladistic datat to anatomical characters
+To assess the availability of anatomical characters for each mammalian order and for Mammalia as a class, we calculated the percentage of OTUs with cladistic data at three different taxonomic levels: family, genus and species. %TG: changed cladistic datat to anatomical characters
 We consider orders with \textless 25\% of living taxa with available anatomical characters as having low data coverage, and orders with \textgreater 75\% of living taxa with available anatomical characters as having high data coverage. 
 
-For each order, we investigated whether the available anatomical characters were (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: the Nearest Taxon Index (NTI; \cite{webb2002phylogenies}) and the Net Relatedness Index (NRI; \cite{webb2002phylogenies}). 
+For each order and for Mammalia as a class, we investigated whether the available anatomical characters were (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: the Nearest Taxon Index (NTI; \cite{webb2002phylogenies}) and the Net Relatedness Index (NRI; \cite{webb2002phylogenies}). 
 NTI is most sensitive to clustering or overdispersion near the tips, whereas NRI is more sensitive to it across the whole phylogeny \cite{Cooper2008}. 
 Both metrics were calculated using the \texttt{picante} package in R \cite{picante,R}.
 
@@ -203,7 +203,8 @@ For each analysis our focal taxa were those with available anatomical characters
 
 
 \section{Results}
-11 out of 28 orders have low coverage (\textless 25\% species with available anatomical characters) and 7 have high coverage (\textgreater 75\% species with available anatomical characters) at the species-level.
+Among all Mammalia, the species coverage was low (\textless 25\% species with available anatomical characters) but the family coverage was high (\textgreater 75\% species with available anatomical characters).
+For each order, 11 out of 28 have low coverage and 7 have high coverage at the species-level.
 At the genus-level, one order have low coverage and 15 have high coverage, and at the family-level, no orders have low coverage and 25 have high coverage (Table\ref{Table_results}).
 
 %TG: former results:
@@ -216,7 +217,8 @@ At the genus-level, one order have low coverage and 15 have high coverage, and a
 
 \input{Table_results}
 
-Only seven orders had significantly clustered data (Cetartiodactyla, Cingulata, Pilosa and Rodentia at the species-level and Carnivora, Chiroptera and Soricomorpha at both species- and genus-level) and none had significantly overdispersed data (Table~\ref{Table_results}).
+Among all Mammalia, the data was significantly cluster when using the NTI at the species and genus level.
+For each order, only seven had significantly clustered data (Cetartiodactyla, Cingulata, Pilosa and Rodentia at the species-level and Carnivora, Chiroptera and Soricomorpha at both species- and genus-level) and none had significantly overdispersed data (Table~\ref{Table_results}).
 
 Figure \ref{Figure_example_coverage} shows randomly distributed OTUs with cladistic data in Primates (Figure \ref{Figure_example_coverage}A) and phylogenetically clustered OTUs with cladistic data in Carnivora (mainly Canidae and Urisdae but no Herpestidae; Figure \ref{Figure_example_coverage}B).
 
@@ -238,7 +240,8 @@ Blue branches indicate available anatomical characters for the species.}
 Our results show that although phylogenetic relationships among living mammals are well-resolved (e.g. \cite{BinindaEmonds,meredithimpacts2011}), most of the data used to build these phylogenies is molecular, and few anatomical characters are available for living mammals compared to fossils (e.g. \cite{O'Leary08022013,ni2013oldest}).
 This has implications for building Total Evidence phylogenies containing both living and fossil mammals, as without sufficient available anatomical characters for living species, fossil placements in these trees are very uncertain \cite{GuillermeCooper}.
 
-The number of living mammalian OTUs with no available anatomical characters was surprisingly high at the species-level: only seven out of 28 orders have a high coverage of taxa with available anatomical characters.
+The number of living mammalian OTUs with available anatomical characters was surprisingly low at the species-level: only 17\%.
+Only seven out of 28 orders have a high coverage of taxa with available anatomical characters.
 This high coverage threshold of 75\% of taxa with available anatomical characters represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \cite{GuillermeCooper}.
 Beyond this threshold, there is considerable displacement of wildcard taxa and decreased clade conservation \cite{GuillermeCooper}.
 Therefore we expect difficulties in placement of fossils at the species-level in most mammalian orders, but fewer issues at higher taxonomic levels.
@@ -252,8 +255,8 @@ Here we expect no special bias in the placement of fossils \cite{GuillermeCooper
 The worst case scenario for fossil placement is that species with available anatomical characters are phylogenetically clustered. 
 Then we expect two major biases to occur: first, fossils will not be able to branch within a clade containing no data, and second, fossils will have higher probability of branching within the most sampled clade by chance. 
 Our results suggest that this may be problematic at the genus-level in Carnivora, Chiroptera and Soricomorpha. 
-For example, a Carnivora fossil will be unable to be placed in the Herpestidae clade% rev 1.2.7
-, and will have more chance to randomly branch within Canidae or Ursidae (Figure \ref{Figure_example_coverage}B).
+For example, a Carnivora fossil will be unable to be placed in the Herpestidae clade due to the fact that they have no anatomical characters available (i.e. extant Herpestidae have a zero-length branches for anatomical characters).
+Such fossil, however, will have a higher probability to be placed along a branch that contains many anatomical characters (i.e. long branches for anatomical characters, e.g. Canidae or Ursidae (Figure \ref{Figure_example_coverage}B).
 
 It is worth noting, however, that our analysis did not include all the matrices containing anatomical characters ever published.
 In fact, our data collection procedure focused on including studies that provided matrices easily accessible, i.e. we did specifically not include any matrices that were only available in paper format (e.g. printed in books), non-reusable format (e.g. an image of the matrix) %TG: yes... There were quiet a few of them!
