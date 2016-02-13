@@ -125,35 +125,42 @@ $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 
 
 \section{Supplementary results - 1}
-The following section contains a supplementary analysis looking at the sampling effort for all the mammalian orders at the three different taxonomic levels (family, genus and species).
-We calculated linear regressions %TG: does one calculate regressions? I would go for drawing regressions but that's not semantically correct...
-between the logged number of sampled taxonomic levels per order against the logged total number of total taxonomic levels and fixed the intercept to 0.
-This way we could calculate the slope of the regressions (\textit{b}) indicating the sampling effort (i.e. if the slope is 1, the sampling effort is maximum along each order for the taxonomic level, if 0 there is no significant sampling) and the fit of the regressions (\textit{R$^2$}).
-The code for this analysis is available at this link \url{https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Sampling_effort.R}.
+The following section contains a supplementary analysis looking at the sampling effort for mammalian orders at three different taxonomic levels (family, genus and species).
+We fitted linear regressions %TG: does one calculate regressions? I would go for drawing regressions but that's not semantically correct... % NC: It's a model so you fit it
+between the log of the number of sampled families/genera/species for each order against the log of the total number of families/genera/species in each order % NC: Taken from where? The taxonomy? Where do you get this total from?
+and fixed the intercept at zero (because when no families/genera/species exist they cannot be sampled).
+The slope of the regression gives an indication of the sampling effort: if the slope is 1, the number of sampled families/genera/species and the total number of families/genera/species are equal, i.e. all families/genera/species have been sampled. 
+Slopes of less than 1 indicate lower sampling effort.
+The code for this analysis is available here: \url{github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Sampling_effort.R}.
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{Supp_figure_sampling_effort.pdf}
-\caption{Sampling effort across all mammalian orders on the three different taxonomic levels. The \textit{R$^2$} and the slope (\textit{b}) are reported for each linear model.}
+\caption{Sampling effort across mammalian orders at the three different taxonomic levels. The \textit{R$^2$} and the slope (\textit{b}, forced through the origin) are reported for each regression.} % NC: Should report adjusted r2 because sample size is small.
 \label{Supp_Figure_sampling}
 \end{figure}
 
-This analysis shows suggests that the sampling effort reflects diversity for each taxonomic level (i.e. morphological characters were collected for each order according to it's size; Figure \ref{Supp_Figure_sampling}).
-However, it is worth noting that this relation is stronger at higher taxonomic level (i.e. family, \textit{R$^2$}=0.99 \textit{b}=0.936) in comparison to the species level (\textit{R$^2$}=0.852 \textit{b}=0.711).
-These results might be simply due to the increase of elements between each taxonomic levels (i.e. number of species $>$ genera $>$ families)
-Nonetheless it is probable that mammalian morphological phylogeneticists did actually focused on resolving higher level relationships among mammalian orders (see Table 1 in the main text).
+% NC: Fix the y tick labels (use las = 1 to make them horizontal), what's up with panel c? the axes should be the same size as the others and why doesn't the x axis cover the range of the data? Also what are the three panels? explain in the legend and maybe label as a,b,c? Also axes labels should be log(sampled families) etc. 
+%Supp mat is no excuse for sloppy figures.
+
+This analysis suggests that sampling effort effectively reflects diversity for each taxonomic level, i.e. morphological characters were collected for each order according to its size (Figure \ref{Supp_Figure_sampling}).
+However, it is worth noting that this relation is stronger at higher taxonomic levels (i.e. family-level, \textit{R$^2$}=0.99 \textit{b}=0.936) compared to the species-level (\textit{R$^2$}=0.852 \textit{b}=0.711).
+These results might be simply due to the increasing number of groups at each taxonomic level (i.e. number of species $>$ genera $>$ families).
+But it is also probable that mammalian morphological phylogeneticists have focused on resolving higher level relationships among mammalian orders (see Table 1 in the main text), resulting in better coverage at the family-level.
 
 \newpage
 
 \section{Supplementary results - 2}
-The following section contains supplementary results to the main body: the phylogenetic representation of the data availability per order (excluding Primates and Carnivora, present in the main body).
+The following section contains phylogenetic representations of availability of coded anatomical characters for each mammalian order (excluding results for Primates and Carnivora that are present in the main text).
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{Supp_figure_AFROSORICIDA.pdf}
-\caption{Distribution of available morphological data across Afrosoricida. Edges are colored in grey when no morphological data is available or in blue when data is available.}
+\caption{Phylogenetic distribution of species with available coded anatomical characters across Afrosoricida. Blue branches indicate species with available coded anatomical characters.}
 \label{Supp_Figure_Phylo-Afrosoricida}
 \end{figure}
+
+% NC: I have copied this wording from the main text. Fix all the ones below please :)
 
 \begin{figure}[!htbp]
 \centering
