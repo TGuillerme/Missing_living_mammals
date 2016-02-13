@@ -123,77 +123,77 @@ $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 %\label{Figure_missing_data_problem}
 %\end{figure}
 
+% NC: It's important to follow up on typo and grammar issues in the supp for things that were mentioned in the main text. For example, dropping https... MorphoBank...
+
 
 \section{1 - Data collection}
 \subsection{Public repositories}
-We downloaded available matrices containing fossil and/or living mammal taxa from the three data bases using the following list of keywords:
+We downloaded available matrices containing fossil and/or living mammal taxa from the three databases using the following list of keywords:
 
 \texttt{Mammalia; Monotremata; Marsupialia; Placentalia; Macroscelidea; Afrosoricida; Tubulidentata; Hyracoidea; Proboscidea; Sirenia; Pilosa; Cingulata; Scandentia; Dermoptera; Primates; Lagomorpha; Rodentia; Erinaceomorpha; Soricomorpha; Cetacea; Artiodactyla; Cetartiodactyla; Chiroptera; Perissodactyla; Pholidota; Carnivora; Didelphimorphia; Paucituberculata; Microbiotheria; Dasyuromorphia; Peramelemorphia; Notoryctemorphia; Diprotodontia}.
 
-Details about each public repository specific search option is listed below.
-Note that some matrices have been downloaded from more than one database but that it is not an issue since we are interested in the total number of unique living OTUs and that if some were present in more than one matrix, they still only counted as one single OTU.
+Details about the specific search options used for each public repository are listed below.
+Note that some matrices were downloaded from more than one database but this is not a problem because we are interested in the total number of unique living operational taxonomic units (OTUs), therefore even if some were present in more than one matrix they still only counted as a single OTU.
 
-\subsubsection{Morphobank}
-We accessed the Morphobank repository (\url{morphobank.org}) on the 10th of June 2015 and used the keywords listed above in the search menu.
+\subsubsection{MorphoBank}
+We accessed the MorphoBank repository (\url{morphobank.org}) on 10th June 2015 and used the keywords listed above in the search menu.
 We downloaded the data associated with each project matching with the keyword.
 
 \subsubsection{Graeme Lloyd}
-We accessed Graeme Lloyd's website repository (\url{graemetlloyd.com/matrmamm.html}) on the 10th of June 2015 and downloaded all the matrices that were available with a direct download link in the mammal data section of the website (\texttt{http://graemetlloyd.com/matrmamm.html}).
+We accessed Graeme Lloyd's website repository (\url{graemetlloyd.com/}) on 10th June 2015 and downloaded all the matrices that were available with a direct download link in the mammal data section of the website (\texttt{graemetlloyd.com/matrmamm.html}).
 
 \subsubsection{Ross Mounce}
-We accessed Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}) on the 11th of June 2015 and downloaded all 601 matrix.
-We then ran a shell script to select only the matrices that had any text element that match with one of the search terms (\url{https://github.com/TGuillerme/Missing_living_mammals/blob/master/Functions/select.files.sh}).
-To make the matrix selection more thorough, we ignored the keywords case as well as the latin suffix (\textit{ia}, \textit{ata}, \textit{ea}, and \textit{a}).
+We accessed Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}) on 11th June 2015 and downloaded all 601 matrices.
+We then ran a shell script to select only the matrices that had any text element that matched with one of the search terms (\url{github.com/TGuillerme/Missing_living_mammals/blob/master/Functions/select.files.sh}).
+To make the matrix selection more thorough, we ignored the case and Latin suffix (i.e. \textit{ia}, \textit{ata}, \textit{ea}, and \textit{a}) of the keywords.
 
-\subsection{Google scholars (accessed 11th of June 2015)}
-To make sure we didn't miss any extra matrix that wasn't available on one of these repositories, we ran a Google Scholar search on the 5th of January. 
-We downloaded the additional cladistic matrices from the 20 first search results matching with our selected keywords and with any of the 35 taxonomic levels (mammals Orders, Infraclasses and Class).
-We used the following key words:
+\subsection{Google Scholar (accessed 11th June 2015)}
+To ensure we did not miss any extra matrices that were not available on one of these repositories, we ran a Google Scholar search on the 5th January % NC ??? It says 11th June above. 
+using the following keywords:
 
 \texttt{\textit{order} ("morphology" OR "morphological" OR "cladistic") AND characters matrix paleontology phylogeny}
 
-were \textit{order} was replaced by all the keywords listed above. For each 33 keywords, we selected the 20 first papers to match the Google search published since 2010 resulting in 660 papers.
-Among these papers, not all contained relevant data (discrete morphological characters AND mammalian data).
-We selected only the 20 first results per search term to avoid downloading articles that were too irrelevant.
-Among the 660 papers, only 50 contained a total of 425 extra living OTUs on a total of 4950 OTUs (Figure ~\ref{Supp_figure_google_searches}).
-Also we decided to select only the articles published since 2010 because nearly every one of the recent published matrix contains both a fraction of morphological characters and OTUs from previous studies.
-For example, the six living primates used in \cite{ross1998phylogenetic} (\textit{Aotus trivirgatus, Galago demidoff, Lemur catta, Microcebus murinus, Nycticebus coucang and Saimiri sciureus}) and their associated characters are reused along with more living species and characters in \cite{seiffert2003fossil}, \cite{marivaux2005anthropoid}, \cite{seiffert2005basal}, \cite{bloch2007new}, \cite{bloch2007new}, \cite{kay2008anatomy}, \cite{silcox2008biogeographic}, \cite{seiffert2009convergent}, \cite{tabuce2009anthropoid}, \cite{boyer2010astragalar}, \cite{seiffert2010fossil}, \cite{marivaux2013djebelemur} and \cite{ni2013oldest}.
+where \textit{order} was replaced by each of the taxonomic subdivision keywords listed above in turn.
+For each taxonomic subdivision keyword we selected the 20 first papers published since 2010 resulting in 660 papers.
+We selected only the 20 first results for each search term to avoid downloading large numbers of irrelevant articles, and because the rate of discovery of new matrices was very low and unlikely to be substantially improved by downloading more papers.
+For example, in the 660 papers we downloaded, only 50 contained extra living OTUs and only contributed 425 OTUs to our total of 4950 OTUs (Figure ~\ref{Supp_figure_google_searches}).
+We selected only articles published since 2010 because almost every recently published matrix contained some of the morphological characters and OTUs from previous studies, thus almost all older studies are represented in the matrices we collected.
+For example, the six living primates used in \cite{ross1998phylogenetic} (\textit{Aotus trivirgatus, Galago demidoff, Lemur catta, Microcebus murinus, Nycticebus coucang and Saimiri sciureus}) and their associated characters are reused along with more living species and characters in \cite{seiffert2003fossil, marivaux2005anthropoid, seiffert2005basal, bloch2007new,bloch2007new, kay2008anatomy, silcox2008biogeographic, seiffert2009convergent,tabuce2009anthropoid, boyer2010astragalar, seiffert2010fossil, marivaux2013djebelemur, ni2013oldest}.
 
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{Supp_figure_google_searches.pdf}
-\caption{Google searches additional OTUs rarefaction curve. The x-axis represent the number of Google Scholar matches (papers, books or abstracts) and the y-axis represents the cumulative number of additional living OTUs per google scholar match.}
+\caption{Google Scholar searches additional OTUs rarefaction curve. The x-axis represents the number of Google Scholar matches (papers, books or abstracts) and the y-axis represents the cumulative number of additional living OTUs for each Google Scholar match.}
 \label{Supp_figure_google_searches}
 \end{figure}
 
-The list of all the 286 download matrices is available on \url{github.com/TGuillerme/Missing_living_mammals/tree/master/Data/Matrices}.
+The list of all 286 downloaded matrices is available on \url{github.com/TGuillerme/Missing_living_mammals/tree/master/Data/Matrices}.
 The matrices contained a total of 11010 operational taxonomic units (OTUs) of which 5228 were unique.
 In this study, we refer to OTUs rather than species because the entries in the downloaded matrices were not standardised and ranged from specific individual specimen names (i.e. the name of a collection item) to the family-level.
 Where possible, we considered OTUs at their lowest valid taxonomic level (i.e. species) but some OTUs were only valid at a higher taxonomic level (e.g. genus or family).
 Therefore for some orders, we sampled more genera than species.
 
 \subsection{Standardising the matrices}
-We transformed all the non-nexus matrices (tnt, word, excel, jpeg) to nexus format manually.
-We then cleaned the nexus matrices by removing any extra information (trees, continuous characters, morphological characters description, molecular data) to end up with nexus matrices containing only the discrete morphological data.
-We then manually fixed the incorrectly-formatted binomial names (e.g. \textit{H. sapiens} became \textit{Homo sapiens}) using the abbreviation list in the concerned publications. 
+We transformed all the non-NEXUS matrices (TNT, Word, Excel, JPEG) to NEXUS format manually.
+We then cleaned the NEXUS matrices by removing any extra information (trees, continuous characters, morphological character descriptions, molecular data) to end up with NEXUS matrices containing only the discrete morphological data.
+We then manually fixed the incorrectly-formatted binomial names (e.g. \textit{H. sapiens} became \textit{Homo sapiens}) using the abbreviation list in the relevant publications. 
 All the standardised matrices are available on \url{github.com/TGuillerme/Missing_living_mammals/tree/master/Data/Matrices_binomial/Matrices}.
 
 \subsection{Selecting the living OTUs}
-%To select the lowest valid taxonomic level for each OTU, we standardised their taxonomy by correcting species names so they matched standard taxonomic nomenclature (e.g., \textit{H. sapiens} was transformed to \textit{Homo sapiens}).
-We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{bininda-emondsthe2007} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' (i.e. OTUs not present in the two previous data sets) all OTUs that were present in the Paleobiology database (\url{https://paleobiodb.org/}).
+We designated as ``living'' all OTUs that were either present in the phylogeny of \cite{bininda-emondsthe2007} or the taxonomy of \cite{wilson2005mammal}, and designated as ``fossil'' all OTUs that were present in the Paleobiology database (\url{paleobiodb.org/}).
 For OTUs that did not appear in these three sources, we first decomposed the name (i.e. \textit{Homo sapiens} became \textit{Homo} and \textit{sapiens}) and tried to match the first element with a higher taxonomic level (family, genus etc.).
 Any OTUs that still had no matches in the sources above were designated as non-applicable (NA; Figure ~\ref{Supp_figure_Taxonomic_algorithm}).
-Non-applicable OTUs were either specimen IDs with no related taxa (e.g. \textit{FMNHPR2081}), abbreviation that were not described in the associated paper (e.g. \textit{Ho.sap.}), non-mammals \textit{stricto-sensu} (e.g. \textit{Sinoconodon}), non standard taxonomic level (e.g. \textit{Spalcotheriids}) invalid taxonomic designation (e.g. \textit{sp\_nov\_1} or \textit{Outgroup}) or typos (e.g. \textit{Hobo sapions}).
+Non-applicable OTUs were either specimen IDs with no related taxon names (e.g. \textit{FMNHPR2081}), abbreviations that were not described in the associated paper (e.g. \textit{Ho.sap.}), non-mammals \textit{stricto-sensu} (e.g. \textit{Sinoconodon}), non standard taxonomic levels (e.g. \textit{Spalcotheriids}) invalid taxonomic designations (e.g. \textit{sp\_nov\_1} or \textit{Outgroup}) or typos (e.g. \textit{Hobo sapions}).
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1\textwidth]{Supp_figure_Taxonomic_algorithm.pdf}
-\caption{Taxonomic matching algorithm used in this study. For each matrix, each operational taxonomic units (OTU) is matched with the super tree from Fritz 2009. If the OTU matches, then it is classified as living. Else it is matched with the Wilson \& Reeders 2005 taxonomy list. If the OTU matches, then it is classified as living. Else it is matched with the Paleo Database list of mammals. If the OTU matches, then it is classified as fossil. Else it is ignored.}
+\caption{Taxonomic matching algorithm used in this study. For each matrix, each operational taxonomic unit (OTU) is matched with the supertree from Fritz et al. 2009. If the OTU matches, then it is classified as living. Otherwise it is matched with the Wilson \& Reeder 2005 mammalian taxonomy. If the OTU matches, then it is classified as living. Otherwise it is matched with the Paleobiology database list of mammals. If the OTU matches, then it is classified as fossil. Otherwise it is ignored.}
 \label{Supp_figure_Taxonomic_algorithm}
 \end{figure}
 
-\section{2 - Data reproducibility}
+\section{2 - Data collection reproducibility}
 Every step of the analysis (apart from downloading and standardisation of the matrices) is entirely repeatable via GitHub (\url{github.com/TGuillerme/Missing_living_mammals}).
 %Needs to fix this in GitHub
 %1-Rarefaction ?
