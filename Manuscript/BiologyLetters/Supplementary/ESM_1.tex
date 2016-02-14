@@ -104,26 +104,23 @@ $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, 
 \vspace{1in}
 
 \end{center}
-%\modulolinenumbers[1]
-%\linenumbers
-
 
 \newpage
 
 
-%TG: Maybe useless, I'll add that just in the thesis.
-%\section{Graphical abstract}
 
-%\begin{figure}[!htbp]
-%\centering
-%    \includegraphics[width=1\textwidth]{MissingDataFigure.pdf}
-%\caption{Example of topological errors due to missing morphological data in living taxa.
-%The phylogeny contains two clades, Aves and Mammalia, with molecular data (grey) for both but only morphological data (red) for Aves.
-%If a mammalian fossil species (with no molecular data) is added to the phylogeny, it will erroneously branch with the Aves instead of the Mammalia because no morphological data will overlap between the fossil mammals and the living ones.}
-%\label{Figure_missing_data_problem}
-%\end{figure}
 
+
+
+% TO DO!
 % NC: It's important to follow up on typo and grammar issues in the supp for things that were mentioned in the main text. For example, dropping https... MorphoBank...
+
+
+
+
+
+
+
 
 
 \section{1 - Data collection}
@@ -148,8 +145,7 @@ We then ran a shell script to select only the matrices that had any text element
 To make the matrix selection more thorough, we ignored the case and Latin suffix (i.e. \textit{ia}, \textit{ata}, \textit{ea}, and \textit{a}) of the keywords.
 
 \subsection{Google Scholar (accessed 11th June 2015)}
-To ensure we did not miss any extra matrices that were not available on one of these repositories, we ran a Google Scholar search on the 5th January % NC ??? It says 11th June above. 
-using the following keywords:
+To ensure we did not miss any extra matrices that were not available on one of these repositories, we ran a Google Scholar search on the 11th June using the following keywords:
 
 \texttt{\textit{order} ("morphology" OR "morphological" OR "cladistic") AND characters matrix paleontology phylogeny}
 
@@ -157,7 +153,7 @@ where \textit{order} was replaced by each of the taxonomic subdivision keywords 
 For each taxonomic subdivision keyword we selected the 20 first papers published since 2010 resulting in 660 papers.
 We selected only the 20 first results for each search term to avoid downloading large numbers of irrelevant articles, and because the rate of discovery of new matrices was very low and unlikely to be substantially improved by downloading more papers.
 For example, in the 660 papers we downloaded, only 50 contained extra living OTUs and only contributed 425 OTUs to our total of 4950 OTUs (Figure ~\ref{Supp_figure_google_searches}).
-We selected only articles published since 2010 because almost every recently published matrix contained some of the morphological characters and OTUs from previous studies, thus almost all older studies are represented in the matrices we collected.
+We selected only articles published since 2010 because almost every recently published matrices contained some of the morphological characters and OTUs from previous studies, thus almost all older studies are represented in the matrices we collected.
 For example, the six living primates used in \cite{ross1998phylogenetic} (\textit{Aotus trivirgatus, Galago demidoff, Lemur catta, Microcebus murinus, Nycticebus coucang and Saimiri sciureus}) and their associated characters are reused along with more living species and characters in \cite{seiffert2003fossil, marivaux2005anthropoid, seiffert2005basal, bloch2007new,bloch2007new, kay2008anatomy, silcox2008biogeographic, seiffert2009convergent,tabuce2009anthropoid, boyer2010astragalar, seiffert2010fossil, marivaux2013djebelemur, ni2013oldest}.
 
 
@@ -195,10 +191,6 @@ Non-applicable OTUs were either specimen IDs with no related taxon names (e.g. \
 
 \section{2 - Data collection reproducibility}
 Every step of the analysis (apart from downloading and standardisation of the matrices) is entirely repeatable via GitHub (\url{github.com/TGuillerme/Missing_living_mammals}).
-%Needs to fix this in GitHub
-%1-Rarefaction ?
-%2-Selecting the OTUs
-%3-Analysing the availability and the data structure
 
 \newpage
 
