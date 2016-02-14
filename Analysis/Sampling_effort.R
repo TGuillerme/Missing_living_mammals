@@ -57,6 +57,9 @@ living_taxa_list<-unique(living_taxa$Taxa)
 #Loading the results
 load("results_1.Rda")
 
+#Remove the whole class data (first 3 rows)
+results <- results[-c(1:3),]
+
 ######################
 #Sampling effort
 ######################
@@ -79,34 +82,40 @@ par(mfrow = (c(1,3)), bty = "n")
 total <- total_families
 sampled <- sampled_families
 model <- summary(lm(sampled + 0 ~ total))
-plot(total, sampled, pch=19, col="grey", xlim = c(0,max(total)), ylim = c(0,max(total)),
-    ylab = "sampled families (log)", xlab = "total families (log)")
+plot(total, sampled, pch=19, col="grey", xlim = c(0,ceiling(max(total))), ylim = c(0,ceiling(max(total))),
+#plot(total, sampled, pch=19, col="grey", xlim = c(0,8), ylim = c(0,8),
+    ylab = "sampled families (log)", xlab = "total families (log)", las = 1)
 abline(model$coefficients[[1]], model$coefficients[[2]])
-text(max(total) - 0.85*max(total), max(total) - 0.1*max(total),
-    bquote(italic(R)^2 == .(format(model$r.squared, digits = 3))) )
-text(max(total) - 0.85*max(total), max(total) - 0.15*max(total),
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.035*ceiling(max(total)), "A", cex=2)
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.1*ceiling(max(total)),
+    bquote(italic(R)^2 == .(format(model$adj.r.squared, digits = 3))) )
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.15*ceiling(max(total)),
     bquote(italic(b) == .(format(model$coefficients[[2]], digits = 3))))
 
 total <- total_genera
 sampled <- sampled_genera
 model <- summary(lm(sampled + 0 ~ total))
-plot(total, sampled, pch=19, col="grey", xlim = c(0,max(total)), ylim = c(0,max(total)),
-    ylab = "sampled genera (log)", xlab = "total genera (log)")
+plot(total, sampled, pch=19, col="grey", xlim = c(0,ceiling(max(total))), ylim = c(0,ceiling(max(total))),
+#plot(total, sampled, pch=19, col="grey", xlim = c(0,8), ylim = c(0,8),
+    ylab = "sampled genera (log)", xlab = "total genera (log)", las = 1)
 abline(model$coefficients[[1]], model$coefficients[[2]])
-text(max(total) - 0.85*max(total), max(total) - 0.1*max(total),
-    bquote(italic(R)^2 == .(format(model$r.squared, digits = 3))) )
-text(max(total) - 0.85*max(total), max(total) - 0.15*max(total),
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.035*ceiling(max(total)), "B", cex=2)
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.1*ceiling(max(total)),
+    bquote(italic(R)^2 == .(format(model$adj.r.squared, digits = 3))) )
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.15*ceiling(max(total)),
     bquote(italic(b) == .(format(model$coefficients[[2]], digits = 3))))
 
 
 total <- total_species
 sampled <- sampled_species
 model <- summary(lm(sampled + 0 ~ total))
-plot(total, sampled, pch=19, col="grey", xlim = c(0,max(total)), ylim = c(0,max(total)),
-    ylab = "sampled species (log)", xlab = "total species (log)")
+plot(total, sampled, pch=19, col="grey", xlim = c(0,ceiling(max(total))), ylim = c(0,ceiling(max(total))),
+#plot(total, sampled, pch=19, col="grey", xlim = c(0,8), ylim = c(0,8),
+    ylab = "sampled species (log)", xlab = "total species (log)", las = 1)
 abline(model$coefficients[[1]], model$coefficients[[2]])
-text(max(total) - 0.85*max(total), max(total) - 0.1*max(total),
-    bquote(italic(R)^2 == .(format(model$r.squared, digits = 3))) )
-text(max(total) - 0.85*max(total), max(total) - 0.15*max(total),
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.035*ceiling(max(total)), "C", cex=2)
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.1*ceiling(max(total)),
+    bquote(italic(R)^2 == .(format(model$adj.r.squared, digits = 3))) )
+text(ceiling(max(total)) - 0.85*ceiling(max(total)), ceiling(max(total)) - 0.15*ceiling(max(total)),
     bquote(italic(b) == .(format(model$coefficients[[2]], digits = 3))))
 dev.off()
