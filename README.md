@@ -1,4 +1,4 @@
-# Assessment of available anatomical characters for phylogenetic analysis among living mammals
+# Assessment of available anatomical characters for linking living mammals to fossil taxa in phylogenetic analyses
 [Thomas Guillerme](http://tguillerme.github.io) and [Natalie Cooper](http://nhcooper123.github.io/).
 
 This repository contains all the code and data used in the manuscript.
