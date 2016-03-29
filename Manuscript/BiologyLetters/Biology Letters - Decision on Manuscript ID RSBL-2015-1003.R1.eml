@@ -1,0 +1,311 @@
+Delivered-To: guillert@ghmail.tcd.ie
+Received: by 10.159.53.79 with SMTP id o73csp1984816uao;
+        Tue, 29 Mar 2016 06:23:59 -0700 (PDT)
+X-Received: by 10.140.102.142 with SMTP id w14mr2653217qge.58.1459257839512;
+        Tue, 29 Mar 2016 06:23:59 -0700 (PDT)
+Return-Path: <onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com>
+Received: from emea01-db3-obe.outbound.protection.outlook.com (mail-db3lrp0081.outbound.protection.outlook.com. [213.199.154.81])
+        by mx.google.com with ESMTPS id v202si25576847qka.128.2016.03.29.06.23.58
+        for <GUILLERT@ghmail.tcd.ie>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Tue, 29 Mar 2016 06:23:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com designates 167.68.16.1 as permitted sender) client-ip=167.68.16.1;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com designates 167.68.16.1 as permitted sender) smtp.mailfrom=onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com
+Received: from DB5PR0201CA0003.eurprd02.prod.outlook.com (10.164.231.141) by
+ DB5PR02MB0981.eurprd02.prod.outlook.com (10.162.162.11) with Microsoft SMTP
+ Server (TLS) id 15.1.443.12; Tue, 29 Mar 2016 13:23:57 +0000
+Received: from AM1FFO11FD039.protection.gbl (2a01:111:f400:7e00::182) by
+ DB5PR0201CA0003.outlook.office365.com (2603:10a6:0:5::13) with Microsoft SMTP
+ Server (TLS) id 15.1.447.15 via Frontend Transport; Tue, 29 Mar 2016 13:23:56
+ +0000
+Authentication-Results: spf=pass (sender IP is 167.68.16.1)
+ smtp.mailfrom=manuscriptcentral.com; tcd.ie; dkim=none (message not signed)
+ header.d=none;tcd.ie; dmarc=permerror action=none
+ header.from=royalsociety.org;
+Received-SPF: Pass (protection.outlook.com: domain of manuscriptcentral.com
+ designates 167.68.16.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=167.68.16.1; helo=uranus.scholarone.com;
+Received: from uranus.scholarone.com (167.68.16.1) by
+ AM1FFO11FD039.mail.protection.outlook.com (10.174.64.228) with Microsoft SMTP
+ Server (TLS) id 15.1.453.6 via Frontend Transport; Tue, 29 Mar 2016 13:23:55
+ +0000
+Received: from c752anns1as.int.thomsonreuters.com (c752anns1as.int.thomsonreuters.com [10.214.41.85])
+	by uranus.scholarone.com (Sentrion-MTA-4.3.1/Sentrion-MTA-4.3.1) with ESMTP id u2TDNsJq000372
+	for <guillert@tcd.ie>; Tue, 29 Mar 2016 09:23:54 -0400
+Date: Tue, 29 Mar 2016 09:23:54 -0400
+From: <biologyletters@royalsociety.org>
+Sender: <onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com>
+To: <guillert@tcd.ie>
+Message-ID: <411551407.1223581459257834436.JavaMail.wladmin@c752anns1as.int.thomsonreuters.com>
+Subject: Biology Letters - Decision on Manuscript ID RSBL-2015-1003.R1
+Errors-To: onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+S1_REAL_RETURN_ADDRESS: biologyletters@royalsociety.org
+X-Errors-To: onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com
+Return-Path: onbehalfof+biologyletters+royalsociety.org@manuscriptcentral.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: d595be8d-b306-45f4-8064-9e5b82fbe52b:0
+X-Forefront-Antispam-Report:
+	CIP:167.68.16.1;IPV:NLI;CTRY:US;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:DB5PR02MB0981;H:uranus.scholarone.com;FPR:;SPF:None;LANG:en;
+X-Microsoft-Exchange-Diagnostics: 1;AM1FFO11FD039;1:tS5U+FHNvVP/qWro7yBN/9mPHZ/Ogr4xBg7oZkiR9JuyKfdRZSGuDler13i4QqdOjbnPtU8uTnR+ussacqVoSyDrZWREtILwudUIajv7WcIeLkfJBYo+lf37iQFWGfs59O2TLwfUpFWKJVh0kPWvXjQ4GMkrlY6+oxDU9H4NDWyxH1soy5FaKjj/T2bJ2+UqjbWed60MavG/MpP4HZWFXCGM8pVzp/m8i9/m0mdrpeKmcDj+gFJOxC8NbP3TqADi/wK1iGjk+YLUoYZTE1uUTHearKmkcjcN25NYy47zNk6Jt1lJY/qr7Aol4go0OOMwOhAgveQkHcSAeqHWvQ8a36GWmvaMzE4fldXqAOXQtRShyXuLa6e3p/WdA7a9j8jY468xh+NauEW/XvlNW6EiPt0+8krMXemukS9MzP4GSjRCWDQffCgh36/ynIJttu2PAnezl67yuU6dnsZaT7mXl69mAzSmls0x5Ml+gFEYaH4=
+X-MS-Office365-Filtering-Correlation-Id: 888fa98f-2d89-4647-f0ae-08d357d56172
+X-Microsoft-Exchange-Diagnostics:
+	1;DB5PR02MB0981;2:83MeHrNbw6YV/VMSFPr2JfnkpUnx6cPgvIOEUJ23y2jTRa9n6s8CRzXIr6rKCg5ahvSOedTnmWwaTjVvWxIzxZPdCnPF4BeL4l3tCz/bXs325uPbAmuG10d5d4GxC4SKXuunlle94B52w+LmBPJr9dLghOHktymBK7SkSCpBR1lRWCXuxQGUpc0NSJsf8EqV;3:67o1XOP/xPFf8X4Bqq1wVCoQ9Rd3RPac4hJAUnhhIECPMig3R867+Z1lWDDfiIxYDOc1iTZL7FHcdt+ho7JZJeueGmGMR86b85aN6VOxNhqnM2tL0Tx4HHQrPLwDL3UF+Bv7TiClUZys5BFZnJAXTLzsYNtTzUz6efuHkaEZ0E2s3HovXUS3vn3KPhQ7i7nMQb2TXmON+nNmb49bCuIPEvw19CUWgK/K7lLnb4ATG20niI6Lojr2id2Sa/G+ugDJazYnu0aKjxLZxq0YQreaiw==
+X-Microsoft-Antispam:
+	UriScan:;BCL:0;PCL:0;RULEID:(71701004)(71702002);SRVR:DB5PR02MB0981;
+X-Microsoft-Exchange-Diagnostics:
+	1;DB5PR02MB0981;25:5cBav+fWYYrMKszR6joc56ghv0gAv75xbpwyvkUs90OYD0UqLaMcyo+CBMIdF/szgp21G1QyJ35fUJc+3PzMmfyVzKPNHByOnVW7zm8lPsDqUfTH3yuLwbMjJ+QiX9+Jruhw9xQJHF0E2eu3LTNmQDD0cNa0J9kqxV58lsMo/kkRGsDJ1Y6s9w4CYBEOtBMBVHTOhmCxyjAOMtSmLySrLLBQnrJAJLsKomJBrMHmA0dqUIm7hEjwRKJyelY1Qu0SaeuCKyGdkjtlLbK7ELbpwfMFQ/5uETZk5VJQ5ASis1tuYZ6PDPn8ACNQpEMMp+mAHA3ZKuiCfHi+JMidrlAnfkMSC76lVRC5fpgKdSP4ay50ftRNAWPfebrZb3dNiiEWZjgX3+dezPmiDsBMzmeSoattC6ApC7AH/hOFL2fTFK2IW1fzmA9F3p3afkXXGzS1HEgnqHzsYJOm+iswXEtMJN9wPcZ0D8ALtASo9LHw2A8CLn9f0r75EUnI532BGhWU/ufz8GoigvCuyq/SOHd4nMzSdA2MKFf9uwgLS50oAx9jxJn8NnEhbq4JMxQC37BPrMQOL+qUWGp+puBa7AtdVA76iurMNqlX8X/NFGMTYRtv5sRZOrXjw/JFRv2XoWmhUzWCYCmsfq5Iomx4PH8Y/S0tE7v23beSZ7ED05aLPndPdpj1tOdj/0UtQDiCR1Z+1om7lmHJCS7Z45zAEL/7Zw==
+X-LD-Processed: d595be8d-b306-45f4-8064-9e5b82fbe52b,ExtAddr
+X-TCD-Routed-via-EOP: Routed via EOP
+X-Microsoft-Exchange-Diagnostics:
+	1;DB5PR02MB0981;20:805AXxxVGnv3MIRtieSvSTbbsrIqsYNd26JcEOiRYFOxSwkeGp7RMALuY0g85hRgMju0L88doMC0TvuoMkRHHkouiAcq2Gq38V4oSIEAHXWsHQRHXnGV8nwEeqbyBZ459snzaB6M+XybuZ2ox7KEu+n8gnk3MuhEGlANgQwMgC3KFHYmoI4c6Anuu8wOsUfIJM57HHTuQ2f0lGjhbgpv19L7VRroHSoo3JiV4Oq3kniXg69xS+tZWbpIPQfuFftQQTmwZ8wuHkO4S3dov0ECC33y6UzJSRLsvHy0KcslfjwNKsodeoNbPQSVlWnBIsvU1R+FthD5vh8tUsTsqbQX4H3AAn+0OAbsuALK/HPIvDfUA3nS8WiXNWsUEi2dJsqgQaGC4rgNMMpoqCT/agNrT9i1RAGANFWmIxhjS6Kz42WdxHhHU59kQ09zrtB9nl5R4VHrBlQIaex073WZkV4+Hyk/VYnoOZ4ZhTZSmeCtgjKk002AExK+os5ZY6SegEHMRRgqXLhOs8E9ZxuB/uon9k9bNDLfyWBr9P5yYrZx7YFnjBujHTwYdxBF4TGmZBrqyuQSquDlfThwlDQKt58GIQriIOrE/FtZKgBslFcN+AM=
+X-Exchange-Antispam-Report-Test: UriScan:;
+X-Exchange-Antispam-Report-CFA-Test:
+	BCL:0;PCL:0;RULEID:(601004)(2401047)(8121501046)(13016025)(13018025)(3002001)(10201501046);SRVR:DB5PR02MB0981;BCL:0;PCL:0;RULEID:;SRVR:DB5PR02MB0981;
+X-Microsoft-Exchange-Diagnostics:
+	1;DB5PR02MB0981;4:46fzeHpmeuhMbnoVRECu1Fn5t6iUAP0yH87X5o2hKaCdcvBuph9zJEFpR4vUJlPE3n0jzkdYyksQuLiM/8/34KY8EkTFHI6Ldu7ajJdyRGJSDIB8N8Ux3YXIc9QzMeEQVr31joJFPeVnzTItOT6zy4QmXWbtXBPFNibM0u5R9F+IOLcj1+i3eUafZxw5fENczTxC7NnvD8tqwEZzHBi22eWiwvxXiM9JQHpEmvJercVwM3fufn9ICraCIDJRQTo4fwzxHvka8ZDqz1NDxYX+aSCSWsugGXmUkMLxUZHDXqNbslG8mpWYPPSHu5JIr0tL68GNZFJDAupGxpZthQyBOw4bQAfXWNz3Va0rxOXzw3LBjMygAPxx1iitUCZU9eDG+DgCfzX53v860BF85Q0FNA==;23:kMTjJP8PvWfpl6QE67z1vPlsVUSMeo+Beq9/noB7DBK8ftFy9iT9401uzHFqoWoCIoCXwEPaBftekhXOIoaUstpSkRZTHhzr17u/m4pp4J7OvWG+ZuvNqiNZWeZKrgXaW/NkcH/YTavRzDLUNQ3Bjo3nKVf/amTUFi1GWdtMkFIALY/pIlKf063C7oRokZD7bOEGPqsqqqsrlaUAyvWl4Rn4lD8tV9kvHTqAQhEJ+gQ=;5:YjSwoafp173vFEoA18cNt9qnlPiwituLmBGnSE+RB1xa0RA4EKfJwFD9SBdWgsUIaVF7NcdJFjkMh9sm/TjHJGHNgjavMKfUMiRual3lPUV1mpZTPNPgZQq4BqSW52h5Pupprzt96379VAseIhOOeg==;24:q2D6ot98Z+ku9LCVSeK49M/f0EDPjTwbso95bOhZVZH8OAEF0w2VJww6LwPF63DmXLTOcQrl3Bjfl9Hq4tYqAkb5sDgqvEUTYGB7QZXLIRs=
+SpamDiagnosticOutput: 1:2
+SpamDiagnosticMetadata: 4edbd44368e647eba195f91fdba09490
+X-OriginatorOrg: TCDUD.onmicrosoft.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Mar 2016 13:23:55.9109
+ (UTC)
+X-MS-Exchange-CrossTenant-Id: d595be8d-b306-45f4-8064-9e5b82fbe52b
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB5PR02MB0981
+
+29-Mar-2016
+
+Dear Dr Guillerme
+
+On behalf of the Editor, I am pleased to inform you that your Manuscript RS=
+BL-2015-1003.R1 entitled "Assessment of available anatomical characters for=
+ phylogenetic analysis among living mammals" has been accepted for publicat=
+ion in Biology Letters subject to minor revision in accordance with the ref=
+eree suggestions.  Please find the referees' comments below.
+
+The reviewer(s)/Handling Editor have recommended publication, but also sugg=
+est some minor revisions to your manuscript.  Therefore, I invite you to re=
+spond to the comments and revise your manuscript.  If you have any question=
+s, please do get in touch.
+
+Because the schedule for publication is very tight, it is a condition of pu=
+blication that you submit the revised version of your manuscript within 7 d=
+ays. If you do not think you will be able to meet this date please let me k=
+now immediately. Failure to do so may cause your manuscript to miss its pub=
+lication slot and cause severe delays in the publication of your manuscript=
+.
+
+To revise your manuscript, log into https://mc.manuscriptcentral.com/bl and=
+ enter your Author Centre, where you will find your manuscript title listed=
+ under "Manuscripts with Decisions."  Under "Actions," click on "Create a R=
+evision."  You will be unable to make your revisions on the originally subm=
+itted version of the manuscript.  Instead, revise your manuscript and uploa=
+d a new version through your Author Centre.
+
+When submitting your revised manuscript, you will be able to respond to the=
+ comments made by the referee(s) and upload a file "Response to Referees" i=
+n "Section 6 - File Upload".  You can use this to document any changes you =
+make to the original manuscript.
+
+Please see our detailed instructions for revision requirements. It is essen=
+tial these instructions are followed carefully to minimise any delay to pub=
+lication: http://royalsocietypublishing.org/instructions-authors#question3.
+
+Please also note that the submitting author must have an ORCID account as p=
+er our guidelines here https://blogs.royalsociety.org/publishing/from-janua=
+ry-youll-need-an-orcid/. This should be obtained and added to your ScholarO=
+ne account as soon as possible, as manuscripts without this will be delayed=
+.
+
+
+When uploading your revised files please make sure that you have:
+
+1) A text file of the manuscript (tex, txt, rtf, docx or doc), references, =
+tables (including captions) and figure captions. Do not upload a PDF as you=
+r "Main Document"
+2) A separate electronic file of each figure (EPS or print-quality PDF pref=
+erred (either format should be produced directly from original creation pac=
+kage), or original software format)
+3) Included a 100 word media summary of your paper when requested at submis=
+sion.  Please ensure you have entered correct contact details (email, insti=
+tution and telephone) in your user account
+4) Included the raw data to support the claims made in your paper.  You can=
+ either include your data as electronic supplementary material or upload to=
+ a repository and include the relevant doi within your manuscript
+5) Included your supplementary files in a format you are happy with (no lin=
+e numbers, vancouver referencing, track changes removed etc) as these files=
+ will NOT be edited in production
+
+Once again, thank you for submitting your manuscript to Biology Letters and=
+ I look forward to receiving your revision. If you have any questions at al=
+l, please do not hesitate to get in touch.
+
+Best wishes
+
+Surayya Johar
+Biology Letters editorial office
+biologyletters@royalsociety.org
+
+
+
+Comments to Authors:
+
+Referee: 2
+
+Comments to the Author(s)
+The authors have addressed my concerns. I have but a few minor wording sugg=
+estions
+
+line 34: spelling: ccombines =3D combines
+
+lines 44 - 52. I'd suggest rewording this a little bit as lines 48 - 52 are=
+ a little awkward. May I suggest the following:
+
+
+"We might expect the total evidence method to perform poorly when there is =
+little overlap between coded anatomical characters in living and fossil tax=
+a. This is because fossil taxa cannot be correctly placed within a clade of=
+ living species if none of its members have been coded for morphological ch=
+aracters. Furthermore, simulations show that fossils are more likely to be =
+placed in clades with for which more characters have been coded, regardless=
+ of whether this is the correct clade [8]."
+
+line 152: ... a carnivoran fossil is unlikely to be placed in Herpestidae b=
+ecause ....
+
+line 159: I'd replace "It is worth noting" with "We acknowledge"
+
+line 161: word order: provided easily accessible matrices
+
+Graham Slater
+
+
+
+Referee: 1
+
+Comments to the Author(s)
+The revisions to this paper get it closer to where it needs to be, and it r=
+emains an important contribution. However, I don=E2=80=99t think the author=
+s have gone far enough to respond to the reviewers=E2=80=99 main critiques.
+The authors haven=E2=80=99t addressed Pete Wagner=E2=80=99s important comme=
+nts about the use of the term =E2=80=9Ccladistics.=E2=80=9D Morphological c=
+haracter data are not inherently cladistics, although they can be used for =
+cladistics analysis, as well as Bayesian and likelihood approaches. They al=
+so haven=E2=80=99t done anything to clarify that the relevant character set=
+ for aligning fossil and modern data is skeletal characters. Many anatomica=
+l characters do nothing at all for the incorporation of fossil taxa.
+I=E2=80=99m also concerned that my original comments about the biases in ch=
+aracter sets included still aren=E2=80=99t adequately addressed; they now a=
+cknowledge that they didn=E2=80=99t include any character sets that weren=
+=E2=80=99t available in print, but that doesn=E2=80=99t address what kind o=
+f difference it would make to their results. I=E2=80=99m concerned it could=
+ be a really important bias; morphological data was much more commonly publ=
+ished for extant taxa in older phylogenetic analyses, and those are less li=
+kely to be available digitally. You might be substantially underestimating =
+the availability of these data, and if TE phylogenies aren=E2=80=99t includ=
+ing them, I=E2=80=99m rather disappointed in the folks constructing them.=
+=20
+I don=E2=80=99t agree with the assertion that the genus level should be our=
+ primary concern; more and more studies are building species-level trees wi=
+th fossil taxa. I=E2=80=99m happy for the authors to discuss the patterns a=
+t the genus level, because it is one of the important levels, but given tha=
+t genera are an artificial line in the taxonomic sand, it=E2=80=99s certain=
+ly not the primary one, and I=E2=80=99d hate to see this statement sail uno=
+pposed into the literature. I=E2=80=99d like to see it moderated a bit in t=
+he final version of the manuscript.
+Also, one minor text edit I spotted:
+Page 1, Line 34: =E2=80=9Cccombines=E2=80=9D should be =E2=80=9Ccombines=E2=
+=80=9D
+
+
+Referee: 3
+
+Comments to the Author(s)
+I thought that the first draft of this manuscript was in pretty good shape,=
+ but I think that the modifications in response to the reviewers (particula=
+rly to points that Slater and Reviewer #1 raised that I somehow missed) rea=
+lly make the paper much more tight than it was. =20
+
+The new title is an improvement.  However, I think that it could be altered=
+ still further: would something like: "Assessment of available anatomical c=
+haracters for linking living mammals to fossil taxa in phylogenetic analyse=
+s"?  That is the main thrust of the paper, after all, and it also avoids ha=
+ving someone simply think: "Who cares? I have molecules" and moving on to t=
+he next article. =20
+
+Lines 159 - 160: "It is worth noting, however, that our analysis did not in=
+clude all the matrices containing anatomical characters ever published."
+
+One thing to note is that a lot of the older analyses, which tended to be m=
+orphological, were done in the early days of modern phylogenetics, and thos=
+e are the matrices that are most apt to not have pdf or html versions.  So,=
+ there might be a bias against the "pioneering" studies.  However, many of =
+those studies will be a quarter of a century old, and the homology concepts=
+ and (especially!) coding protocols being used back then almost certainly d=
+iffer from now.  Also, a lot of those matrices were "cleaned" to remove hom=
+oplasy: this was not attempted fraud, but due to the fact that computer run=
+s that are done in hours today took weeks and weeks back then, and actually=
+ storing all of the trees that might come out of "messy" matrices was beyon=
+d the old floppy drives.  That is one reason why I rarely use matrices publ=
+ished before the early 1990's in my own meta-analyses.  So, if those matric=
+es do exist and can be computerized, then I think that they should be viewe=
+d as "starting points" for coding taxa: they almost certainly will need upd=
+ating. =20
+
+Peter Wagner
+
+
+
+Referee: 4
+
+Comments to the Author(s)
+The authors have substantially revised their paper in response to both the =
+three referees' and my own comments. All referees now seem to broadly agree=
+ that the paper should be published, albeit with a number of further sugges=
+tions for improvement. I urge the authors to consider all of these in their=
+ final revision. In particular I agree with Referee 1 regarding the continu=
+ed use of "cladistic" and the genus-level issue (many palaeontologists are =
+now focused on the species-level and certainly many mammalian genera are no=
+t monotypic - this is more of an issue with dinosaur workers), and Referee =
+3 (Pete Wagner's) title suggestion is - I think - more likely to attract re=
+aders.
+
+One minor thing I also noticed is on L174 ("but also to any researcher focu=
+sing understanding macroevolutionary patterns and processes"), this seems t=
+o be missing an "on".
+
+Graeme Lloyd (on behalf of Dave Bapst, Nick Matzke, and April Wright)
+
+
+
+Editor's Comments to Authors:
+I ask the referees to address the minor issues raised by referees 2 and 4. =
+Although suggested accept as is, both referees 1 and 3 provide a few minor =
+corrections.
+
+
+Editorial office comments to authors:
+Please ensure that you include;=20
+*An author contributions section which fulfils all *four* of our criteria g=
+iven here https://royalsociety.org/journals/ethics-policies/openness/, incl=
+uding a sentence stating all authors agree to be held accountable for the c=
+ontent therein and approve the final version of the manuscript=20
+*A funding statement which is the same as that given in ScholarOne
+*Please also confirm in your cover letter whether all the figures are your =
+own or whether permission has been obtained for their use
+*If you have any images that can be used to promote your article on social =
+media (should this be accepted) please upload them as a supplementary file
+
+
+Please confirm whether your manuscript should be available via open access,=
+ as we note that this may be a requirement of your funder.
+
+You can exceed the word limit by a couple of hundred words to include this =
+information.
+
+***************************************************************
+
+
