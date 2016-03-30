@@ -91,7 +91,7 @@ $^1$School of Natural Sciences, Trinity College Dublin, Dublin 2, Ireland.\\
 $^2$Department of Life Sciences, Natural History Museum, Cromwell Road, London, SW7 5BD, UK.}\\
 \end{center}
 \medskip
-\noindent{*\bf Corresponding author. Current address: } \textit{t.guillerme@imperial.ac.uk}\\  % NC: You need to add your current address to the corresponding author bit I think.
+\noindent{*\bf Corresponding author. Current address: } \textit{t.guillerme@imperial.ac.uk}\\  % NC: You need to add your current address to the corresponding author bit I think. TG: i.e. Silwood? That'll eat a shit load of words for not much no?
 \vspace{1in}
 
 %Line numbering
@@ -119,8 +119,7 @@ In most orders, species with available characters are randomly distributed acros
 We suggest that increased morphological data collection efforts for living taxa are needed to produce accurate Total Evidence phylogenies. 
 \end{abstract}
 
-\noindent Key words: Total Evidence method, phylogenetic clustering, cladistic matrix%NC: change cladistic
-, extinct, topology\\
+\noindent Key words: Total Evidence method, phylogenetic clustering, discrete morphological matrix, extinct, topology\\
 
 \vspace{1.5in}
 
@@ -134,19 +133,13 @@ We suggest that increased morphological data collection efforts for living taxa 
 There is an increasing consensus among biologists that studying both living and fossil taxa is essential for fully understanding macroevolutionary patterns and processes \cite{slaterunifying2013,fritzdiversity2013}.
 To perform such analyses it is necessary to combine living and fossil taxa in phylogenetic trees.
 One increasingly popular method, the Total Evidence method \cite{ronquista2012}, combines molecular data from living taxa and morphological data from both living and fossil taxa in a supermatrix that can then be used with the tip-dating method (e.g. \cite{pyrondivergence2011,ronquista2012,schragocombining2013,slaterunifying2013,beckancient2014}), producing a chronogram with living and fossil taxa at the tips.
-A downside of this method is that it requires molecular data for living taxa and discrete morphological/anatomical data shared across living and fossil taxa (i.e. hard tissue characters such as skeletal features).
-%
-% TG: Emphasize on discrete morphological/anatomical data (often skeletal). I've added the "shared between"
-%
+A downside of this method is that it requires molecular data for living taxa and discrete morphological/anatomical data shared between both living and fossil taxa (i.e. hard tissue characters such as skeletal features).
 Sections of this data can be difficult, or impossible, to collect for every taxon in the analysis.
-For example, fossils rarely have molecular data and incomplete fossil preservation may reduce the number of anatomical characters available. %TG: should we add another "(i.e. skeletal characters)" here? % NC: No I think we are making a slightly different point.
+For example, fossils rarely have molecular data and incomplete fossil preservation may reduce the number of anatomical characters available.
 Additionally, it has become less common to collect anatomical characters for living taxa when molecular data is available (e.g. in \cite{slaterphylogenetic2013}, only 13\% of living taxa have coded anatomical characters).
 Unfortunately this missing data can lead to errors in phylogenetic inference.
-% Simulations show that the ability of the Total Evidence method to recover the correct topology decreases when there is little overlap between coded anatomical characters in living and fossil taxa, and that the effect of missing data on topology is greatest when living taxa have few anatomical characters available \cite{GuillermeCooper}.
 We might expect the Total Evidence method to perform poorly when there is little overlap between coded anatomical characters in living and fossil taxa, because fossil taxa cannot be correctly placed within a clade of living species with no coded characters.
-Furthermore, simulations show that fossils are more likely to be placed in clades for which more characters have been coded, regardless of whether this is the correct clade \cite{GuillermeCooper}. %TG: That's Graham's sentence. It's not exactly what we *show* in the TEM paper but we definitely discuss this possibility in the discussion.
-% This is because (1) fossils will not be placed accurately within the correct clade if it contains no coded anatomical characters for living taxa; and (2) fossils have a higher probability of being placed within clades with more coded anatomical characters available for living taxa, regardless of whether this is the correct clade \cite{GuillermeCooper}. 
-% NC: OK but need to be careful about just randomly citing ourselves when we know that's not what the paper says.
+Furthermore, simulations show that fossils are more likely to be placed in clades for which more characters have been coded, regardless of whether this is the correct clade \cite{GuillermeCooper}.
 
 The issues above highlight that it is crucial to have sufficient coded anatomical characters available for living taxa in a clade before using the Total Evidence approach.
 However, it is unclear how many coded anatomical characters are actually available for living taxa, i.e. already coded from museum specimens and deposited in phylogenetic matrices accessible online, and how this data is distributed across clades.
@@ -162,10 +155,10 @@ We also determine whether the characters are phylogenetically overdispersed or c
 %
 %---------------------------------------------
 % NC: From here on in we need to replace the word cladistic. I don't like the "anatomical characters" as it's a bit long. How about character matrices? You decide.
+% TO DO
 \section{Materials and Methods}
 \subsection{Data collection and standardisation}
-We downloaded all cladistic%
- matrices containing any living and/or fossil mammal taxa from three major public databases: MorphoBank (\url{morphobank.org} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}).
+We downloaded all discrete morphological matrices containing any living and/or fossil mammal taxa from three major public databases: MorphoBank (\url{morphobank.org} \cite{morphobank}), Graeme Lloyd's website (\url{graemetlloyd.com/matrmamm.html}) and Ross Mounce's GitHub repository (\url{github.com/rossmounce/cladistic-data}).
 We also performed a systematic Google Scholar search for matrices that were not uploaded to these databases (see Electronic Supplementary Material (ESM) for details).
 In total, we downloaded 286 matrices containing 5228 unique operational taxonomic units (OTUs). 
 We used OTUs rather than species because entries in the matrices ranged from species to families. 
@@ -174,7 +167,7 @@ This resulted in 1601 unique OTUs from 286 matrices.
 
 \subsection{Data availability and distribution}
 To assess the availability of coded anatomical characters for each mammalian order and across mammals, we calculated the percentage of OTUs with coded anatomical characters at three different taxonomic levels: family, genus and species.
-We do not distinguish between soft and hard characters, but the majority of matrices contain at least some hard tissue characters. % NC: True? This is to deal with the skeletal bit. Put into response letter.
+We do not distinguish between soft and hard characters, but the majority of matrices contain at least some hard tissue characters. % NC: True? This is to deal with the skeletal bit. Put into response letter. TG: probably true. Didn't check all matrices but because of their data's nature (i.e. collected by anatomists back in the days and paleontologists nowadays) I'll bet you there's "at least some".
 We consider orders with \textless 25\% of living taxa with available anatomical characters as having low data coverage, and orders with \textgreater 75\% of living taxa with available anatomical characters as having high data coverage. 
 
 For each order and for all mammals, we investigated whether the available coded anatomical characters were (i) randomly distributed, (ii) overdispersed or (iii) clustered, with respect to phylogeny, using two metrics from community phylogenetics: the Nearest Taxon Index (NTI; \cite{webb2002phylogenies}) and the Net Relatedness Index (NRI; \cite{webb2002phylogenies}). 
@@ -218,6 +211,7 @@ At the genus-level, one order had low coverage and 15 had high coverage, and at 
 %TG: don't clean up this caption please!
 
 % NC: Can you check the caption we used doesn't have cladistic in it? I have a feeling it does...
+% TO DO
 
 \input{Table_results}
 
@@ -249,14 +243,14 @@ Only seven out of 28 orders have a high coverage of taxa with available coded an
 This high coverage threshold of 75\% of taxa with available characters represents the minimum amount of data required before missing data has a significant effect on the topology of Total Evidence trees \cite{GuillermeCooper}.
 Beyond this threshold, there is considerable displacement of wildcard taxa and decreased clade conservation \cite{GuillermeCooper}.
 Therefore we expect difficulties in placing fossils at the species-level in most mammalian orders, but fewer issues at higher taxonomic levels.
-Additionally, our analyses may underestimate the problem as we do not distiguish between soft and hard tissue characters; if a living taxon has only soft tissue coded anatomical characters then it will not have overlapping data with fossils that only have hard tissues preserved. %NC: This deals with reviewer 1. What do you think? 
+Additionally, our analyses may underestimate the problem as we do not distiguish between soft and hard tissue characters; if a living taxon has only soft tissue coded anatomical characters then it will not have overlapping data with fossils that only have hard tissues preserved. %NC: This deals with reviewer 1. What do you think? TG: Yap, excellent.
 
 % This is important in practice because of the slight discrepancy between neontological and palaeontological species concepts.
 % While neontological species are described using morphology, genes, distribution, etc.; palaeontological species can be based only on morphological/anatomical, spatial and temporal data (e.g. \cite{ni2013oldest}).
 % Therefore, many palaeontological studies use the genus (or monospecific genera) as their smallest OTU (e.g. \cite{ni2013oldest,O'Leary08022013}), so data availability at the genus-level in living mammals should be our primary concern when building phylogenies of living and fossil taxa.
 %
 %
-%TG: Might first feeling was to just remove the last sentence but, when reading the previous one (which I like), I'm not sure if this sentence can be removed without removing the two previous ones on the species concept differences. What do you think? Anyway, it would then maybe just be better to dump the three sentences an finish this paragraph at "Therefore we expect difficulties in placing fossils at the species-level in most mammalian orders, but fewer issues at higher taxonomic levels."
+%TG: My first feeling was to just remove the last sentence but, when reading the previous one (which I like), I'm not sure if this sentence can be removed without removing the two previous ones on the species concept differences. What do you think? Anyway, it would then maybe just be better to dump the three sentences an finish this paragraph at "Therefore we expect difficulties in placing fossils at the species-level in most mammalian orders, but fewer issues at higher taxonomic levels."
 %TG: On the other hand removing that gives us space for discussing the data sampling problem below
 %
 % NC: Yeah I think this is the correct thing to do here.
@@ -267,10 +261,9 @@ Here we expect no bias in the placement of fossils \cite{GuillermeCooper}, it is
 The worst case scenario for fossil placement is that species with available characters are phylogenetically clustered. 
 Then we expect two major biases: first, fossils will not be placed within a clade containing no hard tissue data, and second, fossils will have higher probability of being placed within the most sampled clade by chance. % NC: I added hard tissue here
 Our results suggest that this may be problematic at the genus-level in Carnivora, Chiroptera and Soricomorpha. 
-%For example, a Carnivora fossil will be unable to be placed in the Herpestidae clade because they have no coded anatomical characters available.
 For example, a carnivoran fossil is unlikely to be placed in Herpestidae because they have no coded anatomical characters available.
 Instead the fossil will have a high probability of being placed on a branch that contains many anatomical characters such as within the Canidae or Ursidae (Figure \ref{Figure_example_coverage}B). 
-This is analogous to the problem of long-branch attraction/short branch repulsion, as one can think of herpestids as having zero-length branches for anatomical characters, and canids and ursids having long branches and thus "attracting" fossil placements.
+This is analogous to the problem of long-branch attraction/short branch repulsion, as one can think of Herpestidae as having zero-length branches for anatomical characters, and Canidae and Ursidae having long branches and thus ``attracting'' fossil placements. %TG: changed family names here to be consistent (going with always latin).
 
 We acknowledge, however, that our analysis does not include all matrices containing anatomical characters ever published.
 Instead, our data collection procedure focused on including studies that provided easily accessible matrices, i.e. we did not include matrices that are only available in books, non-reusable formats (e.g. an image of the matrix), or matrices available only upon request from the authors.
@@ -278,6 +271,7 @@ Matrices containing anatomical characters were more common before the advent of 
 Although this will bias our results towards lower coverage we do not think this bias will be large, as many recent morphological matrices reuse living taxa characters from older matrices (see ESM1), so many of these data will be present in our analyses.
 Additionally, these older matrices are likely to differ from more recent ones in terms of their underlying definition of homology and their coding practices (see \cite{Brazeau2011}).
 Therefore, care needs to be taken when deciding how to include these older matrices.
+
 % NC: I editted this as the reviewer is concerned that our analyses might be biased, not total evidence in general
 Despite the absence of good morphological/anatomical data coverage for living mammals, the Total Evidence method still seems to be the most promising way of combining living and fossil species in macroevolutionary analyses.
 Following the recommendations in \cite{GuillermeCooper}, we must code anatomical characters for as many living species as possible. 
