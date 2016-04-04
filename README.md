@@ -14,22 +14,23 @@ All the raw data (cladistic matrices) and transformed data (cladistic matrices w
 All the individual functions for this analysis (and their testing) are avaiable in the [function folder](https://github.com/TGuillerme/Missing_living_mammals/tree/master/Functions).
 
 The analysis is divided into three steps
-* 1.Extracting the living taxa from the matrices
-* 2.Analysing data availability and distribution per order
-* 3.Summarising the results
+ 1.   Extracting the living taxa from the matrices
+ 2.   Analysing data availability and distribution per order
+ 3.   Summarising the results
 
-Note that the first steps take some time (several hours on your usual desktop machine) so the results from this steps is made directly available [here](https://github.com/TGuillerme/Missing_living_mammals/tree/master/Data/List_of_matching_taxa).
+Note that the first steps take some time (several hours on your usual ~2GHz clock speed machine's CPU) so the results from this steps is made directly available [here](https://github.com/TGuillerme/Missing_living_mammals/tree/master/Data/List_of_matching_taxa).
 
-#### 1-Extracting the living taxa from the matrices
-This step sorts all the OTUS from all the matrices into either `living` or `fossil` taxa in order to have the list of all the available mammals with morphological (cladistic) data. The code for this step is available [here](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Extracting_living_taxa.R).
+#### 1. Extracting the living taxa from the matrices
+This step sorts all the OTUS from all the matrices into either `living` or `fossil` taxa in order to have the list of all the available mammals with discrtete morphological data. The code for this step is available [here](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Extracting_living_taxa.R).
 
-#### 2-Analysing data availability and distribution per order
+#### 2. Analysing data availability and distribution per order
 The second step analysis the data availability within each mammalian order. It calculates the proportion of living mammals with avaiable cladistic data as well as the distribution of this data accross the phylogeny. The code for this step is available [here](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Analysis_per_order.R).
 
-#### 3-Summarising the results
+#### 3. Summarising the results
 Finally, the third step summarises the results of the analysis in step 2 and generates the manuscript figure/table (fable!) containing all the information of the availability and distribution of living mammals cladistic data. The code for this step is available [here](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Results_summary.R).
-Note that the output is a table in `LaTeX` format.
+Note that the output is a table in `LaTeX` format (`longtable`).
 
 #### Supplementary analysis
+The code for each supplementary analysis is available in the following links:
 * [Google Scholar search rarefaction](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Rarefaction.R)
 * [Sampling effort](https://github.com/TGuillerme/Missing_living_mammals/blob/master/Analysis/Sampling_effort.R)
