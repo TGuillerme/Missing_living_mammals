@@ -10,7 +10,7 @@
 #<environement> table environement
 #<col.threshold> a vector of colours that must be the length of threshold + 1
 ##########################
-#environement(at)tcd.ie - 05/06/2015
+#guillert(at)tcd.ie - 05/06/2015
 ##########################
 
 table.result<-function(results, metric, threshold=c(25,75), save.path, file.save, caption, environement, col.threshold=c("grey", "grey", "grey")) {
