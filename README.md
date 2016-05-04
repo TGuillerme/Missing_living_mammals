@@ -2,8 +2,9 @@
 [Thomas Guillerme](http://tguillerme.github.io) and [Natalie Cooper](http://nhcooper123.github.io/).
 
 This repository contains all the code and data used in the manuscript.
-###### Manuscript in review for Biology Letters.
-A preprint is available [here](http://biorxiv.org/content/early/2015/07/28/022970).
+
+###### Paper [published](http://rsbl.royalsocietypublishing.org/content/12/5/20151003) in Biology Letters.<a href="http://rsbl.royalsocietypublishing.org/content/12/5/20151003"><img src="http://tguillerme.github.io/images/OA.png" height="20" widht="20"/></a>
+
 
 -------
 
